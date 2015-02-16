@@ -15,6 +15,7 @@ public:
 	void Exit();
 	static bool IsKeyPressed(unsigned short key);
 	static bool mouseButton(unsigned short button);
+	static int mouseScroll;
 	static Position getMousePos();
 
 private:

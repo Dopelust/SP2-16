@@ -21,7 +21,7 @@ void Inventory::Init(Vector3 pos)
 
 void Inventory::Update(double dt)
 {
-	if (Application::mouseButton(3))
+	if (Application::mouseScroll >= 1)
 	{
 		if (index == 0)
 			index = 8;
@@ -29,7 +29,7 @@ void Inventory::Update(double dt)
 			index--;
 	}
 
-	if (Application::mouseButton(4))
+	if (Application::mouseScroll <= -1)
 	{
 		if (index == 8)
 			index = 0;

@@ -6,6 +6,12 @@ Vector3 originalPos;
 
 using namespace::std;
 
+void Player::InitPos()
+{
+	value[eyeLevel] = 5.5f;
+	collision.hitbox = Vector3(3, 6.f, 3);
+	collision.centre = Vector3(0, collision.hitbox.y/2, 0);
+}
 void Player::Update(double dt, vector<Object*>object)
 {
 	Control(dt, object);
@@ -104,23 +110,20 @@ void Player::Control(double dt, vector<Object*>object)
 
 	if(Application::IsKeyPressed(VK_CONTROL))
 	{
-		collision.hitbox.y = 7;
+		collision.hitbox.y = 3.f;
 		collision.centre.y = collision.hitbox.y/2;
-		value[eyeLevel] = 6;
-		velocity = Vector3(25,40,25);
+		value[eyeLevel] = 2.5f;
+		velocity = Vector3(15,30,15);
 	}
 	else
 	{
-		collision.hitbox.y = 14;
-		collision.centre.y = collision.hitbox.y/2;
-		value[eyeLevel] = 12;
-		velocity = Vector3(50,40,50);
+		InitPos();
 	}
 
 	if(Application::IsKeyPressed(VK_SHIFT) && !Application::IsKeyPressed(VK_CONTROL))
-		velocity = Vector3(90,40,90);
+		velocity = Vector3(40,30,40);
 	else if (!Application::IsKeyPressed(VK_CONTROL))
-		velocity = Vector3(50,40,50);
+		velocity = Vector3(30,30,30);
 	
 	if (count == 2)
 	{
@@ -164,7 +167,7 @@ void Player::Control(double dt, vector<Object*>object)
 	{
 		position.y += (float)(velocity.y * dt); 
 
-		if(position.y > (originalPos.y + 10))
+		if(position.y > (originalPos.y + 5))
 		{
 			state[JUMP] = false;
 		}

@@ -1,17 +1,10 @@
-﻿Build started 16/2/2015 1:35:23 PM.
+﻿Build started 16/2/2015 3:17:07 PM.
      1>Project "C:\Users\hibar_000\Desktop\SP2-16\MyGraphics\MyGraphics.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\MyGraphics.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\hibar_000\Desktop\SP2-16\\Common\Source" /I"C:\Users\hibar_000\Desktop\SP2-16\\glfw\include" /I"C:\Users\hibar_000\Desktop\SP2-16\\glew\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Source\Application.cpp Source\Camera3.cpp Source\PROJECTScene.cpp Source\collision.cpp Source\inventory.cpp Source\player.cpp
-         PROJECTScene.cpp
-         Generating Code...
-         Skipping... (no relevant changes detected)
-         player.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\hibar_000\Desktop\SP2-16\\Common\Source" /I"C:\Users\hibar_000\Desktop\SP2-16\\glfw\include" /I"C:\Users\hibar_000\Desktop\SP2-16\\glew\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Source\inventory.cpp
          inventory.cpp
-         collision.cpp
-         Camera3.cpp
-         Application.cpp
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -43,4 +36,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.47
+Time Elapsed 00:00:01.35

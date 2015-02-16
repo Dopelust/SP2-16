@@ -17,6 +17,8 @@ GLFWwindow* m_window;
 const unsigned char FPS = 60; // FPS of this game
 const unsigned int frameTime = 1000 / FPS; // time for each frame
 
+int Application::mouseScroll = 0;
+
 //Define an error callback
 static void error_callback(int error, const char* description)
 {
@@ -29,6 +31,10 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 {
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, GL_TRUE);
+}
+void scroll_callback(GLFWwindow* window, double x, double y)
+{
+	Application::mouseScroll = y;
 }
 
 void resize_callback(GLFWwindow* window, int w, int h)
@@ -123,10 +129,13 @@ void Application::Run()
 	m_timer.startTimer();    // Start timer to calculate how long it takes to render this frame
 	while (!glfwWindowShouldClose(m_window) && !IsKeyPressed(VK_ESCAPE))
 	{
+		glfwSetScrollCallback(m_window,scroll_callback);
+
 		scene->Update(m_timer.getElapsedTime());
 		scene->Render();
 
 		glfwSetCursorPos(m_window, 800/2, 600/2);
+		mouseScroll = 0;
 
 		//Swap buffers
 		glfwSwapBuffers(m_window);

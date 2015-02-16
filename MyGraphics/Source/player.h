@@ -63,15 +63,10 @@ public:
 		hOrientation = 0;
 		vOrientation = 0;
 
-		velocity = Vector3(50,40,50);
 		value[mouseSens] = 10.f;
-		value[eyeLevel] = 12.f;
 
 		state[JUMP] = false;
 		value[jumpCooldown] = 0.f;
-
-		collision.hitbox = Vector3(3, 14, 3);
-		collision.centre = Vector3(0, 7.f, 0);
 
 		inventory.Init(Vector3(0,-10.5,0));
 	};
@@ -89,6 +84,7 @@ public:
 	vector<Loot*> loot;
 
 	bool checkCollision(Object* b);
+	void InitPos();
 	void Control(double dt, vector<Object*>object);
 	void Update(double dt, vector<Object*>object);
 };
