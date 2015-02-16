@@ -62,7 +62,6 @@ class PROJECTScene : public Scene
 
 	void RenderSkybox();
 	void RenderCrosshair();
-	void RenderFishtank();
 	void RenderGarfield(Garfield garfield, float legR, float legT);
 
 public:
@@ -70,6 +69,7 @@ public:
 	~PROJECTScene();
 
 	virtual void Init();
+	void InitJunk();
 	virtual void Update(double dt);
 	virtual void Render();
 	virtual void Exit();
@@ -85,10 +85,7 @@ private:
 
 	std::vector<Object*> object;
 	std::vector<Particles*> blood;
-	FishTank fishtank;
 	Doorway doorway;
-	Garfield garfield;
-	Garfield realGarfield;
 	Light light[3];
 	void RenderMesh(Mesh *mesh, bool enableLight);
 	void RenderText(Mesh* mesh, std::string text, Color color);

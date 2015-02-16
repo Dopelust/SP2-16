@@ -28,10 +28,9 @@ class Object
 public:
 	Object() { ignoreCollision = false; };
 	Object(Vector3 p, Vector3 c, Vector3 h); 
-	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* b); //Camera
+	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* b); //Bounding Box Only
 	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b); //Normal Objects
-	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o); //Normal Objects with different size and orientation
-	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, bool i, float o); //Interactive Objects
+	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i); //Full Constructor
 	~Object() {};
 
 	Vector3 position;
@@ -47,7 +46,8 @@ public:
 class Item : public Object
 {
 public:
-	Item();
+	Item() {ignoreCollision = true;};
+	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {};
 	~Item();
 
 	bool paid;
@@ -109,40 +109,7 @@ public:
 	void Update(double dt);
 };
 
-class Fish : public Object
-{
-public:
-	Fish() {};
-	void Init(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b);
-	~Fish() {};
-
-	Vector3 direction;
-	float swim;
-	float orientation;
-
-	void Update(double dt);
-};
-
-class FishTank : public Object
-{
-public:
-	FishTank() {};
-	~FishTank() {};
-
-	Fish fish[3];
-
-	Wall Front;
-	Wall Back;
-	Wall Top;
-	Wall Bottom;
-	Wall Left;
-	Wall Right;
-
-	void Init(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b);
-	void Update(double dt);
-};
- 
-class Particles //blood particles upon vector to cube collision on garfield (if got time)
+class Particles
 {
 public:
 	Particles(Vector3 pos) 
