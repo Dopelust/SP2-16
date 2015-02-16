@@ -55,6 +55,8 @@ public:
 	};
 	Player() 
 	{ 
+		InitPos();
+
 		for (int i = 0; i < TOTAL_VALUES; i++)
 		{
 			value[i] = 0.f;

@@ -90,38 +90,33 @@ void PROJECTScene::InitJunk()
 	meshList[GEO_TOP]->textureID = LoadTGA("Image//Skybox//top.tga");
 }
 
-void PROJECTScene::Init()
+void PROJECTScene::RicssonInit()
 {
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-
-	glEnable(GL_DEPTH_TEST);
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	glDisable(GL_CULL_FACE);
-	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-
-	glGenVertexArrays(1, &m_vertexArrayID);
-	glBindVertexArray(m_vertexArrayID);
-
-	InitJunk();
-
-	camera.Init(Vector3(85,12,-10), Vector3(80, 12, -10), Vector3(0, 1, 0));
-
 	Mesh* tempMesh;
 	Mesh* cube;
 	Vector3 hitBox;
 	float size = 0;
 
 	hitBox = player.collision.hitbox; player.collision.boundingBox =  MeshBuilder::GenerateCube("PlayerHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	
+	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//shelf-2.obj"); tempMesh->textureID = LoadTGA("Image//shelf-blue.tga");
+	hitBox = Vector3(8,6,3); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+
+	for (int x = -10; x <= 10; x+=10)
+	{	
+		for (int z = -30; z >= -54; z-=12)
+		{
+			object.push_back( new Object(Vector3(x,0,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+		}
+	}
+
+	tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
+	hitBox = Vector3(200, 0.1f, 85); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Item(Vector3(0,0,-22.4375), Vector3(0,0,0), hitBox, tempMesh, cube, 1, 0, false) );
 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 200.f, 84.875f, 30); tempMesh->textureID = LoadTGA("Image//floor.tga");
 	hitBox = Vector3(200, 0.1f, 85); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,0,-22.4375), Vector3(0,0,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//shelf-2.obj"); tempMesh->textureID = LoadTGA("Image//shelf-blue.tga");
-	hitBox = Vector3(7,6,3); cube = MeshBuilder::GenerateCube("StepsHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,0,-30), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube) );
-	object.push_back( new Object(Vector3(0,0,-30), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("Elevator Border", "OBJ//elevatorborder.obj"); tempMesh->textureID = LoadTGA("Image//silver.tga");
 	hitBox = Vector3(1.75f, 40.25f, 3.5f); cube = MeshBuilder::GenerateCube("ElevatorBorderHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
@@ -141,7 +136,54 @@ void PROJECTScene::Init()
 	object.push_back( &doorway.Door[1] );
 	object.push_back( &doorway.Button[0] );
 	object.push_back( &doorway.Button[1] );
-	
+}
+
+void PROJECTScene::JeremiahInit()
+{
+	Mesh* tempMesh;
+	Mesh* cube;
+	Vector3 hitBox;
+	float size = 0;
+}
+
+void PROJECTScene::JessicaInit()
+{
+	Mesh* tempMesh;
+	Mesh* cube;
+	Vector3 hitBox;
+	float size = 0;
+}
+
+void PROJECTScene::DarrenInit()
+{
+	Mesh* tempMesh;
+	Mesh* cube;
+	Vector3 hitBox;
+	float size = 0;
+}
+
+void PROJECTScene::Init()
+{
+	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+
+	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	glDisable(GL_CULL_FACE);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
+	glGenVertexArrays(1, &m_vertexArrayID);
+	glBindVertexArray(m_vertexArrayID);
+
+	InitJunk();
+
+	camera.Init(Vector3(85,12,-10), Vector3(80, 12, -10), Vector3(0, 1, 0));
+
+	RicssonInit();
+	JeremiahInit();
+	JessicaInit();
+	DarrenInit();
+
 	meshList[GEO_CUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 0.1f, 0.1f, 0.1f, 1);
 	meshList[GEO_BIGCUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 36.f, 36.f, 36.f, 1);
 

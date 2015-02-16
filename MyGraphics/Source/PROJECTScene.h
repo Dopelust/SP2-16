@@ -74,6 +74,11 @@ public:
 	virtual void Render();
 	virtual void Exit();
 
+	void RicssonInit();
+	void JeremiahInit();
+	void JessicaInit();
+	void DarrenInit();
+
 	static bool checkCollision(Camera3 a, Object* b);
 	static bool checkCollision(Object* a, Object* b);
 
