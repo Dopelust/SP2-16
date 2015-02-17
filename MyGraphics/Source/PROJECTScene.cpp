@@ -133,25 +133,6 @@ void PROJECTScene::RicssonInit()
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 200.f, 84.875f, 30); tempMesh->textureID = LoadTGA("Image//floor.tga");
 	hitBox = Vector3(200, 0.1f, 85); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,0,-22.4375), Vector3(0,0,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("Elevator Border", "OBJ//elevatorborder.obj"); tempMesh->textureID = LoadTGA("Image//silver.tga");
-	hitBox = Vector3(1.75f, 40.25f, 3.5f); cube = MeshBuilder::GenerateCube("ElevatorBorderHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(9.625,0,20), Vector3(0,20.125f,0), hitBox, tempMesh, cube) );
-	object.push_back( new Object(Vector3(-9.625,0,20), Vector3(0,20.125f,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("Button", "OBJ//button.obj"); tempMesh->textureID = LoadTGA("Image//buttonOff.tga");
-	hitBox = Vector3(1.4f, 2.1f, 0.4f); cube = MeshBuilder::GenerateCube("ButtonHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	Object ButtonIn(Vector3(-13,8,-1), Vector3(0,1.05f,0), hitBox, tempMesh, cube, 1, 0, true);
-	Object ButtonOut(Vector3(-13,8,1), Vector3(0,1.05f,0), hitBox, tempMesh, cube, 1, 180, true);
-
-	tempMesh = MeshBuilder::GenerateOBJ("Elevator Door", "OBJ//elevatordoor.obj"); tempMesh->textureID = LoadTGA("Image//elevatordoor.tga");
-	hitBox = Vector3(8.8f,18,1.2f); cube = MeshBuilder::GenerateCube("ElevatorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	Object Door(Vector3(0,0,0), Vector3(0,9,0), hitBox, tempMesh, cube);
-	doorway.Init(Vector3(0,0,20), Door, ButtonIn, ButtonOut);
-	object.push_back( &doorway.Door[0] );
-	object.push_back( &doorway.Door[1] );
-	object.push_back( &doorway.Button[0] );
-	object.push_back( &doorway.Button[1] );
 }
 
 void PROJECTScene::JeremiahInit()
@@ -245,7 +226,7 @@ void PROJECTScene::Init()
 	meshList[GEO_BIGCUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 36.f, 36.f, 36.f, 1);
 
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
-	meshList[GEO_TEXT]->textureID = LoadTGA("Image//Fonterino.tga");
+	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
 	
 	meshList[GEO_KNIFE] = MeshBuilder::GenerateOBJ("knife", "OBJ//arm2.obj");
 	meshList[GEO_KNIFE]->textureID = LoadTGA("Image//arm.tga");
