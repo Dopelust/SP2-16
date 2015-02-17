@@ -9,7 +9,7 @@ using namespace::std;
 void Player::InitPos()
 {
 	value[eyeLevel] = 5.5f;
-	collision.hitbox = Vector3(3, 6.f, 3);
+	collision.hitbox = Vector3(2.f, 6.f, 2.f);
 	collision.centre = Vector3(0, collision.hitbox.y/2, 0);
 }
 void Player::Update(double dt, vector<Object*>object)
@@ -133,6 +133,8 @@ void Player::Control(double dt, vector<Object*>object)
 
 	state[SPRINT] = false;
 
+	Vector3 initialPos = position;
+
 	if(Application::IsKeyPressed('A'))
 	{
 		position -= right * velocity * float(dt); state[WALK] = true;
@@ -201,6 +203,10 @@ void Player::Control(double dt, vector<Object*>object)
 			Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
 			Vector3 maxCube = Cube; maxCube += object[i]->position;
 			Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
+
+			Vector3 maxPlayer = collision.hitbox/2; maxPlayer.y = collision.hitbox.y; maxPlayer += initialPos;
+			Vector3 minPlayer = -collision.hitbox/2; minPlayer.y = 0; minPlayer += initialPos;
+
 			Vector3 pos = position; //y is ground
 						
 			if(Vector3(0,1,0).Dot(maxCube - pos) < 0.75f)
@@ -216,30 +222,24 @@ void Player::Control(double dt, vector<Object*>object)
 
 			else
 			{
-				pos = position; pos += collision.centre; 
-
-				if( Vector3(0,0,-1).Dot(minCube - pos) < 0 || Vector3(0,0,1).Dot(maxCube - pos) < 0)
+				if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
 				{
-					if(Application::IsKeyPressed('A'))
-						position.z += right.z * velocity.z * float(dt);
-					if( Application::IsKeyPressed('D'))
-						position.z -= right.z * velocity.z * float(dt); 
-					if(Application::IsKeyPressed('W'))
-						position.z -= direction.z * velocity.z * float(dt);
-					if(Application::IsKeyPressed('S'))
-						position.z += direction.z * velocity.z * float(dt);
+					position.z = maxCube.z + collision.hitbox.z/2;
 				}
 
-				if(  Vector3(-1,0,0).Dot(minCube - pos) < 0 || Vector3(1,0,0).Dot(maxCube - pos) < 0)
+				if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
 				{
-					if(Application::IsKeyPressed('A'))
-						position.x += right.x * velocity.x * float(dt);
-					if( Application::IsKeyPressed('D'))
-						position.x -= right.x * velocity.x * float(dt); 
-					if(Application::IsKeyPressed('W'))
-						position.x -= direction.x * velocity.x * float(dt);
-					if(Application::IsKeyPressed('S'))
-						position.x += direction.x * velocity.x * float(dt);
+					position.z = minCube.z - collision.hitbox.z/2;
+				}
+
+				if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+				{
+					position.x = maxCube.x + collision.hitbox.x/2;
+				}
+
+				if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+				{
+					position.x = minCube.x - collision.hitbox.x/2;
 				}
 			}
 

@@ -32,6 +32,7 @@ public:
 	int index;
 	int emptySlot();
 
+	void Insert(Object* o);
 	void Init(Vector3 pos);
 	void Update(double dt);
 };

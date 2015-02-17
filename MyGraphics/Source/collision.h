@@ -6,6 +6,8 @@
 #include "MeshBuilder.h"
 #include "LoadTGA.h"
 
+#include <string>
+
 struct Collision
 {
 	Vector3 centre;
@@ -33,6 +35,7 @@ public:
 	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i); //Full Constructor
 	~Object() {};
 
+	std::string type;
 	Vector3 position;
 	Collision collision;
 	Mesh* mesh;
@@ -47,7 +50,7 @@ class Item : public Object
 {
 public:
 	Item() {ignoreCollision = true;};
-	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {};
+	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {paid = false; type = "Item";};
 	~Item();
 
 	bool paid;
