@@ -11,12 +11,11 @@ void Inventory::Init(Vector3 pos)
 		slots[i].position = position; slots[i].position.x += (-4*2 + i*2);
 	}
 
-	selector = new Slot;
-	selector->mesh =  MeshBuilder::GenerateXYQuad("Selector", Color(1, 1, 1), 2.3f, 2.3f, 1); 
-	selector->mesh->textureID = LoadTGA("Image//Selector.tga");
+	selector.mesh =  MeshBuilder::GenerateXYQuad("Selector", Color(1, 1, 1), 2.3f, 2.3f, 1); 
+	selector.mesh->textureID = LoadTGA("Image//Selector.tga");
 
 	index = 0;
-	selector->position = slots[index].position; selector->position.z++;
+	selector.selectedSlot= &slots[index];
 };
 
 void Inventory::Update(double dt)
@@ -56,7 +55,7 @@ void Inventory::Update(double dt)
 	if (Application::IsKeyPressed('9'))
 		index = 8;
 
-	selector->position = slots[index].position;
+	selector.selectedSlot = &slots[index];
 }
 
 void Inventory::Insert(Object* o)

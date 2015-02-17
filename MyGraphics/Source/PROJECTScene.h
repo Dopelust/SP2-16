@@ -12,6 +12,7 @@
 #include "LoadTGA.h"
 #include "collision.h"
 #include "player.h"
+#include "NPC.h"
 
 #include <vector>
 #include <string>
@@ -30,7 +31,7 @@ class PROJECTScene : public Scene
 		GEO_LIGHTBALL,
 		GEO_QUAD,
 		GEO_TEXT,
-		GEO_KNIFE,
+		GEO_ARM,
 		GEO_LINE,
 		GEO_CUBE,
 		GEO_BIGCUBE,
@@ -63,6 +64,7 @@ class PROJECTScene : public Scene
 	void RenderSkybox();
 	void RenderCrosshair();
 	void RenderGarfield(Garfield garfield, float legR, float legT);
+	void InitSuperMarket();
 
 public:
 	PROJECTScene();
@@ -88,6 +90,7 @@ private:
 	unsigned m_programID;
 	unsigned m_parameters[U_TOTAL];
 
+	std::vector<NPC*> character;
 	std::vector<Object*> object;
 	std::vector<Particles*> blood;
 	Doorway doorway;

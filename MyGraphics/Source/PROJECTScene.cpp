@@ -129,29 +129,10 @@ void PROJECTScene::RicssonInit()
 	{
 		object.push_back( new Item(Vector3(-3,y,-20), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
-
-	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 200.f, 84.875f, 30); tempMesh->textureID = LoadTGA("Image//floor.tga");
-	hitBox = Vector3(200, 0.1f, 85); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,0,-22.4375), Vector3(0,0,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("Elevator Border", "OBJ//elevatorborder.obj"); tempMesh->textureID = LoadTGA("Image//silver.tga");
-	hitBox = Vector3(1.75f, 40.25f, 3.5f); cube = MeshBuilder::GenerateCube("ElevatorBorderHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(9.625,0,20), Vector3(0,20.125f,0), hitBox, tempMesh, cube) );
-	object.push_back( new Object(Vector3(-9.625,0,20), Vector3(0,20.125f,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("Button", "OBJ//button.obj"); tempMesh->textureID = LoadTGA("Image//buttonOff.tga");
-	hitBox = Vector3(1.4f, 2.1f, 0.4f); cube = MeshBuilder::GenerateCube("ButtonHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	Object ButtonIn(Vector3(-13,8,-1), Vector3(0,1.05f,0), hitBox, tempMesh, cube, 1, 0, true);
-	Object ButtonOut(Vector3(-13,8,1), Vector3(0,1.05f,0), hitBox, tempMesh, cube, 1, 180, true);
-
-	tempMesh = MeshBuilder::GenerateOBJ("Elevator Door", "OBJ//elevatordoor.obj"); tempMesh->textureID = LoadTGA("Image//elevatordoor.tga");
-	hitBox = Vector3(8.8f,18,1.2f); cube = MeshBuilder::GenerateCube("ElevatorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	Object Door(Vector3(0,0,0), Vector3(0,9,0), hitBox, tempMesh, cube);
-	doorway.Init(Vector3(0,0,20), Door, ButtonIn, ButtonOut);
-	object.push_back( &doorway.Door[0] );
-	object.push_back( &doorway.Door[1] );
-	object.push_back( &doorway.Button[0] );
-	object.push_back( &doorway.Button[1] );
+	
+	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 160.f, 130.f, 30); tempMesh->textureID = LoadTGA("Image//floor.tga");
+	hitBox = Vector3(160, 0.1f, 130.f); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,-22.5), Vector3(0,0,0), hitBox, tempMesh, cube) );
 }
 
 void PROJECTScene::JeremiahInit()
@@ -160,6 +141,56 @@ void PROJECTScene::JeremiahInit()
 	Mesh* cube;
 	Vector3 hitBox;
 	float size = 0;
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hobo Character~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	character.push_back( new Hobo());
+
+	for (unsigned int i = 0; i < character.size(); i++)
+	{
+		for (unsigned j = 0; j < character[i]->NUM_BODYPARTS; j++)
+		{
+			object.push_back( &character[i]->bodyParts[j] );
+		}
+	}
+
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	tempMesh = MeshBuilder::GenerateOBJ("RightWall", "OBJ//BuildingOBJ//RightWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(2, 12.8, 130); cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(80,0,-22.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("LeftWall", "OBJ//BuildingOBJ//LeftWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(2, 12.8, 130); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-80,0,-22.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("BackWall", "OBJ//BuildingOBJ//BackWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-45,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("BackWall", "OBJ//BuildingOBJ//BackWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(45,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("FrontWall", "OBJ//BuildingOBJ//FrontWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-45,0,-88), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("FrontWall", "OBJ//BuildingOBJ//FrontWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(45,0,-88), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("FloorFront", "OBJ//BuildingOBJ//Floor&Ceiling.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,17,0), Vector3(0,0,0), hitBox, tempMesh, cube) ); //~~~~~~~~~~~~~~~~~~~~~~~Tentative height of second floor~~~~~~~
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market(Inside of SuperMarket)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//BuildingOBJ//S_Walk.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
+	hitBox = Vector3(130, 2, 26); cube = MeshBuilder::GenerateCube("SideWalk", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,-1.6,-100.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//BuildingOBJ//Road.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
+	hitBox = Vector3(130, 2, 78); cube = MeshBuilder::GenerateCube("Road", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,-2,-152), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
 }
 
 void PROJECTScene::JessicaInit()
@@ -171,11 +202,54 @@ void PROJECTScene::JessicaInit()
 }
 
 void PROJECTScene::DarrenInit()
-{
-	Mesh* tempMesh;
+{	Mesh* tempMesh;
 	Mesh* cube;
 	Vector3 hitBox;
 	float size = 0;
+
+	tempMesh = MeshBuilder::GenerateOBJ("Elevator Border", "OBJ//elevatorborder.obj"); tempMesh->textureID = LoadTGA("Image//silver.tga");
+	hitBox = Vector3(1.75f, 40.25f, 3.5f); cube = MeshBuilder::GenerateCube("ElevatorBorderHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(6,0,20), Vector3(0,20.125f,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-6,0,20), Vector3(0,20.125f,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("Button", "OBJ//button.obj"); tempMesh->textureID = LoadTGA("Image//buttonOff.tga");
+	hitBox = Vector3(1, 2.1f, 1.4f); cube = MeshBuilder::GenerateCube("ButtonHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object ButtonIn(Vector3(-10,4,-1), Vector3(0,1.05f,0), hitBox, tempMesh, cube, 1, 0, true);
+	Object ButtonOut(Vector3(5.5,4,3), Vector3(0,1.05f,0), hitBox, tempMesh, cube, 1, 90, true);
+
+	tempMesh = MeshBuilder::GenerateOBJ("Elevator Door", "OBJ//elevatordoor.obj"); tempMesh->textureID = LoadTGA("Image//elevatordoor.tga");
+	hitBox = Vector3(6.7,18,1.2f); cube = MeshBuilder::GenerateCube("ElevatorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object Door(Vector3(0,0,0), Vector3(0,9,0), hitBox, tempMesh, cube);
+	doorway.Init(Vector3(0,0,20), Door, ButtonIn, ButtonOut);
+	object.push_back( &doorway.Door[0] );
+	object.push_back( &doorway.Door[1] );
+	object.push_back( &doorway.Button[0] );
+	object.push_back( &doorway.Button[1] );
+
+	tempMesh = MeshBuilder::GenerateOBJ("elevator", "OBJ//elevatorright.obj"); tempMesh->textureID = LoadTGA("Image//white.tga");
+	hitBox = Vector3(1, 9, 11); cube = MeshBuilder::GenerateCube("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-13,0,25), Vector3(6.5,4.5f,-0.55f), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("elevator", "OBJ//elevatorleft.obj"); tempMesh->textureID = LoadTGA("Image//white.tga");
+	hitBox = Vector3(1, 9, 11); cube = MeshBuilder::GenerateCube("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(13,0,25), Vector3(-6.5,4.5f,-0.55f), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("elevator", "OBJ//elevatorbottom.obj"); tempMesh->textureID = LoadTGA("Image//white.tga");
+	hitBox = Vector3(11, 1, 9); cube = MeshBuilder::GenerateCube("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,25), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("elevator", "OBJ//elevatortop.obj"); tempMesh->textureID = LoadTGA("Image//white.tga");
+	hitBox = Vector3(11, 1, 9); cube = MeshBuilder::GenerateCube("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,26), Vector3(0,9,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("elevator", "OBJ//elevatorback.obj"); tempMesh->textureID = LoadTGA("Image//white.tga");
+	hitBox = Vector3(11, 9, 1); cube = MeshBuilder::GenerateCube("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,34), Vector3(0,4,-5), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("atm", "OBJ//atm.obj"); tempMesh->textureID = LoadTGA("Image//atm.tga");
+	hitBox = Vector3(8, 8, 9); cube = MeshBuilder::GenerateCube("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(5, 0 ,0), Vector3(0,5,0.5), hitBox, tempMesh, cube) );
+
 }
 
 void PROJECTScene::Init()
@@ -203,11 +277,11 @@ void PROJECTScene::Init()
 	meshList[GEO_CUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 0.1f, 0.1f, 0.1f, 1);
 	meshList[GEO_BIGCUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 36.f, 36.f, 36.f, 1);
 
-	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
-	meshList[GEO_TEXT]->textureID = LoadTGA("Image//calibri.tga");
+	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16.f, 16.f);
+	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
 	
-	meshList[GEO_KNIFE] = MeshBuilder::GenerateOBJ("knife", "OBJ//arm2.obj");
-	meshList[GEO_KNIFE]->textureID = LoadTGA("Image//arm.tga");
+	meshList[GEO_ARM] = MeshBuilder::GenerateOBJ("Arm", "OBJ//CharOBJ//fpArm.obj");
+	meshList[GEO_ARM]->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
 
 	meshList[GEO_LINE] = MeshBuilder::GenerateLine("crosshair", Color(0,1,0), 0.15f);
 
@@ -427,7 +501,6 @@ void PROJECTScene::Render()
 			RenderMesh(object[i]->collision.boundingBox, false);
 			modelStack.PopMatrix();
 		}
-
 		modelStack.PushMatrix();
 		modelStack.Translate(player.position);
 		modelStack.Translate(player.collision.centre);
@@ -458,9 +531,6 @@ void PROJECTScene::Render()
 		modelStack.PopMatrix();
 	}
 	//2D
-
-	glDisable(GL_DEPTH_TEST);
-
 	modelStack.PushMatrix();
 	viewStack.PushMatrix();
 	projectionStack.PushMatrix();
@@ -468,17 +538,35 @@ void PROJECTScene::Render()
 	modelStack.LoadIdentity();
 	viewStack.LoadIdentity();
 	projectionStack.Ortho(-10, 10, -10, 10, 0, 10);
-	
-	modelStack.PushMatrix();
-	modelStack.Translate(1 + player.value[player.bobbing],-1,-10);
-	modelStack.Scale(1,1,1);
-	RenderMesh(meshList[GEO_KNIFE], true);
-	modelStack.PopMatrix();
 
 	RenderCrosshair();
 
-	projection.SetToOrtho(-16, 16, -12, 12, -10, 10);
+	projection.SetToOrtho(-16, 16, -12, 12, -20, 20);
 	projectionStack.LoadMatrix(projection);
+
+	if (!player.inventory.selector.selectedSlot->item.empty())
+	{
+		modelStack.PushMatrix();
+		modelStack.Translate(10 + player.value[player.bobbingX],-12 + player.value[player.bobbingY],-2);
+		modelStack.Rotate(-45,0,1,0);
+		modelStack.Rotate(-10,0,0,1);
+		modelStack.Scale(10,10,10);
+		RenderMesh(player.inventory.selector.selectedSlot->item[0]->mesh, true);
+		modelStack.PopMatrix();
+	}
+	else
+	{/*
+		modelStack.PushMatrix();
+		modelStack.Translate(1 + player.value[player.bobbingX], -1 + player.value[player.bobbingY], -4);
+		//modelStack.Rotate(-5,1,0,0);
+		modelStack.Rotate(-95,0,1,0);
+		//modelStack.Rotate(20,0,0,1);
+		//modelStack.Scale(7.5,8,10);
+		RenderMesh(meshList[GEO_ARM], true);
+		modelStack.PopMatrix();*/
+	}
+
+	glDisable(GL_DEPTH_TEST);
 
 	for (int i = 0; i < 9; i++)
 	{
@@ -501,8 +589,8 @@ void PROJECTScene::Render()
 	}
 
 	modelStack.PushMatrix();
-	modelStack.Translate(player.inventory.selector->position);
-	RenderMesh(player.inventory.selector->mesh, false);
+	modelStack.Translate(player.inventory.selector.selectedSlot->position);
+	RenderMesh(player.inventory.selector.mesh, false);
 	modelStack.PopMatrix();
 
 	string x = to_string(long double(camera.position.x));
@@ -531,7 +619,7 @@ void PROJECTScene::Render()
 
 		modelStack.PushMatrix();
 		modelStack.Translate(-7,-5,0);
-		modelStack.Scale(0.5f,0.5f,0.5f);
+		modelStack.Scale(0.75f,1,0.75f);
 		RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
@@ -601,7 +689,7 @@ void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 	for(unsigned i = 0; i < text.length(); ++i)
 	{
 		Mtx44 characterSpacing;
-		characterSpacing.SetToTranslation(i * 1.0f, 0, 0); //1.0f is the spacing of each character, you may change this value
+		characterSpacing.SetToTranslation(i * 1.f, 0, 0); //1.0f is the spacing of each character, you may change this value
 		Mtx44 MVP = projectionStack.Top() * viewStack.Top() * modelStack.Top() * characterSpacing;
 		glUniformMatrix4fv(m_parameters[U_MVP], 1, GL_FALSE, &MVP.a[0]);
 	
