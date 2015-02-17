@@ -43,7 +43,8 @@ public:
 
 	enum playerValues
 	{
-		bobbing,
+		bobbingX,
+		bobbingY,
 		knifeRotation,
 		knifeStrike,
 		knifeCooldown,
@@ -87,8 +88,8 @@ public:
 
 	bool checkCollision(Object* b);
 	void InitPos();
-	void Control(double dt, vector<Object*>object);
-	void Update(double dt, vector<Object*>object);
+	virtual void Control(double dt, vector<Object*>object);
+	virtual void Update(double dt, vector<Object*>object);
 };
 
 #endif

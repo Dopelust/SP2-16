@@ -20,6 +20,16 @@ public:
 	Mesh * mesh;
 };
 
+class Selector
+{
+public:
+	Selector() {};
+	~Selector() {};
+
+	Mesh * mesh;
+	Slot * selectedSlot;
+};
+
 class Inventory
 {
 public:
@@ -28,7 +38,7 @@ public:
 
 	Vector3 position;
 	Slot slots[9];
-	Slot* selector;
+	Selector selector;
 	int index;
 	int emptySlot();
 
