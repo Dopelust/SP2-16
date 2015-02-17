@@ -12,6 +12,7 @@
 #include "LoadTGA.h"
 #include "collision.h"
 #include "player.h"
+#include "NPC.h"
 
 #include <vector>
 #include <string>
@@ -89,6 +90,7 @@ private:
 	unsigned m_programID;
 	unsigned m_parameters[U_TOTAL];
 
+	std::vector<NPC*> character;
 	std::vector<Object*> object;
 	std::vector<Particles*> blood;
 	Doorway doorway;

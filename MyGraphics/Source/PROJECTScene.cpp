@@ -168,29 +168,16 @@ void PROJECTScene::JeremiahInit()
 	float size = 0;
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hobo Character~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//Head.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	hitBox = Vector3(1.5f, 1.5f, 1.5f); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,0,0), Vector3(0,5.25f,0), hitBox, tempMesh, cube) );
+	character.push_back( new Hobo());
 
-	tempMesh = MeshBuilder::GenerateOBJ("Body", "OBJ//CharOBJ//Body.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	hitBox = Vector3(1.5f, 2.25f, 0.75f); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,0,0), Vector3(0,3.375f,0), hitBox, tempMesh, cube) );\
+	for (unsigned int i = 0; i < character.size(); i++)
+	{
+		for (unsigned j = 0; j < character[i]->NUM_BODYPARTS; j++)
+		{
+			object.push_back( &character[i]->bodyParts[j] );
+		}
+	}
 
-	tempMesh = MeshBuilder::GenerateOBJ("Left Arm", "OBJ//CharOBJ//LeftArm.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	hitBox = Vector3(0.75f, 2.25f, 0.75f); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,0,0), Vector3(-1.125f,3.375f,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("Right Arm", "OBJ//CharOBJ//RightArm.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,0,0), Vector3(1.125f,3.375f,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("Left Leg", "OBJ//CharOBJ//LeftLeg.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,0,0), Vector3(-0.375f,1.125f,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("Right Leg", "OBJ//CharOBJ//RightLeg.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,0,0), Vector3(0.375f,1.125f,0), hitBox, tempMesh, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	tempMesh = MeshBuilder::GenerateOBJ("RightWall", "OBJ//BuildingOBJ//RightWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
@@ -229,8 +216,6 @@ void PROJECTScene::JeremiahInit()
 	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//BuildingOBJ//Road.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
 	hitBox = Vector3(130, 2, 78); cube = MeshBuilder::GenerateCube("Road", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,-2,-152), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
-
-
 }
 
 void PROJECTScene::JessicaInit()
@@ -500,6 +485,16 @@ void PROJECTScene::Render()
 	RenderSkybox();
 	modelStack.PopMatrix();
 
+	for (unsigned int i = 0; i < character.size(); i++)
+	{
+		for (unsigned j = 0; j < character[i]->NUM_BODYPARTS; j++)
+		{
+			modelStack.PushMatrix();
+			RenderMesh(character[i]->bodyParts[j].mesh, true);
+			modelStack.PopMatrix();
+		}
+	}
+
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
 		if (object[i]->mesh != NULL)
@@ -540,6 +535,17 @@ void PROJECTScene::Render()
 			modelStack.PopMatrix();
 		}
 
+		for (unsigned int i = 0; i < character.size(); i++)
+		{
+			for (unsigned j = 0; j < character[i]->NUM_BODYPARTS; j++)
+			{
+				modelStack.PushMatrix();
+				modelStack.Translate(character[i]->bodyParts[j].position);
+				modelStack.Translate(character[i]->bodyParts[j].collision.centre);
+				RenderMesh(character[i]->bodyParts[j].collision.boundingBox, true);
+				modelStack.PopMatrix();
+			}
+		}
 		modelStack.PushMatrix();
 		modelStack.Translate(player.position);
 		modelStack.Translate(player.collision.centre);
