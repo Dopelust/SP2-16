@@ -14,6 +14,7 @@
 #include "player.h"
 #include "NPC.h"
 
+#include <fstream>
 #include <vector>
 #include <string>
 
@@ -98,6 +99,7 @@ private:
 	void RenderMesh(Mesh *mesh, bool enableLight);
 	void RenderText(Mesh* mesh, std::string text, Color color);
 	void RenderTextOnScreen(Mesh* mesh, std::string text, Color color, float size, float x, float y);
+	float getTextWidth(string t);
 
 	Camera3 camera;
 	Player player;

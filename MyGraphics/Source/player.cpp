@@ -130,7 +130,7 @@ void Player::Control(double dt, vector<Object*>object)
 		collision.hitbox.y = 3.f;
 		collision.centre.y = collision.hitbox.y/2;
 		value[eyeLevel] = 2.5f;
-		velocity = Vector3(15,30,15);
+		velocity = Vector3(15,velocity.y,15);
 	}
 	else
 	{
@@ -138,9 +138,9 @@ void Player::Control(double dt, vector<Object*>object)
 	}
 
 	if(Application::IsKeyPressed(VK_SHIFT) && !Application::IsKeyPressed(VK_CONTROL))
-		velocity = Vector3(40,30,40);
+		velocity = Vector3(40,velocity.y,40);
 	else if (!Application::IsKeyPressed(VK_CONTROL))
-		velocity = Vector3(30,30,30);
+		velocity = Vector3(30,velocity.y,30);
 	
 	if (count == 2)
 	{
@@ -177,97 +177,69 @@ void Player::Control(double dt, vector<Object*>object)
 			state[SPRINT] = true;
 	}
 
-	if(Application::IsKeyPressed(VK_SPACE) && !state[JUMP] && value[jumpCooldown] == 0 && Math::distBetween(position.y, value[groundLevel]) >= 0 && Math::distBetween(position.y, value[groundLevel]) < 0.75f)
+	if(Application::IsKeyPressed(VK_SPACE) && !state[JUMP] && velocity.y == 0 && value[jumpCooldown] == 0)
 	{
-		state[JUMP] = true; state[GROUND] = false; originalPos = position; value[jumpCooldown] = 0.5f; 
+		originalPos = position; velocity.y = 30;
 	}
 
-	if (state[JUMP]) //Jump
-	{
-		position.y += (float)(velocity.y * dt); 
+	if (velocity.y > 0)
+		state[JUMP] = true;
+	else
+		state[JUMP] = false;
 
-		if(position.y > (originalPos.y + 5))
-		{
-			state[JUMP] = false;
-		}
-	}
+	velocity.y -= 80 * dt;
+	position.y += (float)(velocity.y * dt); 
 
-	else //Fall to ground
-	{
-		if (position.y > value[groundLevel])
-		{
-			position.y -= (float)(velocity.y * dt); 
-
-			if (position.y < value[groundLevel])
-			{
-				position.y = value[groundLevel];
-				state[GROUND] = true; 
-			}
-		}
-		else
-		{
-			velocity.y = 40;
-			state[GROUND] = true;
-		}
-	}
-	value[groundLevel] = 0.f; //Default
-	
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
 		if (!object[i]->ignoreCollision)
-		if (checkCollision(object[i]))
-		{
-			Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
-			Vector3 maxCube = Cube; maxCube += object[i]->position;
-			Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
-
-			Vector3 maxPlayer = collision.hitbox/2; maxPlayer.y = collision.hitbox.y; maxPlayer += initialPos;
-			Vector3 minPlayer = -collision.hitbox/2; minPlayer.y = 0; minPlayer += initialPos;
-
-			Vector3 pos = position; //y is ground
-						
-			if(Vector3(0,1,0).Dot(maxCube - pos) < 0.75f)
+			if (checkCollision(object[i]))
 			{
-				value[groundLevel] = maxCube.y;
-			}
-			
-			else if (Vector3(0,1,0).Dot(maxCube - pos) < 2.5f && state[GROUND] == true)
-			{
-				value[groundLevel] = maxCube.y;
-				position.y = maxCube.y;
-			}
+				Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
+				Vector3 maxCube = Cube; maxCube += object[i]->position;
+				Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
 
-			else
-			{
-				if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
+				Vector3 maxPlayer = collision.hitbox/2; maxPlayer.y = collision.hitbox.y; maxPlayer += initialPos;
+				Vector3 minPlayer = -collision.hitbox/2; minPlayer.y = 1; minPlayer += initialPos;
+
+				Vector3 pos = position; //y is ground
+
+				if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && velocity.y <= 0)
 				{
-					position.z = maxCube.z + collision.hitbox.z/2;
+					position.y = maxCube.y; 
+					velocity.y = 0;
 				}
 
-				if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
-				{
-					position.z = minCube.z - collision.hitbox.z/2;
+				else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
+				{	
+					velocity.y = 0;
 				}
 
-				if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+				else if (Vector3(0,1,0).Dot(maxCube - pos) < 2.5f && state[GROUND] == true)
 				{
-					position.x = maxCube.x + collision.hitbox.x/2;
+					value[groundLevel] = maxCube.y;
+					position.y = maxCube.y;
 				}
 
-				if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+				else 
 				{
-					position.x = minCube.x - collision.hitbox.x/2;
+					if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
+						position.z = maxCube.z + collision.hitbox.z/2;
+
+					if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
+						position.z = minCube.z - collision.hitbox.z/2;
+
+					if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+						position.x = maxCube.x + collision.hitbox.x/2;
+
+					if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+						position.x = minCube.x - collision.hitbox.x/2;
+
 				}
+
 			}
-
-			pos = position; pos.y += collision.hitbox.y; //head level
-			if(  Vector3(0,-1,0).Dot(minCube - pos) < 0.75f && state[JUMP] == true) //bump head
-			{	
-				state[JUMP] = false;
-			}
-		}
 	}
-	
+
 	float yaw = (float)(value[mouseSens] * dt * (float)(800/2 - Application::getMousePos().x));
 	hOrientation += yaw;
 
