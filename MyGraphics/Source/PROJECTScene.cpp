@@ -227,8 +227,7 @@ void PROJECTScene::JessicaInit()
 }
 
 void PROJECTScene::DarrenInit()
-{
-	Mesh* tempMesh;
+{	Mesh* tempMesh;
 	Mesh* cube;
 	Vector3 hitBox;
 	float size = 0;
