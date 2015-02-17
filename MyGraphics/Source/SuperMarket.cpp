@@ -1,15 +1,13 @@
-//#include "PROJECTScene.h"
-//#include "GL\glew.h"
-//
-//#include "shader.hpp"
+#include "PROJECTScene.h"
+#include "GL\glew.h"
+
+#include "shader.hpp"
 //#include "Mtx44.h"
 //
 //#include "Application.h"
 //#include "MeshBuilder.h"
 //
 //using namespace::std;
-//
-//void InitSuperMarket(void);
 //
 //void InitSuperMarket()
 //{

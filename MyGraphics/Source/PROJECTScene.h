@@ -63,6 +63,7 @@ class PROJECTScene : public Scene
 	void RenderSkybox();
 	void RenderCrosshair();
 	void RenderGarfield(Garfield garfield, float legR, float legT);
+	void InitSuperMarket();
 
 public:
 	PROJECTScene();

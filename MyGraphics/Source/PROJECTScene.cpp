@@ -130,7 +130,7 @@ void PROJECTScene::RicssonInit()
 		object.push_back( new Item(Vector3(-3,y,-20), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
 
-	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 200.f, 84.875f, 30); tempMesh->textureID = LoadTGA("Image//floor.tga");
+	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 160.0f, 130.0f, 30); tempMesh->textureID = LoadTGA("Image//floor.tga");
 	hitBox = Vector3(200, 0.1f, 85); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,0,-22.4375), Vector3(0,0,0), hitBox, tempMesh, cube) );
 }
@@ -148,39 +148,63 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("Body", "OBJ//CharOBJ//Body.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Body", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );\
 
 	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//LeftArm.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Arm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//RightArm.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Arm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//LeftLeg.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Leg", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//RightLeg.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Leg", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market(Inside of SuperMarket)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	tempMesh = MeshBuilder::GenerateOBJ("RightWall", "OBJ//BuildingOBJ//RightWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(2, 12.8, 130); cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(80,0,-22.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
 
-	tempMesh = MeshBuilder::GenerateOBJ("FloorFront", "OBJ//BuildingOBJ//Wall1.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	hitBox = Vector3(2.1, 12.8, 35); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	float z_temp = 21.5;
-	for(int i = 0; i < 3; i++)
-	{
-		object.push_back( new Object(Vector3(x,0,z_temp), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
-		z_temp -= 34.6;
-	}
+	tempMesh = MeshBuilder::GenerateOBJ("LeftWall", "OBJ//BuildingOBJ//LeftWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(2, 12.8, 130); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-80,0,-22.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("BackWall", "OBJ//BuildingOBJ//BackWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-46,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("BackWall", "OBJ//BuildingOBJ//BackWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(46,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("FrontWall", "OBJ//BuildingOBJ//FrontWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-45,0,-88), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("FrontWall", "OBJ//BuildingOBJ//FrontWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(45,0,-88), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("FloorFront", "OBJ//BuildingOBJ//Floor&Ceiling.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
-	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,17,0), Vector3(0,0,0), hitBox, tempMesh, cube) ); //~~~~~~~~~~~~~~~~~~~~~~~Tentative height of second floor~~~~~~~
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market(Inside of SuperMarket)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//BuildingOBJ//S_Walk.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
+	hitBox = Vector3(130, 2, 26); cube = MeshBuilder::GenerateCube("SideWalk", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,-1.6,-100.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//BuildingOBJ//Road.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
+	hitBox = Vector3(130, 2, 78); cube = MeshBuilder::GenerateCube("Road", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,-2,-152), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
 
 }
 
