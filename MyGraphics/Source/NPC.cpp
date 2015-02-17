@@ -34,10 +34,8 @@ void NPC::Init()
 
 void Hobo::Init()
 {
-	bodyParts[HEAD].mesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	bodyParts[BODY].mesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	bodyParts[L_ARM].mesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	bodyParts[R_ARM].mesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	bodyParts[L_LEG].mesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
-	bodyParts[R_LEG].mesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//hobo.tga");
+	}
 }
