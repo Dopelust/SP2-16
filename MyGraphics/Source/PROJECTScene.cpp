@@ -77,17 +77,17 @@ void PROJECTScene::InitJunk()
 	meshList[GEO_AXES] = MeshBuilder::GenerateAxes("reference");
 
 	meshList[GEO_FRONT] = MeshBuilder::GenerateQuad("front", Color(1, 1, 1), 1.f, 1.f, 1);
-	meshList[GEO_FRONT]->textureID = LoadTGA("Image//Skybox//front.tga");
+	meshList[GEO_FRONT]->textureID = LoadTGA("Image//Skybox//frontmc.tga");
 	meshList[GEO_BACK] = MeshBuilder::GenerateQuad("back", Color(1, 1, 1), 1.f, 1.f, 1);
-	meshList[GEO_BACK]->textureID = LoadTGA("Image//Skybox//back.tga");
+	meshList[GEO_BACK]->textureID = LoadTGA("Image//Skybox//backmc.tga");
 	meshList[GEO_LEFT] = MeshBuilder::GenerateQuad("left", Color(1, 1, 1), 1.f, 1.f, 1);
-	meshList[GEO_LEFT]->textureID = LoadTGA("Image//Skybox//left.tga");
+	meshList[GEO_LEFT]->textureID = LoadTGA("Image//Skybox//leftmc.tga");
 	meshList[GEO_RIGHT] = MeshBuilder::GenerateQuad("right", Color(1, 1, 1), 1.f, 1.f, 1);
-	meshList[GEO_RIGHT]->textureID = LoadTGA("Image//Skybox//right.tga");
+	meshList[GEO_RIGHT]->textureID = LoadTGA("Image//Skybox//rightmc.tga");
 	meshList[GEO_BOTTOM] = MeshBuilder::GenerateQuad("bottom", Color(1, 1, 1), 1.f, 1.f, 1);
-	meshList[GEO_BOTTOM]->textureID = LoadTGA("Image//Skybox//bottom.tga");
+	meshList[GEO_BOTTOM]->textureID = LoadTGA("Image//Skybox//floormc.tga");
 	meshList[GEO_TOP] = MeshBuilder::GenerateQuad("top", Color(1, 1, 1), 1.f, 1.f, 1);
-	meshList[GEO_TOP]->textureID = LoadTGA("Image//Skybox//top.tga");
+	meshList[GEO_TOP]->textureID = LoadTGA("Image//Skybox//topmc.tga");
 }
 
 void PROJECTScene::RicssonInit()
@@ -725,7 +725,7 @@ void PROJECTScene::RenderSkybox()
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	modelStack.Rotate(90,0,0,1);
-	RenderMesh(meshList[GEO_LEFT], false);
+	RenderMesh(meshList[GEO_RIGHT], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
@@ -733,13 +733,13 @@ void PROJECTScene::RenderSkybox()
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	modelStack.Rotate(-90,0,0,1);
-	RenderMesh(meshList[GEO_RIGHT], false);
+	RenderMesh(meshList[GEO_LEFT], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
 	modelStack.Translate(0,0.499f,0);
 	modelStack.Rotate(180,1,0,0);
-	modelStack.Rotate(-90,0,1,0);
+	modelStack.Rotate(180,0,1,0);
 	RenderMesh(meshList[GEO_TOP], false);
 	modelStack.PopMatrix();
 
