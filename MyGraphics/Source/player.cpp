@@ -1,6 +1,8 @@
 #include "player.h"
 
-static int swayDir = 1;
+static int bobXDir = 1;
+static int bobYDir = 1;
+
 static int knifeDir = 1;
 Vector3 originalPos;
 
@@ -24,23 +26,38 @@ void Player::Update(double dt, vector<Object*>object)
 
 	if (state[WALK] ==  false) //resetting to original location
 	{	
-		if(value[bobbing] * swayDir >= 0) //need to minus to reset
-			swayDir = -swayDir;
+		if(value[bobbingX] * bobXDir >= 0) //need to minus to reset
+			bobXDir = -bobXDir;
 
-		else if(value[bobbing] * swayDir <= 0) //need to plus to reset
-			swayDir = swayDir;
+		else if(value[bobbingX] * bobXDir <= 0) //need to plus to reset
+			bobXDir = bobXDir;
 
-		if(!(value[bobbing] > -0.05f && value[bobbing] < 0.05f)) //if not 0, reset
-			value[bobbing] += (float)(swayDir * 0.8f * dt); 
+		if(!(value[bobbingX] > -0.05f && value[bobbingX] < 0.05f)) //if not 0, reset
+			value[bobbingX] += (float)(bobXDir * 1.0f * dt); 
+
+		if(value[bobbingY] * bobYDir >= 0) //need to minus to reset
+			bobYDir = -bobYDir;
+
+		else if(value[bobbingY] * bobYDir <= 0) //need to plus to reset
+			bobYDir = bobYDir;
+
+		if(!(value[bobbingY] > -0.05f && value[bobbingY] < 0.05f)) //if not 0, reset
+			value[bobbingY] += (float)(bobYDir * 1.0f * dt); 
 	}
 
 	else if (state[WALK] == true)
 	{
-		if(value[bobbing] * swayDir > 0.3f)
-			swayDir = -swayDir;
-		value[bobbing] += (float)(swayDir * 0.8f * dt);
+		if(value[bobbingX] * bobXDir > 0.3f)
+			bobXDir = -bobXDir;
+		value[bobbingX] += (float)(bobXDir * 1.0f * dt);
 		if (state[SPRINT] == true)
-			value[bobbing] += (float)(swayDir * 0.8f * dt);
+			value[bobbingX] += (float)(bobXDir * 1.0f * dt);
+
+		if(value[bobbingY] * bobYDir > 0.15f)
+			bobYDir = -bobYDir;
+		value[bobbingY] += (float)(bobYDir * 1.0f * dt);
+		if (state[SPRINT] == true)
+			value[bobbingY] += (float)(bobYDir * 1.0f * dt);
 	}
 
 	if(Application::mouseButton(0) && value[knifeCooldown] == 0)
