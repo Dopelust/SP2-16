@@ -93,6 +93,7 @@
     <ClCompile Include="Source\player.cpp" />
     <ClCompile Include="Source\PROJECTScene.cpp" />
     <ClCompile Include="Source\shader.cpp" />
+    <ClCompile Include="Source\SuperMarket.cpp" />
     <ClCompile Include="Source\Utility.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -141,6 +141,47 @@ void PROJECTScene::JeremiahInit()
 	Mesh* cube;
 	Vector3 hitBox;
 	float size = 0;
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hobo Character~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//Head.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("Body", "OBJ//CharOBJ//Body.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );\
+
+	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//LeftArm.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//RightArm.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//LeftLeg.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateOBJ("Head", "OBJ//CharOBJ//RightLeg.obj"); tempMesh->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,0), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+	tempMesh = MeshBuilder::GenerateOBJ("FloorFront", "OBJ//BuildingOBJ//Wall1.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	hitBox = Vector3(2.1, 12.8, 35); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	float z_temp = 21.5;
+	for(int i = 0; i < 3; i++)
+	{
+		object.push_back( new Object(Vector3(x,0,z_temp), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+		z_temp -= 34.6;
+	}
+
+	tempMesh = MeshBuilder::GenerateOBJ("FloorFront", "OBJ//BuildingOBJ//Floor&Ceiling.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
+	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,17,0), Vector3(0,0,0), hitBox, tempMesh, cube) ); //~~~~~~~~~~~~~~~~~~~~~~~Tentative height of second floor~~~~~~~
+
 }
 
 void PROJECTScene::JessicaInit()
