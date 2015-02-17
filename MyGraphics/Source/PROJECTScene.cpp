@@ -203,11 +203,11 @@ void PROJECTScene::JeremiahInit()
 
 	tempMesh = MeshBuilder::GenerateOBJ("BackWall", "OBJ//BuildingOBJ//BackWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-46,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-45,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("BackWall", "OBJ//BuildingOBJ//BackWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(46,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(45,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("FrontWall", "OBJ//BuildingOBJ//FrontWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
