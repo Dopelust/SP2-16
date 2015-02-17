@@ -43,7 +43,8 @@ public:
 
 	enum playerValues
 	{
-		bobbing,
+		bobbingX,
+		bobbingY,
 		knifeRotation,
 		knifeStrike,
 		knifeCooldown,

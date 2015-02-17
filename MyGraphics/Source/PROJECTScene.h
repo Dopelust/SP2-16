@@ -30,7 +30,7 @@ class PROJECTScene : public Scene
 		GEO_LIGHTBALL,
 		GEO_QUAD,
 		GEO_TEXT,
-		GEO_KNIFE,
+		GEO_ARM,
 		GEO_LINE,
 		GEO_CUBE,
 		GEO_BIGCUBE,
