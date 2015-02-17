@@ -245,7 +245,7 @@ void PROJECTScene::Init()
 	meshList[GEO_BIGCUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 36.f, 36.f, 36.f, 1);
 
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
-	meshList[GEO_TEXT]->textureID = LoadTGA("Image//calibri.tga");
+	meshList[GEO_TEXT]->textureID = LoadTGA("Image//Fonterino.tga");
 	
 	meshList[GEO_KNIFE] = MeshBuilder::GenerateOBJ("knife", "OBJ//arm2.obj");
 	meshList[GEO_KNIFE]->textureID = LoadTGA("Image//arm.tga");
@@ -572,7 +572,7 @@ void PROJECTScene::Render()
 
 		modelStack.PushMatrix();
 		modelStack.Translate(-7,-5,0);
-		modelStack.Scale(0.5f,0.5f,0.5f);
+		modelStack.Scale(0.75f,1,0.75f);
 		RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
