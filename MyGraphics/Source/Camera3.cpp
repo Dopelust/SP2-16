@@ -76,7 +76,7 @@ void Camera3::Update(double dt, Player* player, vector<Object*>object)
 int Camera3::lookingAt(vector<Object*>object)
 {
 	Vector3 view = (target - position).Normalized(); view/=10;
-	Object r(position, Vector3(0,0,0), Vector3(24,24,24));
+	Object r(position + view*59.5, Vector3(0,0,0), Vector3(12,12,12));
 	vector<int> store[2];
 
 	for (unsigned int i = 0; i < object.size(); i++)
@@ -91,7 +91,7 @@ int Camera3::lookingAt(vector<Object*>object)
 			else
 				maxReach = 100;
 
-			for (Vector3 p = position; reach <= maxReach; p += view)
+			for (Vector3 p = position; reach < maxReach; p += view)
 			{
 				Object o(p, Vector3(0,0,0), Vector3(0.1f,0.1f,0.1f));
 				if ( PROJECTScene::checkCollision(object[i], &o) )
@@ -104,7 +104,7 @@ int Camera3::lookingAt(vector<Object*>object)
 		}
 	}
 
-	int nearest = 121;
+	int nearest = 120;
 	int index = 0;
 
 	for (unsigned int i = 0; i < store[0].size(); i++)

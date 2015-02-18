@@ -90,37 +90,8 @@ void PROJECTScene::InitJunk()
 	meshList[GEO_TOP]->textureID = LoadTGA("Image//Skybox//topmc.tga");
 }
 
-float widths[256];
-
 void PROJECTScene::RicssonInit()
 {
-	/*
-	ifstream inData;
-	string data;
-	int index = 0;
-	
-	inData.open ("textwidths.txt"); 
-	while (!inData.eof()) 
-	{ 
-		getline (inData, data);
-		for (int i = 0; i < data.size(); i++) 
-		{
-			if (data[i] == '=')
-			{
-				string width;
-				for (int j = i + 1; j < data.size(); j++)
-				{
-					width += data[j];
-				}
-				widths[index] = float(stoi(width));
-				widths[index]/=32.f;
-				break;
-			}
-		}
-		index++;
-	}
-	inData.close (); 
-	*/
 	Mesh* tempMesh;
 	Mesh* cube;
 	Vector3 hitBox;
@@ -202,16 +173,14 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(45,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("FrontWall", "OBJ//BuildingOBJ//FrontWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-45,0,-88), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+	hitBox = Vector3(60, 25, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-50,0,-87.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("FrontWall", "OBJ//BuildingOBJ//FrontWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(45,0,-88), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+	hitBox = Vector3(60, 25, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(50,0,-87.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
 
-	tempMesh = MeshBuilder::GenerateOBJ("FloorFront", "OBJ//BuildingOBJ//Floor&Ceiling.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
-	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("Head", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,17,0), Vector3(0,0,0), hitBox, tempMesh, cube) ); //~~~~~~~~~~~~~~~~~~~~~~~Tentative height of second floor~~~~~~~
+	//~~~~~~~~~~~~~~~~~~~~~~~Tentative height of second floor~~~~~~~
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market(Inside of SuperMarket)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//BuildingOBJ//S_Walk.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
@@ -282,8 +251,8 @@ void PROJECTScene::DarrenInit()
 	object.push_back( new Object(Vector3(0,0,34), Vector3(0,4,-5), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("atm", "OBJ//atm.obj"); tempMesh->textureID = LoadTGA("Image//atm.tga");
-	hitBox = Vector3(3,7,4); cube = MeshBuilder::GenerateCube("atm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(5, 0 ,0), Vector3(0,4,0.25), hitBox, tempMesh, cube) );
+	hitBox = Vector3(2,7,3); cube = MeshBuilder::GenerateCube("atm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(5, 0 ,0), Vector3(-0.1,hitBox.y/2,0.3), hitBox, tempMesh, cube) );
 
 }
 
@@ -310,7 +279,7 @@ void PROJECTScene::Init()
 	DarrenInit();
 
 	meshList[GEO_CUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 0.1f, 0.1f, 0.1f, 1);
-	meshList[GEO_BIGCUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 36.f, 36.f, 36.f, 1);
+	meshList[GEO_BIGCUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 12.f, 12.f, 12.f, 1);
 
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16.f, 16.f);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
@@ -882,20 +851,20 @@ void PROJECTScene::Exit()
 void PROJECTScene::RenderSkybox()
 {
 	modelStack.PushMatrix();
-	modelStack.Translate(0,0,-0.499f);
+	modelStack.Translate(0,0,-0.498f);
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	RenderMesh(meshList[GEO_FRONT], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,0, 0.499f);
+	modelStack.Translate(0,0, 0.498f);
 	modelStack.Rotate(-90,1,0,0);
 	RenderMesh(meshList[GEO_BACK], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-0.499f,0,0);
+	modelStack.Translate(-0.498f,0,0);
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	modelStack.Rotate(90,0,0,1);
@@ -903,7 +872,7 @@ void PROJECTScene::RenderSkybox()
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0.499f,0,0);
+	modelStack.Translate(0.498f,0,0);
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	modelStack.Rotate(-90,0,0,1);
@@ -911,14 +880,14 @@ void PROJECTScene::RenderSkybox()
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,0.499f,0);
+	modelStack.Translate(0,0.498f,0);
 	modelStack.Rotate(180,1,0,0);
 	modelStack.Rotate(180,0,1,0);
 	RenderMesh(meshList[GEO_TOP], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,-0.499f,0);
+	modelStack.Translate(0,-0.498f,0);
 	modelStack.Rotate(90,0,1,0);
 	RenderMesh(meshList[GEO_BOTTOM], false);
 	modelStack.PopMatrix();

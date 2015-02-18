@@ -35,7 +35,7 @@ class Hobo : public NPC
 public:
 	Hobo()
 	{
-		position = Vector3(0,0,0);
+		position = Vector3(0,0,-100);
 		Init();	
 	};
 	~Hobo() {};
