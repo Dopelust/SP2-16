@@ -155,29 +155,23 @@ void PROJECTScene::JeremiahInit()
 
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-	tempMesh = MeshBuilder::GenerateOBJ("RightWall", "OBJ//BuildingOBJ//RightWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	hitBox = Vector3(2, 12.8, 130); cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(80,0,-22.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+	hitBox = Vector3(2, 25, 132); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(81,hitBox.y/2,-22.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-81,hitBox.y/2,-22.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
-	tempMesh = MeshBuilder::GenerateOBJ("LeftWall", "OBJ//BuildingOBJ//LeftWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	hitBox = Vector3(2, 12.8, 130); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-80,0,-22.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+	hitBox = Vector3(72, 25, 2); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(44,hitBox.y/2,42.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-44,hitBox.y/2,42.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
-	tempMesh = MeshBuilder::GenerateOBJ("BackWall", "OBJ//BuildingOBJ//BackWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-45,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("BackWall", "OBJ//BuildingOBJ//BackWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	hitBox = Vector3(72, 12.8, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(45,0,43), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("FrontWall", "OBJ//BuildingOBJ//FrontWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	hitBox = Vector3(60, 25, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-50,0,-87.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("FrontWall", "OBJ//BuildingOBJ//FrontWall.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	hitBox = Vector3(60, 25, 2); cube = MeshBuilder::GenerateCube("wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(50,0,-87.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+	hitBox = Vector3(60, 25, 2); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~Tentative height of second floor~~~~~~~
 
@@ -312,19 +306,11 @@ void PROJECTScene::Init()
 
 }
 
-//static float ROT_LIMIT = 45.f;
-static float SCALE_LIMIT = 5.f;
-
 long double x;
 std::string fps;
 
 void PROJECTScene::Update(double dt)
 {
-	if(Application::IsKeyPressed('1'))
-		hideKnife = false;
-	if(Application::IsKeyPressed('2'))
-		hideKnife = true;
-
 	if(Application::IsKeyPressed('R'))
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	else
@@ -364,34 +350,9 @@ void PROJECTScene::Update(double dt)
 	camera.Update(dt, &player, object);
 	doorway.Update(dt);
 
-	Vector3 view = (camera.target - camera.position).Normalized(); view/=10;
-	Vector3 intersectionPoint;
-
-	for (unsigned int i = 0; i < object.size(); i++)
+	for (unsigned int i = 0; i < character.size(); i++)
 	{
-		int reach = 0;
-
-		if (object[i]->mesh->name == "Garfield")
-		{
-			for (Vector3 p = camera.position; reach <= 180; p += view)
-			{
-				Object o(p, Vector3(0,0,0), Vector3(0.1f,0.1f,0.1f));
-				if ( PROJECTScene::checkCollision(object[i], &o) )
-				{
-					intersectionPoint = o.position;
-					break;
-				}
-				reach++;
-			}
-		}
-	}
-	if (player.value[player.knifeStrike] == 1 && intersectionPoint != Vector3(0,0,0))
-	{
-		int r = rand() % 30 + 10;
-		for (int i = 0; i < r; i++)
-		{
-			blood.push_back(new Particles(intersectionPoint));
-		}
+		character[i]->Update(dt, object);
 	}
 
 	for (unsigned int i = 0; i < blood.size(); i++)

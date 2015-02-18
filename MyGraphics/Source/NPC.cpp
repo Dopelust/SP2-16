@@ -41,3 +41,13 @@ void Hobo::Init()
 		bodyParts[i].position = position;
 	}
 }
+
+void Hobo::Update(double dt, vector<Object*>object)
+{
+	position.z += dt * 0.5f;
+
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{
+		bodyParts[i].position = position;
+	}
+}

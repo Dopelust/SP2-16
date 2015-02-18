@@ -42,7 +42,7 @@ public:
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object) {};
-	virtual void Update(double dt, vector<Object*>object) {};
+	virtual void Update(double dt, vector<Object*>object);
 };
 
 #endif
