@@ -200,7 +200,14 @@ void Player::Control(double dt, vector<Object*>object)
 				Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
 
 				Vector3 maxPlayer = collision.hitbox/2; maxPlayer.y = collision.hitbox.y; maxPlayer += initialPos;
-				Vector3 minPlayer = -collision.hitbox/2; minPlayer.y = 1; minPlayer += initialPos;
+				Vector3 minPlayer = -collision.hitbox/2; 
+
+				if (state[JUMP])
+					minPlayer.y = 0.1f;
+				else
+					minPlayer.y = 0.5f;
+
+				minPlayer += initialPos;
 
 				Vector3 pos = position; //y is ground
 

@@ -145,14 +145,13 @@ void PROJECTScene::JeremiahInit()
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hobo Character~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	character.push_back( new Hobo());
+	character.push_back( new Thug());
 
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
-		for (unsigned j = 0; j < character[i]->NUM_BODYPARTS; j++)
-		{
-			object.push_back( &character[i]->bodyParts[j] );
-		}
+		object.push_back( character[i] );
 	}
+	
 
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
@@ -358,7 +357,7 @@ void PROJECTScene::Update(double dt)
 
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
-		character[i]->Update(dt, object);
+		character[i]->Update(dt, object, &player);
 	}
 
 	for (unsigned int i = 0; i < blood.size(); i++)
@@ -443,6 +442,17 @@ void PROJECTScene::Render()
 		}
 	}
 
+	for (unsigned int i = 0; i < character.size(); i++)
+	{
+		for (unsigned j = 0; j < character[i]->NUM_BODYPARTS; j++)
+		{
+			modelStack.PushMatrix();
+			modelStack.Translate(character[i]->position);
+			modelStack.Rotate(character[i]->orientation, 0, 1, 0); 
+			RenderMesh(character[i]->bodyParts[j].mesh, true);
+			modelStack.PopMatrix();
+		}
+	}
 	for (unsigned int i = 0; i < blood.size(); i++)
 	{
 		modelStack.PushMatrix();
@@ -460,11 +470,14 @@ void PROJECTScene::Render()
 
 		for (unsigned int i = 0; i < object.size(); i++)
 		{
-			modelStack.PushMatrix();
-			modelStack.Translate(object[i]->position);
-			modelStack.Translate(object[i]->collision.centre);
-			RenderMesh(object[i]->collision.boundingBox, false);
-			modelStack.PopMatrix();
+			if (object[i]->type != "Bodypart")
+			{
+				modelStack.PushMatrix();
+				modelStack.Translate(object[i]->position);
+				modelStack.Translate(object[i]->collision.centre);
+				RenderMesh(object[i]->collision.boundingBox, false);
+				modelStack.PopMatrix();
+			}
 		}
 		modelStack.PushMatrix();
 		modelStack.Translate(player.position);
@@ -593,7 +606,7 @@ void PROJECTScene::Render()
 	RenderText(meshList[GEO_TEXT], fps, Color(1, 1, 1));
 	modelStack.PopMatrix();
 	
-	if (object[camera.lookAt]->ignoreCollision)
+	if (object[camera.lookAt]->ignoreCollision && object[camera.lookAt]->mesh != NULL)
 	{
 		string tooltip;
 		if (object[camera.lookAt]->mesh->name == "Button")

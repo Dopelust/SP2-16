@@ -7,6 +7,7 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h)
 	collision.centre = c;
 	orientation = 0; size = 1;
 	ignoreCollision = true; 
+	mesh = NULL;
 }
 Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* b)
 {
@@ -16,6 +17,7 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* b)
 	collision.centre = c;
 	orientation = 0; size = 1;
 	ignoreCollision = true;
+	mesh = NULL;
 }
 Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b)
 {

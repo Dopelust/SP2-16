@@ -47,7 +47,13 @@ class Bodypart : public Object
 {
 public:
 	Bodypart() { ignoreCollision = false; };
-	Bodypart(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) :	Object(p,c,h,m,b) {type = "NPC";};
+	Bodypart(Vector3 p, Vector3 c, Mesh* m)
+	{
+		position = p;
+		collision.centre = c;
+		mesh = m;
+		type = "Bodypart";
+	};
 	~Bodypart() {};
 
 	string getIdentity() {return identity;};
