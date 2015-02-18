@@ -8,21 +8,14 @@
 
 #include <string>
 
+using std::string;
+
 struct Collision
 {
 	Vector3 centre;
 	Vector3 hitbox;
 
 	Mesh* boundingBox;
-};
-
-class Wall : public Collision
-{
-public:
-	Wall() {};
-	~Wall() {};
-
-	float location;
 };
 
 class Object
@@ -44,6 +37,21 @@ public:
 	bool ignoreCollision;
 
 	virtual void Update(double dt);
+
+	//Derived
+	virtual bool getPaid() {return 0;};
+	virtual string getIdentity() {return "";};
+};
+
+class Bodypart : public Object
+{
+public:
+	Bodypart() { ignoreCollision = false; };
+	Bodypart(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) :	Object(p,c,h,m,b) {type = "NPC";};
+	~Bodypart() {};
+
+	string getIdentity() {return identity;};
+	string identity;
 };
 
 class Item : public Object
@@ -53,6 +61,7 @@ public:
 	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {paid = false; type = "Item";};
 	~Item();
 
+	bool getPaid() {return paid;};
 	bool paid;
 };
 

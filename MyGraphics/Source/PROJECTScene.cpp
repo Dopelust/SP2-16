@@ -561,6 +561,22 @@ void PROJECTScene::Render()
 		RenderText(meshList[GEO_TEXT], text, Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
+
+	if (object[camera.lookAt]->type == "NPC")
+	{
+		modelStack.PushMatrix();
+		modelStack.Translate(object[camera.lookAt]->position);
+		modelStack.Translate(0,7.f,0);
+		modelStack.Rotate(camera.orientation, 0,1,0);
+		modelStack.Rotate(-camera.look,1,0,0);
+		modelStack.Rotate(180, 0,1,0);
+		modelStack.Scale(0.5f);
+		float textLength = getTextWidth(object[camera.lookAt]->getIdentity());
+		modelStack.Translate(-textLength/2 + 0.1f, 0, 0);
+		RenderText(meshList[GEO_TEXT], object[camera.lookAt]->getIdentity(), Color(1, 1, 1));
+		modelStack.PopMatrix();
+	}
+
 	glEnable(GL_DEPTH_TEST);
 
 	//2D
