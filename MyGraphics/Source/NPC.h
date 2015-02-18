@@ -26,7 +26,7 @@ public:
 	~NPC(void) {};
 
 	virtual void Init();
-	Object bodyParts[NUM_BODYPARTS];
+	Bodypart bodyParts[NUM_BODYPARTS];
 
 };
 
