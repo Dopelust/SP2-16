@@ -90,8 +90,37 @@ void PROJECTScene::InitJunk()
 	meshList[GEO_TOP]->textureID = LoadTGA("Image//Skybox//topmc.tga");
 }
 
+float widths[256];
+
 void PROJECTScene::RicssonInit()
 {
+	/*
+	ifstream inData;
+	string data;
+	int index = 0;
+	
+	inData.open ("textwidths.txt"); 
+	while (!inData.eof()) 
+	{ 
+		getline (inData, data);
+		for (int i = 0; i < data.size(); i++) 
+		{
+			if (data[i] == '=')
+			{
+				string width;
+				for (int j = i + 1; j < data.size(); j++)
+				{
+					width += data[j];
+				}
+				widths[index] = float(stoi(width));
+				widths[index]/=32.f;
+				break;
+			}
+		}
+		index++;
+	}
+	inData.close (); 
+	*/
 	Mesh* tempMesh;
 	Mesh* cube;
 	Vector3 hitBox;
@@ -408,7 +437,7 @@ void PROJECTScene::Update(double dt)
 
 	fps = '\0';
 	x = 1/dt;
-	fps += "FPS: ";
+	fps += "FPS:";
 	fps += to_string(x);
 }
 
@@ -516,6 +545,7 @@ void PROJECTScene::Render()
 	//RenderMesh(meshList[GEO_LIGHTBALL], false);
 	modelStack.PopMatrix();
 
+	glDisable(GL_DEPTH_TEST);
 	for (unsigned int i = 0; i < player.loot.size(); i++)
 	{
 		std::string text = "+1 "; text += player.loot[i]->name;
@@ -525,11 +555,14 @@ void PROJECTScene::Render()
 		modelStack.Rotate(camera.orientation, 0,1,0);
 		modelStack.Rotate(-camera.look,1,0,0);
 		modelStack.Rotate(180, 0,1,0);
-		float textLength = float(text.size());
+		modelStack.Scale(0.5f);
+		float textLength = getTextWidth(text);
 		modelStack.Translate(-textLength/2, 0, 0);
 		RenderText(meshList[GEO_TEXT], text, Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
+	glEnable(GL_DEPTH_TEST);
+
 	//2D
 	modelStack.PushMatrix();
 	viewStack.PushMatrix();
@@ -612,14 +645,16 @@ void PROJECTScene::Render()
 	{
 		string tooltip;
 		if (object[camera.lookAt]->mesh->name == "Button")
-			tooltip += "'E' to push ";
+			tooltip += "E to push ";
 		else
-			tooltip += "'E' to loot ";
+			tooltip += "E to loot ";
 		tooltip += object[camera.lookAt]->mesh->name;
 
 		modelStack.PushMatrix();
-		modelStack.Translate(-7,-5,0);
-		modelStack.Scale(0.75f,1,0.75f);
+		modelStack.Translate(0.35f,-5,0);
+		float textLength = getTextWidth(tooltip);
+		modelStack.Translate(-textLength/2, 0, 0);
+		modelStack.Scale(1,1,1);
 		RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
@@ -686,18 +721,135 @@ void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, mesh->textureID);
 	glUniform1i(m_parameters[U_COLOR_TEXTURE], 0);
+
+	float textWidth = 0.f;
 	for(unsigned i = 0; i < text.length(); ++i)
 	{
-		Mtx44 characterSpacing;
-		characterSpacing.SetToTranslation(i * 1.f, 0, 0); //1.0f is the spacing of each character, you may change this value
+		if (text[i] == '.')
+			textWidth -= 0.1f;
+		else if (text[i] == 'l' || text[i] == 'i')
+			textWidth -= 0.05f;
+		else if (text[i] == 't')
+			textWidth -= 0.1f;
+
+		Mtx44 characterSpacing; 
+		characterSpacing.SetToTranslation(textWidth, 0, 0); //1.0f is the spacing of each character, you may change this value
 		Mtx44 MVP = projectionStack.Top() * viewStack.Top() * modelStack.Top() * characterSpacing;
 		glUniformMatrix4fv(m_parameters[U_MVP], 1, GL_FALSE, &MVP.a[0]);
 	
 		mesh->Render((unsigned)text[i] * 6, 6);
+
+		for (int j = '0'; j <= '9'; j++)
+		{
+			if (text[i] == j)
+			{
+				textWidth -= 0.3f;
+				break;
+			}
+		}
+		
+		for (int j = 'A'; j <= 'Z'; j++)
+		{
+			if (text[i] == j)
+			{
+				textWidth -= 0.3f;
+				break;
+			}
+		}
+
+		for (int j = 'a'; j <= 'z'; j++)
+		{
+			if (text[i] == 'l' || text[i] == 'i')
+			{
+				textWidth -= 0.4f;
+				break;
+			}
+			else if (text[i] == 't')
+			{
+				textWidth -= 0.35f;
+				break;
+			}
+			else if (text[i] == j)
+			{
+				textWidth -= 0.3f;
+				break;
+			}
+		}
+
+		if (text[i] == ' ')
+			textWidth -= 0.5f;
+		else if (text[i] == '.')
+			textWidth -= 0.4f;
+		else if (text[i] == ':')
+			textWidth -= 0.25f;
+		
+		textWidth += 0.8f;
 	}
 	glBindTexture(GL_TEXTURE_2D, 0);
 	glUniform1i(m_parameters[U_TEXT_ENABLED], 0);
 }
+
+float PROJECTScene::getTextWidth(string text)
+{
+	float textWidth = 0.f;
+	for(unsigned i = 0; i < text.length(); ++i)
+	{
+		if (text[i] == '.')
+			textWidth -= 0.1f;
+		else if (text[i] == 'l' || text[i] == 'i')
+			textWidth -= 0.05f;
+		else if (text[i] == 't')
+			textWidth -= 0.1f;
+
+		for (int j = '0'; j <= '9'; j++)
+		{
+			if (text[i] == j)
+			{
+				textWidth -= 0.3f;
+				break;
+			}
+		}
+		
+		for (int j = 'A'; j <= 'Z'; j++)
+		{
+			if (text[i] == j)
+			{
+				textWidth -= 0.3f;
+				break;
+			}
+		}
+
+		for (int j = 'a'; j <= 'z'; j++)
+		{
+			if (text[i] == 'l' || text[i] == 'i')
+			{
+				textWidth -= 0.4f;
+				break;
+			}
+			else if (text[i] == 't')
+			{
+				textWidth -= 0.35f;
+				break;
+			}
+			else if (text[i] == j)
+			{
+				textWidth -= 0.3f;
+				break;
+			}
+		}
+
+		if (text[i] == ' ')
+			textWidth -= 0.5f;
+		else if (text[i] == '.')
+			textWidth -= 0.4f;
+		else if (text[i] == ':')
+			textWidth -= 0.25f;
+		
+		textWidth += 0.8f;
+	}
+	return textWidth;
+}
+
 void PROJECTScene::Exit()
 {
 	// Cleanup VBO here

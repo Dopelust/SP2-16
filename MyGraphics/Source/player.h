@@ -52,12 +52,13 @@ public:
 		groundLevel,
 		eyeLevel,
 		jumpCooldown,
+		airElapsed,
 		TOTAL_VALUES,
 	};
 	Player() 
 	{ 
 		InitPos();
-
+		position = Vector3(0, 0, 10);
 		for (int i = 0; i < TOTAL_VALUES; i++)
 		{
 			value[i] = 0.f;
