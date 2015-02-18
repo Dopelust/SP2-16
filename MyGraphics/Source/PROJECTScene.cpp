@@ -140,6 +140,7 @@ void PROJECTScene::JeremiahInit()
 	Mesh* tempMesh;
 	Mesh* cube;
 	Vector3 hitBox;
+	Vector3 hitBox2;
 	float size = 0;
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hobo Character~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
@@ -183,6 +184,11 @@ void PROJECTScene::JeremiahInit()
 	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//BuildingOBJ//Road.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
 	hitBox = Vector3(130, 2, 78); cube = MeshBuilder::GenerateCube("Road", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,-2,-152), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Cash Table~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//cashtable.obj"); tempMesh->textureID = LoadTGA("Image//cashtable.tga");
+	hitBox = Vector3(3, 3.69, 9); cube = MeshBuilder::GenerateCube("Cash Table", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(5,0,5), Vector3(-1.4,hitBox.y/2,-0.59), hitBox, tempMesh, cube) );
 }
 
 void PROJECTScene::JessicaInit()
