@@ -42,7 +42,7 @@ public:
 	int index;
 	int emptySlot();
 
-	void Insert(Object* o);
+	bool Insert(Object* o);
 	void Init(Vector3 pos);
 	void Update(double dt);
 };

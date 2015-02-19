@@ -58,7 +58,7 @@ void Inventory::Update(double dt)
 	selector.selectedSlot = &slots[index];
 }
 
-void Inventory::Insert(Object* o)
+bool Inventory::Insert(Object* o)
 {
 	for (int i = 0; i < 9; i++)
 	{
@@ -66,11 +66,17 @@ void Inventory::Insert(Object* o)
 			if(slots[i].item[0]->mesh->name == o->mesh->name)
 			{
 				slots[i].item.push_back(o);
-				return;
+				return true;
 			}
 	}
 
-	slots[emptySlot()].item.push_back(o);
+	if (emptySlot() >= 0)
+	{
+		slots[emptySlot()].item.push_back(o);
+		return true;
+	}
+
+	return false;
 }
 
 int Inventory::emptySlot()

@@ -373,18 +373,17 @@ void PROJECTScene::Update(double dt)
 
 	camera.lookAt = camera.lookingAt(object);
 	
-	if ((Application::IsKeyPressed('E')))
+	if ((Application::IsKeyPressed('E')) && object[camera.lookAt]->mesh != NULL)
 	{
 		if (object[camera.lookAt]->type == "Item")
-		{
-			Vector3 tPos = object[camera.lookAt]->position; 
-			tPos += object[camera.lookAt]->collision.centre;
-			player.loot.push_back( new Loot(object[camera.lookAt]->mesh->name,tPos) );
+			if (player.inventory.Insert(object[camera.lookAt]))
+			{				
+				Vector3 tPos = object[camera.lookAt]->position + object[camera.lookAt]->collision.centre;
+				player.loot.push_back( new Loot(object[camera.lookAt]->mesh->name,tPos) );
+				object.erase(object.begin()+camera.lookAt);
 
-			if (player.inventory.emptySlot() >= 0)
-				player.inventory.Insert(object[camera.lookAt]);
-			object.erase(object.begin()+camera.lookAt);
-		}
+			}
+
 		else if (object[camera.lookAt]->mesh->name == "Button")
 		{
 			doorway.open = true; doorway.close = false;
