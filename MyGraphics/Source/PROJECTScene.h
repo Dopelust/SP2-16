@@ -18,6 +18,24 @@
 #include <vector>
 #include <string>
 
+class OnScreenText
+{
+public:
+	OnScreenText(std::string n, Vector3 p) 
+	{
+		name = n;
+		textPos = p;
+		elapsedTime = 0;
+	};
+	~OnScreenText() {};
+
+	std::string name;
+	Vector3 textPos;
+	float elapsedTime;
+
+	void Update(double dt);
+};
+
 class PROJECTScene : public Scene
 {
 	enum GEOMETRY_TYPE
@@ -82,18 +100,17 @@ public:
 	void JessicaInit();
 	void DarrenInit();
 
-	static bool checkCollision(Camera3 a, Object* b);
-	static bool checkCollision(Object* a, Object* b);
-
 private:
 	unsigned m_vertexArrayID;
 	Mesh * meshList[NUM_GEOMETRY];
 	unsigned m_programID;
 	unsigned m_parameters[U_TOTAL];
 
-	std::vector<NPC*> character;
-	std::vector<Object*> object;
-	std::vector<Particles*> blood;
+	vector<OnScreenText*> lootedText;
+	vector<NPC*> character;
+	vector<Object*> object;
+	vector<Particles*> blood;
+
 	Doorway doorway;
 	Light light[3];
 	void RenderMesh(Mesh *mesh, bool enableLight);

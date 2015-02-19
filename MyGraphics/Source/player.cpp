@@ -94,17 +94,6 @@ void Player::Update(double dt, vector<Object*>object)
 		}
 	}
 
-	for (unsigned int i = 0; i < loot.size(); i++)
-	{
-		loot[i]->Update(dt);
-
-		if (loot[i]->elapsedTime > 0.8f)
-		{
-			delete loot[i];
-			loot.erase(loot.begin()+i);
-		}
-	}
-
 	state[WALK] = false;
 }
 void Player::Control(double dt, vector<Object*>object)
@@ -222,12 +211,6 @@ void Player::Control(double dt, vector<Object*>object)
 					velocity.y = 0;
 				}
 
-				else if (Vector3(0,1,0).Dot(maxCube - pos) < 2.5f && state[GROUND] == true)
-				{
-					value[groundLevel] = maxCube.y;
-					position.y = maxCube.y;
-				}
-
 				else 
 				{
 					if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
@@ -280,12 +263,3 @@ bool Player::checkCollision(Object* b)
     maxCubeA.z > minCubeB.z &&
     minCubeA.z < maxCubeB.z);
 } 
-void Loot::Update(double dt)
-{
-	elapsedTime += float(dt);
-
-	if (elapsedTime < 0.8f)
-	{
-		textPos.y += 0.03f;
-	}
-}

@@ -81,7 +81,7 @@ int Camera3::lookingAt(vector<Object*>object)
 
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
-		if (PROJECTScene::checkCollision(object[i], &r))
+		if (Object::checkCollision(object[i], &r))
 		{
 			int reach = 0;
 			int maxReach = 0;
@@ -94,7 +94,7 @@ int Camera3::lookingAt(vector<Object*>object)
 			for (Vector3 p = position; reach < maxReach; p += view)
 			{
 				Object o(p, Vector3(0,0,0), Vector3(0.1f,0.1f,0.1f));
-				if ( PROJECTScene::checkCollision(object[i], &o) )
+				if ( Object::checkCollision(object[i], &o) )
 				{
 					store[0].push_back(reach);
 					store[1].push_back(i);

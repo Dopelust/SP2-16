@@ -41,6 +41,25 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float
 	ignoreCollision = i;
 }
 
+bool Object::checkCollision(Object* a, Object*  b)
+{
+	Vector3 CubeA = a->collision.hitbox/2; CubeA += a->collision.centre; 
+	Vector3 CubeB = b->collision.hitbox/2; CubeB += b->collision.centre;
+
+	Vector3 maxCubeA = CubeA ; maxCubeA += a->position;
+	Vector3 minCubeA = CubeA - a->collision.hitbox; minCubeA += a->position;
+
+	Vector3 maxCubeB = CubeB; maxCubeB += b->position;
+	Vector3 minCubeB = CubeB - b->collision.hitbox; minCubeB += b->position;
+
+	return(maxCubeA.x > minCubeB.x && 
+    minCubeA.x < maxCubeB.x &&
+    maxCubeA.y > minCubeB.y &&
+    minCubeA.y < maxCubeB.y &&
+    maxCubeA.z > minCubeB.z &&
+    minCubeA.z < maxCubeB.z);
+}
+
 void Garfield::Init(Vector3 p, Vector3 c, Vector3 h, Mesh* b)
 {
 	position = p;

@@ -379,7 +379,7 @@ void PROJECTScene::Update(double dt)
 			if (player.inventory.Insert(object[camera.lookAt]))
 			{				
 				Vector3 tPos = object[camera.lookAt]->position + object[camera.lookAt]->collision.centre;
-				player.loot.push_back( new Loot(object[camera.lookAt]->mesh->name,tPos) );
+				lootedText.push_back( new OnScreenText(object[camera.lookAt]->mesh->name,tPos) );
 				object.erase(object.begin()+camera.lookAt);
 
 			}
@@ -407,6 +407,18 @@ void PROJECTScene::Update(double dt)
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		character[i]->Update(dt, object, &player);
+	}
+
+
+	for (unsigned int i = 0; i < lootedText.size(); i++)
+	{
+		lootedText[i]->Update(dt);
+
+		if (lootedText[i]->elapsedTime > 0.8f)
+		{
+			delete lootedText[i];
+			lootedText.erase(lootedText.begin()+i);
+		}
 	}
 
 	for (unsigned int i = 0; i < blood.size(); i++)
@@ -544,12 +556,12 @@ void PROJECTScene::Render()
 	modelStack.PopMatrix();
 
 	glDisable(GL_DEPTH_TEST);
-	for (unsigned int i = 0; i < player.loot.size(); i++)
+	for (unsigned int i = 0; i < lootedText.size(); i++)
 	{
-		std::string text = "+1 "; text += player.loot[i]->name;
+		std::string text = "+1 "; text += lootedText[i]->name;
 
 		modelStack.PushMatrix();
-		modelStack.Translate(player.loot[i]->textPos);
+		modelStack.Translate(lootedText[i]->textPos);
 		modelStack.Rotate(camera.orientation, 0,1,0);
 		modelStack.Rotate(-camera.look,1,0,0);
 		modelStack.Rotate(180, 0,1,0);
@@ -989,22 +1001,12 @@ void Particles::Update(double dt)
 	position += direction * float(dt);
 	elapsedTime += float(dt);
 }
-
-bool PROJECTScene::checkCollision(Object* a, Object* b)
+void OnScreenText::Update(double dt)
 {
-	Vector3 CubeA = a->collision.hitbox/2; CubeA += a->collision.centre; 
-	Vector3 CubeB = b->collision.hitbox/2; CubeB += b->collision.centre;
+	elapsedTime += float(dt);
 
-	Vector3 maxCubeA = CubeA ; maxCubeA += a->position;
-	Vector3 minCubeA = CubeA - a->collision.hitbox; minCubeA += a->position;
-
-	Vector3 maxCubeB = CubeB; maxCubeB += b->position;
-	Vector3 minCubeB = CubeB - b->collision.hitbox; minCubeB += b->position;
-
-	return(maxCubeA.x > minCubeB.x && 
-    minCubeA.x < maxCubeB.x &&
-    maxCubeA.y > minCubeB.y &&
-    minCubeA.y < maxCubeB.y &&
-    maxCubeA.z > minCubeB.z &&
-    minCubeA.z < maxCubeB.z);
-} 
+	if (elapsedTime < 0.8f)
+	{
+		textPos.y += 0.03f;
+	}
+}

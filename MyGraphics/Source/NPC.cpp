@@ -42,7 +42,11 @@ void Hobo::Init()
 
 void Hobo::Update(double dt, vector<Object*>object, Player* player)
 {
+	Vector3 initialPos = position;
+
 	position.z += dt * 0.5f;
+	Control(dt, object, player);
+	RespondToCollision(initialPos, object, player);
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{
@@ -65,7 +69,10 @@ void Thug::Init()
 
 void Thug::Update(double dt, vector<Object*>object, Player* player)
 {
+	Vector3 initialPos = position;
+
 	Control(dt, object, player);
+	RespondToCollision(initialPos, object, player);
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{
@@ -100,4 +107,63 @@ void Thug::Control(double dt, vector<Object*>object, Player* player)
 		}
 	}
 	position += direction * 5 * float(dt); //state[WALK] = true;
+}
+
+void NPC::RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player)
+{
+	
+	Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
+	Vector3 maxPlayer = Cube + initialPos;
+	Vector3 minPlayer = Cube - collision.hitbox + initialPos;
+	minPlayer.y += 0.5f;
+	if (player->checkCollision(this))
+	{
+		Vector3 maxCube = player->collision.hitbox/2; maxCube.y = player->collision.hitbox.y; maxCube += player->position;
+		Vector3 minCube = -player->collision.hitbox/2; 
+
+		if (player->state[player->JUMP])
+			minCube.y = 0.1f;
+		else
+			minCube.y = 0.5f;
+
+		minCube += player->position;
+
+		if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
+			position.z = maxCube.z + collision.hitbox.z/2;
+
+		if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
+			position.z = minCube.z - collision.hitbox.z/2;
+
+		if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+			position.x = maxCube.x + collision.hitbox.x/2;
+
+		if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+			position.x = minCube.x - collision.hitbox.x/2;
+	}
+
+	for (unsigned int i = 0; i < object.size(); i++)
+	{
+		if (!object[i]->ignoreCollision)
+			if (Object::checkCollision(this, object[i]))
+			{
+				Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
+				Vector3 maxCube = Cube; maxCube += object[i]->position;
+				Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
+
+				if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y)
+					position.y = maxCube.y; 
+
+				if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
+					position.z = maxCube.z + collision.hitbox.z/2;
+
+				if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
+					position.z = minCube.z - collision.hitbox.z/2;
+
+				if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+					position.x = maxCube.x + collision.hitbox.x/2;
+
+				if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+					position.x = minCube.x - collision.hitbox.x/2;
+			}
+	}
 }

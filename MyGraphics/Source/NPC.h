@@ -40,6 +40,8 @@ public:
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
 	virtual void Update(double dt, vector<Object*>object, Player* player) {};
+
+	void RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player);
 };
 
 class Hobo : public NPC

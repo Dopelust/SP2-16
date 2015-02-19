@@ -10,24 +10,6 @@
 
 using namespace::std;
 
-class Loot
-{
-public:
-	Loot(std::string n, Vector3 p) 
-	{
-		name = n;
-		textPos = p;
-		elapsedTime = 0;
-	};
-	~Loot() {};
-
-	std::string name;
-	Vector3 textPos;
-	float elapsedTime;
-
-	void Update(double dt);
-};
-
 class Player
 {
 public:
@@ -85,7 +67,6 @@ public:
 
 	bool state[TOTAL_STATES];
 	float value[TOTAL_VALUES];
-	vector<Loot*> loot;
 
 	bool checkCollision(Object* b);
 	void InitPos();

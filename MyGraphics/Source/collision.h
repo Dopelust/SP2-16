@@ -35,6 +35,7 @@ public:
 	float orientation;
 	float size;
 	bool ignoreCollision;
+	static bool checkCollision(Object* a, Object* b);
 
 	virtual void Update(double dt);
 
