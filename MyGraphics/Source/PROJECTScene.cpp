@@ -124,7 +124,7 @@ void PROJECTScene::RicssonInit()
 	}
 
 	tempMesh = MeshBuilder::GenerateOBJ("Cereal Box", "OBJ//Food//cerealbox.obj"); tempMesh->textureID = LoadTGA("Image//Food//cerealbox.tga");
-	hitBox = Vector3(0.6f, 0.8f, 0.6f); cube = MeshBuilder::GenerateCube("CerealBoxHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(0.6f, 0.8f, 0.2f); cube = MeshBuilder::GenerateCube("CerealBoxHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for (int y = 0; y <= 10; y++)
 	{
 		object.push_back( new Item(Vector3(-3,y,-20), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
@@ -372,10 +372,11 @@ void PROJECTScene::Update(double dt)
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
 	camera.lookAt = camera.lookingAt(object);
-	
+
 	if ((Application::IsKeyPressed('E')) && object[camera.lookAt]->mesh != NULL)
 	{
 		if (object[camera.lookAt]->type == "Item")
+		{
 			if (player.inventory.Insert(object[camera.lookAt]))
 			{				
 				Vector3 tPos = object[camera.lookAt]->position + object[camera.lookAt]->collision.centre;
@@ -383,6 +384,7 @@ void PROJECTScene::Update(double dt)
 				object.erase(object.begin()+camera.lookAt);
 
 			}
+		}
 
 		else if (object[camera.lookAt]->mesh->name == "Button")
 		{

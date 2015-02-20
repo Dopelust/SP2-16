@@ -111,11 +111,11 @@ void Thug::Control(double dt, vector<Object*>object, Player* player)
 
 void NPC::RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player)
 {
-	
 	Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
 	Vector3 maxPlayer = Cube + initialPos;
 	Vector3 minPlayer = Cube - collision.hitbox + initialPos;
 	minPlayer.y += 0.5f;
+
 	if (player->checkCollision(this))
 	{
 		Vector3 maxCube = player->collision.hitbox/2; maxCube.y = player->collision.hitbox.y; maxCube += player->position;

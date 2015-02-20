@@ -76,47 +76,39 @@ void Camera3::Update(double dt, Player* player, vector<Object*>object)
 int Camera3::lookingAt(vector<Object*>object)
 {
 	Vector3 view = (target - position).Normalized(); view/=10;
-	Object r(position + view*59.5, Vector3(0,0,0), Vector3(12,12,12));
-	vector<int> store[2];
+	Object r(position + view*59.5f, Vector3(0,0,0), Vector3(12,12,12));
+	Object o(position, Vector3(0,0,0), Vector3(0.1f,0.1f,0.1f));
+
+	vector<Object*> closeObjects;
+	vector<int> index;
 
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
 		if (Object::checkCollision(object[i], &r))
 		{
-			int reach = 0;
-			int maxReach = 0;
-
-			if (object[i]->type == "NPC")
-				maxReach = 120;
-			else
-				maxReach = 100;
-
-			for (Vector3 p = position; reach < maxReach; p += view)
-			{
-				Object o(p, Vector3(0,0,0), Vector3(0.1f,0.1f,0.1f));
-				if ( Object::checkCollision(object[i], &o) )
-				{
-					store[0].push_back(reach);
-					store[1].push_back(i);
-				}
-				reach++;
-			}
+			closeObjects.push_back(object[i]);
+			index.push_back(i);
 		}
 	}
 
-	int nearest = 120;
-	int index = 0;
-
-	for (unsigned int i = 0; i < store[0].size(); i++)
+	if (!closeObjects.empty())
 	{
-		if (nearest > store[0][i])
+		int reach = 0;
+		for (Vector3 p = position; reach < 120; p += view)
 		{
-			nearest = store[0][i];
-			index = store[1][i];
+			for (unsigned int i = 0; i < closeObjects.size(); i++)
+			{
+				o.position = p;
+				if ( Object::checkCollision(closeObjects[i], &o) )
+				{
+					return index[i];
+				}
+			}
+			reach++;
 		}
 	}
 
-	return index;
+	return 0;
 }
 
 void Camera3::Reset()
