@@ -133,6 +133,14 @@ void PROJECTScene::RicssonInit()
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 160.f, 130.f, 30); tempMesh->textureID = LoadTGA("Image//floor.tga");
 	hitBox = Vector3(160, 0.1f, 130.f); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,0,-22.5), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	for (int y = 0; y <= 6; y+=3)
+	{
+		hitBox = Vector3(3, 3, 3);
+		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
+		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new dynamicObject(Vector3(0,y,-22.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube) );
+	}
 }
 
 void PROJECTScene::JeremiahInit()
@@ -314,13 +322,15 @@ void PROJECTScene::Init()
 
 	InitJunk();
 
-	camera.Init(Vector3(85,12,-10), Vector3(80, 12, -10), Vector3(0, 1, 0));
+	camera = &player.camera;
 
 	RicssonInit();
 	JeremiahInit();
 	JessicaInit();
 	DarrenInit();
 
+	meshList[GEO_HOLD] = MeshBuilder::GenerateCubeOnPlane("Cube", Color(1,1,1), 1.f, 1.f, 1.f, 1);
+	meshList[GEO_HOLD]->textureID = LoadTGA("Image//hold.tga");
 	meshList[GEO_CUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 0.1f, 0.1f, 0.1f, 1);
 	meshList[GEO_BIGCUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 12.f, 12.f, 12.f, 1);
 
@@ -371,22 +381,25 @@ void PROJECTScene::Update(double dt)
 	else
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
-	camera.lookAt = camera.lookingAt(object);
+	camera->lookAt = camera->lookingAt(object);
+	
+	player.Update(dt, object);
+	doorway.Update(dt);
 
-	if ((Application::IsKeyPressed('E')) && object[camera.lookAt]->mesh != NULL)
+	if (player.holding < 0)
+	if ((Application::IsKeyPressed('E')) && object[camera->lookAt]->mesh != NULL)
 	{
-		if (object[camera.lookAt]->type == "Item")
+		if (object[camera->lookAt]->type == "Item")
 		{
-			if (player.inventory.Insert(object[camera.lookAt]))
+			if (player.inventory.Insert(object[camera->lookAt]))
 			{				
-				Vector3 tPos = object[camera.lookAt]->position + object[camera.lookAt]->collision.centre;
-				lootedText.push_back( new OnScreenText(object[camera.lookAt]->mesh->name,tPos) );
-				object.erase(object.begin()+camera.lookAt);
-
+				Vector3 tPos = object[camera->lookAt]->position + object[camera->lookAt]->collision.centre;
+				lootedText.push_back( new OnScreenText(object[camera->lookAt]->mesh->name,tPos) );
+				object.erase(object.begin()+camera->lookAt);
 			}
 		}
 
-		else if (object[camera.lookAt]->mesh->name == "Button")
+		else if (object[camera->lookAt]->mesh->name == "Button")
 		{
 			doorway.open = true; doorway.close = false;
 			doorway.Button[0].mesh = doorway.buttonStatus[1]; doorway.Button[1].mesh = doorway.buttonStatus[1];
@@ -402,15 +415,15 @@ void PROJECTScene::Update(double dt)
 		doorway.elapsedTime = 0;
 	}
 
-	player.Update(dt, object);
-	camera.Update(dt, &player, object);
-	doorway.Update(dt);
-
+	for (unsigned int i = 0; i < object.size(); i++)
+	{
+		if (object[i]->type == "Dynamic")
+			object[i]->Update(dt, object, &player);
+	}
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		character[i]->Update(dt, object, &player);
 	}
-
 
 	for (unsigned int i = 0; i < lootedText.size(); i++)
 	{
@@ -446,9 +459,9 @@ void PROJECTScene::Render()
 
 	modelStack.LoadIdentity();
 	viewStack.LoadIdentity();
-	viewStack.LookAt(camera.position.x, camera.position.y,
-	camera.position.z, camera.target.x, camera.target.y,
-	camera.target.z, camera.up.x, camera.up.y, camera.up.z);
+	viewStack.LookAt(camera->position.x, camera->position.y,
+	camera->position.z, camera->target.x, camera->target.y,
+	camera->target.z, camera->up.x, camera->up.y, camera->up.z);
 	Mtx44 projection;
 	projection.SetToPerspective(60.f, 4.f / 3.f, 0.1f, 100000.f);
 	projectionStack.LoadMatrix(projection);
@@ -478,13 +491,13 @@ void PROJECTScene::Render()
 	if(Application::IsKeyPressed('T'))
 	{
 		modelStack.PushMatrix();
-		modelStack.Translate(camera.target);
+		modelStack.Translate(camera->target);
 		RenderMesh(meshList[GEO_AXES], false);
 		modelStack.PopMatrix();
 	}
 
 	modelStack.PushMatrix();
-	modelStack.Translate(camera.position);
+	modelStack.Translate(camera->position);
 	modelStack.Scale(500);
 	RenderSkybox();
 	modelStack.PopMatrix();
@@ -520,8 +533,8 @@ void PROJECTScene::Render()
 	{
 		modelStack.PushMatrix();
 		modelStack.Translate(blood[i]->position);
-		modelStack.Rotate(camera.orientation, 0, 1, 0); 
-		modelStack.Rotate(-camera.look, 1, 0, 0); 
+		modelStack.Rotate(camera->orientation, 0, 1, 0); 
+		modelStack.Rotate(-camera->look, 1, 0, 0); 
 		modelStack.Rotate(90, 1, 0, 0); 
 		RenderMesh(blood[i]->mesh, false);
 		modelStack.PopMatrix();
@@ -557,6 +570,16 @@ void PROJECTScene::Render()
 	//RenderMesh(meshList[GEO_LIGHTBALL], false);
 	modelStack.PopMatrix();
 
+	if (player.holding >= 0)
+	{
+		modelStack.PushMatrix();
+		modelStack.Translate(0,-0.025f,0);
+		modelStack.Translate(object[player.holding]->position);
+		modelStack.Scale(object[player.holding]->collision.hitbox.x + 0.05f, object[player.holding]->collision.hitbox.y + 0.05f, object[player.holding]->collision.hitbox.z + 0.05f);
+		RenderMesh(meshList[GEO_HOLD], false);
+		modelStack.PopMatrix();
+	}
+
 	glDisable(GL_DEPTH_TEST);
 	for (unsigned int i = 0; i < lootedText.size(); i++)
 	{
@@ -564,8 +587,8 @@ void PROJECTScene::Render()
 
 		modelStack.PushMatrix();
 		modelStack.Translate(lootedText[i]->textPos);
-		modelStack.Rotate(camera.orientation, 0,1,0);
-		modelStack.Rotate(-camera.look,1,0,0);
+		modelStack.Rotate(camera->orientation, 0,1,0);
+		modelStack.Rotate(-camera->look,1,0,0);
 		modelStack.Rotate(180, 0,1,0);
 		modelStack.Scale(0.5f);
 		float textLength = getTextWidth(text);
@@ -574,18 +597,18 @@ void PROJECTScene::Render()
 		modelStack.PopMatrix();
 	}
 
-	if (object[camera.lookAt]->type == "NPC")
+	if (object[camera->lookAt]->type == "NPC")
 	{
 		modelStack.PushMatrix();
-		modelStack.Translate(object[camera.lookAt]->position);
+		modelStack.Translate(object[camera->lookAt]->position);
 		modelStack.Translate(0,7.f,0);
-		modelStack.Rotate(camera.orientation, 0,1,0);
-		modelStack.Rotate(-camera.look,1,0,0);
+		modelStack.Rotate(camera->orientation, 0,1,0);
+		modelStack.Rotate(-camera->look,1,0,0);
 		modelStack.Rotate(180, 0,1,0);
 		modelStack.Scale(0.5f);
-		float textLength = getTextWidth(object[camera.lookAt]->getIdentity());
+		float textLength = getTextWidth(object[camera->lookAt]->getIdentity());
 		modelStack.Translate(-textLength/2 + 0.1f, 0, 0);
-		RenderText(meshList[GEO_TEXT], object[camera.lookAt]->getIdentity(), Color(1, 1, 1));
+		RenderText(meshList[GEO_TEXT], object[camera->lookAt]->getIdentity(), Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
 
@@ -654,9 +677,9 @@ void PROJECTScene::Render()
 	RenderMesh(player.inventory.selector.mesh, false);
 	modelStack.PopMatrix();
 
-	string x = to_string(long double(camera.position.x));
-	string y = to_string(long double(camera.position.y));
-	string z = to_string(long double(camera.position.z));
+	string x = to_string(long double(camera->position.x));
+	string y = to_string(long double(camera->position.y));
+	string z = to_string(long double(camera->position.z));
 
 	modelStack.PushMatrix();
 	modelStack.Translate(-15,11,0);
@@ -669,14 +692,15 @@ void PROJECTScene::Render()
 	RenderText(meshList[GEO_TEXT], fps, Color(1, 1, 1));
 	modelStack.PopMatrix();
 	
-	if (object[camera.lookAt]->ignoreCollision && object[camera.lookAt]->mesh != NULL)
+	if (player.holding < 0)
+	if (object[camera->lookAt]->ignoreCollision && object[camera->lookAt]->mesh != NULL)
 	{
 		string tooltip;
-		if (object[camera.lookAt]->mesh->name == "Button")
+		if (object[camera->lookAt]->mesh->name == "Button")
 			tooltip += "E to push ";
 		else
 			tooltip += "E to loot ";
-		tooltip += object[camera.lookAt]->mesh->name;
+		tooltip += object[camera->lookAt]->mesh->name;
 
 		modelStack.PushMatrix();
 		modelStack.Translate(0.35f,-5,0);
@@ -956,10 +980,6 @@ void PROJECTScene::RenderCrosshair()
 	modelStack.Rotate(90,1,0,0);
 	RenderMesh(meshList[GEO_LINE], false);
 	modelStack.PopMatrix();
-}
-
-void Object::Update(double dt)
-{
 }
 void Doorway::Update(double dt)
 {

@@ -8,15 +8,17 @@ Vector3 originalPos;
 
 using namespace::std;
 
-void Player::InitPos()
-{
-	value[eyeLevel] = 5.5f;
-	collision.hitbox = Vector3(2.f, 6.f, 2.f);
-	collision.centre = Vector3(0, collision.hitbox.y/2, 0);
-}
 void Player::Update(double dt, vector<Object*>object)
 {
 	Control(dt, object);
+
+	camera.position = position;
+	camera.position.y += value[eyeLevel];
+	camera.Update(dt, object);
+
+	hOrientation = camera.orientation;
+	vOrientation = camera.look;
+
 	inventory.Update(dt);
 
 	if (value[jumpCooldown] > 0)
@@ -114,21 +116,9 @@ void Player::Control(double dt, vector<Object*>object)
 	if(Application::IsKeyPressed('D'))
 		count++;
 
-	if(Application::IsKeyPressed(VK_CONTROL))
-	{
-		collision.hitbox.y = 3.f;
-		collision.centre.y = collision.hitbox.y/2;
-		value[eyeLevel] = 2.5f;
-		velocity = Vector3(15,velocity.y,15);
-	}
-	else
-	{
-		InitPos();
-	}
-
-	if(Application::IsKeyPressed(VK_SHIFT) && !Application::IsKeyPressed(VK_CONTROL))
+	if(Application::IsKeyPressed(VK_SHIFT))
 		velocity = Vector3(40,velocity.y,40);
-	else if (!Application::IsKeyPressed(VK_CONTROL))
+	else
 		velocity = Vector3(30,velocity.y,30);
 	
 	if (count == 2)
@@ -198,51 +188,253 @@ void Player::Control(double dt, vector<Object*>object)
 
 				minPlayer += initialPos;
 
-				Vector3 pos = position; //y is ground
-
-				if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && velocity.y <= 0)
+				if (initialPos.y == maxCube.y || (Math::distBetween(initialPos.y, maxCube.y) <= 0.5f && velocity.y == 0)) //If standing on object or going up a block, check y first
 				{
-					position.y = maxCube.y; 
-					velocity.y = 0;
-				}
+					if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && velocity.y <= 0)
+					{
+						position.y = maxCube.y; 
+						velocity.y = 0;
+					}
 
-				else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
-				{	
-					velocity.y = 0;
-				}
+					else if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
+						position.z = maxCube.z + collision.hitbox.z/2;
 
-				else 
+					else if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
+						position.z = minCube.z - collision.hitbox.z/2;
+
+					else if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+						position.x = maxCube.x + collision.hitbox.x/2;
+
+					else if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+						position.x = minCube.x - collision.hitbox.x/2;
+					
+					else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
+					{	
+						velocity.y = 0;
+					}
+				}
+				else
 				{
 					if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
 						position.z = maxCube.z + collision.hitbox.z/2;
 
-					if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
+					else if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
 						position.z = minCube.z - collision.hitbox.z/2;
 
-					if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+					else if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
 						position.x = maxCube.x + collision.hitbox.x/2;
 
-					if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+					else if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
 						position.x = minCube.x - collision.hitbox.x/2;
 
+					else if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && velocity.y <= 0)
+					{
+						position.y = maxCube.y; 
+						velocity.y = 0;
+					}
+
+					else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
+					{	
+						velocity.y = 0;
+					}
 				}
 
 			}
 	}
+}
 
-	float yaw = (float)(value[mouseSens] * dt * (float)(800/2 - Application::getMousePos().x));
-	hOrientation += yaw;
+float inputDelay = 0;
 
-	if (vOrientation <= 90 && vOrientation >= -90)
+void dynamicObject::Update(double dt, vector<Object*>object, Player* player)
+{
+	Vector3 initialPos = position;
+
+	if (inputDelay > 0)
+		inputDelay -= dt;
+	else
+		inputDelay = 0;
+
+	yVelocity -= 40 * dt;
+	position.y += (float)(yVelocity * dt); 
+
+	Control(dt, object, player);
+	RespondToCollision(initialPos, object, player);
+}
+
+void dynamicObject::Control(double dt, vector<Object*>object, Player* player)
+{
+	if (object[player->camera.lookAt] == this)
 	{
-		float pitch = (float)(value[mouseSens] * dt * (float)(600/2 - Application::getMousePos().y));
-		vOrientation += pitch;
+		if (Application::IsKeyPressed('E') && player->holding < 0 && inputDelay == 0)
+		{
+			player->holding = player->camera.lookAt;
+			inputDelay = 0.75f;
+		}
 	}
 
-	if (vOrientation >= 90.f)
-		vOrientation = 90.f;
-	if (vOrientation <= -90.f)
-		vOrientation = -90.f;
+	if (player->holding >= 0)
+	if (object[player->holding] == this)
+	{
+		position = player->camera.target;
+		yVelocity = 0;
+
+		if ((Application::IsKeyPressed('E') && inputDelay == 0))
+		{
+			player->holding = -1;
+			inputDelay = 0.75f;
+		}
+	}
+	
+}
+
+void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player)
+{
+	Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
+	Vector3 maxPlayer = Cube + initialPos;
+	Vector3 minPlayer = Cube - collision.hitbox;
+	minPlayer.y = 0.5f; 
+
+	minPlayer += initialPos;
+
+	if ( !(player->holding >= 0 && object[player->holding] == this) )
+	if (player->checkCollision(this))
+	{
+		Vector3 maxCube = player->collision.hitbox/2; maxCube.y = player->collision.hitbox.y; maxCube += player->position;
+		Vector3 minCube = -player->collision.hitbox/2; 
+	
+		if (player->state[player->JUMP])
+			minCube.y = 0.1f;
+		else
+			minCube.y = 0.5f;
+
+		minCube += player->position;
+
+		if (initialPos.y == maxCube.y || (Math::distBetween(initialPos.y, maxCube.y) <= 0.5f && yVelocity == 0))  //If standing on object, check y first
+		{
+			if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && yVelocity <= 0)
+			{
+				position.y = maxCube.y; 
+				yVelocity = 0;
+			}
+
+			else if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
+				position.z = maxCube.z + collision.hitbox.z/2;
+
+			else if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
+				position.z = minCube.z - collision.hitbox.z/2;
+
+			else if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+				position.x = maxCube.x + collision.hitbox.x/2;
+
+			else if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+				position.x = minCube.x - collision.hitbox.x/2;
+
+			else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
+			{	
+				yVelocity = 0;
+			}
+		}
+		else
+		{
+			if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
+				position.z = maxCube.z + collision.hitbox.z/2;
+
+			else if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
+				position.z = minCube.z - collision.hitbox.z/2;
+
+			else if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+				position.x = maxCube.x + collision.hitbox.x/2;
+
+			else if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+				position.x = minCube.x - collision.hitbox.x/2;
+
+			else if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && yVelocity <= 0)
+			{
+				position.y = maxCube.y; 
+				yVelocity = 0;
+			}
+
+			else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
+			{	
+				yVelocity = 0;
+			}
+		}
+	}
+
+	for (unsigned int i = 0; i < object.size(); i++)
+	{
+		if (object[i] != this)
+		if (!object[i]->ignoreCollision)
+			if (Object::checkCollision(this, object[i]))
+			{
+				Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
+				Vector3 maxCube = Cube; maxCube += object[i]->position;
+				Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
+
+				if (initialPos.y == maxCube.y || (Math::distBetween(initialPos.y, maxCube.y) <= 0.5f && yVelocity == 0)) //If standing on object, check y first
+				{
+					if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && yVelocity <= 0)
+					{
+						position.y = maxCube.y; 
+						yVelocity = 0;
+					}
+
+					else if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
+						position.z = maxCube.z + collision.hitbox.z/2;
+
+					else if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
+						position.z = minCube.z - collision.hitbox.z/2;
+
+					else if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+						position.x = maxCube.x + collision.hitbox.x/2;
+
+					else if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+						position.x = minCube.x - collision.hitbox.x/2;
+					
+					else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
+					{	
+						yVelocity = 0;
+					}
+
+					else
+					{
+						position.y = maxCube.y; 
+						yVelocity = 0;
+					}
+				}
+				else
+				{
+					if (maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z)
+						position.z = maxCube.z + collision.hitbox.z/2;
+
+					else if (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z)
+						position.z = minCube.z - collision.hitbox.z/2;
+
+					else if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x)
+						position.x = maxCube.x + collision.hitbox.x/2;
+
+					else if (maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+						position.x = minCube.x - collision.hitbox.x/2;
+
+					else if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && yVelocity <= 0)
+					{
+						position.y = maxCube.y; 
+						yVelocity = 0;
+					}
+
+					else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
+					{	
+						yVelocity = 0;
+					}
+
+					else
+					{
+						position.y = maxCube.y; 
+						yVelocity = 0;
+					}
+				}
+			}
+	}
 }
 
 bool Player::checkCollision(Object* b)

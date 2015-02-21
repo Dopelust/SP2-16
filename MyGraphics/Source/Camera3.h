@@ -3,7 +3,6 @@
 
 #include "Camera.h"
 #include "collision.h"
-#include "player.h"
 
 #include <vector>
 
@@ -25,8 +24,8 @@ public:
 
 	Camera3();
 	~Camera3();
-	virtual void Init(const Vector3& pos, const Vector3& target, const Vector3& up);
-	virtual void Update(double dt, Player* player, vector<Object*>object);
+	virtual void Init(const Vector3& pos, const float& orientation, const float& look);
+	virtual void Update(double dt, vector<Object*>object);
 	virtual void Reset();
 };
 

@@ -360,6 +360,114 @@ Mesh* MeshBuilder::GenerateCube(const std::string &meshName, Color color, float 
 	return mesh;
 }
 
+Mesh* MeshBuilder::GenerateCubeOnPlane(const std::string &meshName, Color color, float lengthX, float lengthY, float lengthZ, int repeat)
+{
+	Vertex v;
+	std::vector<Vertex> vertex_buffer_data;	
+
+	//TOP
+	v.pos.Set(-0.5f * lengthX, 1 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(0,1,0); v.texCoord.Set(0, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 1 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(0,1,0); v.texCoord.Set(1*repeat, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(-0.5f * lengthX, 1 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(0,1,0); v.texCoord.Set(0, 0);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 1 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(0,1,0); v.texCoord.Set(1*repeat, 0);
+	vertex_buffer_data.push_back(v);
+
+	//BOTTOM
+	v.pos.Set(-0.5f * lengthX, 0 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(0,-1,0); v.texCoord.Set(0, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 0 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(0,-1,0); v.texCoord.Set(1*repeat, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(-0.5f * lengthX, 0 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(0,-1,0); v.texCoord.Set(0, 0);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 0 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(0,-1,0); v.texCoord.Set(1*repeat, 0);
+	vertex_buffer_data.push_back(v);
+
+	//LEFT
+	v.pos.Set(-0.5f * lengthX, 1 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(-1,0,0); v.texCoord.Set(0, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(-0.5f * lengthX, 1 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(-1,0,0); v.texCoord.Set(1*repeat, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(-0.5f * lengthX, 0 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(-1,0,0); v.texCoord.Set(0, 0);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(-0.5f * lengthX, 0 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(-1,0,0); v.texCoord.Set(1*repeat, 0);
+	vertex_buffer_data.push_back(v);
+
+	//RIGHT
+	v.pos.Set(0.5f * lengthX, 1 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(1,0,0); v.texCoord.Set(0, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 1 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(1,0,0); v.texCoord.Set(1*repeat, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 0 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(1,0,0); v.texCoord.Set(0, 0);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 0 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(1,0,0); v.texCoord.Set(1*repeat, 0);
+	vertex_buffer_data.push_back(v);
+
+	//FRONT
+	v.pos.Set(-0.5f * lengthX, 1 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(0,0,1); v.texCoord.Set(0, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 1 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(0,0,1); v.texCoord.Set(1*repeat, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(-0.5f * lengthX, 0 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(0,0,1); v.texCoord.Set(0, 0);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 0 * lengthY, 0.5f * lengthZ); v.color = color; v.normal.Set(0,0,1); v.texCoord.Set(1*repeat, 0);
+	vertex_buffer_data.push_back(v);
+
+	//BACK
+	v.pos.Set(-0.5f * lengthX, 1 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(0,0,-1); v.texCoord.Set(0, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 1 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(0,0,-1); v.texCoord.Set(1*repeat, 1*repeat);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(-0.5f * lengthX, 0 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(0,0,-1); v.texCoord.Set(0, 0);
+	vertex_buffer_data.push_back(v);
+
+	v.pos.Set(0.5f * lengthX, 0 * lengthY, -0.5f * lengthZ); v.color = color; v.normal.Set(0,0,-1); v.texCoord.Set(1*repeat, 0);
+	vertex_buffer_data.push_back(v);
+
+	std::vector<GLuint> index_buffer_data;
+
+	for (int i = 0; i < 6; i++)
+	{
+		index_buffer_data.push_back(0 + (i * 4));
+		index_buffer_data.push_back(1 + (i * 4));
+		index_buffer_data.push_back(2 + (i * 4));
+		index_buffer_data.push_back(2 + (i * 4));
+		index_buffer_data.push_back(1 + (i * 4));
+		index_buffer_data.push_back(3 + (i * 4));
+	}
+
+	Mesh *mesh = new Mesh(meshName);
+
+	glBindBuffer(GL_ARRAY_BUFFER, mesh->vertexBuffer);
+	glBufferData(GL_ARRAY_BUFFER, vertex_buffer_data.size() * sizeof(Vertex), &vertex_buffer_data[0], GL_STATIC_DRAW);
+
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, mesh->indexBuffer); 
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER,  index_buffer_data.size()  * sizeof(GLuint), &index_buffer_data[0], GL_STATIC_DRAW); 
+
+	mesh->indexSize = index_buffer_data.size();
+	mesh->mode = Mesh::DRAW_TRIANGLES;
+
+	return mesh;
+}
 /******************************************************************************/
 /*!
 \brief

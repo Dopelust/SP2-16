@@ -414,6 +414,11 @@ Vector3 operator*( float scalar, const Vector3& rhs )
 	return rhs * scalar;
 }
 
+float Vector3::Dist( const Vector3& rhs ) const
+{
+	return sqrt( ((x - rhs.x)*(x - rhs.x)) + ((y - rhs.y)*(y - rhs.y)) + ((z - rhs.z)*(z - rhs.z)) );
+}
+
 Vector3& Vector3::SphericalToCartesian(float yaw, float pitch)
 {
 	x = cos(Math::DegreeToRadian(pitch)) * sin(Math::DegreeToRadian(yaw));

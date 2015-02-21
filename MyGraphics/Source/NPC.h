@@ -3,7 +3,7 @@
 
 #include "player.h"
 
-class NPC : public Object
+class NPC : public dynamicObject
 {
 private:
 
@@ -40,8 +40,6 @@ public:
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
 	virtual void Update(double dt, vector<Object*>object, Player* player) {};
-
-	void RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player);
 };
 
 class Hobo : public NPC
@@ -49,7 +47,7 @@ class Hobo : public NPC
 public:
 	Hobo()
 	{
-		position = Vector3(0,0,-100);
+		position = Vector3(0,1,-100);
 		Init();	
 	};
 	~Hobo() {};
@@ -64,7 +62,7 @@ class Thug : public NPC
 public:
 	Thug()
 	{
-		position = Vector3(0,0,0);
+		position = Vector3(0,1,25);
 		Init();	
 	};
 	~Thug() {};
