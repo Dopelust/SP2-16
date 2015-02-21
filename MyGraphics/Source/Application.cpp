@@ -34,7 +34,7 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 }
 void scroll_callback(GLFWwindow* window, double x, double y)
 {
-	Application::mouseScroll = y;
+	Application::mouseScroll = int(y);
 }
 
 void resize_callback(GLFWwindow* window, int w, int h)

@@ -32,15 +32,13 @@ public:
 		knifeStrike,
 		knifeCooldown,
 		mouseSens,
-		groundLevel,
 		eyeLevel,
 		jumpCooldown,
-		airElapsed,
 		TOTAL_VALUES,
 	};
 	Player() 
 	{ 
-		position = Vector3(0, 1, 10);
+		position = Vector3(0, 2, 10);
 		for (int i = 0; i < TOTAL_VALUES; i++)
 		{
 			value[i] = 0.f;
@@ -92,6 +90,7 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 	virtual void Update(double dt, vector<Object*>object, Player* player);
 	float yVelocity;
+
 	void RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player);
 };
 

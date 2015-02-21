@@ -47,7 +47,7 @@ class Hobo : public NPC
 public:
 	Hobo()
 	{
-		position = Vector3(0,1,-100);
+		position = Vector3(0,2,-100);
 		Init();	
 	};
 	~Hobo() {};
@@ -62,7 +62,7 @@ class Thug : public NPC
 public:
 	Thug()
 	{
-		position = Vector3(0,1,25);
+		position = Vector3(0,2,25);
 		Init();	
 	};
 	~Thug() {};
