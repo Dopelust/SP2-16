@@ -10,7 +10,7 @@ using namespace::std;
 
 void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Vector3 maxCube, Vector3 minCube, Vector3 maxPlayer, Vector3 minPlayer, float& yVelocity, bool failSafe)
 {
-	if (initialPos.y == maxCube.y || (Math::distBetween(initialPos.y, maxCube.y) <= 0.5f && yVelocity == 0))  //If standing on object, check y first
+	if (initialPos.y == maxCube.y || (Math::distBetween(minPlayer.y, maxCube.y) <= 0.4f && yVelocity >= -1.5f))  //If standing on object, check y first
 	{
 		if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && yVelocity <= 0)
 		{
@@ -250,7 +250,7 @@ void Player::Control(double dt, vector<Object*>object)
 				if (state[JUMP])
 					minPlayer.y = 0.1f;
 				else
-					minPlayer.y = 0.5f;
+					minPlayer.y = 0.4f;
 
 				minPlayer += initialPos;
 				CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, false);
@@ -258,48 +258,17 @@ void Player::Control(double dt, vector<Object*>object)
 	}
 }
 
-float inputDelay = 0;
+float eDelay = 0;
 
 void dynamicObject::Update(double dt, vector<Object*>object, Player* player)
 {
 	Vector3 initialPos = position;
-
-	if (inputDelay > 0)
-		inputDelay -= dt;
-	else
-		inputDelay = 0;
 
 	yVelocity -= 40 * dt;
 	position.y += (float)(yVelocity * dt); 
 
 	Control(dt, object, player);
 	RespondToCollision(initialPos, object, player);
-}
-
-void dynamicObject::Control(double dt, vector<Object*>object, Player* player)
-{
-	if (object[player->camera.lookAt] == this)
-	{
-		if (Application::IsKeyPressed('E') && player->holding < 0 && inputDelay == 0)
-		{
-			player->holding = player->camera.lookAt;
-			inputDelay = 0.75f;
-		}
-	}
-
-	if (player->holding >= 0)
-	if (object[player->holding] == this)
-	{
-		position = player->camera.target;
-		yVelocity = 0;
-
-		if ((Application::IsKeyPressed('E') && (player->camera.lookAt == player->holding || object[player->camera.lookAt]->ignoreCollision) && inputDelay == 0))
-		{
-			player->holding = -1;
-			inputDelay = 0.75f;
-		}
-	}
-	
 }
 
 void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player)
@@ -330,7 +299,6 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
 		if (object[i] != this)
-		if (!object[i]->ignoreCollision)
 			if (Object::checkCollision(this, object[i]))
 			{
 				Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;

@@ -43,6 +43,7 @@ public:
 	int emptySlot();
 
 	bool Insert(Object* o);
+	bool Remove();
 	void Init(Vector3 pos);
 	void Update(double dt);
 };

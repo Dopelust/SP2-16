@@ -79,6 +79,17 @@ bool Inventory::Insert(Object* o)
 	return false;
 }
 
+bool Inventory::Remove()
+{
+	if (!selector.selectedSlot->item.empty())
+	{
+		selector.selectedSlot->item.pop_back();
+		return true;
+	}
+
+	return false;
+}
+
 int Inventory::emptySlot()
 {
 	for (int i = 0; i < 9; i++)

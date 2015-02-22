@@ -100,6 +100,7 @@ public:
 	void JessicaInit();
 	void DarrenInit();
 
+	static float inputDelay;
 private:
 	unsigned m_vertexArrayID;
 	Mesh * meshList[NUM_GEOMETRY];

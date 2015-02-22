@@ -9,16 +9,14 @@
 
 using namespace::std;
 
+float PROJECTScene::inputDelay = 0.f;
+
 PROJECTScene::PROJECTScene()
 {
 }
-
 PROJECTScene::~PROJECTScene()
 {
 }
-
-bool hideKnife = false;
-
 void PROJECTScene::InitJunk()
 {
 	m_programID = LoadShaders( "Shader//Texture.vertexshader", "Shader//MultiLight.fragmentshader" );
@@ -99,15 +97,24 @@ void PROJECTScene::RicssonInit()
 
 	hitBox = player.collision.hitbox; player.collision.boundingBox =  MeshBuilder::GenerateCube("PlayerHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	
-	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//shelf-2.obj"); tempMesh->textureID = LoadTGA("Image//shelf-blue.tga");
-	hitBox = Vector3(8,6,3); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	for (int x = -11; x <= 11; x+=11)
-	{	
-		for (int z = -30; z >= -54; z-=12)
-		{
-			object.push_back( new Object(Vector3(x,0,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
-		}
+	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//shelf-3.obj"); tempMesh->textureID = LoadTGA("Image//shelf-black.tga");
+	hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	for (int z = -30; z >= -54; z-=12)
+	{
+		hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Object(Vector3(0,0,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+		hitBox = Vector3(0.5f,6,3.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Object(Vector3(10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Object(Vector3(-10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		hitBox = Vector3(20,0.5f,1.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Storage(Vector3(0,0,z + 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,2,z + 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,4,z + 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,0,z - 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,2,z - 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,4,z - 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
 	}
+
 
 	tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
 	hitBox = Vector3(1.5f, 0.25f, 1.5f); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
@@ -130,9 +137,11 @@ void PROJECTScene::RicssonInit()
 		object.push_back( new Item(Vector3(-3,y,-20), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
 	
-	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 160.f, 130.f, 30); tempMesh->textureID = LoadTGA("Image//floor.tga");
-	hitBox = Vector3(160, 0.1f, 130.f); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,0,-22.5), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 160.f, 160, 25); tempMesh->textureID = LoadTGA("Image//floor.tga");
+	tempMesh->material.kShininess = 20.f;
+	tempMesh->material.kSpecular.Set(0.8f,0.8f,0.8f);
+	hitBox = Vector3(160, 0.1f, 160.f); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,-7.5), Vector3(0,-0.05f,0), hitBox, tempMesh, cube) );
 
 	for (int y = 0; y <= 6; y+=3)
 	{
@@ -159,8 +168,6 @@ void PROJECTScene::JeremiahInit()
 	{
 		object.push_back( character[i] );
 	}
-	
-
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3(2, 25, 132); 
@@ -194,10 +201,9 @@ void PROJECTScene::JeremiahInit()
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Cash Table~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//cashtable.obj"); tempMesh->textureID = LoadTGA("Image//cashtable.tga");
-	hitBox = Vector3(3, 3.69, 9); cube = MeshBuilder::GenerateCube("Cash Table", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(3, 3.5, 9); cube = MeshBuilder::GenerateCube("Cash Table", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(5,0,5), Vector3(-1.4,hitBox.y/2,-0.59), hitBox, tempMesh, cube) );
 }
-
 void PROJECTScene::JessicaInit()
 {
 	Mesh* tempMesh;
@@ -255,9 +261,9 @@ void PROJECTScene::JessicaInit()
 	}
 
 }
-
 void PROJECTScene::DarrenInit()
-{	Mesh* tempMesh;
+{	
+	Mesh* tempMesh;
 	Mesh* cube;
 	Vector3 hitBox;
 	float size = 0;
@@ -303,7 +309,7 @@ void PROJECTScene::DarrenInit()
 
 	tempMesh = MeshBuilder::GenerateOBJ("atm", "OBJ//atm.obj"); tempMesh->textureID = LoadTGA("Image//atm.tga");
 	hitBox = Vector3(2,7,3); cube = MeshBuilder::GenerateCube("atm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(5, 0 ,0), Vector3(-0.1,hitBox.y/2,0.3), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(5, 0 ,0), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube) );
 
 }
 
@@ -334,7 +340,7 @@ void PROJECTScene::Init()
 	meshList[GEO_CUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 0.1f, 0.1f, 0.1f, 1);
 	meshList[GEO_BIGCUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 12.f, 12.f, 12.f, 1);
 
-	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16.f, 16.f);
+	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
 	
 	meshList[GEO_ARM] = MeshBuilder::GenerateOBJ("Arm", "OBJ//CharOBJ//fpArm.obj");
@@ -382,20 +388,21 @@ void PROJECTScene::Update(double dt)
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
 	camera->lookAt = camera->lookingAt(object);
-	
-	player.Update(dt, object);
-	doorway.Update(dt);
 
 	if (player.holding < 0)
-	if ((Application::IsKeyPressed('E')) && object[camera->lookAt]->mesh != NULL)
+	if ((Application::IsKeyPressed('E')) && object[camera->lookAt]->mesh != NULL && inputDelay == 0)
 	{
 		if (object[camera->lookAt]->type == "Item")
 		{
 			if (player.inventory.Insert(object[camera->lookAt]))
-			{				
+			{	
+				inputDelay = 0.2f;
+
 				Vector3 tPos = object[camera->lookAt]->position + object[camera->lookAt]->collision.centre;
 				lootedText.push_back( new OnScreenText(object[camera->lookAt]->mesh->name,tPos) );
 				object.erase(object.begin()+camera->lookAt);
+
+				camera->lookAt = camera->lookingAt(object);
 			}
 		}
 
@@ -405,9 +412,36 @@ void PROJECTScene::Update(double dt)
 			doorway.Button[0].mesh = doorway.buttonStatus[1]; doorway.Button[1].mesh = doorway.buttonStatus[1];
 			doorway.elapsedTime = 0;
 		}
-
 	}
-	
+
+	for (unsigned int i = 0; i < object.size(); i++)
+	{
+		if (object[i]->type == "Storage")
+		{
+			if (camera->lookAt == i)
+			{
+				if (Application::IsKeyPressed('E') && inputDelay == 0)
+				{
+					Object * newObject;
+					if (!player.inventory.selector.selectedSlot->item.empty())
+						newObject = player.inventory.selector.selectedSlot->item.back();
+
+					if (player.inventory.Remove())
+					{	
+						inputDelay = 0.2f;
+
+						newObject->position = object[i]->getStorePos(&player); newObject->position.y = object[i]->collision.hitbox.y + object[i]->position.y;
+						object.push_back(newObject);
+
+						camera->lookAt = camera->lookingAt(object);
+					}
+				}
+			}
+		}
+	}
+
+	player.Update(dt, object);
+	doorway.Update(dt);
 	if ((player.checkCollision(&doorway.Door[0]) || player.checkCollision(&doorway.Door[1])) && doorway.close == false)
 	{
 		doorway.open = true; doorway.close = false;
@@ -420,6 +454,7 @@ void PROJECTScene::Update(double dt)
 		if (object[i]->type == "Dynamic")
 			object[i]->Update(dt, object, &player);
 	}
+
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		character[i]->Update(dt, object, &player);
@@ -450,8 +485,13 @@ void PROJECTScene::Update(double dt)
 	x = 1/dt;
 	fps += "FPS:";
 	fps += to_string(x);
-}
+	
+	if (inputDelay > 0)
+		inputDelay -= float(dt);
+	else
+		inputDelay = 0;
 
+}
 void PROJECTScene::Render()
 {
 	// Render VBO here
@@ -520,7 +560,7 @@ void PROJECTScene::Render()
 
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
-		for (unsigned j = 0; j < character[i]->NUM_BODYPARTS; j++)
+		for (int j = 0; j < character[i]->NUM_BODYPARTS; j++)
 		{
 			modelStack.PushMatrix();
 			modelStack.Translate(character[i]->position);
@@ -840,6 +880,49 @@ void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 	glBindTexture(GL_TEXTURE_2D, 0);
 	glUniform1i(m_parameters[U_TEXT_ENABLED], 0);
 }
+Vector3 Storage::getStorePos(Player* player)
+{
+	int reach = 0;
+	Vector3 view = (player->camera.target - player->camera.position).Normalized(); view/=10;
+	Object o(player->camera.position, Vector3(0,0,0), Vector3(0.1f,0.1f,0.1f));
+
+	for (Vector3 p = player->camera.position; reach < 120; p += view)
+	{
+		o.position = p;
+		if ( Object::checkCollision(this, &o) )
+		{
+			return p;
+		}
+		reach++;
+	}
+
+	return NULL;
+}
+void dynamicObject::Control(double dt, vector<Object*>object, Player* player)
+{
+	if (object[player->camera.lookAt] == this)
+	{
+		if (Application::IsKeyPressed('E') && player->holding < 0 && PROJECTScene::inputDelay == 0)
+		{
+			player->holding = player->camera.lookAt;
+			PROJECTScene::inputDelay = 0.2f;
+		}
+	}
+
+	if (player->holding >= 0)
+	if (object[player->holding] == this)
+	{
+		position = player->camera.target;
+		yVelocity = 0;
+
+		if ((Application::IsKeyPressed('E') && (player->camera.lookAt == player->holding || object[player->camera.lookAt]->ignoreCollision) && PROJECTScene::inputDelay == 0))
+		{
+			player->holding = -1;
+			PROJECTScene::inputDelay = 0.2f;
+		}
+	}
+	
+}
 
 float PROJECTScene::getTextWidth(string text)
 {
@@ -981,48 +1064,7 @@ void PROJECTScene::RenderCrosshair()
 	RenderMesh(meshList[GEO_LINE], false);
 	modelStack.PopMatrix();
 }
-void Doorway::Update(double dt)
-{
-	if (open == true)
-	{
-		elapsedTime += float(dt);
 
-		if (elapsedTime > 3.f)
-		{
-			open = false;
-			Button[0].mesh = buttonStatus[0]; Button[1].mesh = buttonStatus[0];
-			elapsedTime = 0;
-		}
-		
-		Door[0].position.x -= float(10.f * dt);
-		Door[1].position.x += float(10.f * dt);
-
-		if(Door[0].position.x <= doorPosition[0].x - Door[0].collision.hitbox.x)
-			Door[0].position.x = doorPosition[0].x - Door[0].collision.hitbox.x;
-		if(Door[1].position.x >= doorPosition[1].x + Door[1].collision.hitbox.x)
-			Door[1].position.x = doorPosition[1].x + Door[1].collision.hitbox.x;
-	}
-
-	else
-	{
-		Door[0].position.x += float(10.f * dt);
-		Door[1].position.x -= float(10.f * dt);
-
-		if (Door[0].position.x >= doorPosition[0].x)
-		{
-			Door[0].position.x = doorPosition[0].x; close = true;
-		}
-		if (Door[1].position.x <= doorPosition[1].x)
-		{
-			Door[1].position.x = doorPosition[1].x; close = true;
-		}
-	}
-}
-void Particles::Update(double dt)
-{
-	position += direction * float(dt);
-	elapsedTime += float(dt);
-}
 void OnScreenText::Update(double dt)
 {
 	elapsedTime += float(dt);

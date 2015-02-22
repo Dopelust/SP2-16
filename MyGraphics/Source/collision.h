@@ -47,6 +47,7 @@ public:
 	//Derived
 	virtual bool getPaid() {return 0;};
 	virtual string getIdentity() {return "";};
+	virtual Vector3 getStorePos(Player* player) {return Vector3();};
 };
 
 class Bodypart : public Object
@@ -75,6 +76,17 @@ public:
 
 	bool getPaid() {return paid;};
 	bool paid;
+};
+
+class Storage : public Object
+{
+public:
+	Storage() {};
+	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* b) : Object(p,c,h,b) {type = "Storage";};
+	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) : Object(p,c,h,m,b) {type = "Storage";};
+	~Storage() {};
+
+	virtual Vector3 getStorePos(Player* player);
 };
 
 class Doorway
