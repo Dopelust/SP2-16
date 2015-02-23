@@ -41,8 +41,10 @@ public:
 	Selector selector;
 	int index;
 	int emptySlot();
+	Mesh * slotMeshes[3];
 
 	bool Insert(Object* o);
+	bool Checkout();
 	bool Remove();
 	void Init(Vector3 pos);
 	void Update(double dt);
