@@ -82,14 +82,14 @@ public:
 class dynamicObject : public Object
 {
 public:
-	dynamicObject()  {type = "Dynamic"; yVelocity = 0;};
-	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) :	Object(p,c,h,m,b) {type = "Dynamic"; yVelocity = 0;};
+	dynamicObject()  {type = "Dynamic";};
+	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) :	Object(p,c,h,m,b) {type = "Dynamic";};
 	~dynamicObject() {};
 
 	virtual void Init() {};
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 	virtual void Update(double dt, vector<Object*>object, Player* player);
-	float yVelocity;
+	Vector3 velocity;
 
 	void RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player);
 };

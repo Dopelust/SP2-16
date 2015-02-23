@@ -53,7 +53,7 @@ public:
 	~Hobo() {};
 
 	virtual void Init();
-	virtual void Control(double dt, vector<Object*>object, Player* player) {};
+	virtual void Control(double dt, vector<Object*>object, Player* player);
 	virtual void Update(double dt, vector<Object*>object, Player* player);
 };
 

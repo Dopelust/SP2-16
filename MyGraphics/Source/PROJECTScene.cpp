@@ -331,8 +331,12 @@ void PROJECTScene::DarrenInit()
 	hitBox = Vector3(2,7,3); cube = MeshBuilder::GenerateCube("atm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube) );//***************************Needs to be rotated***********************//
 
+	tempMesh = MeshBuilder::GenerateOBJ("Entrance Door", "OBJ//entrancedoor.obj"); tempMesh->textureID = LoadTGA("Image//metal.tga");
+	hitBox = Vector3(20,20,1.2f); cube = MeshBuilder::GenerateCube("Entrance", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(10,0,-87), Vector3(0,10,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-10,0,-87), Vector3(0,10,0), hitBox, tempMesh, cube) );
+	
 }
-
 void PROJECTScene::Init()
 {
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
@@ -585,6 +589,23 @@ void PROJECTScene::Render()
 			modelStack.PushMatrix();
 			modelStack.Translate(character[i]->position);
 			modelStack.Rotate(character[i]->orientation, 0, 1, 0); 
+			/*
+			if (j == 0)
+			{
+				Vector3 direction;
+				direction.SphericalToCartesian(character[i]->orientation, 0.f);
+
+				Vector3 target = player.position;
+				Vector3 destination = Vector3(target - character[i]->position).Normalized();
+
+				float Dot = direction.Dot(destination);
+				float Mag = direction.Length() * destination.Length();
+
+				modelStack.Translate(character[i]->bodyParts[j].collision.centre);
+				modelStack.Rotate(-Math::RadianToDegree(acos(Dot/Mag)), 1, 0, 0); 
+				modelStack.Translate(-character[i]->bodyParts[j].collision.centre);
+			}
+			*/
 			RenderMesh(character[i]->bodyParts[j].mesh, true);
 			modelStack.PopMatrix();
 		}
@@ -933,7 +954,7 @@ void dynamicObject::Control(double dt, vector<Object*>object, Player* player)
 	if (object[player->holding] == this)
 	{
 		position = player->camera.target;
-		yVelocity = 0;
+		velocity.y = 0;
 
 		if ((Application::IsKeyPressed('E') && (player->camera.lookAt == player->holding || object[player->camera.lookAt]->ignoreCollision) && PROJECTScene::inputDelay == 0))
 		{
