@@ -30,6 +30,7 @@ public:
 	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* b); //Bounding Box Only
 	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b); //Normal Objects
 	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i); //Full Constructor
+	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, bool paid) {}; //Item Constructor
 	~Object() {};
 
 	std::string type;
@@ -45,6 +46,7 @@ public:
 	virtual void Update(double dt, vector<Object*>object, Player* player) {};
 
 	//Derived
+	virtual void setPaid(bool p) {return;};
 	virtual bool getPaid() {return 0;};
 	virtual string getIdentity() {return "";};
 	virtual Vector3 getStorePos(Player* player) {return Vector3();};
@@ -73,8 +75,10 @@ class Item : public Object
 public:
 	Item() {ignoreCollision = true;};
 	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {paid = false; type = "Item";};
+	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, bool P) :	Object(p,c,h,m,b,s,o,i) {paid = P; type = "Item";};
 	~Item();
 
+	void setPaid(bool p) {paid = p;};
 	bool getPaid() {return paid;};
 	bool paid;
 };
