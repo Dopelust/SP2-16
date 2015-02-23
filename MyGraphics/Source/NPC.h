@@ -65,6 +65,11 @@ public:
 		position = Vector3(0,2,25);
 		Init();	
 	};
+	Thug(Vector3 p)
+	{
+		position = p;
+		Init();
+	}
 	~Thug() {};
 
 	virtual void Init();
@@ -83,6 +88,7 @@ public:
 	Cashier(Vector3 p)
 	{
 		position = p;
+		orientation = 90;
 		Init();
 	}
 	~Cashier() {};

@@ -255,31 +255,6 @@ void Cashier::Update(double dt, vector<Object*>object, Player* player)
 {
 	Vector3 initialPos = position;
 
-	/*if (velocity.z > 0)
-	{
-		velocity.z -= 80 * dt;
-		if (velocity.z <= 0)
-			velocity.z = 0;
-	}
-	else if (velocity.z < 0)
-	{
-		velocity.z += 80 * dt;
-		if (velocity.z >= 0)
-			velocity.z = 0;
-	}
-
-	if (velocity.x > 0)
-	{
-		velocity.x -= 80 * dt;
-		if (velocity.x <= 0)
-			velocity.x = 0;
-	}
-	else if (velocity.x < 0)
-	{
-		velocity.x += 80 * dt;
-		if (velocity.x >= 0)
-			velocity.x = 0;
-	}*/
 
 	velocity.y -= 80 * dt;
 
@@ -320,14 +295,6 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 		velocity.z += direction.z * 25;
 		velocity.y += 15;
 		CashierHitDelay = 0.5f;
-	}
-	else if (CashierHitDelay == 0)
-	{
-		Vector3 direction;
-		direction.SphericalToCartesian(orientation, 0.f);
-
-		velocity.x = direction.x * 5;
-		velocity.z = direction.z * 5;
 	}
 }
 

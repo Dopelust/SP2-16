@@ -168,9 +168,6 @@ void PROJECTScene::JeremiahInit()
 	Vector3 hitBox2;
 	float size = 0;
 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hobo Character~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-	//z 57
-	//x 72
 	character.push_back( new Hobo() );
 	character.push_back( new Thug() );
 	
