@@ -61,44 +61,6 @@ bool Object::checkCollision(Object* a, Object*  b)
     minCubeA.z < maxCubeB.z);
 }
 
-void Doorway::Update(double dt)
-{
-	if (open == true)
-	{
-		elapsedTime += float(dt);
-
-		if (elapsedTime > 3.f)
-		{
-			open = false;
-			Button[0].mesh = buttonStatus[0]; Button[1].mesh = buttonStatus[0];
-			elapsedTime = 0;
-		}
-		
-		Door[0].position.x -= float(10.f * dt);
-		Door[1].position.x += float(10.f * dt);
-
-		if(Door[0].position.x <= doorPosition[0].x - Door[0].collision.hitbox.x)
-			Door[0].position.x = doorPosition[0].x - Door[0].collision.hitbox.x;
-		if(Door[1].position.x >= doorPosition[1].x + Door[1].collision.hitbox.x)
-			Door[1].position.x = doorPosition[1].x + Door[1].collision.hitbox.x;
-	}
-
-	else
-	{
-		Door[0].position.x += float(10.f * dt);
-		Door[1].position.x -= float(10.f * dt);
-
-		if (Door[0].position.x >= doorPosition[0].x)
-		{
-			Door[0].position.x = doorPosition[0].x; close = true;
-		}
-		if (Door[1].position.x <= doorPosition[1].x)
-		{
-			Door[1].position.x = doorPosition[1].x; close = true;
-		}
-	}
-}
-
 void Particles::Update(double dt)
 {
 	position += direction * float(dt);

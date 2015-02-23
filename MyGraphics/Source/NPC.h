@@ -18,6 +18,7 @@ public:
 		R_LEG,
 		NUM_BODYPARTS,
 	};
+
 	NPC(void)
 	{
 		type = "NPC";
@@ -29,6 +30,9 @@ public:
 
 		position = Vector3(0,0,0);
 		orientation = 0;
+
+		hitDelay = 0;
+
 		Init();
 	};
 	~NPC(void) {};
@@ -36,10 +40,14 @@ public:
 	Bodypart bodyParts[NUM_BODYPARTS];
 	string identity;
 	string getIdentity() {return identity;};
+	float hitDelay;
+	float rotation[NUM_BODYPARTS];
+	int rotationDir[NUM_BODYPARTS];
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
 	virtual void Update(double dt, vector<Object*>object, Player* player) {};
+	void Animate(double dt, float speed);
 };
 
 class Hobo : public NPC
@@ -65,7 +73,33 @@ public:
 		position = Vector3(0,2,25);
 		Init();	
 	};
+	Thug(Vector3 p)
+	{
+		position = p;
+		Init();
+	}
 	~Thug() {};
+
+	virtual void Init();
+	virtual void Control(double dt, vector<Object*>object, Player* player);
+	virtual void Update(double dt, vector<Object*>object, Player* player);
+};
+
+class Cashier : public NPC
+{
+public:
+	Cashier()
+	{
+		position = Vector3(0,2,0);
+		Init();	
+	};
+	Cashier(Vector3 p)
+	{
+		position = p;
+		orientation = -90;
+		Init();
+	}
+	~Cashier() {};
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);

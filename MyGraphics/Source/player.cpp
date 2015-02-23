@@ -4,7 +4,6 @@ static int bobXDir = 1;
 static int bobYDir = 1;
 
 static int knifeDir = 1;
-Vector3 originalPos;
 
 using namespace::std;
 
@@ -224,7 +223,10 @@ void Player::Control(double dt, vector<Object*>object)
 
 	if(Application::IsKeyPressed(VK_SPACE) && !state[JUMP] && velocity.y == 0 && value[jumpCooldown] == 0)
 	{
-		originalPos = position; velocity.y = 30;
+		if (Application::IsKeyPressed(VK_CONTROL))
+			velocity.y = 60;
+		else
+			velocity.y = 30;
 	}
 
 	if (velocity.y > 0)
@@ -271,12 +273,82 @@ void dynamicObject::Update(double dt, vector<Object*>object, Player* player)
 	RespondToCollision(initialPos, object, player);
 }
 
+void Doorway::Update(double dt, vector<Object*>object, Player* player) 
+{
+	Vector3 initialPos[2];
+	initialPos[0] = Door[0].position;
+	initialPos[1] = Door[1].position;
+
+	if (open == true)
+	{
+		elapsedTime += float(dt);
+
+		if (elapsedTime > 3.f)
+		{
+			open = false;
+			Button[0].mesh = buttonStatus[0]; Button[1].mesh = buttonStatus[0];
+			elapsedTime = 0;
+		}
+		
+		Door[0].position.x -= float(10.f * dt);
+		Door[1].position.x += float(10.f * dt);
+
+		if(Door[0].position.x <= doorPosition[0].x - Door[0].collision.hitbox.x)
+			Door[0].position.x = doorPosition[0].x - Door[0].collision.hitbox.x;
+		if(Door[1].position.x >= doorPosition[1].x + Door[1].collision.hitbox.x)
+			Door[1].position.x = doorPosition[1].x + Door[1].collision.hitbox.x;
+	}
+
+	else
+	{
+		Door[0].position.x += float(10.f * dt);
+		Door[1].position.x -= float(10.f * dt);
+
+		if (Door[0].position.x >= doorPosition[0].x)
+		{
+			Door[0].position.x = doorPosition[0].x; close = true;
+		}
+		if (Door[1].position.x <= doorPosition[1].x)
+		{
+			Door[1].position.x = doorPosition[1].x; close = true;
+		}
+	}
+
+	for (int d = 0; d < 2; d++)
+	{
+		if (player->checkCollision(&Door[d]))
+		{
+			if (close == false)
+			{
+				open = true; close = false;
+				Button[0].mesh = buttonStatus[1]; Button[1].mesh = buttonStatus[1];
+				elapsedTime = 0;
+			}
+		}
+
+		for (unsigned int i = 0; i < object.size(); i++)
+		{
+			if (object[i] != &Door[d])
+				if(object[i]->type == "Dynamic" || object[i]->type == "NPC")
+					if (Object::checkCollision(&Door[d], object[i]))
+					{
+						if (close == false)
+						{
+							open = true; close = false;
+							Button[0].mesh = buttonStatus[1]; Button[1].mesh = buttonStatus[1];
+							elapsedTime = 0;
+						}
+					}
+		}
+	}
+}
+
 void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player)
 {
 	Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
 	Vector3 maxPlayer = Cube + initialPos;
 	Vector3 minPlayer = Cube - collision.hitbox;
-	minPlayer.y = 0.5f; 
+	minPlayer.y = 0.4f; 
 
 	minPlayer += initialPos;
 
@@ -289,7 +361,7 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 		if (player->state[player->JUMP])
 			minCube.y = 0.1f;
 		else
-			minCube.y = 0.5f;
+			minCube.y = 0.4f;
 
 		minCube += player->position;
 
@@ -306,7 +378,7 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 				Vector3 maxCube = Cube; maxCube += object[i]->position;
 				Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
 
-				if (type == "Dynamic")
+				if (type == "Dynamic" && object[i]->type == "Dynamic")
 					CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, true);
 				else
 					CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, false);

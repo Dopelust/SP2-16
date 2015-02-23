@@ -156,7 +156,7 @@ void PROJECTScene::RicssonInit()
 		hitBox = Vector3(3, 3, 3);
 		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
 		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new dynamicObject(Vector3(0,y,-22.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube) );
+		object.push_back( new dynamicObject(Vector3(15,y + 2,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube) );
 	}
 }
 
@@ -168,7 +168,6 @@ void PROJECTScene::JeremiahInit()
 	Vector3 hitBox2;
 	float size = 0;
 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hobo Character~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	character.push_back( new Hobo() );
 	character.push_back( new Thug() );
 
@@ -250,6 +249,7 @@ void PROJECTScene::JessicaInit()
 	Vector3 hitBox;
 	float size = 0;
 
+	//~~~~~~~~~~~FOOD~~~~~~~~~~~~~~
 	tempMesh = MeshBuilder::GenerateOBJ("ChocolateBar", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
 	hitBox = Vector3(0.8f, 0.2f, 0.8f); cube = MeshBuilder::GenerateCube("ChocoBoxHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for (int x = 0; x <= 19; x++)
@@ -318,6 +318,25 @@ void PROJECTScene::JessicaInit()
 	for (int x = -9; x <= 9; x++)
 	{
 		object.push_back( new Item(Vector3(x,4.5,-54.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
+	}
+
+	//~~~~~~~~~~SHELF~~~~~~~~~~~~
+	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//NewShelf//coolershelf.obj"); tempMesh->textureID = LoadTGA("Image//NewShelf//Shelf_Cooler.tga");
+	hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	for (int z = -30; z >= -54; z-=12)
+	{
+		hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Object(Vector3(-77,0,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+		hitBox = Vector3(0.5f,6,3.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Object(Vector3(10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Object(Vector3(-10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		hitBox = Vector3(20,0.5f,1.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Storage(Vector3(0,0,z + 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,2,z + 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,4,z + 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,0,z - 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,2,z - 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,4,z - 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
 	}
 
 }
@@ -546,6 +565,7 @@ void PROJECTScene::Update(double dt)
 	}
 
 	player.Update(dt, object);
+<<<<<<< HEAD
 	doorway.Update(dt);
 	if(player.position.z > 47 && player.position.z < 56 )
 	{
@@ -569,6 +589,9 @@ void PROJECTScene::Update(double dt)
 		doorway.Button[0].mesh = doorway.buttonStatus[1]; doorway.Button[1].mesh = doorway.buttonStatus[1];
 		doorway.elapsedTime = 0;
 	}
+=======
+	doorway.Update(dt,object,&player);
+>>>>>>> origin/master
 
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
@@ -703,6 +726,12 @@ void PROJECTScene::Render()
 				modelStack.Translate(-character[i]->bodyParts[j].collision.centre);
 			}
 			*/
+
+			modelStack.Translate(character[i]->bodyParts[j].collision.centre);
+			modelStack.Translate(0,character[i]->bodyParts[j].collision.hitbox.y/2, 0);
+			modelStack.Rotate(character[i]->rotation[j], 1, 0, 0); 
+			modelStack.Translate(0,-character[i]->bodyParts[j].collision.hitbox.y/2, 0);
+			modelStack.Translate(-(character[i]->bodyParts[j].collision.centre));
 			RenderMesh(character[i]->bodyParts[j].mesh, true);
 			modelStack.PopMatrix();
 		}
