@@ -72,4 +72,24 @@ public:
 	virtual void Update(double dt, vector<Object*>object, Player* player);
 };
 
+class Cashier : public NPC
+{
+public:
+	Cashier()
+	{
+		position = Vector3(0,2,0);
+		Init();	
+	};
+	Cashier(Vector3 p)
+	{
+		position = p;
+		Init();
+	}
+	~Cashier() {};
+
+	virtual void Init();
+	virtual void Control(double dt, vector<Object*>object, Player* player);
+	virtual void Update(double dt, vector<Object*>object, Player* player);
+};
+
 #endif

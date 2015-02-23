@@ -169,9 +169,16 @@ void PROJECTScene::JeremiahInit()
 	float size = 0;
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Hobo Character~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	//z 57
+	//x 72
 	character.push_back( new Hobo() );
 	character.push_back( new Thug() );
-
+	
+	for(int x = 72; x > 20; x -= 15)
+	{
+		character.push_back( new Cashier(Vector3(x,2,-55)) );
+	}
+	
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		object.push_back( character[i] );

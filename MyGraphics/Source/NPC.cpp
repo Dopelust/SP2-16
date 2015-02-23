@@ -237,3 +237,97 @@ void Thug::Control(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+void Cashier::Init()
+{
+	identity = "Cashier";
+
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{	
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//Cashier.tga");
+		bodyParts[i].position = position;
+		bodyParts[i].identity = identity;
+	}
+}
+
+float CashierHitDelay = 0.f;
+
+void Cashier::Update(double dt, vector<Object*>object, Player* player)
+{
+	Vector3 initialPos = position;
+
+	/*if (velocity.z > 0)
+	{
+		velocity.z -= 80 * dt;
+		if (velocity.z <= 0)
+			velocity.z = 0;
+	}
+	else if (velocity.z < 0)
+	{
+		velocity.z += 80 * dt;
+		if (velocity.z >= 0)
+			velocity.z = 0;
+	}
+
+	if (velocity.x > 0)
+	{
+		velocity.x -= 80 * dt;
+		if (velocity.x <= 0)
+			velocity.x = 0;
+	}
+	else if (velocity.x < 0)
+	{
+		velocity.x += 80 * dt;
+		if (velocity.x >= 0)
+			velocity.x = 0;
+	}*/
+
+	velocity.y -= 80 * dt;
+
+	Control(dt, object, player);
+	position += velocity * (float)dt; 
+	RespondToCollision(initialPos, object, player);
+
+	Material color;
+	if (CashierHitDelay > 0)
+	{
+		CashierHitDelay -= dt;
+
+		if (CashierHitDelay > 0.2f)
+		{
+			color.kAmbient.Set(0.92f,0.34f,0.29f);
+			color.kDiffuse.Set(0.92f,0.34f,0.29f);
+		}
+	}
+	else 
+		CashierHitDelay = 0;
+
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{
+		bodyParts[i].position = position;
+		bodyParts[i].orientation = orientation;
+		bodyParts[i].mesh->material = color;
+	}
+}
+
+void Cashier::Control(double dt, vector<Object*>object, Player* player)
+{
+	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && CashierHitDelay == 0)
+	{
+		Vector3 direction;
+		direction.SphericalToCartesian(player->hOrientation, 0.f);
+
+		velocity.x += direction.x * 25;
+		velocity.z += direction.z * 25;
+		velocity.y += 15;
+		CashierHitDelay = 0.5f;
+	}
+	else if (CashierHitDelay == 0)
+	{
+		Vector3 direction;
+		direction.SphericalToCartesian(orientation, 0.f);
+
+		velocity.x = direction.x * 5;
+		velocity.z = direction.z * 5;
+	}
+}
+
