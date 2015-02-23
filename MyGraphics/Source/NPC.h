@@ -96,7 +96,7 @@ public:
 	Cashier(Vector3 p)
 	{
 		position = p;
-		orientation = 90;
+		orientation = -90;
 		Init();
 	}
 	~Cashier() {};
