@@ -195,19 +195,7 @@ void Thug::Update(double dt, vector<Object*>object, Player* player)
 
 void Thug::Control(double dt, vector<Object*>object, Player* player)
 {
-	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && thugHitDelay == 0)
-	{
-		Vector3 direction;
-		direction.SphericalToCartesian(player->hOrientation, 0.f);
-
-		velocity.x += direction.x * 25;
-		velocity.z += direction.z * 25;
-		velocity.y += 15;
-		thugHitDelay = 0.5f;
-	}
-	else if (thugHitDelay == 0)
-	{
-		Vector3 direction;
+	Vector3 direction;
 		direction.SphericalToCartesian(orientation, 0.f);
 
 		Vector3 target = player->position; target.y = position.y;
@@ -230,6 +218,19 @@ void Thug::Control(double dt, vector<Object*>object, Player* player)
 				orientation -= dt * abs(direction.Cross(destination).y) * 1000;
 			}
 		}
+
+	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && thugHitDelay == 0)
+	{
+		Vector3 direction;
+		direction.SphericalToCartesian(player->hOrientation, 0.f);
+
+		velocity.x += direction.x * 25;
+		velocity.z += direction.z * 25;
+		velocity.y += 15;
+		thugHitDelay = 0.5f;
+	}
+	else if (thugHitDelay == 0)
+	{
 		direction.SphericalToCartesian(orientation, 0.f);
 		velocity.x = direction.x * 4.f;
 		velocity.z = direction.z * 4.f; //state[WALK] = true;
