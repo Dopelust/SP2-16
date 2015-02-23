@@ -312,17 +312,9 @@ void PROJECTScene::DarrenInit()
 	object.push_back( new Object(Vector3(5, 0 ,0), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("Entrance Door", "OBJ//entrancedoor.obj"); tempMesh->textureID = LoadTGA("Image//metal.tga");
-	hitBox = Vector3(5.3,10,1.2f); cube = MeshBuilder::GenerateCube("ElevatorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	Object entrance(Vector3(3,0,-87),Vector3(0,5,0), hitBox, tempMesh, cube);
-	//object.push_back( new Object(Vector3(3,0,-87), Vector3(0,5,0), hitBox, tempMesh, cube) );
-	//object.push_back( new Object(Vector3(-5,0,-87), Vector3(0,5,0), hitBox, tempMesh, cube) );
-	/*Object Door(Vector3(0,0,0), Vector3(0,4.25,0), hitBox, tempMesh, cube);
-	doorway.Init(Vector3(0,0,20), Door, ButtonIn, ButtonOut);
-	object.push_back( &doorway.Door[0] );
-	object.push_back( &doorway.Door[1] );
-	object.push_back( &doorway.Button[0] );
-	object.push_back( &doorway.Button[1] );*/
-
+	hitBox = Vector3(20,20,1.2f); cube = MeshBuilder::GenerateCube("Entrance", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(10,0,-87), Vector3(0,10,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-10,0,-87), Vector3(0,10,0), hitBox, tempMesh, cube) );
 	
 }
 void PROJECTScene::Init()
