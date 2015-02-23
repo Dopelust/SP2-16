@@ -917,7 +917,7 @@ void dynamicObject::Control(double dt, vector<Object*>object, Player* player)
 	if (object[player->holding] == this)
 	{
 		position = player->camera.target;
-		yVelocity = 0;
+		velocity.y = 0;
 
 		if ((Application::IsKeyPressed('E') && (player->camera.lookAt == player->holding || object[player->camera.lookAt]->ignoreCollision) && PROJECTScene::inputDelay == 0))
 		{
