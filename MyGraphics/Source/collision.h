@@ -89,35 +89,6 @@ public:
 	virtual Vector3 getStorePos(Player* player);
 };
 
-class Doorway
-{
-public:
-	Doorway() { open = false; close = true; };
-	void Init(Vector3 p, Object D, Object B1, Object B2)
-	{
-		doorPosition[0] = p; doorPosition[0].x -= D.collision.hitbox.x/2;
-		doorPosition[1] = p; doorPosition[1].x += D.collision.hitbox.x/2;
-		Door[0] = D; Door[0].position = doorPosition[0];
-		Door[1] = D; Door[1].position = doorPosition[1];
-		Button[0] = B1; Button[0].position += p;
-		Button[1] = B2; Button[1].position += p;
-		buttonStatus[0] = B1.mesh;
-		buttonStatus[1] = MeshBuilder::GenerateOBJ("Button", "OBJ//button.obj"); 
-		buttonStatus[1]->textureID = LoadTGA("Image//buttonOn.tga");
-		elapsedTime = 0;
-	};
-	~Doorway() {};
-
-	Object Door[2]; //Double Doors
-	Vector3 doorPosition[2]; //Closed Position
-	Object Button[2];
-	Mesh* buttonStatus[2];
-	bool open; bool close;
-	float elapsedTime;
-
-	void Update(double dt);
-};
-
 class Particles
 {
 public:

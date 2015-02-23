@@ -506,13 +506,7 @@ void PROJECTScene::Update(double dt)
 	}
 
 	player.Update(dt, object);
-	doorway.Update(dt);
-	if ((player.checkCollision(&doorway.Door[0]) || player.checkCollision(&doorway.Door[1])) && doorway.close == false)
-	{
-		doorway.open = true; doorway.close = false;
-		doorway.Button[0].mesh = doorway.buttonStatus[1]; doorway.Button[1].mesh = doorway.buttonStatus[1];
-		doorway.elapsedTime = 0;
-	}
+	doorway.Update(dt,object,&player);
 
 	for (unsigned int i = 0; i < object.size(); i++)
 	{

@@ -45,7 +45,7 @@ public:
 		}
 
 		value[eyeLevel] = 5.5f;
-		collision.hitbox = Vector3(2.f, 6.f, 2.f);
+		collision.hitbox = Vector3(2.f, 6.5f, 2.f);
 		collision.centre = Vector3(0, collision.hitbox.y/2, 0);
 
 		hOrientation = 0;
@@ -92,6 +92,35 @@ public:
 	Vector3 velocity;
 
 	void RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player);
+};
+
+class Doorway
+{
+public:
+	Doorway() { open = false; close = true; };
+	void Init(Vector3 p, Object D, Object B1, Object B2)
+	{
+		doorPosition[0] = p; doorPosition[0].x -= D.collision.hitbox.x/2;
+		doorPosition[1] = p; doorPosition[1].x += D.collision.hitbox.x/2;
+		Door[0] = D; Door[0].position = doorPosition[0];
+		Door[1] = D; Door[1].position = doorPosition[1];
+		Button[0] = B1; Button[0].position += p;
+		Button[1] = B2; Button[1].position += p;
+		buttonStatus[0] = B1.mesh;
+		buttonStatus[1] = MeshBuilder::GenerateOBJ("Button", "OBJ//button.obj"); 
+		buttonStatus[1]->textureID = LoadTGA("Image//buttonOn.tga");
+		elapsedTime = 0;
+	};
+	~Doorway() {};
+
+	Object Door[2]; //Double Doors
+	Vector3 doorPosition[2]; //Closed Position
+	Object Button[2];
+	Mesh* buttonStatus[2];
+	bool open; bool close;
+	float elapsedTime;
+
+	virtual void Update(double dt, vector<Object*>object, Player* player);
 };
 
 #endif

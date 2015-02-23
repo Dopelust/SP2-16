@@ -196,28 +196,28 @@ void Thug::Update(double dt, vector<Object*>object, Player* player)
 void Thug::Control(double dt, vector<Object*>object, Player* player)
 {
 	Vector3 direction;
-		direction.SphericalToCartesian(orientation, 0.f);
+	direction.SphericalToCartesian(orientation, 0.f);
 
-		Vector3 target = player->position; target.y = position.y;
-		Vector3 destination = Vector3(target - position).Normalized();
+	Vector3 target = player->position; target.y = position.y;
+	Vector3 destination = Vector3(target - position).Normalized();
 
-		float Dot = direction.Dot(destination);
-		float Mag = direction.Length() * destination.Length();
+	float Dot = direction.Dot(destination);
+	float Mag = direction.Length() * destination.Length();
 
-		if( direction.Cross(destination).y > 0 )
+	if( direction.Cross(destination).y > 0 )
+	{
+		if (orientation + Math::RadianToDegree(acos(Dot/Mag)) > orientation)
 		{
-			if (orientation + Math::RadianToDegree(acos(Dot/Mag)) > orientation)
-			{
-				orientation += dt * abs(direction.Cross(destination).y) * 1000;
-			}
+			orientation += dt * abs(direction.Cross(destination).y) * 1000;
 		}
-		else if( direction.Cross(destination).y < 0 )
+	}
+	else if( direction.Cross(destination).y < 0 )
+	{
+		if (orientation + Math::RadianToDegree(-acos(Dot/Mag)) < orientation)
 		{
-			if (orientation + Math::RadianToDegree(-acos(Dot/Mag)) < orientation)
-			{
-				orientation -= dt * abs(direction.Cross(destination).y) * 1000;
-			}
+			orientation -= dt * abs(direction.Cross(destination).y) * 1000;
 		}
+	}
 
 	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && thugHitDelay == 0)
 	{
