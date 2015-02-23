@@ -570,6 +570,23 @@ void PROJECTScene::Render()
 			modelStack.PushMatrix();
 			modelStack.Translate(character[i]->position);
 			modelStack.Rotate(character[i]->orientation, 0, 1, 0); 
+			/*
+			if (j == 0)
+			{
+				Vector3 direction;
+				direction.SphericalToCartesian(character[i]->orientation, 0.f);
+
+				Vector3 target = player.position;
+				Vector3 destination = Vector3(target - character[i]->position).Normalized();
+
+				float Dot = direction.Dot(destination);
+				float Mag = direction.Length() * destination.Length();
+
+				modelStack.Translate(character[i]->bodyParts[j].collision.centre);
+				modelStack.Rotate(-Math::RadianToDegree(acos(Dot/Mag)), 1, 0, 0); 
+				modelStack.Translate(-character[i]->bodyParts[j].collision.centre);
+			}
+			*/
 			RenderMesh(character[i]->bodyParts[j].mesh, true);
 			modelStack.PopMatrix();
 		}
@@ -918,7 +935,7 @@ void dynamicObject::Control(double dt, vector<Object*>object, Player* player)
 	if (object[player->holding] == this)
 	{
 		position = player->camera.target;
-		yVelocity = 0;
+		velocity.y = 0;
 
 		if ((Application::IsKeyPressed('E') && (player->camera.lookAt == player->holding || object[player->camera.lookAt]->ignoreCollision) && PROJECTScene::inputDelay == 0))
 		{

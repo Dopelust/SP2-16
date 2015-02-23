@@ -264,8 +264,8 @@ void dynamicObject::Update(double dt, vector<Object*>object, Player* player)
 {
 	Vector3 initialPos = position;
 
-	yVelocity -= 40 * dt;
-	position.y += (float)(yVelocity * dt); 
+	velocity.y -= 40 * dt;
+	position += velocity * (float)dt; 
 
 	Control(dt, object, player);
 	RespondToCollision(initialPos, object, player);
@@ -293,19 +293,23 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 
 		minCube += player->position;
 
-		CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, yVelocity, false);
+		CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, false);
 	}
 
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
 		if (object[i] != this)
+			if(type == "Dynamic" || (type == "NPC" && !object[i]->ignoreCollision))
 			if (Object::checkCollision(this, object[i]))
 			{
 				Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
 				Vector3 maxCube = Cube; maxCube += object[i]->position;
 				Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
 
-				CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, yVelocity, true);
+				if (type == "Dynamic")
+					CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, true);
+				else
+					CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, false);
 			}
 	}
 }
