@@ -314,8 +314,8 @@ void PROJECTScene::DarrenInit()
 
 	tempMesh = MeshBuilder::GenerateOBJ("Entrance Door", "OBJ//entrancedoor.obj"); tempMesh->textureID = LoadTGA("Image//metal.tga");
 	hitBox = Vector3(20,20,1.2f); cube = MeshBuilder::GenerateCube("Entrance", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(10,0,-66), Vector3(0,10,0), hitBox, tempMesh, cube) );
-	object.push_back( new Object(Vector3(-10,0,-66), Vector3(0,10,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(10.5,0,-88), Vector3(0,10,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-10,0,-88), Vector3(0,10,0), hitBox, tempMesh, cube) );
 	
 }
 void PROJECTScene::Init()
