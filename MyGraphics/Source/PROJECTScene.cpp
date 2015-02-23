@@ -98,7 +98,7 @@ void PROJECTScene::RicssonInit()
 
 	hitBox = player.collision.hitbox; player.collision.boundingBox =  MeshBuilder::GenerateCube("PlayerHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	
-	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//shelf-3.obj"); tempMesh->textureID = LoadTGA("Image//shelf-black.tga");
+	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//LowPoly//shelf.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//Shelf.tga");
 	hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for (int z = -6; z >= -56; z-=12)
 	{
@@ -225,13 +225,13 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(0,-2,-152), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Cash Table~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-	tempMesh = MeshBuilder::GenerateOBJ("CashierTable", "OBJ//cashtable.obj"); tempMesh->textureID = LoadTGA("Image//cashtable.tga");
+	tempMesh = MeshBuilder::GenerateOBJ("CashierTable", "OBJ//LowPoly//cashiertable.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//cashiertable.tga");
 	for( int x = 70; x > 20; x-=15)
 	{
-		hitBox = Vector3(3, 3.64, 9); cube = MeshBuilder::GenerateCube("Cash Table Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new Object(Vector3(x,0,-55), Vector3(-1.4,hitBox.y/2,-0.59), hitBox, tempMesh, cube) );
-		hitBox = Vector3(3,3.64,3); cube = MeshBuilder::GenerateCube("Caseier Table HitBox", Color(1,1,1), hitBox.x,hitBox.y,hitBox.z,0);
-		object.push_back( new Object(Vector3(x+3,0,-58),Vector3(-1.4,hitBox.y/2,-0.59), hitBox, cube) );
+		hitBox = Vector3(3, 3.5f, 10.f); cube = MeshBuilder::GenerateCube("CashierTable Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Object(Vector3(x,0,-55), Vector3(-1.5f,hitBox.y/2,0), hitBox, tempMesh, cube) );
+		hitBox = Vector3(3,3.5f,3); cube = MeshBuilder::GenerateCube("CashierTable HitBox", Color(1,1,1), hitBox.x,hitBox.y,hitBox.z,0);
+		object.push_back( new Object(Vector3(x+3,0,-58.5f),Vector3(-1.5f,hitBox.y/2,0), hitBox, cube) );
 	}
 	
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2nd Floor~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
@@ -304,22 +304,6 @@ void PROJECTScene::JessicaInit()
 		object.push_back( new Item(Vector3(x-9,0.5,-28.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
 
-	/*
-	tempMesh = MeshBuilder::GenerateOBJ("Sardines", "OBJ//Food//sardines.obj"); tempMesh->textureID = LoadTGA("Image//Food//Sarsinde.tga");
-	hitBox = Vector3(0.7f, 0.4f, 0.6f); cube = MeshBuilder::GenerateCube("S_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	for (int x = -4; x <= 5; x++)
-	{
-		object.push_back( new Item(Vector3(x*2-1,4.5,-42.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
-	}
-
-	tempMesh = MeshBuilder::GenerateOBJ("Sardines", "OBJ//Food//sardines.obj"); tempMesh->textureID = LoadTGA("Image//Food//Sarsinde.tga");
-	hitBox = Vector3(0.7f, 0.4f, 0.6f); cube = MeshBuilder::GenerateCube("S_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	for (int x = -4; x <= 5; x++)
-	{
-		object.push_back( new Item(Vector3(x*2-1,2.5,-42.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
-	}
-	*/
-
 	tempMesh = MeshBuilder::GenerateOBJ("Soup", "OBJ//Food//soup.obj"); tempMesh->textureID = LoadTGA("Image//Food//soup.tga");
 	hitBox = Vector3(0.7f, 0.9f, 0.7f); cube = MeshBuilder::GenerateCube("S_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for (int x = -9; x <= 9; x+=3)
@@ -328,12 +312,16 @@ void PROJECTScene::JessicaInit()
 	}
 
 	//~~~~~~~~~~SHELF~~~~~~~~~~~~
+	//Dimensions = 5 x 8.3 x 14
 	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//NewShelf//coolershelf.obj"); tempMesh->textureID = LoadTGA("Image//NewShelf//Shelf_Cooler.tga");
 	hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	for (int z = -30; z >= -54; z-=12)
-	{
-		hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new Object(Vector3(-77,0,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+	//for (int z = -30; z >= -54; z-=12)
+	//{
+		hitBox = Vector3(5,2.05f,14.f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Storage(Vector3(-77,0,-30), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+		hitBox = Vector3(5,0.4f,14.f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Storage(Vector3(-77,4.65f,-30), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		/*
 		hitBox = Vector3(0.5f,6,3.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new Object(Vector3(10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
 		object.push_back( new Object(Vector3(-10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
@@ -344,7 +332,8 @@ void PROJECTScene::JessicaInit()
 		object.push_back( new Storage(Vector3(0,0,z - 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
 		object.push_back( new Storage(Vector3(0,2,z - 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
 		object.push_back( new Storage(Vector3(0,4,z - 1), Vector3(0,hitBox.y/2,0), hitBox, cube));
-	}
+		*/
+	//
 
 }
 void PROJECTScene::DarrenInit()
