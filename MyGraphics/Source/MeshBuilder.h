@@ -27,6 +27,7 @@ public:
 	static Mesh* GenerateLine(const std::string &meshName, Color color, float length);
 	static Mesh* GenerateQuad(const std::string &meshName, Color color, float lengthX, float lengthZ, int repeat);
 	static Mesh* GenerateXYQuad(const std::string &meshName, Color color, float lengthX, float lengthY, int repeat);
+	static Mesh* GenerateCubeOnPlane(const std::string &meshName, Color color, float lengthX, float lengthY, float lengthZ, int repeat);
 	static Mesh* GenerateCube(const std::string &meshName, Color color, float lengthX, float lengthY, float lengthZ, int repeat);
 	static Mesh* GenerateCircle(const std::string &meshName, Color color, float radius);
 	static Mesh* GenerateRing(const std::string &meshName, Color color, float radius);

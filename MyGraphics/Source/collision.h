@@ -7,8 +7,12 @@
 #include "LoadTGA.h"
 
 #include <string>
+#include <vector>
 
+using std::vector;
 using std::string;
+
+class Player;
 
 struct Collision
 {
@@ -37,11 +41,13 @@ public:
 	bool ignoreCollision;
 	static bool checkCollision(Object* a, Object* b);
 
-	virtual void Update(double dt);
+	virtual void Update(double dt) {};
+	virtual void Update(double dt, vector<Object*>object, Player* player) {};
 
 	//Derived
 	virtual bool getPaid() {return 0;};
 	virtual string getIdentity() {return "";};
+	virtual Vector3 getStorePos(Player* player) {return Vector3();};
 };
 
 class Bodypart : public Object
@@ -72,31 +78,15 @@ public:
 	bool paid;
 };
 
-class Garfield : public Object
+class Storage : public Object
 {
 public:
-	enum BODY_PARTS
-	{
-		GEO_AXES = 0,
-		GEO_SPHERE,
-		GEO_EYE,
-		GEO_BSPHERE,
-		GEO_NOSE,
-		GEO_HEMI,
-		GEO_FOOT,
-		GEO_EAR,
-		GEO_JOINT,
-		GEO_ARM,
-		GEO_CAPSULE,
-		GEO_FINGER,
-		GEO_MOUTH,
-		GEO_CHEEK,
-		NUM_BODYPARTS,
-	};
-	void Init(Vector3 p, Vector3 c, Vector3 h, Mesh* b);
-	void altInit(Vector3 p, Vector3 c, Vector3 h, Mesh* b);
-	void Update();
-	Mesh * meshList[NUM_BODYPARTS];
+	Storage() {};
+	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* b) : Object(p,c,h,b) {type = "Storage";};
+	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) : Object(p,c,h,m,b) {type = "Storage";};
+	~Storage() {};
+
+	virtual Vector3 getStorePos(Player* player);
 };
 
 class Doorway

@@ -55,10 +55,11 @@ struct Vector3
 	bool operator<= ( const Vector3& rhs ) const; 
 
 	Vector3& operator=(const Vector3& rhs); //Assignment operator
-
+	
 	float Length( void ) const; //Get magnitude
 	float LengthSquared (void ) const; //Get square of magnitude
 	
+	float Dist( const Vector3& rhs ) const; //Dist between 2 vectors
 	float Dot( const Vector3& rhs ) const; //Dot product
 	Vector3 Cross( const Vector3& rhs ) const; //Cross product
 	

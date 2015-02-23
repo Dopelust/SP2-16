@@ -54,6 +54,7 @@ class PROJECTScene : public Scene
 		GEO_LINE,
 		GEO_CUBE,
 		GEO_BIGCUBE,
+		GEO_HOLD,
 		NUM_GEOMETRY,
 	};
 	enum UNIFORM_TYPE
@@ -82,7 +83,6 @@ class PROJECTScene : public Scene
 
 	void RenderSkybox();
 	void RenderCrosshair();
-	void RenderGarfield(Garfield garfield, float legR, float legT);
 	void InitSuperMarket();
 
 public:
@@ -100,6 +100,7 @@ public:
 	void JessicaInit();
 	void DarrenInit();
 
+	static float inputDelay;
 private:
 	unsigned m_vertexArrayID;
 	Mesh * meshList[NUM_GEOMETRY];
@@ -118,7 +119,7 @@ private:
 	void RenderTextOnScreen(Mesh* mesh, std::string text, Color color, float size, float x, float y);
 	float getTextWidth(string t);
 
-	Camera3 camera;
+	Camera3* camera;
 	Player player;
 
 	MS modelStack, viewStack, projectionStack;
