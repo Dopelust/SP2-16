@@ -348,7 +348,7 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 	Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
 	Vector3 maxPlayer = Cube + initialPos;
 	Vector3 minPlayer = Cube - collision.hitbox;
-	minPlayer.y = 0.5f; 
+	minPlayer.y = 0.4f; 
 
 	minPlayer += initialPos;
 
@@ -361,7 +361,7 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 		if (player->state[player->JUMP])
 			minCube.y = 0.1f;
 		else
-			minCube.y = 0.5f;
+			minCube.y = 0.4f;
 
 		minCube += player->position;
 
@@ -378,7 +378,7 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 				Vector3 maxCube = Cube; maxCube += object[i]->position;
 				Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
 
-				if (type == "Dynamic")
+				if (type == "Dynamic" && object[i]->type == "Dynamic")
 					CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, true);
 				else
 					CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, false);

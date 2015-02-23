@@ -54,10 +54,11 @@ class Bodypart : public Object
 {
 public:
 	Bodypart() { ignoreCollision = false; };
-	Bodypart(Vector3 p, Vector3 c, Mesh* m)
+	Bodypart(Vector3 p, Vector3 c, Vector3 h, Mesh* m) : Object(p,c,h)
 	{
 		position = p;
 		collision.centre = c;
+		collision.hitbox = h;
 		mesh = m;
 		type = "Bodypart";
 	};
