@@ -116,6 +116,39 @@ void PROJECTScene::RicssonInit()
 		object.push_back( new Storage(Vector3(0,4,z - 1), Vector3(0,0.375,0), hitBox, cube));
 	}
 
+	for (int z = -6; z >= -56; z-=12)
+	{
+		hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Object(Vector3(-40.25,0,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+		hitBox = Vector3(0.5f,6,3.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Object(Vector3(-30,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Object(Vector3(-50.5f,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		hitBox = Vector3(20,0.25f,1.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Storage(Vector3(-40.25,0,z + 1), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(-40.25,2,z + 1), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(-40.25,4,z + 1), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(-40.25,0,z - 1), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(-40.25,2,z - 1), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(-40.25,4,z - 1), Vector3(0,0.375,0), hitBox, cube));
+	}
+	//x 25
+	//z 10
+	for (int x = 25; x >= 73; x+=12)
+	{
+		hitBox = Vector3(0.5f,6,20); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.x, 0);
+		object.push_back( new Object(Vector3(x,0,10), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+		hitBox = Vector3(3.5f,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.x, 0);
+		object.push_back( new Object(Vector3(x,0,20.25), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		object.push_back( new Object(Vector3(x,0,-0.25), Vector3(0,hitBox.y/2,0), hitBox, cube));
+		hitBox = Vector3(1.5f,0.25f,20); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.x, 0);
+		object.push_back( new Storage(Vector3(x + 1,0,10), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(x + 1,2,10), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(x + 1,4,10), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(x - 1,0,10), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(x - 1,2,10), Vector3(0,0.375,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(x - 1,4,10), Vector3(0,0.375,0), hitBox, cube));
+	}
+
 
 	tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
 	hitBox = Vector3(1.5f, 0.25f, 1.5f); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
