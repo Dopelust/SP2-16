@@ -485,11 +485,12 @@ void PROJECTScene::DarrenInit()
 	hitBox = Vector3(2,7,3); cube = MeshBuilder::GenerateCube("atm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false) );
 	object.push_back( new Object(Vector3(50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false) );
-
+	/*
 	tempMesh = MeshBuilder::GenerateOBJ("Entrance Door", "OBJ//entrancedoor.obj"); tempMesh->textureID = LoadTGA("Image//metal.tga");
 	hitBox = Vector3(20,20,1.2f); cube = MeshBuilder::GenerateCube("Entrance", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(10.5,0,-88), Vector3(0,10,0), hitBox, tempMesh, cube) );
 	object.push_back( new Object(Vector3(-10,0,-88), Vector3(0,10,0), hitBox, tempMesh, cube) );
+	*/
 
 }
 void PROJECTScene::Init()
@@ -521,9 +522,6 @@ void PROJECTScene::Init()
 
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
-	
-	meshList[GEO_ARM] = MeshBuilder::GenerateOBJ("Arm", "OBJ//CharOBJ//fpArm.obj");
-	meshList[GEO_ARM]->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
 
 	meshList[GEO_LINE] = MeshBuilder::GenerateLine("crosshair", Color(0,1,0), 0.15f);
 
@@ -679,7 +677,6 @@ void PROJECTScene::Update(double dt)
 		inputDelay -= float(dt);
 	else
 		inputDelay = 0;
-
 }
 void PROJECTScene::Render()
 {

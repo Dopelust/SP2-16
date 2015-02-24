@@ -34,29 +34,78 @@ void NPC::Init()
 	}
 }
 
+void NPC::Orientate(float o, double dt, float speed)
+{
+	Vector3 direction;
+	direction.SphericalToCartesian(orientation, 0.f);
+
+	Vector3 destination;
+	destination.SphericalToCartesian(o, 0.f);
+
+	float Dot = direction.Dot(destination);
+	float Mag = direction.Length() * destination.Length();
+
+	if( direction.Cross(destination).y > 0 )
+	{
+		if (orientation + Math::RadianToDegree(acos(Dot/Mag)) > orientation)
+		{
+			orientation += dt * abs(direction.Cross(destination).y) * speed;
+		}
+	}
+	else if( direction.Cross(destination).y < 0 )
+	{
+		if (orientation + Math::RadianToDegree(-acos(Dot/Mag)) < orientation)
+		{
+			orientation -= dt * abs(direction.Cross(destination).y) * speed;
+		}
+	}
+}
+
+void NPC::Orientate(Vector3 t, double dt, float speed)
+{
+	Vector3 direction;
+	direction.SphericalToCartesian(orientation, 0.f);
+
+	Vector3 destination = Vector3(t - position);
+
+	float Dot = direction.Dot(destination);
+	float Mag = direction.Length() * destination.Length();
+
+	if( direction.Cross(destination).y > 0 )
+	{
+		if (orientation + Math::RadianToDegree(acos(Dot/Mag)) > orientation)
+		{
+			orientation += dt * abs(direction.Cross(destination).y) * 100;
+		}
+	}
+	else if( direction.Cross(destination).y < 0 )
+	{
+		if (orientation + Math::RadianToDegree(-acos(Dot/Mag)) < orientation)
+		{
+			orientation -= dt * abs(direction.Cross(destination).y) * 100;
+		}
+	}
+}
+
 void NPC::Animate(double dt, float speed)
 {
 	if (velocity.x == 0 && velocity.z == 0) //resetting to original location
 	{	
-		/*
-		if(value[bobbingX] * bobXDir >= 0) //need to minus to reset
-			bobXDir = -bobXDir;
+		for (int i = L_ARM; i < NUM_BODYPARTS; i++)
+		{
+			if(rotation[i] * rotationDir[i] > 0)
+				rotationDir[i] = -rotationDir[i];
+		
+			else if(rotation[i] * rotationDir[i] < 0)
+				rotationDir[i] = rotationDir[i];
 
-		else if(value[bobbingX] * bobXDir <= 0) //need to plus to reset
-			bobXDir = bobXDir;
-
-		if(!(value[bobbingX] > -0.05f && value[bobbingX] < 0.05f)) //if not 0, reset
-			value[bobbingX] += (float)(bobXDir * 1.0f * dt); 
-
-		if(value[bobbingY] * bobYDir >= 0) //need to minus to reset
-			bobYDir = -bobYDir;
-
-		else if(value[bobbingY] * bobYDir <= 0) //need to plus to reset
-			bobYDir = bobYDir;
-
-		if(!(value[bobbingY] > -0.05f && value[bobbingY] < 0.05f)) //if not 0, reset
-			value[bobbingY] += (float)(bobYDir * 1.0f * dt); 
-			*/
+			if (rotation[i] != 0)
+				rotation[i] += (float)(rotationDir[i] * speed * dt);
+			if (rotationDir[i] == -1 && rotation[i] <= 0)
+				rotation[i] = 0;
+			else if (rotationDir[i] == 1 && rotation[i] >= 0)
+				rotation[i] = 0;
+		}
 	}
 
 	else
@@ -71,6 +120,7 @@ void NPC::Animate(double dt, float speed)
 		}
 	}
 }
+
 void Hobo::Init()
 {
 	identity = "Homeless Man";
@@ -238,29 +288,8 @@ void Thug::Update(double dt, vector<Object*>object, Player* player)
 
 void Thug::Control(double dt, vector<Object*>object, Player* player)
 {
-	Vector3 direction;
-	direction.SphericalToCartesian(orientation, 0.f);
-
 	Vector3 target = player->position; target.y = position.y;
-	Vector3 destination = Vector3(target - position).Normalized();
-
-	float Dot = direction.Dot(destination);
-	float Mag = direction.Length() * destination.Length();
-
-	if( direction.Cross(destination).y > 0 )
-	{
-		if (orientation + Math::RadianToDegree(acos(Dot/Mag)) > orientation)
-		{
-			orientation += dt * abs(direction.Cross(destination).y) * 1000;
-		}
-	}
-	else if( direction.Cross(destination).y < 0 )
-	{
-		if (orientation + Math::RadianToDegree(-acos(Dot/Mag)) < orientation)
-		{
-			orientation -= dt * abs(direction.Cross(destination).y) * 1000;
-		}
-	}
+	Orientate(target, dt, 1000.f);
 
 	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
 	{
@@ -274,6 +303,7 @@ void Thug::Control(double dt, vector<Object*>object, Player* player)
 	}
 	else if (hitDelay == 0)
 	{
+		Vector3 direction;
 		direction.SphericalToCartesian(orientation, 0.f);
 		velocity.x = direction.x * 4.f;
 		velocity.z = direction.z * 4.f; //state[WALK] = true;
@@ -295,6 +325,8 @@ void Cashier::Init()
 void Cashier::Update(double dt, vector<Object*>object, Player* player)
 {
 	Vector3 initialPos = position;
+
+	Control(dt, object, player);
 
 	if (velocity.z > 0)
 	{
@@ -324,9 +356,26 @@ void Cashier::Update(double dt, vector<Object*>object, Player* player)
 
 	velocity.y -= 80 * dt;
 
-	Control(dt, object, player);
 	position += velocity * (float)dt; 
 	RespondToCollision(initialPos, object, player);
+
+	Vector3 p = position; p.y = 0;
+
+	if (p != target)
+	{
+		if (previousPos != position)
+		{
+			previousPos = position;
+			elapsedTime = 0.f;
+		}
+		else
+		{
+			elapsedTime += dt;
+
+			if (elapsedTime > 0.3f)
+				velocity.y = 30;
+		}
+	}
 
 	Material color;
 	if (hitDelay > 0)
@@ -352,48 +401,33 @@ void Cashier::Update(double dt, vector<Object*>object, Player* player)
 
 void Cashier::Control(double dt, vector<Object*>object, Player* player)
 {
-	//if( position != getPos() )
-	//{
-	//Vector3 direction;
-	//direction.SphericalToCartesian(orientation, 0.f);
+	Vector3 p = position; p.y = 0;
 
-	//Vector3 target = position; target.y = position.y;
-	//Vector3 destination = Vector3(target - position).Normalized();
+	if (p == target)
+	{
+		Animate(dt, 50.f);
+		Orientate(-90, dt, 100.f);
+	}
+	else if (p != target)
+	{
+		Vector3 destination = Vector3(target - p).Normalized();
+	
+		Animate(dt, 50.f);
+		Orientate(target, dt, 100.f);
 
-	//float Dot = direction.Dot(destination);
-	//float Mag = direction.Length() * destination.Length();
+		if (hitDelay == 0)
+		{
+			velocity.x = destination.x * 5;
+			velocity.z = destination.z * 5;
 
-	//if( direction.Cross(destination).y > 0 )
-	//{
-	//	if (orientation + Math::RadianToDegree(acos(Dot/Mag)) > orientation)
-	//	{
-	//		orientation += dt * abs(direction.Cross(destination).y) * 1000;
-	//	}
-	//}
-	//else if( direction.Cross(destination).y < 0 )
-	//{
-	//	if (orientation + Math::RadianToDegree(-acos(Dot/Mag)) < orientation)
-	//	{
-	//		orientation -= dt * abs(direction.Cross(destination).y) * 1000;
-	//	}
-	//}
-
-	//if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
-	//{
-	//	Vector3 direction;
-	//	direction.SphericalToCartesian(player->hOrientation, 0.f);
-
-	//	velocity.x += direction.x * 25;
-	//	velocity.z += direction.z * 25;
-	//	velocity.y += 15;
-	//	hitDelay = 0.5f;
-	//}
-	//else if (hitDelay == 0)
-	//{
-	//	direction.SphericalToCartesian(orientation, 0.f);
-	//	velocity.x = direction.x * 4.f;
-	//	velocity.z = direction.z * 4.f; //state[WALK] = true;
-	//}
+			if (p.Dist(target) <= 0.1f)
+			{
+				position = target;
+				velocity.x = 0;
+				velocity.z = 0;
+			}
+		}
+	}
 
 	if (object[player->camera.lookAt] == this)
 	{
@@ -409,11 +443,9 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 			hitDelay = 0.5f;
 		}
 
-		else if (Application::IsKeyPressed('E') && hitDelay == 0)
+		else if (Application::IsKeyPressed('E') && position == target && hitDelay == 0)
 		{
 			player->inventory.Checkout();
 		}
 	}
-	//}
 }
-
