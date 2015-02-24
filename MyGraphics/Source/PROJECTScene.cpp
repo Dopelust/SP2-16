@@ -499,9 +499,6 @@ void PROJECTScene::Init()
 
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
-	
-	meshList[GEO_ARM] = MeshBuilder::GenerateOBJ("Arm", "OBJ//CharOBJ//fpArm.obj");
-	meshList[GEO_ARM]->textureID = LoadTGA("Image//CharTGA//Steve_Hobo.tga");
 
 	meshList[GEO_LINE] = MeshBuilder::GenerateLine("crosshair", Color(0,1,0), 0.15f);
 
