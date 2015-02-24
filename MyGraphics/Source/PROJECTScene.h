@@ -113,6 +113,7 @@ private:
 	vector<Particles*> blood;
 
 	Doorway doorway;
+	Doorway doorway2;
 	Light light[3];
 	void RenderMesh(Mesh *mesh, bool enableLight);
 	void RenderText(Mesh* mesh, std::string text, Color color);
