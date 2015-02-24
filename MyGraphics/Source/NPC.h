@@ -37,16 +37,23 @@ public:
 	};
 	~NPC(void) {};
 
+	Vector3 previousPos;
+	Vector3 target;
 	Bodypart bodyParts[NUM_BODYPARTS];
 	string identity;
 	string getIdentity() {return identity;};
 	float hitDelay;
 	float rotation[NUM_BODYPARTS];
 	int rotationDir[NUM_BODYPARTS];
+	float elapsedTime;
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
 	virtual void Update(double dt, vector<Object*>object, Player* player) {};
+
+	void Orientate(float o, double dt, float speed);
+	void Orientate(Vector3 t, double dt, float speed);
+	void Goto(Vector3 destination);
 	void Animate(double dt, float speed);
 };
 
@@ -91,11 +98,13 @@ public:
 	Cashier()
 	{
 		position = Vector3(0,2,0);
+		target = position; target.y = 0;
 		Init();	
 	};
 	Cashier(Vector3 p)
 	{
 		position = p;
+		target = position; target.y = 0;
 		orientation = -90;
 		Init();
 	}
