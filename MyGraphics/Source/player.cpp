@@ -371,18 +371,24 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
 		if (object[i] != this)
-			if(type == "Dynamic" || (type == "NPC" && !object[i]->ignoreCollision))
-			if (Object::checkCollision(this, object[i]))
-			{
-				Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
-				Vector3 maxCube = Cube; maxCube += object[i]->position;
-				Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
+		{
+			if (type == "Dynamic" && object[i]->ignoreCollision)
+				if (object[i]->type != "Item")
+					continue;
 
-				if (type == "Dynamic" && object[i]->type == "Dynamic")
-					CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, true);
-				else
-					CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, false);
-			}
+			if((type == "Dynamic") || (type == "NPC" && !object[i]->ignoreCollision))
+				if (Object::checkCollision(this, object[i]))
+				{
+					Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
+					Vector3 maxCube = Cube; maxCube += object[i]->position;
+					Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
+
+					if (type == "Dynamic" && object[i]->type == "Dynamic")
+						CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, true);
+					else
+						CollisionResponse(initialPos, position, collision.hitbox, maxCube, minCube, maxPlayer, minPlayer, velocity.y, false);
+				}
+		}
 	}
 }
 
