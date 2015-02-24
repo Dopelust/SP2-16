@@ -274,8 +274,7 @@ void PROJECTScene::JeremiahInit()
 	hitBox = Vector3(0.5f, 3.5f, 8.0f); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for(int x = 17; x <= 68; x += 15 )
 	{
-		object.push_back( new Object(Vector3(x,0,-55), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, false) );
-		object.push_back( new Object(Vector3(x,0,-47), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, false) );
+		object.push_back( new Object(Vector3(x,0,-53), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, false) );
 	}
 	tempMesh = MeshBuilder::GenerateOBJ("Railing 2nd floor", "OBJ//railing2.obj"); tempMesh->textureID = LoadTGA("Image//railing.tga");
 	hitBox = Vector3(92, 3.5f, 1); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);

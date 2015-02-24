@@ -45,20 +45,7 @@ void NPC::Orientate(float o, double dt, float speed)
 	float Dot = direction.Dot(destination);
 	float Mag = direction.Length() * destination.Length();
 
-	if( direction.Cross(destination).y > 0 )
-	{
-		if (orientation + Math::RadianToDegree(acos(Dot/Mag)) > orientation)
-		{
-			orientation += dt * abs(direction.Cross(destination).y) * speed;
-		}
-	}
-	else if( direction.Cross(destination).y < 0 )
-	{
-		if (orientation + Math::RadianToDegree(-acos(Dot/Mag)) < orientation)
-		{
-			orientation -= dt * abs(direction.Cross(destination).y) * speed;
-		}
-	}
+	orientation += dt * direction.Cross(destination).y * speed;
 }
 
 void NPC::Orientate(Vector3 t, double dt, float speed)
@@ -66,25 +53,12 @@ void NPC::Orientate(Vector3 t, double dt, float speed)
 	Vector3 direction;
 	direction.SphericalToCartesian(orientation, 0.f);
 
-	Vector3 destination = Vector3(t - position);
+	Vector3 destination = Vector3(t - position).Normalized();
 
 	float Dot = direction.Dot(destination);
 	float Mag = direction.Length() * destination.Length();
 
-	if( direction.Cross(destination).y > 0 )
-	{
-		if (orientation + Math::RadianToDegree(acos(Dot/Mag)) > orientation)
-		{
-			orientation += dt * abs(direction.Cross(destination).y) * 100;
-		}
-	}
-	else if( direction.Cross(destination).y < 0 )
-	{
-		if (orientation + Math::RadianToDegree(-acos(Dot/Mag)) < orientation)
-		{
-			orientation -= dt * abs(direction.Cross(destination).y) * 100;
-		}
-	}
+	orientation += dt * direction.Cross(destination).y * speed;
 }
 
 void NPC::Animate(double dt, float speed)
@@ -277,8 +251,8 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 
 	if (p == target)
 	{
-		Animate(dt, 50.f);
-		Orientate(-90, dt, 100.f);
+		Animate(dt, 100.f);
+		Orientate(-90, dt, 200.f);
 	}
 	else if (p != target)
 	{
@@ -292,7 +266,7 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 			elapsedTime += dt;
 
 			if (elapsedTime > 0.3f)
-				velocity.y = 30;
+				velocity.y = 25;
 		}
 
 		Vector3 destination = Vector3(target - p).Normalized();
