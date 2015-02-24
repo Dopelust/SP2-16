@@ -352,6 +352,49 @@ void Cashier::Update(double dt, vector<Object*>object, Player* player)
 
 void Cashier::Control(double dt, vector<Object*>object, Player* player)
 {
+	//if( position != getPos() )
+	//{
+	//Vector3 direction;
+	//direction.SphericalToCartesian(orientation, 0.f);
+
+	//Vector3 target = position; target.y = position.y;
+	//Vector3 destination = Vector3(target - position).Normalized();
+
+	//float Dot = direction.Dot(destination);
+	//float Mag = direction.Length() * destination.Length();
+
+	//if( direction.Cross(destination).y > 0 )
+	//{
+	//	if (orientation + Math::RadianToDegree(acos(Dot/Mag)) > orientation)
+	//	{
+	//		orientation += dt * abs(direction.Cross(destination).y) * 1000;
+	//	}
+	//}
+	//else if( direction.Cross(destination).y < 0 )
+	//{
+	//	if (orientation + Math::RadianToDegree(-acos(Dot/Mag)) < orientation)
+	//	{
+	//		orientation -= dt * abs(direction.Cross(destination).y) * 1000;
+	//	}
+	//}
+
+	//if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
+	//{
+	//	Vector3 direction;
+	//	direction.SphericalToCartesian(player->hOrientation, 0.f);
+
+	//	velocity.x += direction.x * 25;
+	//	velocity.z += direction.z * 25;
+	//	velocity.y += 15;
+	//	hitDelay = 0.5f;
+	//}
+	//else if (hitDelay == 0)
+	//{
+	//	direction.SphericalToCartesian(orientation, 0.f);
+	//	velocity.x = direction.x * 4.f;
+	//	velocity.z = direction.z * 4.f; //state[WALK] = true;
+	//}
+
 	if (object[player->camera.lookAt] == this)
 	{
 		if (Application::mouseButton(0) && hitDelay == 0)
@@ -371,5 +414,6 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 			player->inventory.Checkout();
 		}
 	}
+	//}
 }
 
