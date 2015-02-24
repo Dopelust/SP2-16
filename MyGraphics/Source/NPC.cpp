@@ -121,22 +121,8 @@ void NPC::Animate(double dt, float speed)
 	}
 }
 
-void Hobo::Init()
+void NPC::UpdateVelocity(double dt)
 {
-	identity = "Homeless Man";
-
-	for (int i = 0; i < NUM_BODYPARTS; i++)
-	{	
-		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//hobo.tga");
-		bodyParts[i].position = position;
-		bodyParts[i].identity = identity;
-	}
-}
-
-void Hobo::Update(double dt, vector<Object*>object, Player* player)
-{
-	Vector3 initialPos = position;
-
 	if (velocity.z > 0)
 	{
 		velocity.z -= 80 * dt;
@@ -165,11 +151,18 @@ void Hobo::Update(double dt, vector<Object*>object, Player* player)
 
 	velocity.y -= 80 * dt;
 
+}
+
+void NPC::Update(double dt, vector<Object*>object, Player* player)
+{
+	Vector3 initialPos = position;
+
 	Control(dt, object, player);
+	UpdateVelocity(dt);
+
 	position += velocity * (float)dt; 
 	RespondToCollision(initialPos, object, player);
 
-	//Animate(dt);
 	Material color;
 	if (hitDelay > 0)
 	{
@@ -192,8 +185,22 @@ void Hobo::Update(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+void Hobo::Init()
+{
+	identity = "Homeless Man";
+
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{	
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//hobo.tga");
+		bodyParts[i].position = position;
+		bodyParts[i].identity = identity;
+	}
+}
+
 void Hobo::Control(double dt, vector<Object*>object, Player* player)
 {
+	Animate(dt, 25.f);
+
 	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
 	{
 		Vector3 direction;
@@ -226,68 +233,10 @@ void Thug::Init()
 	}
 }
 
-void Thug::Update(double dt, vector<Object*>object, Player* player)
-{
-	Vector3 initialPos = position;
-
-	if (velocity.z > 0)
-	{
-		velocity.z -= 80 * dt;
-		if (velocity.z <= 0)
-			velocity.z = 0;
-	}
-	else if (velocity.z < 0)
-	{
-		velocity.z += 80 * dt;
-		if (velocity.z >= 0)
-			velocity.z = 0;
-	}
-
-	if (velocity.x > 0)
-	{
-		velocity.x -= 80 * dt;
-		if (velocity.x <= 0)
-			velocity.x = 0;
-	}
-	else if (velocity.x < 0)
-	{
-		velocity.x += 80 * dt;
-		if (velocity.x >= 0)
-			velocity.x = 0;
-	}
-
-	velocity.y -= 80 * dt;
-
-	Control(dt, object, player);
-	position += velocity * (float)dt; 
-	RespondToCollision(initialPos, object, player);
-
-	Animate(dt, 80.f);
-
-	Material color;
-	if (hitDelay > 0)
-	{
-		hitDelay -= dt;
-
-		if (hitDelay > 0.2f)
-		{
-			color.kAmbient.Set(0.92f,0.34f,0.29f);
-			color.kDiffuse.Set(0.92f,0.34f,0.29f);
-		}
-	}
-	else 
-		hitDelay = 0;
-
-	for (int i = 0; i < NUM_BODYPARTS; i++)
-	{
-		bodyParts[i].position = position;
-		bodyParts[i].orientation = orientation;
-		bodyParts[i].mesh->material = color;
-	}
-}
-
 void Thug::Control(double dt, vector<Object*>object, Player* player)
 {
+	Animate(dt, 80.f);
+
 	Vector3 target = player->position; target.y = position.y;
 	Orientate(target, dt, 1000.f);
 
@@ -322,46 +271,16 @@ void Cashier::Init()
 	}
 }
 
-void Cashier::Update(double dt, vector<Object*>object, Player* player)
+void Cashier::Control(double dt, vector<Object*>object, Player* player)
 {
-	Vector3 initialPos = position;
-
-	Control(dt, object, player);
-
-	if (velocity.z > 0)
-	{
-		velocity.z -= 80 * dt;
-		if (velocity.z <= 0)
-			velocity.z = 0;
-	}
-	else if (velocity.z < 0)
-	{
-		velocity.z += 80 * dt;
-		if (velocity.z >= 0)
-			velocity.z = 0;
-	}
-
-	if (velocity.x > 0)
-	{
-		velocity.x -= 80 * dt;
-		if (velocity.x <= 0)
-			velocity.x = 0;
-	}
-	else if (velocity.x < 0)
-	{
-		velocity.x += 80 * dt;
-		if (velocity.x >= 0)
-			velocity.x = 0;
-	}
-
-	velocity.y -= 80 * dt;
-
-	position += velocity * (float)dt; 
-	RespondToCollision(initialPos, object, player);
-
 	Vector3 p = position; p.y = 0;
 
-	if (p != target)
+	if (p == target)
+	{
+		Animate(dt, 50.f);
+		Orientate(-90, dt, 100.f);
+	}
+	else if (p != target)
 	{
 		if (previousPos != position)
 		{
@@ -375,41 +294,7 @@ void Cashier::Update(double dt, vector<Object*>object, Player* player)
 			if (elapsedTime > 0.3f)
 				velocity.y = 30;
 		}
-	}
 
-	Material color;
-	if (hitDelay > 0)
-	{
-		hitDelay -= dt;
-
-		if (hitDelay > 0.2f)
-		{
-			color.kAmbient.Set(0.92f,0.34f,0.29f);
-			color.kDiffuse.Set(0.92f,0.34f,0.29f);
-		}
-	}
-	else 
-		hitDelay = 0;
-
-	for (int i = 0; i < NUM_BODYPARTS; i++)
-	{
-		bodyParts[i].position = position;
-		bodyParts[i].orientation = orientation;
-		bodyParts[i].mesh->material = color;
-	}
-}
-
-void Cashier::Control(double dt, vector<Object*>object, Player* player)
-{
-	Vector3 p = position; p.y = 0;
-
-	if (p == target)
-	{
-		Animate(dt, 50.f);
-		Orientate(-90, dt, 100.f);
-	}
-	else if (p != target)
-	{
 		Vector3 destination = Vector3(target - p).Normalized();
 	
 		Animate(dt, 50.f);

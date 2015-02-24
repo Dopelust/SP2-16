@@ -226,13 +226,12 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(-50,hitBox.y/2+25,-87.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market(Outside of Supermarkte)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//BuildingOBJ//S_Walk.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	hitBox = Vector3(160, 2, 26); cube = MeshBuilder::GenerateCube("SideWalk", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,-1.6,-100.5), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
-
-	tempMesh = MeshBuilder::GenerateOBJ("SideWalk", "OBJ//BuildingOBJ//Road.obj"); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	hitBox = Vector3(160, 2, 78); cube = MeshBuilder::GenerateCube("Road", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(0,-2,-152), Vector3(-0.1,hitBox.y/2,0), hitBox, tempMesh, cube) );
+	hitBox = Vector3(160, 0.1f, 25.f); 
+	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), hitBox.x, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
+	cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(0,0,-100), Vector3(0,-0.05f,0), hitBox, tempMesh, cube) );
+	tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
+	object.push_back( new Object(Vector3(0,0,-125), Vector3(0,-0.05f,0), hitBox, tempMesh, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Cash Table~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	tempMesh = MeshBuilder::GenerateOBJ("CashierTable", "OBJ//LowPoly//cashiertable.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//cashiertable.tga");
