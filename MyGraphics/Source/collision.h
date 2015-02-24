@@ -89,6 +89,7 @@ public:
 	Storage() {};
 	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* b) : Object(p,c,h,b) {type = "Storage";};
 	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) : Object(p,c,h,m,b) {type = "Storage";};
+	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float o) : Object(p,c,h,m,b) {type = "Storage"; orientation = o;};
 	~Storage() {};
 
 	virtual Vector3 getStorePos(Player* player);
