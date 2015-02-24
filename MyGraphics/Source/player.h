@@ -38,7 +38,7 @@ public:
 	};
 	Player() 
 	{ 
-		position = Vector3(0, 2, 10);
+		position = Vector3(0, 2, -100);
 		for (int i = 0; i < TOTAL_VALUES; i++)
 		{
 			value[i] = 0.f;

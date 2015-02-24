@@ -182,7 +182,7 @@ void Player::Control(double dt, vector<Object*>object)
 		count++;
 
 	if(Application::IsKeyPressed(VK_SHIFT))
-		velocity = Vector3(40,velocity.y,40);
+		velocity = Vector3(60,velocity.y,60);
 	else
 		velocity = Vector3(30,velocity.y,30);
 	
