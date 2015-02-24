@@ -49,8 +49,9 @@ public:
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
-	virtual void Update(double dt, vector<Object*>object, Player* player) {};
-
+	
+	void Update(double dt, vector<Object*>object, Player* player);
+	void UpdateVelocity(double dt);
 	void Orientate(float o, double dt, float speed);
 	void Orientate(Vector3 t, double dt, float speed);
 	void Goto(Vector3 destination);
@@ -69,7 +70,6 @@ public:
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
-	virtual void Update(double dt, vector<Object*>object, Player* player);
 };
 
 class Thug : public NPC
@@ -89,7 +89,6 @@ public:
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
-	virtual void Update(double dt, vector<Object*>object, Player* player);
 };
 
 class Cashier : public NPC
@@ -117,7 +116,6 @@ public:
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
-	virtual void Update(double dt, vector<Object*>object, Player* player);
 };
 
 #endif
