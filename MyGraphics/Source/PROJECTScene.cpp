@@ -261,21 +261,21 @@ void PROJECTScene::JessicaInit()
 	float size = 0;
 
 	//~~~~~~~~~~~FOOD~~~~~~~~~~~~~~
-	tempMesh = MeshBuilder::GenerateOBJ("ChocolateBar", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
+	tempMesh = MeshBuilder::GenerateOBJ("Hersheys", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
 	hitBox = Vector3(0.8f, 0.2f, 0.8f); cube = MeshBuilder::GenerateCube("ChocoBoxHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for (int x = 0; x <= 19; x++)
 	{
 		object.push_back( new Item(Vector3(x-9.5,4.5,-28.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
 	
-	tempMesh = MeshBuilder::GenerateOBJ("Ice Cream", "OBJ//Food//ice.obj"); tempMesh->textureID = LoadTGA("Image//Food//ice_cream_box.tga");
+	tempMesh = MeshBuilder::GenerateOBJ("Chocolate Chip Ice Cream", "OBJ//Food//ice.obj"); tempMesh->textureID = LoadTGA("Image//Food//Ice Cream//oreo.tga");
 	hitBox = Vector3(2.0f, 0.8f, 0.4f); cube = MeshBuilder::GenerateCube("IceHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for (int x = -5; x <= 4; x++)
 	{
 		object.push_back( new Item(Vector3(x*2+1,4.5,-30.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
 	
-	tempMesh = MeshBuilder::GenerateOBJ("Ice Cream", "OBJ//Food//ice.obj"); tempMesh->textureID = LoadTGA("Image//Food//ice_cream_box.tga");
+	tempMesh = MeshBuilder::GenerateOBJ("Lime Ice Cream", "OBJ//Food//ice.obj"); tempMesh->textureID = LoadTGA("Image//Food//Ice Cream//lime.tga");
 	hitBox = Vector3(2.0f, 0.8f, 0.4f); cube = MeshBuilder::GenerateCube("IceHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for (int x = -5; x <= 4; x++)
 	{
@@ -298,25 +298,18 @@ void PROJECTScene::JessicaInit()
 	/*
 	tempMesh = MeshBuilder::GenerateOBJ("MountianDEW", "OBJ//Food//mountaindew.obj"); tempMesh->textureID = LoadTGA("Image//Food//mountaindew.tga");
 	hitBox = Vector3(0.3f, 0.5f, 0.3f); cube = MeshBuilder::GenerateCube("MDHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	for (int x = 0; x <= 19; x++)
+	for (int x = 0; x <= 18; x+=6)
 	{
 		object.push_back( new Item(Vector3(x-9.5,2.5,-28.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
 
-	tempMesh = MeshBuilder::GenerateOBJ("Coke", "OBJ//Food//can_drink.obj"); tempMesh->textureID = LoadTGA("Image//Food//Coke.tga");
-	hitBox = Vector3(0.3f, 0.5f, 0.3f); cube = MeshBuilder::GenerateCube("C_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	for (int x = 0; x <= 18; x+= 3)
-	{
-		object.push_back( new Item(Vector3(x-9,0.5,-28.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
-	}
-
 	tempMesh = MeshBuilder::GenerateOBJ("Soup", "OBJ//Food//soup.obj"); tempMesh->textureID = LoadTGA("Image//Food//soup.tga");
 	hitBox = Vector3(0.7f, 0.9f, 0.7f); cube = MeshBuilder::GenerateCube("S_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	for (int x = -9; x <= 9; x+=3)
+	for (int x = -9; x <= 9; x+=4.5f)
 	{
 		object.push_back( new Item(Vector3(x,4.5,-54.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
-	}*/
-
+	}
+	*/
 	//~~~~~~~~~~SHELF~~~~~~~~~~~~
 	//Dimensions = 5 x 8.3 x 14
 	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//NewShelf//coolershelf.obj"); tempMesh->textureID = LoadTGA("Image//NewShelf//Shelf_Cooler.tga");
