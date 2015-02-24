@@ -100,7 +100,7 @@ void PROJECTScene::RicssonInit()
 	
 	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//LowPoly//shelf.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//Shelf.tga");
 	hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	for (int z = -30; z >= -54; z-=12)
+	for (int z = -6; z >= -56; z-=12)
 	{
 		hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new Object(Vector3(0,0,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
@@ -561,8 +561,8 @@ void PROJECTScene::Update(double dt)
 	}
 
 	player.Update(dt, object);
-<<<<<<< HEAD
-	doorway.Update(dt);
+
+	doorway.Update(dt, object, &player);
 	if(player.position.z > 47 && player.position.z < 56 )
 	{
 		if(doorway.open == false && doorway.close == true)
@@ -585,9 +585,9 @@ void PROJECTScene::Update(double dt)
 		doorway.Button[0].mesh = doorway.buttonStatus[1]; doorway.Button[1].mesh = doorway.buttonStatus[1];
 		doorway.elapsedTime = 0;
 	}
-=======
+
 	doorway.Update(dt,object,&player);
->>>>>>> origin/master
+
 
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
