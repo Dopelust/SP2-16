@@ -264,13 +264,17 @@ float eDelay = 0;
 
 void dynamicObject::Update(double dt, vector<Object*>object, Player* player)
 {
-	Vector3 initialPos = position;
+	if (position.Dist(player->position) < 25.f)
+	{
+		Vector3 initialPos = position;
 
-	velocity.y -= 40 * dt;
-	position += velocity * (float)dt; 
+		velocity.y -= 40 * dt;
+		position += velocity * (float)dt; 
 
-	Control(dt, object, player);
-	RespondToCollision(initialPos, object, player);
+		Control(dt, object, player);
+
+		RespondToCollision(initialPos, object, player);
+	}
 }
 
 void Doorway::Update(double dt, vector<Object*>object, Player* player) 

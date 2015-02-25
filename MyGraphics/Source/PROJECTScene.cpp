@@ -177,7 +177,7 @@ void PROJECTScene::RicssonInit()
 		hitBox = Vector3(3, 3, 3);
 		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
 		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new dynamicObject(Vector3(15,y + 2,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube) );
+		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube) );
 	}
 }
 
@@ -191,7 +191,8 @@ void PROJECTScene::JeremiahInit()
 
 	character.push_back( new Hobo() );
 	character.push_back( new Thug() );
-	
+	character.push_back( new Customer() );
+	character.push_back( new Blindman() );
 	for(int x = 72; x > 20; x -= 15)
 	{
 		character.push_back( new Cashier(Vector3(x,2,-55)) );
@@ -750,29 +751,13 @@ void PROJECTScene::Render()
 			modelStack.PushMatrix();
 			modelStack.Translate(character[i]->position);
 			modelStack.Rotate(character[i]->orientation, 0, 1, 0); 
-			/*
-			if (j == 0)
-			{
-				Vector3 direction;
-				direction.SphericalToCartesian(character[i]->orientation, 0.f);
-
-				Vector3 target = player.position;
-				Vector3 destination = Vector3(target - character[i]->position).Normalized();
-
-				float Dot = direction.Dot(destination);
-				float Mag = direction.Length() * destination.Length();
-
-				modelStack.Translate(character[i]->bodyParts[j].collision.centre);
-				modelStack.Rotate(-Math::RadianToDegree(acos(Dot/Mag)), 1, 0, 0); 
-				modelStack.Translate(-character[i]->bodyParts[j].collision.centre);
-			}
-			*/
 
 			modelStack.Translate(character[i]->bodyParts[j].collision.centre);
 			modelStack.Translate(0,character[i]->bodyParts[j].collision.hitbox.y/2, 0);
 			modelStack.Rotate(character[i]->rotation[j], 1, 0, 0); 
 			modelStack.Translate(0,-character[i]->bodyParts[j].collision.hitbox.y/2, 0);
 			modelStack.Translate(-(character[i]->bodyParts[j].collision.centre));
+
 			RenderMesh(character[i]->bodyParts[j].mesh, true);
 			modelStack.PopMatrix();
 		}

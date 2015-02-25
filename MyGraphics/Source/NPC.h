@@ -63,7 +63,8 @@ class Hobo : public NPC
 public:
 	Hobo()
 	{
-		position = Vector3(-20,2,-100);
+		position = Vector3(-25,0,-89.5);
+		orientation = 180;
 		Init();	
 	};
 	~Hobo() {};
@@ -124,14 +125,19 @@ public:
 	Blindman()
 	{
 		position = Vector3(0,2,0);
-		target = position; target.y = 0;
+		Vector3 direction;
+		direction.SphericalToCartesian(orientation, 0.f);
+		target = position + direction;
+		target.y = 0;
 		Init();	
 	};
 	Blindman(Vector3 p)
 	{
 		position = p;
-		target = position; target.y = 0;
-		orientation = -90;
+		Vector3 direction;
+		direction.SphericalToCartesian(orientation, 0.f);
+		target = position + direction;
+		target.y = 0;
 		Init();
 	}
 	~Blindman() {};
@@ -145,12 +151,22 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+class CustomerPath 
+{
+public:
+	CustomerPath() {};
+	~CustomerPath() {};
+
+	vector<Object*> targetObj;
+	vector<Vector3> targetPos;
+};
+
 class Customer : public NPC
 {
 public:
 	Customer()
 	{
-		position = Vector3(0,2,0);
+		position = Vector3(-70,2,-70);
 		target = position; target.y = 0;
 		Init();	
 	};
@@ -158,7 +174,6 @@ public:
 	{
 		position = p;
 		target = position; target.y = 0;
-		orientation = -90;
 		Init();
 	}
 	~Customer() {};
@@ -168,6 +183,7 @@ public:
 		return position;
 	}
 
+	CustomerPath pathing;
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
