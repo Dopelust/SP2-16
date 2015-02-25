@@ -198,6 +198,15 @@ public:
 		orientation = 180;
 		Init();	
 	};
+	Detective(Vector3 p)
+	{
+		position = p;
+		Vector3 direction;
+		direction.SphericalToCartesian(orientation, 0.f);
+		target = position + direction;
+		target.y = 0;
+		Init();
+	}
 	~Detective() {};
 
 	virtual void Init();

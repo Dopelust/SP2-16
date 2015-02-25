@@ -359,11 +359,11 @@ void Customer::Control(double dt, vector<Object*>object, Player* player)
 
 void Detective::Init()
 {
-	identity = "Homeless Man";
+	identity = "Detective";
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{	
-		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//Detective.tga");
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//detective.tga");
 		bodyParts[i].position = position;
 		bodyParts[i].identity = identity;
 	}
@@ -377,7 +377,7 @@ void Detective::Control(double dt, vector<Object*>object, Player* player)
 
 void S_Guard::Init()
 {
-	identity = "Homeless Man";
+	identity = "Security Guard";
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{	

@@ -225,6 +225,7 @@ void PROJECTScene::JeremiahInit()
 	character.push_back( new Thug() );
 	character.push_back( new Customer() );
 	character.push_back( new Blindman() );
+	character.push_back( new Detective ( Vector3(10,0,10) ));
 	for(int x = 72; x > 20; x -= 15)
 	{
 		character.push_back( new Cashier(Vector3(x,2,-55)) );
