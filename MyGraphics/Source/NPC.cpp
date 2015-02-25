@@ -356,3 +356,39 @@ void Customer::Control(double dt, vector<Object*>object, Player* player)
 
 	}
 }
+
+void Detective::Init()
+{
+	identity = "Detective";
+
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{	
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//detective.tga");
+		bodyParts[i].position = position;
+		bodyParts[i].identity = identity;
+	}
+}
+
+void Detective::Control(double dt, vector<Object*>object, Player* player)
+{
+	target = position;
+	velocity = 0;
+}
+
+void S_Guard::Init()
+{
+	identity = "Security Guard";
+
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{	
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//S_Guard.tga");
+		bodyParts[i].position = position;
+		bodyParts[i].identity = identity;
+	}
+}
+
+void S_Guard::Control(double dt, vector<Object*>object, Player* player)
+{
+	target = position;
+	velocity = 0;
+}
