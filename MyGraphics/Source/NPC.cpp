@@ -42,9 +42,6 @@ void NPC::Orientate(float o, double dt, float speed)
 	Vector3 destination;
 	destination.SphericalToCartesian(o, 0.f);
 
-	float Dot = direction.Dot(destination);
-	float Mag = direction.Length() * destination.Length();
-
 	orientation += dt * direction.Cross(destination).y * speed;
 }
 
@@ -54,9 +51,6 @@ void NPC::Orientate(Vector3 t, double dt, float speed)
 	direction.SphericalToCartesian(orientation, 0.f);
 
 	Vector3 destination = Vector3(t - position).Normalized();
-
-	float Dot = direction.Dot(destination);
-	float Mag = direction.Length() * destination.Length();
 
 	orientation += dt * direction.Cross(destination).y * speed;
 }
@@ -131,11 +125,26 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 {
 	Vector3 initialPos = position;
 
+	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
+	{
+		Vector3 direction;
+		direction.SphericalToCartesian(player->hOrientation, 0.f);
+
+		velocity.x += direction.x * 25;
+		velocity.z += direction.z * 25;
+		velocity.y += 15;
+		hitDelay = 0.5f;
+	}
+
 	Control(dt, object, player);
-	UpdateVelocity(dt);
+
+	if (position != target)
+		UpdateVelocity(dt);
 
 	position += velocity * (float)dt; 
-	RespondToCollision(initialPos, object, player);
+
+	if (position != target)
+		RespondToCollision(initialPos, object, player);
 
 	Material color;
 	if (hitDelay > 0)
@@ -173,26 +182,8 @@ void Hobo::Init()
 
 void Hobo::Control(double dt, vector<Object*>object, Player* player)
 {
-	Animate(dt, 25.f);
-
-	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
-	{
-		Vector3 direction;
-		direction.SphericalToCartesian(player->hOrientation, 0.f);
-
-		velocity.x += direction.x * 25;
-		velocity.z += direction.z * 25;
-		velocity.y += 15;
-		hitDelay = 0.5f;
-	}
-	else if (hitDelay == 0)
-	{
-		Vector3 direction;
-		direction.SphericalToCartesian(orientation, 0.f);
-
-		velocity.x = direction.x * 5;
-		velocity.z = direction.z * 5;
-	}
+	target = position;
+	velocity = 0;
 }
 
 void Thug::Init()
@@ -211,25 +202,18 @@ void Thug::Control(double dt, vector<Object*>object, Player* player)
 {
 	Animate(dt, 80.f);
 
-	Vector3 target = player->position; target.y = position.y;
-	Orientate(target, dt, 1000.f);
-
-	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
+	if (position.Dist(player->position) < 75.f)
 	{
-		Vector3 direction;
-		direction.SphericalToCartesian(player->hOrientation, 0.f);
-
-		velocity.x += direction.x * 25;
-		velocity.z += direction.z * 25;
-		velocity.y += 15;
-		hitDelay = 0.5f;
-	}
-	else if (hitDelay == 0)
-	{
-		Vector3 direction;
-		direction.SphericalToCartesian(orientation, 0.f);
-		velocity.x = direction.x * 4.f;
-		velocity.z = direction.z * 4.f; //state[WALK] = true;
+		Vector3 target = player->position; target.y = position.y;
+		Orientate(target, dt, 1000.f);
+	
+		if (hitDelay == 0)
+		{
+			Vector3 direction;
+			direction.SphericalToCartesian(orientation, 0.f);
+			velocity.x = direction.x * 4.f;
+			velocity.z = direction.z * 4.f; //state[WALK] = true;
+		}
 	}
 }
 
@@ -289,33 +273,19 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 	}
 
 	if (object[player->camera.lookAt] == this)
-	{
-		if (Application::mouseButton(0) && hitDelay == 0)
-		{
-			Vector3 direction;
-			direction.SphericalToCartesian(player->hOrientation, 0.f);
-
-			velocity.x += direction.x * 25;
-			velocity.z += direction.z * 25;
-			velocity.y += 15;
-
-			hitDelay = 0.5f;
-		}
-
-		else if (Application::IsKeyPressed('E') && position == target && hitDelay == 0)
+		if (Application::IsKeyPressed('E') && position == target && hitDelay == 0)
 		{
 			player->inventory.Checkout();
 		}
-	}
 }
 
 void Blindman::Init()
 {
-	identity = "Homeless Man";
+	identity = "Blind Man";
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{	
-		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//Blindman.tga");
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//blindman.tga");
 		bodyParts[i].position = position;
 		bodyParts[i].identity = identity;
 	}
@@ -323,35 +293,40 @@ void Blindman::Init()
 
 void Blindman::Control(double dt, vector<Object*>object, Player* player)
 {
-	Animate(dt, 25.f);
+	Orientate(target, dt, 500.f);
+	Animate(dt, 60.f);
 
-	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
-	{
-		Vector3 direction;
-		direction.SphericalToCartesian(player->hOrientation, 0.f);
-
-		velocity.x += direction.x * 25;
-		velocity.z += direction.z * 25;
-		velocity.y += 15;
-		hitDelay = 0.5f;
-	}
-	else if (hitDelay == 0)
+	if (hitDelay == 0)
 	{
 		Vector3 direction;
 		direction.SphericalToCartesian(orientation, 0.f);
 
 		velocity.x = direction.x * 5;
 		velocity.z = direction.z * 5;
+
+		if (previousPos != position)
+		{
+			previousPos = position;
+			elapsedTime = 0.f;
+		}
+		else
+		{
+			elapsedTime += dt;
+			target = position - direction;
+		}
 	}
+
+	target += velocity * dt;
+
 }
 
 void Customer::Init()
 {
-	identity = "Homeless Man";
+	identity = "Customer";
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{	
-		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//Customer.tga");
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//customer.tga");
 		bodyParts[i].position = position;
 		bodyParts[i].identity = identity;
 	}
@@ -360,23 +335,9 @@ void Customer::Init()
 void Customer::Control(double dt, vector<Object*>object, Player* player)
 {
 	Animate(dt, 25.f);
-
-	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
+	
+	if (hitDelay == 0)
 	{
-		Vector3 direction;
-		direction.SphericalToCartesian(player->hOrientation, 0.f);
 
-		velocity.x += direction.x * 25;
-		velocity.z += direction.z * 25;
-		velocity.y += 15;
-		hitDelay = 0.5f;
-	}
-	else if (hitDelay == 0)
-	{
-		Vector3 direction;
-		direction.SphericalToCartesian(orientation, 0.f);
-
-		velocity.x = direction.x * 5;
-		velocity.z = direction.z * 5;
 	}
 }
