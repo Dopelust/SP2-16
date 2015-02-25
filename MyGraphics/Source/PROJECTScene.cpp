@@ -179,6 +179,43 @@ void PROJECTScene::RicssonInit()
 		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube) );
 	}
+	for ( int x = 0; x < 3; x++)
+	{
+		for (int z = -1; z < 2; z++)
+		{
+			Vector3 p(30 + x * 18,0, z * -15);
+
+			tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
+			hitBox = Vector3(6, 3.25f, 6); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+			object.push_back( new Storage(p, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+
+			p.y += hitBox.y;
+
+			int r = rand () % 2;
+
+			if (r == 0)
+			{
+				tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
+				hitBox = Vector3(1.5f, 0.25f, 1.5f); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+			}
+			else 
+			{
+				tempMesh = MeshBuilder::GenerateOBJ("Hersheys", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
+				hitBox = Vector3(0.8f, 0.2f, 0.8f); cube = MeshBuilder::GenerateCube("ChocoBoxHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+			}
+
+			for (int X = -1; X < 1; X++)
+			{
+				for (int Z = -1; Z < 1; Z++)
+				{
+					float rX = rand () % 11 - 5; rX /= 10;
+					float rZ = rand () % 11 - 5; rZ /= 10;
+					Vector3 P(rX + X * 2.f, 0, rZ + Z * 2.f);
+					object.push_back( new Item(p + P, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
+				}
+			}
+		}
+	}
 }
 
 void PROJECTScene::JeremiahInit()
@@ -280,7 +317,7 @@ void PROJECTScene::JeremiahInit()
 	tempMesh->material.kShininess = 20.f;
 	tempMesh->material.kSpecular.Set(0.8f,0.8f,0.8f);
 	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-40,0.09,15), Vector3(0,-0.0001f,0), hitBox, tempMesh, cube, 1 , 32, true) );
+	object.push_back( new Object(Vector3(14.5,0.09,15), Vector3(0,-0.0001f,0), hitBox, tempMesh, cube, 1 , 32, true) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Railing~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
