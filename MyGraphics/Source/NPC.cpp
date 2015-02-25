@@ -123,7 +123,7 @@ void NPC::UpdateVelocity(double dt)
 
 void NPC::Update(double dt, vector<Object*>object, Player* player)
 {
-	Vector3 initialPos = position;
+	initialPos = position;
 
 	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
 	{
@@ -145,6 +145,7 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 
 	if (position != target)
 		RespondToCollision(initialPos, object, player);
+
 
 	Material color;
 	if (hitDelay > 0)
@@ -293,32 +294,46 @@ void Blindman::Init()
 
 void Blindman::Control(double dt, vector<Object*>object, Player* player)
 {
-	Orientate(target, dt, 500.f);
+	//Orientate(target, dt, 500.f);
 	Animate(dt, 60.f);
+
+	Vector3 direction;
+	direction.SphericalToCartesian(orientation, 0.f);
 
 	if (hitDelay == 0)
 	{
-		Vector3 direction;
-		direction.SphericalToCartesian(orientation, 0.f);
+		velocity.x = 5 * direction.x;
+		velocity.z = 5 * direction.z;
+		Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
+		Vector3 maxPlayer = Cube + initialPos;
+		Vector3 minPlayer = Cube - collision.hitbox;
+		minPlayer.y = 0.4f; 
 
-		velocity.x = direction.x * 5;
-		velocity.z = direction.z * 5;
-
-		if (previousPos != position)
+		minPlayer += initialPos;
+		for (unsigned int i = 0; i < object.size(); i++)
 		{
-			previousPos = position;
-			elapsedTime = 0.f;
-		}
-		else
-		{
-			elapsedTime += dt;
-			target = position - direction;
-		}
-	}
+			if (object[i] != this)
+				if(!object[i]->ignoreCollision)
+					if (Object::checkCollision(this, object[i]))
+					{
+						Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
+						Vector3 maxCube = Cube; maxCube += object[i]->position;
+						Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
 
-	target += velocity * dt;
+							if ((maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z) || (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z))
+							{
+								target.z = position.z - direction.z;
+							}
 
+							else if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x || maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+								target.x = position.x - direction.x;
+					}
+			}
+
+			target += velocity * direction * dt;
+		}
 }
+
 
 void Customer::Init()
 {

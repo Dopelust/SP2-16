@@ -37,6 +37,7 @@ public:
 	};
 	~NPC(void) {};
 
+	Vector3 initialPos;
 	Vector3 previousPos;
 	Vector3 target;
 	Bodypart bodyParts[NUM_BODYPARTS];
@@ -124,7 +125,7 @@ class Blindman : public NPC
 public:
 	Blindman()
 	{
-		position = Vector3(0,2,0);
+		position = Vector3(0,2,-100);
 		Vector3 direction;
 		direction.SphericalToCartesian(orientation, 0.f);
 		target = position + direction;
