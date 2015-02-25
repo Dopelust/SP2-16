@@ -118,4 +118,58 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+class Blindman : public NPC
+{
+public:
+	Blindman()
+	{
+		position = Vector3(0,2,0);
+		target = position; target.y = 0;
+		Init();	
+	};
+	Blindman(Vector3 p)
+	{
+		position = p;
+		target = position; target.y = 0;
+		orientation = -90;
+		Init();
+	}
+	~Blindman() {};
+
+	Vector3 getPos()
+	{
+		return position;
+	}
+
+	virtual void Init();
+	virtual void Control(double dt, vector<Object*>object, Player* player);
+};
+
+class Customer : public NPC
+{
+public:
+	Customer()
+	{
+		position = Vector3(0,2,0);
+		target = position; target.y = 0;
+		Init();	
+	};
+	Customer(Vector3 p)
+	{
+		position = p;
+		target = position; target.y = 0;
+		orientation = -90;
+		Init();
+	}
+	~Customer() {};
+
+	Vector3 getPos()
+	{
+		return position;
+	}
+
+	virtual void Init();
+	virtual void Control(double dt, vector<Object*>object, Player* player);
+};
+
 #endif

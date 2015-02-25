@@ -408,7 +408,6 @@ void PROJECTScene::DarrenInit()
 	object.push_back( &doorway.Door[1] );
 	object.push_back( &doorway.Button[0] );
 	object.push_back( &doorway.Button[1] );
-	
 
 	tempMesh = MeshBuilder::GenerateOBJ("elevator", "OBJ//elevatorright.obj"); tempMesh->textureID = LoadTGA("Image//white.tga");
 	hitBox = Vector3(1, 9, 11); cube = MeshBuilder::GenerateCube("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);

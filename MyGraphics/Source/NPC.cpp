@@ -308,3 +308,75 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 		}
 	}
 }
+
+void Blindman::Init()
+{
+	identity = "Homeless Man";
+
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{	
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//Blindman.tga");
+		bodyParts[i].position = position;
+		bodyParts[i].identity = identity;
+	}
+}
+
+void Blindman::Control(double dt, vector<Object*>object, Player* player)
+{
+	Animate(dt, 25.f);
+
+	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
+	{
+		Vector3 direction;
+		direction.SphericalToCartesian(player->hOrientation, 0.f);
+
+		velocity.x += direction.x * 25;
+		velocity.z += direction.z * 25;
+		velocity.y += 15;
+		hitDelay = 0.5f;
+	}
+	else if (hitDelay == 0)
+	{
+		Vector3 direction;
+		direction.SphericalToCartesian(orientation, 0.f);
+
+		velocity.x = direction.x * 5;
+		velocity.z = direction.z * 5;
+	}
+}
+
+void Customer::Init()
+{
+	identity = "Homeless Man";
+
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{	
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//Customer.tga");
+		bodyParts[i].position = position;
+		bodyParts[i].identity = identity;
+	}
+}
+
+void Customer::Control(double dt, vector<Object*>object, Player* player)
+{
+	Animate(dt, 25.f);
+
+	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
+	{
+		Vector3 direction;
+		direction.SphericalToCartesian(player->hOrientation, 0.f);
+
+		velocity.x += direction.x * 25;
+		velocity.z += direction.z * 25;
+		velocity.y += 15;
+		hitDelay = 0.5f;
+	}
+	else if (hitDelay == 0)
+	{
+		Vector3 direction;
+		direction.SphericalToCartesian(orientation, 0.f);
+
+		velocity.x = direction.x * 5;
+		velocity.z = direction.z * 5;
+	}
+}
