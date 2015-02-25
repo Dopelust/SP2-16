@@ -107,7 +107,7 @@ private:
 	unsigned m_programID;
 	unsigned m_parameters[U_TOTAL];
 
-	vector<OnScreenText*> lootedText;
+	vector<OnScreenText*> text;
 	vector<NPC*> character;
 	vector<Object*> object;
 	vector<Particles*> blood;

@@ -24,6 +24,7 @@ public:
 		type = "NPC";
 		mesh = NULL;
 
+		elapsedTime = 0;
 		collision.hitbox = Vector3(2.5f, 6.f, 2.5f);
 		collision.boundingBox = MeshBuilder::GenerateCube("Hitbox", Color(1,1,1), collision.hitbox.x, collision.hitbox.y, collision.hitbox.z, 0);
 		collision.centre = Vector3(0,collision.hitbox.y/2,0);
@@ -55,7 +56,7 @@ public:
 	void UpdateVelocity(double dt);
 	void Orientate(float o, double dt, float speed);
 	void Orientate(Vector3 t, double dt, float speed);
-	void Goto(Vector3 destination);
+	void Goto(Vector3 destination, double dt, float turn, float speed);
 	void Animate(double dt, float speed);
 };
 
@@ -152,29 +153,56 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+class NPCTarget
+{
+public:
+	NPCTarget() {};
+	NPCTarget(Vector3 p, float o) {position = p; orientation = o;};
+	~NPCTarget() {};
+
+	Vector3 position;
+	float orientation;
+};
+
 class Customer : public NPC
 {
 public:
 	Customer()
 	{
-		position = Vector3(-70,2,-70);
+		position = Vector3(0,2,0);
 		target = position; target.y = 0;
+		orientation = -90;
 		Init();	
 	};
-	Customer(Vector3 p)
+	Customer(vector<NPCTarget> t, string name, unsigned tID, float d)
 	{
-		position = p;
-		target = position; target.y = 0;
-		Init();
+		identity = name;
+		index = 0;
+		decisionTime = d;
+		position = t[0].position;
+		orientation = t[0].orientation;;
+		target = t[0].position; target.y = 0;
+		tOrientation = t[0].orientation;
+		targets = t;
+
+		for (int i = 0; i < targets.size(); i++)
+		{
+			targets[i].position.y = 0;
+		}
+
+		for (int i = 0; i < NUM_BODYPARTS; i++)
+		{	
+			bodyParts[i].mesh->textureID = tID;
+			bodyParts[i].position = position;
+			bodyParts[i].identity = identity;
+		}
 	}
 	~Customer() {};
 
-	Vector3 getPos()
-	{
-		return position;
-	}
-
-	virtual void Init();
+	int index;
+	float decisionTime;
+	float tOrientation;
+	vector<NPCTarget> targets;
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -183,9 +211,10 @@ class Detective : public NPC
 public:
 	Detective()
 	{
-		position = Vector3(-25,0,-89.5);
-		orientation = 180;
-		Init();	
+		position = Vector3(60,0,20);
+		orientation = 30;
+		rotation[HEAD] = 15;
+		Init();
 	};
 	Detective(Vector3 p)
 	{

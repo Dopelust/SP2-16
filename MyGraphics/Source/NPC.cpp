@@ -121,6 +121,40 @@ void NPC::UpdateVelocity(double dt)
 
 }
 
+void NPC::Goto(Vector3 destination, double dt, float turn, float speed)
+{
+	Vector3 p = position; p.y = 0;
+
+	Vector3 direction = Vector3(target - p).Normalized();
+	Orientate(destination, dt, turn);
+
+	if (hitDelay == 0)
+	{
+		velocity.x = direction.x * speed;
+		velocity.z = direction.z * speed;
+
+		if (p.Dist(target) <= speed/100.f)
+		{
+			position = target;
+			velocity.x = 0;
+			velocity.z = 0;
+		}
+	}
+
+	if (previousPos != position)
+	{
+		previousPos = position;
+		elapsedTime = 0.f;
+	}
+	else
+	{
+		elapsedTime += dt;
+
+		if (elapsedTime > 0.3f)
+			velocity.y = 25;
+	}
+}
+
 void NPC::Update(double dt, vector<Object*>object, Player* player)
 {
 	initialPos = position;
@@ -201,20 +235,14 @@ void Thug::Init()
 
 void Thug::Control(double dt, vector<Object*>object, Player* player)
 {
-	Animate(dt, 80.f);
+	Animate(dt, 120.f);
 
-	if (position.Dist(player->position) < 75.f)
+	if (position.Dist(player->position) < 100.f)
 	{
-		Vector3 target = player->position; target.y = position.y;
-		Orientate(target, dt, 1000.f);
-	
-		if (hitDelay == 0)
-		{
-			Vector3 direction;
-			direction.SphericalToCartesian(orientation, 0.f);
-			velocity.x = direction.x * 4.f;
-			velocity.z = direction.z * 4.f; //state[WALK] = true;
-		}
+		target = player->position; target.y = position.y;
+
+		if (position.Dist(target) > 2.5f)
+			Goto(target, dt, 1000.f, 6.f);
 	}
 }
 
@@ -232,45 +260,16 @@ void Cashier::Init()
 
 void Cashier::Control(double dt, vector<Object*>object, Player* player)
 {
+	Animate(dt, 100.f);
 	Vector3 p = position; p.y = 0;
 
 	if (p == target)
 	{
-		Animate(dt, 100.f);
 		Orientate(-90, dt, 200.f);
 	}
 	else if (p != target)
 	{
-		if (previousPos != position)
-		{
-			previousPos = position;
-			elapsedTime = 0.f;
-		}
-		else
-		{
-			elapsedTime += dt;
-
-			if (elapsedTime > 0.3f)
-				velocity.y = 25;
-		}
-
-		Vector3 destination = Vector3(target - p).Normalized();
-	
-		Animate(dt, 50.f);
-		Orientate(target, dt, 100.f);
-
-		if (hitDelay == 0)
-		{
-			velocity.x = destination.x * 5;
-			velocity.z = destination.z * 5;
-
-			if (p.Dist(target) <= 0.1f)
-			{
-				position = target;
-				velocity.x = 0;
-				velocity.z = 0;
-			}
-		}
+		Goto(target, dt, 50.f, 5.f);
 	}
 
 	if (object[player->camera.lookAt] == this)
@@ -334,32 +333,38 @@ void Blindman::Control(double dt, vector<Object*>object, Player* player)
 		}
 }
 
-
-void Customer::Init()
-{
-	identity = "Customer";
-
-	for (int i = 0; i < NUM_BODYPARTS; i++)
-	{	
-		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//customer.tga");
-		bodyParts[i].position = position;
-		bodyParts[i].identity = identity;
-	}
-}
-
 void Customer::Control(double dt, vector<Object*>object, Player* player)
-{
-	Animate(dt, 25.f);
-	
-	if (hitDelay == 0)
-	{
+{	
+	Animate(dt, 100.f);
+	Vector3 p = position; p.y = 0;
 
+	if (p == target)
+	{
+		Orientate(tOrientation, dt, 200.f);
+
+		elapsedTime += dt;
+
+		if (elapsedTime >= decisionTime )
+		{
+			int r = rand() % targets.size();
+			if (target != targets[r].position)
+			{
+				target = targets[r].position;
+				tOrientation = targets[r].orientation;
+				index = r;
+			}
+			elapsedTime = 0;
+		}
+	}
+	else if (p != target)
+	{
+		Goto(target, dt, 100.f, 5.f);
 	}
 }
 
 void Detective::Init()
 {
-	identity = "Detective";
+	identity = "Detective-san";
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{	

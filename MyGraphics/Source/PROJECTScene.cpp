@@ -225,9 +225,29 @@ void PROJECTScene::JeremiahInit()
 	
 	character.push_back( new Hobo() );
 	character.push_back( new Thug() );
-	character.push_back( new Customer() );
+
+	vector<NPCTarget> path;
+	for (int z = 0; z < 2; z++)
+	{
+		path.push_back(NPCTarget(Vector3(-71,2,-69.45f + z * 18.75f), -90.f));
+		path.push_back(NPCTarget(Vector3(-71,2,24.45f + z * -18.75f), -90.f));
+	}
+	character.push_back( new Customer(path, "Customer-chan", LoadTGA("Image//CharTGA//customer.tga"), 10.f) );
+	path.clear();
+	for (int x = 0; x < 2; x++)
+	{
+		for (int z = -1; z < 5; z++)
+		{
+			Vector3 p(-45 + x * 8,0, z * -15);
+			if (x == 0)
+				path.push_back(NPCTarget(p, -90.f));
+			else
+				path.push_back(NPCTarget(p, 90.f));
+		}
+	}
+	character.push_back( new Customer(path, "Customer-san", LoadTGA("Image//CharTGA//customer-2.tga"), 5.f) );
 	character.push_back( new Blindman() );
-	character.push_back( new Detective ( Vector3(10,0,10) ));
+	character.push_back( new Detective () );
 	for(int x = 72; x > 20; x -= 15)
 	{
 		character.push_back( new Cashier(Vector3(x,2,-55)) );
@@ -317,10 +337,7 @@ void PROJECTScene::JeremiahInit()
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Crime Scene~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//ChalkOutline.tga");
-	tempMesh->material.kShininess = 20.f;
-	tempMesh->material.kSpecular.Set(0.8f,0.8f,0.8f);
-	hitBox = Vector3(0, 0, 0); cube = MeshBuilder::GenerateCube("FloorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(14.5,0.09,15), Vector3(0,-0.0001f,0), hitBox, tempMesh, cube, 1 , 32, true) );
+	object.push_back( new Object(Vector3(63,0.09,27), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 54, true) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Railing~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
@@ -343,7 +360,7 @@ void PROJECTScene::JeremiahInit()
 	tempMesh = MeshBuilder::GenerateOBJ("Auto Door", "OBJ//glass_d.obj"); tempMesh->textureID = LoadTGA("Image//GlassDoor.tga");
 	hitBox = Vector3(20,25,1.25); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	Object autoDoor(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube);
-	hitBox = Vector3(35,18,45); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(40,25,60); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	Object autoRange(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, cube);
 	AutoDoor.Init(Vector3(0,0,-87.5), autoDoor, autoRange);
 	object.push_back( &AutoDoor.Door[0] );
@@ -866,7 +883,7 @@ void PROJECTScene::Update(double dt)
 				inputDelay = 0.2f;
 
 				Vector3 tPos = object[camera->lookAt]->position + object[camera->lookAt]->collision.centre;
-				lootedText.push_back( new OnScreenText(object[camera->lookAt]->mesh->name,tPos) );
+				text.push_back( new OnScreenText("+1 " + object[camera->lookAt]->mesh->name,tPos) );
 				object.erase(object.begin()+camera->lookAt);
 
 				camera->lookAt = camera->lookingAt(object);
@@ -894,6 +911,9 @@ void PROJECTScene::Update(double dt)
 						object.push_back(newObject);
 
 						camera->lookAt = camera->lookingAt(object);
+
+						Vector3 tPos = object[camera->lookAt]->position + object[camera->lookAt]->collision.centre;
+						text.push_back( new OnScreenText("-1 " + object[camera->lookAt]->mesh->name,tPos) );
 					}
 				}
 			}
@@ -935,14 +955,14 @@ void PROJECTScene::Update(double dt)
 		character[i]->Update(dt, object, &player);
 	}
 
-	for (unsigned int i = 0; i < lootedText.size(); i++)
+	for (unsigned int i = 0; i < text.size(); i++)
 	{
-		lootedText[i]->Update(dt);
+		text[i]->Update(dt);
 
-		if (lootedText[i]->elapsedTime > 0.8f)
+		if (text[i]->elapsedTime > 0.8f)
 		{
-			delete lootedText[i];
-			lootedText.erase(lootedText.begin()+i);
+			delete text[i];
+			text.erase(text.begin()+i);
 		}
 	}
 
@@ -1045,9 +1065,18 @@ void PROJECTScene::Render()
 			modelStack.Rotate(character[i]->orientation, 0, 1, 0); 
 
 			modelStack.Translate(character[i]->bodyParts[j].collision.centre);
-			modelStack.Translate(0,character[i]->bodyParts[j].collision.hitbox.y/2, 0);
-			modelStack.Rotate(character[i]->rotation[j], 1, 0, 0); 
-			modelStack.Translate(0,-character[i]->bodyParts[j].collision.hitbox.y/2, 0);
+			if (j != character[i]->HEAD)
+			{
+				modelStack.Translate(0,character[i]->bodyParts[j].collision.hitbox.y/2, 0);
+				modelStack.Rotate(character[i]->rotation[j], 1, 0, 0); 
+				modelStack.Translate(0,-character[i]->bodyParts[j].collision.hitbox.y/2, 0);
+			}
+			else
+			{
+				modelStack.Translate(0,-character[i]->bodyParts[j].collision.hitbox.y/2, 0);
+				modelStack.Rotate(character[i]->rotation[j], 1, 0, 0); 
+				modelStack.Translate(0,character[i]->bodyParts[j].collision.hitbox.y/2, 0);
+			}
 			modelStack.Translate(-(character[i]->bodyParts[j].collision.centre));
 
 			RenderMesh(character[i]->bodyParts[j].mesh, true);
@@ -1071,7 +1100,7 @@ void PROJECTScene::Render()
 
 		for (unsigned int i = 0; i < object.size(); i++)
 		{
-			if (object[i]->type != "Bodypart")
+			if (object[i]->type != "Bodypart" && object[i]->collision.boundingBox != NULL)
 			{
 				modelStack.PushMatrix();
 				modelStack.Translate(object[i]->position);
@@ -1106,19 +1135,17 @@ void PROJECTScene::Render()
 	}
 
 	glDisable(GL_DEPTH_TEST);
-	for (unsigned int i = 0; i < lootedText.size(); i++)
+	for (unsigned int i = 0; i < text.size(); i++)
 	{
-		std::string text = "+1 "; text += lootedText[i]->name;
-
 		modelStack.PushMatrix();
-		modelStack.Translate(lootedText[i]->textPos);
+		modelStack.Translate(text[i]->textPos);
 		modelStack.Rotate(camera->orientation, 0,1,0);
 		modelStack.Rotate(-camera->look,1,0,0);
 		modelStack.Rotate(180, 0,1,0);
 		modelStack.Scale(0.5f);
-		float textLength = getTextWidth(text);
+		float textLength = getTextWidth(text[i]->name);
 		modelStack.Translate(-textLength/2, 0, 0);
-		RenderText(meshList[GEO_TEXT], text, Color(1, 1, 1));
+		RenderText(meshList[GEO_TEXT], text[i]->name, Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
 
@@ -1340,7 +1367,12 @@ void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 
 		for (int j = 'a'; j <= 'z'; j++)
 		{
-			if (text[i] == 'l' || text[i] == 'i')
+			if (text[i] == 'l')
+			{
+				textWidth -= 0.5f;
+				break;
+			}
+			else if (text[i] == 'i')
 			{
 				textWidth -= 0.4f;
 				break;
@@ -1363,7 +1395,9 @@ void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 			textWidth -= 0.4f;
 		else if (text[i] == ':')
 			textWidth -= 0.25f;
-		
+		else if (text[i] == '-')
+			textWidth -= 0.3f;
+
 		textWidth += 0.8f;
 	}
 	glBindTexture(GL_TEXTURE_2D, 0);
@@ -1445,7 +1479,12 @@ float PROJECTScene::getTextWidth(string text)
 
 		for (int j = 'a'; j <= 'z'; j++)
 		{
-			if (text[i] == 'l' || text[i] == 'i')
+			if (text[i] == 'l')
+			{
+				textWidth -= 0.5f;
+				break;
+			}
+			else if (text[i] == 'i')
 			{
 				textWidth -= 0.4f;
 				break;
@@ -1468,7 +1507,9 @@ float PROJECTScene::getTextWidth(string text)
 			textWidth -= 0.4f;
 		else if (text[i] == ':')
 			textWidth -= 0.25f;
-		
+		else if (text[i] == '-')
+			textWidth -= 0.3f;
+
 		textWidth += 0.8f;
 	}
 	return textWidth;
