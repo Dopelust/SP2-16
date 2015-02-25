@@ -189,4 +189,34 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+class Detective : public NPC
+{
+public:
+	Detective()
+	{
+		position = Vector3(-25,0,-89.5);
+		orientation = 180;
+		Init();	
+	};
+	~Detective() {};
+
+	virtual void Init();
+	virtual void Control(double dt, vector<Object*>object, Player* player);
+};
+
+class S_Guard : public NPC
+{
+public:
+	S_Guard()
+	{
+		position = Vector3(-25,0,-89.5);
+		orientation = 180;
+		Init();	
+	};
+	~S_Guard() {};
+
+	virtual void Init();
+	virtual void Control(double dt, vector<Object*>object, Player* player);
+};
+
 #endif
