@@ -128,15 +128,13 @@ public:
 	Vector3 doorPosition[2]; //Closed Position
 	Object Button[2];
 	Object Range;
-	Object getRange()
-	{
-		return Range;
-	};
 	Mesh* buttonStatus[2];
 	bool open; bool close;
 	float elapsedTime;
 
-	virtual void Update(double dt, vector<Object*>object, Player* player);
+	void ButtonUpdate(double dt, vector<Object*>object, Player* players);
+	void RangeUpdate(double dt, vector<Object*>object, Player* player);
+	void Update(double dt, vector<Object*>object, Player* player);
 };
 
 #endif

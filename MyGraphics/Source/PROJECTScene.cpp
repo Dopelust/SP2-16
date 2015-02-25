@@ -289,13 +289,18 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(0,0,-125), Vector3(0,-0.05f,0), hitBox, tempMesh, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Cash Table~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-	tempMesh = MeshBuilder::GenerateOBJ("CashierTable", "OBJ//LowPoly//cashiertable.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//cashiertable.tga");
+	
 	for( int x = 70; x > 20; x-=15)
 	{
+		tempMesh = MeshBuilder::GenerateOBJ("CashierTable", "OBJ//LowPoly//cashiertable.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//cashiertable.tga");
 		hitBox = Vector3(3, 3.5f, 10.f); cube = MeshBuilder::GenerateCube("CashierTable Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new Object(Vector3(x,0,-55), Vector3(-1.5f,hitBox.y/2,0), hitBox, tempMesh, cube) );
 		hitBox = Vector3(3,3.5f,3); cube = MeshBuilder::GenerateCube("CashierTable HitBox", Color(1,1,1), hitBox.x,hitBox.y,hitBox.z,0);
 		object.push_back( new Object(Vector3(x+3,0,-58.5f),Vector3(-1.5f,hitBox.y/2,0), hitBox, cube) );
+
+		tempMesh = MeshBuilder::GenerateOBJ("CashierTable", "OBJ//LowPoly//cashregister.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//cashregister.tga");
+		hitBox = Vector3(0,0,0); cube = MeshBuilder::GenerateCube("CashierTable Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Object(Vector3(x+1.5f,3.5f,-58.5f), Vector3(0,0,0), hitBox, tempMesh, cube, 1, -90, true) );
 	}
 	
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2nd Floor~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
@@ -586,7 +591,7 @@ void PROJECTScene::DarrenInit()
 
 	tempMesh = MeshBuilder::GenerateOBJ("Elevator Door", "OBJ//elevatordoor.obj"); tempMesh->textureID = LoadTGA("Image//elevatordoor.tga");
 	hitBox = Vector3(5.3,8.5,1.2f); cube = MeshBuilder::GenerateCube("ElevatorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	Object Door2(Vector3(0,0,0), Vector3(0,4.25,0), hitBox, tempMesh, cube);
+	Object Door2(Vector3(0,25,0), Vector3(0,4.25,0), hitBox, tempMesh, cube);
 	doorway2.Init(Vector3(0,27,42), Door2, ButtonIn2, ButtonOut2);
 	object.push_back( &doorway2.Door[0] );
 	object.push_back( &doorway2.Door[1] );
@@ -615,11 +620,11 @@ void PROJECTScene::DarrenInit()
 	object.push_back( new Object(Vector3(0,27,56), Vector3(0,4,-5), hitBox, tempMesh, cube) );
 
 
+
 	tempMesh = MeshBuilder::GenerateOBJ("atm", "OBJ//atm.obj"); tempMesh->textureID = LoadTGA("Image//atm.tga");
 	hitBox = Vector3(2,7,3); cube = MeshBuilder::GenerateCube("atm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false) );
 	object.push_back( new Object(Vector3(50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false) );
-
 
 }
 void PROJECTScene::Init()
@@ -711,13 +716,6 @@ void PROJECTScene::Update(double dt)
 				camera->lookAt = camera->lookingAt(object);
 			}
 		}
-
-		else if (object[camera->lookAt]->mesh->name == "Button")
-		{
-			doorway.open = true; doorway.close = false;
-			doorway.Button[0].mesh = doorway.buttonStatus[1]; doorway.Button[1].mesh = doorway.buttonStatus[1];
-			doorway.elapsedTime = 0;
-		}
 	}
 
 	for (unsigned int i = 0; i < object.size(); i++)
@@ -748,13 +746,14 @@ void PROJECTScene::Update(double dt)
 
 	player.Update(dt, object);
 
+	doorway.ButtonUpdate(dt, object, &player);
+	doorway2.ButtonUpdate(dt, object, &player);
 	doorway.Update(dt, object, &player);
 	doorway2.Update(dt, object, &player);
 
 	if(player.position.z > 42 && player.position.z < 56 )
 	{
 		player.position.y =27;
-			
 		doorway2.open = true;
 		doorway2.close = false;
 	}
@@ -764,22 +763,11 @@ void PROJECTScene::Update(double dt)
 	      doorway2.open = false;
 	      doorway2.close = true;
 		  player.position.y = 0;
-
-		 
 	}
 
+	AutoDoor.RangeUpdate(dt, object, &player);
 	AutoDoor.Update(dt, object, &player);
-	{
-		if(player.checkCollision(&AutoDoor.Range) == true)
-		{
-			AutoDoor.open = true; AutoDoor.close = false;
-		}
-		else if (player.checkCollision(&AutoDoor.Range) == false)
-		{
-			AutoDoor.close = true; AutoDoor.open = false;
-		}
-	}
-
+	
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
 		if (object[i]->type == "Dynamic")
@@ -1072,22 +1060,26 @@ void PROJECTScene::Render()
 	modelStack.PopMatrix();
 	
 	if (player.holding < 0)
-	if (object[camera->lookAt]->ignoreCollision && object[camera->lookAt]->mesh != NULL)
+	if (object[camera->lookAt]->mesh != NULL)
 	{
-		string tooltip;
-		if (object[camera->lookAt]->mesh->name == "Button")
-			tooltip += "E to push ";
-		else
-			tooltip += "E to loot ";
-		tooltip += object[camera->lookAt]->mesh->name;
+		if (object[camera->lookAt]->type == "Item" || object[camera->lookAt]->mesh->name == "Button")
+		{
+			string tooltip;
+			if (object[camera->lookAt]->mesh->name == "Button")
+				tooltip += "E to push ";
+			else if(object[camera->lookAt]->type == "Item")
+				tooltip += "E to loot ";
 
-		modelStack.PushMatrix();
-		modelStack.Translate(0.35f,-5,0);
-		float textLength = getTextWidth(tooltip);
-		modelStack.Translate(-textLength/2, 0, 0);
-		modelStack.Scale(1,1,1);
-		RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
-		modelStack.PopMatrix();
+			tooltip += object[camera->lookAt]->mesh->name;
+
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,-5,0);
+			float textLength = getTextWidth(tooltip);
+			modelStack.Translate(-textLength/2, 0, 0);
+			modelStack.Scale(1,1,1);
+			RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
 	}
 
 	projectionStack.PopMatrix();
@@ -1254,7 +1246,7 @@ void dynamicObject::Control(double dt, vector<Object*>object, Player* player)
 		position = player->camera.target;
 		velocity.y = 0;
 
-		if ((Application::IsKeyPressed('E') && (player->camera.lookAt == player->holding || object[player->camera.lookAt]->ignoreCollision) && PROJECTScene::inputDelay == 0))
+		if ((Application::IsKeyPressed('E') && player->camera.lookAt == player->holding && PROJECTScene::inputDelay == 0 ))
 		{
 			player->holding = -1;
 			PROJECTScene::inputDelay = 0.2f;

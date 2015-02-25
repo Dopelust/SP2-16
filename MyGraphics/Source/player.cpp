@@ -277,76 +277,6 @@ void dynamicObject::Update(double dt, vector<Object*>object, Player* player)
 	}
 }
 
-void Doorway::Update(double dt, vector<Object*>object, Player* player) 
-{
-	Vector3 initialPos[2];
-	initialPos[0] = Door[0].position;
-	initialPos[1] = Door[1].position;
-
-	if (open == true)
-	{
-		elapsedTime += float(dt);
-
-		if (elapsedTime > 3.f)
-		{
-			open = false;
-			Button[0].mesh = buttonStatus[0]; Button[1].mesh = buttonStatus[0];
-			elapsedTime = 0;
-		}
-		
-		Door[0].position.x -= float(10.f * dt);
-		Door[1].position.x += float(10.f * dt);
-
-		if(Door[0].position.x <= doorPosition[0].x - Door[0].collision.hitbox.x)
-			Door[0].position.x = doorPosition[0].x - Door[0].collision.hitbox.x;
-		if(Door[1].position.x >= doorPosition[1].x + Door[1].collision.hitbox.x)
-			Door[1].position.x = doorPosition[1].x + Door[1].collision.hitbox.x;
-	}
-
-	else
-	{
-		Door[0].position.x += float(10.f * dt);
-		Door[1].position.x -= float(10.f * dt);
-
-		if (Door[0].position.x >= doorPosition[0].x)
-		{
-			Door[0].position.x = doorPosition[0].x; close = true;
-		}
-		if (Door[1].position.x <= doorPosition[1].x)
-		{
-			Door[1].position.x = doorPosition[1].x; close = true;
-		}
-	}
-
-	for (int d = 0; d < 2; d++)
-	{
-		if (player->checkCollision(&Door[d]))
-		{
-			if (close == false)
-			{
-				open = true; close = false;
-				Button[0].mesh = buttonStatus[1]; Button[1].mesh = buttonStatus[1];
-				elapsedTime = 0;
-			}
-		}
-
-		for (unsigned int i = 0; i < object.size(); i++)
-		{
-			if (object[i] != &Door[d])
-				if(object[i]->type == "Dynamic" || object[i]->type == "NPC")
-					if (Object::checkCollision(&Door[d], object[i]))
-					{
-						if (close == false)
-						{
-							open = true; close = false;
-							Button[0].mesh = buttonStatus[1]; Button[1].mesh = buttonStatus[1];
-							elapsedTime = 0;
-						}
-					}
-		}
-	}
-}
-
 void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player)
 {
 	Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
@@ -414,3 +344,93 @@ bool Player::checkCollision(Object* b)
     maxCubeA.z > minCubeB.z &&
     minCubeA.z < maxCubeB.z);
 } 
+
+void Doorway::Update(double dt, vector<Object*>object, Player* player) 
+{
+	Vector3 initialPos[2];
+	initialPos[0] = Door[0].position;
+	initialPos[1] = Door[1].position;
+
+	if (open == true)
+	{
+		elapsedTime += float(dt);
+
+		if (elapsedTime > 3.f)
+		{
+			open = false;
+			Button[0].mesh = buttonStatus[0]; Button[1].mesh = buttonStatus[0];
+			elapsedTime = 0;
+		}
+		
+		Door[0].position.x -= float(10.f * dt);
+		Door[1].position.x += float(10.f * dt);
+
+		if(Door[0].position.x <= doorPosition[0].x - Door[0].collision.hitbox.x)
+			Door[0].position.x = doorPosition[0].x - Door[0].collision.hitbox.x;
+		if(Door[1].position.x >= doorPosition[1].x + Door[1].collision.hitbox.x)
+			Door[1].position.x = doorPosition[1].x + Door[1].collision.hitbox.x;
+	}
+
+	else
+	{
+		Door[0].position.x += float(10.f * dt);
+		Door[1].position.x -= float(10.f * dt);
+
+		if (Door[0].position.x >= doorPosition[0].x)
+		{
+			Door[0].position.x = doorPosition[0].x; close = true;
+		}
+		if (Door[1].position.x <= doorPosition[1].x)
+		{
+			Door[1].position.x = doorPosition[1].x; close = true;
+		}
+	}
+
+	if (close == false)
+	{
+		for (int d = 0; d < 2; d++)
+		{
+			if (player->checkCollision(&Door[d]))
+			{
+				open = true; close = false;
+				Button[0].mesh = buttonStatus[1]; Button[1].mesh = buttonStatus[1];
+				elapsedTime = 0;
+			}
+
+			for (unsigned int i = 0; i < object.size(); i++)
+			{
+				if (object[i] != &Door[d])
+					if(object[i]->type == "Dynamic" || object[i]->type == "NPC")
+						if (Object::checkCollision(&Door[d], object[i]))
+						{
+							open = true; close = false;
+							Button[0].mesh = buttonStatus[1]; Button[1].mesh = buttonStatus[1];
+							elapsedTime = 0;
+						}
+			}
+		}
+	}
+}
+
+void Doorway::RangeUpdate(double dt, vector<Object*>object, Player* player) 
+{
+	if(player->checkCollision(&Range) == true)
+	{
+		open = true; close = false;
+	}
+	else if (player->checkCollision(&Range) == false)
+	{
+		close = true; open = false;
+	}
+
+}
+void Doorway::ButtonUpdate(double dt, vector<Object*>object, Player* player) 
+{
+	if (player->holding < 0)
+	if (Application::IsKeyPressed('E') && (object[player->camera.lookAt] == &Button[0] || object[player->camera.lookAt] == &Button[1]))
+	{
+		open = true; close = false;
+		Button[0].mesh = buttonStatus[1]; Button[1].mesh = buttonStatus[1];
+		elapsedTime = 0;
+	}
+}
