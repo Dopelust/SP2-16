@@ -120,6 +120,8 @@ Position Application::getMousePos()
 	return Position((float)xpos, (float)ypos, 0);
 }
 
+float pauseDelay = 0.f;
+
 void Application::Run()
 {
 	//Main Loop
@@ -134,7 +136,29 @@ void Application::Run()
 		scene->Update(m_timer.getElapsedTime());
 		scene->Render();
 
-		glfwSetCursorPos(m_window, 800/2, 600/2);
+		if (!scene->pause)
+			glfwSetCursorPos(m_window, 800/2, 600/2);
+
+		if(IsKeyPressed('P') && scene->pause == false && pauseDelay == 0)
+		{
+			scene->pause = true;
+			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+			glfwSetCursorPos(m_window, 400, 301);
+			pauseDelay = 6.f * m_timer.getElapsedTime();
+		}
+		else if (IsKeyPressed('P') && scene->pause == true && pauseDelay == 0)
+		{
+			scene->pause = false;
+			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+			glfwSetCursorPos(m_window, 800/2, 600/2);
+			pauseDelay = 6.f * m_timer.getElapsedTime();
+		}
+
+		if(pauseDelay > 0)
+			pauseDelay -= m_timer.getElapsedTime();
+		else
+			pauseDelay = 0;
+
 		mouseScroll = 0;
 
 		//Swap buffers
