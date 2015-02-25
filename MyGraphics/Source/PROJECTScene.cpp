@@ -587,7 +587,7 @@ void PROJECTScene::DarrenInit()
 	tempMesh = MeshBuilder::GenerateOBJ("Elevator Door", "OBJ//elevatordoor.obj"); tempMesh->textureID = LoadTGA("Image//elevatordoor.tga");
 	hitBox = Vector3(5.3,8.5,1.2f); cube = MeshBuilder::GenerateCube("ElevatorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	Object Door2(Vector3(0,0,0), Vector3(0,4.25,0), hitBox, tempMesh, cube);
-	doorway2.Init(Vector3(0,25,42), Door2, ButtonIn2, ButtonOut2);
+	doorway2.Init(Vector3(0,27,42), Door2, ButtonIn2, ButtonOut2);
 	object.push_back( &doorway2.Door[0] );
 	object.push_back( &doorway2.Door[1] );
 	object.push_back( &doorway2.Button[0] );
@@ -615,17 +615,10 @@ void PROJECTScene::DarrenInit()
 	object.push_back( new Object(Vector3(0,27,56), Vector3(0,4,-5), hitBox, tempMesh, cube) );
 
 
-
 	tempMesh = MeshBuilder::GenerateOBJ("atm", "OBJ//atm.obj"); tempMesh->textureID = LoadTGA("Image//atm.tga");
 	hitBox = Vector3(2,7,3); cube = MeshBuilder::GenerateCube("atm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false) );
 	object.push_back( new Object(Vector3(50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false) );
-
-	/*tempMesh = MeshBuilder::GenerateOBJ("Entrance Door", "OBJ//entrancedoor.obj"); tempMesh->textureID = LoadTGA("Image//metal.tga");
-	hitBox = Vector3(20,20,1.2f); cube = MeshBuilder::GenerateCube("Entrance", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(10.5,0,-88), Vector3(0,10,0), hitBox, tempMesh, cube) );
-	object.push_back( new Object(Vector3(-10,0,-88), Vector3(0,10,0), hitBox, tempMesh, cube) );
-	*/
 
 
 }
@@ -761,10 +754,7 @@ void PROJECTScene::Update(double dt)
 	if(player.position.z > 42 && player.position.z < 56 )
 	{
 		player.position.y =27;
-		doorway.open = false;
-		doorway.close = true;// will open when player is up
-		
-		
+			
 		doorway2.open = true;
 		doorway2.close = false;
 	}
@@ -775,9 +765,7 @@ void PROJECTScene::Update(double dt)
 	      doorway2.close = true;
 		  player.position.y = 0;
 
-		  doorway.open = true;
-		  doorway.close = false;
-
+		 
 	}
 
 	AutoDoor.Update(dt, object, &player);
