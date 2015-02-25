@@ -299,7 +299,15 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(0,26.8,-22.5), Vector3(-45.5,hitBox.y/2,0), hitBox, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market Entrance~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-
+	tempMesh = MeshBuilder::GenerateOBJ("Auto Door", "OBJ//glass_d.obj"); tempMesh->textureID = LoadTGA("Image//GlassDoor.tga");
+	hitBox = Vector3(20,25,1.25); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object autoDoor(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube);
+	hitBox = Vector3(35,18,20); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object autoRange(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, cube);
+	AutoDoor.Init(Vector3(0,0,-87.5), autoDoor, autoRange);
+	object.push_back(&AutoDoor.Range);
+	object.push_back( &AutoDoor.Door[0] );
+	object.push_back( &AutoDoor.Door[1] );
 }
 void PROJECTScene::JessicaInit()
 {
@@ -620,6 +628,18 @@ void PROJECTScene::Update(double dt)
 		if(doorway.open == false && doorway.close == true && Application::IsKeyPressed('E'))
 		{
 			player.position.y = 0;
+		}
+	}
+
+	AutoDoor.Update(dt, object, &player);
+	{
+		if(player.checkCollision(&AutoDoor.Range) == true)
+		{
+			AutoDoor.open = true; AutoDoor.close = false;
+		}
+		else if (player.checkCollision(&AutoDoor.Range) == false)
+		{
+			AutoDoor.close = true; AutoDoor.open = false;
 		}
 	}
 

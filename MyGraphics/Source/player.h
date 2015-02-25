@@ -112,13 +112,13 @@ public:
 		buttonStatus[1]->textureID = LoadTGA("Image//buttonOn.tga");
 		elapsedTime = 0;
 	};
-
-	void Init(Vector3 p, Object D)
+	void Init(Vector3 p, Object D, Object R)
 	{
 		doorPosition[0] = p; doorPosition[0].x -= D.collision.hitbox.x/2;
 		doorPosition[1] = p; doorPosition[1].x += D.collision.hitbox.x/2;
 		Door[0] = D; Door[0].position = doorPosition[0];
 		Door[1] = D; Door[1].position = doorPosition[1];
+		Range = R; Range.position += p; Range.ignoreCollision = true;
 		elapsedTime = 0;
 	};
 
@@ -127,6 +127,11 @@ public:
 	Object Door[2]; //Double Doors
 	Vector3 doorPosition[2]; //Closed Position
 	Object Button[2];
+	Object Range;
+	Object getRange()
+	{
+		return Range;
+	};
 	Mesh* buttonStatus[2];
 	bool open; bool close;
 	float elapsedTime;

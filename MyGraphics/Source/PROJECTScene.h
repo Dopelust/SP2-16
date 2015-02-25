@@ -114,7 +114,8 @@ private:
 
 	Doorway doorway;
 	Doorway doorway2;
-	Doorway Entrance;
+	Doorway AutoDoor;
+
 	Light light[3];
 	void RenderMesh(Mesh *mesh, bool enableLight);
 	void RenderText(Mesh* mesh, std::string text, Color color);
