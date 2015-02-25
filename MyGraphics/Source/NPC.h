@@ -152,16 +152,6 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
-class CustomerPath 
-{
-public:
-	CustomerPath() {};
-	~CustomerPath() {};
-
-	vector<Object*> targetObj;
-	vector<Vector3> targetPos;
-};
-
 class Customer : public NPC
 {
 public:
@@ -184,7 +174,6 @@ public:
 		return position;
 	}
 
-	CustomerPath pathing;
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };

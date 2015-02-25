@@ -178,7 +178,7 @@ void PROJECTScene::RicssonInit()
 	}
 	for ( int x = 0; x < 3; x++)
 	{
-		for (int z = -1; z < 2; z++)
+		for (int z = 0; z < 3; z++)
 		{
 			Vector3 p(30 + x * 18,0, z * -15);
 

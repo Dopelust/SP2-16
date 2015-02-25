@@ -70,6 +70,16 @@ public:
 	string identity;
 };
 
+class Money : public Object
+{
+public:
+	Money() {ignoreCollision = true;};
+	Money(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, float v) : Object(p,c,h,m,b,s,o,true) {type = "Money"; value = v;};
+	~Money();
+
+	float value;
+};
+
 class Item : public Object
 {
 public:
