@@ -796,12 +796,13 @@ void PROJECTScene::DarrenInit()
 	hitBox = Vector3(11, 9, 1); cube = MeshBuilder::GenerateCube("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(0,27,56), Vector3(0,4,-5), hitBox, tempMesh, cube) );
 
-
-
-	tempMesh = MeshBuilder::GenerateOBJ("atm", "OBJ//atm.obj"); tempMesh->textureID = LoadTGA("Image//atm.tga");
-	hitBox = Vector3(2,7,3); cube = MeshBuilder::GenerateCube("atm", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false) );
-	object.push_back( new Object(Vector3(50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false) );
+	tempMesh = MeshBuilder::GenerateOBJ("ATM", "OBJ//atm.obj"); tempMesh->textureID = LoadTGA("Image//atm.tga");
+	hitBox = Vector3(2,7,3); cube = MeshBuilder::GenerateCube("ATMHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object D(Vector3(-50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false);
+	Object W(Vector3(50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false);
+	Bank = ATM( D, W);
+	object.push_back( &Bank.Deposit );
+	object.push_back( &Bank.Withdraw );
 
 }
 void PROJECTScene::Init()
@@ -896,6 +897,14 @@ void PROJECTScene::Update(double dt)
 				camera->lookAt = camera->lookingAt(object);
 			}
 		}
+		else if(object[camera->lookAt] == &Bank.Withdraw)
+		{
+			Bank.withdraw();
+		}
+		else if(object[camera->lookAt] == &Bank.Deposit)
+		{
+			Bank.deposit();
+		}
 	}
 
 	for (unsigned int i = 0; i < object.size(); i++)
@@ -933,8 +942,6 @@ void PROJECTScene::Update(double dt)
 	doorway2.ButtonUpdate(dt, object, &player);
 	doorway.Update(dt, object, &player);
 	doorway2.Update(dt, object, &player);
-	
-	//bool lvl = 0;
 
 	if(player.checkCollision(&doorway.Range) == true && doorway.close == true)
 	{
@@ -1172,6 +1179,25 @@ void PROJECTScene::Render()
 		RenderText(meshList[GEO_TEXT], object[camera->lookAt]->getIdentity(), Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
+	else if (object[camera->lookAt]->type == "ATM")
+	{
+		string P_Money;
+		long double m = Bank.getSavings();
+		P_Money += "Savings:";
+		P_Money += to_string(m);
+
+		modelStack.PushMatrix();
+		modelStack.Translate(object[camera->lookAt]->position);
+		modelStack.Translate(0,7.f,0);
+		modelStack.Rotate(camera->orientation, 0,1,0);
+		modelStack.Rotate(-camera->look,1,0,0);
+		modelStack.Rotate(180, 0,1,0);
+		modelStack.Scale(0.5f);
+		float textLength = getTextWidth(P_Money);
+		modelStack.Translate(-textLength/2 + 0.1f, 0, 0);
+		RenderText(meshList[GEO_TEXT], P_Money, Color(1, 1, 1));
+		modelStack.PopMatrix();
+	}
 
 	glEnable(GL_DEPTH_TEST);
 
@@ -1272,6 +1298,22 @@ void PROJECTScene::Render()
 			modelStack.Translate(-textLength/2, 0, 0);
 			modelStack.Scale(1,1,1);
 			RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+		else if(object[camera->lookAt]->type == "ATM")
+		{
+			string ATM_actions;
+			if(object[camera->lookAt] == &Bank.Withdraw)
+				ATM_actions = "E to withdraw $1";
+			else if(object[camera->lookAt] == &Bank.Deposit)
+				ATM_actions = "E to deposit $1";
+	
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,-5,0);
+			float textLength = getTextWidth(ATM_actions);
+			modelStack.Translate(-textLength/2, 0, 0);
+			modelStack.Scale(1,1,1);
+			RenderText(meshList[GEO_TEXT],ATM_actions , Color(1, 1, 1));
 			modelStack.PopMatrix();
 		}
 	}

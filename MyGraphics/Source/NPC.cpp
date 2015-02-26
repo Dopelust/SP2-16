@@ -361,6 +361,7 @@ void Customer::Control(double dt, vector<Object*>object, Player* player)
 	if (p == target)
 	{
 		Orientate(tOrientation, dt, 200.f);
+		elapsedTime += dt;
 
 		if (elapsedTime >= decisionTime )
 		{
