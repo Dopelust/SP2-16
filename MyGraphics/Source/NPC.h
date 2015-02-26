@@ -52,6 +52,7 @@ public:
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
 	
+	bool Knockback(Vector3 dir, Vector3 vel);
 	void Update(double dt, vector<Object*>object, Player* player);
 	void UpdateVelocity(double dt);
 	void Orientate(float o, double dt, float speed);
@@ -112,11 +113,6 @@ public:
 	}
 	~Cashier() {};
 
-	Vector3 getPos()
-	{
-		return position;
-	}
-
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
@@ -126,10 +122,11 @@ class Blindman : public NPC
 public:
 	Blindman()
 	{
-		position = Vector3(0,2,-100);
+		position = Vector3(0,2,-10);
+		orientation = rand () % 360;
 		Vector3 direction;
 		direction.SphericalToCartesian(orientation, 0.f);
-		target = position + direction;
+		target = position + direction * 5;
 		target.y = 0;
 		Init();	
 	};
@@ -138,16 +135,11 @@ public:
 		position = p;
 		Vector3 direction;
 		direction.SphericalToCartesian(orientation, 0.f);
-		target = position + direction;
+		target = position + direction * 5;
 		target.y = 0;
 		Init();
 	}
 	~Blindman() {};
-
-	Vector3 getPos()
-	{
-		return position;
-	}
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);

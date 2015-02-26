@@ -155,19 +155,33 @@ void NPC::Goto(Vector3 destination, double dt, float turn, float speed)
 	}
 }
 
+bool NPC::Knockback(Vector3 dir, Vector3 vel)
+{
+	if (hitDelay == 0)
+	{
+		velocity.x += dir.x * vel.x;
+		velocity.z += dir.z * vel.z;
+		velocity.y += vel.y;
+		
+		hitDelay = 0.5f;
+
+		return true;
+	}
+
+	return false;
+}
+
 void NPC::Update(double dt, vector<Object*>object, Player* player)
 {
 	initialPos = position;
 
-	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && hitDelay == 0)
+	if (object[player->camera.lookAt] == this && Application::mouseButton(0))
 	{
-		Vector3 direction;
-		direction.SphericalToCartesian(player->hOrientation, 0.f);
+		Vector3 dir;
+		dir.SphericalToCartesian(player->hOrientation, 0.f);
+		Vector3 vel(25,15,25);
 
-		velocity.x += direction.x * 25;
-		velocity.z += direction.z * 25;
-		velocity.y += 15;
-		hitDelay = 0.5f;
+		Knockback(dir, vel);
 	}
 
 	Control(dt, object, player);
@@ -281,7 +295,7 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 
 void Blindman::Init()
 {
-	identity = "Blind Man";
+	identity = "Ossan";
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{	
@@ -293,44 +307,50 @@ void Blindman::Init()
 
 void Blindman::Control(double dt, vector<Object*>object, Player* player)
 {
-	//Orientate(target, dt, 500.f);
-	Animate(dt, 60.f);
-
+	elapsedTime = 0;
+	Animate(dt, 80.f);
+	
 	Vector3 direction;
 	direction.SphericalToCartesian(orientation, 0.f);
 
-	if (hitDelay == 0)
-	{
-		velocity.x = 5 * direction.x;
-		velocity.z = 5 * direction.z;
-		Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
-		Vector3 maxPlayer = Cube + initialPos;
-		Vector3 minPlayer = Cube - collision.hitbox;
-		minPlayer.y = 0.4f; 
+	position += velocity * float(dt);
 
-		minPlayer += initialPos;
-		for (unsigned int i = 0; i < object.size(); i++)
-		{
-			if (object[i] != this)
-				if(!object[i]->ignoreCollision)
-					if (Object::checkCollision(this, object[i]))
+	Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
+	Vector3 maxPlayer = Cube + initialPos;
+	Vector3 minPlayer = Cube - collision.hitbox;
+	minPlayer.y = 0.4f; 
+
+	minPlayer += initialPos;
+	for (unsigned int i = 0; i < object.size(); i++)
+	{
+		if (object[i] != this)
+			if(!object[i]->ignoreCollision)
+				if (Object::checkCollision(this, object[i]))
+				{
+					if (object[i]->type == "NPC")
+					{
+						object[i]->Knockback(direction, Vector3(150,30,150));
+					}
+					else if (hitDelay == 0)
 					{
 						Vector3 Cube = object[i]->collision.hitbox/2; Cube += object[i]->collision.centre;
 						Vector3 maxCube = Cube; maxCube += object[i]->position;
 						Vector3 minCube = Cube - object[i]->collision.hitbox; minCube += object[i]->position;
 
-							if ((maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z) || (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z))
-							{
-								target.z = position.z - direction.z;
-							}
+						if ((maxPlayer.z >= maxCube.z && minPlayer.z >= maxCube.z) || (maxPlayer.z <= minCube.z && minPlayer.z <= minCube.z))
+							target.z = position.z - direction.z;
 
-							else if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x || maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
-								target.x = position.x - direction.x;
+						else if (maxPlayer.x >= maxCube.x && minPlayer.x >= maxCube.x || maxPlayer.x <= minCube.x && minPlayer.x <= minCube.x)
+							target.x = position.x - direction.x;
 					}
-			}
+				}
+	}
 
-			target += velocity * direction * dt;
-		}
+	position -= velocity * float(dt);
+
+
+	Goto(target, dt, 500.f, 5.f);
+	target += velocity * float(dt);
 }
 
 void Customer::Control(double dt, vector<Object*>object, Player* player)
@@ -341,8 +361,6 @@ void Customer::Control(double dt, vector<Object*>object, Player* player)
 	if (p == target)
 	{
 		Orientate(tOrientation, dt, 200.f);
-
-		elapsedTime += dt;
 
 		if (elapsedTime >= decisionTime )
 		{

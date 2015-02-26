@@ -46,6 +46,7 @@ public:
 	virtual void Update(double dt, vector<Object*>object, Player* player) {};
 
 	//Derived
+	virtual bool Knockback(Vector3 dir, Vector3 vel) {return 0;};
 	virtual void setPaid(bool p) {return;};
 	virtual bool getPaid() {return 0;};
 	virtual string getIdentity() {return "";};
