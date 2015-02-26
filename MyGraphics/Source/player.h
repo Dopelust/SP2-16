@@ -99,7 +99,7 @@ class Doorway
 public:
 	Doorway() { open = false; close = true; };
 
-	void Init(Vector3 p, Object D, Object B1, Object B2)
+	void Init(Vector3 p, Object D, Object B1, Object B2, Object R)
 	{
 		doorPosition[0] = p; doorPosition[0].x -= D.collision.hitbox.x/2;
 		doorPosition[1] = p; doorPosition[1].x += D.collision.hitbox.x/2;
@@ -110,6 +110,7 @@ public:
 		buttonStatus[0] = B1.mesh;
 		buttonStatus[1] = MeshBuilder::GenerateOBJ("Button", "OBJ//button.obj"); 
 		buttonStatus[1]->textureID = LoadTGA("Image//buttonOn.tga");
+		Range = R; Range.position += p; Range.ignoreCollision = true;
 		elapsedTime = 0;
 	};
 	void Init(Vector3 p, Object D, Object R)

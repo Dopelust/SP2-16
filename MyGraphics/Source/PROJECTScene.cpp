@@ -357,6 +357,7 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(0,26.8,-22.5), Vector3(-45.5,hitBox.y/2,0), hitBox, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market Entrance~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	
 	tempMesh = MeshBuilder::GenerateOBJ("Auto Door", "OBJ//glass_d.obj"); tempMesh->textureID = LoadTGA("Image//GlassDoor.tga");
 	hitBox = Vector3(20,25,1.25); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	Object autoDoor(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube);
@@ -365,6 +366,8 @@ void PROJECTScene::JeremiahInit()
 	AutoDoor.Init(Vector3(0,0,-87.5), autoDoor, autoRange);
 	object.push_back( &AutoDoor.Door[0] );
 	object.push_back( &AutoDoor.Door[1] );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Elevator~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 }
 void PROJECTScene::JessicaInit()
 {
@@ -726,7 +729,9 @@ void PROJECTScene::DarrenInit()
 	tempMesh = MeshBuilder::GenerateOBJ("Elevator Door", "OBJ//elevatordoor.obj"); tempMesh->textureID = LoadTGA("Image//elevatordoor.tga");
 	hitBox = Vector3(5.3,8.5,1.2f); cube = MeshBuilder::GenerateCube("ElevatorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	Object Door(Vector3(0,0,0), Vector3(0,4.25,0), hitBox, tempMesh, cube);
-	doorway.Init(Vector3(0,0,42), Door, ButtonIn, ButtonOut);
+	hitBox = Vector3(10,8.5,11); cube = MeshBuilder::GenerateCube("ElevatorINSIDEHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object lvlRange1(Vector3(0,hitBox.y/2,hitBox.z/2), Vector3(0,0,0), hitBox, cube);
+	doorway.Init(Vector3(0,0,42), Door, ButtonIn, ButtonOut, lvlRange1);
 	object.push_back( &doorway.Door[0] );
 	object.push_back( &doorway.Door[1] );
 	object.push_back( &doorway.Button[0] );
@@ -762,7 +767,9 @@ void PROJECTScene::DarrenInit()
 	tempMesh = MeshBuilder::GenerateOBJ("Elevator Door", "OBJ//elevatordoor.obj"); tempMesh->textureID = LoadTGA("Image//elevatordoor.tga");
 	hitBox = Vector3(5.3,8.5,1.2f); cube = MeshBuilder::GenerateCube("ElevatorHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	Object Door2(Vector3(0,25,0), Vector3(0,4.25,0), hitBox, tempMesh, cube);
-	doorway2.Init(Vector3(0,27,42), Door2, ButtonIn2, ButtonOut2);
+	hitBox = Vector3(10,8.5,11); cube = MeshBuilder::GenerateCube("ElevatorINSIDEHitbox2", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object lvlRange2(Vector3(0,hitBox.y/2,hitBox.z/2), Vector3(0,0,0), hitBox, cube);
+	doorway2.Init(Vector3(0,27,42), Door2, ButtonIn2, ButtonOut2, lvlRange2);
 	object.push_back( &doorway2.Door[0] );
 	object.push_back( &doorway2.Door[1] );
 	object.push_back( &doorway2.Button[0] );
@@ -926,20 +933,22 @@ void PROJECTScene::Update(double dt)
 	doorway2.ButtonUpdate(dt, object, &player);
 	doorway.Update(dt, object, &player);
 	doorway2.Update(dt, object, &player);
+	
+	//bool lvl = 0;
 
-	if(player.position.z > 42 && player.position.z < 56 )
+	if(player.checkCollision(&doorway.Range) == true && doorway.close == true)
 	{
-		player.position.y =27;
+		player.position.y = 27;
 		doorway2.open = true;
 		doorway2.close = false;
 	}
-
-	if(player.position.z > 42 && player.position.z < 56 && player.position.y == 27)
-	{			
-	      doorway2.open = false;
-	      doorway2.close = true;
-		  player.position.y = 0;
+	else if(player.checkCollision(&doorway2.Range) == true && doorway2.close == true)
+	{
+		player.position.y = 0;
+		doorway.open = true;
+		doorway.close = false;
 	}
+
 
 	AutoDoor.RangeUpdate(dt, object, &player);
 	AutoDoor.Update(dt, object, &player);
