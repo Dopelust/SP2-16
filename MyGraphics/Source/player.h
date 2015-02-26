@@ -11,7 +11,26 @@
 
 using namespace::std;
 
-class Player
+class dynamicObject : public Object
+{
+public:
+	dynamicObject()  {type = "Dynamic";};
+	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) :	Object(p,c,h,m,b) {type = "Dynamic";};
+	~dynamicObject() {};
+
+	virtual void Init() {};
+	virtual void Control(double dt, vector<Object*>object, Player* player);
+	virtual void Update(double dt, vector<Object*>object, Player* player);
+	Vector3 velocity;
+
+	float hitDelay;
+	void UpdateVelocity(double dt);
+	bool Knockback(Vector3 dir, Vector3 vel);
+	void RespondToCollision(Vector3 initialPos, vector<Object*>object);
+	void RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player);
+};
+
+class Player : public dynamicObject
 {
 public:
 	enum playerStates
@@ -37,7 +56,9 @@ public:
 		TOTAL_VALUES,
 	};
 	Player() 
-	{ 
+	{
+		type = "Player";
+
 		position = Vector3(0, 2, -100);
 		for (int i = 0; i < TOTAL_VALUES; i++)
 		{
@@ -62,9 +83,6 @@ public:
 	};
 	~Player() {};
 
-	Vector3 position;
-	Vector3 velocity;
-	Collision collision;
 	float hOrientation;
 	float vOrientation;
 	Inventory inventory;
@@ -74,24 +92,8 @@ public:
 	bool state[TOTAL_STATES];
 	float value[TOTAL_VALUES];
 
-	bool checkCollision(Object* b);
 	virtual void Control(double dt, vector<Object*>object);
 	virtual void Update(double dt, vector<Object*>object);
-};
-
-class dynamicObject : public Object
-{
-public:
-	dynamicObject()  {type = "Dynamic";};
-	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) :	Object(p,c,h,m,b) {type = "Dynamic";};
-	~dynamicObject() {};
-
-	virtual void Init() {};
-	virtual void Control(double dt, vector<Object*>object, Player* player);
-	virtual void Update(double dt, vector<Object*>object, Player* player);
-	Vector3 velocity;
-
-	void RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player);
 };
 
 class Doorway
