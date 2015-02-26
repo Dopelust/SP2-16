@@ -121,6 +121,7 @@ Position Application::getMousePos()
 }
 
 float pauseDelay = 0.f;
+bool showCursor;
 
 void Application::Run()
 {
@@ -136,27 +137,34 @@ void Application::Run()
 		scene->Update(m_timer.getElapsedTime());
 		scene->Render();
 
-		if (!scene->pause || !scene->showCursor)
+		if (!showCursor)
+		{
 			glfwSetCursorPos(m_window, 880/2, 660/2);
-
-		if (scene->showCursor)
-			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-		else
-			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+		}
 
 		if(IsKeyPressed('P') && scene->pause == false && pauseDelay == 0)
 		{
 			scene->pause = true;
-			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-			glfwSetCursorPos(m_window, 440, 331);
+			showCursor = true;
 			pauseDelay = 6.f * m_timer.getElapsedTime();
 		}
 		else if (IsKeyPressed('P') && scene->pause == true && pauseDelay == 0)
 		{
 			scene->pause = false;
+			showCursor = false;
+			pauseDelay = 6.f * m_timer.getElapsedTime();
+		}
+
+		if (showCursor && glfwGetInputMode(m_window, GLFW_CURSOR) != GLFW_CURSOR_NORMAL)
+		{
+			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+			glfwSetCursorPos(m_window, 440, 331);
+		}
+		else if (!showCursor && glfwGetInputMode(m_window, GLFW_CURSOR) != GLFW_CURSOR_DISABLED)
+		{
 			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 			glfwSetCursorPos(m_window, 880/2, 660/2);
-			pauseDelay = 6.f * m_timer.getElapsedTime();
+			IsKeyPressed(VK_SPACE);
 		}
 
 		if(pauseDelay > 0)

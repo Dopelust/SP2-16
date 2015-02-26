@@ -73,11 +73,15 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 	}
 }
 
+extern bool showCursor;
+
 void Player::Update(double dt, vector<Object*>object)
 {
 	Vector3 initialPos = position;
 
-	Control(dt, object);
+	if (!showCursor)
+		Control(dt, object);
+
 	UpdateVelocity(dt);
 	position += velocity * dt;
 	RespondToCollision(initialPos, object, this);

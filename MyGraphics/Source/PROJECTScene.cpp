@@ -858,17 +858,12 @@ void PROJECTScene::Init()
 
 long double x;
 std::string fps;
+extern bool showCursor;
 
 void PROJECTScene::Update(double dt)
 {
 	if (!pause)
 	{
-
-		if (textbox == NULL)
-			showCursor = false;
-		else
-			showCursor = true;
-
 	if(Application::IsKeyPressed('R'))
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	else
@@ -999,6 +994,16 @@ void PROJECTScene::Update(double dt)
 	else
 		inputDelay = 0;
 
+	if (textbox != NULL && Application::mouseButton(0))
+	{
+		delete textbox;
+		textbox = NULL;
+	}
+
+	if (textbox == NULL)
+		showCursor = false;
+	else
+		showCursor = true;
 	}
 }
 void PROJECTScene::Render()
