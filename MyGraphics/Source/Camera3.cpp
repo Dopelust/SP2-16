@@ -26,6 +26,8 @@ void Camera3::Init(const Vector3& pos, const float& orientation, const float& lo
 
 static int throttleDir = 1;
 static float throttleSpeed = 50.f;
+extern bool showCursor;
+
 void Camera3::Update(double dt, vector<Object*>object)
 {
 	/*
@@ -60,13 +62,16 @@ void Camera3::Update(double dt, vector<Object*>object)
 	}
 	*/
 
-	float yaw = (float)(10.f * dt * (float)(800/2 - Application::getMousePos().x));
-	orientation += yaw;
-
-	if (look <= 90 && look >= -90)
+	if (!showCursor)
 	{
-		float pitch = (float)(10.f * dt * (float)(600/2 - Application::getMousePos().y));
-		look += pitch;
+		float yaw = (float)(10.f * dt * (float)(880/2 - Application::getMousePos().x));
+		orientation += yaw;
+
+		if (look <= 90 && look >= -90)
+		{
+			float pitch = (float)(10.f * dt * (float)(660/2 - Application::getMousePos().y));
+			look += pitch;
+		}
 	}
 
 	if (look >= 90.f)

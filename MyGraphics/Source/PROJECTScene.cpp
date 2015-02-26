@@ -706,6 +706,14 @@ void PROJECTScene::JessicaInit()
 			object.push_back( new Item(Vector3(-9.5,y,-21.25), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 		}
 	}
+
+	//~~~~~VENDING~~~~~
+
+	tempMesh = MeshBuilder::GenerateOBJ("Sprint Drink", "OBJ//vending.obj"); tempMesh->textureID = LoadTGA("Image//vending.tga");
+	hitBox = Vector3(5.f, 10.0f, 5.0f); cube = MeshBuilder::GenerateCube("VM_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object (Vector3(26,0,39.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube, 1,90, false) );
+	
+
 }
 void PROJECTScene::DarrenInit()
 {	
@@ -868,12 +876,12 @@ void PROJECTScene::Init()
 
 long double x;
 std::string fps;
+extern bool showCursor;
 
 void PROJECTScene::Update(double dt)
 {
 	if (!pause)
 	{
-
 	if(Application::IsKeyPressed('R'))
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	else
@@ -1004,6 +1012,16 @@ void PROJECTScene::Update(double dt)
 	else
 		inputDelay = 0;
 
+	if (textbox != NULL && Application::mouseButton(0))
+	{
+		delete textbox;
+		textbox = NULL;
+	}
+
+	if (textbox == NULL)
+		showCursor = false;
+	else
+		showCursor = true;
 	}
 }
 void PROJECTScene::Render()
@@ -1247,7 +1265,7 @@ void PROJECTScene::Render()
 		modelStack.Translate(textbox->position);
 		RenderMesh(textbox->mesh, false);
 			modelStack.PushMatrix();
-			modelStack.Translate(-14,2,0);
+			modelStack.Translate(-14,2.5f,0);
 			RenderText(meshList[GEO_TEXT], textbox->text, Color(1, 1, 1));
 			modelStack.PopMatrix();
 		modelStack.PopMatrix();
