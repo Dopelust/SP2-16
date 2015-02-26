@@ -18,6 +18,23 @@
 #include <vector>
 #include <string>
 
+class TextBox
+{
+public:
+	TextBox() 
+	{
+		mesh = MeshBuilder::GenerateXYQuad("Text Box", Color(1,1,1), 32, 8, 1);
+		mesh->textureID = LoadTGA("Image//textbox.tga");
+		text = "You wot m8?";
+		position = Vector3(0,-4,0);
+	};
+	~TextBox() {};
+
+	Mesh * mesh;
+	Vector3 position;
+	string text;
+};
+
 class OnScreenText
 {
 public:
@@ -55,6 +72,7 @@ class PROJECTScene : public Scene
 		GEO_CUBE,
 		GEO_BIGCUBE,
 		GEO_HOLD,
+		GEO_TEXTBOX,
 		NUM_GEOMETRY,
 	};
 	enum UNIFORM_TYPE
@@ -107,6 +125,7 @@ private:
 	unsigned m_programID;
 	unsigned m_parameters[U_TOTAL];
 
+	TextBox * textbox;
 	vector<OnScreenText*> text;
 	vector<NPC*> character;
 	vector<Object*> object;

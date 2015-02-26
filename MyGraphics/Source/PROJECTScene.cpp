@@ -820,6 +820,7 @@ void PROJECTScene::Init()
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
 
+
 	meshList[GEO_LINE] = MeshBuilder::GenerateLine("crosshair", Color(0,1,0), 0.15f);
 
 	Mtx44 projection;
@@ -849,6 +850,7 @@ void PROJECTScene::Init()
 		glUniform1f(m_parameters[U_LIGHT0_EXPONENT + 11*i], light[i].exponent);
 	}
 
+	textbox = new TextBox();
 }
 
 long double x;
@@ -906,7 +908,7 @@ void PROJECTScene::Update(double dt)
 						camera->lookAt = camera->lookingAt(object);
 
 						Vector3 tPos = object[camera->lookAt]->position + object[camera->lookAt]->collision.centre;
-						text.push_back( new OnScreenText("-1 " + object[camera->lookAt]->mesh->name,tPos) );
+						text.push_back( new OnScreenText("-1 " + newObject->mesh->name,tPos) );
 					}
 				}
 			}
@@ -921,7 +923,7 @@ void PROJECTScene::Update(double dt)
 	doorway2.Update(dt, object, &player);
 	
 	//bool lvl = 0;
-
+	/*
 	if(player.checkCollision(&doorway.Range) == true && doorway.close == true)
 	{
 		player.position.y = 27;
@@ -935,7 +937,7 @@ void PROJECTScene::Update(double dt)
 		doorway.close = false;
 	}
 
-
+	*/
 	AutoDoor.RangeUpdate(dt, object, &player);
 	AutoDoor.Update(dt, object, &player);
 	
@@ -1035,7 +1037,7 @@ void PROJECTScene::Render()
 
 	if(!Application::IsKeyPressed('Q'))
 	{
-	for (unsigned int i = 0; i < object.size(); i++)
+	for (unsigned int i = 1; i < object.size(); i++)
 	{
 		if (object[i]->mesh != NULL)
 		{
@@ -1198,6 +1200,18 @@ void PROJECTScene::Render()
 	}
 
 	glDisable(GL_DEPTH_TEST);
+
+	if (textbox != NULL)
+	{
+		modelStack.PushMatrix();
+		modelStack.Translate(textbox->position);
+		RenderMesh(textbox->mesh, false);
+			modelStack.PushMatrix();
+			modelStack.Translate(-14,2,0);
+			RenderText(meshList[GEO_TEXT], textbox->text, Color(1, 1, 1));
+			modelStack.PopMatrix();
+		modelStack.PopMatrix();
+	}
 
 	for (int i = 0; i < 9; i++)
 	{
