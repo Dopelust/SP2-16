@@ -175,7 +175,7 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 {
 	initialPos = position;
 
-	if (object[player->camera.lookAt] == this && Application::mouseButton(0))
+	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && !inConversation)
 	{
 		Vector3 dir;
 		dir.SphericalToCartesian(player->hOrientation, 0.f);
@@ -184,7 +184,13 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 		Knockback(dir, vel);
 	}
 
-	Control(dt, object, player);
+	if (inConversation)
+	{
+		Orientate(player->position, dt, 500.f);
+		Animate(dt, 150.f);
+	}
+	else
+		Control(dt, object, player);
 
 	if (position != target)
 		UpdateVelocity(dt);
@@ -193,8 +199,7 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 
 	if (position != target)
 		RespondToCollision(initialPos, object, player);
-
-
+	
 	Material color;
 	if (hitDelay > 0)
 	{
@@ -227,10 +232,13 @@ void Hobo::Init()
 		bodyParts[i].position = position;
 		bodyParts[i].identity = identity;
 	}
+
+	InitDialogue();
 }
 
 void Hobo::Control(double dt, vector<Object*>object, Player* player)
 {
+	Orientate(180, dt, 150.f);
 	target = position;
 	velocity = 0;
 }
@@ -245,6 +253,8 @@ void Thug::Init()
 		bodyParts[i].position = position;
 		bodyParts[i].identity = identity;
 	}
+
+	InitDialogue();
 }
 
 void Thug::Control(double dt, vector<Object*>object, Player* player)
@@ -270,6 +280,8 @@ void Cashier::Init()
 		bodyParts[i].position = position;
 		bodyParts[i].identity = identity;
 	}
+
+	InitDialogue();
 }
 
 void Cashier::Control(double dt, vector<Object*>object, Player* player)
@@ -303,6 +315,8 @@ void Blindman::Init()
 		bodyParts[i].position = position;
 		bodyParts[i].identity = identity;
 	}
+
+	InitDialogue();
 }
 
 void Blindman::Control(double dt, vector<Object*>object, Player* player)
@@ -391,10 +405,13 @@ void Detective::Init()
 		bodyParts[i].position = position;
 		bodyParts[i].identity = identity;
 	}
+
+	InitDialogue();
 }
 
 void Detective::Control(double dt, vector<Object*>object, Player* player)
 {
+	Orientate(30, dt, 150.f);
 	target = position;
 	velocity = 0;
 }
@@ -409,10 +426,21 @@ void S_Guard::Init()
 		bodyParts[i].position = position;
 		bodyParts[i].identity = identity;
 	}
+
+	InitDialogue();
 }
 
 void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 {
-	target = position;
-	velocity = 0;
+	Animate(dt, 100.f);
+	Vector3 p = position; p.y = 0;
+
+	if (p == target)
+	{
+		Orientate(0, dt, 200.f);
+	}
+	else if (p != target)
+	{
+		Goto(target, dt, 50.f, 5.f);
+	}
 }

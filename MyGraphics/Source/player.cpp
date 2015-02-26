@@ -73,16 +73,24 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 	}
 }
 
-extern bool showCursor;
+bool stopCamera = false;
 
 void Player::Update(double dt, vector<Object*>object)
 {
 	Vector3 initialPos = position;
+	stopCamera = inConversation;
 
-	if (!showCursor)
+	if (!inConversation)
 		Control(dt, object);
 
 	UpdateVelocity(dt);
+
+	if (inConversation)
+	{
+		velocity.x = 0;
+		velocity.z = 0;
+	}
+
 	position += velocity * dt;
 	RespondToCollision(initialPos, object, this);
 

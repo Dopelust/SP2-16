@@ -13,27 +13,11 @@
 #include "collision.h"
 #include "player.h"
 #include "NPC.h"
-
+#include "dialogue.h"
+#include <queue>
 #include <fstream>
 #include <vector>
 #include <string>
-
-class TextBox
-{
-public:
-	TextBox() 
-	{
-		mesh = MeshBuilder::GenerateXYQuad("Text Box", Color(1,1,1), 32, 8.5f, 1);
-		mesh->textureID = LoadTGA("Image//textbox.tga");
-		text = "You wot m8?";
-		position = Vector3(0,-7.75f,0);
-	};
-	~TextBox() {};
-
-	Mesh * mesh;
-	Vector3 position;
-	string text;
-};
 
 class OnScreenText
 {

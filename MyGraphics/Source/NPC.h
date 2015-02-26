@@ -2,6 +2,7 @@
 #define NPC_H
 
 #include "player.h"
+#include "dialogue.h"
 
 class NPC : public dynamicObject
 {
@@ -47,8 +48,11 @@ public:
 	float rotation[NUM_BODYPARTS];
 	int rotationDir[NUM_BODYPARTS];
 	float elapsedTime;
+	vector<TextBox> greetings;
+	bool inConversation;
 
 	virtual void Init();
+	virtual void InitDialogue() {};
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
 	
 	void Update(double dt, vector<Object*>object, Player* player);
@@ -70,6 +74,7 @@ public:
 	~Hobo() {};
 
 	virtual void Init();
+	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -89,6 +94,7 @@ public:
 	~Thug() {};
 
 	virtual void Init();
+	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -111,6 +117,7 @@ public:
 	~Cashier() {};
 
 	virtual void Init();
+	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -139,6 +146,7 @@ public:
 	~Blindman() {};
 
 	virtual void Init();
+	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -162,6 +170,7 @@ public:
 		target = position; target.y = 0;
 		orientation = -90;
 		Init();	
+		InitDialogue();
 	};
 	Customer(vector<NPCTarget> t, string name, unsigned tID, float d)
 	{
@@ -185,6 +194,7 @@ public:
 			bodyParts[i].position = position;
 			bodyParts[i].identity = identity;
 		}
+		InitDialogue();
 	}
 	~Customer() {};
 
@@ -192,6 +202,7 @@ public:
 	float decisionTime;
 	float tOrientation;
 	vector<NPCTarget> targets;
+	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -217,6 +228,7 @@ public:
 	~Detective() {};
 
 	virtual void Init();
+	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -225,13 +237,23 @@ class S_Guard : public NPC
 public:
 	S_Guard()
 	{
-		position = Vector3(-25,0,-89.5);
-		orientation = 180;
+		Init();	
+	};
+	S_Guard(Vector3 p)
+	{
+		position = p;
+		orientation = 0;
+		target = p; target.y = 0;
+		original.position = target;
+		original.orientation = 0;
+		
 		Init();	
 	};
 	~S_Guard() {};
 
+	NPCTarget original;
 	virtual void Init();
+	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 

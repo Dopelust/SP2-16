@@ -47,8 +47,13 @@ bool Application::IsKeyPressed(unsigned short key)
     return ((GetAsyncKeyState(key) & 0x8001) != 0);
 }
 
+float clickDelay = 0.f;
+
 bool Application::mouseButton(unsigned short button)
 {
+	if (clickDelay > 0)
+		return false;
+
     return glfwGetMouseButton(m_window, button);
 }
 
@@ -81,7 +86,7 @@ void Application::Init()
 
 	//Create a window and create its OpenGL context
 	m_window = glfwCreateWindow(880, 660, "Computer Graphics", NULL, NULL);
-
+	glfwSetWindowPos(m_window, 50, 50);
 	//If the window couldn't be created
 	if (!m_window)
 	{
@@ -121,7 +126,8 @@ Position Application::getMousePos()
 }
 
 float pauseDelay = 0.f;
-bool showCursor;
+
+Position lastCursor(440, 331, 0);
 
 void Application::Run()
 {
@@ -137,34 +143,31 @@ void Application::Run()
 		scene->Update(m_timer.getElapsedTime());
 		scene->Render();
 
-		if (!showCursor)
-		{
-			glfwSetCursorPos(m_window, 880/2, 660/2);
-		}
+		if (mouseButton(0) && clickDelay == 0)
+			clickDelay = 8.f * m_timer.getElapsedTime();;
+		if (clickDelay > 0)
+			clickDelay -= m_timer.getElapsedTime();
+		else
+			clickDelay = 0;
 
 		if(IsKeyPressed('P') && scene->pause == false && pauseDelay == 0)
 		{
 			scene->pause = true;
-			showCursor = true;
+			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+			glfwSetCursorPos(m_window, lastCursor.x, lastCursor.y);
 			pauseDelay = 6.f * m_timer.getElapsedTime();
 		}
 		else if (IsKeyPressed('P') && scene->pause == true && pauseDelay == 0)
 		{
 			scene->pause = false;
-			showCursor = false;
+			lastCursor = getMousePos();
+			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 			pauseDelay = 6.f * m_timer.getElapsedTime();
 		}
-
-		if (showCursor && glfwGetInputMode(m_window, GLFW_CURSOR) != GLFW_CURSOR_NORMAL)
+			//IsKeyPressed(VK_SPACE);
+		if (!scene->pause)
 		{
-			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-			glfwSetCursorPos(m_window, 440, 331);
-		}
-		else if (!showCursor && glfwGetInputMode(m_window, GLFW_CURSOR) != GLFW_CURSOR_DISABLED)
-		{
-			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 			glfwSetCursorPos(m_window, 880/2, 660/2);
-			IsKeyPressed(VK_SPACE);
 		}
 
 		if(pauseDelay > 0)

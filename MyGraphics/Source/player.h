@@ -92,6 +92,7 @@ public:
 
 	int holding;
 	bool state[TOTAL_STATES];
+	bool inConversation;
 	float value[TOTAL_VALUES];
 
 	virtual void Control(double dt, vector<Object*>object);

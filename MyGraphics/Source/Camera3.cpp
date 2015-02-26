@@ -26,7 +26,7 @@ void Camera3::Init(const Vector3& pos, const float& orientation, const float& lo
 
 static int throttleDir = 1;
 static float throttleSpeed = 50.f;
-extern bool showCursor;
+extern bool stopCamera;
 
 void Camera3::Update(double dt, vector<Object*>object)
 {
@@ -62,7 +62,7 @@ void Camera3::Update(double dt, vector<Object*>object)
 	}
 	*/
 
-	if (!showCursor)
+	if (!stopCamera)
 	{
 		float yaw = (float)(10.f * dt * (float)(880/2 - Application::getMousePos().x));
 		orientation += yaw;

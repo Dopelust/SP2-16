@@ -247,13 +247,14 @@ void PROJECTScene::JeremiahInit()
 		}
 	}
 	character.push_back( new Customer(path, "Customer-san", LoadTGA("Image//CharTGA//customer-2.tga"), 5.f) );
-	path.clear();//-41 -27
-	path.push_back(NPCTarget((-8,0,-41), 180.f));
-	path.push_back(NPCTarget((0,0,-41), 180.f));
-	path.push_back(NPCTarget((8,0,-41), 180.f));
-	path.push_back(NPCTarget((-8,0,-27), 0.f));
-	path.push_back(NPCTarget((0,0,-27), 0.f));
-	path.push_back(NPCTarget((8,0,-27), 0.f));
+	path.clear();
+	cout << path.size();
+	path.push_back(NPCTarget(Vector3(-8,0,-41), 180.f));
+	path.push_back(NPCTarget(Vector3(0,0,-41), 180.f));
+	path.push_back(NPCTarget(Vector3(8,0,-41), 180.f));
+	path.push_back(NPCTarget(Vector3(-8,0,-27), 0.f));
+	path.push_back(NPCTarget(Vector3(0,0,-27), 0.f));
+	path.push_back(NPCTarget(Vector3(8,0,-27), 0.f));
 	character.push_back( new Customer(path, "Harem-king", LoadTGA("Image//CharTGA//C_Boy.tga"),1.f));
 	path.clear();
 
@@ -263,7 +264,8 @@ void PROJECTScene::JeremiahInit()
 	{
 		character.push_back( new Cashier(Vector3(x,2,-55)) );
 	}
-
+	character.push_back( new S_Guard (Vector3(25, 2, -84)) );
+	character.push_back( new S_Guard (Vector3(-25, 2, -84)) );
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		object.push_back( character[i] );
@@ -841,6 +843,8 @@ void PROJECTScene::Init()
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
 
+	meshList[GEO_TEXTBOX] = MeshBuilder::GenerateXYQuad("Text Box", Color(1,1,1), 32, 8.5f, 1);
+	meshList[GEO_TEXTBOX]->textureID = LoadTGA("Image//textbox.tga");
 
 	meshList[GEO_LINE] = MeshBuilder::GenerateLine("crosshair", Color(0,1,0), 0.15f);
 
@@ -870,13 +874,10 @@ void PROJECTScene::Init()
 		glUniform1f(m_parameters[U_LIGHT0_COSINNER + 11*i], light[i].cosInner);
 		glUniform1f(m_parameters[U_LIGHT0_EXPONENT + 11*i], light[i].exponent);
 	}
-
-	textbox = new TextBox();
 }
 
 long double x;
 std::string fps;
-extern bool showCursor;
 
 void PROJECTScene::Update(double dt)
 {
@@ -951,34 +952,58 @@ void PROJECTScene::Update(double dt)
 	doorway.Update(dt, object, &player);
 	doorway2.Update(dt, object, &player);
 	
-	//bool lvl = 0;
-	/*
-	if(player.checkCollision(&doorway.Range) == true && doorway.close == true)
-	{
-		player.position.y = 27;
-		doorway2.open = true;
-		doorway2.close = false;
-	}
-	else if(player.checkCollision(&doorway2.Range) == true && doorway2.close == true)
-	{
-		player.position.y = 0;
-		doorway.open = true;
-		doorway.close = false;
-	}
-
-	*/
 	AutoDoor.RangeUpdate(dt, object, &player);
 	AutoDoor.Update(dt, object, &player);
 	
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
-		if (object[i]->type == "Dynamic")
-			object[i]->Update(dt, object, &player);
+		if (object[i]->type == "Dynamic" || object[i]->type == "NPC" || object[i]->type == "Player")
+		{
+			if(Object::checkCollision(&doorway.Range, object[i]) == true && doorway.close == true)
+			{
+				object[i]->position.y = 27;
+				doorway2.open = true;
+				doorway2.close = false;
+			}
+			else if(Object::checkCollision(&doorway2.Range, object[i]) == true && doorway2.close == true)
+			{
+				object[i]->position.y = 0;
+				doorway.open = true;
+				doorway.close = false;
+			}
+
+			if (object[i]->type == "Dynamic")
+				object[i]->Update(dt, object, &player);
+		}
+	}
+
+	if (textbox != NULL && Application::mouseButton(0))
+	{
+		textbox = NULL;
+		player.inConversation = false;
 	}
 
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		character[i]->Update(dt, object, &player);
+
+		if (textbox == NULL)
+			character[i]->inConversation = false;
+
+		if (object[camera->lookAt] == character[i])
+			if (Application::IsKeyPressed('E') && !character[i]->inConversation && inputDelay == 0)
+				if (!character[i]->greetings.empty())
+				{
+					/*
+					inputDelay = 0.2f;
+
+					int r = rand() % character[i]->greetings.size();
+					textbox = &character[i]->greetings[r];
+
+					character[i]->inConversation = true;
+					player.inConversation = true;
+					*/
+				}
 	}
 
 	for (unsigned int i = 0; i < text.size(); i++)
@@ -1011,17 +1036,6 @@ void PROJECTScene::Update(double dt)
 		inputDelay -= float(dt);
 	else
 		inputDelay = 0;
-
-	if (textbox != NULL && Application::mouseButton(0))
-	{
-		delete textbox;
-		textbox = NULL;
-	}
-
-	if (textbox == NULL)
-		showCursor = false;
-	else
-		showCursor = true;
 	}
 }
 void PROJECTScene::Render()
@@ -1245,25 +1259,53 @@ void PROJECTScene::Render()
 		RenderMesh(player.inventory.selector.selectedSlot->item[0]->mesh, true);
 		modelStack.PopMatrix();
 	}
-	else
-	{/*
-		modelStack.PushMatrix();
-		modelStack.Translate(1 + player.value[player.bobbingX], -1 + player.value[player.bobbingY], -4);
-		//modelStack.Rotate(-5,1,0,0);
-		modelStack.Rotate(-95,0,1,0);
-		//modelStack.Rotate(20,0,0,1);
-		//modelStack.Scale(7.5,8,10);
-		RenderMesh(meshList[GEO_ARM], true);
-		modelStack.PopMatrix();*/
-	}
 
 	glDisable(GL_DEPTH_TEST);
+
+	if (player.holding < 0)
+	if (object[camera->lookAt]->mesh != NULL)
+	{
+		if (object[camera->lookAt]->type == "Item" || object[camera->lookAt]->mesh->name == "Button")
+		{
+			string tooltip;
+			if (object[camera->lookAt]->mesh->name == "Button")
+				tooltip += "E to push ";
+			else if(object[camera->lookAt]->type == "Item")
+				tooltip += "E to loot ";
+
+			tooltip += object[camera->lookAt]->mesh->name;
+
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,-5,0);
+			float textLength = getTextWidth(tooltip);
+			modelStack.Translate(-textLength/2, 0, 0);
+			modelStack.Scale(1,1,1);
+			RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+		else if(object[camera->lookAt]->type == "ATM")
+		{
+			string ATM_actions;
+			if(object[camera->lookAt] == &Bank.Withdraw)
+				ATM_actions = "E to withdraw $1";
+			else if(object[camera->lookAt] == &Bank.Deposit)
+				ATM_actions = "E to deposit $1";
+	
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,-5,0);
+			float textLength = getTextWidth(ATM_actions);
+			modelStack.Translate(-textLength/2, 0, 0);
+			modelStack.Scale(1,1,1);
+			RenderText(meshList[GEO_TEXT],ATM_actions , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+	}
 
 	if (textbox != NULL)
 	{
 		modelStack.PushMatrix();
 		modelStack.Translate(textbox->position);
-		RenderMesh(textbox->mesh, false);
+		RenderMesh(meshList[GEO_TEXTBOX], false);
 			modelStack.PushMatrix();
 			modelStack.Translate(-14,2.5f,0);
 			RenderText(meshList[GEO_TEXT], textbox->text, Color(1, 1, 1));
@@ -1311,45 +1353,6 @@ void PROJECTScene::Render()
 	RenderText(meshList[GEO_TEXT], fps, Color(1, 1, 1));
 	modelStack.PopMatrix();
 	
-	if (player.holding < 0)
-	if (object[camera->lookAt]->mesh != NULL)
-	{
-		if (object[camera->lookAt]->type == "Item" || object[camera->lookAt]->mesh->name == "Button")
-		{
-			string tooltip;
-			if (object[camera->lookAt]->mesh->name == "Button")
-				tooltip += "E to push ";
-			else if(object[camera->lookAt]->type == "Item")
-				tooltip += "E to loot ";
-
-			tooltip += object[camera->lookAt]->mesh->name;
-
-			modelStack.PushMatrix();
-			modelStack.Translate(0.35f,-5,0);
-			float textLength = getTextWidth(tooltip);
-			modelStack.Translate(-textLength/2, 0, 0);
-			modelStack.Scale(1,1,1);
-			RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
-			modelStack.PopMatrix();
-		}
-		else if(object[camera->lookAt]->type == "ATM")
-		{
-			string ATM_actions;
-			if(object[camera->lookAt] == &Bank.Withdraw)
-				ATM_actions = "E to withdraw $1";
-			else if(object[camera->lookAt] == &Bank.Deposit)
-				ATM_actions = "E to deposit $1";
-	
-			modelStack.PushMatrix();
-			modelStack.Translate(0.35f,-5,0);
-			float textLength = getTextWidth(ATM_actions);
-			modelStack.Translate(-textLength/2, 0, 0);
-			modelStack.Scale(1,1,1);
-			RenderText(meshList[GEO_TEXT],ATM_actions , Color(1, 1, 1));
-			modelStack.PopMatrix();
-		}
-	}
-
 	projectionStack.PopMatrix();
 	viewStack.PopMatrix();
 	modelStack.PopMatrix();
