@@ -247,6 +247,16 @@ void PROJECTScene::JeremiahInit()
 		}
 	}
 	character.push_back( new Customer(path, "Customer-san", LoadTGA("Image//CharTGA//customer-2.tga"), 5.f) );
+	path.clear();//-41 -27
+	path.push_back(NPCTarget((-8,0,-41), 180.f));
+	path.push_back(NPCTarget((0,0,-41), 180.f));
+	path.push_back(NPCTarget((8,0,-41), 180.f));
+	path.push_back(NPCTarget((-8,0,-27), 0.f));
+	path.push_back(NPCTarget((0,0,-27), 0.f));
+	path.push_back(NPCTarget((8,0,-27), 0.f));
+	character.push_back( new Customer(path, "Harem-king", LoadTGA("Image//CharTGA//C_Boy.tga"),1.f));
+	path.clear();
+
 	character.push_back( new Blindman() );
 	character.push_back( new Detective () );
 	for(int x = 72; x > 20; x -= 15)
