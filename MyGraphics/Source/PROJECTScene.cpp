@@ -696,6 +696,14 @@ void PROJECTScene::JessicaInit()
 			object.push_back( new Item(Vector3(-9.5,y,-21.25), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 		}
 	}
+
+	//~~~~~VENDING~~~~~
+
+	tempMesh = MeshBuilder::GenerateOBJ("Sprint Drink", "OBJ//vending.obj"); tempMesh->textureID = LoadTGA("Image//vending.tga");
+	hitBox = Vector3(5.f, 10.0f, 5.0f); cube = MeshBuilder::GenerateCube("VM_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object (Vector3(26,0,39.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube, 1,90, false) );
+	
+
 }
 void PROJECTScene::DarrenInit()
 {	
