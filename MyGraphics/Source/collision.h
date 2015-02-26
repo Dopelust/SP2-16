@@ -81,6 +81,30 @@ public:
 	float value;
 };
 
+class ATM
+{
+public:
+	ATM() {};
+	ATM(Object D, Object W) { Deposit = D; Withdraw = W; Deposit.type = "ATM"; Withdraw.type = "ATM"; savings = 0;};
+	~ATM() {};
+
+	float savings;
+	float getSavings() {return savings;};
+	bool withdraw() 
+	{ 
+		if (savings != 0)
+		{
+			savings -= 1; 
+			return true;
+		}
+		return false;
+	};
+	void deposit() { savings += 1; };
+
+	Object Deposit;
+	Object Withdraw;
+};
+
 class Item : public Object
 {
 public:
