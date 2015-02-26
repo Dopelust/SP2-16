@@ -1,5 +1,21 @@
 #include "NPC.h"
 
+bool dynamicObject::Knockback(Vector3 dir, Vector3 vel)
+{
+	if (hitDelay == 0)
+	{
+		velocity.x = dir.x * vel.x;
+		velocity.z = dir.z * vel.z;
+		velocity.y = vel.y;
+		
+		hitDelay = 0.5f;
+
+		return true;
+	}
+
+	return false;
+}
+
 void NPC::Init()
 {
 	Mesh* tempMesh;
@@ -89,7 +105,7 @@ void NPC::Animate(double dt, float speed)
 	}
 }
 
-void NPC::UpdateVelocity(double dt)
+void dynamicObject::UpdateVelocity(double dt)
 {
 	if (velocity.z > 0)
 	{
@@ -153,22 +169,6 @@ void NPC::Goto(Vector3 destination, double dt, float turn, float speed)
 		if (elapsedTime > 0.3f)
 			velocity.y = 25;
 	}
-}
-
-bool NPC::Knockback(Vector3 dir, Vector3 vel)
-{
-	if (hitDelay == 0)
-	{
-		velocity.x += dir.x * vel.x;
-		velocity.z += dir.z * vel.z;
-		velocity.y += vel.y;
-		
-		hitDelay = 0.5f;
-
-		return true;
-	}
-
-	return false;
 }
 
 void NPC::Update(double dt, vector<Object*>object, Player* player)
@@ -327,9 +327,9 @@ void Blindman::Control(double dt, vector<Object*>object, Player* player)
 			if(!object[i]->ignoreCollision)
 				if (Object::checkCollision(this, object[i]))
 				{
-					if (object[i]->type == "NPC")
+					if (object[i]->type == "NPC" || object[i]->type == "Player")
 					{
-						object[i]->Knockback(direction, Vector3(150,30,150));
+						object[i]->Knockback(direction, Vector3(80,30,80));
 					}
 					else if (hitDelay == 0)
 					{
@@ -361,6 +361,7 @@ void Customer::Control(double dt, vector<Object*>object, Player* player)
 	if (p == target)
 	{
 		Orientate(tOrientation, dt, 200.f);
+		elapsedTime += dt;
 
 		if (elapsedTime >= decisionTime )
 		{

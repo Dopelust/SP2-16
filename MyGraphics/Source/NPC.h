@@ -44,7 +44,6 @@ public:
 	Bodypart bodyParts[NUM_BODYPARTS];
 	string identity;
 	string getIdentity() {return identity;};
-	float hitDelay;
 	float rotation[NUM_BODYPARTS];
 	int rotationDir[NUM_BODYPARTS];
 	float elapsedTime;
@@ -52,9 +51,7 @@ public:
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
 	
-	bool Knockback(Vector3 dir, Vector3 vel);
 	void Update(double dt, vector<Object*>object, Player* player);
-	void UpdateVelocity(double dt);
 	void Orientate(float o, double dt, float speed);
 	void Orientate(Vector3 t, double dt, float speed);
 	void Goto(Vector3 destination, double dt, float turn, float speed);

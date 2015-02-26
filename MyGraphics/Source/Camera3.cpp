@@ -91,7 +91,7 @@ int Camera3::lookingAt(vector<Object*>object)
 	vector<Object*> closeObjects;
 	vector<int> index;
 
-	for (unsigned int i = 0; i < object.size(); i++)
+	for (unsigned int i = 1; i < object.size(); i++)
 	{
 		if (Object::checkCollision(object[i], &r))
 		{
