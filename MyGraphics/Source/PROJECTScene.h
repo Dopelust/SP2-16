@@ -23,10 +23,10 @@ class TextBox
 public:
 	TextBox() 
 	{
-		mesh = MeshBuilder::GenerateXYQuad("Text Box", Color(1,1,1), 32, 8, 1);
+		mesh = MeshBuilder::GenerateXYQuad("Text Box", Color(1,1,1), 32, 8.5f, 1);
 		mesh->textureID = LoadTGA("Image//textbox.tga");
 		text = "You wot m8?";
-		position = Vector3(0,-4,0);
+		position = Vector3(0,-7.75f,0);
 	};
 	~TextBox() {};
 

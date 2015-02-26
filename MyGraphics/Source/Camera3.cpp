@@ -60,12 +60,12 @@ void Camera3::Update(double dt, vector<Object*>object)
 	}
 	*/
 
-	float yaw = (float)(10.f * dt * (float)(800/2 - Application::getMousePos().x));
+	float yaw = (float)(10.f * dt * (float)(880/2 - Application::getMousePos().x));
 	orientation += yaw;
 
 	if (look <= 90 && look >= -90)
 	{
-		float pitch = (float)(10.f * dt * (float)(600/2 - Application::getMousePos().y));
+		float pitch = (float)(10.f * dt * (float)(660/2 - Application::getMousePos().y));
 		look += pitch;
 	}
 

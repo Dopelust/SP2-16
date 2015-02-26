@@ -136,21 +136,26 @@ void Application::Run()
 		scene->Update(m_timer.getElapsedTime());
 		scene->Render();
 
-		if (!scene->pause)
-			glfwSetCursorPos(m_window, 800/2, 600/2);
+		if (!scene->pause || !scene->showCursor)
+			glfwSetCursorPos(m_window, 880/2, 660/2);
+
+		if (scene->showCursor)
+			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+		else
+			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
 		if(IsKeyPressed('P') && scene->pause == false && pauseDelay == 0)
 		{
 			scene->pause = true;
 			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-			glfwSetCursorPos(m_window, 400, 301);
+			glfwSetCursorPos(m_window, 440, 331);
 			pauseDelay = 6.f * m_timer.getElapsedTime();
 		}
 		else if (IsKeyPressed('P') && scene->pause == true && pauseDelay == 0)
 		{
 			scene->pause = false;
 			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-			glfwSetCursorPos(m_window, 800/2, 600/2);
+			glfwSetCursorPos(m_window, 880/2, 660/2);
 			pauseDelay = 6.f * m_timer.getElapsedTime();
 		}
 

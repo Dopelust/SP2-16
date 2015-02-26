@@ -13,6 +13,7 @@ public:
 	virtual void Exit() = 0;
 
 	bool pause;
+	bool showCursor;
 };
 
 #endif

@@ -861,6 +861,11 @@ void PROJECTScene::Update(double dt)
 	if (!pause)
 	{
 
+		if (textbox == NULL)
+			showCursor = false;
+		else
+			showCursor = true;
+
 	if(Application::IsKeyPressed('R'))
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	else
@@ -1207,7 +1212,7 @@ void PROJECTScene::Render()
 		modelStack.Translate(textbox->position);
 		RenderMesh(textbox->mesh, false);
 			modelStack.PushMatrix();
-			modelStack.Translate(-14,2,0);
+			modelStack.Translate(-14,2.5f,0);
 			RenderText(meshList[GEO_TEXT], textbox->text, Color(1, 1, 1));
 			modelStack.PopMatrix();
 		modelStack.PopMatrix();
