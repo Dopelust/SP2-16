@@ -181,6 +181,8 @@ void Wallet::Update()
 {
 	if (apparentValue < trueValue)
 		apparentValue++;
+	else if (apparentValue > trueValue)
+		apparentValue--;
 	else
 		apparentValue = trueValue;
 

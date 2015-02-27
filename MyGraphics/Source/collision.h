@@ -87,7 +87,7 @@ class Vending
 {
 public:
 	Vending() {};
-	Vending(Object D) { Drink = D; Drink.type = "Vending Machine"; drinks = 0;};
+	Vending(Object D) { Drink = D; Drink.type = "Vending Machine"; drinks = 3;};
 	~Vending() {};
 
 	float drinks;
@@ -97,7 +97,7 @@ public:
 	{ 
 		if (drinks != 0)
 		{
-			drinks += 1; 
+			drinks -= 1; 
 			return true;
 		}
 		return false;

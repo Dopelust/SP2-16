@@ -963,6 +963,13 @@ void PROJECTScene::Update(double dt)
 				object.erase(object.begin()+camera->lookAt);
 			}
 		}
+		else if (object[camera->lookAt]->type == "Vending Machine")
+		{
+			inputDelay = 0.2f;
+
+			if (Machine.drink())
+				player.inventory.wallet.trueValue -= 2.f;
+		}
 		else if (object[camera->lookAt]->type == "Money")
 		{
 			player.inventory.wallet.trueValue += object[camera->lookAt]->getValue();
@@ -1161,24 +1168,6 @@ void PROJECTScene::Render()
 	RenderSkybox();
 	modelStack.PopMatrix();
 
-	if(!Application::IsKeyPressed('Q'))
-	{
-	for (unsigned int i = 1; i < object.size(); i++)
-	{
-		if (object[i]->mesh != NULL)
-		{
-			modelStack.PushMatrix();
-			modelStack.Translate(object[i]->position);
-
-			modelStack.Translate(object[i]->collision.centre);
-			modelStack.Rotate(object[i]->orientation, 0, 1, 0); 
-			modelStack.Translate(-object[i]->collision.centre);
-
-			RenderMesh(object[i]->mesh, true);
-			modelStack.PopMatrix();
-		}
-	}
-	}
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		for (int j = 0; j < character[i]->NUM_BODYPARTS; j++)
@@ -1206,6 +1195,26 @@ void PROJECTScene::Render()
 			modelStack.PopMatrix();
 		}
 	}
+
+	if(!Application::IsKeyPressed('Q'))
+	{
+		for (unsigned int i = 1; i < object.size(); i++)
+		{
+			if (object[i]->mesh != NULL)
+			{
+				modelStack.PushMatrix();
+				modelStack.Translate(object[i]->position);
+
+				modelStack.Translate(object[i]->collision.centre);
+				modelStack.Rotate(object[i]->orientation, 0, 1, 0); 
+				modelStack.Translate(-object[i]->collision.centre);
+
+				RenderMesh(object[i]->mesh, true);
+				modelStack.PopMatrix();
+			}
+		}
+	}
+
 	for (unsigned int i = 0; i < blood.size(); i++)
 	{
 		modelStack.PushMatrix();
