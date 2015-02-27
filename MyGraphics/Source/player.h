@@ -80,7 +80,7 @@ public:
 
 		camera.Init(position, hOrientation, vOrientation); 
 		inventory.Init(Vector3(0,-10.5,0));
-
+		inConversation = false;
 		mesh =  NULL;
 	};
 	~Player() {};

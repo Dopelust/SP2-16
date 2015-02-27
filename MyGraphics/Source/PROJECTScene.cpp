@@ -258,6 +258,15 @@ void PROJECTScene::JeremiahInit()
 	character.push_back( new Customer(path, "Harem-king", LoadTGA("Image//CharTGA//C_Boy.tga"),1.f));
 	path.clear();
 
+	path.push_back(NPCTarget(Vector3(-8,0,-41), 180.f));
+	path.push_back(NPCTarget(Vector3(0,0,-41), 180.f));
+	path.push_back(NPCTarget(Vector3(8,0,-41), 180.f));
+	path.push_back(NPCTarget(Vector3(-8,0,-27), 0.f));
+	path.push_back(NPCTarget(Vector3(0,0,-27), 0.f));
+	path.push_back(NPCTarget(Vector3(8,0,-27), 0.f));
+	character.push_back( new Customer(path, "Harem-king", LoadTGA("Image//CharTGA//Thief.tga"),1.f));
+	path.clear();
+
 	character.push_back( new Blindman() );
 	character.push_back( new Detective () );
 	for(int x = 72; x > 20; x -= 15)
@@ -874,6 +883,8 @@ void PROJECTScene::Init()
 		glUniform1f(m_parameters[U_LIGHT0_COSINNER + 11*i], light[i].cosInner);
 		glUniform1f(m_parameters[U_LIGHT0_EXPONENT + 11*i], light[i].exponent);
 	}
+
+	textbox = NULL;
 }
 
 long double x;
