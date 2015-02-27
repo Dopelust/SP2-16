@@ -15,7 +15,7 @@ class dynamicObject : public Object
 {
 public:
 	dynamicObject()  {type = "Dynamic";};
-	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) :	Object(p,c,h,m,b) {type = "Dynamic";};
+	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) :	Object(p,c,h,m,b) {type = "Dynamic"; health = 0;};
 	~dynamicObject() {};
 
 	virtual void Init() {};
@@ -28,6 +28,9 @@ public:
 	bool Knockback(Vector3 dir, Vector3 vel);
 	void RespondToCollision(Vector3 initialPos, vector<Object*>object);
 	void RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player);
+
+	float health;
+	float getHealth() {return health;}
 };
 
 class Player : public dynamicObject
@@ -58,7 +61,7 @@ public:
 	Player() 
 	{
 		type = "Player";
-
+		health = 0;
 		position = Vector3(0, 2, -100);
 		for (int i = 0; i < TOTAL_VALUES; i++)
 		{

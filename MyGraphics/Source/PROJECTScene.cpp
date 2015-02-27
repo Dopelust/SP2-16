@@ -1465,7 +1465,7 @@ void PROJECTScene::Render()
 	modelStack.Translate(-12,-10.5f,0);
 	RenderMesh(meshList[GEO_QUAD], false);
 		modelStack.PushMatrix();
-		modelStack.Translate(-3,0,0);
+		modelStack.Translate(-2.5f,0,0);
 		RenderMesh(meshList[GEO_HEART], false);
 		modelStack.PopMatrix();
 	modelStack.PopMatrix();
@@ -1481,6 +1481,12 @@ void PROJECTScene::Render()
 	modelStack.PushMatrix();
 	modelStack.Translate(13.5f,-10.5f,0);
 	RenderText(meshList[GEO_TEXT], cash, Color(1, 1, 1));
+	modelStack.PopMatrix();
+
+	string health = to_string(long double(player.getHealth()));
+	modelStack.PushMatrix();
+	modelStack.Translate(-13.4f,-10.5f,0);
+	RenderText(meshList[GEO_TEXT], health, Color(1, player.getHealth() / 100, player.getHealth() / 100));
 	modelStack.PopMatrix();
 
 	string x = to_string(long double(camera->position.x));
