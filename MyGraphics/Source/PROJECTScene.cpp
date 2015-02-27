@@ -712,6 +712,25 @@ void PROJECTScene::JessicaInit()
 	Machine = Vending(D);
 	object.push_back( &Machine.Drink );
 
+	//~~~~~SECURITY ROOM~~~~~~~~
+	hitBox = Vector3(20, 23, 2); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-70, 38.5,-9.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	
+	hitBox = Vector3(2, 23, 42); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-61, 38.5,10.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	hitBox = Vector3(2, 12, 11); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-61, 44,36.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 6, 10, 1); tempMesh->textureID = LoadTGA("Image//security_door.tga");
+	object.push_back( new Object(Vector3(-57,32.5,31.5f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 ,0, true) );
+	
 
 }
 void PROJECTScene::DarrenInit()
