@@ -111,6 +111,7 @@ private:
 
 	TextBox * textbox;
 	vector<OnScreenText*> text;
+	vector<OnScreenText*> text2D;
 	vector<NPC*> character;
 	vector<Object*> object;
 	vector<Particles*> blood;

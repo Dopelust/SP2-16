@@ -61,7 +61,7 @@ public:
 	Player() 
 	{
 		type = "Player";
-		health = 0;
+		health = 100;
 		position = Vector3(0, 2, -100);
 		for (int i = 0; i < TOTAL_VALUES; i++)
 		{

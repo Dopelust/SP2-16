@@ -90,7 +90,6 @@ void PROJECTScene::InitJunk()
 	meshList[GEO_TOP] = MeshBuilder::GenerateQuad("top", Color(1, 1, 1), 1.f, 1.f, 1);
 	meshList[GEO_TOP]->textureID = LoadTGA("Image//Skybox//topmc.tga");
 }
-
 void PROJECTScene::RicssonInit()
 {
 	Mesh* tempMesh;
@@ -215,7 +214,6 @@ void PROJECTScene::RicssonInit()
 		}
 	}
 }
-
 void PROJECTScene::JeremiahInit()
 {
 	Mesh* tempMesh;
@@ -943,6 +941,8 @@ void PROJECTScene::Init()
 
 long double x;
 std::string fps;
+float animateHeart = 0.f;
+static int animateHeartDir = 1.f;
 
 void PROJECTScene::Update(double dt)
 {
@@ -981,22 +981,35 @@ void PROJECTScene::Update(double dt)
 			player.inventory.wallet.trueValue += object[camera->lookAt]->getValue();
 
 			inputDelay = 0.2f;
-
-			Vector3 tPos = object[camera->lookAt]->position + object[camera->lookAt]->collision.centre;
-			string add = "+ ";
+			Vector3 tPos = Vector3(13.f, -10.5f, 0);
+			string add = "+ $";
 			add += to_string(long double(object[camera->lookAt]->getValue()));
-			text.push_back( new OnScreenText(add, tPos) );
+			text2D.push_back( new OnScreenText(add, tPos) );
 
 			delete object[camera->lookAt];
 			object.erase(object.begin()+camera->lookAt);
 		}
 		else if(object[camera->lookAt] == &Bank.Withdraw)
 		{
-			Bank.withdraw(player.inventory.wallet);
+			inputDelay = 0.2f;
+
+			if (Bank.withdraw(player.inventory.wallet))
+			{
+				Vector3 tPos = Vector3(13.f, -10.5f, 0);
+				string add = "+ $1";
+				text2D.push_back( new OnScreenText(add, tPos) );
+			}
 		}
 		else if(object[camera->lookAt] == &Bank.Deposit)
 		{
-			Bank.deposit(player.inventory.wallet);
+			inputDelay = 0.2f;
+
+			if (Bank.deposit(player.inventory.wallet))
+			{
+				Vector3 tPos = Vector3(13.f, -10.5f, 0);
+				string add = "- $1";
+				text2D.push_back( new OnScreenText(add, tPos) );
+			}
 		}
 
 		camera->lookAt = camera->lookingAt(object);
@@ -1103,6 +1116,17 @@ void PROJECTScene::Update(double dt)
 		}
 	}
 
+	for (unsigned int i = 0; i < text2D.size(); i++)
+	{
+		text2D[i]->Update(dt);
+
+		if (text2D[i]->elapsedTime > 1.f)
+		{
+			delete text2D[i];
+			text2D.erase(text2D.begin()+i);
+		}
+	}
+
 	for (unsigned int i = 0; i < blood.size(); i++)
 	{
 		blood[i]->Update(dt);
@@ -1123,7 +1147,19 @@ void PROJECTScene::Update(double dt)
 	else
 		inputDelay = 0;
 	}
+
+	float animateHeartSpeed = 0;
+	
+	if (player.getHealth() > 0)
+		animateHeartSpeed = 0.3f * (100/player.getHealth());
+	else
+		animateHeart = 0;
+
+	if(animateHeart * animateHeartDir > 0.25f)
+		animateHeartDir = -animateHeartDir;
+	animateHeart += (float)(animateHeartDir * animateHeartSpeed * dt);
 }
+
 void PROJECTScene::Render()
 {
 	// Render VBO here
@@ -1298,7 +1334,7 @@ void PROJECTScene::Render()
 		modelStack.Scale(0.5f);
 		float textLength = getTextWidth(object[camera->lookAt]->getIdentity());
 		modelStack.Translate(-textLength/2 + 0.1f, 0, 0);
-		RenderText(meshList[GEO_TEXT], object[camera->lookAt]->getIdentity(), Color(1, 1, 1));
+		RenderText(meshList[GEO_TEXT], object[camera->lookAt]->getIdentity(), Color(1, object[camera->lookAt]->getHealth()/100, object[camera->lookAt]->getHealth()/100));
 		modelStack.PopMatrix();
 	}
 	else if (object[camera->lookAt]->type == "ATM")
@@ -1466,6 +1502,7 @@ void PROJECTScene::Render()
 	RenderMesh(meshList[GEO_QUAD], false);
 		modelStack.PushMatrix();
 		modelStack.Translate(-2.5f,0,0);
+		modelStack.Scale(1 + animateHeart);
 		RenderMesh(meshList[GEO_HEART], false);
 		modelStack.PopMatrix();
 	modelStack.PopMatrix();
@@ -1488,6 +1525,14 @@ void PROJECTScene::Render()
 	modelStack.Translate(-13.4f,-10.5f,0);
 	RenderText(meshList[GEO_TEXT], health, Color(1, player.getHealth() / 100, player.getHealth() / 100));
 	modelStack.PopMatrix();
+
+	for (unsigned int i = 0; i < text2D.size(); i++)
+	{
+		modelStack.PushMatrix();
+		modelStack.Translate(text2D[i]->textPos);
+		RenderText(meshList[GEO_TEXT], text2D[i]->name, Color(1, 1, 1));
+		modelStack.PopMatrix();
+	}
 
 	string x = to_string(long double(camera->position.x));
 	string y = to_string(long double(camera->position.y));
@@ -1683,7 +1728,6 @@ void dynamicObject::Control(double dt, vector<Object*>object, Player* player)
 	}
 	
 }
-
 float PROJECTScene::getTextWidth(string text)
 {
 	float textWidth = 0.f;
@@ -1751,7 +1795,6 @@ float PROJECTScene::getTextWidth(string text)
 	}
 	return textWidth;
 }
-
 void PROJECTScene::Exit()
 {
 	// Cleanup VBO here
@@ -1803,7 +1846,6 @@ void PROJECTScene::RenderSkybox()
 	RenderMesh(meshList[GEO_BOTTOM], false);
 	modelStack.PopMatrix();
 }
-
 void PROJECTScene::RenderCrosshair()
 {
 	modelStack.PushMatrix();
@@ -1836,9 +1878,5 @@ void PROJECTScene::RenderCrosshair()
 void OnScreenText::Update(double dt)
 {
 	elapsedTime += float(dt);
-
-	if (elapsedTime < 0.8f)
-	{
-		textPos.y += 0.03f;
-	}
+	textPos.y += 0.03f;
 }
