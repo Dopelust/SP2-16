@@ -12,7 +12,7 @@ using namespace::std;
 class Wallet
 {
 public:
-	Wallet() {trueValue = 50.f;};
+	Wallet() {apparentValue = 0.f; trueValue = 50.f;};
 	~Wallet() {};
 
 	float trueValue;
