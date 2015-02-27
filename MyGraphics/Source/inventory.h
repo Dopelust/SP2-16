@@ -12,12 +12,50 @@ using namespace::std;
 class Wallet
 {
 public:
-	Wallet() {};
+	Wallet() {trueValue = 50.f;};
 	~Wallet() {};
 
 	float trueValue;
 	float apparentValue;
 
+	void Update();
+};
+
+
+class ATM
+{
+public:
+	ATM() {};
+	ATM(Object D, Object W) { Deposit = D; Withdraw = W; Deposit.type = "ATM"; Withdraw.type = "ATM"; savings = 0;};
+	~ATM() {};
+
+	float savings;
+	float getSavings() {return savings;};
+	bool withdraw(Wallet& wallet) 
+	{ 
+		if (savings != 0)
+		{
+			savings--;
+			wallet.trueValue++;
+
+			return true;
+		}
+		return false;
+	};
+	bool deposit(Wallet& wallet) 
+	{ 
+		if (wallet.trueValue != 0)
+		{
+			wallet.trueValue--;
+			savings++;
+
+			return true;
+		}
+		return false;
+	};
+
+	Object Deposit;
+	Object Withdraw;
 };
 
 class Slot
@@ -47,6 +85,7 @@ public:
 	Inventory() {};
 	~Inventory() {};
 
+	Wallet wallet;
 	Vector3 position;
 	Slot slots[9];
 	Selector selector;

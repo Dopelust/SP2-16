@@ -49,6 +49,7 @@ public:
 	virtual bool Knockback(Vector3 dir, Vector3 vel) {return 0;};
 	virtual void setPaid(bool p) {return;};
 	virtual bool getPaid() {return 0;};
+	virtual float getValue() {return 0;};
 	virtual string getIdentity() {return "";};
 	virtual Vector3 getStorePos(Player* player) {return Vector3();};
 };
@@ -79,37 +80,14 @@ public:
 	~Money();
 
 	float value;
-};
-
-class ATM
-{
-public:
-	ATM() {};
-	ATM(Object D, Object W) { Deposit = D; Withdraw = W; Deposit.type = "ATM"; Withdraw.type = "ATM"; savings = 0;};
-	~ATM() {};
-
-	float savings;
-	float getSavings() {return savings;};
-	bool withdraw() 
-	{ 
-		if (savings != 0)
-		{
-			savings -= 1; 
-			return true;
-		}
-		return false;
-	};
-	void deposit() { savings += 1; };
-
-	Object Deposit;
-	Object Withdraw;
+	float getValue() {return value;};
 };
 
 class Vending
 {
 public:
 	Vending() {};
-	Vending(Object D) { Drink = D; Drink.type = "Vending Machine"; drinks = 0;};
+	Vending(Object D) { Drink = D; Drink.type = "Vending Machine"; drinks = 3;};
 	~Vending() {};
 
 	float drinks;
@@ -119,7 +97,7 @@ public:
 	{ 
 		if (drinks != 0)
 		{
-			drinks += 1; 
+			drinks -= 1; 
 			return true;
 		}
 		return false;

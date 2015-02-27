@@ -97,6 +97,9 @@ public:
 
 	virtual void Control(double dt, vector<Object*>object);
 	virtual void Update(double dt, vector<Object*>object);
+
+	float getRenderWallet() {return inventory.wallet.apparentValue;};
+	float getWallet() {return inventory.wallet.trueValue;};
 };
 
 class Doorway
