@@ -461,7 +461,7 @@ void Manager::Init()
 
 void Manager::Control(double dt, vector<Object*>object, Player* player)
 {
-	Orientate(30, dt, 150.f);
+	Orientate(210, dt, 150.f);
 	target = position;
 	velocity = 0;
 }

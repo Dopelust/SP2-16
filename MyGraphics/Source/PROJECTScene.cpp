@@ -270,7 +270,7 @@ void PROJECTScene::JeremiahInit()
 	character.push_back( new Blindman() );
 	character.push_back( new Detective () );
 	character.push_back( new Manager () );
-	for(int x = 72; x > 35; x -= 15)
+	for(int x = 72; x > 20; x -= 15)
 	{
 		character.push_back( new Cashier(Vector3(x,2,-55)) );
 	}
@@ -379,7 +379,6 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(0,26.8,-22.5), Vector3(45.5,hitBox.y/2,0), hitBox, cube) );
 	object.push_back( new Object(Vector3(0,26.8,-22.5), Vector3(-45.5,hitBox.y/2,0), hitBox, cube) );
 
-	
 }
 void PROJECTScene::JessicaInit()
 {
@@ -810,6 +809,24 @@ void PROJECTScene::DarrenInit()
 	Bank = ATM( D, W);
 	object.push_back( &Bank.Deposit );
 	object.push_back( &Bank.Withdraw );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Plantsss~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+	tempMesh = MeshBuilder::GenerateXYQuad("Potted Plant", Color(1,1,1),7,7.5,1); tempMesh->textureID = LoadTGA("Image//plant.tga");
+	hitBox = Vector3(5,7.5,5); cube = MeshBuilder::GenerateCube("Plant Hitbox",Color(1,1,1),hitBox.x,hitBox.y,hitBox.z,0);
+	for(int z = -55.5; z <= 10; z +=65.5)
+	{
+		for(int x = -43; x <= 43; x += 43)
+		{
+		object.push_back( new Object(Vector3(x,31,z), Vector3(0,-0.5,0),hitBox,tempMesh,cube,1,45,false));
+		object.push_back( new Object(Vector3(x,31,z), Vector3(0,-0.5,0),hitBox,tempMesh,cube,1,315,false));
+		}
+	}
+	for(int x = 47; x >= -47; x -= 94)
+	{
+		object.push_back( new Object(Vector3(x,31,-22.5), Vector3(0,-0.5,0),hitBox,tempMesh,cube,1,45,false));
+		object.push_back( new Object(Vector3(x,31,-22.5), Vector3(0,-0.5,0),hitBox,tempMesh,cube,1,315,false));
+	}
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market Entrance~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	
