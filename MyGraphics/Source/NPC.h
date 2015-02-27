@@ -52,7 +52,7 @@ public:
 	bool inConversation;
 
 	virtual void Init();
-	virtual void InitDialogue() {};
+	virtual void InitDialogue(const char* filename);
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
 	
 	void Update(double dt, vector<Object*>object, Player* player);
@@ -74,7 +74,6 @@ public:
 	~Hobo() {};
 
 	virtual void Init();
-	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -94,7 +93,6 @@ public:
 	~Thug() {};
 
 	virtual void Init();
-	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -117,7 +115,6 @@ public:
 	~Cashier() {};
 
 	virtual void Init();
-	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -146,7 +143,6 @@ public:
 	~Blindman() {};
 
 	virtual void Init();
-	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -170,7 +166,7 @@ public:
 		target = position; target.y = 0;
 		orientation = -90;
 		Init();	
-		InitDialogue();
+		InitDialogue("Filestream//customer.txt");
 	};
 	Customer(vector<NPCTarget> t, string name, unsigned tID, float d)
 	{
@@ -194,7 +190,7 @@ public:
 			bodyParts[i].position = position;
 			bodyParts[i].identity = identity;
 		}
-		InitDialogue();
+		InitDialogue("Filestream//customer.txt");
 	}
 	~Customer() {};
 
@@ -202,7 +198,6 @@ public:
 	float decisionTime;
 	float tOrientation;
 	vector<NPCTarget> targets;
-	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -228,7 +223,6 @@ public:
 	~Detective() {};
 
 	virtual void Init();
-	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
@@ -253,7 +247,6 @@ public:
 
 	NPCTarget original;
 	virtual void Init();
-	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 

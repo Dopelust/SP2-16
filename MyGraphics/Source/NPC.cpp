@@ -233,7 +233,7 @@ void Hobo::Init()
 		bodyParts[i].identity = identity;
 	}
 
-	InitDialogue();
+	InitDialogue("Filestream//hobo.txt");
 }
 
 void Hobo::Control(double dt, vector<Object*>object, Player* player)
@@ -254,7 +254,7 @@ void Thug::Init()
 		bodyParts[i].identity = identity;
 	}
 
-	InitDialogue();
+	InitDialogue("Filestream//thug.txt");
 }
 
 void Thug::Control(double dt, vector<Object*>object, Player* player)
@@ -281,7 +281,7 @@ void Cashier::Init()
 		bodyParts[i].identity = identity;
 	}
 
-	InitDialogue();
+	InitDialogue("Filestream//cashier.txt");
 }
 
 void Cashier::Control(double dt, vector<Object*>object, Player* player)
@@ -316,7 +316,7 @@ void Blindman::Init()
 		bodyParts[i].identity = identity;
 	}
 
-	InitDialogue();
+	InitDialogue("Filestream//blindman.txt");
 }
 
 void Blindman::Control(double dt, vector<Object*>object, Player* player)
@@ -406,7 +406,7 @@ void Detective::Init()
 		bodyParts[i].identity = identity;
 	}
 
-	InitDialogue();
+	InitDialogue("Filestream//detective.txt");
 }
 
 void Detective::Control(double dt, vector<Object*>object, Player* player)
@@ -427,7 +427,7 @@ void S_Guard::Init()
 		bodyParts[i].identity = identity;
 	}
 
-	InitDialogue();
+	InitDialogue("Filestream//security.txt");
 }
 
 void S_Guard::Control(double dt, vector<Object*>object, Player* player)

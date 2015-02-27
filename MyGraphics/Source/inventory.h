@@ -9,6 +9,17 @@
 
 using namespace::std;
 
+class Wallet
+{
+public:
+	Wallet() {};
+	~Wallet() {};
+
+	float trueValue;
+	float apparentValue;
+
+};
+
 class Slot
 {
 public:
