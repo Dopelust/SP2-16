@@ -256,9 +256,9 @@ class Manager : public NPC
 public:
 	Manager()
 	{
-		position = Vector3(60,35,20);
+		position = Vector3(-20,27,10);
 		target = position;
-		orientation = 30;
+		orientation = 0;
 		rotation[HEAD] = 15;
 		Init();
 	};
