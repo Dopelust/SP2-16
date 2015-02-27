@@ -481,7 +481,7 @@ void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 
 	Vector3 p = position; p.y = 0;
 
-	if (!player->inventory.checkPaid() && entrance == true)
+	if (!player->inventory.checkPaid() && player->position.y < 27 && position.Dist(player->position) < 30.f)
 	{
 		target = player->position;
 	}
@@ -497,7 +497,7 @@ void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 	}
 	else if (p != target)
 	{
-		Goto(target, dt, 500.f, position.Dist(target) + 30.f);
+		Goto(target, dt, 1500.f, 15.f);
 	}
 }
 

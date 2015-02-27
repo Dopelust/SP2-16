@@ -274,8 +274,8 @@ void PROJECTScene::JeremiahInit()
 	{
 		character.push_back( new Cashier(Vector3(x,2,-55)) );
 	}
-	character.push_back( new S_Guard (Vector3(25, 2, -84)) );
-	character.push_back( new S_Guard (Vector3(-25, 2, -84)) );
+	character.push_back( new S_Guard (Vector3(20, 2, -84)) );
+	character.push_back( new S_Guard (Vector3(-20, 2, -84)) );
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		object.push_back( character[i] );
