@@ -274,8 +274,8 @@ void PROJECTScene::JeremiahInit()
 	{
 		character.push_back( new Cashier(Vector3(x,2,-55)) );
 	}
-	character.push_back( new S_Guard (Vector3(25, 2, -84)) );
-	character.push_back( new S_Guard (Vector3(-25, 2, -84)) );
+	character.push_back( new S_Guard (Vector3(18, 2, -84)) );
+	character.push_back( new S_Guard (Vector3(-18, 2, -84)) );
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		object.push_back( character[i] );
@@ -858,11 +858,12 @@ void PROJECTScene::DarrenInit()
 	tempMesh = MeshBuilder::GenerateOBJ("Auto Door", "OBJ//glass_d.obj"); tempMesh->textureID = LoadTGA("Image//GlassDoor.tga");
 	hitBox = Vector3(20,25,1.25); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	Object autoDoor(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube);
-	hitBox = Vector3(40,25,55); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	hitBox = Vector3(33.5f,25,30); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	Object autoRange(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, cube);
 	AutoDoor.Init(Vector3(0,0,-87.5), autoDoor, autoRange);
 	object.push_back( &AutoDoor.Door[0] );
 	object.push_back( &AutoDoor.Door[1] );
+	object.push_back( &AutoDoor.Range );
 
 }
 void PROJECTScene::Init()

@@ -474,14 +474,14 @@ void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 		if (position.Dist(player->position) < 5.f)
 		{
 			Vector3 direction;
-			direction.SphericalToCartesian(orientation, 0.f);
+			direction.SphericalToCartesian(0.f, 0.f);
 			player->Knockback(direction, Vector3(80,30,80));
 		}
 	}
 
 	Vector3 p = position; p.y = 0;
 
-	if (!player->inventory.checkPaid() && entrance == true)
+	if (!player->inventory.checkPaid() && entrance)
 	{
 		target = player->position;
 	}
@@ -497,7 +497,10 @@ void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 	}
 	else if (p != target)
 	{
-		Goto(target, dt, 500.f, position.Dist(target) + 30.f);
+		if (target == original.position)
+			Goto(target, dt, 500.f, 10.f);
+		else
+			Goto(target, dt, 1000.f, 40.f);
 	}
 }
 
