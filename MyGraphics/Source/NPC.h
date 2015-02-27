@@ -256,24 +256,21 @@ public:
 	Manager()
 	{
 		position = Vector3(60,35,20);
-		orientation = 30;
 		target = position;
-		target.y = 0;
+		orientation = 30;
 		rotation[HEAD] = 15;
 		Init();
 	};
 	Manager(Vector3 p)
 	{
 		position = p;
-		Vector3 direction;
 		target = position;
-		target.y = 0;
+		Vector3 direction;
 		Init();
 	}
 	~Manager() {};
 
 	virtual void Init();
-	virtual void InitDialogue();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 

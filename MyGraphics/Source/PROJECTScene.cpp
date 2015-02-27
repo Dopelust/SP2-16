@@ -270,7 +270,7 @@ void PROJECTScene::JeremiahInit()
 	character.push_back( new Blindman() );
 	character.push_back( new Detective () );
 	character.push_back( new Manager () );
-	for(int x = 72; x > 20; x -= 15)
+	for(int x = 72; x > 35; x -= 15)
 	{
 		character.push_back( new Cashier(Vector3(x,2,-55)) );
 	}

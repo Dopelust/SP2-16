@@ -456,7 +456,7 @@ void Manager::Init()
 		bodyParts[i].identity = identity;
 	}
 
-	InitDialogue();
+	InitDialogue("Filestream//manager.txt");
 }
 
 void Manager::Control(double dt, vector<Object*>object, Player* player)
