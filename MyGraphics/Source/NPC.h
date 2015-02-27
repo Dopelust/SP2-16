@@ -24,7 +24,7 @@ public:
 	{
 		type = "NPC";
 		mesh = NULL;
-
+		health = 100;
 		elapsedTime = 0;
 		collision.hitbox = Vector3(2.5f, 6.f, 2.5f);
 		collision.boundingBox = MeshBuilder::GenerateCube("Hitbox", Color(1,1,1), collision.hitbox.x, collision.hitbox.y, collision.hitbox.z, 0);

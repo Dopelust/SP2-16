@@ -49,6 +49,7 @@ public:
 	virtual bool Knockback(Vector3 dir, Vector3 vel) {return 0;};
 	virtual void setPaid(bool p) {return;};
 	virtual bool getPaid() {return 0;};
+	virtual float getHealth() {return 0;};
 	virtual float getValue() {return 0;};
 	virtual string getIdentity() {return "";};
 	virtual Vector3 getStorePos(Player* player) {return Vector3();};

@@ -4,6 +4,8 @@ bool dynamicObject::Knockback(Vector3 dir, Vector3 vel)
 {
 	if (hitDelay == 0)
 	{
+		health -= (vel.Length() / 15);
+		
 		velocity.x = dir.x * vel.x;
 		velocity.z = dir.z * vel.z;
 		velocity.y = vel.y;
