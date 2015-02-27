@@ -28,6 +28,8 @@ void Inventory::Init(Vector3 pos)
 
 void Inventory::Update(double dt)
 {
+	wallet.Update();
+
 	for (int i = 0; i < 9; i++)
 	{
 		if(!slots[i].item.empty())
@@ -173,4 +175,13 @@ int Inventory::emptySlot()
 	}
 
 	return -1;
+}
+
+void Wallet::Update()
+{
+	if (apparentValue < trueValue)
+		apparentValue++;
+	else
+		apparentValue = trueValue;
+
 }

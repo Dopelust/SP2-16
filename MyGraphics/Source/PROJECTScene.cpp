@@ -666,43 +666,43 @@ void PROJECTScene::JessicaInit()
 	hitBox = Vector3(0.3f, 0.1f, 0.4f); cube = MeshBuilder::GenerateCube("Money_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for (float y = 0; y <= 0.25f; y+= 0.05f)
 	{
-		object.push_back( new Item(Vector3(52,y,-89), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1,0, true) );
+		object.push_back( new Money(Vector3(52,y,-89), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1,0, 10) );
 	}
 	for (float y = 0; y <= 0.25f; y+= 0.05f)
 	{
-		object.push_back( new Item(Vector3(-55,y,-89), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
+		object.push_back( new Money(Vector3(-55,y,-89), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, 10) );
 	}
 	tempMesh = MeshBuilder::GenerateOBJ("Dollar", "OBJ//Money.obj"); tempMesh->textureID = LoadTGA("Image//Money1.tga");
 	hitBox = Vector3(0.3f, 0.1f, 0.4f); cube = MeshBuilder::GenerateCube("Money_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Item(Vector3(53,3.5,-51), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1,0, true) );
-	object.push_back( new Item(Vector3(48,3.3,-13), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
+	object.push_back( new Money(Vector3(53,3.5,-51), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1,0, 1) );
+	object.push_back( new Money(Vector3(48,3.3,-13), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, 1) );
 	for (float z = -58; z <= 17.f; z+= 15)
 	{
-		object.push_back( new Item(Vector3(-30,3.3,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, rand() % 360, true) );
+		object.push_back( new Money(Vector3(-30,3.3,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, rand() % 360, 1) );
 	}
 	for (float z = -58; z <= 17.f; z+= 15)
 	{
-		object.push_back( new Item(Vector3(-50,3.3,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, rand() % 180, true) );
+		object.push_back( new Money(Vector3(-50,3.3,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, rand() % 180, 1) );
 	}
 	for (float y = 0; y <= 0.25f; y+= 0.05f)
 	{
-		object.push_back( new Item(Vector3(12.5,y,40.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
+		object.push_back( new Money(Vector3(12.5,y,40.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, 1) );
 	}
 	for (float y = 27.25f; y <= 27.5f; y+= 0.05f)
 	{
-		object.push_back( new Item(Vector3(8.85,y,40.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
+		object.push_back( new Money(Vector3(8.85,y,40.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, 1) );
 	}
 
 	tempMesh = MeshBuilder::GenerateOBJ("50 Dollar", "OBJ//Money.obj"); tempMesh->textureID = LoadTGA("Image//Money50.tga");
 	hitBox = Vector3(0.3f, 0.1f, 0.4f); cube = MeshBuilder::GenerateCube("Money_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Item(Vector3(-69,5.05,38), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1,0, true) );
+	object.push_back( new Money(Vector3(-69,5.05,38), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1,0, 50) );
 	for (float y = 0; y <= 0.20f; y+= 0.05f)
 	{
-		object.push_back( new Item(Vector3(-79,y,16.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 90, true) );
+		object.push_back( new Money(Vector3(-79,y,16.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 90, 50) );
 	}
 	for (float y = 0.5; y <= 4.75f; y+= 2.f)
 	{
-			object.push_back( new Item(Vector3(-9.5,y,-21.25), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
+			object.push_back( new Money(Vector3(-9.5,y,-21.25), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, 50) );
 	}
 
 	//~~~~~VENDING~~~~~
@@ -857,8 +857,6 @@ void PROJECTScene::DarrenInit()
 	AutoDoor.Init(Vector3(0,0,-87.5), autoDoor, autoRange);
 	object.push_back( &AutoDoor.Door[0] );
 	object.push_back( &AutoDoor.Door[1] );
-	object.push_back( &AutoDoor.Range );
-
 }
 void PROJECTScene::Init()
 {
@@ -892,6 +890,12 @@ void PROJECTScene::Init()
 
 	meshList[GEO_TEXTBOX] = MeshBuilder::GenerateXYQuad("Text Box", Color(1,1,1), 32, 8.5f, 1);
 	meshList[GEO_TEXTBOX]->textureID = LoadTGA("Image//textbox.tga");
+
+	meshList[GEO_QUAD] = MeshBuilder::GenerateXYQuad("Overlay", Color(1,1,1), 8, 1.5f, 1);
+	meshList[GEO_QUAD]->textureID = LoadTGA("Image//UI//ui_overlay.tga");
+
+	meshList[GEO_HEART] = MeshBuilder::GenerateXYQuad("Heart", Color(1,1,1), 1, 1, 1);
+	meshList[GEO_HEART]->textureID = LoadTGA("Image//UI//heart.tga");
 
 	meshList[GEO_LINE] = MeshBuilder::GenerateLine("crosshair", Color(0,1,0), 0.15f);
 
@@ -951,18 +955,32 @@ void PROJECTScene::Update(double dt)
 				Vector3 tPos = object[camera->lookAt]->position + object[camera->lookAt]->collision.centre;
 				text.push_back( new OnScreenText("+1 " + object[camera->lookAt]->mesh->name,tPos) );
 				object.erase(object.begin()+camera->lookAt);
-
-				camera->lookAt = camera->lookingAt(object);
 			}
+		}
+		else if (object[camera->lookAt]->type == "Money")
+		{
+			player.inventory.wallet.trueValue += object[camera->lookAt]->getValue();
+
+			inputDelay = 0.2f;
+
+			Vector3 tPos = object[camera->lookAt]->position + object[camera->lookAt]->collision.centre;
+			string add = "+ ";
+			add += to_string(long double(object[camera->lookAt]->getValue()));
+			text.push_back( new OnScreenText(add, tPos) );
+
+			delete object[camera->lookAt];
+			object.erase(object.begin()+camera->lookAt);
 		}
 		else if(object[camera->lookAt] == &Bank.Withdraw)
 		{
-			Bank.withdraw();
+			Bank.withdraw(player.inventory.wallet);
 		}
 		else if(object[camera->lookAt] == &Bank.Deposit)
 		{
-			Bank.deposit();
+			Bank.deposit(player.inventory.wallet);
 		}
+
+		camera->lookAt = camera->lookingAt(object);
 	}
 
 	for (unsigned int i = 0; i < object.size(); i++)
@@ -1420,6 +1438,28 @@ void PROJECTScene::Render()
 	modelStack.PushMatrix();
 	modelStack.Translate(player.inventory.selector.selectedSlot->position);
 	RenderMesh(player.inventory.selector.mesh, false);
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Translate(-12,-10.5f,0);
+	RenderMesh(meshList[GEO_QUAD], false);
+		modelStack.PushMatrix();
+		modelStack.Translate(-3,0,0);
+		RenderMesh(meshList[GEO_HEART], false);
+		modelStack.PopMatrix();
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Translate(12,-10.5f,0);
+	modelStack.Rotate(180,0,1,0);
+	RenderMesh(meshList[GEO_QUAD], false);
+	modelStack.PopMatrix();
+
+	string cash = "$";
+	cash += to_string(long double(player.getRenderWallet()));
+	modelStack.PushMatrix();
+	modelStack.Translate(13.5f,-10.5f,0);
+	RenderText(meshList[GEO_TEXT], cash, Color(1, 1, 1));
 	modelStack.PopMatrix();
 
 	string x = to_string(long double(camera->position.x));
