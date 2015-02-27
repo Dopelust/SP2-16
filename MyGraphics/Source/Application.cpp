@@ -47,13 +47,8 @@ bool Application::IsKeyPressed(unsigned short key)
     return ((GetAsyncKeyState(key) & 0x8001) != 0);
 }
 
-float clickDelay = 0.f;
-
 bool Application::mouseButton(unsigned short button)
 {
-	if (clickDelay > 0)
-		return false;
-
     return glfwGetMouseButton(m_window, button);
 }
 
@@ -143,13 +138,7 @@ void Application::Run()
 		scene->Update(m_timer.getElapsedTime());
 		scene->Render();
 
-		if (mouseButton(0) && clickDelay == 0)
-			clickDelay = 8.f * m_timer.getElapsedTime();;
-		if (clickDelay > 0)
-			clickDelay -= m_timer.getElapsedTime();
-		else
-			clickDelay = 0;
-
+		IsKeyPressed(VK_SPACE);
 		if(IsKeyPressed('P') && scene->pause == false && pauseDelay == 0)
 		{
 			scene->pause = true;
