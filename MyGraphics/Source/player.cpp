@@ -259,7 +259,7 @@ float eDelay = 0;
 
 void dynamicObject::Update(double dt, vector<Object*>object, Player* player)
 {
-	if (position.Dist(player->position) < 25.f)
+	if (position.Dist(player->position) < 60.f)
 	{
 		Vector3 initialPos = position;
 
@@ -292,7 +292,9 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
-		if ( !(player->holding >= 0 && object[player->holding] == this) )
+		if (object[i] == player && player->holding >= 0 || this == player && player->holding == i)
+			continue;
+
 			if (object[i] != this)
 			{
 				if ((type == "Player" || type == "NPC") && object[i]->ignoreCollision)
@@ -396,8 +398,12 @@ void Doorway::Update(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+bool entrance = false;
+
 void Doorway::RangeUpdate(double dt, vector<Object*>object, Player* player) 
 {
+	entrance = false;
+
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
 		if (object[i] != &Range)
@@ -406,6 +412,10 @@ void Doorway::RangeUpdate(double dt, vector<Object*>object, Player* player)
 				if (Object::checkCollision(&Range, object[i]))
 				{
 					open = true; close = false;
+
+					if (object[i]->type == "Player")
+						entrance = true;
+
 					break;
 				}
 		}
