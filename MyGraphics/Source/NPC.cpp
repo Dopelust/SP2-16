@@ -96,7 +96,41 @@ void NPC::Animate(double dt, float speed)
 	{
 		for (int i = L_ARM; i < NUM_BODYPARTS; i++)
 		{
-			if(rotation[i] * rotationDir[i] > 25.f)
+			if(rotation[i] * rotationDir[i] > 30.f)
+			{
+				rotationDir[i] = -rotationDir[i];
+			}
+			rotation[i] += (float)(rotationDir[i] * speed * dt);
+		}
+	}
+}
+
+void NPC::Animate(double dt, float speed, float limit)
+{
+	if (velocity.x == 0 && velocity.z == 0) //resetting to original location
+	{	
+		for (int i = L_ARM; i < NUM_BODYPARTS; i++)
+		{
+			if(rotation[i] * rotationDir[i] > 0)
+				rotationDir[i] = -rotationDir[i];
+		
+			else if(rotation[i] * rotationDir[i] < 0)
+				rotationDir[i] = rotationDir[i];
+
+			if (rotation[i] != 0)
+				rotation[i] += (float)(rotationDir[i] * speed * dt);
+			if (rotationDir[i] == -1 && rotation[i] <= 0)
+				rotation[i] = 0;
+			else if (rotationDir[i] == 1 && rotation[i] >= 0)
+				rotation[i] = 0;
+		}
+	}
+
+	else
+	{
+		for (int i = L_ARM; i < NUM_BODYPARTS; i++)
+		{
+			if(rotation[i] * rotationDir[i] > limit)
 			{
 				rotationDir[i] = -rotationDir[i];
 			}
@@ -430,18 +464,40 @@ void S_Guard::Init()
 	InitDialogue("Filestream//security.txt");
 }
 
+extern bool entrance;
+
 void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 {
-	Animate(dt, 100.f);
+	Animate(dt, 200.f + position.Dist(target) * 20, 60.f);
+	if (target != original.position)
+	{
+		if (position.Dist(player->position) < 5.f)
+		{
+			Vector3 direction;
+			direction.SphericalToCartesian(orientation, 0.f);
+			player->Knockback(direction, Vector3(80,30,80));
+		}
+	}
+
 	Vector3 p = position; p.y = 0;
+
+	if (!player->inventory.checkPaid() && entrance == true)
+	{
+		target = player->position;
+	}
+	else
+	{
+		target = original.position;
+	}
 
 	if (p == target)
 	{
-		Orientate(0, dt, 200.f);
+		if (target == original.position)
+			Orientate(0, dt, 200.f);
 	}
 	else if (p != target)
 	{
-		Goto(target, dt, 50.f, 5.f);
+		Goto(target, dt, 500.f, position.Dist(target) + 30.f);
 	}
 }
 
@@ -461,7 +517,7 @@ void Manager::Init()
 
 void Manager::Control(double dt, vector<Object*>object, Player* player)
 {
-	Orientate(210, dt, 150.f);
+	Orientate(30, dt, 150.f);
 	target = position;
 	velocity = 0;
 }

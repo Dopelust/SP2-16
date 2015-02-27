@@ -60,6 +60,7 @@ public:
 	void Orientate(Vector3 t, double dt, float speed);
 	void Goto(Vector3 destination, double dt, float turn, float speed);
 	void Animate(double dt, float speed);
+	void Animate(double dt, float speed, float limit);
 };
 
 class Hobo : public NPC
@@ -255,9 +256,9 @@ class Manager : public NPC
 public:
 	Manager()
 	{
-		position = Vector3(-20, 27, 10);
+		position = Vector3(60,35,20);
 		target = position;
-		orientation = 0;
+		orientation = 30;
 		rotation[HEAD] = 15;
 		Init();
 	};

@@ -54,6 +54,7 @@ public:
 	int emptySlot();
 	Mesh * slotMeshes[3];
 
+	bool checkPaid();
 	bool Insert(Object* o);
 	bool Checkout();
 	bool Remove();

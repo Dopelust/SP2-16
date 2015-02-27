@@ -150,6 +150,20 @@ bool Inventory::Remove()
 	return false;
 }
 
+bool Inventory::checkPaid()
+{
+	for (int i = 0; i < 9; i++)
+	{
+		if(!slots[i].item.empty())
+			if(!slots[i].item[0]->getPaid())
+			{
+				return false;
+			}
+	}
+
+	return true;
+}
+
 int Inventory::emptySlot()
 {
 	for (int i = 0; i < 9; i++)

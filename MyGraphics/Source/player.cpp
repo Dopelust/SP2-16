@@ -396,10 +396,10 @@ void Doorway::Update(double dt, vector<Object*>object, Player* player)
 	}
 }
 
-
+bool entrance = false;
 void Doorway::RangeUpdate(double dt, vector<Object*>object, Player* player) 
 {
-	close = true; open = false;
+	entrance = false;
 
 	for (unsigned int i = 0; i < object.size(); i++)
 	{
@@ -409,6 +409,10 @@ void Doorway::RangeUpdate(double dt, vector<Object*>object, Player* player)
 				if (Object::checkCollision(&Range, object[i]))
 				{
 					open = true; close = false;
+
+					if (object[i]->type == "Player")
+						entrance = true;
+
 					break;
 				}
 		}
