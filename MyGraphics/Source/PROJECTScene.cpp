@@ -258,17 +258,18 @@ void PROJECTScene::JeremiahInit()
 	character.push_back( new Customer(path, "Harem-king", LoadTGA("Image//CharTGA//C_Boy.tga"),1.f));
 	path.clear();
 
-	path.push_back(NPCTarget(Vector3(-8,0,-41), 180.f));
-	path.push_back(NPCTarget(Vector3(0,0,-41), 180.f));
-	path.push_back(NPCTarget(Vector3(8,0,-41), 180.f));
-	path.push_back(NPCTarget(Vector3(-8,0,-27), 0.f));
-	path.push_back(NPCTarget(Vector3(0,0,-27), 0.f));
-	path.push_back(NPCTarget(Vector3(8,0,-27), 0.f));
-	character.push_back( new Customer(path, "Harem-king", LoadTGA("Image//CharTGA//Thief.tga"),1.f));
+	path.push_back(NPCTarget(Vector3(-8,0,-18.5), 180.f));
+	path.push_back(NPCTarget(Vector3(0,0,-18.5), 180.f));
+	path.push_back(NPCTarget(Vector3(8,0,-18.5), 180.f));
+	path.push_back(NPCTarget(Vector3(-8,0,-4.5), 0.f));
+	path.push_back(NPCTarget(Vector3(0,0,-4.5), 0.f));
+	path.push_back(NPCTarget(Vector3(8,0,-4.5), 0.f));
+	character.push_back( new Customer(path, "Chunni-kun", LoadTGA("Image//CharTGA//Thief.tga"),1.f));
 	path.clear();
 
 	character.push_back( new Blindman() );
 	character.push_back( new Detective () );
+	character.push_back( new Manager () );
 	for(int x = 72; x > 20; x -= 15)
 	{
 		character.push_back( new Cashier(Vector3(x,2,-55)) );
@@ -286,7 +287,7 @@ void PROJECTScene::JeremiahInit()
 	cube = MeshBuilder::GenerateCube("Pilar", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-75,hitBox.y/2,-81.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 	object.push_back( new Object(Vector3(-75,hitBox.y/2,36.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
-
+	
 	hitBox = Vector3(2, 50, 132); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
@@ -378,18 +379,7 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(0,26.8,-22.5), Vector3(45.5,hitBox.y/2,0), hitBox, cube) );
 	object.push_back( new Object(Vector3(0,26.8,-22.5), Vector3(-45.5,hitBox.y/2,0), hitBox, cube) );
 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market Entrance~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	
-	tempMesh = MeshBuilder::GenerateOBJ("Auto Door", "OBJ//glass_d.obj"); tempMesh->textureID = LoadTGA("Image//GlassDoor.tga");
-	hitBox = Vector3(20,25,1.25); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	Object autoDoor(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube);
-	hitBox = Vector3(40,25,60); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	Object autoRange(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, cube);
-	AutoDoor.Init(Vector3(0,0,-87.5), autoDoor, autoRange);
-	object.push_back( &AutoDoor.Door[0] );
-	object.push_back( &AutoDoor.Door[1] );
-
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Elevator~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 }
 void PROJECTScene::JessicaInit()
 {
@@ -820,6 +810,17 @@ void PROJECTScene::DarrenInit()
 	Bank = ATM( D, W);
 	object.push_back( &Bank.Deposit );
 	object.push_back( &Bank.Withdraw );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market Entrance~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	
+	tempMesh = MeshBuilder::GenerateOBJ("Auto Door", "OBJ//glass_d.obj"); tempMesh->textureID = LoadTGA("Image//GlassDoor.tga");
+	hitBox = Vector3(20,25,1.25); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object autoDoor(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube);
+	hitBox = Vector3(40,25,60); cube = MeshBuilder::GenerateCube("AutoDoorHit_B", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object autoRange(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, cube);
+	AutoDoor.Init(Vector3(0,0,-87.5), autoDoor, autoRange);
+	object.push_back( &AutoDoor.Door[0] );
+	object.push_back( &AutoDoor.Door[1] );
 
 }
 void PROJECTScene::Init()

@@ -139,3 +139,23 @@ void S_Guard::InitDialogue()
 
 	inData.close (); 
 }
+
+void Manager::InitDialogue()
+{
+	ifstream inData;
+	string data;
+
+	inData.open ("Filestream//manager.txt"); 
+
+	while (!inData.eof()) {
+
+		getline (inData, data);
+
+		if (data == "")
+			continue;
+
+		greetings.push_back(TextBox(data, bodyParts[HEAD].mesh));
+	}
+
+	inData.close (); 
+}

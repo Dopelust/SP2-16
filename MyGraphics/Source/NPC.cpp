@@ -444,3 +444,24 @@ void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 		Goto(target, dt, 50.f, 5.f);
 	}
 }
+
+void Manager::Init()
+{
+	identity = "Manager-taichou";
+
+	for (int i = 0; i < NUM_BODYPARTS; i++)
+	{	
+		bodyParts[i].mesh->textureID = LoadTGA("Image//CharTGA//manager.tga");
+		bodyParts[i].position = position;
+		bodyParts[i].identity = identity;
+	}
+
+	InitDialogue();
+}
+
+void Manager::Control(double dt, vector<Object*>object, Player* player)
+{
+	Orientate(30, dt, 150.f);
+	target = position;
+	velocity = 0;
+}
