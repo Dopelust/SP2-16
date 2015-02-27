@@ -381,9 +381,9 @@ void PROJECTScene::JeremiahInit()
 
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Securiuty Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-	hitBox = Vector3();
+	/*hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7.5, 11, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
-	object.push_back( new Object(Vector3(0.f,27.f,0.f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	object.push_back( new Object(Vector3(0.f,27.f,0.f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );*/
 
 }
 void PROJECTScene::JessicaInit()
