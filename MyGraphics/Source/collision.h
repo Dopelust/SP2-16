@@ -105,17 +105,42 @@ public:
 	Object Withdraw;
 };
 
+class Vending
+{
+public:
+	Vending() {};
+	Vending(Object D) { Drink = D; Drink.type = "Vending Machine"; drinks = 0;};
+	~Vending() {};
+
+	float drinks;
+	float getDrinks() {return drinks;};
+	
+	bool drink() 
+	{ 
+		if (drinks != 0)
+		{
+			drinks += 1; 
+			return true;
+		}
+		return false;
+	};
+
+	Object Drink;
+};
+
 class Item : public Object
 {
 public:
 	Item() {ignoreCollision = true;};
-	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {paid = false; type = "Item";};
-	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, bool P) :	Object(p,c,h,m,b,s,o,i) {paid = P; type = "Item";};
+	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {paid = false; type = "Item";}
+	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, float P) :	Object(p,c,h,m,b,s,o,i) {price = P; paid = false; type = "Item";};
+	//Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, bool P) :	Object(p,c,h,m,b,s,o,i) {paid = P; type = "Item";};
 	~Item();
 
 	void setPaid(bool p) {paid = p;};
 	bool getPaid() {return paid;};
 	bool paid;
+	float price;
 };
 
 class Storage : public Object

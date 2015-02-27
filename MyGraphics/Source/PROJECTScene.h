@@ -119,6 +119,7 @@ private:
 	Doorway doorway2;
 	Doorway AutoDoor;
 	ATM Bank;
+	Vending Machine;
 
 	Light light[3];
 	void RenderMesh(Mesh *mesh, bool enableLight);
