@@ -731,8 +731,8 @@ void PROJECTScene::JessicaInit()
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Securiuty Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3();
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7.5, 11, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
-	object.push_back( new Object(Vector3(-79.99f,32.5f,25.f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
+	object.push_back( new Object(Vector3(-79.95f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
 
 }
 void PROJECTScene::DarrenInit()
@@ -872,6 +872,11 @@ void PROJECTScene::Init()
 
 	InitJunk();
 
+	CCTVs[0].Init(Vector3(79,22,-85), -45, 0);
+	CCTVs[1].Init(Vector3(79,22,40.5f), -135, 0);
+	CCTVs[2].Init(Vector3(-69,22,30.5f), 135, 0);
+	CCTVs[3].Init(Vector3(-69,22,-75.5f), 45, 0);
+
 	camera = &player.camera;
 
 	RicssonInit();
@@ -896,7 +901,13 @@ void PROJECTScene::Init()
 	meshList[GEO_HEART] = MeshBuilder::GenerateXYQuad("Heart", Color(1,1,1), 1, 1, 1);
 	meshList[GEO_HEART]->textureID = LoadTGA("Image//UI//heart.tga");
 
-	meshList[GEO_LINE] = MeshBuilder::GenerateLine("crosshair", Color(0,1,0), 0.15f);
+	meshList[GEO_CCTV] = MeshBuilder::GenerateXYQuad("CCTV Overlay", Color(1,1,1), 4, 3, 1);
+	meshList[GEO_CCTV]->textureID = LoadTGA("Image//UI//cctv.tga");
+
+	meshList[GEO_CCTV_CORNER] = MeshBuilder::GenerateXYQuad("CCTV Overlay", Color(1,1,1), 4, 3, 1);
+	meshList[GEO_CCTV_CORNER]->textureID = LoadTGA("Image//UI//cctv_corner.tga");
+
+	meshList[GEO_LINE] = MeshBuilder::GenerateLine("crosshair", Color(0,1,0), 0.4f);
 
 	Mtx44 projection;
 	projection.SetToPerspective(60.f, 4.f / 3.f, 0.1f, 100000.f);
@@ -935,15 +946,25 @@ static int animateHeartDir = 1.f;
 
 Vector3 Select;
 float selectDelay;
+extern float pauseDelay;
+
+bool CCTV = false;
+bool stopCamera = false;
 
 void PROJECTScene::Update(double dt)
 {
+	if(pauseDelay > 0)
+		pauseDelay -= float(dt);
+	else
+		pauseDelay = 0;
+
 	if (!pause)
 	{
 	if(Application::IsKeyPressed('R'))
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 	else
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
 
 	camera->lookAt = camera->lookingAt(object);
 
@@ -980,10 +1001,17 @@ void PROJECTScene::Update(double dt)
 		}
 		else if (object[camera->lookAt]->type == "Vending Machine")
 		{
+			/*
 			inputDelay = 0.2f;
 
 			if (Machine.drink())
 				player.inventory.wallet.trueValue -= 2.f;
+				*/
+
+			CCTV = true;
+			stopCamera = true;
+
+			inputDelay = 0.2f;
 		}
 		else if (object[camera->lookAt]->type == "Money")
 		{
@@ -1026,7 +1054,7 @@ void PROJECTScene::Update(double dt)
 	if (textbox != NULL)
 	{
 		textbox->Update();
-
+	
 		if ( (textbox->type == "Quest" || textbox->type == "Checkout" ) && selectDelay == 0)
 		{
 			if(Application::IsKeyPressed(VK_LEFT))
@@ -1095,10 +1123,12 @@ void PROJECTScene::Update(double dt)
 					textbox->apparentext.clear();
 					textbox = NULL;
 					player.inConversation = false;
+					stopCamera = false;
 				}
 			}
 		}
 	}
+	
 	player.Update(dt, object);
 
 	doorway.ButtonUpdate(dt, object, &player);
@@ -1149,6 +1179,7 @@ void PROJECTScene::Update(double dt)
 					if (textbox != NULL)
 					{
 						player.inConversation = true;
+						stopCamera = true;
 
 						if (textbox->type == "Checkout")
 						{
@@ -1218,23 +1249,68 @@ void PROJECTScene::Update(double dt)
 		animateHeartDir = -animateHeartDir;
 	animateHeart += (float)(animateHeartDir * animateHeartSpeed * dt);
 
+	if (!CCTV)
+	{
+		if (camera == &CCTVs[0] || camera == &CCTVs[1] || camera == &CCTVs[2] || camera == &CCTVs[3])
+		{
+			camera->Zoom(dt);
+			camera->Move(dt);
+			camera->Update(dt);
+
+			if(Application::IsKeyPressed(VK_BACK) && inputDelay == 0)
+			{
+				CCTV = true;
+				inputDelay = 0.2f;
+			}
+		}
+	}
+	else if (CCTV && inputDelay == 0)
+	{
+		if (Application::IsKeyPressed('1'))
+		{
+			glViewport(0, 0, 880, 660);
+			camera = &CCTVs[0];
+			CCTV = false;
+			inputDelay = 0.2f;
+		}
+		else if (Application::IsKeyPressed('2'))
+		{
+			glViewport(0, 0, 880, 660);
+			camera = &CCTVs[1];
+			CCTV = false;
+			inputDelay = 0.2f;
+		}
+		else if (Application::IsKeyPressed('3'))
+		{
+			glViewport(0, 0, 880, 660);
+			camera = &CCTVs[2];
+			CCTV = false;
+			inputDelay = 0.2f;
+		}
+		else if (Application::IsKeyPressed('4'))
+		{
+			glViewport(0, 0, 880, 660);
+			camera = &CCTVs[3];
+			CCTV = false;
+			inputDelay = 0.2f;
+		}
+
+		else if (Application::IsKeyPressed(VK_BACK))
+		{
+			glViewport(0, 0, 880, 660);
+			camera = &player.camera;
+			CCTV = false;
+			stopCamera = false;
+
+			inputDelay = 0.2f;
+		}
+	}
+
 	}
 }
 
-void PROJECTScene::Render()
+void PROJECTScene::RenderScene()
 {
-	// Render VBO here
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
-
-	modelStack.LoadIdentity();
-	viewStack.LoadIdentity();
-	viewStack.LookAt(camera->position.x, camera->position.y,
-	camera->position.z, camera->target.x, camera->target.y,
-	camera->target.z, camera->up.x, camera->up.y, camera->up.z);
-	Mtx44 projection;
-	projection.SetToPerspective(60.f, 4.f / 3.f, 0.1f, 100000.f);
-	projectionStack.LoadMatrix(projection);
-	
 	for (int i = 0; i < 3; i++)
 	{
 		if(light[i].type == Light::LIGHT_DIRECTIONAL)
@@ -1371,6 +1447,7 @@ void PROJECTScene::Render()
 	}
 
 	glDisable(GL_DEPTH_TEST);
+
 	for (unsigned int i = 0; i < text.size(); i++)
 	{
 		modelStack.PushMatrix();
@@ -1385,6 +1462,8 @@ void PROJECTScene::Render()
 		modelStack.PopMatrix();
 	}
 
+	if (camera->lookAt > 0)
+	{
 	if (object[camera->lookAt]->type == "NPC")
 	{
 		modelStack.PushMatrix();
@@ -1418,7 +1497,6 @@ void PROJECTScene::Render()
 		RenderText(meshList[GEO_TEXT], P_Money, Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
-
 	else if (object[camera->lookAt]->type == "Vending Machine")
 	{
 		string P_Drink;
@@ -1438,22 +1516,129 @@ void PROJECTScene::Render()
 		RenderText(meshList[GEO_TEXT], P_Drink, Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
+	}
+	glEnable(GL_DEPTH_TEST);
+}
+
+void PROJECTScene::RenderCCTVUI(int number)
+{
+	Mtx44 projection;
+
+	glDisable(GL_DEPTH_TEST);
+
+	modelStack.LoadIdentity();
+	viewStack.LoadIdentity();
+	projection.SetToOrtho(-16, 16, -12, 12, -20, 20);
+	projectionStack.LoadMatrix(projection);
+
+	modelStack.PushMatrix();
+	modelStack.Scale(1.5f);
+	RenderMesh(meshList[GEO_CCTV], false);
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Translate(-12,9,0);
+	modelStack.Scale(1.5f);
+	RenderMesh(meshList[GEO_CCTV_CORNER], false);
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Translate(-12,-9,0);
+	modelStack.Rotate(90,0,0,1);
+	modelStack.Scale(1.5f);
+	RenderMesh(meshList[GEO_CCTV_CORNER], false);
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Translate(12,-9,0);
+	modelStack.Rotate(180,0,0,1);
+	modelStack.Scale(1.5f);
+	RenderMesh(meshList[GEO_CCTV_CORNER], false);
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Translate(12,9,0);
+	modelStack.Rotate(-90,0,0,1);
+	modelStack.Scale(1.5f);
+	RenderMesh(meshList[GEO_CCTV_CORNER], false);
+	modelStack.PopMatrix();
+
+	string Cam = "Camera ";
+	Cam += to_string(long double(number));
+
+	modelStack.PushMatrix();
+	modelStack.Translate(0,10,0);
+	float textLength = getTextWidth(Cam);
+	modelStack.Scale(1.5f);
+	modelStack.Translate(-textLength/2, 0, 0);
+	RenderText(meshList[GEO_TEXT], Cam , Color(1, 1, 1));
+	modelStack.PopMatrix();
 
 	glEnable(GL_DEPTH_TEST);
+}
+
+void PROJECTScene::Render()
+{
+	// Render VBO here
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
+
+	Mtx44 projection;
+
+	if (!CCTV)
+	{
+		modelStack.LoadIdentity();
+		viewStack.LoadIdentity();
+		viewStack.LookAt(camera->position.x, camera->position.y,
+		camera->position.z, camera->target.x, camera->target.y,
+		camera->target.z, camera->up.x, camera->up.y, camera->up.z);
+		projection.SetToPerspective(camera->fov, 4.f / 3.f, 0.1f, 100000.f);
+		projectionStack.LoadMatrix(projection);
+
+		RenderScene();
+	}
+
+	else
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			if (i == 0)
+				glViewport(0, 330, 440, 330);
+			if (i == 1)
+				glViewport(440, 330, 440, 330);
+			if (i == 2)
+				glViewport(0, 0, 440, 330);
+			if (i == 3)
+				glViewport(440, 0, 440, 330);
+
+			camera = &CCTVs[i];
+
+			modelStack.LoadIdentity();
+			viewStack.LoadIdentity();
+			viewStack.LookAt(camera->position.x, camera->position.y,
+				camera->position.z, camera->target.x, camera->target.y,
+				camera->target.z, camera->up.x, camera->up.y, camera->up.z);
+			projection.SetToPerspective(camera->fov, 4.f / 3.f, 0.1f, 100000.f);
+			projectionStack.LoadMatrix(projection);
+
+			RenderScene();
+			RenderCCTVUI(i + 1);
+		}
+	}
 
 	//2D
 	modelStack.PushMatrix();
 	viewStack.PushMatrix();
 	projectionStack.PushMatrix();
+	
+	if (camera == &player.camera)
+	{
 
 	modelStack.LoadIdentity();
 	viewStack.LoadIdentity();
-	projectionStack.Ortho(-10, 10, -10, 10, 0, 10);
-
-	RenderCrosshair();
-
 	projection.SetToOrtho(-16, 16, -12, 12, -20, 20);
 	projectionStack.LoadMatrix(projection);
+
+	RenderCrosshair();
 
 	if (!player.inventory.selector.selectedSlot->item.empty())
 	{
@@ -1676,6 +1861,20 @@ void PROJECTScene::Render()
 	modelStack.PopMatrix();
 
 	glEnable(GL_DEPTH_TEST);
+
+	}
+
+	else
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			if (camera == &CCTVs[i])
+			{
+				RenderCCTVUI(i + 1);
+				break;
+			}
+		}
+	}
 }
 
 void PROJECTScene::RenderMesh(Mesh *mesh, bool enableLight)

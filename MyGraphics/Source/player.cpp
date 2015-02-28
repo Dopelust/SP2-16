@@ -73,14 +73,12 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 	}
 }
 
-bool stopCamera = false;
-
+extern bool stopCamera;
 void Player::Update(double dt, vector<Object*>object)
 {
 	Vector3 initialPos = position;
-	stopCamera = inConversation;
 
-	if (!inConversation)
+	if (!inConversation && !stopCamera)
 		Control(dt, object);
 
 	UpdateVelocity(dt);
@@ -96,12 +94,18 @@ void Player::Update(double dt, vector<Object*>object)
 
 	camera.position = position;
 	camera.position.y += value[eyeLevel];
-	camera.Update(dt, object);
+
+	if (!stopCamera)
+	{
+		camera.Move(dt);
+	}
+	camera.Update(dt);
 
 	hOrientation = camera.orientation;
 	vOrientation = camera.look;
 
-	inventory.Update(dt);
+	if (!stopCamera)
+		inventory.Update(dt);
 
 	if (hitDelay > 0)
 		hitDelay -= dt;

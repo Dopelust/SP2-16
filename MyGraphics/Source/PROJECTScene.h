@@ -65,6 +65,8 @@ class PROJECTScene : public Scene
 		GEO_CUBE,
 		GEO_BIGCUBE,
 		GEO_HOLD,
+		GEO_CCTV,
+		GEO_CCTV_CORNER,
 		GEO_TEXTBOX,
 		NUM_GEOMETRY,
 	};
@@ -132,12 +134,15 @@ private:
 	Vending Machine;
 
 	Light light[3];
+	void RenderScene();
+	void RenderCCTVUI(int number);
 	void RenderMesh(Mesh *mesh, bool enableLight);
 	void RenderText(Mesh* mesh, std::string text, Color color);
 	void RenderTextOnScreen(Mesh* mesh, std::string text, Color color, float size, float x, float y);
 	float getTextWidth(string t);
 
 	Camera3* camera;
+	Camera3 CCTVs[4];
 	Player player;
 
 	MS modelStack, viewStack, projectionStack;

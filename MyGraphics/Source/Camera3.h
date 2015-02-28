@@ -15,7 +15,10 @@ public:
 	Vector3 defaultTarget;
 	Vector3 defaultUp;
 
-	float throttle;
+	float defaultOrientation;
+	float defaultLook;
+
+	float fov;
 	float orientation;
 	float look;
 	int lookAt;
@@ -25,7 +28,9 @@ public:
 	Camera3();
 	~Camera3();
 	virtual void Init(const Vector3& pos, const float& orientation, const float& look);
-	virtual void Update(double dt, vector<Object*>object);
+	virtual void Update(double dt);
+	void Move(double dt);
+	void Zoom(double dt);
 	virtual void Reset();
 };
 

@@ -7,78 +7,59 @@ Camera3::Camera3()
 {
 	orientation = 0.f;
 	look = 0.f;
+
+	fov = 70.f;
 }
 
 Camera3::~Camera3()
 {
 }
 
-void Camera3::Init(const Vector3& pos, const float& orientation, const float& look)
+void Camera3::Init(const Vector3& pos, const float& hO, const float& vO)
 {
-	throttle = 0.f;
+	orientation = defaultOrientation = hO;
+	look = defaultLook = vO;
 
 	this->position = defaultPosition = pos;
-	this->target = defaultTarget = target;
 	Vector3 view; view.SphericalToCartesian(orientation, look);
 	Vector3 right; right.SphericalToCartesian(orientation - 90.f, 0.0f);
+	Vector3 direction; direction.SphericalToCartesian(orientation, 0.f);
+	this->target = defaultTarget = target = position + direction;
 	this->up = defaultUp = right.Cross(view);
 }
 
-static int throttleDir = 1;
-static float throttleSpeed = 50.f;
-extern bool stopCamera;
-
-void Camera3::Update(double dt, vector<Object*>object)
+void Camera3::Zoom(double dt)
 {
-	/*
-	if (Application::IsKeyPressed(VK_SHIFT)) //resetting to original location
+	fov -= dt * 250 * Application::mouseScroll;
+
+	if (fov < 10.f)
+		fov = 10.f;
+
+	if (fov > 70.f)
+		fov = 70.f;
+}
+
+
+void Camera3::Move(double dt)
+{
+	float yaw = (float)(10.f * dt * (float)(880/2 - Application::getMousePos().x));
+	orientation += yaw;
+
+	if (look <= 90 && look >= -90)
 	{
-		if(throttle * throttleDir > 2.f)
-			throttleDir = -throttleDir;
-		throttle += (float)(throttleDir * throttleSpeed * dt);
+		float pitch = (float)(10.f * dt * (float)(660/2 - Application::getMousePos().y));
+		look += pitch;
 	}
 
-	else
-	{	
-		if(throttle * throttleDir >= 0) //need to minus to reset
-			throttleDir = -throttleDir;
-
-		else if(throttle * throttleDir <= 0) //need to plus to reset
-			throttleDir = throttleDir;
-
-		if(throttleDir > 0)
-		{
-			throttle += (float)(throttleDir * throttleSpeed * dt);
-			if (throttle > 0)
-				throttle = 0;
-		}
-
-		if(throttleDir < 0)
-		{
-			throttle += (float)(throttleDir * throttleSpeed * dt);
-			if (throttle < 0)
-				throttle = 0;
-		}
-	}
-	*/
-
-	if (!stopCamera)
-	{
-		float yaw = (float)(10.f * dt * (float)(880/2 - Application::getMousePos().x));
-		orientation += yaw;
-
-		if (look <= 90 && look >= -90)
-		{
-			float pitch = (float)(10.f * dt * (float)(660/2 - Application::getMousePos().y));
-			look += pitch;
-		}
-	}
 
 	if (look >= 90.f)
 		look = 90.f;
 	if (look <= -90.f)
 		look = -90.f;
+}
 
+void Camera3::Update(double dt)
+{
 	Vector3 view; Vector3 right;
 	view.SphericalToCartesian(orientation, look);
 	right.SphericalToCartesian(orientation - 90.f, 0.0f);
@@ -127,10 +108,12 @@ int Camera3::lookingAt(vector<Object*>object)
 
 void Camera3::Reset()
 {
-	orientation = -90.f;
-	look = 0.f;
+	orientation = defaultOrientation;
+	look = defaultLook;
 
 	position = defaultPosition;
 	target = defaultTarget;
 	up = defaultUp;
+
+	fov = 70;
 }

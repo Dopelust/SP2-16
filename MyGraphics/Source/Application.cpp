@@ -121,7 +121,6 @@ Position Application::getMousePos()
 }
 
 float pauseDelay = 0.f;
-
 Position lastCursor(440, 331, 0);
 
 void Application::Run()
@@ -139,30 +138,30 @@ void Application::Run()
 		scene->Render();
 
 		IsKeyPressed(VK_SPACE);
+		IsKeyPressed('1');
+		IsKeyPressed('2');
+		IsKeyPressed('3');
+		IsKeyPressed('4');
+
 		if(IsKeyPressed('P') && scene->pause == false && pauseDelay == 0)
 		{
 			scene->pause = true;
 			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 			glfwSetCursorPos(m_window, lastCursor.x, lastCursor.y);
-			pauseDelay = 6.f * m_timer.getElapsedTime();
+			pauseDelay = 0.2f;
 		}
 		else if (IsKeyPressed('P') && scene->pause == true && pauseDelay == 0)
 		{
 			scene->pause = false;
 			lastCursor = getMousePos();
 			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-			pauseDelay = 6.f * m_timer.getElapsedTime();
+			pauseDelay = 0.2f;
 		}
 			//IsKeyPressed(VK_SPACE);
 		if (!scene->pause)
 		{
 			glfwSetCursorPos(m_window, 880/2, 660/2);
 		}
-
-		if(pauseDelay > 0)
-			pauseDelay -= m_timer.getElapsedTime();
-		else
-			pauseDelay = 0;
 
 		mouseScroll = 0;
 
