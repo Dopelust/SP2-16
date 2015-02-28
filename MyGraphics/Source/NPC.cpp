@@ -318,6 +318,7 @@ void Cashier::Init()
 	}
 
 	InitDialogue("Filestream//cashier.txt");
+	InitQuest("Filestream//Quests//cashier.txt");
 }
 
 void Cashier::Control(double dt, vector<Object*>object, Player* player)
@@ -333,12 +334,6 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 	{
 		Goto(target, dt, 50.f, 5.f);
 	}
-
-	if (object[player->camera.lookAt] == this)
-		if (Application::IsKeyPressed('E') && position == target && hitDelay == 0)
-		{
-			player->inventory.Checkout();
-		}
 }
 
 void Blindman::Init()
@@ -443,6 +438,7 @@ void Detective::Init()
 	}
 
 	InitDialogue("Filestream//detective.txt");
+	InitQuest("Filestream//Quests//detective.txt");
 }
 
 void Detective::Control(double dt, vector<Object*>object, Player* player)
@@ -518,6 +514,7 @@ void Manager::Init()
 	}
 
 	InitDialogue("Filestream//manager.txt");
+	InitQuest("Filestream//Quests//manager.txt");
 }
 
 void Manager::Control(double dt, vector<Object*>object, Player* player)

@@ -933,6 +933,9 @@ std::string fps;
 float animateHeart = 0.f;
 static int animateHeartDir = 1.f;
 
+Vector3 Select;
+float selectDelay;
+
 void PROJECTScene::Update(double dt)
 {
 	if (!pause)
@@ -1012,9 +1015,9 @@ void PROJECTScene::Update(double dt)
 
 			if (Bank.deposit(player.inventory.wallet))
 			{
-				Vector3 tPos = Vector3(-15.f, 2.5f, 0);
+				Vector3 tPos = Vector3(-15.f, 1.5f, 0);
 				string add = "-$1";
-				text2D.push_back( new OnScreenText(add, tPos) );
+				text2D.push_back( new OnScreenText(add, tPos, true) );
 			}
 		}
 		camera->lookAt = camera->lookingAt(object);
@@ -1022,15 +1025,80 @@ void PROJECTScene::Update(double dt)
 
 	if (textbox != NULL)
 	{
-		if ((Application::IsKeyPressed('E') && inputDelay == 0) || Application::mouseButton(0) || Application::IsKeyPressed(VK_RETURN) )
+		textbox->Update();
+
+		if ( (textbox->type == "Quest" || textbox->type == "Checkout" ) && selectDelay == 0)
+		{
+			if(Application::IsKeyPressed(VK_LEFT))
+			{
+				selectDelay = 0.1f;
+				Select = textbox->getAccept().position;
+			}
+			else if (Application::IsKeyPressed(VK_RIGHT))
+			{
+				selectDelay = 0.1f;
+				Select = textbox->getDecline().position;
+			}
+		}
+		
+		if ((Application::IsKeyPressed('E') || Application::IsKeyPressed(VK_RETURN)) && inputDelay == 0 )
 		{
 			inputDelay = 0.2f;
 
-			textbox = NULL;
-			player.inConversation = false;
+			if (textbox->apparentext.size() < textbox->text.size())
+			{
+				textbox->apparentext = textbox->text;
+
+				if (textbox->type == "Quest" || textbox->type == "Checkout" )
+					Select = textbox->getAccept().position;
+			}
+			else
+			{
+				if (textbox->type == "Quest")
+				{
+					textbox->apparentext.clear();
+
+					if (Select == textbox->getAccept().position)
+					{
+						textbox->triggerQuest();
+						textbox = textbox->getAccept().next;
+					}
+					else
+						textbox = textbox->getDecline().next;
+				}
+				else if (textbox->type == "Checkout")
+				{
+					textbox->apparentext.clear();
+
+					if (Select == textbox->getAccept().position)
+					{
+						float totalPrice = player.inventory.checkPrice();
+
+						if (player.inventory.Checkout())
+						{
+							textbox = textbox->getAccept().next;
+
+							Vector3 tPos = Vector3(-15.f, 1.5f, 0);
+							string add = "-$"; add += to_string (long double (totalPrice) );
+							text2D.push_back( new OnScreenText(add, tPos, true) );
+						}
+						else
+						{
+							textbox = textbox->getAccept().altNext;
+						}
+					}
+					else
+						textbox = textbox->getDecline().next;
+				}
+				else
+				{
+					textbox->apparentext.clear();
+					textbox = NULL;
+					player.inConversation = false;
+				}
+			}
 		}
 	}
-
 	player.Update(dt, object);
 
 	doorway.ButtonUpdate(dt, object, &player);
@@ -1071,17 +1139,25 @@ void PROJECTScene::Update(double dt)
 			character[i]->inConversation = false;
 
 		if (object[camera->lookAt] == character[i])
-			if (Application::IsKeyPressed('E') && !character[i]->inConversation && inputDelay == 0)
-				if (!character[i]->greetings.empty())
+			if (Application::IsKeyPressed('E') && inputDelay == 0)
+			{
+				if (!character[i]->inConversation)
 				{
 					inputDelay = 0.2f;
+					textbox = character[i]->getConversation(&player);
 
-					int r = rand() % character[i]->greetings.size();
-					textbox = &character[i]->greetings[r];
+					if (textbox != NULL)
+					{
+						player.inConversation = true;
 
-					character[i]->inConversation = true;
-					player.inConversation = true;
+						if (textbox->type == "Checkout")
+						{
+							character[i]->InitQuest("Filestream//Quests//cashier.txt");
+							textbox->text = textbox->GenerateText(player.inventory);
+						}
+					}
 				}
+			}
 	}
 
 	for (unsigned int i = 0; i < text.size(); i++)
@@ -1121,11 +1197,15 @@ void PROJECTScene::Update(double dt)
 	fps += "FPS:";
 	fps += to_string(x);
 	
+	if (selectDelay > 0)
+		selectDelay -= float(dt);
+	else
+		selectDelay = 0;
+
 	if (inputDelay > 0)
 		inputDelay -= float(dt);
 	else
 		inputDelay = 0;
-	}
 
 	float animateHeartSpeed = 0;
 	
@@ -1137,6 +1217,8 @@ void PROJECTScene::Update(double dt)
 	if(animateHeart * animateHeartDir > 0.25f)
 		animateHeartDir = -animateHeartDir;
 	animateHeart += (float)(animateHeartDir * animateHeartSpeed * dt);
+
+	}
 }
 
 void PROJECTScene::Render()
@@ -1442,14 +1524,69 @@ void PROJECTScene::Render()
 
 	if (textbox != NULL)
 	{
+		string firstline;
+		string secondline;
+		string lastline;
+
+		for (int i = 0; i < textbox->apparentext.size(); i++)
+		{
+			if (i < 62)
+				firstline += textbox->apparentext[i];
+			else if (i < 62 + 62)
+			{
+				if (i == 62 && textbox->apparentext[i] == ' ')
+					continue;
+				secondline += textbox->apparentext[i];
+			}
+			else
+			{
+				if (i == 62 + 62 && textbox->apparentext[i] == ' ')
+					continue;
+				lastline += textbox->apparentext[i];
+			}
+		}
+
 		modelStack.PushMatrix();
 		modelStack.Translate(textbox->position);
 		RenderMesh(meshList[GEO_TEXTBOX], false);
 			modelStack.PushMatrix();
 			modelStack.Translate(-14,2.5f,0);
-			RenderText(meshList[GEO_TEXT], textbox->text, Color(1, 1, 1));
+			RenderText(meshList[GEO_TEXT], firstline, Color(1, 1, 1));
+				modelStack.PushMatrix();
+				modelStack.Translate(0,-1,0);
+				RenderText(meshList[GEO_TEXT], secondline, Color(1, 1, 1));
+					modelStack.PushMatrix();
+					modelStack.Translate(0,-1,0);
+					RenderText(meshList[GEO_TEXT], lastline, Color(1, 1, 1));
+					modelStack.PopMatrix();
+				modelStack.PopMatrix();
 			modelStack.PopMatrix();
 		modelStack.PopMatrix();
+
+		if ( (textbox->type == "Quest" || textbox->type == "Checkout") && textbox->apparentext == textbox->text)
+		{
+			modelStack.PushMatrix();
+			modelStack.Translate(textbox->getAccept().position);
+			if (Select == textbox->getAccept().position)
+				RenderText(meshList[GEO_TEXT], textbox->getAccept().text, Color(1, 1, 1));
+			else
+				RenderText(meshList[GEO_TEXT], textbox->getAccept().text, Color(0.4f, 0.4f, 0.4f));
+			modelStack.PopMatrix();
+
+			modelStack.PushMatrix();
+			modelStack.Translate(textbox->getDecline().position);
+			if (Select == textbox->getDecline().position)
+				RenderText(meshList[GEO_TEXT], textbox->getDecline().text, Color(1, 1, 1));
+			else
+				RenderText(meshList[GEO_TEXT], textbox->getDecline().text, Color(0.4f, 0.4f, 0.4f));
+			modelStack.PopMatrix();
+
+			modelStack.PushMatrix();
+			modelStack.Translate(Select);
+			modelStack.Translate(-0.6f,0,0);
+			RenderText(meshList[GEO_TEXT], ">" , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
 	}
 
 	for (int i = 0; i < 9; i++)
@@ -1600,7 +1737,7 @@ void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 	float textWidth = 0.f;
 	for(unsigned i = 0; i < text.length(); ++i)
 	{
-		if (text[i] == '.')
+		if (text[i] == '.'|| text[i] == '\'' )
 			textWidth -= 0.1f;
 		else if (text[i] == 'l' || text[i] == 'i')
 			textWidth -= 0.05f;
@@ -1636,7 +1773,7 @@ void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 		{
 			if (text[i] == 'l')
 			{
-				textWidth -= 0.5f;
+				textWidth -= 0.45f;
 				break;
 			}
 			else if (text[i] == 'i')
@@ -1656,9 +1793,9 @@ void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 			}
 		}
 
-		if (text[i] == ' ')
+		if (text[i] == ' ' || text[i] == ',')
 			textWidth -= 0.5f;
-		else if (text[i] == '.')
+		else if (text[i] == '.' || text[i] == '\'' )
 			textWidth -= 0.4f;
 		else if (text[i] == ':')
 			textWidth -= 0.25f;
@@ -1718,7 +1855,7 @@ float PROJECTScene::getTextWidth(string text)
 	float textWidth = 0.f;
 	for(unsigned i = 0; i < text.length(); ++i)
 	{
-		if (text[i] == '.')
+		if (text[i] == '.' || text[i] == '\'' )
 			textWidth -= 0.1f;
 		else if (text[i] == 'l' || text[i] == 'i')
 			textWidth -= 0.05f;
@@ -1747,7 +1884,7 @@ float PROJECTScene::getTextWidth(string text)
 		{
 			if (text[i] == 'l')
 			{
-				textWidth -= 0.5f;
+				textWidth -= 0.45f;
 				break;
 			}
 			else if (text[i] == 'i')
@@ -1767,9 +1904,9 @@ float PROJECTScene::getTextWidth(string text)
 			}
 		}
 
-		if (text[i] == ' ')
+		if (text[i] == ' ' || text[i] == ',')
 			textWidth -= 0.5f;
-		else if (text[i] == '.')
+		else if (text[i] == '.' || text[i] == '\'' )
 			textWidth -= 0.4f;
 		else if (text[i] == ':')
 			textWidth -= 0.25f;
@@ -1863,5 +2000,9 @@ void PROJECTScene::RenderCrosshair()
 void OnScreenText::Update(double dt)
 {
 	elapsedTime += float(dt);
-	textPos.y += 0.03f;
+
+	if (fall)
+		textPos.y -= 0.03f;
+	else
+		textPos.y += 0.03f;
 }

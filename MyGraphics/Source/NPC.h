@@ -24,6 +24,7 @@ public:
 	{
 		type = "NPC";
 		mesh = NULL;
+		quest = NULL;
 		health = 100;
 		elapsedTime = 0;
 		collision.hitbox = Vector3(2.5f, 6.f, 2.5f);
@@ -49,12 +50,33 @@ public:
 	int rotationDir[NUM_BODYPARTS];
 	float elapsedTime;
 	vector<TextBox> greetings;
+	Quest * quest;
 	bool inConversation;
 
 	virtual void Init();
-	virtual void InitDialogue(const char* filename);
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
 	
+	virtual TextBox * getConversation(Player * player)
+	{
+		if (!inConversation)
+		{
+			inConversation = true;
+
+			if (quest == NULL)
+			{
+				int r = rand() % greetings.size();
+				return &greetings[r];
+			}
+			else if (quest->Accept.trigger)
+				return quest->Accept.next;
+			else
+				return quest;
+		}
+
+		return NULL;
+	};
+	void InitDialogue(const char* filename);
+	virtual void InitQuest(const char* filename);
 	void Update(double dt, vector<Object*>object, Player* player);
 	void Orientate(float o, double dt, float speed);
 	void Orientate(Vector3 t, double dt, float speed);
@@ -115,6 +137,24 @@ public:
 	}
 	~Cashier() {};
 
+	void InitQuest(const char* filename);
+	TextBox * getConversation(Player * player)
+	{
+		if (!inConversation)
+		{
+			inConversation = true;
+
+			if (player->inventory.checkPaid())
+			{
+				int r = rand() % greetings.size();
+				return &greetings[r];
+			}
+			else
+				return quest;
+		}
+
+		return NULL;
+	};
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };

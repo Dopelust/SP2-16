@@ -120,6 +120,7 @@ public:
 	bool getPaid() {return paid;};
 	bool paid;
 	float price;
+	float getValue() {return price;};
 };
 
 class Storage : public Object

@@ -27,12 +27,21 @@ public:
 		name = n;
 		textPos = p;
 		elapsedTime = 0;
+		fall = false;
+	};
+	OnScreenText(std::string n, Vector3 p, bool f) 
+	{
+		name = n;
+		textPos = p;
+		elapsedTime = 0;
+		fall = f;
 	};
 	~OnScreenText() {};
 
 	std::string name;
 	Vector3 textPos;
 	float elapsedTime;
+	bool fall;
 
 	void Update(double dt);
 };

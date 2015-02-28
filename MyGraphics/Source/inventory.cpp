@@ -83,8 +83,34 @@ void Inventory::Update(double dt)
 	selector.selectedSlot = &slots[index];
 }
 
+float Inventory::checkPrice()
+{
+	float price = 0.f;
+
+	for (int i = 0; i < 9; i++)
+	{
+		if(!slots[i].item.empty())
+		{
+			if (!slots[i].item[0]->getPaid())
+			{
+				for (int j = 0; j < slots[i].item.size(); j++)
+				{
+					price += slots[i].item[j]->getValue();
+				}
+			}
+		}
+	}
+
+	return price;
+}
+
 bool Inventory::Checkout()
 {
+	if (checkPrice() > wallet.trueValue)
+		return false;
+
+	wallet.trueValue -= checkPrice();
+
 	for (int i = 0; i < 9; i++)
 	{
 		if(!slots[i].item.empty())

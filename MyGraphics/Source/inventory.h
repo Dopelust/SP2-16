@@ -95,7 +95,10 @@ public:
 
 	bool checkPaid();
 	bool Insert(Object* o);
+
+	float checkPrice();
 	bool Checkout();
+
 	bool Remove();
 	void Init(Vector3 pos);
 	void Update(double dt);

@@ -1,0 +1,4 @@
+Do you wish to checkout now? Total Price: $
+Thank you for shopping!
+If you'd excuse me, I still have work to do.
+You have insufficient funds.
