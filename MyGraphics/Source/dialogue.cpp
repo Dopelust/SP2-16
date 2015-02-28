@@ -6,6 +6,7 @@
 Vector3 TextBox::position = Vector3(0,-7.75f,0);
 
 int frame = 0;
+extern Vector3 Select;
 
 void TextBox::Update()
 {
@@ -18,9 +19,10 @@ void TextBox::Update()
 	{
 		if (frame == 0)
 			apparentext += text[apparentext.size()];
+
+		if (apparentext.size() == text.size())
+			Select = getAccept().position;
 	}	
-	else
-		apparentext = text;
 }
 
 void NPC::InitDialogue(const char* filename)

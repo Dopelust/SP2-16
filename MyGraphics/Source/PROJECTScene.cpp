@@ -1175,7 +1175,7 @@ void PROJECTScene::Update(double dt)
 	{
 		text2D[i]->Update(dt);
 
-		if (text2D[i]->elapsedTime > 1.f)
+		if (text2D[i]->elapsedTime > 0.7f)
 		{
 			delete text2D[i];
 			text2D.erase(text2D.begin()+i);
