@@ -39,10 +39,8 @@ class Player : public dynamicObject
 public:
 	enum playerStates
 	{
-		WALK,
-		SPRINT,
 		JUMP,
-		GROUND,
+		EATING,
 		KNIFE,
 		TOTAL_STATES,
 	};
@@ -79,9 +77,6 @@ public:
 
 		holding = -1;
 
-		state[JUMP] = false;
-		value[jumpCooldown] = 0.f;
-
 		camera.Init(position, hOrientation, vOrientation); 
 		inventory.Init(Vector3(0,-10.5,0));
 		inConversation = false;
@@ -106,6 +101,8 @@ public:
 	float getRenderWallet() {return inventory.wallet.apparentValue;};
 	float getWallet() {return inventory.wallet.trueValue;};
 	float getHealth() {return apparentHealth;};
+
+	bool isEating() {return state[EATING];};
 };
 
 class Doorway

@@ -1670,7 +1670,9 @@ void PROJECTScene::Render()
 	if (!player.inventory.selector.selectedSlot->item.empty())
 	{
 		modelStack.PushMatrix();
-		modelStack.Translate(10 + player.value[player.bobbingX],-12 + player.value[player.bobbingY],-2);
+		modelStack.Translate(player.value[player.bobbingX],-12 + player.value[player.bobbingY],-2);
+		if (!player.isEating())
+			modelStack.Translate(10,0,0);
 		modelStack.Rotate(-45,0,1,0);
 		modelStack.Rotate(-10,0,0,1);
 		modelStack.Scale(10,10,10);

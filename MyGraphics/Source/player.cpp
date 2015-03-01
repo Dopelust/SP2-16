@@ -123,13 +123,19 @@ void Player::Update(double dt, vector<Object*>object)
 	if (!stopCamera && !inConversation)
 	{
 		if (Application::mouseButton(1) && inventory.canUse())
+		{
+			state[EATING] = true;
 			value[eatElapsed] += float(dt);
+		}
 		else
+		{
+			state[EATING] = false;
 			value[eatElapsed] = 0;
-
+		}
 		if (value[eatElapsed] > 1.f)
 		{
 			inventory.Remove();
+			state[EATING] = false;
 			value[eatElapsed] = 0;
 		}
 	}
@@ -148,6 +154,11 @@ void Player::Update(double dt, vector<Object*>object)
 	if (value[jumpCooldown] <= 0)
 		value[jumpCooldown] = 0;
 
+	if (health > 100)
+		health = 100;
+	if (health < 0)
+		health = 0;
+
 	if (apparentHealth < health)
 	{
 		apparentHealth += dt * 20;
@@ -163,7 +174,13 @@ void Player::Update(double dt, vector<Object*>object)
 			apparentHealth = health;
 	}
 
-	if (hVelocity.Length() == 0) //resetting to original location
+	if (state[EATING])
+	{
+		if(value[bobbingY] * bobYDir > 0.3f)
+			bobYDir = -bobYDir;
+		value[bobbingY] += (float)(bobYDir * 5 * dt);
+	}
+	else if (hVelocity.Length() == 0) //resetting to original location
 	{	
 		if(value[bobbingX] * bobXDir >= 0) //need to minus to reset
 			bobXDir = -bobXDir;
@@ -228,8 +245,6 @@ void Player::Update(double dt, vector<Object*>object)
 			value[knifeStrike] = 0.f;
 		}
 	}
-
-	state[WALK] = false;
 }
 void Player::Control(double dt, vector<Object*>object)
 {
@@ -248,8 +263,6 @@ void Player::Control(double dt, vector<Object*>object)
 		count++;
 	if(Application::IsKeyPressed('D'))
 		count++;
-
-	state[SPRINT] = false;
 
 	if (hitDelay == 0)
 	{
@@ -276,8 +289,8 @@ void Player::Control(double dt, vector<Object*>object)
 
 		if (Application::mouseButton(1) && inventory.canUse())
 		{
-			velocity.x /= 1.75f;
-			velocity.z /= 1.75f;
+			velocity.x /= 2.f;
+			velocity.z /= 2.f;
 		}
 		else if (Application::IsKeyPressed(VK_SHIFT))
 		{
@@ -292,18 +305,13 @@ void Player::Control(double dt, vector<Object*>object)
 		}
 	}
 
-	if(Application::IsKeyPressed(VK_SPACE) && !state[JUMP] && velocity.y == 0 && value[jumpCooldown] == 0)
+	if(Application::IsKeyPressed(VK_SPACE) && velocity.y == 0 && value[jumpCooldown] == 0)
 	{
 		if (Application::IsKeyPressed(VK_CONTROL))
 			velocity.y = 90;
 		else
 			velocity.y = 30;
 	}
-
-	if (velocity.y > 0)
-		state[JUMP] = true;
-	else
-		state[JUMP] = false;
 }
 
 float eDelay = 0;
@@ -331,7 +339,7 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 
 	if (this == player)
 	{
-		if (player->state[player->JUMP])
+		if (player->velocity.y > 0)
 			minPlayer.y = 0.1f;
 		else
 			minPlayer.y = 0.4f; 
@@ -369,26 +377,7 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 			}
 	}
 }
-/*
-bool Player::checkCollision(Object* b)
-{
-	Vector3 CubeA = collision.hitbox/2; CubeA += collision.centre;
-	Vector3 CubeB = b->collision.hitbox/2; CubeB += b->collision.centre;
 
-	Vector3 maxCubeA = CubeA; maxCubeA += position;
-	Vector3 minCubeA = CubeA - collision.hitbox; minCubeA += position;
-
-	Vector3 maxCubeB = CubeB;  maxCubeB += b->position;
-	Vector3 minCubeB = CubeB - b->collision.hitbox; minCubeB += b->position;
-
-	return(maxCubeA.x > minCubeB.x && 
-	minCubeA.x < maxCubeB.x &&
-    maxCubeA.y > minCubeB.y &&
-    minCubeA.y < maxCubeB.y &&
-    maxCubeA.z > minCubeB.z &&
-    minCubeA.z < maxCubeB.z);
-} 
-*/
 void Doorway::Update(double dt, vector<Object*>object, Player* player) 
 {
 	Vector3 initialPos[2];
