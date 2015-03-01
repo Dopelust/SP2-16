@@ -1574,6 +1574,17 @@ void PROJECTScene::RenderCCTVUI(int number)
 	RenderText(meshList[GEO_TEXT], Cam , Color(1, 1, 1));
 	modelStack.PopMatrix();
 
+	if (!CCTV)
+	{
+		modelStack.PushMatrix();
+		modelStack.Translate(0,-10,0);
+		float textLength = getTextWidth("Backspace to return");
+		modelStack.Scale(0.7f);
+		modelStack.Translate(-textLength/2, 0, 0);
+		RenderText(meshList[GEO_TEXT], "Backspace to return" , Color(1, 1, 1));
+		modelStack.PopMatrix();
+	}
+
 	glEnable(GL_DEPTH_TEST);
 }
 
@@ -1623,20 +1634,36 @@ void PROJECTScene::Render()
 			RenderScene();
 			RenderCCTVUI(i + 1);
 		}
+		
+		glDisable(GL_DEPTH_TEST);
+
+		modelStack.LoadIdentity();
+		viewStack.LoadIdentity();
+		projection.SetToOrtho(-16, 16, -12, 12, -20, 20);
+		projectionStack.LoadMatrix(projection);
+
+		glViewport(0, 0, 880, 660);
+
+		modelStack.PushMatrix();
+		modelStack.Translate(0,0,0);
+		float textLength = getTextWidth("Backspace to return");
+		modelStack.Scale(0.6f);
+		modelStack.Translate(-textLength/2, 0, 0);
+		RenderText(meshList[GEO_TEXT], "Backspace to return" , Color(1, 1, 1));
+		modelStack.PopMatrix();
+		
+		glEnable(GL_DEPTH_TEST);
 	}
 
 	//2D
-	modelStack.PushMatrix();
-	viewStack.PushMatrix();
-	projectionStack.PushMatrix();
-	
-	if (camera == &player.camera)
-	{
 
 	modelStack.LoadIdentity();
 	viewStack.LoadIdentity();
 	projection.SetToOrtho(-16, 16, -12, 12, -20, 20);
 	projectionStack.LoadMatrix(projection);
+
+	if (camera == &player.camera)
+	{
 
 	RenderCrosshair();
 
@@ -1827,7 +1854,7 @@ void PROJECTScene::Render()
 	RenderText(meshList[GEO_TEXT], cash, Color(1, 1, 1));
 	modelStack.PopMatrix();
 
-	string health = to_string(long double(player.getHealth()));
+	string health = to_string(long long(player.getHealth()));
 	modelStack.PushMatrix();
 	modelStack.Translate(-13.4f,-10.5f,0);
 	RenderText(meshList[GEO_TEXT], health, Color(1, player.getHealth() / 100, player.getHealth() / 100));
@@ -1855,16 +1882,12 @@ void PROJECTScene::Render()
 	modelStack.Translate(-1,-1,0);
 	RenderText(meshList[GEO_TEXT], fps, Color(1, 1, 1));
 	modelStack.PopMatrix();
-	
-	projectionStack.PopMatrix();
-	viewStack.PopMatrix();
-	modelStack.PopMatrix();
 
 	glEnable(GL_DEPTH_TEST);
 
 	}
 
-	else
+	else if (!CCTV)
 	{
 		for (int i = 0; i < 4; i++)
 		{

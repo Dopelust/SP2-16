@@ -77,6 +77,7 @@ extern bool stopCamera;
 void Player::Update(double dt, vector<Object*>object)
 {
 	Vector3 initialPos = position;
+	Vector3 hVelocity = velocity; hVelocity.y = 0;
 
 	if (!inConversation && !stopCamera)
 		Control(dt, object);
@@ -95,6 +96,21 @@ void Player::Update(double dt, vector<Object*>object)
 	camera.position = position;
 	camera.position.y += value[eyeLevel];
 
+	if (Application::IsKeyPressed(VK_SHIFT) && hVelocity != 0)
+	{
+		if (camera.fov < 90)
+			camera.fov += 300 * dt;
+		else
+			camera.fov = 90;
+	}
+	else 
+	{
+		if (camera.fov > 70)
+			camera.fov -= 200 * dt;
+		else
+			camera.fov = 70;
+	}
+
 	if (!stopCamera)
 	{
 		camera.Move(dt);
@@ -104,8 +120,23 @@ void Player::Update(double dt, vector<Object*>object)
 	hOrientation = camera.orientation;
 	vOrientation = camera.look;
 
-	if (!stopCamera)
+	if (!stopCamera && !inConversation)
+	{
+		if (Application::mouseButton(1) && inventory.canUse())
+			value[eatElapsed] += float(dt);
+		else
+			value[eatElapsed] = 0;
+
+		if (value[eatElapsed] > 1.f)
+		{
+			inventory.Remove();
+			value[eatElapsed] = 0;
+		}
+	}
+	if (!stopCamera || inConversation)
+	{
 		inventory.Update(dt);
+	}
 
 	if (hitDelay > 0)
 		hitDelay -= dt;
@@ -117,7 +148,22 @@ void Player::Update(double dt, vector<Object*>object)
 	if (value[jumpCooldown] <= 0)
 		value[jumpCooldown] = 0;
 
-	if (state[WALK] ==  false) //resetting to original location
+	if (apparentHealth < health)
+	{
+		apparentHealth += dt * 20;
+
+		if (apparentHealth > health)
+			apparentHealth = health;
+	}
+	else if (apparentHealth > health)
+	{
+		apparentHealth -= dt * 20;
+
+		if (apparentHealth < health)
+			apparentHealth = health;
+	}
+
+	if (hVelocity.Length() == 0) //resetting to original location
 	{	
 		if(value[bobbingX] * bobXDir >= 0) //need to minus to reset
 			bobXDir = -bobXDir;
@@ -138,19 +184,15 @@ void Player::Update(double dt, vector<Object*>object)
 			value[bobbingY] += (float)(bobYDir * 1.0f * dt); 
 	}
 
-	else if (state[WALK] == true)
+	else
 	{
 		if(value[bobbingX] * bobXDir > 0.3f)
 			bobXDir = -bobXDir;
-		value[bobbingX] += (float)(bobXDir * 1.0f * dt);
-		if (state[SPRINT] == true)
-			value[bobbingX] += (float)(bobXDir * 1.0f * dt);
+		value[bobbingX] += (float)(bobXDir * ( hVelocity.Length() / 30 ) * dt);
 
 		if(value[bobbingY] * bobYDir > 0.15f)
 			bobYDir = -bobYDir;
-		value[bobbingY] += (float)(bobYDir * 1.0f * dt);
-		if (state[SPRINT] == true)
-			value[bobbingY] += (float)(bobYDir * 1.0f * dt);
+		value[bobbingY] += (float)(bobYDir * ( hVelocity.Length() / 30 ) * dt);
 	}
 
 	if(Application::mouseButton(0) && value[knifeCooldown] == 0)
@@ -232,10 +274,15 @@ void Player::Control(double dt, vector<Object*>object)
 		velocity.x = v.x * 30;
 		velocity.z = v.z * 30;
 
-		if (Application::IsKeyPressed(VK_SHIFT))
+		if (Application::mouseButton(1) && inventory.canUse())
 		{
-			velocity.x *= 2;
-			velocity.z *= 2;
+			velocity.x /= 1.75f;
+			velocity.z /= 1.75f;
+		}
+		else if (Application::IsKeyPressed(VK_SHIFT))
+		{
+			velocity.x *= 1.5f;
+			velocity.z *= 1.5f;
 		}
 
 		if (count == 2)

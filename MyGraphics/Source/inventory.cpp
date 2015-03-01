@@ -178,6 +178,17 @@ bool Inventory::Remove()
 	return false;
 }
 
+bool Inventory::canUse()
+{
+	if(!selector.selectedSlot->item.empty())
+		if(selector.selectedSlot->item[0]->getPaid())
+		{
+			return true;
+		}
+
+	return false;
+}
+
 bool Inventory::checkPaid()
 {
 	for (int i = 0; i < 9; i++)

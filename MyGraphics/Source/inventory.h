@@ -94,6 +94,7 @@ public:
 	Mesh * slotMeshes[3];
 
 	bool checkPaid();
+	bool canUse();
 	bool Insert(Object* o);
 
 	float checkPrice();

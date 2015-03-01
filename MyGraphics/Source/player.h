@@ -54,15 +54,16 @@ public:
 		knifeRotation,
 		knifeStrike,
 		knifeCooldown,
-		mouseSens,
 		eyeLevel,
 		jumpCooldown,
+		eatElapsed,
 		TOTAL_VALUES,
 	};
 	Player() 
 	{
 		type = "Player";
 		health = 100;
+		apparentHealth = 100;
 		position = Vector3(0, 2, -100);
 		for (int i = 0; i < TOTAL_VALUES; i++)
 		{
@@ -76,7 +77,6 @@ public:
 		hOrientation = 0;
 		vOrientation = 0;
 
-		value[mouseSens] = 10.f;
 		holding = -1;
 
 		state[JUMP] = false;
@@ -91,6 +91,7 @@ public:
 
 	float hOrientation;
 	float vOrientation;
+	float apparentHealth;
 	Inventory inventory;
 	Camera3 camera;
 
@@ -104,6 +105,7 @@ public:
 
 	float getRenderWallet() {return inventory.wallet.apparentValue;};
 	float getWallet() {return inventory.wallet.trueValue;};
+	float getHealth() {return apparentHealth;};
 };
 
 class Doorway
