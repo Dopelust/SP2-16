@@ -132,6 +132,7 @@ private:
 	Doorway AutoDoor;
 	ATM Bank;
 	Vending Machine;
+	Security Camera;
 
 	Light light[3];
 	void RenderScene();
