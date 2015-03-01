@@ -138,6 +138,7 @@ void Application::Run()
 		scene->Render();
 
 		IsKeyPressed(VK_SPACE);
+		IsKeyPressed(VK_BACK);
 		IsKeyPressed('1');
 		IsKeyPressed('2');
 		IsKeyPressed('3');

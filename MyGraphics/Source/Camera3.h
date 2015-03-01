@@ -23,7 +23,7 @@ public:
 	float look;
 	int lookAt;
 
-	int lookingAt(vector<Object*>object);
+	int lookingAt(vector<Object*>object, int Reach);
 
 	Camera3();
 	~Camera3();

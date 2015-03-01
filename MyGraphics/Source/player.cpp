@@ -305,13 +305,18 @@ void Player::Control(double dt, vector<Object*>object)
 		}
 	}
 
-	if(Application::IsKeyPressed(VK_SPACE) && velocity.y == 0 && value[jumpCooldown] == 0)
+	if(Application::IsKeyPressed(VK_SPACE) && !state[JUMP] && velocity.y == 0 && value[jumpCooldown] == 0)
 	{
 		if (Application::IsKeyPressed(VK_CONTROL))
 			velocity.y = 90;
 		else
 			velocity.y = 30;
 	}
+
+	if (velocity.y > 0)
+		state[JUMP] = true;
+	else
+		state[JUMP] = false;
 }
 
 float eDelay = 0;
@@ -339,7 +344,7 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 
 	if (this == player)
 	{
-		if (player->velocity.y > 0)
+		if (player->state[player->JUMP])
 			minPlayer.y = 0.1f;
 		else
 			minPlayer.y = 0.4f; 

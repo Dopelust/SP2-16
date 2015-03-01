@@ -68,10 +68,10 @@ void Camera3::Update(double dt)
 	target = view*7 + position;
 }
 
-int Camera3::lookingAt(vector<Object*>object)
+int Camera3::lookingAt(vector<Object*>object, int Reach)
 {
 	Vector3 view = (target - position).Normalized(); view/=10;
-	Object r(position + view*59.5f, Vector3(0,0,0), Vector3(12,12,12));
+	Object r(position + view* ( (Reach/2) - 0.5f ), Vector3(0,0,0), Vector3(Reach/10,Reach/10,Reach/10));
 	Object o(position, Vector3(0,0,0), Vector3(0.1f,0.1f,0.1f));
 
 	vector<Object*> closeObjects;
@@ -89,7 +89,7 @@ int Camera3::lookingAt(vector<Object*>object)
 	if (!closeObjects.empty())
 	{
 		int reach = 0;
-		for (Vector3 p = position; reach < 120; p += view)
+		for (Vector3 p = position; reach < Reach; p += view)
 		{
 			for (unsigned int i = 0; i < closeObjects.size(); i++)
 			{

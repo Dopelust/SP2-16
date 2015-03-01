@@ -109,13 +109,13 @@ void PROJECTScene::RicssonInit()
 		hitBox = Vector3(0.5f,6,3.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new Object(Vector3(10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
 		object.push_back( new Object(Vector3(-10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox, cube));
-		hitBox = Vector3(20,0.25f,1.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new Storage(Vector3(0,0,z + 1), Vector3(0,0.375,0), hitBox, cube));
-		object.push_back( new Storage(Vector3(0,2,z + 1), Vector3(0,0.375,0), hitBox, cube));
-		object.push_back( new Storage(Vector3(0,4,z + 1), Vector3(0,0.375,0), hitBox, cube));
-		object.push_back( new Storage(Vector3(0,0,z - 1), Vector3(0,0.375,0), hitBox, cube));
-		object.push_back( new Storage(Vector3(0,2,z - 1), Vector3(0,0.375,0), hitBox, cube));
-		object.push_back( new Storage(Vector3(0,4,z - 1), Vector3(0,0.375,0), hitBox, cube));
+		hitBox = Vector3(20,0.1f,1.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Storage(Vector3(0,0,z + 1), Vector3(0,0.45,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,2,z + 1), Vector3(0,0.45,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,4,z + 1), Vector3(0,0.45,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,0,z - 1), Vector3(0,0.45,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,2,z - 1), Vector3(0,0.45,0), hitBox, cube));
+		object.push_back( new Storage(Vector3(0,4,z - 1), Vector3(0,0.45,0), hitBox, cube));
 	}
 
 	for (int x = 0; x < 2; x++)
@@ -125,10 +125,10 @@ void PROJECTScene::RicssonInit()
 			Vector3 p(-50 + x * 18,0, z * -15);
 
 			tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
-			hitBox = Vector3(6, 3.25f, 6); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-			object.push_back( new Storage(p, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+			hitBox = Vector3(6, 0.1f, 6); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+			object.push_back( new Storage(p, Vector3(0,3.2f,0), hitBox, tempMesh, cube));
 
-			p.y += hitBox.y;
+			p.y += 3.25f;
 
 			int r = rand () % 2;
 
@@ -183,10 +183,10 @@ void PROJECTScene::RicssonInit()
 			Vector3 p(30 + x * 18,0, z * -15);
 
 			tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
-			hitBox = Vector3(6, 3.25f, 6); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-			object.push_back( new Storage(p, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube));
+			hitBox = Vector3(6, 0.1f, 6); cube = MeshBuilder::GenerateCube("Chocolate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+			object.push_back( new Storage(p, Vector3(0,3.2f,0), hitBox, tempMesh, cube));
 
-			p.y += hitBox.y;
+			p.y += 3.25f;
 
 			int r = rand () % 2;
 
@@ -546,8 +546,8 @@ void PROJECTScene::JessicaInit()
 	hitBox = Vector3(20,6,0.5f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	for (int z = 0; z < 2; z++)
 	{
-		hitBox = Vector3(4.4f,2.05f,13.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new Storage(Vector3(-77.6f,0,-69.45f + z * 18.75f), Vector3(0.3f,hitBox.y/2,0), hitBox, tempMesh, cube));
+		hitBox = Vector3(4.4f,0.1f,13.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Storage(Vector3(-77.6f,0,-69.45f + z * 18.75f), Vector3(0.3f,2.f,0), hitBox, tempMesh, cube));
 		hitBox = Vector3(4.4f,0.1f,13.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new Storage(Vector3(-77.6f,4.65f + 0.3f,-69.45f + z * 18.75f), Vector3(0.3f,hitBox.y/2,0), hitBox, cube));
 		hitBox = Vector3(5.f,8.3f,0.3f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
@@ -559,8 +559,8 @@ void PROJECTScene::JessicaInit()
 
 	for (int z = 0; z < 2; z++)
 	{
-		hitBox = Vector3(4.4f,2.05f,13.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new Storage(Vector3(-77.6f,0,24.45f + z * -18.75f), Vector3(0.3f,hitBox.y/2,0), hitBox, tempMesh, cube));
+		hitBox = Vector3(4.4f,0.1f,13.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new Storage(Vector3(-77.6f,0,24.45f + z * -18.75f), Vector3(0.3f,2.f,0), hitBox, tempMesh, cube));
 		hitBox = Vector3(4.4f,0.1f,13.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new Storage(Vector3(-77.6f,4.65f + 0.3f,24.45f + z * -18.75f), Vector3(0.3f,hitBox.y/2,0), hitBox, cube));
 		hitBox = Vector3(5.f,8.3f,0.3f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
@@ -569,8 +569,8 @@ void PROJECTScene::JessicaInit()
 		hitBox = Vector3(5,1.f,13.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new Object(Vector3(-77.6f,7.3f,24.45f + z * -18.75f), Vector3(0,hitBox.y/2,0), hitBox, cube));
 	}
-	hitBox = Vector3(13.4f,2.05f,4.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Storage(Vector3(-62.5f,0,39.1), Vector3(0,hitBox.y/2,0.3f), hitBox, tempMesh, cube, 90));
+	hitBox = Vector3(13.4f,0.1f,4.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Storage(Vector3(-62.5f,0,39.1), Vector3(0,2.f,0.3f), hitBox, tempMesh, cube, 90));
 	hitBox = Vector3(13.4f,0.1f,4.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Storage(Vector3(-62.5f,4.65f + 0.3f,39.1), Vector3(0,hitBox.y/2,0.3f), hitBox, cube));
 	hitBox = Vector3(0.3f,8.3f,5.f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
@@ -579,8 +579,8 @@ void PROJECTScene::JessicaInit()
 	hitBox = Vector3(13.4f,1.f,5); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-62.5f,7.3f,39.1), Vector3(0,hitBox.y/2,0), hitBox, cube));
 
-	hitBox = Vector3(13.4f,2.05f,4.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Storage(Vector3(-62.5f,0,-84.1), Vector3(0,hitBox.y/2,0.3f), hitBox, tempMesh, cube, 270));
+	hitBox = Vector3(13.4f,0.1f,4.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Storage(Vector3(-62.5f,0,-84.1), Vector3(0,2.f,0.3f), hitBox, tempMesh, cube, 270));
 	hitBox = Vector3(13.4f,0.1f,4.4f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Storage(Vector3(-62.5f,4.65f + 0.3f,-84.1), Vector3(0,hitBox.y/2,0.3f), hitBox, cube));
 	hitBox = Vector3(0.3f,8.3f,5.f); cube = MeshBuilder::GenerateCube("ShelfHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
@@ -965,8 +965,10 @@ void PROJECTScene::Update(double dt)
 	else
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
+	if (camera == &player.camera)
+	{
 
-	camera->lookAt = camera->lookingAt(object);
+	camera->lookAt = camera->lookingAt(object, 120);
 
 	if (player.holding < 0)
 	if ((Application::IsKeyPressed('E')) && inputDelay == 0)
@@ -1048,7 +1050,7 @@ void PROJECTScene::Update(double dt)
 				text2D.push_back( new OnScreenText(add, tPos, true) );
 			}
 		}
-		camera->lookAt = camera->lookingAt(object);
+		camera->lookAt = camera->lookingAt(object, 120);
 	}
 
 	if (textbox != NULL)
@@ -1129,6 +1131,8 @@ void PROJECTScene::Update(double dt)
 		}
 	}
 	
+	}
+
 	player.Update(dt, object);
 
 	doorway.ButtonUpdate(dt, object, &player);
@@ -1168,6 +1172,7 @@ void PROJECTScene::Update(double dt)
 		if (textbox == NULL)
 			character[i]->inConversation = false;
 
+		if (camera == &player.camera)
 		if (object[camera->lookAt] == character[i])
 			if (Application::IsKeyPressed('E') && inputDelay == 0)
 			{
@@ -1683,16 +1688,55 @@ void PROJECTScene::Render()
 	glDisable(GL_DEPTH_TEST);
 
 	if (player.holding < 0)
-	if (object[camera->lookAt]->mesh != NULL)
 	{
-		if (object[camera->lookAt]->type == "Item" || object[camera->lookAt]->mesh->name == "Button")
+		if (object[camera->lookAt]->type == "Money" || object[camera->lookAt]->type == "Item" || (object[camera->lookAt]->mesh != NULL && object[camera->lookAt]->mesh->name == "Button"))
 		{
 			string tooltip;
 			if (object[camera->lookAt]->mesh->name == "Button")
 				tooltip += "E to push ";
 			else if(object[camera->lookAt]->type == "Item")
+				tooltip += "E to take ";
+			else if(object[camera->lookAt]->type == "Money")
 				tooltip += "E to loot ";
 
+			if(object[camera->lookAt]->type == "Money")
+			{
+				tooltip += "$";
+				tooltip += to_string(long double (object[camera->lookAt]->getValue()));
+			}
+			else
+				tooltip += object[camera->lookAt]->mesh->name;
+
+			if (object[camera->lookAt]->type == "Item")
+			{
+				tooltip += " ($";
+				tooltip += to_string(long double (object[camera->lookAt]->getValue()));
+				tooltip += ")";
+			}
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,-5,0);
+			float textLength = getTextWidth(tooltip);
+			modelStack.Translate(-textLength/2, 0, 0);
+			modelStack.Scale(1,1,1);
+			RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+		else if(object[camera->lookAt]->type == "Storage" && !player.inventory.selector.selectedSlot->item.empty())
+		{
+			string tooltip = "E to place ";
+			tooltip += player.inventory.selector.selectedSlot->item[0]->mesh->name;
+
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,-5,0);
+			float textLength = getTextWidth(tooltip);
+			modelStack.Translate(-textLength/2, 0, 0);
+			modelStack.Scale(1,1,1);
+			RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+		else if(object[camera->lookAt]->type == "Dynamic")
+		{
+			string tooltip = "E to carry ";
 			tooltip += object[camera->lookAt]->mesh->name;
 
 			modelStack.PushMatrix();
@@ -1710,7 +1754,7 @@ void PROJECTScene::Render()
 				ATM_actions = "E to withdraw $1";
 			else if(object[camera->lookAt] == &Bank.Deposit)
 				ATM_actions = "E to deposit $1";
-	
+
 			modelStack.PushMatrix();
 			modelStack.Translate(0.35f,-5,0);
 			float textLength = getTextWidth(ATM_actions);
@@ -1719,12 +1763,10 @@ void PROJECTScene::Render()
 			RenderText(meshList[GEO_TEXT],ATM_actions , Color(1, 1, 1));
 			modelStack.PopMatrix();
 		}
-
 		else if(object[camera->lookAt]->type == "Vending Machine")
 		{
 			string Vending_actions;
-			if(object[camera->lookAt] == &Machine.Drink)
-				Vending_actions = "E to Buy Drink $ 2";
+			Vending_actions = "E to buy drink ($2)";
 
 			modelStack.PushMatrix();
 			modelStack.Translate(0.35f,-5,0);
@@ -1735,7 +1777,7 @@ void PROJECTScene::Render()
 			modelStack.PopMatrix();
 		}
 	}
-
+	
 	if (textbox != NULL)
 	{
 		string firstline;
@@ -1849,7 +1891,7 @@ void PROJECTScene::Render()
 	RenderMesh(meshList[GEO_QUAD], false);
 	modelStack.PopMatrix();
 
-	string cash = "$";
+	string cash = "$ ";
 	cash += to_string(long double(player.getRenderWallet()));
 	modelStack.PushMatrix();
 	modelStack.Translate(-14.8f,2,0);
@@ -2019,11 +2061,11 @@ void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 
 		if (text[i] == ' ' || text[i] == ',')
 			textWidth -= 0.5f;
-		else if (text[i] == '.' || text[i] == '\'' )
+		else if (text[i] == '.' || text[i] == '\''|| text[i] == '(' || text[i] == ')')
 			textWidth -= 0.4f;
 		else if (text[i] == ':')
 			textWidth -= 0.25f;
-		else if (text[i] == '-' || text[i] == '+')
+		else if (text[i] == '-' || text[i] == '+' || text[i] == '$')
 			textWidth -= 0.3f;
 
 		textWidth += 0.8f;
@@ -2130,11 +2172,11 @@ float PROJECTScene::getTextWidth(string text)
 
 		if (text[i] == ' ' || text[i] == ',')
 			textWidth -= 0.5f;
-		else if (text[i] == '.' || text[i] == '\'' )
+		else if (text[i] == '.' || text[i] == '\''|| text[i] == '(' || text[i] == ')')
 			textWidth -= 0.4f;
 		else if (text[i] == ':')
 			textWidth -= 0.25f;
-		else if (text[i] == '-' || text[i] == '+')
+		else if (text[i] == '-' || text[i] == '+' || text[i] == '$')
 			textWidth -= 0.3f;
 
 		textWidth += 0.8f;
