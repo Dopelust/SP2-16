@@ -724,15 +724,34 @@ void PROJECTScene::JessicaInit()
 	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-95,hitBox.y/2+25,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
-	hitBox = Vector3(27, 2, 33); 
+	/*hitBox = Vector3(27, 2, 33); 
 	tempMesh = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
 	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-95.5,hitBox.y/2+48,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	*/
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Securiuty Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
 	object.push_back( new Object(Vector3(-79.95f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+
+	//~~~~SECURITY ITEMS~~~~~
+
+	tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
+	hitBox = Vector3(6, 4.f, 6); cube = MeshBuilder::GenerateCube("table", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	for (float y = -102; y <= -87; y+= 5)
+	{
+		object.push_back( new Object(Vector3(y , 27.25, 38.45f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	}
+
+	tempMesh = MeshBuilder::GenerateOBJ("CCTV - TV", "OBJ//tv.obj"); tempMesh->textureID = LoadTGA("Image//tv.tga");
+	hitBox = Vector3(2.f, 2.f, 2.0f); cube = MeshBuilder::GenerateCube("TV_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	Object L(Vector3( -90, 30.5, 38.45f), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false);
+	Object K(Vector3( -97, 30.5, 38.45f), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false);
+	Camera = Security(L, K);
+	object.push_back( &Camera.Look );
+	object.push_back( &Camera.Looks );
+
 
 }
 void PROJECTScene::DarrenInit()
@@ -1003,18 +1022,32 @@ void PROJECTScene::Update(double dt)
 		}
 		else if (object[camera->lookAt]->type == "Vending Machine")
 		{
-			/*
+			
 			inputDelay = 0.2f;
 
 			if (Machine.drink())
 				player.inventory.wallet.trueValue -= 2.f;
-				*/
+				
+		}
+
+		else if (object[camera->lookAt] == &Camera.Look)
+		{
 
 			CCTV = true;
 			stopCamera = true;
 
 			inputDelay = 0.2f;
 		}
+
+		else if (object[camera->lookAt] == &Camera.Looks)
+		{
+
+			CCTV = true;
+			stopCamera = true;
+
+			inputDelay = 0.2f;
+		}
+
 		else if (object[camera->lookAt]->type == "Money")
 		{
 			player.inventory.wallet.trueValue += object[camera->lookAt]->getValue();
@@ -1529,6 +1562,7 @@ void PROJECTScene::RenderScene()
 		RenderText(meshList[GEO_TEXT], P_Drink, Color(1, 1, 1));
 		modelStack.PopMatrix();
 	}
+
 	}
 	glEnable(GL_DEPTH_TEST);
 }
@@ -1784,6 +1818,21 @@ void PROJECTScene::Render()
 			RenderText(meshList[GEO_TEXT],Vending_actions , Color(1, 1, 1));
 			modelStack.PopMatrix();
 		}
+		else if(object[camera->lookAt]->type == "CCTV - TV")
+		{
+			string TV_actions;
+			if(object[camera->lookAt] == &Camera.Look || object[camera->lookAt] == &Camera.Looks)
+				TV_actions = "E TO VIEW";
+
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,-5,0);
+			float textLength = getTextWidth(TV_actions);
+			modelStack.Translate(-textLength/2, 0, 0);
+			modelStack.Scale(1,1,1);
+			RenderText(meshList[GEO_TEXT],TV_actions , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+
 	}
 	
 	if (textbox != NULL)
