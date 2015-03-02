@@ -171,7 +171,9 @@ bool Inventory::Remove()
 {
 	if (!selector.selectedSlot->item.empty())
 	{
+		delete selector.selectedSlot->item[selector.selectedSlot->item.size() - 1];
 		selector.selectedSlot->item.pop_back();
+
 		return true;
 	}
 

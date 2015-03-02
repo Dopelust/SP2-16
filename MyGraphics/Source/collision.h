@@ -84,37 +84,14 @@ public:
 	float getValue() {return value;};
 };
 
-class Vending
-{
-public:
-	Vending() {};
-	Vending(Object D) { Drink = D; Drink.type = "Vending Machine"; drinks = 3;};
-	~Vending() {};
-
-	float drinks;
-	float getDrinks() {return drinks;};
-	
-	bool drink() 
-	{ 
-		if (drinks != 0)
-		{
-			drinks -= 1; 
-			return true;
-		}
-		return false;
-	};
-
-	Object Drink;
-};
-
 class Item : public Object
 {
 public:
 	Item() {ignoreCollision = true;};
 	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {paid = false; type = "Item";}
 	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, float P, float R) :	Object(p,c,h,m,b,s,o,i) {restore = R;price = P; paid = false; type = "Item";};
-	//Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, bool P) :	Object(p,c,h,m,b,s,o,i) {paid = P; type = "Item";};
-	~Item();
+	Item(Mesh * m, bool t, bool p) {mesh = m; type = t; paid = p;}
+	~Item() {};
 
 	void setPaid(bool p) {paid = p;};
 	bool getPaid() {return paid;};
@@ -124,6 +101,32 @@ public:
 	float restore;
 	float getValue() {return price;};
 	float getHealth() {return restore;};
+};
+
+class Vending
+{
+public:
+	Vending() {};
+	Vending(Object D) 
+	{
+		Drink = D; Drink.type = "Vending Machine"; 
+		price = 2.f;
+	};
+	~Vending() {};
+
+	float price;
+	Item * generateDrink() 
+	{ 
+		price *= 2;
+
+		Mesh * canMesh;
+		canMesh =  MeshBuilder::GenerateOBJ("Statboost Drink", "OBJ//can.obj");
+		canMesh->textureID = LoadTGA("Image//Food//mountaindew.tga");
+
+		return new Item(canMesh, "Statboost", true);
+	};
+
+	Object Drink;
 };
 
 class Storage : public Object

@@ -1015,6 +1015,12 @@ void PROJECTScene::Init()
 	meshList[GEO_HEART] = MeshBuilder::GenerateXYQuad("Heart", Color(1,1,1), 1, 1, 1);
 	meshList[GEO_HEART]->textureID = LoadTGA("Image//UI//heart.tga");
 
+	meshList[GEO_SPRINT] = MeshBuilder::GenerateXYQuad("Sprint", Color(1,1,1), 1, 1, 1);
+	meshList[GEO_SPRINT]->textureID = LoadTGA("Image//UI//sprint.tga");
+
+	meshList[GEO_JUMP] = MeshBuilder::GenerateXYQuad("Jump", Color(1,1,1), 1, 1, 1);
+	meshList[GEO_JUMP]->textureID = LoadTGA("Image//UI//jump.tga");
+
 	meshList[GEO_CCTV] = MeshBuilder::GenerateXYQuad("CCTV Overlay", Color(1,1,1), 4, 3, 1);
 	meshList[GEO_CCTV]->textureID = LoadTGA("Image//UI//cctv.tga");
 
@@ -1061,9 +1067,8 @@ long double x;
 std::string fps;
 float animateHeart = 0.f;
 static int animateHeartDir = 1.f;
-
 Vector3 Select;
-float selectDelay;
+float selectDelay = 0.f;
 extern float pauseDelay;
 
 bool CCTV = false;
@@ -1075,8 +1080,8 @@ void PROJECTScene::Update(double dt)
 	soundUpdate(player);
 	
 	vec3df pos(0, 0, -110);
-	if (!engine->isCurrentlyPlaying("Media/unravel.mp3"))
-		engine->play3D("Media/unravel.mp3", pos);
+	if (!engine->isCurrentlyPlaying("Media/bgm.mp3"))
+		engine->play3D("Media/bgm.mp3", pos);
 
 
 	if(pauseDelay > 0)
@@ -1093,7 +1098,7 @@ void PROJECTScene::Update(double dt)
 
 	if (camera == &player.camera)
 	{
-		camera->lookAt = camera->lookingAt(object, 120);
+		camera->lookAt = camera->lookingAt(object, 100);
 
 	if (player.holding < 0)
 	if ((Application::IsKeyPressed('E')) && inputDelay == 0)
@@ -1103,9 +1108,6 @@ void PROJECTScene::Update(double dt)
 			if (player.inventory.Insert(object[camera->lookAt]))
 			{	
 				inputDelay = 0.2f;
-
-				Vector3 tPos = object[camera->lookAt]->position + object[camera->lookAt]->collision.centre;
-				text.push_back( new OnScreenText("+1 " + object[camera->lookAt]->mesh->name,tPos) );
 				object.erase(object.begin()+camera->lookAt);
 			}
 		}
@@ -1127,10 +1129,15 @@ void PROJECTScene::Update(double dt)
 		{
 			inputDelay = 0.2f;
 
-			if (Machine.drink())
+			if (player.inventory.wallet.trueValue >= Machine.price)
 			{
-				player.inventory.wallet.trueValue -= 2.f;
-				text2D.push_back( new OnScreenText("-$2", Vector3(-15.f, 1.5f, 0), true) );
+				player.inventory.wallet.trueValue -= Machine.price;
+
+				string price = "-$";
+				price += to_string(long double(Machine.price));
+				text2D.push_back( new OnScreenText(price, Vector3(-15.f, 1.5f, 0), true) );
+
+				player.inventory.Insert(Machine.generateDrink());
 			}
 		}
 		else if (object[camera->lookAt]->type == "Control Panel")
@@ -1166,7 +1173,7 @@ void PROJECTScene::Update(double dt)
 				text2D.push_back( new OnScreenText("-$1", Vector3(-15.f, 1.5f, 0), true) );
 		}
 
-		camera->lookAt = camera->lookingAt(object, 120);
+		camera->lookAt = camera->lookingAt(object, 100);
 	}
 
 	if (textbox != NULL)
@@ -1628,11 +1635,7 @@ void PROJECTScene::RenderScene()
 	}
 	else if (object[camera->lookAt]->type == "Vending Machine")
 	{
-		string P_Drink;
-		long double m = Machine.getDrinks();
-		P_Drink += "Drink:";
-		P_Drink += to_string(m);
-
+		string P_Drink = "Permanent Stat Boost!";
 		modelStack.PushMatrix();
 		modelStack.Translate(object[camera->lookAt]->position);
 		modelStack.Translate(0,9.f,0);
@@ -1891,7 +1894,9 @@ void PROJECTScene::Render()
 		else if(object[camera->lookAt]->type == "Vending Machine")
 		{
 			string Vending_actions;
-			Vending_actions = "E to buy drink ($2)";
+			Vending_actions = "E to buy drink ($";
+			Vending_actions += to_string(long double(Machine.price));
+			Vending_actions += ")";
 
 			modelStack.PushMatrix();
 			modelStack.Translate(0.35f,-5,0);
@@ -2022,6 +2027,28 @@ void PROJECTScene::Render()
 		modelStack.Translate(0,12.5,0);
 		RenderMesh(meshList[GEO_QUAD], false);
 		modelStack.PopMatrix();
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Translate(-14.5f,6,0);
+		modelStack.PushMatrix();
+		modelStack.Scale(0.45f,1,1);
+		RenderMesh(meshList[GEO_QUAD], false);
+		modelStack.PopMatrix();
+	modelStack.Translate(-0.5f,0,0);
+	modelStack.Scale(1.1f);
+	RenderMesh(meshList[GEO_SPRINT], false);
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Translate(-14.5f,4,0);
+		modelStack.PushMatrix();
+		modelStack.Scale(0.45f,1,1);
+		RenderMesh(meshList[GEO_QUAD], false);
+		modelStack.PopMatrix();
+	modelStack.Translate(-0.5f,0,0);
+	modelStack.Scale(1.1f);
+	RenderMesh(meshList[GEO_JUMP], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();

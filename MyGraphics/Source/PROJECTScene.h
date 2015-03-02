@@ -65,6 +65,8 @@ class PROJECTScene : public Scene
 		GEO_LIGHTBALL,
 		GEO_QUAD,
 		GEO_HEART,
+		GEO_SPRINT,
+		GEO_JUMP,
 		GEO_TEXT,
 		GEO_LINE,
 		GEO_CUBE,
