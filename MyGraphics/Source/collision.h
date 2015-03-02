@@ -123,6 +123,7 @@ public:
 	float price;
 	float restore;
 	float getValue() {return price;};
+	float getHealth() {return restore;};
 };
 
 class Storage : public Object

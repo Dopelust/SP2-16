@@ -1,6 +1,4 @@
-﻿#include <irrKlang.h>
-
-#include "PROJECTScene.h"
+﻿#include "PROJECTScene.h"
 #include "GL\glew.h"
 
 #include "shader.hpp"
@@ -10,6 +8,7 @@
 #include "MeshBuilder.h"
 
 #include "GLFW\glfw3.h"
+
 using namespace::std;
 
 float PROJECTScene::inputDelay = 0.f;
@@ -954,6 +953,8 @@ void PROJECTScene::Init()
 	textbox = NULL;
 
 	text2D.push_back( new OnScreenText("+$50", Vector3(-15.f, 2.5f, 0)) );
+
+	soundInit();
 }
 
 long double x;
@@ -970,6 +971,11 @@ bool stopCamera = false;
 
 void PROJECTScene::Update(double dt)
 {
+	soundUpdate(player);
+	
+	vec3df pos(0, 0, 0);
+	engine->play3D("../IrrKlang/media/explosion.wav", pos);
+
 	if(pauseDelay > 0)
 		pauseDelay -= float(dt);
 	else

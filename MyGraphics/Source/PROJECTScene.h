@@ -18,6 +18,11 @@
 #include <fstream>
 #include <vector>
 #include <string>
+#include <irrKlang.h>
+
+#pragma comment(lib, "irrKlang.lib")
+
+using namespace irrklang;
 
 class OnScreenText
 {
@@ -112,6 +117,11 @@ public:
 	void JeremiahInit();
 	void JessicaInit();
 	void DarrenInit();
+
+	ISoundEngine * engine;
+	//ISound* music;
+	int soundInit();
+	int soundUpdate(Player player);
 
 	static float inputDelay;
 private:
