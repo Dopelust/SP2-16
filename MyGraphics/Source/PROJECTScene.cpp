@@ -849,20 +849,19 @@ void PROJECTScene::DarrenInit()
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Plantsss~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-	tempMesh = MeshBuilder::GenerateXYQuad("Potted Plant", Color(1,1,1),7,7.5,1); tempMesh->textureID = LoadTGA("Image//plant.tga");
+	tempMesh = MeshBuilder::GenerateOBJ("Potted Plant","OBJ//tree.obj"); tempMesh->textureID = LoadTGA("Image//tree.tga");
 	hitBox = Vector3(5,7.5,5); cube = MeshBuilder::GenerateCube("Plant Hitbox",Color(1,1,1),hitBox.x,hitBox.y,hitBox.z,0);
-	for(int z = -55.5; z <= 10; z +=65.5)
+	for(int z = -56.5; z <= 11; z +=67.5)
 	{
 		for(int x = -43; x <= 43; x += 43)
 		{
-		object.push_back( new Object(Vector3(x,31,z), Vector3(0,-0.5,0),hitBox,tempMesh,cube,1,45,false));
-		object.push_back( new Object(Vector3(x,31,z), Vector3(0,-0.5,0),hitBox,tempMesh,cube,1,315,false));
+		object.push_back( new Object(Vector3(x,27,z), Vector3(0.5,4,0),hitBox,tempMesh,cube,1,45,false));
+
 		}
 	}
-	for(int x = 47; x >= -47; x -= 94)
+	for(int x = 47; x >= -51; x -= 98)
 	{
-		object.push_back( new Object(Vector3(x,31,-22.5), Vector3(0,-0.5,0),hitBox,tempMesh,cube,1,45,false));
-		object.push_back( new Object(Vector3(x,31,-22.5), Vector3(0,-0.5,0),hitBox,tempMesh,cube,1,315,false));
+		object.push_back( new Object(Vector3(x,27,-22.5), Vector3(0.5,4,0),hitBox,tempMesh,cube,1,45,false));
 	}
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market Entrance~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
