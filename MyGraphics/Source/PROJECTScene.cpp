@@ -744,13 +744,13 @@ void PROJECTScene::JessicaInit()
 		object.push_back( new Object(Vector3(y , 27.25, 38.45f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 	}
 
-	tempMesh = MeshBuilder::GenerateOBJ("CCTV - TV", "OBJ//tv.obj"); tempMesh->textureID = LoadTGA("Image//tv.tga");
+	tempMesh = MeshBuilder::GenerateOBJ("Television", "OBJ//tv.obj"); tempMesh->textureID = LoadTGA("Image//tv.tga");
 	hitBox = Vector3(2.f, 2.f, 2.0f); cube = MeshBuilder::GenerateCube("TV_Hitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	Object L(Vector3( -90, 30.5, 38.45f), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false);
-	Object K(Vector3( -97, 30.5, 38.45f), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh, cube,1,90,false);
-	Camera = Security(L, K);
-	object.push_back( &Camera.Look );
-	object.push_back( &Camera.Looks );
+	Object L(Vector3( -90, 30.5, 38.45f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube,1,90,false);
+	Object K(Vector3( -97, 30.5, 38.45f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube,1,90,false);
+	controlPanel = Security(L, K);
+	object.push_back( &controlPanel.TV[0] );
+	object.push_back( &controlPanel.TV[1] );
 
 
 }
@@ -891,11 +891,6 @@ void PROJECTScene::Init()
 
 	InitJunk();
 
-	CCTVs[0].Init(Vector3(79,22,-85), -45, 0);
-	CCTVs[1].Init(Vector3(79,22,40.5f), -135, 0);
-	CCTVs[2].Init(Vector3(-69,22,30.5f), 135, 0);
-	CCTVs[3].Init(Vector3(-69,22,-75.5f), 45, 0);
-
 	camera = &player.camera;
 
 	RicssonInit();
@@ -956,6 +951,8 @@ void PROJECTScene::Init()
 	}
 
 	textbox = NULL;
+
+	text2D.push_back( new OnScreenText("+$50", Vector3(-15.f, 2.5f, 0)) );
 }
 
 long double x;
@@ -986,8 +983,7 @@ void PROJECTScene::Update(double dt)
 
 	if (camera == &player.camera)
 	{
-
-	camera->lookAt = camera->lookingAt(object, 120);
+		camera->lookAt = camera->lookingAt(object, 120);
 
 	if (player.holding < 0)
 	if ((Application::IsKeyPressed('E')) && inputDelay == 0)
@@ -1017,46 +1013,30 @@ void PROJECTScene::Update(double dt)
 				object.push_back(newObject);
 
 				Vector3 tPos = newObject->position + newObject->collision.centre;
-				text.push_back( new OnScreenText("-1 " + newObject->mesh->name,tPos) );
+				text.push_back( new OnScreenText("-1 " + newObject->mesh->name, tPos) );
 			}
 		}
 		else if (object[camera->lookAt]->type == "Vending Machine")
 		{
-			
 			inputDelay = 0.2f;
 
 			if (Machine.drink())
 				player.inventory.wallet.trueValue -= 2.f;
-				
 		}
-
-		else if (object[camera->lookAt] == &Camera.Look)
+		else if (object[camera->lookAt]->type == "Control Panel")
 		{
-
 			CCTV = true;
 			stopCamera = true;
 
 			inputDelay = 0.2f;
 		}
-
-		else if (object[camera->lookAt] == &Camera.Looks)
-		{
-
-			CCTV = true;
-			stopCamera = true;
-
-			inputDelay = 0.2f;
-		}
-
 		else if (object[camera->lookAt]->type == "Money")
 		{
 			player.inventory.wallet.trueValue += object[camera->lookAt]->getValue();
 
 			inputDelay = 0.2f;
-			Vector3 tPos = Vector3(-15.f, 2.5f, 0);
-			string add = "+$";
-			add += to_string(long double(object[camera->lookAt]->getValue()));
-			text2D.push_back( new OnScreenText(add, tPos) );
+			string add = "+$"; add += to_string(long double(object[camera->lookAt]->getValue()));
+			text2D.push_back( new OnScreenText(add, Vector3(-15.f, 2.5f, 0)) );
 
 			delete object[camera->lookAt];
 			object.erase(object.begin()+camera->lookAt);
@@ -1066,23 +1046,16 @@ void PROJECTScene::Update(double dt)
 			inputDelay = 0.2f;
 
 			if (Bank.withdraw(player.inventory.wallet))
-			{
-				Vector3 tPos = Vector3(-15.f, 2.5f, 0);
-				string add = "+$1";
-				text2D.push_back( new OnScreenText(add, tPos) );
-			}
+				text2D.push_back( new OnScreenText("+$1", Vector3(-15.f, 2.5f, 0)) );
 		}
 		else if(object[camera->lookAt] == &Bank.Deposit)
 		{
 			inputDelay = 0.2f;
 
 			if (Bank.deposit(player.inventory.wallet))
-			{
-				Vector3 tPos = Vector3(-15.f, 1.5f, 0);
-				string add = "-$1";
-				text2D.push_back( new OnScreenText(add, tPos, true) );
-			}
+				text2D.push_back( new OnScreenText("-$1", Vector3(-15.f, 1.5f, 0), true) );
 		}
+
 		camera->lookAt = camera->lookingAt(object, 120);
 	}
 
@@ -1289,7 +1262,7 @@ void PROJECTScene::Update(double dt)
 
 	if (!CCTV)
 	{
-		if (camera == &CCTVs[0] || camera == &CCTVs[1] || camera == &CCTVs[2] || camera == &CCTVs[3])
+		if (camera != &player.camera)
 		{
 			camera->Zoom(dt);
 			camera->Move(dt);
@@ -1307,28 +1280,28 @@ void PROJECTScene::Update(double dt)
 		if (Application::IsKeyPressed('1'))
 		{
 			glViewport(0, 0, 880, 660);
-			camera = &CCTVs[0];
+			camera = &controlPanel.CCTVs[0];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
 		else if (Application::IsKeyPressed('2'))
 		{
 			glViewport(0, 0, 880, 660);
-			camera = &CCTVs[1];
+			camera = &controlPanel.CCTVs[1];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
 		else if (Application::IsKeyPressed('3'))
 		{
 			glViewport(0, 0, 880, 660);
-			camera = &CCTVs[2];
+			camera = &controlPanel.CCTVs[2];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
 		else if (Application::IsKeyPressed('4'))
 		{
 			glViewport(0, 0, 880, 660);
-			camera = &CCTVs[3];
+			camera = &controlPanel.CCTVs[3];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
@@ -1508,7 +1481,7 @@ void PROJECTScene::RenderScene()
 		modelStack.PopMatrix();
 	}
 
-	if (camera->lookAt > 0)
+	if (camera == &player.camera)
 	{
 	if (object[camera->lookAt]->type == "NPC")
 	{
@@ -1668,7 +1641,7 @@ void PROJECTScene::Render()
 			if (i == 3)
 				glViewport(440, 0, 440, 330);
 
-			camera = &CCTVs[i];
+			camera = &controlPanel.CCTVs[i];
 
 			modelStack.LoadIdentity();
 			viewStack.LoadIdentity();
@@ -1818,11 +1791,10 @@ void PROJECTScene::Render()
 			RenderText(meshList[GEO_TEXT],Vending_actions , Color(1, 1, 1));
 			modelStack.PopMatrix();
 		}
-		else if(object[camera->lookAt]->type == "CCTV - TV")
+		else if(object[camera->lookAt]->type == "Control Panel")
 		{
 			string TV_actions;
-			if(object[camera->lookAt] == &Camera.Look || object[camera->lookAt] == &Camera.Looks)
-				TV_actions = "E TO VIEW";
+			TV_actions = "E to view CCTVs";
 
 			modelStack.PushMatrix();
 			modelStack.Translate(0.35f,-5,0);
@@ -1992,7 +1964,7 @@ void PROJECTScene::Render()
 	{
 		for (int i = 0; i < 4; i++)
 		{
-			if (camera == &CCTVs[i])
+			if (camera == &controlPanel.CCTVs[i])
 			{
 				RenderCCTVUI(i + 1);
 				break;

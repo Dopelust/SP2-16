@@ -107,20 +107,6 @@ public:
 	Object Drink;
 };
 
-class Security
-{
-public:
-	Security() {};
-	Security(Object L, Object K) { Look = L; Looks = K; Look.type = "CCTV - TV";};
-	~Security() {};
-	
-	float looks;
-
-	Object Look;
-	Object Looks;
-};
-
-
 class Item : public Object
 {
 public:

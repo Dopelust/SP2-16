@@ -132,7 +132,7 @@ private:
 	Doorway AutoDoor;
 	ATM Bank;
 	Vending Machine;
-	Security Camera;
+	Security controlPanel;
 
 	Light light[3];
 	void RenderScene();
@@ -143,7 +143,6 @@ private:
 	float getTextWidth(string t);
 
 	Camera3* camera;
-	Camera3 CCTVs[4];
 	Player player;
 
 	MS modelStack, viewStack, projectionStack;

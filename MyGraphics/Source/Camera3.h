@@ -34,4 +34,24 @@ public:
 	virtual void Reset();
 };
 
+class Security
+{
+public:
+	Security() {};
+	Security(Object o1, Object o2) 
+	{ 
+		TV[0] = o1; TV[1] = o2;
+		TV[0].type = "Control Panel";
+		TV[1].type = "Control Panel";
+
+		CCTVs[0].Init(Vector3(79,22,-85), -45, 0);
+		CCTVs[1].Init(Vector3(79,22,40.5f), -135, 0);
+		CCTVs[2].Init(Vector3(-69,22,30.5f), 135, 0);
+		CCTVs[3].Init(Vector3(-69,22,-75.5f), 45, 0);
+	}
+	~Security() {};
+
+	Object TV[2];
+	Camera3 CCTVs[4];
+};
 #endif
