@@ -859,7 +859,7 @@ void PROJECTScene::DarrenInit()
 
 		}
 	}
-	for(int x = 47; x >= -51; x -= 98)
+	for(int x = 47; x >= -50; x -= 97)
 	{
 		object.push_back( new Object(Vector3(x,27,-22.5), Vector3(0.5,4,0),hitBox,tempMesh,cube,1,45,false));
 	}
