@@ -15,7 +15,7 @@ int PROJECTScene::soundInit()
 int PROJECTScene::soundUpdate(Player player)
 {
 	Vector3 direction;
-	direction.SphericalToCartesian(player.hOrientation, player.vOrientation);
+	direction.SphericalToCartesian(player.hOrientation - 180, player.vOrientation);
 
 	engine->setListenerPosition(vec3df(player.position.x,player.position.y,player.position.z), vec3df(direction.x, direction.y, direction.z));
 

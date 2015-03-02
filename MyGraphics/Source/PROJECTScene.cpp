@@ -1074,9 +1074,10 @@ void PROJECTScene::Update(double dt)
 {
 	soundUpdate(player);
 	
-	vec3df pos(0, 0, 0);
+	vec3df pos(0, 0, -110);
 	if (!engine->isCurrentlyPlaying("Media/unravel.mp3"))
 		engine->play3D("Media/unravel.mp3", pos);
+
 
 	if(pauseDelay > 0)
 		pauseDelay -= float(dt);
@@ -1120,9 +1121,6 @@ void PROJECTScene::Update(double dt)
 
 				newObject->position = object[camera->lookAt]->getStorePos(&player); newObject->position.y = object[camera->lookAt]->collision.hitbox.y/2 +  object[camera->lookAt]->collision.centre.y + object[camera->lookAt]->position.y;
 				object.push_back(newObject);
-
-				Vector3 tPos = newObject->position + newObject->collision.centre;
-				text.push_back( new OnScreenText("-1 " + newObject->mesh->name, tPos) );
 			}
 		}
 		else if (object[camera->lookAt]->type == "Vending Machine")

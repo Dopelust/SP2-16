@@ -129,17 +129,16 @@ void Player::Update(double dt, vector<Object*>object)
 			state[EATING] = true;
 			value[eatElapsed] += float(dt);
 
-			vec3df pos(position.x, position.y, position.z);
 			if (!engine->isCurrentlyPlaying("Media/eat1.ogg") && !engine->isCurrentlyPlaying("Media/eat2.ogg") && !engine->isCurrentlyPlaying("Media/eat3.ogg"))
 			{
 				int r = rand () % 3;
-				cout << r << endl;
+
 				if (r == 0)
-					engine->play3D("Media/eat1.ogg", pos);
+					engine->play2D("Media/eat1.ogg");
 				else if (r == 1)
-					engine->play3D("Media/eat2.ogg", pos);
+					engine->play2D("Media/eat2.ogg");
 				else 
-					engine->play3D("Media/eat3.ogg", pos);
+					engine->play2D("Media/eat3.ogg");
 			}
 		}
 		else
@@ -147,7 +146,7 @@ void Player::Update(double dt, vector<Object*>object)
 			state[EATING] = false;
 			value[eatElapsed] = 0;
 		}
-		if (value[eatElapsed] > 1.f)
+		if (value[eatElapsed] > 1.5f)
 		{
 			health += inventory.getHolding()->getHealth();
 			inventory.Remove();
@@ -155,9 +154,8 @@ void Player::Update(double dt, vector<Object*>object)
 			value[eatElapsed] = 0;
 			value[eatCooldown] = 0.2f;
 
-			vec3df pos(position.x, position.y, position.z);
 			if (!engine->isCurrentlyPlaying("Media/burp.ogg"))
-					engine->play3D("Media/burp.ogg", pos);
+					engine->play2D("Media/burp.ogg");
 		}
 
 	}
