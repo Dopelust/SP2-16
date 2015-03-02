@@ -103,6 +103,14 @@ public:
 	bool Remove();
 	void Init(Vector3 pos);
 	void Update(double dt);
+
+	Object * getHolding()
+	{
+		if (!selector.selectedSlot->item.empty())
+			return selector.selectedSlot->item[0];
+
+		return NULL;
+	}
 };
 
 #endif

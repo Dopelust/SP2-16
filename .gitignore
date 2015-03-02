@@ -4,3 +4,4 @@
 *.sdf
 *.suo
 /Release/
+/.parasoft.dat/

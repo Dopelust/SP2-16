@@ -136,14 +136,7 @@ void Application::Run()
 
 		scene->Update(m_timer.getElapsedTime());
 		scene->Render();
-
-		IsKeyPressed(VK_SPACE);
-		IsKeyPressed(VK_BACK);
-		IsKeyPressed('1');
-		IsKeyPressed('2');
-		IsKeyPressed('3');
-		IsKeyPressed('4');
-
+		
 		if(IsKeyPressed('P') && scene->pause == false && pauseDelay == 0)
 		{
 			scene->pause = true;
@@ -158,13 +151,11 @@ void Application::Run()
 			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 			pauseDelay = 0.2f;
 		}
-			//IsKeyPressed(VK_SPACE);
+		
 		if (!scene->pause)
 		{
 			glfwSetCursorPos(m_window, 880/2, 660/2);
 		}
-
-		mouseScroll = 0;
 
 		//Swap buffers
 		glfwSwapBuffers(m_window);

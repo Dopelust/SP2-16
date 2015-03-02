@@ -107,34 +107,23 @@ public:
 	Object Drink;
 };
 
-class Security
-{
-public:
-	Security() {};
-	Security(Object L, Object K) { Look = L; Looks = K; Look.type = "CCTV - TV";};
-	~Security() {};
-	
-	float looks;
-
-	Object Look;
-	Object Looks;
-};
-
-
 class Item : public Object
 {
 public:
 	Item() {ignoreCollision = true;};
 	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {paid = false; type = "Item";}
-	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, float P) :	Object(p,c,h,m,b,s,o,i) {price = P; paid = false; type = "Item";};
+	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, float P, float R) :	Object(p,c,h,m,b,s,o,i) {restore = R;price = P; paid = false; type = "Item";};
 	//Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, bool P) :	Object(p,c,h,m,b,s,o,i) {paid = P; type = "Item";};
 	~Item();
 
 	void setPaid(bool p) {paid = p;};
 	bool getPaid() {return paid;};
 	bool paid;
+
 	float price;
+	float restore;
 	float getValue() {return price;};
+	float getHealth() {return restore;};
 };
 
 class Storage : public Object

@@ -134,10 +134,12 @@ void Player::Update(double dt, vector<Object*>object)
 		}
 		if (value[eatElapsed] > 1.f)
 		{
+			health += inventory.getHolding()->getHealth();
 			inventory.Remove();
 			state[EATING] = false;
 			value[eatElapsed] = 0;
 		}
+
 	}
 	if (!stopCamera || inConversation)
 	{

@@ -18,6 +18,11 @@
 #include <fstream>
 #include <vector>
 #include <string>
+#include <irrKlang.h>
+
+#pragma comment(lib, "irrKlang.lib")
+
+using namespace irrklang;
 
 class OnScreenText
 {
@@ -113,6 +118,11 @@ public:
 	void JessicaInit();
 	void DarrenInit();
 
+	ISoundEngine * engine;
+	//ISound* music;
+	int soundInit();
+	int soundUpdate(Player player);
+
 	static float inputDelay;
 private:
 	unsigned m_vertexArrayID;
@@ -132,7 +142,7 @@ private:
 	Doorway AutoDoor;
 	ATM Bank;
 	Vending Machine;
-	Security Camera;
+	Security controlPanel;
 
 	Light light[3];
 	void RenderScene();
@@ -143,7 +153,6 @@ private:
 	float getTextWidth(string t);
 
 	Camera3* camera;
-	Camera3 CCTVs[4];
 	Player player;
 
 	MS modelStack, viewStack, projectionStack;
