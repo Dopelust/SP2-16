@@ -74,13 +74,13 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 }
 
 extern bool stopCamera;
-void Player::Update(double dt, vector<Object*>object)
+void Player::Update(double dt, vector<Object*>object, ISoundEngine * engine)
 {
 	Vector3 initialPos = position;
 	Vector3 hVelocity = velocity; hVelocity.y = 0;
 
 	if (!inConversation && !stopCamera)
-		Control(dt, object);
+		Control(dt, object, engine);
 
 	UpdateVelocity(dt);
 
@@ -126,6 +126,19 @@ void Player::Update(double dt, vector<Object*>object)
 		{
 			state[EATING] = true;
 			value[eatElapsed] += float(dt);
+
+			vec3df pos(position.x, position.y, position.z);
+			if (!engine->isCurrentlyPlaying("Media/eat1.ogg") && !engine->isCurrentlyPlaying("Media/eat2.ogg") && !engine->isCurrentlyPlaying("Media/eat3.ogg"))
+			{
+				int r = rand () % 3;
+				cout << r << endl;
+				if (r == 0)
+					engine->play3D("Media/eat1.ogg", pos);
+				else if (r == 1)
+					engine->play3D("Media/eat2.ogg", pos);
+				else 
+					engine->play3D("Media/eat3.ogg", pos);
+			}
 		}
 		else
 		{
@@ -248,7 +261,7 @@ void Player::Update(double dt, vector<Object*>object)
 		}
 	}
 }
-void Player::Control(double dt, vector<Object*>object)
+void Player::Control(double dt, vector<Object*>object, ISoundEngine * engine)
 {
 	Vector3 direction;
 	direction.SphericalToCartesian(hOrientation, 0.f);
