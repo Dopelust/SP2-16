@@ -973,7 +973,8 @@ void PROJECTScene::Update(double dt)
 	soundUpdate(player);
 	
 	vec3df pos(0, 0, 0);
-	engine->play3D("../IrrKlang/media/explosion.wav", pos);
+	if (!engine->isCurrentlyPlaying("Media/unravel.mp3"))
+		engine->play3D("Media/unravel.mp3", pos);
 
 	if(pauseDelay > 0)
 		pauseDelay -= float(dt);
@@ -1148,7 +1149,7 @@ void PROJECTScene::Update(double dt)
 	
 	}
 
-	player.Update(dt, object);
+	player.Update(dt, object, engine);
 
 	doorway.ButtonUpdate(dt, object, &player);
 	doorway2.ButtonUpdate(dt, object, &player);

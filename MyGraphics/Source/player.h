@@ -8,8 +8,11 @@
 
 #include <vector>
 #include <string>
+#include <irrKlang.h>
 
-using namespace::std;
+#pragma comment(lib, "irrKlang.lib")
+
+using namespace irrklang;
 
 class dynamicObject : public Object
 {
@@ -95,8 +98,8 @@ public:
 	bool inConversation;
 	float value[TOTAL_VALUES];
 
-	virtual void Control(double dt, vector<Object*>object);
-	virtual void Update(double dt, vector<Object*>object);
+	virtual void Control(double dt, vector<Object*>object, ISoundEngine * engine);
+	virtual void Update(double dt, vector<Object*>object, ISoundEngine * engine);
 
 	float getRenderWallet() {return inventory.wallet.apparentValue;};
 	float getWallet() {return inventory.wallet.trueValue;};
