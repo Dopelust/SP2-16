@@ -1246,11 +1246,11 @@ void PROJECTScene::Update(double dt)
 	float animateHeartSpeed = 0;
 	
 	if (player.getHealth() > 0)
-		animateHeartSpeed = 0.3f * (100/player.getHealth());
+		animateHeartSpeed = 0.2f * (100/player.getHealth());
 	else
 		animateHeart = 0;
 
-	if(animateHeart * animateHeartDir > 0.25f)
+	if(animateHeart * animateHeartDir > 0.1f)
 		animateHeartDir = -animateHeartDir;
 	animateHeart += (float)(animateHeartDir * animateHeartSpeed * dt);
 
@@ -1312,6 +1312,14 @@ void PROJECTScene::Update(double dt)
 	}
 
 	}
+
+	Application::IsKeyPressed(VK_SPACE);
+	Application::IsKeyPressed(VK_BACK);
+	Application::IsKeyPressed('1');
+	Application::IsKeyPressed('2');
+	Application::IsKeyPressed('3');
+	Application::IsKeyPressed('4');
+	Application::mouseScroll = 0;
 }
 
 void PROJECTScene::RenderScene()
@@ -1875,7 +1883,7 @@ void PROJECTScene::Render()
 	RenderMesh(meshList[GEO_QUAD], false);
 		modelStack.PushMatrix();
 		modelStack.Translate(-2.5f,0,0);
-		modelStack.Scale(1 + animateHeart);
+		modelStack.Scale(1.1f + animateHeart);
 		RenderMesh(meshList[GEO_HEART], false);
 		modelStack.PopMatrix();
 
@@ -2268,7 +2276,7 @@ void OnScreenText::Update(double dt)
 	elapsedTime += float(dt);
 
 	if (fall)
-		textPos.y -= 0.03f;
+		textPos.y -= dt * 2;
 	else
-		textPos.y += 0.03f;
+		textPos.y += dt * 2;
 }
