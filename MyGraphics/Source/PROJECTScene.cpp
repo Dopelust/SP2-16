@@ -1,4 +1,6 @@
-﻿#include "PROJECTScene.h"
+﻿#include <irrKlang.h>
+
+#include "PROJECTScene.h"
 #include "GL\glew.h"
 
 #include "shader.hpp"
@@ -1021,7 +1023,10 @@ void PROJECTScene::Update(double dt)
 			inputDelay = 0.2f;
 
 			if (Machine.drink())
+			{
 				player.inventory.wallet.trueValue -= 2.f;
+				text2D.push_back( new OnScreenText("-$2", Vector3(-15.f, 1.5f, 0), true) );
+			}
 		}
 		else if (object[camera->lookAt]->type == "Control Panel")
 		{
@@ -1043,14 +1048,14 @@ void PROJECTScene::Update(double dt)
 		}
 		else if(object[camera->lookAt] == &Bank.Withdraw)
 		{
-			inputDelay = 0.2f;
+			inputDelay = 0.15f;
 
 			if (Bank.withdraw(player.inventory.wallet))
 				text2D.push_back( new OnScreenText("+$1", Vector3(-15.f, 2.5f, 0)) );
 		}
 		else if(object[camera->lookAt] == &Bank.Deposit)
 		{
-			inputDelay = 0.2f;
+			inputDelay = 0.15f;
 
 			if (Bank.deposit(player.inventory.wallet))
 				text2D.push_back( new OnScreenText("-$1", Vector3(-15.f, 1.5f, 0), true) );
