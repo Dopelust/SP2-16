@@ -74,13 +74,15 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 }
 
 extern bool stopCamera;
-void Player::Update(double dt, vector<Object*>object, ISoundEngine * engine)
+extern ISoundEngine * engine;
+
+void Player::Update(double dt, vector<Object*>object)
 {
 	Vector3 initialPos = position;
 	Vector3 hVelocity = velocity; hVelocity.y = 0;
 
 	if (!inConversation && !stopCamera)
-		Control(dt, object, engine);
+		Control(dt, object);
 
 	UpdateVelocity(dt);
 
@@ -122,7 +124,7 @@ void Player::Update(double dt, vector<Object*>object, ISoundEngine * engine)
 
 	if (!stopCamera && !inConversation)
 	{
-		if (Application::mouseButton(1) && inventory.canUse())
+		if (Application::mouseButton(1) && inventory.canUse() && value[eatCooldown] == 0)
 		{
 			state[EATING] = true;
 			value[eatElapsed] += float(dt);
@@ -151,6 +153,11 @@ void Player::Update(double dt, vector<Object*>object, ISoundEngine * engine)
 			inventory.Remove();
 			state[EATING] = false;
 			value[eatElapsed] = 0;
+			value[eatCooldown] = 0.2f;
+
+			vec3df pos(position.x, position.y, position.z);
+			if (!engine->isCurrentlyPlaying("Media/burp.ogg"))
+					engine->play3D("Media/burp.ogg", pos);
 		}
 
 	}
@@ -166,8 +173,13 @@ void Player::Update(double dt, vector<Object*>object, ISoundEngine * engine)
 
 	if (value[jumpCooldown] > 0)
 		value[jumpCooldown] -= dt;
-	if (value[jumpCooldown] <= 0)
+	else
 		value[jumpCooldown] = 0;
+
+	if (value[eatCooldown] > 0)
+		value[eatCooldown] -= dt;
+	else
+		value[eatCooldown] = 0;
 
 	if (health > 100)
 		health = 100;
@@ -261,7 +273,7 @@ void Player::Update(double dt, vector<Object*>object, ISoundEngine * engine)
 		}
 	}
 }
-void Player::Control(double dt, vector<Object*>object, ISoundEngine * engine)
+void Player::Control(double dt, vector<Object*>object)
 {
 	Vector3 direction;
 	direction.SphericalToCartesian(hOrientation, 0.f);

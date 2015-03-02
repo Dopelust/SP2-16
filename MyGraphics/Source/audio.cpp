@@ -1,5 +1,7 @@
 #include "PROJECTScene.h"
 
+ISoundEngine * engine;
+
 int PROJECTScene::soundInit()
 {
 	engine = createIrrKlangDevice();

@@ -730,7 +730,7 @@ void PROJECTScene::JessicaInit()
 	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-95.5,hitBox.y/2+48,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Securiuty Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Security Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
 	object.push_back( new Object(Vector3(-79.95f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
@@ -859,7 +859,7 @@ void PROJECTScene::DarrenInit()
 
 		}
 	}
-	for(int x = 47; x >= -50; x -= 97)
+	for(int x = 47; x >= -51; x -= 98)
 	{
 		object.push_back( new Object(Vector3(x,27,-22.5), Vector3(0.5,4,0),hitBox,tempMesh,cube,1,45,false));
 	}
@@ -967,6 +967,7 @@ extern float pauseDelay;
 
 bool CCTV = false;
 bool stopCamera = false;
+extern ISoundEngine * engine;
 
 void PROJECTScene::Update(double dt)
 {
@@ -1149,7 +1150,7 @@ void PROJECTScene::Update(double dt)
 	
 	}
 
-	player.Update(dt, object, engine);
+	player.Update(dt, object);
 
 	doorway.ButtonUpdate(dt, object, &player);
 	doorway2.ButtonUpdate(dt, object, &player);

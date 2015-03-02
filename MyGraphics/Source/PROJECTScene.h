@@ -118,8 +118,6 @@ public:
 	void JessicaInit();
 	void DarrenInit();
 
-	ISoundEngine * engine;
-	//ISound* music;
 	int soundInit();
 	int soundUpdate(Player player);
 

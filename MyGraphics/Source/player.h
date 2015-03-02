@@ -57,6 +57,7 @@ public:
 		knifeCooldown,
 		eyeLevel,
 		jumpCooldown,
+		eatCooldown,
 		eatElapsed,
 		TOTAL_VALUES,
 	};
@@ -98,8 +99,8 @@ public:
 	bool inConversation;
 	float value[TOTAL_VALUES];
 
-	virtual void Control(double dt, vector<Object*>object, ISoundEngine * engine);
-	virtual void Update(double dt, vector<Object*>object, ISoundEngine * engine);
+	virtual void Control(double dt, vector<Object*>object);
+	virtual void Update(double dt, vector<Object*>object);
 
 	float getRenderWallet() {return inventory.wallet.apparentValue;};
 	float getWallet() {return inventory.wallet.trueValue;};
