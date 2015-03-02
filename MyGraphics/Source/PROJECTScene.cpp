@@ -804,14 +804,38 @@ void PROJECTScene::JessicaInit()
 	Machine = Vending(D);
 	object.push_back( &Machine.Drink );
 
+	//~~~~~SECURITY ROOM~~~~~~~~
+	hitBox = Vector3(28, 23, 2); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-95, 38.5,8.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	hitBox = Vector3(29, 23, 2); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-95, 38.5,42.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 	
+	hitBox = Vector3(2, 23, 36); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-110, 38.5,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	hitBox = Vector3(30, 2, 35); 
+	tempMesh = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
+	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-95,hitBox.y/2+25,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	hitBox = Vector3(27, 2, 33); 
+	tempMesh = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
+	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-95.5,hitBox.y/2+48,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Securiuty Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
 	object.push_back( new Object(Vector3(-79.95f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
 
-	//~~~~SECURITY ITEMS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	//~~~~SECURITY ITEMS~~~~~
 
 	tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
 	hitBox = Vector3(6, 4.f, 6); cube = MeshBuilder::GenerateCube("table", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
@@ -966,11 +990,6 @@ void PROJECTScene::Init()
 
 	InitJunk();
 
-	CCTVs[0].Init(Vector3(79,22,-85), -45, 0);
-	CCTVs[1].Init(Vector3(79,22,40.5f), -135, 0);
-	CCTVs[2].Init(Vector3(-69,22,30.5f), 135, 0);
-	CCTVs[3].Init(Vector3(-69,22,-75.5f), 45, 0);
-
 	camera = &player.camera;
 
 	RicssonInit();
@@ -1070,7 +1089,6 @@ void PROJECTScene::Update(double dt)
 
 	if (camera == &player.camera)
 	{
-
 		camera->lookAt = camera->lookingAt(object, 120);
 
 	if (player.holding < 0)
@@ -1137,22 +1155,14 @@ void PROJECTScene::Update(double dt)
 			inputDelay = 0.15f;
 
 			if (Bank.withdraw(player.inventory.wallet))
-			{
-				Vector3 tPos = Vector3(-15.f, 2.5f, 0);
-				string add = "+$1";
 				text2D.push_back( new OnScreenText("+$1", Vector3(-15.f, 2.5f, 0)) );
-			}
 		}
 		else if(object[camera->lookAt] == &Bank.Deposit)
 		{
 			inputDelay = 0.15f;
 
 			if (Bank.deposit(player.inventory.wallet))
-			{
 				text2D.push_back( new OnScreenText("-$1", Vector3(-15.f, 1.5f, 0), true) );
-				string add = "-$1";
-				text2D.push_back( new OnScreenText(add, tPos, true) );
-			}
 		}
 
 		camera->lookAt = camera->lookingAt(object, 120);
@@ -2003,7 +2013,7 @@ void PROJECTScene::Render()
 	RenderMesh(meshList[GEO_QUAD], false);
 		modelStack.PushMatrix();
 		modelStack.Translate(-2.5f,0,0);
-		modelStack.Scale(1 + animateHeart);
+		modelStack.Scale(1.1f + animateHeart);
 		RenderMesh(meshList[GEO_HEART], false);
 		modelStack.PopMatrix();
 
