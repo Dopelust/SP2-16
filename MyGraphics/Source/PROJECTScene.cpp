@@ -999,6 +999,9 @@ void PROJECTScene::Init()
 	meshList[GEO_CUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 0.1f, 0.1f, 0.1f, 1);
 	meshList[GEO_BIGCUBE] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 12.f, 12.f, 12.f, 1);
 
+	meshList[GEO_KNIFE] = MeshBuilder::GenerateOBJ("Knife","OBJ//knife.obj");
+	//meshList[GEO_KNIFE]->textureID = LoadTGA("Image//font.tga");
+
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
 
@@ -1536,8 +1539,10 @@ void PROJECTScene::RenderScene()
 		{
 			modelStack.PushMatrix();
 			modelStack.Translate(character[i]->position);
+			
 			modelStack.Rotate(character[i]->orientation, 0, 1, 0); 
-
+			if (character[i]->health == 0)
+				modelStack.Rotate(90,1,0,0);
 			modelStack.Translate(character[i]->bodyParts[j].collision.centre);
 			if (j != character[i]->HEAD)
 			{
@@ -1857,7 +1862,16 @@ void PROJECTScene::Render()
 		RenderMesh(player.inventory.selector.selectedSlot->item[0]->mesh, true);
 		modelStack.PopMatrix();
 	}
-
+	else
+	{
+		modelStack.PushMatrix();
+		modelStack.Translate(7 - player.value[player.knifeRotation] / 4, -10 + player.value[player.bobbingY]+ player.value[player.knifeRotation] / 5, -2 + player.value[player.knifeRotation] / 8);
+		modelStack.Rotate(45 + player.value[player.knifeRotation],1,0,0);
+		modelStack.Rotate(70 - player.value[player.knifeRotation] ,0,1,0);
+		modelStack.Scale(15,15,15);
+		RenderMesh(meshList[GEO_KNIFE], true);
+		modelStack.PopMatrix();
+	}
 	glDisable(GL_DEPTH_TEST);
 	
 	RenderCrosshair();

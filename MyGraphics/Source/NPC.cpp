@@ -211,17 +211,16 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 {
 	initialPos = position;
 
-	if (object[player->camera.lookAt] == this && Application::mouseButton(0) && !inConversation)
-	{
-		Vector3 dir;
-		dir.SphericalToCartesian(player->hOrientation, 0.f);
-		Vector3 vel(25,15,25);
-
-		Knockback(dir, vel);
-	}
-
 	if (health > 0)
 	{
+		if (object[player->camera.lookAt] == this && Application::mouseButton(0) && !inConversation)
+		{
+			Vector3 dir;
+			dir.SphericalToCartesian(player->hOrientation, 0.f);
+			Vector3 vel(25,15,25);
+
+			Knockback(dir, vel);
+		}
 		if (inConversation)
 		{
 			Orientate(player->position, dt, 500.f);
@@ -231,7 +230,10 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 			Control(dt, object, player);
 	}
 	else
+	{
 		health = 0;
+		ignoreCollision = true;
+	}
 
 	if (position != target)
 		UpdateVelocity(dt);
@@ -380,7 +382,8 @@ void Blindman::Control(double dt, vector<Object*>object, Player* player)
 				{
 					if (object[i]->type == "NPC" || object[i]->type == "Player")
 					{
-						object[i]->Knockback(direction, Vector3(80,30,80));
+						if (object[i]->getHealth() > 0)
+							object[i]->Knockback(direction, Vector3(80,30,80));
 					}
 					else if (hitDelay == 0)
 					{
