@@ -1,5 +1,5 @@
-#ifndef PROJECT_SCENE_H
-#define PROJECT_SCENE_H
+#ifndef MENU_SCENE_H
+#define MENU_SCENE_H
 
 #include "Light.h"
 #include "Material.h"
@@ -23,45 +23,18 @@
 #pragma comment(lib, "irrKlang.lib")
 
 using namespace irrklang;
+using namespace::std;
 
-class OnScreenText
+class Button
 {
 public:
-	OnScreenText(std::string n, Vector3 p) 
-	{
-		name = n;
-		textPos = p;
-		elapsedTime = 0;
-		fall = false;
-	};
-	OnScreenText(std::string n, Vector3 p, bool f) 
-	{
-		name = n;
-		textPos = p;
-		elapsedTime = 0;
-		fall = f;
-	};
-	~OnScreenText() {};
-
-	std::string name;
-	Vector3 textPos;
-	float elapsedTime;
-	bool fall;
-
-	void Update(double dt);
-};
-
-class Aesthetics
-{
-	Aesthetics() {};
-	~Aesthetics() {};
+	Button() {};
+	~Button() {};
 
 	Vector3 position;
-	Mesh * mesh;
-	float orientation;
+	string name;
 };
-
-class PROJECTScene : public Scene
+class MENUScene : public Scene
 {
 	enum GEOMETRY_TYPE
 	{
@@ -117,8 +90,8 @@ class PROJECTScene : public Scene
 	void InitSuperMarket();
 
 public:
-	PROJECTScene();
-	~PROJECTScene();
+	MENUScene();
+	~MENUScene();
 
 	virtual void Init();
 	void InitJunk();
@@ -126,38 +99,21 @@ public:
 	virtual void Render();
 	virtual void Exit();
 
-	void RicssonInit();
-	void JeremiahInit();
-	void JessicaInit();
-	void DarrenInit();
-
 	int soundInit();
-	int soundUpdate(Player player);
 
 	static float inputDelay;
+
+	Button buttons[3];
+	int select;
+
 private:
 	unsigned m_vertexArrayID;
 	Mesh * meshList[NUM_GEOMETRY];
 	unsigned m_programID;
 	unsigned m_parameters[U_TOTAL];
 
-	TextBox * textbox;
-	vector<OnScreenText*> text;
-	vector<OnScreenText*> text2D;
-	vector<NPC*> character;
-	vector<Object*> object;
-	vector<Particles*> blood;
-
-	Doorway doorway;
-	Doorway doorway2;
-	Doorway AutoDoor;
-	ATM Bank;
-	Vending Machine;
-	Security controlPanel;
-
 	Light light[3];
 	void RenderScene();
-	void RenderCCTVUI(int number);
 	void RenderMesh(Mesh *mesh, bool enableLight);
 	void RenderText(Mesh* mesh, std::string text, Color color);
 	void RenderTextOnScreen(Mesh* mesh, std::string text, Color color, float size, float x, float y);

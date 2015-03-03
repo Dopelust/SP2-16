@@ -42,12 +42,12 @@ void Camera3::Zoom(double dt)
 
 void Camera3::Move(double dt)
 {
-	float yaw = (float)(10.f * dt * (float)(880/2 - Application::getMousePos().x) * (fov/70.f));
+	float yaw = (float)(10.f * dt * (float)(1184/2 - Application::getMousePos().x) * (fov/70.f));
 	orientation += yaw;
 
 	if (look <= 90 && look >= -90)
 	{
-		float pitch = (float)(10.f * dt * (float)(660/2 - Application::getMousePos().y) * (fov/70.f));
+		float pitch = (float)(10.f * dt * (float)(666/2 - Application::getMousePos().y) * (fov/70.f));
 		look += pitch;
 	}
 

@@ -12,6 +12,7 @@
 #include <stdlib.h>
 
 #include "PROJECTScene.h"
+#include "MENUScene.h"
 
 GLFWwindow* m_window;
 const unsigned char FPS = 60; // FPS of this game
@@ -80,7 +81,7 @@ void Application::Init()
 
 
 	//Create a window and create its OpenGL context
-	m_window = glfwCreateWindow(880, 660, "Computer Graphics", NULL, NULL);
+	m_window = glfwCreateWindow(1184, 666, "Computer Graphics", NULL, NULL);
 	glfwSetWindowPos(m_window, 50, 50);
 	//If the window couldn't be created
 	if (!m_window)
@@ -123,11 +124,15 @@ Position Application::getMousePos()
 float pauseDelay = 0.f;
 Position lastCursor(440, 331, 0);
 
+extern bool play;
+extern bool quit;
+
 void Application::Run()
 {
-	//Main Loop
-	Scene *scene = new PROJECTScene();
-	scene->Init();
+	Scene * menuScene = new MENUScene(); menuScene->Init();
+	//Scene * playScene = new PROJECTScene(); playScene->Init();
+
+	Scene *scene = menuScene;
 
 	m_timer.startTimer();    // Start timer to calculate how long it takes to render this frame
 	while (!glfwWindowShouldClose(m_window) && !IsKeyPressed(VK_ESCAPE))
@@ -154,7 +159,7 @@ void Application::Run()
 		
 		if (!scene->pause)
 		{
-			glfwSetCursorPos(m_window, 880/2, 660/2);
+			glfwSetCursorPos(m_window, 1184/2, 666/2);
 		}
 
 		//Swap buffers
@@ -162,6 +167,19 @@ void Application::Run()
 		//Get and organize events, like keyboard and mouse input, window resizing, etc...
 		glfwPollEvents();
         m_timer.waitUntil(frameTime);       // Frame rate limiter. Limits each frame to a specified time in ms.   
+
+		if (play == true)
+		{
+			play = false;
+
+			scene->Exit();
+			delete scene;
+
+			scene = new PROJECTScene();
+			scene->Init();
+		}
+		if (quit == true)
+			break;
 
 	} //Check if the ESC key had been pressed or if the window had been closed
 	scene->Exit();
