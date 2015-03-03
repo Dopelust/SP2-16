@@ -148,7 +148,15 @@ void Player::Update(double dt, vector<Object*>object)
 		}
 		if (value[eatElapsed] > 1.5f)
 		{
-			health += inventory.getHolding()->getHealth();
+			if (inventory.getHolding()->type == "Statboost")
+			{
+				if (rand () % 2 == 0)
+					speed++;
+				else
+					jump++;
+			}
+			else
+				health += inventory.getHolding()->getHealth();
 
 			inventory.Delete();
 
@@ -321,8 +329,8 @@ void Player::Control(double dt, vector<Object*>object)
 		}
 		else if (Application::IsKeyPressed(VK_SHIFT))
 		{
-			velocity.x *= 1.5f;
-			velocity.z *= 1.5f;
+			velocity.x *= (1.2f + (0.1f * speed));
+			velocity.z *= (1.2f + (0.1f * speed));
 		}
 
 		if (count == 2)
@@ -335,9 +343,9 @@ void Player::Control(double dt, vector<Object*>object)
 	if(Application::IsKeyPressed(VK_SPACE) && !state[JUMP] && velocity.y == 0 && value[jumpCooldown] == 0)
 	{
 		if (Application::IsKeyPressed(VK_CONTROL))
-			velocity.y = 90;
+			velocity.y = 25 + (5 * jump);
 		else
-			velocity.y = 30;
+			velocity.y = 25;
 	}
 
 	if (velocity.y > 0)

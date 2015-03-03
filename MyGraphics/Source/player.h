@@ -85,6 +85,9 @@ public:
 		inventory.Init(Vector3(0,-10.5,0));
 		inConversation = false;
 		mesh =  NULL;
+
+		jump = 1;
+		speed = 1;
 	};
 	~Player() {};
 
@@ -93,6 +96,9 @@ public:
 	float apparentHealth;
 	Inventory inventory;
 	Camera3 camera;
+
+	int jump;
+	int speed;
 
 	int holding;
 	bool state[TOTAL_STATES];

@@ -1114,15 +1114,17 @@ void PROJECTScene::Update(double dt)
 		else if (object[camera->lookAt]->type == "Storage")
 		{
 			Object * newObject;
-			if (!player.inventory.selector.selectedSlot->item.empty())
+			if ( player.inventory.getHolding() != NULL && player.inventory.getHolding()->type == "Item")
+			{
 				newObject = player.inventory.selector.selectedSlot->item.back();
 
-			if (player.inventory.Remove())
-			{	
-				inputDelay = 0.2f;
+				if (player.inventory.Remove())
+				{	
+					inputDelay = 0.2f;
 
-				newObject->position = object[camera->lookAt]->getStorePos(&player); newObject->position.y = object[camera->lookAt]->collision.hitbox.y/2 +  object[camera->lookAt]->collision.centre.y + object[camera->lookAt]->position.y;
-				object.push_back(newObject);
+					newObject->position = object[camera->lookAt]->getStorePos(&player); newObject->position.y = object[camera->lookAt]->collision.hitbox.y/2 +  object[camera->lookAt]->collision.centre.y + object[camera->lookAt]->position.y;
+					object.push_back(newObject);
+				}
 			}
 		}
 		else if (object[camera->lookAt]->type == "Vending Machine")
@@ -1823,8 +1825,6 @@ void PROJECTScene::Render()
 	if (camera == &player.camera)
 	{
 
-	RenderCrosshair();
-
 	if (!player.inventory.selector.selectedSlot->item.empty())
 	{
 		modelStack.PushMatrix();
@@ -1839,6 +1839,8 @@ void PROJECTScene::Render()
 	}
 
 	glDisable(GL_DEPTH_TEST);
+	
+	RenderCrosshair();
 
 	if (player.holding < 0)
 	{
@@ -1874,7 +1876,7 @@ void PROJECTScene::Render()
 			RenderText(meshList[GEO_TEXT],tooltip , Color(1, 1, 1));
 			modelStack.PopMatrix();
 		}
-		else if(object[camera->lookAt]->type == "Storage" && !player.inventory.selector.selectedSlot->item.empty())
+		else if(object[camera->lookAt]->type == "Storage" && player.inventory.getHolding() != NULL && player.inventory.getHolding()->type == "Item")
 		{
 			string tooltip = "E to place ";
 			tooltip += player.inventory.selector.selectedSlot->item[0]->mesh->name;
@@ -2054,22 +2056,37 @@ void PROJECTScene::Render()
 		modelStack.PopMatrix();
 	modelStack.PopMatrix();
 
+	string level;
+	level = to_string( long long (player.speed));
+
 	modelStack.PushMatrix();
 	modelStack.Translate(-14.5f,6,0);
 		modelStack.PushMatrix();
 		modelStack.Scale(0.45f,1,1);
 		RenderMesh(meshList[GEO_QUAD], false);
 		modelStack.PopMatrix();
+
+		modelStack.PushMatrix();
+		modelStack.Translate(0.6f,0,0);
+		RenderText(meshList[GEO_TEXT], level, Color(1, 1, 1));
+		modelStack.PopMatrix();
 	modelStack.Translate(-0.5f,0,0);
 	modelStack.Scale(1.1f);
 	RenderMesh(meshList[GEO_SPRINT], false);
 	modelStack.PopMatrix();
+
+	level = to_string( long long (player.jump));
 
 	modelStack.PushMatrix();
 	modelStack.Translate(-14.5f,4,0);
 		modelStack.PushMatrix();
 		modelStack.Scale(0.45f,1,1);
 		RenderMesh(meshList[GEO_QUAD], false);
+		modelStack.PopMatrix();
+
+		modelStack.PushMatrix();
+		modelStack.Translate(0.6f,0,0);
+		RenderText(meshList[GEO_TEXT], level, Color(1, 1, 1));
 		modelStack.PopMatrix();
 	modelStack.Translate(-0.5f,0,0);
 	modelStack.Scale(1.1f);

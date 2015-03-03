@@ -109,7 +109,7 @@ public:
 	Object * getHolding()
 	{
 		if (!selector.selectedSlot->item.empty())
-			return selector.selectedSlot->item[0];
+			return selector.selectedSlot->item[ selector.selectedSlot->item.size() - 1 ];
 
 		return NULL;
 	}
