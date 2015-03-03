@@ -1071,6 +1071,8 @@ bool CCTV = false;
 bool stopCamera = false;
 extern ISoundEngine * engine;
 
+float showLevel = -2.f;
+
 void PROJECTScene::Update(double dt)
 {
 	soundUpdate(player);
@@ -1464,8 +1466,23 @@ void PROJECTScene::Update(double dt)
 		}
 	}
 
+	if (Application::IsKeyPressed(VK_TAB))
+	{
+		showLevel += 8 * dt;
+
+		if (showLevel > 0)
+			showLevel = 0;
+
+	}
+	else if (showLevel > -2.5f)
+	{
+		showLevel -= 8 * dt;
+
+		if (showLevel < -2.5f)
+			showLevel = -2.5f;
 	}
 
+	}
 	Application::IsKeyPressed(VK_SPACE);
 	Application::IsKeyPressed(VK_BACK);
 	Application::IsKeyPressed('1');
@@ -2065,7 +2082,7 @@ void PROJECTScene::Render()
 	level = to_string( long long (player.speed));
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-14.5f,6,0);
+	modelStack.Translate(-14.5f + showLevel,6,0);
 		modelStack.PushMatrix();
 		modelStack.Scale(0.45f,1,1);
 		RenderMesh(meshList[GEO_QUAD], false);
@@ -2083,7 +2100,7 @@ void PROJECTScene::Render()
 	level = to_string( long long (player.jump));
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-14.5f,4,0);
+	modelStack.Translate(-14.5f + showLevel,4,0);
 		modelStack.PushMatrix();
 		modelStack.Scale(0.45f,1,1);
 		RenderMesh(meshList[GEO_QUAD], false);
