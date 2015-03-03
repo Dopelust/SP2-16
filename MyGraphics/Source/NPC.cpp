@@ -220,13 +220,18 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 		Knockback(dir, vel);
 	}
 
-	if (inConversation)
+	if (health > 0)
 	{
-		Orientate(player->position, dt, 500.f);
-		Animate(dt, 150.f);
+		if (inConversation)
+		{
+			Orientate(player->position, dt, 500.f);
+			Animate(dt, 150.f);
+		}
+		else
+			Control(dt, object, player);
 	}
 	else
-		Control(dt, object, player);
+		health = 0;
 
 	if (position != target)
 		UpdateVelocity(dt);
@@ -499,7 +504,7 @@ void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 		if (target == original.position)
 			Goto(target, dt, 500.f, 10.f);
 		else
-			Goto(target, dt, 1000.f, 40.f);
+			Goto(target, dt, 2000.f, 50.f);
 	}
 }
 
