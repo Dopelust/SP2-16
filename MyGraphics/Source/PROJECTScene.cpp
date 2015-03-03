@@ -471,6 +471,11 @@ void PROJECTScene::JeremiahInit()
 	hitBox = Vector3(5.5f,15.5f,2);
 	tempMesh = MeshBuilder::GenerateCube("wall", Color(1,1,1),5.5f,15.5f,2,10); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	object.push_back( new Object(Vector3(77.25f,hitBox.y/2+34.5f,42.5f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 0, false) );
+
+	hitBox = Vector3();
+	tempMesh = MeshBuilder::GenerateQuad("Marked Circle", Color(1,1,1),8.5f,8.5f,1); tempMesh->textureID = LoadTGA("Image//collection.tga");
+	object.push_back( new Object(Vector3(-30.f,27.1f,15.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 0, true) );
+
 }
 void PROJECTScene::JessicaInit()
 {
@@ -1316,7 +1321,7 @@ void PROJECTScene::Update(double dt)
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		character[i]->Update(dt, object, &player);
-
+		cout << character[i]->getCriteria(object) << endl;
 		if (textbox == NULL)
 			character[i]->inConversation = false;
 

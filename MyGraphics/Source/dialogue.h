@@ -124,7 +124,7 @@ public:
 		{
 			if (text[i] != 'X')
 				t += text[i];
-			
+
 			else
 				t += inventory.getHolding()->mesh->name;
 		}
@@ -133,4 +133,34 @@ public:
 	}
 };
 
+class ManagerQuest
+{
+public:
+	ManagerQuest() {
+		Vector3 hitBox = Vector3(8.5,8.5,8.5);
+		box_range = Object(Vector3(-30.f,27.1f,15.f), Vector3(0,hitBox.y/2,0), hitBox, NULL);
+	};
+	~ManagerQuest() {};
+
+	Object box_range;
+	bool Criteria(vector<Object *>object) 
+	{ 
+		int count = 0;
+		for(int i = 0; i < object.size(); i++)
+		{
+			if( object[i]->mesh != NULL && object[i]->mesh->name == "Crate")
+			{
+				if(Object::checkCollision(object[i], &box_range))
+					count++;
+			}
+		}
+
+		if(count >= 3)
+		{
+			return true;
+		}
+		return false;
+
+	}
+};
 #endif

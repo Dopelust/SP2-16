@@ -52,6 +52,7 @@ public:
 	vector<TextBox> greetings;
 	Quest * quest;
 	bool inConversation;
+	virtual bool getCriteria(vector<Object*>object) {return 0;};
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
@@ -329,6 +330,14 @@ public:
 	}
 	~Manager() {};
 
+	ManagerQuest collection;
+
+	virtual bool getCriteria(vector<Object*>object) 
+	{
+		if(quest->Accept.trigger)
+			return collection.Criteria(object);
+		return 0;
+	};
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
