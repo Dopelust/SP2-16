@@ -296,8 +296,17 @@ void PROJECTScene::JeremiahInit()
 	hitBox = Vector3(73, 50, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(44,hitBox.y/2,42.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 	object.push_back( new Object(Vector3(-44,hitBox.y/2,42.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	hitBox = Vector3(73, 25, 2); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(44,hitBox.y/2,42.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	hitBox = Vector3(69, 25, 2); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(40.f,hitBox.y/2+25,42.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 	
 	hitBox = Vector3(17, 16.5, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
@@ -378,33 +387,7 @@ void PROJECTScene::JeremiahInit()
 	object.push_back( new Object(Vector3(0,26.8,-22.5), Vector3(45.5,hitBox.y/2,0), hitBox, cube) );
 	object.push_back( new Object(Vector3(0,26.8,-22.5), Vector3(-45.5,hitBox.y/2,0), hitBox, cube) );
 
-
-	//~~~~~SECURITY ROOM~~~~~~~~
-	hitBox = Vector3(28, 23, 2); 
-	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-95, 38.5,8.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
-
-	hitBox = Vector3(29, 23, 2); 
-	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-95, 38.5,42.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 	
-	hitBox = Vector3(2, 23, 36); 
-	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-110, 38.5,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
-
-	hitBox = Vector3(30, 2, 35); 
-	tempMesh = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
-	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-95,hitBox.y/2+25,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
-
-	/*hitBox = Vector3(27, 2, 33); 
-	tempMesh = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
-	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-95.5,hitBox.y/2+48,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
-	*/
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Vents~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3(20, 2, 9); 
 	tempMesh = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 4); tempMesh->textureID = LoadTGA("Image//vent_wall.tga");
@@ -419,7 +402,7 @@ void PROJECTScene::JeremiahInit()
 	hitBox = Vector3(29, 9, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 4); tempMesh->textureID = LoadTGA("Image//vent_wall.tga");
 	cube = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1) , hitBox.x, hitBox.y, hitBox.z,0);
-	object.push_back( new Object(Vector3(-124.5f,hitBox.y/2+25,7.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-124.5f,hitBox.y/2+25,8.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	hitBox = Vector3(9, 2, 56); 
 	tempMesh = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 4); tempMesh->textureID = LoadTGA("Image//vent_wall.tga");
@@ -455,18 +438,18 @@ void PROJECTScene::JeremiahInit()
 	hitBox = Vector3(9, 2, 21); 
 	tempMesh = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 4); tempMesh->textureID = LoadTGA("Image//vent_wall.tga");
 	cube = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1) , hitBox.x, hitBox.y, hitBox.z,0);
-	object.push_back( new Object(Vector3(78.5f,hitBox.y/2+25,53.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
-	object.push_back( new Object(Vector3(78.5f,hitBox.y/2+34,53.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(78.5f,hitBox.y/2+25,53.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(78.5f,hitBox.y/2+34,53.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	hitBox = Vector3(2, 9, 21); 
 	tempMesh = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 4); tempMesh->textureID = LoadTGA("Image//vent_wall.tga");
 	cube = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1) , hitBox.x, hitBox.y, hitBox.z,0);
-	object.push_back( new Object(Vector3(82.5f,hitBox.y/2+25,53.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(81.f,hitBox.y/2+25,53.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	hitBox = Vector3(2, 9, 12); 
 	tempMesh = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 4); tempMesh->textureID = LoadTGA("Image//vent_wall.tga");
 	cube = MeshBuilder::GenerateCube("Vent walls", Color(1,1,1) , hitBox.x, hitBox.y, hitBox.z,0);
-	object.push_back( new Object(Vector3(73.5,hitBox.y/2+25,48.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(73.5,hitBox.y/2+25,49.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
@@ -474,12 +457,20 @@ void PROJECTScene::JeremiahInit()
 	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
 	object.push_back( new Object(Vector3(79.95f,31.5f,-81.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
 
-	tempMesh = MeshBuilder::GenerateXYQuad("real_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
+	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
 	object.push_back( new Object(Vector3(79.95f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
-	hitBox = Vector3();
-	tempMesh = MeshBuilder::GenerateXYQuad("real_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	object.push_back( new Object(Vector3(-105.f,31.5f,9.05f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 0, true) );
+	
+	hitBox = Vector3(2,7.5f,7.5f);
+	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),7.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
+	object.push_back( new Object(Vector3(-109.95f,30.8f,12.8f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, false) );
 
+	hitBox = Vector3(5.f,7.5f,2);
+	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),5.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
+	object.push_back( new Object(Vector3(77.25f,30.8f,42.4f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 0, false) );
+
+	hitBox = Vector3(5.5f,15.5f,2);
+	tempMesh = MeshBuilder::GenerateCube("wall", Color(1,1,1),5.5f,15.5f,2,10); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	object.push_back( new Object(Vector3(77.25f,hitBox.y/2+34.5f,42.5f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 0, false) );
 }
 void PROJECTScene::JessicaInit()
 {
@@ -806,30 +797,35 @@ void PROJECTScene::JessicaInit()
 	object.push_back( &Machine.Drink );
 
 	//~~~~~SECURITY ROOM~~~~~~~~
-	hitBox = Vector3(28, 23, 2); 
+	hitBox = Vector3(29, 23, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-95, 38.5,8.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-95.5, 38.5,8.f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	hitBox = Vector3(29, 23, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-95, 38.5,42.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 	
-	hitBox = Vector3(2, 23, 36); 
+	hitBox = Vector3(2, 23, 27.5); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-110, 38.5,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-110.f, 38.5,29.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+
+	hitBox = Vector3(2, 15.5, 9.5); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	cube = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+	object.push_back( new Object(Vector3(-110.f, 42.25f,12.4f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	hitBox = Vector3(30, 2, 35); 
 	tempMesh = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
 	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-95,hitBox.y/2+25,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
-	hitBox = Vector3(27, 2, 33); 
+	/*hitBox = Vector3(27, 2, 33); 
 	tempMesh = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
 	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-95.5,hitBox.y/2+48,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
+	object.push_back( new Object(Vector3(-95.5,hitBox.y/2+48,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );*/
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Security Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3();
@@ -1174,9 +1170,16 @@ void PROJECTScene::Update(double dt)
 			if (Bank.deposit(player.inventory.wallet))
 				text2D.push_back( new OnScreenText("-$1", Vector3(-15.f, 1.5f, 0), true) );
 		}
-
-		camera->lookAt = camera->lookingAt(object, 100);
 	}
+	if ((Application::mouseButton(0)) && inputDelay == 0)
+		{
+			if(object[camera->lookAt]->mesh != NULL)
+			if(object[camera->lookAt]->mesh->name == "vent")
+			{
+				delete object[camera->lookAt];
+				object.erase(object.begin()+camera->lookAt);
+			}
+		}
 
 	if (textbox != NULL)
 	{
@@ -1844,7 +1847,7 @@ void PROJECTScene::Render()
 
 	if (player.holding < 0)
 	{
-		if (object[camera->lookAt]->type == "Money" || object[camera->lookAt]->type == "Item" || (object[camera->lookAt]->mesh != NULL && object[camera->lookAt]->mesh->name == "Button"))
+		if (object[camera->lookAt]->type == "Money" || object[camera->lookAt]->type == "Item" || (object[camera->lookAt]->mesh != NULL && (object[camera->lookAt]->mesh->name == "Button" || object[camera->lookAt]->mesh->name == "vent")))
 		{
 			string tooltip;
 			if (object[camera->lookAt]->mesh->name == "Button")
@@ -1853,6 +1856,8 @@ void PROJECTScene::Render()
 				tooltip += "E to take ";
 			else if(object[camera->lookAt]->type == "Money")
 				tooltip += "E to loot ";
+			else if(object[camera->lookAt]->mesh->name == "vent_d")
+				tooltip += "Click to destroy ";
 
 			if(object[camera->lookAt]->type == "Money")
 			{
