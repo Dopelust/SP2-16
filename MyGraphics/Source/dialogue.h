@@ -91,7 +91,7 @@ public:
 
 		Accept = Button2D("Yes", Vector3(7,-8.3f,0));
 		Decline = Button2D("Not Yet", Vector3(11,-8.3f,0));
-	};
+	}
 	~Checkout() {};
 
 	string GenerateText(Inventory inventory) 
@@ -99,6 +99,37 @@ public:
 		string price;
 		price = to_string(long double( inventory.checkPrice() ));
 		return text + price;
+	}
+};
+
+class Donation : public Quest
+{
+public:
+	Donation() {};
+	Donation(string t)
+	{
+		text = t;
+		type = "Donation";
+
+		Accept = Button2D("Yes", Vector3(7,-8.3f,0));
+		Decline = Button2D("No", Vector3(11,-8.3f,0));
+	}
+	~Donation() {};
+
+	string GenerateText(Inventory inventory) 
+	{
+		string t;
+
+		for (int i = 0; i < text.size(); i++)
+		{
+			if (text[i] != 'X')
+				t += text[i];
+			
+			else
+				t += inventory.getHolding()->mesh->name;
+		}
+
+		return t;
 	}
 };
 

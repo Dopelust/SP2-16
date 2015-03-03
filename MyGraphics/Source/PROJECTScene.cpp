@@ -1180,7 +1180,7 @@ void PROJECTScene::Update(double dt)
 	{
 		textbox->Update();
 	
-		if ( (textbox->type == "Quest" || textbox->type == "Checkout" ) && selectDelay == 0)
+		if ( (textbox->type == "Quest" || textbox->type == "Checkout" || textbox->type == "Donation") && selectDelay == 0)
 		{
 			if(Application::IsKeyPressed(VK_LEFT))
 			{
@@ -1202,7 +1202,7 @@ void PROJECTScene::Update(double dt)
 			{
 				textbox->apparentext = textbox->text;
 
-				if (textbox->type == "Quest" || textbox->type == "Checkout" )
+				if (textbox->type == "Quest" || textbox->type == "Checkout" || textbox->type == "Donation")
 					Select = textbox->getAccept().position;
 			}
 			else
@@ -1234,6 +1234,26 @@ void PROJECTScene::Update(double dt)
 							Vector3 tPos = Vector3(-15.f, 1.5f, 0);
 							string add = "-$"; add += to_string (long double (totalPrice) );
 							text2D.push_back( new OnScreenText(add, tPos, true) );
+						}
+						else
+						{
+							textbox = textbox->getAccept().altNext;
+						}
+					}
+					else
+						textbox = textbox->getDecline().next;
+				}
+				else if (textbox->type == "Donation")
+				{
+					textbox->apparentext.clear();
+
+					if (Select == textbox->getAccept().position)
+					{
+						player.inventory.Delete();
+
+						if (rand () % 2 == 0)
+						{
+							textbox = textbox->getAccept().next;
 						}
 						else
 						{
@@ -1312,6 +1332,11 @@ void PROJECTScene::Update(double dt)
 						if (textbox->type == "Checkout")
 						{
 							character[i]->InitQuest("Filestream//Quests//cashier.txt");
+							textbox->text = textbox->GenerateText(player.inventory);
+						}
+						else if (textbox->type == "Donation")
+						{
+							character[i]->InitQuest("Filestream//Quests//hobo.txt");
 							textbox->text = textbox->GenerateText(player.inventory);
 						}
 					}
@@ -1963,7 +1988,7 @@ void PROJECTScene::Render()
 			modelStack.PopMatrix();
 		modelStack.PopMatrix();
 
-		if ( (textbox->type == "Quest" || textbox->type == "Checkout") && textbox->apparentext == textbox->text)
+		if ( (textbox->type == "Quest" || textbox->type == "Checkout" || textbox->type == "Donation") && textbox->apparentext == textbox->text)
 		{
 			modelStack.PushMatrix();
 			modelStack.Translate(textbox->getAccept().position);

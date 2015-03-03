@@ -270,6 +270,7 @@ void Hobo::Init()
 	}
 
 	InitDialogue("Filestream//hobo.txt");
+	InitQuest("Filestream//Quests//hobo.txt");
 }
 
 void Hobo::Control(double dt, vector<Object*>object, Player* player)

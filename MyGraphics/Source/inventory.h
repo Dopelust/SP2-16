@@ -101,6 +101,8 @@ public:
 	bool Checkout();
 
 	bool Remove();
+	bool Delete();
+
 	void Init(Vector3 pos);
 	void Update(double dt);
 

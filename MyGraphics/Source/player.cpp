@@ -149,7 +149,9 @@ void Player::Update(double dt, vector<Object*>object)
 		if (value[eatElapsed] > 1.5f)
 		{
 			health += inventory.getHolding()->getHealth();
-			inventory.Remove();
+
+			inventory.Delete();
+
 			state[EATING] = false;
 			value[eatElapsed] = 0;
 			value[eatCooldown] = 0.2f;

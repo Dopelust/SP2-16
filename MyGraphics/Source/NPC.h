@@ -97,6 +97,24 @@ public:
 	~Hobo() {};
 
 	virtual void Init();
+	void InitQuest(const char* filename);
+	TextBox * getConversation(Player * player)
+	{
+		if (!inConversation)
+		{
+			inConversation = true;
+
+			if (player->inventory.getHolding() == NULL)
+			{
+				int r = rand() % greetings.size();
+				return &greetings[r];
+			}
+			else
+				return quest;
+		}
+
+		return NULL;
+	};
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
