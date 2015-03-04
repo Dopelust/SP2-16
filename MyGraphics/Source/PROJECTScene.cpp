@@ -164,6 +164,7 @@ void PROJECTScene::RicssonInit()
 		object.push_back( new Item(Vector3(x-9,0.5,-54.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
 	*/
+	/*
 	for (int y = 0; y <= 6; y+=3)
 	{
 		hitBox = Vector3(3, 3, 3);
@@ -180,7 +181,7 @@ void PROJECTScene::RicssonInit()
 		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new dynamicObject(Vector3(x,y,39.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, rand() % 21 - 10) );
 		}
-	}
+	}*/
 	for ( int x = 0; x < 3; x++)
 	{
 		for (int z = 0; z < 3; z++)
