@@ -164,7 +164,7 @@ void PROJECTScene::RicssonInit()
 		object.push_back( new Item(Vector3(x-9,0.5,-54.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
 	*/
-	/*
+	
 	for (int y = 0; y <= 6; y+=3)
 	{
 		hitBox = Vector3(3, 3, 3);
@@ -172,16 +172,6 @@ void PROJECTScene::RicssonInit()
 		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, rand() % 21 - 10) );
 	}
-	for(int x = 78; x >= 75; x-=3)
-	{
-		for (int y = 28; y <= 31; y+=3)
-		{
-		hitBox = Vector3(3, 3, 3);
-		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
-		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new dynamicObject(Vector3(x,y,39.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, rand() % 21 - 10) );
-		}
-	}*/
 	for ( int x = 0; x < 3; x++)
 	{
 		for (int z = 0; z < 3; z++)
@@ -1419,13 +1409,13 @@ void PROJECTScene::Update(double dt)
 	{
 		if (object[i]->type == "Dynamic" || object[i]->type == "NPC" || object[i]->type == "Player")
 		{
-			if(Object::checkCollision(&doorway.Range, object[i]) == true && doorway.close == true)
+			if(Object::checkCollision(&doorway.Range, object[i]) && doorway.close)
 			{
 				object[i]->position.y = 27;
 				doorway2.open = true;
 				doorway2.close = false;
 			}
-			else if(Object::checkCollision(&doorway2.Range, object[i]) == true && doorway2.close == true)
+			else if(Object::checkCollision(&doorway2.Range, object[i]) && doorway2.close)
 			{
 				object[i]->position.y = 0;
 				doorway.open = true;
