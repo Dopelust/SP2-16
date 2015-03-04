@@ -53,6 +53,7 @@ public:
 
 class Aesthetics
 {
+public:
 	Aesthetics() {};
 	Aesthetics(Vector3 p, Mesh* m, float o) 
 	{
