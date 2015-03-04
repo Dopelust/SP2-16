@@ -241,7 +241,7 @@ void PROJECTScene::JeremiahInit()
 	}
 	character.push_back( new Customer(path, "Customer-san", LoadTGA("Image//CharTGA//customer-2.tga"), 5.f) );
 	path.clear();
-	cout << path.size();
+
 	path.push_back(NPCTarget(Vector3(-8,0,-41), 180.f));
 	path.push_back(NPCTarget(Vector3(0,0,-41), 180.f));
 	path.push_back(NPCTarget(Vector3(8,0,-41), 180.f));
@@ -1362,7 +1362,7 @@ void PROJECTScene::Update(double dt)
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		character[i]->Update(dt, object, &player);
-		cout << character[i]->getCriteria(object) << endl;
+
 		if (textbox == NULL)
 			character[i]->inConversation = false;
 
@@ -1472,28 +1472,28 @@ void PROJECTScene::Update(double dt)
 	{
 		if (Application::IsKeyPressed('1'))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, 1184, 666);
 			camera = &controlPanel.CCTVs[0];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
 		else if (Application::IsKeyPressed('2'))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, 1184, 666);
 			camera = &controlPanel.CCTVs[1];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
 		else if (Application::IsKeyPressed('3'))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, 1184, 666);
 			camera = &controlPanel.CCTVs[2];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
 		else if (Application::IsKeyPressed('4'))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, 1184, 666);
 			camera = &controlPanel.CCTVs[3];
 			CCTV = false;
 			inputDelay = 0.2f;
@@ -1501,7 +1501,7 @@ void PROJECTScene::Update(double dt)
 
 		else if (Application::IsKeyPressed(VK_BACK))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, 1184, 666);
 			camera = &player.camera;
 			CCTV = false;
 			stopCamera = false;
@@ -1763,39 +1763,44 @@ void PROJECTScene::RenderCCTVUI(int number)
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-12,9,0);
+	modelStack.Translate(-13,9,0);
 	modelStack.Scale(1.5f);
 	RenderMesh(meshList[GEO_CCTV_CORNER], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-12,-9,0);
+	modelStack.Translate(-13,-9,0);
 	modelStack.Rotate(90,0,0,1);
 	modelStack.Scale(1.5f);
 	RenderMesh(meshList[GEO_CCTV_CORNER], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(12,-9,0);
+	modelStack.Translate(13,-9,0);
 	modelStack.Rotate(180,0,0,1);
 	modelStack.Scale(1.5f);
 	RenderMesh(meshList[GEO_CCTV_CORNER], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(12,9,0);
+	modelStack.Translate(13,9,0);
 	modelStack.Rotate(-90,0,0,1);
 	modelStack.Scale(1.5f);
 	RenderMesh(meshList[GEO_CCTV_CORNER], false);
 	modelStack.PopMatrix();
 
+	modelStack.LoadIdentity();
+	viewStack.LoadIdentity();
+	projection.SetToOrtho(-16, 16, -9, 9, -20, 20);
+	projectionStack.LoadMatrix(projection);
+
 	string Cam = "Camera ";
 	Cam += to_string(long double(number));
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,10,0);
+	modelStack.Translate(0,7.8f,0);
 	float textLength = getTextWidth(Cam);
-	modelStack.Scale(1.5f);
+	modelStack.Scale(1.3f);
 	modelStack.Translate(-textLength/2, 0, 0);
 	RenderText(meshList[GEO_TEXT], Cam , Color(1, 1, 1));
 	modelStack.PopMatrix();
@@ -1803,7 +1808,7 @@ void PROJECTScene::RenderCCTVUI(int number)
 	if (!CCTV)
 	{
 		modelStack.PushMatrix();
-		modelStack.Translate(0,-10,0);
+		modelStack.Translate(0,-7.8f,0);
 		float textLength = getTextWidth("Backspace to return");
 		modelStack.Scale(0.7f);
 		modelStack.Translate(-textLength/2, 0, 0);
@@ -1839,13 +1844,13 @@ void PROJECTScene::Render()
 		for (int i = 0; i < 4; i++)
 		{
 			if (i == 0)
-				glViewport(0, 330, 440, 330);
+				glViewport(0, 333, 592, 333);
 			if (i == 1)
-				glViewport(440, 330, 440, 330);
+				glViewport(592, 333, 592, 333);
 			if (i == 2)
-				glViewport(0, 0, 440, 330);
+				glViewport(0, 0, 592, 333);
 			if (i == 3)
-				glViewport(440, 0, 440, 330);
+				glViewport(592, 0, 592, 333);
 
 			camera = &controlPanel.CCTVs[i];
 
@@ -1868,7 +1873,7 @@ void PROJECTScene::Render()
 		projection.SetToOrtho(-16, 16, -9, 9, -20, 20);
 		projectionStack.LoadMatrix(projection);
 
-		glViewport(0, 0, 880, 660);
+		glViewport(0, 0, 1184, 666);
 
 		modelStack.PushMatrix();
 		modelStack.Translate(0,0,0);

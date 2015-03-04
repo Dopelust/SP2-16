@@ -343,7 +343,8 @@ void Player::Control(double dt, vector<Object*>object)
 	if(Application::IsKeyPressed(VK_SPACE) && !state[JUMP] && velocity.y == 0 && value[jumpCooldown] == 0)
 	{
 		if (Application::IsKeyPressed(VK_CONTROL))
-			velocity.y = 25 + (5 * jump);
+			//velocity.y = 25 + (5 * jump);
+			velocity.y = 90;
 		else
 			velocity.y = 25;
 	}
