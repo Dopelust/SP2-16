@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	player.cpp
+\author Ricsson
+\par	
+\brief
+This is the camera3 cpp
+*/
+/******************************************************************************/
 #include "player.h"
 #include "dialogue.h"
 
@@ -8,6 +17,11 @@ static int knifeDir = 1;
 
 using namespace::std;
 
+/******************************************************************************/
+/*!
+\brief CollisionResponse function
+*/
+/******************************************************************************/
 void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Vector3 maxCube, Vector3 minCube, Vector3 maxPlayer, Vector3 minPlayer, float& yVelocity, bool failSafe)
 {
 	if (initialPos.y == maxCube.y || (Math::distBetween(minPlayer.y, maxCube.y) <= 0.4f && yVelocity >= -1.5f))  //If standing on object, check y first
@@ -78,6 +92,11 @@ extern bool stopCamera;
 extern ISoundEngine * engine;
 extern TextBox * textbox;
 
+/******************************************************************************/
+/*!
+\brief PLayer Update function
+*/
+/******************************************************************************/
 void Player::Update(double dt, vector<Object*>object)
 {
 	Vector3 initialPos = position;
@@ -302,6 +321,12 @@ void Player::Update(double dt, vector<Object*>object)
 		}
 	}
 }
+
+/******************************************************************************/
+/*!
+\brief PLayer Control
+*/
+/******************************************************************************/
 void Player::Control(double dt, vector<Object*>object)
 {
 	Vector3 direction;
@@ -378,6 +403,11 @@ void Player::Control(double dt, vector<Object*>object)
 
 float eDelay = 0;
 
+/******************************************************************************/
+/*!
+\brief dynamicObj update
+*/
+/******************************************************************************/
 void dynamicObject::Update(double dt, vector<Object*>object, Player* player)
 {
 	if (position.Dist(player->position) < 60.f)
@@ -393,6 +423,11 @@ void dynamicObject::Update(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+/******************************************************************************/
+/*!
+\brief dynamicObj RespondToCollision
+*/
+/******************************************************************************/
 void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object, Player* player)
 {
 	Vector3 Cube = collision.hitbox/2; Cube += collision.centre;
@@ -440,6 +475,11 @@ void dynamicObject::RespondToCollision(Vector3 initialPos, vector<Object*>object
 	}
 }
 
+/******************************************************************************/
+/*!
+\brief Doorway update
+*/
+/******************************************************************************/
 void Doorway::Update(double dt, vector<Object*>object, Player* player) 
 {
 	Vector3 initialPos[2];
@@ -502,6 +542,10 @@ void Doorway::Update(double dt, vector<Object*>object, Player* player)
 
 bool entrance = false;
 
+/******************************************************************************/
+/*!
+\brief Doorway rangebox update
+/******************************************************************************/
 void Doorway::RangeUpdate(double dt, vector<Object*>object, Player* player) 
 {
 	entrance = false;
@@ -524,6 +568,11 @@ void Doorway::RangeUpdate(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+/******************************************************************************/
+/*!
+\brief Doorway button update for elevator
+*/
+/******************************************************************************/
 void Doorway::ButtonUpdate(double dt, vector<Object*>object, Player* player) 
 {
 	if (player->holding < 0)

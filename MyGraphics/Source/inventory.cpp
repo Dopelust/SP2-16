@@ -1,4 +1,20 @@
+/******************************************************************************/
+/*!
+\file	inventory.cpp
+\author Ricsson
+\par	
+\brief
+This is the camera3 cpp
+*/
+/******************************************************************************/
 #include "inventory.h"
+
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory initialzer
+*/
+/******************************************************************************/
 
 void Inventory::Init(Vector3 pos)
 {
@@ -26,6 +42,12 @@ void Inventory::Init(Vector3 pos)
 	selector.selectedSlot= &slots[index];
 };
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory update
+*/
+/******************************************************************************/
 void Inventory::Update(double dt)
 {
 	wallet.Update();
@@ -83,6 +105,12 @@ void Inventory::Update(double dt)
 	selector.selectedSlot = &slots[index];
 }
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory checkprice function of total items in players inventory
+*/
+/******************************************************************************/
 float Inventory::checkPrice()
 {
 	float price = 0.f;
@@ -104,6 +132,12 @@ float Inventory::checkPrice()
 	return price;
 }
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory the checkout function to pay for all the items in the players inventory.
+*/
+/******************************************************************************/
 bool Inventory::Checkout()
 {
 	if (checkPrice() > wallet.trueValue)
@@ -146,6 +180,12 @@ bool Inventory::Checkout()
 	return true;
 }
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory insert function to insert items into the players inventory
+*/
+/******************************************************************************/
 bool Inventory::Insert(Object* o)
 {
 	for (int i = 0; i < 9; i++)
@@ -167,6 +207,12 @@ bool Inventory::Insert(Object* o)
 	return false;
 }
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory delete function to delete items in players inventory slot
+*/
+/******************************************************************************/
 bool Inventory::Delete()
 {
 	if (!selector.selectedSlot->item.empty())
@@ -179,6 +225,12 @@ bool Inventory::Delete()
 	return false;
 }
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory remove function to put back items
+*/
+/******************************************************************************/
 bool Inventory::Remove()
 {
 	if (!selector.selectedSlot->item.empty())
@@ -190,6 +242,12 @@ bool Inventory::Remove()
 	return false;
 }
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory canUse function to check whether the item is edible
+*/
+/******************************************************************************/
 bool Inventory::canUse()
 {
 	if(!selector.selectedSlot->item.empty())
@@ -201,6 +259,12 @@ bool Inventory::canUse()
 	return false;
 }
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory checkPaid function to check if the items in inventory is already paid.
+*/
+/******************************************************************************/
 bool Inventory::checkPaid()
 {
 	for (int i = 0; i < 9; i++)
@@ -215,6 +279,12 @@ bool Inventory::checkPaid()
 	return true;
 }
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory emptySlot to find out the number of emptyslots left in the players inventory.
+*/
+/******************************************************************************/
 int Inventory::emptySlot()
 {
 	for (int i = 0; i < 9; i++)
@@ -226,6 +296,12 @@ int Inventory::emptySlot()
 	return -1;
 }
 
+/******************************************************************************/
+/*!
+		inventory:
+\brief	Inventory update function.
+*/
+/******************************************************************************/
 void Wallet::Update()
 {
 	int v = abs(trueValue - apparentValue);

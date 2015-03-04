@@ -1,5 +1,20 @@
+/******************************************************************************/
+/*!
+\file	collision.cpp
+\author Ricsson
+\par	
+\brief
+This is the collision.cpp that contains all the functions and constructors.
+*/
+/******************************************************************************/
 #include "collision.h"
 
+/******************************************************************************/
+/*!
+		Object:
+\brief	Basic constructor
+*/
+/******************************************************************************/
 Object::Object(Vector3 p, Vector3 c, Vector3 h)
 {
 	position = p;
@@ -9,6 +24,13 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h)
 	ignoreCollision = false;
 	mesh = NULL;
 }
+
+/******************************************************************************/
+/*!
+		Object:
+\brief	Overloaded constructor
+*/
+/******************************************************************************/
 Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m)
 {
 	position = p;
@@ -19,6 +41,12 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m)
 	ignoreCollision = false;
 }
 
+/******************************************************************************/
+/*!
+		Object:
+\brief	Overloaded constructor
+*/
+/******************************************************************************/
 Object::Object(Vector3 p, Vector3 c, Vector3 h, float s, float o, bool i)
 {
 	position = p;
@@ -29,6 +57,12 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h, float s, float o, bool i)
 	ignoreCollision = i;
 }
 
+/******************************************************************************/
+/*!
+		Object:
+\brief	Overloaded constructor
+*/
+/******************************************************************************/
 Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i)
 {
 	position = p;
@@ -39,6 +73,13 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool 
 	ignoreCollision = i;
 }
 
+
+/******************************************************************************/
+/*!
+		Class Object:
+\brief	Collsion checker function
+*/
+/******************************************************************************/
 bool Object::checkCollision(Object* a, Object*  b)
 {
 	Vector3 CubeA = a->collision.hitbox/2; CubeA += a->collision.centre; 
@@ -58,6 +99,12 @@ bool Object::checkCollision(Object* a, Object*  b)
     minCubeA.z < maxCubeB.z);
 }
 
+/******************************************************************************/
+/*!
+		Class Object:
+\brief	Partical update function
+*/
+/******************************************************************************/
 void Particles::Update(double dt)
 {
 	position += direction * float(dt);

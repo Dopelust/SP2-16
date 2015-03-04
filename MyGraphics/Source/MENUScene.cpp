@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	MEUScene.cpp
+\author Ricsson
+\par	
+\brief
+This is the MENUScene cpp
+*/
+/******************************************************************************/
 #include "MENUScene.h"
 #include "GL\glew.h"
 
@@ -13,13 +22,26 @@ using namespace::std;
 
 float MENUScene::inputDelay = 0.f;
 
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	This is the constructor
+*/
+/******************************************************************************/
 MENUScene::MENUScene()
 {
 	type = "MENUScene";
 }
+
 MENUScene::~MENUScene()
 {
 }
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	Initializers
+*/
+/******************************************************************************/
 void MENUScene::InitJunk()
 {
 	m_programID = LoadShaders( "Shader//Texture.vertexshader", "Shader//MultiLight.fragmentshader" );
@@ -202,6 +224,12 @@ bool controls = false;
 
 char lastKey;
 
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	Update
+*/
+/******************************************************************************/
 void MENUScene::Update(double dt)
 {
 	if (!engine->isCurrentlyPlaying("Media/bgm.mp3"))
@@ -335,6 +363,12 @@ void MENUScene::Update(double dt)
 	Application::mouseScroll = 0;
 }
 
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	Render
+*/
+/******************************************************************************/
 void MENUScene::RenderScene()
 {
 	for (int i = 0; i < 3; i++)
@@ -367,6 +401,12 @@ void MENUScene::RenderScene()
 
 	glEnable(GL_DEPTH_TEST);
 }
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	Render
+*/
+/******************************************************************************/
 void MENUScene::Render()
 {
 	// Render VBO here
@@ -476,6 +516,12 @@ void MENUScene::Render()
 	//2D
 }
 
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	Render Mesh
+*/
+/******************************************************************************/
 void MENUScene::RenderMesh(Mesh *mesh, bool enableLight)
 {
 	Mtx44 MVP, modelView, modelView_inverse_transpose;
@@ -519,6 +565,13 @@ void MENUScene::RenderMesh(Mesh *mesh, bool enableLight)
 
 
 }
+
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	RenderText 
+*/
+/******************************************************************************/
 void MENUScene::RenderText(Mesh* mesh, std::string text, Color color)
 {
 	if(!mesh || mesh->textureID <= 0) //Proper error check
@@ -611,6 +664,12 @@ void MENUScene::RenderText(Mesh* mesh, std::string text, Color color)
 	glUniform1i(m_parameters[U_TEXT_ENABLED], 0);
 }
 
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	Get text width
+*/
+/******************************************************************************/
 float MENUScene::getTextWidth(string text)
 {
 	float textWidth = 0.f;
@@ -683,6 +742,13 @@ float MENUScene::getTextWidth(string text)
 	}
 	return textWidth;
 }
+
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	Exit
+*/
+/******************************************************************************/
 void MENUScene::Exit()
 {
 	// Cleanup VBO here
@@ -692,6 +758,12 @@ void MENUScene::Exit()
 	engine->stopAllSounds();
 }
 
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	Rendering the skybox
+*/
+/******************************************************************************/
 void MENUScene::RenderSkybox()
 {
 	modelStack.PushMatrix();
@@ -736,6 +808,13 @@ void MENUScene::RenderSkybox()
 	RenderMesh(meshList[GEO_BOTTOM], false);
 	modelStack.PopMatrix();
 }
+
+/******************************************************************************/
+/*!
+		MENUScene:
+\brief	Render Crosshair
+*/
+/******************************************************************************/
 void MENUScene::RenderCrosshair()
 {
 	modelStack.PushMatrix();

@@ -1,8 +1,23 @@
+/******************************************************************************/
+/*!
+\file	Camera3.cpp
+\author Ricsson
+\par	
+\brief
+This is the camera3 cpp
+*/
+/******************************************************************************/
 #include "Camera3.h"
 #include "PROJECTScene.h"
 #include "Application.h"
 #include "Mtx44.h"
 
+/******************************************************************************/
+/*!
+		Camera3:
+\brief	This is the constructor
+*/
+/******************************************************************************/
 Camera3::Camera3()
 {
 	orientation = 0.f;
@@ -11,10 +26,22 @@ Camera3::Camera3()
 	fov = 70.f;
 }
 
+/******************************************************************************/
+/*!
+		Camera3:
+\brief	This is the decstructor
+*/
+/******************************************************************************/
 Camera3::~Camera3()
 {
 }
 
+/******************************************************************************/
+/*!
+		Camera3:
+\brief	This is the initializer
+*/
+/******************************************************************************/
 void Camera3::Init(const Vector3& pos, const float& hO, const float& vO)
 {
 	orientation = defaultOrientation = hO;
@@ -28,6 +55,12 @@ void Camera3::Init(const Vector3& pos, const float& hO, const float& vO)
 	this->up = defaultUp = right.Cross(view);
 }
 
+/******************************************************************************/
+/*!
+		Camera3:
+\brief	This is the zoom function when sprinting and CCTV camera zoom
+*/
+/******************************************************************************/
 void Camera3::Zoom(double dt)
 {
 	fov -=float( dt * 250 * Application::mouseScroll );
@@ -42,6 +75,12 @@ void Camera3::Zoom(double dt)
 extern int width;
 extern int height;
 
+/******************************************************************************/
+/*!
+		Camera3: Move
+\brief	This is for the moving of the camera.
+*/
+/******************************************************************************/
 void Camera3::Move(double dt)
 {
 	float yaw = (float)(10.f * dt * (float)(double(width)/2 - Application::getMousePos().x) * (fov/70.f));
@@ -60,6 +99,12 @@ void Camera3::Move(double dt)
 		look = -90.f;
 }
 
+/******************************************************************************/
+/*!
+		Camera3:
+\brief	This is the update function
+*/
+/******************************************************************************/
 void Camera3::Update(double dt)
 {
 	Vector3 view; Vector3 right;
@@ -70,6 +115,12 @@ void Camera3::Update(double dt)
 	target = view*7 + position;
 }
 
+/******************************************************************************/
+/*!
+		Camera3:
+\brief	This is the lookingAt
+*/
+/******************************************************************************/
 int Camera3::lookingAt(vector<Object*>object, int Reach)
 {
 	Vector3 view = (target - position).Normalized(); view/=10;
@@ -108,6 +159,12 @@ int Camera3::lookingAt(vector<Object*>object, int Reach)
 	return 0;
 }
 
+/******************************************************************************/
+/*!
+		Camera3:
+\brief	This is the reset
+*/
+/******************************************************************************/
 void Camera3::Reset()
 {
 	orientation = defaultOrientation;

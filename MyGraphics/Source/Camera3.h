@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	Camera3.h
+\author Ricsson
+\par	
+\brief
+Camera function that uses mouse control.
+*/
+/******************************************************************************/
 #ifndef CAMERA_3_H
 #define CAMERA_3_H
 
@@ -7,6 +16,13 @@
 #include <vector>
 
 using namespace::std;
+
+/******************************************************************************/
+/*!
+		Class Camera3: inherits from camera class.
+\brief	Camera3 class
+*/
+/******************************************************************************/
 
 class Camera3 : public Camera
 {
@@ -34,6 +50,14 @@ public:
 	virtual void Reset();
 };
 
+
+/******************************************************************************/
+/*!
+		Class Security
+\brief	Security class that is used for initializing the 4 CCTV's(Bonus feature)
+ETC, position and access points.
+*/
+/******************************************************************************/
 class Security
 {
 public:

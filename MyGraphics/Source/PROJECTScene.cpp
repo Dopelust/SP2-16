@@ -1,4 +1,13 @@
-﻿#include "PROJECTScene.h"
+﻿/******************************************************************************/
+/*!
+\file	PROJECTScene.cpp
+\author Ricsson
+\par	
+\brief
+This is the camera3 cpp
+*/
+/******************************************************************************/
+#include "PROJECTScene.h"
 #include "GL\glew.h"
 
 #include "shader.hpp"
@@ -14,10 +23,23 @@ using namespace::std;
 float PROJECTScene::inputDelay = 0.f;
 TextBox * textbox;
 
+/******************************************************************************/
+/*!
+\brief
+Constructor
+*/
+/******************************************************************************/
 PROJECTScene::PROJECTScene()
 {
 	type = "PROJECTScene";
 }
+
+/******************************************************************************/
+/*!
+\brief
+Destructor
+*/
+/******************************************************************************/
 PROJECTScene::~PROJECTScene()
 {
 	for (unsigned int i = 0; i < text.size(); i++)
@@ -72,6 +94,13 @@ PROJECTScene::~PROJECTScene()
 		delete meshList[i];
 	}
 }
+
+/******************************************************************************/
+/*!
+\brief
+Initializers
+*/
+/******************************************************************************/
 void PROJECTScene::InitJunk()
 {
 	m_programID = LoadShaders( "Shader//Texture.vertexshader", "Shader//MultiLight.fragmentshader" );
@@ -142,6 +171,13 @@ void PROJECTScene::InitJunk()
 	meshList[GEO_TOP] = MeshBuilder::GenerateQuad("top", Color(1, 1, 1), 1.f, 1.f, 1);
 	meshList[GEO_TOP]->textureID = LoadTGA("Image//Skybox//topmc.tga");
 }
+
+/******************************************************************************/
+/*!
+\brief
+Initializers
+*/
+/******************************************************************************/
 void PROJECTScene::RicssonInit()
 {
 	Mesh* tempMesh;
@@ -250,6 +286,13 @@ void PROJECTScene::RicssonInit()
 		}
 	}
 }
+
+/******************************************************************************/
+/*!
+\brief
+Initializers
+*/
+/******************************************************************************/
 void PROJECTScene::JeremiahInit()
 {
 	Mesh* tempMesh;
@@ -521,6 +564,13 @@ void PROJECTScene::JeremiahInit()
 	decoration.push_back( new Aesthetics(Vector3(-30.f,27.1f,15.f), tempMesh, 0) );
 
 }
+
+/******************************************************************************/
+/*!
+\brief
+Initializers
+*/
+/******************************************************************************/
 void PROJECTScene::JessicaInit()
 {
 	Mesh* tempMesh;
@@ -965,6 +1015,13 @@ void PROJECTScene::JessicaInit()
 	hitBox = Vector3(240,60,1); 
 	object.push_back( new Object(Vector3(0,0,-210), Vector3(0,hitBox.y/2,0), hitBox, 1, 0, false));
 }
+
+/******************************************************************************/
+/*!
+\brief
+Initializers
+*/
+/******************************************************************************/
 void PROJECTScene::DarrenInit()
 {	
 	Mesh* tempMesh;
@@ -1085,6 +1142,13 @@ void PROJECTScene::DarrenInit()
 	object.push_back( &AutoDoor.Door[0] );
 	object.push_back( &AutoDoor.Door[1] );
 }
+
+/******************************************************************************/
+/*!
+\brief
+Initializers
+*/
+/******************************************************************************/
 void PROJECTScene::Init()
 {
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
@@ -1198,6 +1262,12 @@ extern bool menu;
 
 bool pause = false;
 
+/******************************************************************************/
+/*!
+\brief
+Upadte
+*/
+/******************************************************************************/
 void PROJECTScene::Update(double dt)
 {
 	soundUpdate(player);
@@ -1654,6 +1724,12 @@ void PROJECTScene::Update(double dt)
 	Application::mouseScroll = 0;
 }
 
+/******************************************************************************/
+/*!
+\brief
+RenderScene()
+*/
+/******************************************************************************/
 void PROJECTScene::RenderScene()
 {
 	for (int i = 0; i < 3; i++)
@@ -1867,6 +1943,12 @@ void PROJECTScene::RenderScene()
 	glEnable(GL_DEPTH_TEST);
 }
 
+/******************************************************************************/
+/*!
+\brief
+RenderCCTV UI
+*/
+/******************************************************************************/
 void PROJECTScene::RenderCCTVUI(int number)
 {
 	Mtx44 projection;
@@ -1940,6 +2022,12 @@ void PROJECTScene::RenderCCTVUI(int number)
 	glEnable(GL_DEPTH_TEST);
 }
 
+/******************************************************************************/
+/*!
+\brief
+Render
+*/
+/******************************************************************************/
 void PROJECTScene::Render()
 {
 	// Render VBO here
@@ -2414,6 +2502,13 @@ void PROJECTScene::RenderMesh(Mesh *mesh, bool enableLight)
 
 
 }
+
+/******************************************************************************/
+/*!
+\brief
+Mesh renderes
+*/
+/******************************************************************************/
 void PROJECTScene::RenderText(Mesh* mesh, std::string text, Color color)
 {
 	if(!mesh || mesh->textureID <= 0) //Proper error check
