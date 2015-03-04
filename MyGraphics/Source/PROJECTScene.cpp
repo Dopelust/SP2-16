@@ -165,14 +165,14 @@ void PROJECTScene::RicssonInit()
 	}
 	*/
 	
-	for (int y = 0; y <= 6; y+=3)
+	for (float y = 0; y <= 6; y+=3)
 	{
 		hitBox = Vector3(3, 3, 3);
 		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
 		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, rand() % 21 - 10) );
+		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube,float (rand() % 21 - 10)) );
 	}
-	for ( int x = 0; x < 3; x++)
+	for ( float x = 0; x < 3; x++)
 	{
 		for (float z = 0; z < 3; z++)
 		{

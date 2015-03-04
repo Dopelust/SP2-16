@@ -73,7 +73,7 @@ void Camera3::Update(double dt)
 int Camera3::lookingAt(vector<Object*>object, int Reach)
 {
 	Vector3 view = (target - position).Normalized(); view/=10;
-	Object r(position + view* ( (Reach/2) - 0.5f ), Vector3(0,0,0), Vector3(Reach/10,Reach/10,Reach/10));
+	Object r(position + view* ( (float(Reach/2)) - 0.5f ), Vector3(0,0,0), Vector3(float(Reach/10),float(Reach/10),float(Reach/10)));
 	Object o(position, Vector3(0,0,0), Vector3(0.1f,0.1f,0.1f));
 
 	vector<Object*> closeObjects;
