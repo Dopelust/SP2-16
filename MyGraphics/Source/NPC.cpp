@@ -553,8 +553,6 @@ void Manager::Control(double dt, vector<Object*>object, Player* player)
 			quest->criteria = true;
 		else
 			quest->criteria = false;
-
-		cout << quest->criteria << endl;
 	}
 
 	Orientate(-145, dt, 150.f);

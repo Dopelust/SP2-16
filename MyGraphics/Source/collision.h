@@ -76,7 +76,7 @@ class Money : public Object
 public:
 	Money() {ignoreCollision = true;};
 	Money(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, float v) : Object(p,c,h,m,s,o,true) {type = "Money"; value = v;};
-	~Money();
+	~Money() {};
 
 	float value;
 	float getValue() {return value;};

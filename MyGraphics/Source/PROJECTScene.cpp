@@ -36,7 +36,7 @@ PROJECTScene::~PROJECTScene()
 	{
 		delete character[i]->quest;
 
-		for (unsigned int c = 0; c < character[i]->NUM_BODYPARTS; i++)
+		for (unsigned int c = 0; c < character[i]->NUM_BODYPARTS; c++)
 		{
 			delete character[i]->bodyParts[c].mesh;
 		}
@@ -45,16 +45,17 @@ PROJECTScene::~PROJECTScene()
 	}
 	character.clear();
 
-	for (unsigned int i = 0; i < object.size(); i++)
+	
+	for (unsigned int i = 1; i < object.size(); i++)
 	{
-		delete object[i]->mesh;
+		object[i]->mesh = NULL;
 		delete object[i];
 	}
 	object.clear();
-
+	
 	for (unsigned int i = 0; i < decoration.size(); i++)
 	{
-		delete decoration[i]->mesh;
+		decoration[i]->mesh = NULL;
 		delete decoration[i];
 	}
 	decoration.clear();
@@ -67,10 +68,9 @@ PROJECTScene::~PROJECTScene()
 
 	for (unsigned int i = 0; i < NUM_GEOMETRY; i++)
 	{
+		meshList[i] = NULL;
 		delete meshList[i];
 	}
-
-	delete camera;
 }
 void PROJECTScene::InitJunk()
 {

@@ -20,7 +20,7 @@ public:
 	dynamicObject()  {type = "Dynamic";};
 	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m) :	Object(p,c,h,m) {type = "Dynamic"; health = 0;};
 	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float o) :	Object(p,c,h,m) {orientation = o; type = "Dynamic"; health = 0;};
-	~dynamicObject() {};
+	virtual ~dynamicObject() {};
 
 	virtual void Init() {};
 	virtual void Control(double dt, vector<Object*>object, Player* player);
@@ -64,7 +64,7 @@ public:
 	Player() 
 	{
 		type = "Player";
-		health = 100;
+		health = 1;
 		apparentHealth = 100;
 		position = Vector3(0, 2, -100);
 		for (int i = 0; i < TOTAL_VALUES; i++)
