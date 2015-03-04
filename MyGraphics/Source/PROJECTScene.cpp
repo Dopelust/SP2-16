@@ -900,10 +900,12 @@ void PROJECTScene::JessicaInit()
 	
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city1.tga");
-	object.push_back( new Object(Vector3(140,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	object.push_back( new Object(Vector3(141,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	object.push_back( new Object(Vector3(81,35,-28), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city2.tga");
-	object.push_back( new Object(Vector3(-140,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	object.push_back( new Object(Vector3(-141,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	object.push_back( new Object(Vector3(-81,35,-28), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , -90, true) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
 	object.push_back( new Object(Vector3(199,40,-158), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
