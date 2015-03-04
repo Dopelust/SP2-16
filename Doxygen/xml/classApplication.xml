@@ -16,12 +16,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="18" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" bodystart="18" bodyend="-1"/>
-        <referencedby refid="Application_8cpp_1a6bec52479312a11696798b50140f227d" compoundref="Application_8cpp" startline="36" endline="39">scroll_callback</referencedby>
-        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="194" endline="248">MENUScene::Update</referencedby>
-        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="29" endline="84">Inventory::Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
-        <referencedby refid="classCamera3_1a1671d2532fbe0a7a0ed037f549e6d8d2" compoundref="Camera3_8cpp" startline="31" endline="40">Camera3::Zoom</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="18" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="Application_8cpp_1a6bec52479312a11696798b50140f227d" compoundref="Application_8cpp" startline="34" endline="37">scroll_callback</referencedby>
+        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="233" endline="364">MENUScene::Update</referencedby>
+        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="51" endline="106">Inventory::Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
+        <referencedby refid="classCamera3_1a1671d2532fbe0a7a0ed037f549e6d8d2" compoundref="Camera3_8cpp" startline="64" endline="73">Camera3::Zoom</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -36,8 +36,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="24" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" bodystart="24" bodyend="-1"/>
-        <referencedby refid="classApplication_1aaf09cd6cb412086dc039e28cdb059f0d" compoundref="Application_8cpp" startline="130" endline="187">Run</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="24" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classApplication_1aaf09cd6cb412086dc039e28cdb059f0d" compoundref="Application_8cpp" startline="131" endline="185">Run</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="11" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.cpp" bodystart="56" bodyend="58"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="11" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.cpp" bodystart="58" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="classApplication_1a748bca84fefb9c12661cfaa2f623748d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="12" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.cpp" bodystart="60" bodyend="62"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="12" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.cpp" bodystart="62" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classApplication_1a276388f7090c0a2b1c8b16cf033b969d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -78,10 +78,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="13" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.cpp" bodystart="64" bodyend="114"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="13" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.cpp" bodystart="66" bodyend="116"/>
         <references refid="Application_8cpp_1a6e6d1771a9242858811be0a3569838fa" compoundref="Application_8cpp" startline="24" endline="28">error_callback</references>
         <references refid="Application_8cpp_1ac325468d8b5ea73fd5e5831ba972bb59" compoundref="Application_8cpp" startline="17">m_window</references>
-        <references refid="Application_8cpp_1aadcee9765075e232ca0720f80a76ad37" compoundref="Application_8cpp" startline="41" endline="44">resize_callback</references>
+        <references refid="Application_8cpp_1aadcee9765075e232ca0720f80a76ad37" compoundref="Application_8cpp" startline="42" endline="46">resize_callback</references>
         <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="5" endline="11">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classApplication_1aaf09cd6cb412086dc039e28cdb059f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -95,27 +95,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="14" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.cpp" bodystart="130" bodyend="187"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="14" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.cpp" bodystart="131" bodyend="185"/>
         <references refid="classScene_1aae8e24654ef98c79961c2b804b12852c">Scene::Exit</references>
         <references refid="Application_8cpp_1ae228418b33873657fa31313fb4189a8f" compoundref="Application_8cpp" startline="19">frameTime</references>
         <references refid="classStopWatch_1ac8be1626396d1a5ca414f74349d59eb2" compoundref="timer_8cpp" startline="34" endline="41">StopWatch::getElapsedTime</references>
-        <references refid="classApplication_1a8e0c92cc01f4cf7ab20ce21188f033f0" compoundref="Application_8cpp" startline="116" endline="122">getMousePos</references>
+        <references refid="Application_8cpp_1ad12fc34ce789bce6c8a05d8a17138534" compoundref="Application_8cpp" startline="40">height</references>
         <references refid="classScene_1ac3c4677dfd702a3ffd5ffadd3f1ac478">Scene::Init</references>
-        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">IsKeyPressed</references>
-        <references refid="Application_8cpp_1a567a1d847c8e78035c765f75280f6180">lastCursor</references>
         <references refid="classApplication_1ac81ea1396dc69c6d48b9a701954f53fe" compoundref="Application_8h" startline="24">m_timer</references>
         <references refid="Application_8cpp_1ac325468d8b5ea73fd5e5831ba972bb59" compoundref="Application_8cpp" startline="17">m_window</references>
-        <references refid="classScene_1a140d39ea291abd069dad5bf6bff97e37" compoundref="Scene_8h" startline="15">Scene::pause</references>
-        <references refid="Application_8cpp_1a5f589e5ecc9e76fbe63f43ff76edf021" compoundref="Application_8cpp" startline="124">pauseDelay</references>
-        <references refid="Application_8cpp_1ab6fcaa789c458a69920029339bcb303e" compoundref="MENUScene_8cpp" startline="191">play</references>
-        <references refid="Application_8cpp_1ac746fa6ad48d19984a159f14bec028a3" compoundref="MENUScene_8cpp" startline="192">quit</references>
+        <references refid="Application_8cpp_1a64881c5f5f42c13aa0deb1dc0d7a8b26" compoundref="MENUScene_8cpp" startline="217">menu</references>
+        <references refid="Application_8cpp_1ab6fcaa789c458a69920029339bcb303e" compoundref="MENUScene_8cpp" startline="218">play</references>
+        <references refid="Application_8cpp_1ac746fa6ad48d19984a159f14bec028a3" compoundref="MENUScene_8cpp" startline="219">quit</references>
         <references refid="classScene_1ae24d21e12b34839994ad265662ea24d7">Scene::Render</references>
-        <references refid="Application_8cpp_1a6bec52479312a11696798b50140f227d" compoundref="Application_8cpp" startline="36" endline="39">scroll_callback</references>
+        <references refid="Application_8cpp_1a6bec52479312a11696798b50140f227d" compoundref="Application_8cpp" startline="34" endline="37">scroll_callback</references>
         <references refid="classStopWatch_1a23301f735a2e3190435e39c9fd70cdf2" compoundref="timer_8cpp" startline="29" endline="32">StopWatch::startTimer</references>
+        <references refid="classScene_1aadcef6167dbf42098111084d6c3aca14" compoundref="Scene_8h" startline="17">Scene::type</references>
         <references refid="classScene_1af5c6bcf2185087fb32c27fb8f6a18d91">Scene::Update</references>
         <references refid="classStopWatch_1a2cd0856fc87a40038edfd66d784be8b4" compoundref="timer_8cpp" startline="43" endline="56">StopWatch::waitUntil</references>
-        <references refid="structPosition_1af684446cbf0f6d53386686283da6dcc6" compoundref="vertex_8h" startline="10">Position::x</references>
-        <references refid="structPosition_1a54a6182b5f7539295b32255808897d3f" compoundref="vertex_8h" startline="10">Position::y</references>
+        <references refid="Application_8cpp_1a2474a5474cbff19523a51eb1de01cda4" compoundref="Application_8cpp" startline="39">width</references>
         <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="5" endline="11">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classApplication_1a9d410604b39b8374a884b1f2a1f2a5ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -129,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="15" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.cpp" bodystart="189" bodyend="195"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="15" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.cpp" bodystart="187" bodyend="193"/>
         <references refid="Application_8cpp_1ac325468d8b5ea73fd5e5831ba972bb59" compoundref="Application_8cpp" startline="17">m_window</references>
         <referencedby refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8cpp" startline="5" endline="11">main</referencedby>
       </memberdef>
@@ -150,18 +147,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="16" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.cpp" bodystart="46" bodyend="49"/>
-        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="505" endline="514">Doorway::ButtonUpdate</referencedby>
-        <referencedby refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" compoundref="PROJECTScene_8cpp" startline="2449" endline="2473">dynamicObject::Control</referencedby>
-        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Player::Control</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
-        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
-        <referencedby refid="classApplication_1aaf09cd6cb412086dc039e28cdb059f0d" compoundref="Application_8cpp" startline="130" endline="187">Run</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="16" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.cpp" bodystart="48" bodyend="51"/>
+        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="576" endline="585">Doorway::ButtonUpdate</referencedby>
+        <referencedby refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" compoundref="PROJECTScene_8cpp" startline="2608" endline="2632">dynamicObject::Control</referencedby>
+        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="330" endline="402">Player::Control</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1725" endline="1936">PROJECTScene::RenderScene</referencedby>
         <referencedby refid="classCamera_1acc1741feb6d9da849ea4b6c12e0711e6" compoundref="Camera_8cpp" startline="28" endline="47">Camera::Update</referencedby>
-        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="194" endline="248">MENUScene::Update</referencedby>
-        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="29" endline="84">Inventory::Update</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Player::Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="233" endline="364">MENUScene::Update</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Player::Update</referencedby>
+        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="51" endline="106">Inventory::Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classApplication_1a1bfd134bb982a2e1a07d359c46d71483" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -178,12 +173,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="17" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.cpp" bodystart="51" bodyend="54"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="17" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.cpp" bodystart="53" bodyend="56"/>
         <references refid="Application_8cpp_1ac325468d8b5ea73fd5e5831ba972bb59" compoundref="Application_8cpp" startline="17">m_window</references>
-        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Player::Control</referencedby>
-        <referencedby refid="classNPC_1a24721357146b87e473c740fe9f295841" compoundref="NPC_8cpp" startline="210" endline="266">NPC::Update</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Player::Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="330" endline="402">Player::Control</referencedby>
+        <referencedby refid="classNPC_1a24721357146b87e473c740fe9f295841" compoundref="NPC_8cpp" startline="262" endline="319">NPC::Update</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Player::Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classApplication_1a8e0c92cc01f4cf7ab20ce21188f033f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structPosition" kindref="compound">Position</ref></type>
@@ -196,10 +191,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="19" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.cpp" bodystart="116" bodyend="122"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="19" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.cpp" bodystart="118" bodyend="124"/>
         <references refid="Application_8cpp_1ac325468d8b5ea73fd5e5831ba972bb59" compoundref="Application_8cpp" startline="17">m_window</references>
-        <referencedby refid="classCamera3_1a4cead3bb5a13f53d2f4043435937553d" compoundref="Camera3_8cpp" startline="43" endline="59">Camera3::Move</referencedby>
-        <referencedby refid="classApplication_1aaf09cd6cb412086dc039e28cdb059f0d" compoundref="Application_8cpp" startline="130" endline="187">Run</referencedby>
+        <referencedby refid="classCamera3_1a4cead3bb5a13f53d2f4043435937553d" compoundref="Camera3_8cpp" startline="84" endline="100">Camera3::Move</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -207,39 +201,39 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="823">
+      <node id="804">
         <label>int</label>
       </node>
-      <node id="819">
+      <node id="800">
         <label>Application</label>
         <link refid="classApplication"/>
-        <childnode refid="820" relation="usage">
+        <childnode refid="801" relation="usage">
           <edgelabel>m_timer</edgelabel>
         </childnode>
-        <childnode refid="823" relation="usage">
+        <childnode refid="804" relation="usage">
           <edgelabel>mouseScroll</edgelabel>
         </childnode>
       </node>
-      <node id="822">
+      <node id="803">
         <label>LARGE_INTEGER</label>
       </node>
-      <node id="820">
+      <node id="801">
         <label>StopWatch</label>
         <link refid="classStopWatch"/>
-        <childnode refid="821" relation="usage">
+        <childnode refid="802" relation="usage">
           <edgelabel>wTimerRes</edgelabel>
         </childnode>
-        <childnode refid="822" relation="usage">
+        <childnode refid="803" relation="usage">
           <edgelabel>frequency</edgelabel>
           <edgelabel>currTime</edgelabel>
           <edgelabel>prevTime</edgelabel>
         </childnode>
       </node>
-      <node id="821">
+      <node id="802">
         <label>UINT</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" line="9" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Application.h" bodystart="8" bodyend="25"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" line="9" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Application.h" bodystart="8" bodyend="25"/>
     <listofallmembers>
       <member refid="classApplication_1afa8cc05ce6b6092be5ecdfdae44e05f8" prot="public" virt="non-virtual"><scope>Application</scope><name>Application</name></member>
       <member refid="classApplication_1a9d410604b39b8374a884b1f2a1f2a5ba" prot="public" virt="non-virtual"><scope>Application</scope><name>Exit</name></member>

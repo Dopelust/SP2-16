@@ -453,7 +453,7 @@ Using irrKlang as static Lib</h1>
 <h1><a class="anchor" id="enumeratingDevices"></a>
 Enumerating sound devices</h1>
 <p>irrKlang uses the default sound device when playing sound when started without parameters. But if you want irrKlang to playback sound on one specific sound device, you may want to enumerate the available sound devices on your system and select one of them. Use <a class="el" href="namespaceirrklang.html#a38d9a69bf54fd60e76e80e199e44faee" title="Creates a list of available sound devices for the driver type. ">irrklang::createSoundDeviceList()</a> for this. This example code shows how to print a list of all available sound devices on the current system and lets the user choose one of them:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>** argv)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code" href="Application_8cpp.html#abdc0ed79982200fe114771223781e640">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>** argv)</div>
 <div class="line">{</div>
 <div class="line">       <span class="comment">// enumerate devices</span></div>
 <div class="line"></div>
@@ -490,7 +490,7 @@ Enumerating sound devices</h1>
 <h1><a class="anchor" id="recordingAudio"></a>
 Recording Audio</h1>
 <p>irrKlang is able to record audio from sound capturing devices such as microphones (currently only supported in windows). Use the <a class="el" href="classirrklang_1_1IAudioRecorder.html" title="Interface to an audio recorder. Create it using the createIrrKlangAudioRecorder() function...">irrklang::IAudioRecorder</a> interface to do this. The following example shows how to record some audio and play it back again using the engine:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>** argv)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code" href="Application_8cpp.html#abdc0ed79982200fe114771223781e640">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>** argv)</div>
 <div class="line">{</div>
 <div class="line">       <a class="code" href="classirrklang_1_1ISoundEngine.html">irrklang::ISoundEngine</a>* engine = <a class="code" href="namespaceirrklang.html#ad9829f898bc0665fdd2554a6f5c7ca1c">irrklang::createIrrKlangDevice</a>();</div>
 <div class="line">       <a class="code" href="classirrklang_1_1IAudioRecorder.html">irrklang::IAudioRecorder</a>* recorder = <a class="code" href="namespaceirrklang.html#aaa4535359bd66857aaadb746cf7d8cec">irrklang::createIrrKlangAudioRecorder</a>(engine);</div>
@@ -579,7 +579,7 @@ Quick Start Example</h1>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="irrKlang_8h.html">irrKlang.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#pragma comment(lib, &quot;irrKlang.lib&quot;) // link with irrKlang.dll</span></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>** argv)</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="Application_8cpp.html#abdc0ed79982200fe114771223781e640">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>** argv)</div>
 <div class="line">{</div>
 <div class="line">       <a class="code" href="classirrklang_1_1ISoundEngine.html">irrklang::ISoundEngine</a>* engine = <a class="code" href="namespaceirrklang.html#ad9829f898bc0665fdd2554a6f5c7ca1c">irrklang::createIrrKlangDevice</a>();</div>
 <div class="line">       <span class="keywordflow">if</span> (!engine) <span class="keywordflow">return</span> 1; <span class="comment">// could not start engine</span></div>
@@ -608,7 +608,7 @@ Quick Start Example 2</h1>
 <div class="line"><span class="preprocessor">#pragma comment(lib, &quot;irrKlang.lib&quot;) // link with irrKlang.dll</span></div>
 <div class="line"></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>** argv)</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="Application_8cpp.html#abdc0ed79982200fe114771223781e640">main</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span>** argv)</div>
 <div class="line">{</div>
 <div class="line">       <span class="comment">// start the sound engine with default parameters</span></div>
 <div class="line">       <a class="code" href="classirrklang_1_1ISoundEngine.html">ISoundEngine</a>* engine = <a class="code" href="namespaceirrklang.html#ad9829f898bc0665fdd2554a6f5c7ca1c">createIrrKlangDevice</a>();</div>
@@ -639,7 +639,7 @@ Quick Start Example 2</h1>
 </div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 4 2015 14:18:21 for My Application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 5 2015 02:07:38 for My Application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

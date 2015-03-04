@@ -702,7 +702,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns if a sound with the specified name is currently playing. </p>
 
-<p>Referenced by <a class="el" href="MENUScene_8cpp_source.html#l00194">MENUScene::Update()</a>, and <a class="el" href="player_8cpp_source.html#l00079">Player::Update()</a>.</p>
+<p>Referenced by <a class="el" href="MENUScene_8cpp_source.html#l00233">MENUScene::Update()</a>, and <a class="el" href="player_8cpp_source.html#l00100">Player::Update()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -870,7 +870,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Only returns a pointer to an <a class="el" href="classirrklang_1_1ISound.html" title="Represents a sound which is currently played. ">ISound</a> if the parameters 'track', 'startPaused' or 'enableSoundEffects' have been set to true. Note: if this method returns an <a class="el" href="classirrklang_1_1ISound.html" title="Represents a sound which is currently played. ">ISound</a> as result, you HAVE to call <a class="el" href="classirrklang_1_1IVirtualRefCounted.html#a6602c3d110f23410c5bca8a08b709aa4" title="Drops the object. Decrements the reference counter by one. ">ISound::drop()</a> after you don't need the <a class="el" href="classirrklang_1_1ISound.html" title="Represents a sound which is currently played. ">ISound</a> interface anymore. Otherwise this will cause memory waste. This method also may return 0 altough 'track', 'startPaused' or 'enableSoundEffects' have been set to true, if the sound could not be played. </dd></dl>
 
-<p>Referenced by <a class="el" href="MENUScene_8cpp_source.html#l00194">MENUScene::Update()</a>, <a class="el" href="player_8cpp_source.html#l00079">Player::Update()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="MENUScene_8cpp_source.html#l00233">MENUScene::Update()</a>, <a class="el" href="player_8cpp_source.html#l00100">Player::Update()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1394,7 +1394,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Referenced by <a class="el" href="audio_8cpp_source.html#l00027">PROJECTScene::soundUpdate()</a>.</p>
+<p>Referenced by <a class="el" href="audio_8cpp_source.html#l00053">PROJECTScene::soundUpdate()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1516,7 +1516,7 @@ Here is the caller graph for this function:</div>
 
 <p>Stops all currently playing sounds. </p>
 
-<p>Referenced by <a class="el" href="MENUScene_8cpp_source.html#l00548">MENUScene::Exit()</a>.</p>
+<p>Referenced by <a class="el" href="MENUScene_8cpp_source.html#l00752">MENUScene::Exit()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1561,7 +1561,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 4 2015 14:18:21 for My Application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 5 2015 02:07:38 for My Application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

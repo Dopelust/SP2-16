@@ -10,170 +10,170 @@
     <includedby refid="ik__ISoundEngine_8h" local="yes">IrrKlang/include/ik_ISoundEngine.h</includedby>
     <includedby refid="irrKlang_8h" local="yes">IrrKlang/include/irrKlang.h</includedby>
     <incdepgraph>
-      <node id="2422">
+      <node id="2425">
         <label>ik_irrKlangTypes.h</label>
         <link refid="ik__irrKlangTypes_8h"/>
-        <childnode refid="2423" relation="include">
-        </childnode>
-      </node>
-      <node id="2428">
-        <label>ik_IRefCounted.h</label>
-        <link refid="ik__IRefCounted_8h"/>
-        <childnode refid="2422" relation="include">
-        </childnode>
-      </node>
-      <node id="2424">
-        <label>ik_vec3d.h</label>
-        <link refid="ik__vec3d_8h"/>
-        <childnode refid="2425" relation="include">
-        </childnode>
-        <childnode refid="2422" relation="include">
-        </childnode>
-      </node>
-      <node id="2423">
-        <label>wchar.h</label>
-      </node>
-      <node id="2420">
-        <label>IrrKlang/include/ik_ISoundSource.h</label>
-        <link refid="ik_ISoundSource.h"/>
-        <childnode refid="2421" relation="include">
-        </childnode>
-        <childnode refid="2424" relation="include">
-        </childnode>
         <childnode refid="2426" relation="include">
         </childnode>
-        <childnode refid="2427" relation="include">
-        </childnode>
-      </node>
-      <node id="2421">
-        <label>ik_IVirtualRefCounted.h</label>
-        <link refid="ik__IVirtualRefCounted_8h"/>
-        <childnode refid="2422" relation="include">
-        </childnode>
-      </node>
-      <node id="2427">
-        <label>ik_SAudioStreamFormat.h</label>
-        <link refid="ik__SAudioStreamFormat_8h"/>
-        <childnode refid="2428" relation="include">
-        </childnode>
-      </node>
-      <node id="2426">
-        <label>ik_EStreamModes.h</label>
-        <link refid="ik__EStreamModes_8h"/>
-      </node>
-      <node id="2425">
-        <label>math.h</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="2434">
-        <label>MyGraphics/Source/Application.cpp</label>
-        <link refid="Application_8cpp"/>
-      </node>
-      <node id="2433">
-        <label>MyGraphics/Source/PROJECTScene.h</label>
-        <link refid="PROJECTScene_8h"/>
-        <childnode refid="2434" relation="include">
-        </childnode>
-        <childnode refid="2435" relation="include">
-        </childnode>
-        <childnode refid="2436" relation="include">
-        </childnode>
-        <childnode refid="2437" relation="include">
-        </childnode>
-      </node>
-      <node id="2442">
-        <label>MyGraphics/Source/NPC.cpp</label>
-        <link refid="NPC_8cpp"/>
-      </node>
-      <node id="2439">
-        <label>MyGraphics/Source/MENUScene.h</label>
-        <link refid="MENUScene_8h"/>
-        <childnode refid="2434" relation="include">
-        </childnode>
-        <childnode refid="2435" relation="include">
-        </childnode>
-        <childnode refid="2440" relation="include">
-        </childnode>
-      </node>
-      <node id="2437">
-        <label>MyGraphics/Source/PROJECTScene.cpp</label>
-        <link refid="PROJECTScene_8cpp"/>
       </node>
       <node id="2430">
-        <label>IrrKlang/include/ik_IAudioRecorder.h</label>
-        <link refid="ik__IAudioRecorder_8h"/>
+        <label>ik_SAudioStreamFormat.h</label>
+        <link refid="ik__SAudioStreamFormat_8h"/>
         <childnode refid="2431" relation="include">
         </childnode>
       </node>
-      <node id="2440">
-        <label>MyGraphics/Source/MENUScene.cpp</label>
-        <link refid="MENUScene_8cpp"/>
+      <node id="2424">
+        <label>ik_IVirtualRefCounted.h</label>
+        <link refid="ik__IVirtualRefCounted_8h"/>
+        <childnode refid="2425" relation="include">
+        </childnode>
+      </node>
+      <node id="2426">
+        <label>wchar.h</label>
+      </node>
+      <node id="2427">
+        <label>ik_vec3d.h</label>
+        <link refid="ik__vec3d_8h"/>
+        <childnode refid="2428" relation="include">
+        </childnode>
+        <childnode refid="2425" relation="include">
+        </childnode>
+      </node>
+      <node id="2428">
+        <label>math.h</label>
+      </node>
+      <node id="2431">
+        <label>ik_IRefCounted.h</label>
+        <link refid="ik__IRefCounted_8h"/>
+        <childnode refid="2425" relation="include">
+        </childnode>
+      </node>
+      <node id="2423">
+        <label>IrrKlang/include/ik_ISoundSource.h</label>
+        <link refid="ik_ISoundSource.h"/>
+        <childnode refid="2424" relation="include">
+        </childnode>
+        <childnode refid="2427" relation="include">
+        </childnode>
+        <childnode refid="2429" relation="include">
+        </childnode>
+        <childnode refid="2430" relation="include">
+        </childnode>
+      </node>
+      <node id="2429">
+        <label>ik_EStreamModes.h</label>
+        <link refid="ik__EStreamModes_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2444">
+        <label>MyGraphics/Source/dialogue.cpp</label>
+        <link refid="dialogue_8cpp"/>
+      </node>
+      <node id="2446">
+        <label>MyGraphics/Source/player.cpp</label>
+        <link refid="player_8cpp"/>
       </node>
       <node id="2436">
-        <label>MyGraphics/Source/Camera3.cpp</label>
-        <link refid="Camera3_8cpp"/>
-      </node>
-      <node id="2432">
-        <label>MyGraphics/Source/player.h</label>
-        <link refid="player_8h"/>
-        <childnode refid="2433" relation="include">
+        <label>MyGraphics/Source/PROJECTScene.h</label>
+        <link refid="PROJECTScene_8h"/>
+        <childnode refid="2437" relation="include">
         </childnode>
         <childnode refid="2438" relation="include">
         </childnode>
         <childnode refid="2439" relation="include">
         </childnode>
-        <childnode refid="2443" relation="include">
+        <childnode refid="2440" relation="include">
         </childnode>
       </node>
-      <node id="2431">
+      <node id="2439">
+        <label>MyGraphics/Source/Camera3.cpp</label>
+        <link refid="Camera3_8cpp"/>
+      </node>
+      <node id="2437">
+        <label>MyGraphics/Source/Application.cpp</label>
+        <link refid="Application_8cpp"/>
+      </node>
+      <node id="2433">
+        <label>IrrKlang/include/ik_IAudioRecorder.h</label>
+        <link refid="ik__IAudioRecorder_8h"/>
+        <childnode refid="2434" relation="include">
+        </childnode>
+      </node>
+      <node id="2441">
+        <label>MyGraphics/Source/NPC.h</label>
+        <link refid="NPC_8h"/>
+        <childnode refid="2436" relation="include">
+        </childnode>
+        <childnode refid="2442" relation="include">
+        </childnode>
+        <childnode refid="2444" relation="include">
+        </childnode>
+        <childnode refid="2445" relation="include">
+        </childnode>
+      </node>
+      <node id="2443">
+        <label>MyGraphics/Source/MENUScene.cpp</label>
+        <link refid="MENUScene_8cpp"/>
+      </node>
+      <node id="2434">
         <label>IrrKlang/include/irrKlang.h</label>
         <link refid="irrKlang_8h"/>
-        <childnode refid="2432" relation="include">
+        <childnode refid="2435" relation="include">
         </childnode>
-        <childnode refid="2433" relation="include">
+        <childnode refid="2436" relation="include">
         </childnode>
-        <childnode refid="2439" relation="include">
+        <childnode refid="2442" relation="include">
         </childnode>
       </node>
-      <node id="2435">
+      <node id="2445">
+        <label>MyGraphics/Source/NPC.cpp</label>
+        <link refid="NPC_8cpp"/>
+      </node>
+      <node id="2440">
+        <label>MyGraphics/Source/PROJECTScene.cpp</label>
+        <link refid="PROJECTScene_8cpp"/>
+      </node>
+      <node id="2432">
+        <label>IrrKlang/include/ik_ISoundSource.h</label>
+        <link refid="ik_ISoundSource.h"/>
+        <childnode refid="2433" relation="include">
+        </childnode>
+        <childnode refid="2447" relation="include">
+        </childnode>
+        <childnode refid="2434" relation="include">
+        </childnode>
+      </node>
+      <node id="2438">
         <label>MyGraphics/Source/audio.cpp</label>
         <link refid="audio_8cpp"/>
       </node>
-      <node id="2441">
-        <label>MyGraphics/Source/dialogue.cpp</label>
-        <link refid="dialogue_8cpp"/>
-      </node>
-      <node id="2438">
-        <label>MyGraphics/Source/NPC.h</label>
-        <link refid="NPC_8h"/>
-        <childnode refid="2433" relation="include">
-        </childnode>
-        <childnode refid="2439" relation="include">
+      <node id="2435">
+        <label>MyGraphics/Source/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="2436" relation="include">
         </childnode>
         <childnode refid="2441" relation="include">
         </childnode>
         <childnode refid="2442" relation="include">
         </childnode>
-      </node>
-      <node id="2429">
-        <label>IrrKlang/include/ik_ISoundSource.h</label>
-        <link refid="ik_ISoundSource.h"/>
-        <childnode refid="2430" relation="include">
-        </childnode>
-        <childnode refid="2444" relation="include">
-        </childnode>
-        <childnode refid="2431" relation="include">
+        <childnode refid="2446" relation="include">
         </childnode>
       </node>
-      <node id="2443">
-        <label>MyGraphics/Source/player.cpp</label>
-        <link refid="player_8cpp"/>
-      </node>
-      <node id="2444">
+      <node id="2447">
         <label>IrrKlang/include/ik_ISoundEngine.h</label>
         <link refid="ik__ISoundEngine_8h"/>
-        <childnode refid="2431" relation="include">
+        <childnode refid="2434" relation="include">
+        </childnode>
+      </node>
+      <node id="2442">
+        <label>MyGraphics/Source/MENUScene.h</label>
+        <link refid="MENUScene_8h"/>
+        <childnode refid="2437" relation="include">
+        </childnode>
+        <childnode refid="2438" relation="include">
+        </childnode>
+        <childnode refid="2443" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -248,6 +248,6 @@
 <codeline lineno="152"></codeline>
 <codeline lineno="161"></codeline>
     </programlisting>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h"/>
   </compounddef>
 </doxygen>

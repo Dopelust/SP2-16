@@ -11,240 +11,242 @@
     <includedby refid="MeshBuilder_8cpp" local="yes">MyGraphics/Source/MeshBuilder.cpp</includedby>
     <includedby refid="PROJECTScene_8cpp" local="yes">MyGraphics/Source/PROJECTScene.cpp</includedby>
     <incdepgraph>
-      <node id="3361">
-        <label>Mesh.h</label>
-        <link refid="Mesh_8h"/>
-        <childnode refid="3362" relation="include">
-        </childnode>
-        <childnode refid="3363" relation="include">
-        </childnode>
-      </node>
-      <node id="3360">
+      <node id="3364">
         <label>MyGraphics/Source/MeshBuilder.h</label>
         <link refid="MeshBuilder.h"/>
-        <childnode refid="3361" relation="include">
+        <childnode refid="3365" relation="include">
         </childnode>
-        <childnode refid="3364" relation="include">
+        <childnode refid="3368" relation="include">
         </childnode>
-        <childnode refid="3372" relation="include">
+        <childnode refid="3376" relation="include">
         </childnode>
       </node>
-      <node id="3367">
+      <node id="3371">
         <label>cmath</label>
       </node>
-      <node id="3362">
+      <node id="3366">
         <label>string</label>
       </node>
-      <node id="3365">
+      <node id="3372">
+        <label>exception</label>
+      </node>
+      <node id="3369">
         <label>Vector3.h</label>
         <link refid="Vector3_8h"/>
-        <childnode refid="3366" relation="include">
+        <childnode refid="3370" relation="include">
         </childnode>
-        <childnode refid="3371" relation="include">
+        <childnode refid="3375" relation="include">
         </childnode>
       </node>
-      <node id="3366">
-        <label>MyMath.h</label>
-        <link refid="MyMath_8h"/>
-        <childnode refid="3367" relation="include">
+      <node id="3373">
+        <label>ctime</label>
+      </node>
+      <node id="3368">
+        <label>vertex.h</label>
+        <link refid="vertex_8h"/>
+        <childnode refid="3369" relation="include">
+        </childnode>
+      </node>
+      <node id="3377">
+        <label>vector</label>
+      </node>
+      <node id="3376">
+        <label>LoadOBJ.h</label>
+        <link refid="LoadOBJ_8h"/>
+        <childnode refid="3377" relation="include">
         </childnode>
         <childnode refid="3368" relation="include">
         </childnode>
         <childnode refid="3369" relation="include">
         </childnode>
-        <childnode refid="3370" relation="include">
+      </node>
+      <node id="3365">
+        <label>Mesh.h</label>
+        <link refid="Mesh_8h"/>
+        <childnode refid="3366" relation="include">
         </childnode>
-      </node>
-      <node id="3368">
-        <label>exception</label>
-      </node>
-      <node id="3364">
-        <label>vertex.h</label>
-        <link refid="vertex_8h"/>
-        <childnode refid="3365" relation="include">
-        </childnode>
-      </node>
-      <node id="3372">
-        <label>LoadOBJ.h</label>
-        <link refid="LoadOBJ_8h"/>
-        <childnode refid="3373" relation="include">
-        </childnode>
-        <childnode refid="3364" relation="include">
-        </childnode>
-        <childnode refid="3365" relation="include">
-        </childnode>
-      </node>
-      <node id="3369">
-        <label>ctime</label>
-      </node>
-      <node id="3373">
-        <label>vector</label>
-      </node>
-      <node id="3363">
-        <label>Material.h</label>
-        <link refid="Material_8h"/>
-      </node>
-      <node id="3370">
-        <label>cstdlib</label>
-      </node>
-      <node id="3371">
-        <label>iostream</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="3378">
-        <label>MyGraphics/Source/Application.cpp</label>
-        <link refid="Application_8cpp"/>
-      </node>
-      <node id="3377">
-        <label>MyGraphics/Source/PROJECTScene.h</label>
-        <link refid="PROJECTScene_8h"/>
-        <childnode refid="3378" relation="include">
-        </childnode>
-        <childnode refid="3379" relation="include">
-        </childnode>
-        <childnode refid="3380" relation="include">
-        </childnode>
-        <childnode refid="3381" relation="include">
+        <childnode refid="3367" relation="include">
         </childnode>
       </node>
       <node id="3374">
-        <label>MyGraphics/Source/MeshBuilder.h</label>
-        <link refid="MeshBuilder.h"/>
-        <childnode refid="3375" relation="include">
+        <label>cstdlib</label>
+      </node>
+      <node id="3375">
+        <label>iostream</label>
+      </node>
+      <node id="3370">
+        <label>MyMath.h</label>
+        <link refid="MyMath_8h"/>
+        <childnode refid="3371" relation="include">
         </childnode>
-        <childnode refid="3390" relation="include">
+        <childnode refid="3372" relation="include">
         </childnode>
-        <childnode refid="3385" relation="include">
+        <childnode refid="3373" relation="include">
         </childnode>
-        <childnode refid="3393" relation="include">
+        <childnode refid="3374" relation="include">
+        </childnode>
+      </node>
+      <node id="3367">
+        <label>Material.h</label>
+        <link refid="Material_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3394">
+        <label>MyGraphics/Source/dialogue.h</label>
+        <link refid="dialogue_8h"/>
+        <childnode refid="3387" relation="include">
         </childnode>
         <childnode refid="3381" relation="include">
         </childnode>
+        <childnode refid="3388" relation="include">
+        </childnode>
+        <childnode refid="3390" relation="include">
+        </childnode>
+        <childnode refid="3392" relation="include">
+        </childnode>
       </node>
-      <node id="3387">
-        <label>MyGraphics/Source/NPC.cpp</label>
-        <link refid="NPC_8cpp"/>
+      <node id="3390">
+        <label>MyGraphics/Source/dialogue.cpp</label>
+        <link refid="dialogue_8cpp"/>
       </node>
-      <node id="3393">
+      <node id="3397">
         <label>MyGraphics/Source/MeshBuilder.cpp</label>
         <link refid="MeshBuilder_8cpp"/>
       </node>
-      <node id="3384">
-        <label>MyGraphics/Source/MENUScene.h</label>
-        <link refid="MENUScene_8h"/>
-        <childnode refid="3378" relation="include">
-        </childnode>
+      <node id="3392">
+        <label>MyGraphics/Source/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="3378">
+        <label>MyGraphics/Source/MeshBuilder.h</label>
+        <link refid="MeshBuilder.h"/>
         <childnode refid="3379" relation="include">
+        </childnode>
+        <childnode refid="3394" relation="include">
+        </childnode>
+        <childnode refid="3389" relation="include">
+        </childnode>
+        <childnode refid="3397" relation="include">
         </childnode>
         <childnode refid="3385" relation="include">
         </childnode>
       </node>
       <node id="3381">
-        <label>MyGraphics/Source/PROJECTScene.cpp</label>
-        <link refid="PROJECTScene_8cpp"/>
-      </node>
-      <node id="3385">
-        <label>MyGraphics/Source/MENUScene.cpp</label>
-        <link refid="MENUScene_8cpp"/>
-      </node>
-      <node id="3380">
-        <label>MyGraphics/Source/Camera3.cpp</label>
-        <link refid="Camera3_8cpp"/>
-      </node>
-      <node id="3382">
-        <label>MyGraphics/Source/player.h</label>
-        <link refid="player_8h"/>
-        <childnode refid="3377" relation="include">
+        <label>MyGraphics/Source/PROJECTScene.h</label>
+        <link refid="PROJECTScene_8h"/>
+        <childnode refid="3382" relation="include">
         </childnode>
         <childnode refid="3383" relation="include">
         </childnode>
         <childnode refid="3384" relation="include">
         </childnode>
+        <childnode refid="3385" relation="include">
+        </childnode>
+      </node>
+      <node id="3384">
+        <label>MyGraphics/Source/Camera3.cpp</label>
+        <link refid="Camera3_8cpp"/>
+      </node>
+      <node id="3382">
+        <label>MyGraphics/Source/Application.cpp</label>
+        <link refid="Application_8cpp"/>
+      </node>
+      <node id="3395">
+        <label>MyGraphics/Source/inventory.cpp</label>
+        <link refid="inventory_8cpp"/>
+      </node>
+      <node id="3387">
+        <label>MyGraphics/Source/NPC.h</label>
+        <link refid="NPC_8h"/>
+        <childnode refid="3381" relation="include">
+        </childnode>
         <childnode refid="3388" relation="include">
-        </childnode>
-      </node>
-      <node id="3375">
-        <label>MyGraphics/Source/collision.h</label>
-        <link refid="collision_8h"/>
-        <childnode refid="3376" relation="include">
-        </childnode>
-        <childnode refid="3377" relation="include">
-        </childnode>
-        <childnode refid="3382" relation="include">
-        </childnode>
-        <childnode refid="3389" relation="include">
-        </childnode>
-        <childnode refid="3384" relation="include">
-        </childnode>
-        <childnode refid="3392" relation="include">
-        </childnode>
-      </node>
-      <node id="3389">
-        <label>MyGraphics/Source/inventory.h</label>
-        <link refid="inventory_8h"/>
-        <childnode refid="3382" relation="include">
         </childnode>
         <childnode refid="3390" relation="include">
         </childnode>
         <childnode refid="3391" relation="include">
         </childnode>
       </node>
-      <node id="3379">
-        <label>MyGraphics/Source/audio.cpp</label>
-        <link refid="audio_8cpp"/>
-      </node>
-      <node id="3376">
-        <label>MyGraphics/Source/Camera3.h</label>
-        <link refid="Camera3_8h"/>
-        <childnode refid="3377" relation="include">
-        </childnode>
-        <childnode refid="3382" relation="include">
-        </childnode>
-        <childnode refid="3384" relation="include">
-        </childnode>
-        <childnode refid="3380" relation="include">
-        </childnode>
-      </node>
-      <node id="3386">
-        <label>MyGraphics/Source/dialogue.cpp</label>
-        <link refid="dialogue_8cpp"/>
-      </node>
-      <node id="3383">
-        <label>MyGraphics/Source/NPC.h</label>
-        <link refid="NPC_8h"/>
-        <childnode refid="3377" relation="include">
-        </childnode>
-        <childnode refid="3384" relation="include">
-        </childnode>
-        <childnode refid="3386" relation="include">
-        </childnode>
-        <childnode refid="3387" relation="include">
-        </childnode>
-      </node>
-      <node id="3392">
+      <node id="3396">
         <label>MyGraphics/Source/collision.cpp</label>
         <link refid="collision_8cpp"/>
       </node>
-      <node id="3388">
-        <label>MyGraphics/Source/player.cpp</label>
-        <link refid="player_8cpp"/>
+      <node id="3389">
+        <label>MyGraphics/Source/MENUScene.cpp</label>
+        <link refid="MENUScene_8cpp"/>
       </node>
-      <node id="3390">
-        <label>MyGraphics/Source/dialogue.h</label>
-        <link refid="dialogue_8h"/>
-        <childnode refid="3383" relation="include">
-        </childnode>
-        <childnode refid="3377" relation="include">
-        </childnode>
-        <childnode refid="3384" relation="include">
-        </childnode>
+      <node id="3393">
+        <label>MyGraphics/Source/inventory.h</label>
+        <link refid="inventory_8h"/>
         <childnode refid="3386" relation="include">
+        </childnode>
+        <childnode refid="3394" relation="include">
+        </childnode>
+        <childnode refid="3395" relation="include">
         </childnode>
       </node>
       <node id="3391">
-        <label>MyGraphics/Source/inventory.cpp</label>
-        <link refid="inventory_8cpp"/>
+        <label>MyGraphics/Source/NPC.cpp</label>
+        <link refid="NPC_8cpp"/>
+      </node>
+      <node id="3385">
+        <label>MyGraphics/Source/PROJECTScene.cpp</label>
+        <link refid="PROJECTScene_8cpp"/>
+      </node>
+      <node id="3379">
+        <label>MyGraphics/Source/collision.h</label>
+        <link refid="collision_8h"/>
+        <childnode refid="3380" relation="include">
+        </childnode>
+        <childnode refid="3381" relation="include">
+        </childnode>
+        <childnode refid="3386" relation="include">
+        </childnode>
+        <childnode refid="3393" relation="include">
+        </childnode>
+        <childnode refid="3388" relation="include">
+        </childnode>
+        <childnode refid="3396" relation="include">
+        </childnode>
+      </node>
+      <node id="3383">
+        <label>MyGraphics/Source/audio.cpp</label>
+        <link refid="audio_8cpp"/>
+      </node>
+      <node id="3386">
+        <label>MyGraphics/Source/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="3381" relation="include">
+        </childnode>
+        <childnode refid="3387" relation="include">
+        </childnode>
+        <childnode refid="3388" relation="include">
+        </childnode>
+        <childnode refid="3392" relation="include">
+        </childnode>
+      </node>
+      <node id="3380">
+        <label>MyGraphics/Source/Camera3.h</label>
+        <link refid="Camera3_8h"/>
+        <childnode refid="3381" relation="include">
+        </childnode>
+        <childnode refid="3386" relation="include">
+        </childnode>
+        <childnode refid="3388" relation="include">
+        </childnode>
+        <childnode refid="3384" relation="include">
+        </childnode>
+      </node>
+      <node id="3388">
+        <label>MyGraphics/Source/MENUScene.h</label>
+        <link refid="MENUScene_8h"/>
+        <childnode refid="3382" relation="include">
+        </childnode>
+        <childnode refid="3383" relation="include">
+        </childnode>
+        <childnode refid="3389" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classMeshBuilder" prot="public">MeshBuilder</innerclass>
@@ -280,7 +282,7 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classMeshBuilder_1a10f627b0355a031b42d0337e95d2af56" kindref="member">GenerateSphere</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;meshName,<sp/><ref refid="structColor" kindref="compound">Color</ref><sp/>color,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numStack,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numSlice,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classMeshBuilder_1af27e0bbaa8cfa853111d443a4ba37d5c" kindref="member">GenerateHemi</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;meshName,<sp/><ref refid="structColor" kindref="compound">Color</ref><sp/>color,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numStack,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numSlice,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classMeshBuilder_1a27562f4f20e5e089cc5680c1d20f36ab" kindref="member">GenerateCone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;meshName,<sp/><ref refid="structColor" kindref="compound">Color</ref><sp/>color,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numStack,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numSlice,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classMeshBuilder_1a283edcbedde3c75acf96907182a725b8" kindref="member">GenerateCylinder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;meshName,<sp/><ref refid="structColor" kindref="compound">Color</ref><sp/>color,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numSlice,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classMeshBuilder_1a283edcbedde3c75acf96907182a725b8" kindref="member">GenerateCylinder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;meshName,<sp/><ref refid="structColor" kindref="compound">Color</ref><sp/>color,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numSlice,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="Application_8cpp_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classMeshBuilder_1a283edcbedde3c75acf96907182a725b8" kindref="member">GenerateCylinder</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;meshName,<sp/><ref refid="structColor" kindref="compound">Color</ref><sp/>colorBot,<sp/><ref refid="structColor" kindref="compound">Color</ref><sp/>colorTop,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numSlice,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classMeshBuilder_1ad1e169f5ff628a5f2a59a239def9c6be" kindref="member">GenerateCapsule</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;meshName,<sp/><ref refid="structColor" kindref="compound">Color</ref><sp/>color,</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numStack,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numSlice,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>radius);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classMeshBuilder_1aa0fd7de9ef15dbc113a3f84b859ebe95" kindref="member">GenerateTorus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;meshName,<sp/><ref refid="structColor" kindref="compound">Color</ref><sp/>color,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numStack,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numSlice,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>outerR,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>innerR);</highlight></codeline>
@@ -291,6 +293,6 @@
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MeshBuilder.h"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MeshBuilder.h"/>
   </compounddef>
 </doxygen>

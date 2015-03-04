@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IFileReader.h" line="18" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IFileReader.h" bodystart="18" bodyend="18"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IFileReader.h" line="18" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IFileReader.h" bodystart="18" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IFileReader_1a0ba36fc0023d3ad430bbe34770364559" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1af8028b1c477e50d479270611ecb76e92" kindref="member">ik_s32</ref></type>
@@ -53,7 +53,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IFileReader.h" line="24" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IFileReader.h" line="24" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IFileReader_1a1c98718116049833e2de77a67a07faaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -91,7 +91,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IFileReader.h" line="32" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IFileReader.h" line="32" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IFileReader_1af6f0881f2c887cc41016c58144853b5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1af8028b1c477e50d479270611ecb76e92" kindref="member">ik_s32</ref></type>
@@ -105,7 +105,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IFileReader.h" line="36" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IFileReader.h" line="36" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IFileReader_1a99c405529f07b2b0190beda048b432e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1af8028b1c477e50d479270611ecb76e92" kindref="member">ik_s32</ref></type>
@@ -119,7 +119,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IFileReader.h" line="40" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IFileReader.h" line="40" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IFileReader_1a060e65d32758ced92fa4615193585784" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>const <ref refid="namespaceirrklang_1af179ad966eb79d01f6d1cf8927087449" kindref="member">ik_c8</ref> *</type>
@@ -133,7 +133,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IFileReader.h" line="44" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IFileReader.h" line="44" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -141,36 +141,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1112">
+      <node id="1076">
         <label>irrklang::IRefCounted</label>
         <link refid="classirrklang_1_1IRefCounted"/>
       </node>
-      <node id="1111">
+      <node id="1075">
         <label>irrklang::IFileReader</label>
         <link refid="classirrklang_1_1IFileReader"/>
-        <childnode refid="1112" relation="public-inheritance">
+        <childnode refid="1076" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1115">
+      <node id="1079">
         <label>int</label>
       </node>
-      <node id="1114">
+      <node id="1078">
         <label>irrklang::IRefCounted</label>
         <link refid="classirrklang_1_1IRefCounted"/>
-        <childnode refid="1115" relation="usage">
+        <childnode refid="1079" relation="usage">
           <edgelabel>ReferenceCounter</edgelabel>
         </childnode>
       </node>
-      <node id="1113">
+      <node id="1077">
         <label>irrklang::IFileReader</label>
         <link refid="classirrklang_1_1IFileReader"/>
-        <childnode refid="1114" relation="public-inheritance">
+        <childnode refid="1078" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IFileReader.h" line="15" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IFileReader.h" bodystart="14" bodyend="45"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IFileReader.h" line="15" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IFileReader.h" bodystart="14" bodyend="45"/>
     <listofallmembers>
       <member refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" prot="public" virt="non-virtual"><scope>irrklang::IFileReader</scope><name>drop</name></member>
       <member refid="classirrklang_1_1IFileReader_1a060e65d32758ced92fa4615193585784" prot="public" virt="pure-virtual"><scope>irrklang::IFileReader</scope><name>getFileName</name></member>

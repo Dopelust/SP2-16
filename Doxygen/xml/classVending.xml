@@ -15,10 +15,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="117" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="115" bodyend="-1"/>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
-        <referencedby refid="classVending_1ad086784614bb58b3bad0358f74181b38" compoundref="collision_8h" startline="110" endline="114">Vending</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" line="162" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" bodystart="160" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
+        <referencedby refid="classVending_1ad086784614bb58b3bad0358f74181b38" compoundref="collision_8h" startline="155" endline="159">Vending</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" prot="public" static="no" mutable="no">
         <type><ref refid="classObject" kindref="compound">Object</ref></type>
@@ -31,9 +31,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="129" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="127" bodyend="-1"/>
-        <referencedby refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" compoundref="PROJECTScene_8cpp" startline="518" endline="966">PROJECTScene::JessicaInit</referencedby>
-        <referencedby refid="classVending_1ad086784614bb58b3bad0358f74181b38" compoundref="collision_8h" startline="110" endline="114">Vending</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" line="174" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" bodystart="172" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" compoundref="PROJECTScene_8cpp" startline="566" endline="1009">PROJECTScene::JessicaInit</referencedby>
+        <referencedby refid="classVending_1ad086784614bb58b3bad0358f74181b38" compoundref="collision_8h" startline="155" endline="159">Vending</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="109" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="109" bodyend="109"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" line="154" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" bodystart="154" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="classVending_1ad086784614bb58b3bad0358f74181b38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -65,10 +65,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="110" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="110" bodyend="114"/>
-        <references refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" compoundref="collision_8h" startline="127">Drink</references>
-        <references refid="classVending_1a5cff939df942f1fffbfc682aa1ea2bd3" compoundref="collision_8h" startline="115">price</references>
-        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="34">Object::type</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" line="155" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" bodystart="155" bodyend="159"/>
+        <references refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" compoundref="collision_8h" startline="172">Drink</references>
+        <references refid="classVending_1a5cff939df942f1fffbfc682aa1ea2bd3" compoundref="collision_8h" startline="160">price</references>
+        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="54">Object::type</references>
       </memberdef>
       <memberdef kind="function" id="classVending_1ac12c5de0665adca1be951f77795d5a43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="115" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="115" bodyend="115"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" line="160" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" bodystart="160" bodyend="160"/>
       </memberdef>
       <memberdef kind="function" id="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classItem" kindref="compound">Item</ref> *</type>
@@ -94,128 +94,125 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="118" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="118" bodyend="127"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" line="163" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" bodystart="163" bodyend="172"/>
         <references refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" compoundref="MeshBuilder_8cpp" startline="1184" endline="1209">MeshBuilder::GenerateOBJ</references>
         <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
         <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="classVending" kindref="compound">Vending</ref> class which is used for initializing the vending machine and its functions. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Class <ref refid="classVending" kindref="compound">Vending</ref>: </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="1601">
+      <node id="1565">
         <label>Component</label>
         <link refid="structComponent"/>
-        <childnode refid="1595" relation="usage">
+        <childnode refid="1557" relation="usage">
           <edgelabel>g</edgelabel>
           <edgelabel>r</edgelabel>
           <edgelabel>b</edgelabel>
         </childnode>
       </node>
-      <node id="1599">
+      <node id="1563">
         <label>Mesh</label>
         <link refid="classMesh"/>
-        <childnode refid="1600" relation="usage">
+        <childnode refid="1564" relation="usage">
           <edgelabel>material</edgelabel>
         </childnode>
-        <childnode refid="1602" relation="usage">
+        <childnode refid="1566" relation="usage">
           <edgelabel>mode</edgelabel>
         </childnode>
-        <childnode refid="1603" relation="usage">
+        <childnode refid="1562" relation="usage">
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="1604" relation="usage">
+        <childnode refid="1567" relation="usage">
           <edgelabel>textureID</edgelabel>
           <edgelabel>indexBuffer</edgelabel>
           <edgelabel>indexSize</edgelabel>
           <edgelabel>vertexBuffer</edgelabel>
         </childnode>
       </node>
-      <node id="1602">
+      <node id="1566">
         <label>DRAW_MODE</label>
       </node>
-      <node id="1603">
+      <node id="1562">
         <label>string</label>
       </node>
-      <node id="1600">
+      <node id="1564">
         <label>Material</label>
         <link refid="structMaterial"/>
-        <childnode refid="1595" relation="usage">
+        <childnode refid="1557" relation="usage">
           <edgelabel>kShininess</edgelabel>
         </childnode>
-        <childnode refid="1601" relation="usage">
+        <childnode refid="1565" relation="usage">
           <edgelabel>kDiffuse</edgelabel>
           <edgelabel>kAmbient</edgelabel>
           <edgelabel>kSpecular</edgelabel>
         </childnode>
       </node>
-      <node id="1595">
+      <node id="1557">
         <label>float</label>
       </node>
-      <node id="1596">
+      <node id="1558">
         <label>Object</label>
         <link refid="classObject"/>
-        <childnode refid="1597" relation="usage">
+        <childnode refid="1559" relation="usage">
           <edgelabel>collision</edgelabel>
         </childnode>
-        <childnode refid="1595" relation="usage">
+        <childnode refid="1557" relation="usage">
           <edgelabel>size</edgelabel>
           <edgelabel>orientation</edgelabel>
         </childnode>
-        <childnode refid="1598" relation="usage">
+        <childnode refid="1560" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1605" relation="usage">
+        <childnode refid="1561" relation="usage">
           <edgelabel>ignoreCollision</edgelabel>
         </childnode>
-        <childnode refid="1603" relation="usage">
+        <childnode refid="1562" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="1599" relation="usage">
+        <childnode refid="1563" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1597">
+      <node id="1559">
         <label>Collision</label>
         <link refid="structCollision"/>
-        <childnode refid="1598" relation="usage">
+        <childnode refid="1560" relation="usage">
           <edgelabel>hitbox</edgelabel>
           <edgelabel>centre</edgelabel>
         </childnode>
-        <childnode refid="1599" relation="usage">
-          <edgelabel>boundingBox</edgelabel>
-        </childnode>
       </node>
-      <node id="1604">
+      <node id="1567">
         <label>unsigned</label>
       </node>
-      <node id="1605">
+      <node id="1561">
         <label>bool</label>
       </node>
-      <node id="1598">
+      <node id="1560">
         <label>Vector3</label>
         <link refid="structVector3"/>
-        <childnode refid="1595" relation="usage">
+        <childnode refid="1557" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
-      <node id="1594">
+      <node id="1556">
         <label>Vending</label>
         <link refid="classVending"/>
-        <childnode refid="1595" relation="usage">
+        <childnode refid="1557" relation="usage">
           <edgelabel>price</edgelabel>
         </childnode>
-        <childnode refid="1596" relation="usage">
+        <childnode refid="1558" relation="usage">
           <edgelabel>Drink</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="107" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="106" bodyend="130"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" line="152" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h" bodystart="151" bodyend="175"/>
     <listofallmembers>
       <member refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" prot="public" virt="non-virtual"><scope>Vending</scope><name>Drink</name></member>
       <member refid="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" prot="public" virt="non-virtual"><scope>Vending</scope><name>generateDrink</name></member>

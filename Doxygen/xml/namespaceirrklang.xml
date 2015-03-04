@@ -101,7 +101,7 @@
 <para>When using createIrrKlangDevice, use a combination of this these as &apos;options&apos; parameter to start up the engine. By default, irrKlang uses ESEO_DEFAULT_OPTIONS, which is set to the combination ESEO_MULTI_THREADED | ESEO_LOAD_PLUGINS | ESEO_USE_3D_BUFFERS | ESEO_PRINT_DEBUG_INFO_TO_DEBUGGER | ESEO_PRINT_DEBUG_INFO_TO_STDOUT. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ESoundEngineOptions.h" line="16" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ESoundEngineOptions.h" bodystart="15" bodyend="72"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ESoundEngineOptions.h" line="16" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ESoundEngineOptions.h" bodystart="15" bodyend="72"/>
       </memberdef>
       <memberdef kind="enum" id="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afe" prot="public" static="no">
         <name>E_SOUND_OUTPUT_DRIVER</name>
@@ -176,7 +176,7 @@
 <para>Values of this enumeration can be used as parameter when calling <ref refid="namespaceirrklang_1ad9829f898bc0665fdd2554a6f5c7ca1c" kindref="member">createIrrKlangDevice()</ref>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ESoundOutputDrivers.h" line="13" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ESoundOutputDrivers.h" bodystart="12" bodyend="54"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ESoundOutputDrivers.h" line="13" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ESoundOutputDrivers.h" bodystart="12" bodyend="54"/>
       </memberdef>
       <memberdef kind="enum" id="namespaceirrklang_1a6eab873ba387c6a4e05839e6a434d06e" prot="public" static="no">
         <name>E_STREAM_MODE</name>
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_EStreamModes.h" line="12" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_EStreamModes.h" bodystart="11" bodyend="25"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_EStreamModes.h" line="12" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_EStreamModes.h" bodystart="11" bodyend="25"/>
       </memberdef>
       <memberdef kind="enum" id="namespaceirrklang_1a17ebb006afe78ab6502a1e3d18083522" prot="public" static="no">
         <name>E_STOP_EVENT_CAUSE</name>
@@ -256,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundStopEventReceiver.h" line="18" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundStopEventReceiver.h" bodystart="17" bodyend="32"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundStopEventReceiver.h" line="18" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundStopEventReceiver.h" bodystart="17" bodyend="32"/>
       </memberdef>
       <memberdef kind="enum" id="namespaceirrklang_1a2b85d1e9288cb552fceef8e8a726a80e" prot="public" static="no">
         <name>ESampleFormat</name>
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_SAudioStreamFormat.h" line="16" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_SAudioStreamFormat.h" bodystart="15" bodyend="22"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_SAudioStreamFormat.h" line="16" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_SAudioStreamFormat.h" bodystart="15" bodyend="22"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -295,7 +295,7 @@
 <para>This is a typedef for unsigned char, it ensures portability of the engine. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="14" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="14" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="14" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1a703d5c51092cc0731dd302f9c8d83613" prot="public" static="no">
         <type>signed char</type>
@@ -308,7 +308,7 @@
 <para>This is a typedef for signed char, it ensures portability of the engine. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="18" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="18" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="18" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1af179ad966eb79d01f6d1cf8927087449" prot="public" static="no">
         <type>char</type>
@@ -321,7 +321,7 @@
 <para>This is a typedef for char, it ensures portability of the engine. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="22" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="22" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="22" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1a16e9eaf54fbe344a86cb9b93290d59d9" prot="public" static="no">
         <type>unsigned short</type>
@@ -334,7 +334,7 @@
 <para>This is a typedef for unsigned short, it ensures portability of the engine. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="28" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="28" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1ab884b7693f13e37d94fcbbff6b93adcf" prot="public" static="no">
         <type>signed short</type>
@@ -347,7 +347,7 @@
 <para>This is a typedef for signed short, it ensures portability of the engine. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="32" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="32" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="32" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1adf9f75b6ca98aff6843fb294125571e0" prot="public" static="no">
         <type>unsigned int</type>
@@ -360,7 +360,7 @@
 <para>This is a typedef for unsigned int, it ensures portability of the engine. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="38" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="38" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="38" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1af8028b1c477e50d479270611ecb76e92" prot="public" static="no">
         <type>signed int</type>
@@ -373,7 +373,7 @@
 <para>This is a typedef for signed int, it ensures portability of the engine. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="42" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="42" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="42" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1a6fa5a4dd85b476308461136072ef4e0f" prot="public" static="no">
         <type>float</type>
@@ -386,7 +386,7 @@
 <para>This is a typedef for float, it ensures portability of the engine. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="48" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="48" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="48" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1a1c98510aa3989b1780723e2fb15f7c3d" prot="public" static="no">
         <type>double</type>
@@ -399,7 +399,7 @@
 <para>This is a typedef for double, it ensures portability of the engine. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="52" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="52" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="52" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1a592332840fd1799b7c73bcc4c0c4a5af" prot="public" static="no">
         <type><ref refid="classirrklang_1_1vec3d" kindref="compound">vec3d</ref>&lt; <ref refid="namespaceirrklang_1a6fa5a4dd85b476308461136072ef4e0f" kindref="member">ik_f32</ref> &gt;</type>
@@ -412,7 +412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="250" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="250" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="250" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="250" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceirrklang_1a96ca718557ff7197905483b21f781d26" prot="public" static="no">
         <type><ref refid="classirrklang_1_1vec3d" kindref="compound">vec3d</ref>&lt; <ref refid="namespaceirrklang_1af8028b1c477e50d479270611ecb76e92" kindref="member">ik_s32</ref> &gt;</type>
@@ -425,7 +425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="253" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="253" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="253" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="253" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -441,7 +441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="58" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="58" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="58" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceirrklang_1a94bfcb20851dee7c360142f3db288538" prot="public" static="no" mutable="no">
         <type>const <ref refid="namespaceirrklang_1a1c98510aa3989b1780723e2fb15f7c3d" kindref="member">ik_f64</ref></type>
@@ -455,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="59" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="59" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="59" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceirrklang_1a5e56a9f6a51767cc5a1bf32919a2b801" prot="public" static="no" mutable="no">
         <type>const <ref refid="namespaceirrklang_1a6fa5a4dd85b476308461136072ef4e0f" kindref="member">ik_f32</ref></type>
@@ -469,7 +469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="60" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="60" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="60" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceirrklang_1a899ce8a298f44c2a5413c6dc0e87f640" prot="public" static="no" mutable="no">
         <type>const <ref refid="namespaceirrklang_1a6fa5a4dd85b476308461136072ef4e0f" kindref="member">ik_f32</ref></type>
@@ -483,7 +483,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="61" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="61" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="61" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="61" bodyend="-1"/>
         <referencedby refid="classirrklang_1_1vec3d_1a13294fd4e67bee8d8ffee2fcaa42e912" compoundref="ik__vec3d_8h" startline="209" endline="229">irrklang::vec3d&lt; T &gt;::getHorizontalAngle</referencedby>
       </memberdef>
       <memberdef kind="variable" id="namespaceirrklang_1ad74595519e5497bb71a0e4b98312866f" prot="public" static="no" mutable="no">
@@ -498,7 +498,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="62" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="62" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="62" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceirrklang_1a3f83fd863cffaac9ddde5ff73e72f116" prot="public" static="no" mutable="no">
         <type>const <ref refid="namespaceirrklang_1a1c98510aa3989b1780723e2fb15f7c3d" kindref="member">ik_f64</ref></type>
@@ -512,7 +512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="63" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="63" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="63" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceirrklang_1a738ade686859c0d98ce9edbd34c4fc1b" prot="public" static="no" mutable="no">
         <type>const <ref refid="namespaceirrklang_1a1c98510aa3989b1780723e2fb15f7c3d" kindref="member">ik_f64</ref></type>
@@ -526,7 +526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="64" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="64" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="64" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="64" bodyend="-1"/>
         <referencedby refid="classirrklang_1_1vec3d_1a73e958aac6482aea6d4947d2737b3681" compoundref="ik__vec3d_8h" startline="166" endline="176">irrklang::vec3d&lt; T &gt;::rotateXYBy</referencedby>
         <referencedby refid="classirrklang_1_1vec3d_1a3c0df42f68cbbec6506091756d518c18" compoundref="ik__vec3d_8h" startline="150" endline="160">irrklang::vec3d&lt; T &gt;::rotateXZBy</referencedby>
         <referencedby refid="classirrklang_1_1vec3d_1aa619d2ed5f8e992f5ec60d7b262a0108" compoundref="ik__vec3d_8h" startline="182" endline="192">irrklang::vec3d&lt; T &gt;::rotateYZBy</referencedby>
@@ -557,7 +557,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" line="68" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_irrKlangTypes.h" bodystart="68" bodyend="71"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" line="68" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_irrKlangTypes.h" bodystart="68" bodyend="71"/>
         <referencedby refid="classirrklang_1_1vec3d_1a9f5c9411ad637d980a1cf320d0a1cf2e" compoundref="ik__vec3d_8h" startline="62" endline="67">irrklang::vec3d&lt; T &gt;::equals</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespaceirrklang_1ac176fe17bc9317f36075a1b8ecc85a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -587,7 +587,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="255" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="255" bodyend="255"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="255" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="255" bodyend="255"/>
       </memberdef>
       <memberdef kind="function" id="namespaceirrklang_1ad9829f898bc0665fdd2554a6f5c7ca1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="irrKlang_8h_1a46984c40d70515d79d72043bfbd554d5" kindref="member">IRRKLANG_API</ref> <ref refid="classirrklang_1_1ISoundEngine" kindref="compound">ISoundEngine</ref> *<ref refid="irrKlang_8h_1abd61a1fa49408e803e5aa3049fdf43f8" kindref="member">IRRKLANGCALLCONV</ref></type>
@@ -650,9 +650,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/irrKlang.h" line="952" column="1"/>
-        <referencedby refid="classMENUScene_1a8322d7ffc34365f34d07a74212533aa2" compoundref="audio_8cpp" startline="16" endline="24">MENUScene::soundInit</referencedby>
-        <referencedby refid="classPROJECTScene_1ab7bb838e969fe7597cee45e0520ef649" compoundref="audio_8cpp" startline="6" endline="14">PROJECTScene::soundInit</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/irrKlang.h" line="952" column="1"/>
+        <referencedby refid="classMENUScene_1a8322d7ffc34365f34d07a74212533aa2" compoundref="audio_8cpp" startline="37" endline="45">MENUScene::soundInit</referencedby>
+        <referencedby refid="classPROJECTScene_1ab7bb838e969fe7597cee45e0520ef649" compoundref="audio_8cpp" startline="21" endline="29">PROJECTScene::soundInit</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespaceirrklang_1a38d9a69bf54fd60e76e80e199e44faee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="irrKlang_8h_1a46984c40d70515d79d72043bfbd554d5" kindref="member">IRRKLANG_API</ref> <ref refid="classirrklang_1_1ISoundDeviceList" kindref="compound">ISoundDeviceList</ref> *<ref refid="irrKlang_8h_1abd61a1fa49408e803e5aa3049fdf43f8" kindref="member">IRRKLANGCALLCONV</ref></type>
@@ -691,7 +691,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/irrKlang.h" line="971" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/irrKlang.h" line="971" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespaceirrklang_1aaa4535359bd66857aaadb746cf7d8cec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="irrKlang_8h_1a46984c40d70515d79d72043bfbd554d5" kindref="member">IRRKLANG_API</ref> <ref refid="classirrklang_1_1IAudioRecorder" kindref="compound">IAudioRecorder</ref> *<ref refid="irrKlang_8h_1abd61a1fa49408e803e5aa3049fdf43f8" kindref="member">IRRKLANGCALLCONV</ref></type>
@@ -753,7 +753,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/irrKlang.h" line="995" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/irrKlang.h" line="995" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespaceirrklang_1a0e8013b9e8f11231e69ce1da9457a339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="irrKlang_8h_1a46984c40d70515d79d72043bfbd554d5" kindref="member">IRRKLANG_API</ref> <ref refid="classirrklang_1_1ISoundDeviceList" kindref="compound">ISoundDeviceList</ref> *<ref refid="irrKlang_8h_1abd61a1fa49408e803e5aa3049fdf43f8" kindref="member">IRRKLANGCALLCONV</ref></type>
@@ -792,7 +792,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/irrKlang.h" line="1012" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/irrKlang.h" line="1012" column="1"/>
       </memberdef>
       <memberdef kind="function" id="namespaceirrklang_1a2552f41aac247b77e0f1287c28744cd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="irrKlang_8h_1a46984c40d70515d79d72043bfbd554d5" kindref="member">IRRKLANG_API</ref> bool <ref refid="irrKlang_8h_1abd61a1fa49408e803e5aa3049fdf43f8" kindref="member">IRRKLANGCALLCONV</ref></type>
@@ -840,13 +840,13 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/irrKlang.h" line="1028" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/irrKlang.h" line="1028" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Everything in the irrKlang Sound Engine can be found in this namespace. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ESoundEngineOptions.h" line="9" column="1"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ESoundEngineOptions.h" line="9" column="1"/>
   </compounddef>
 </doxygen>

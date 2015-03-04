@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="27" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="27" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="27" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="27" bodyend="-1"/>
         <referencedby refid="classMtx44_1aac1ba21ddfc5f3c24baa4f58d9c5c256" compoundref="Mtx44_8cpp" startline="139" endline="195">Mtx44::GetInverse</referencedby>
         <referencedby refid="structVector3_1abdc9a7f223e3628ed1cbccd107d49c44" compoundref="Vector3_8cpp" startline="13" endline="16">Vector3::IsEqual</referencedby>
         <referencedby refid="structVector3_1aaef4f25a38878a640ab4a48002a7eff8" compoundref="Vector3_8cpp" startline="382" endline="391">Vector3::Normalize</referencedby>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="28" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="28" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="28" bodyend="-1"/>
         <referencedby refid="namespaceMath_1a1a1d364c850f9d66fda85cf71598bbe5" compoundref="MyMath_8h" startline="69" endline="72">RadianToDegree</referencedby>
         <referencedby refid="classMtx44_1ac6e6521111d78ff36d539bf111a902c6" compoundref="Mtx44_8cpp" startline="466" endline="472">Mtx44::SetToPerspective</referencedby>
         <referencedby refid="classMtx44_1ac0587ffb5ff9fd58ad5768d28fc06574" compoundref="Mtx44_8cpp" startline="319" endline="341">Mtx44::SetToRotation</referencedby>
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="29" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="29" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="29" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceMath_1a6475d0f7b5d131ca9bacd916606bf295" prot="public" static="no" mutable="no">
         <type>const float</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="30" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="30" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="30" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceMath_1aceaa8f6fecb9720eb0e13330bf45d710" prot="public" static="no" mutable="no">
         <type>const float</type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="31" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="31" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="31" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="33" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="33" bodyend="36"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="33" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="33" bodyend="36"/>
         <referencedby refid="classMtx44_1aac1ba21ddfc5f3c24baa4f58d9c5c256" compoundref="Mtx44_8cpp" startline="139" endline="195">Mtx44::GetInverse</referencedby>
         <referencedby refid="classMtx44_1ac0587ffb5ff9fd58ad5768d28fc06574" compoundref="Mtx44_8cpp" startline="319" endline="341">Mtx44::SetToRotation</referencedby>
       </memberdef>
@@ -134,7 +134,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="49" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="49" bodyend="52"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="49" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="49" bodyend="52"/>
         <referencedby refid="MeshBuilder_8cpp_1af69cd953e182610b7858d10e44de8095" compoundref="MeshBuilder_8cpp" startline="584" endline="587">cylinderX</referencedby>
         <referencedby refid="MeshBuilder_8cpp_1ad4c5cfc88779344e551288f07a734b99" compoundref="MeshBuilder_8cpp" startline="589" endline="592">cylinderZ</referencedby>
         <referencedby refid="classMeshBuilder_1a27562f4f20e5e089cc5680c1d20f36ab" compoundref="MeshBuilder_8cpp" startline="739" endline="806">MeshBuilder::GenerateCone</referencedby>
@@ -165,8 +165,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="54" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="54" bodyend="57"/>
-        <referencedby refid="player_8cpp_1a65c818132a37d07697eca46bebcdb97f" compoundref="player_8cpp" startline="10" endline="74">CollisionResponse</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="54" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="54" bodyend="57"/>
+        <referencedby refid="player_8cpp_1a65c818132a37d07697eca46bebcdb97f" compoundref="player_8cpp" startline="25" endline="89">CollisionResponse</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1a1a1d364c850f9d66fda85cf71598bbe5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -200,7 +200,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="69" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="69" bodyend="72"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="69" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="69" bodyend="72"/>
         <references refid="namespaceMath_1af8c064b6b688407b9999ee677efd715d" compoundref="MyMath_8h" startline="28">PI</references>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1a6cc12fd546c2f3dbebade9e4234b5f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -262,7 +262,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="88" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="88" bodyend="100"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="88" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="88" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1af8dc69787ee8df1ea409e97f53fce3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -323,7 +323,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="116" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="116" bodyend="128"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="116" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="116" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1af308aea473e7e8e6352e1bd452e11df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -373,7 +373,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="142" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="142" bodyend="145"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="142" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="142" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1af25f5d487204a1402974cb46444cfc74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -423,7 +423,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="159" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="159" bodyend="162"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="159" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="159" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1ae3a0c56b76d652066a652f8285494761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -462,8 +462,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="175" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="175" bodyend="178"/>
-        <references refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" compoundref="PROJECTScene_8cpp" startline="1178">x</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="175" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="175" bodyend="178"/>
+        <references refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" compoundref="PROJECTScene_8cpp" startline="1238">x</references>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1a33d6cf633b5ddf82fff77d1d40140b85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -496,7 +496,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="189" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="189" bodyend="192"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="189" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="189" bodyend="192"/>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1a7ab621ad66eb2f61e2b9cff366fed0e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned</type>
@@ -529,7 +529,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="204" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="204" bodyend="207"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="204" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="204" bodyend="207"/>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1a7609565ca241d0f70dfd677a7fdac281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -574,7 +574,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="220" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="220" bodyend="224"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="220" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="220" bodyend="224"/>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1a9b2e7be835afb6d9fe78f6c1efa26998" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -607,7 +607,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="236" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="236" bodyend="239"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="236" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="236" bodyend="239"/>
         <referencedby refid="namespaceMath_1aa21138cd1585c3dab1e901c4ead9204d" compoundref="MyMath_8h" startline="252" endline="256">RandFloatMinMax</referencedby>
       </memberdef>
       <memberdef kind="function" id="namespaceMath_1aa21138cd1585c3dab1e901c4ead9204d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -653,7 +653,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="252" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="252" bodyend="256"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="252" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="252" bodyend="256"/>
         <references refid="namespaceMath_1a9b2e7be835afb6d9fe78f6c1efa26998" compoundref="MyMath_8h" startline="236" endline="239">RandFloat</references>
       </memberdef>
       </sectiondef>
@@ -661,6 +661,6 @@
 <para><ref refid="namespaceMath" kindref="compound">Math</ref> namespace. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="25" column="1"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="25" column="1"/>
   </compounddef>
 </doxygen>

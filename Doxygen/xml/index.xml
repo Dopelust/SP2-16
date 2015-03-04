@@ -5,6 +5,7 @@
     <member refid="classAesthetics_1a2752f47fc675ccfcc19895c97d02f98a" kind="variable"><name>mesh</name></member>
     <member refid="classAesthetics_1a0eb640ce6f39564ff6768ff22ad6c03e" kind="variable"><name>orientation</name></member>
     <member refid="classAesthetics_1a9edeeb818cca3bd83692de825feeabf7" kind="function"><name>Aesthetics</name></member>
+    <member refid="classAesthetics_1a7356159037e572b1ee097540ec831f89" kind="function"><name>Aesthetics</name></member>
     <member refid="classAesthetics_1af43d476334b9b05621c00d521236e2a5" kind="function"><name>~Aesthetics</name></member>
   </compound>
   <compound refid="classApplication" kind="class"><name>Application</name>
@@ -107,7 +108,6 @@
   <compound refid="structCollision" kind="struct"><name>Collision</name>
     <member refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" kind="variable"><name>centre</name></member>
     <member refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" kind="variable"><name>hitbox</name></member>
-    <member refid="structCollision_1a93d586902c737c5045bb518248501e8b" kind="variable"><name>boundingBox</name></member>
   </compound>
   <compound refid="structColor" kind="struct"><name>Color</name>
     <member refid="structColor_1a3958a556b47d2de3dd45c75aac833c20" kind="variable"><name>r</name></member>
@@ -137,13 +137,9 @@
     <member refid="classDetective_1ad8787c005a9da6c916c77e59f6f9266c" kind="function"><name>Detective</name></member>
     <member refid="classDetective_1adf30d397574d2d3d7c07e6a027bb5899" kind="function"><name>Detective</name></member>
     <member refid="classDetective_1a6b55f7e79f140d60983809cf2dc6b1e2" kind="function"><name>~Detective</name></member>
+    <member refid="classDetective_1aa6577b6336d8f1e3293be385907827e6" kind="function"><name>getConversation</name></member>
     <member refid="classDetective_1a809658e990799aabf8b50e202b778f64" kind="function"><name>Init</name></member>
     <member refid="classDetective_1a6c4bd2e90dc9cd222cab66e86bee7a49" kind="function"><name>Control</name></member>
-  </compound>
-  <compound refid="classDetectiveQuest" kind="class"><name>DetectiveQuest</name>
-    <member refid="classDetectiveQuest_1a7ee63031b8ad0d9537c515d39131eddc" kind="function"><name>DetectiveQuest</name></member>
-    <member refid="classDetectiveQuest_1a4511014263506c960a9c8f512a655e63" kind="function"><name>DetectiveQuest</name></member>
-    <member refid="classDetectiveQuest_1a2af681ac5105ca3b583d327f382a06d3" kind="function"><name>~DetectiveQuest</name></member>
   </compound>
   <compound refid="classDivideByZero" kind="class"><name>DivideByZero</name>
     <member refid="classDivideByZero_1a4756aaefaf5e864c29a68ff24a8a8f10" kind="function"><name>what</name></member>
@@ -176,8 +172,8 @@
     <member refid="classdynamicObject_1a75ff4aa4f32b515899500d2bce5c2637" kind="variable"><name>hitDelay</name></member>
     <member refid="classdynamicObject_1a173092fb5ed2ad0a1f21796f323abad7" kind="variable"><name>health</name></member>
     <member refid="classdynamicObject_1ae7af2a87ece92a7816201624999da3f2" kind="function"><name>dynamicObject</name></member>
-    <member refid="classdynamicObject_1aadded891f78e621ed2c38a1ec9d7d3bd" kind="function"><name>dynamicObject</name></member>
-    <member refid="classdynamicObject_1af54f832fa2066be59e08f2dc702d0fe7" kind="function"><name>dynamicObject</name></member>
+    <member refid="classdynamicObject_1aa25fd3d91aaafec7905451cd867d50d5" kind="function"><name>dynamicObject</name></member>
+    <member refid="classdynamicObject_1a352b9b2ba3bb46d4888635afc25ab065" kind="function"><name>dynamicObject</name></member>
     <member refid="classdynamicObject_1a88d8db9f73895f8389fa0147544537f4" kind="function"><name>~dynamicObject</name></member>
     <member refid="classdynamicObject_1afa6faddc6880811327f4edef99b09eaa" kind="function"><name>Init</name></member>
     <member refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" kind="function"><name>Control</name></member>
@@ -393,8 +389,8 @@
     <member refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" kind="variable"><name>price</name></member>
     <member refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" kind="variable"><name>restore</name></member>
     <member refid="classItem_1a297720c02984eab37332ae795d22189d" kind="function"><name>Item</name></member>
-    <member refid="classItem_1afb088e339e1ab8d7cbdf606583b0e53a" kind="function"><name>Item</name></member>
-    <member refid="classItem_1ac8567583f60adbddabdaae556b901aca" kind="function"><name>Item</name></member>
+    <member refid="classItem_1ae7e264b8d187873bcf9c61cc44b4da6a" kind="function"><name>Item</name></member>
+    <member refid="classItem_1a475604bf55b55dff489501e8e39a9d49" kind="function"><name>Item</name></member>
     <member refid="classItem_1a1e4bc4a18402c13baca9ae369232a1c7" kind="function"><name>Item</name></member>
     <member refid="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" kind="function"><name>~Item</name></member>
     <member refid="classItem_1a82ff126c35c7513cdca4cb91f2ba00db" kind="function"><name>setPaid</name></member>
@@ -430,7 +426,7 @@
     <member refid="classManager_1a1658ff9f18e38ccd9cb8b0b371b9c20b" kind="function"><name>Manager</name></member>
     <member refid="classManager_1a0efa17e6a4dc70793c1e0728932721be" kind="function"><name>Manager</name></member>
     <member refid="classManager_1a322cad25d7007438b3a043ad02253d29" kind="function"><name>~Manager</name></member>
-    <member refid="classManager_1af1cb5c5c1590f4229a3cb40e63ee01b9" kind="function"><name>getCriteria</name></member>
+    <member refid="classManager_1a21e0e9e68bd154301a85b48d4f91e8ef" kind="function"><name>getCriteria</name></member>
     <member refid="classManager_1a200a7092507e1769240452e88996127b" kind="function"><name>Init</name></member>
     <member refid="classManager_1aa23a22bfd454e602d39588a6b6b23224" kind="function"><name>Control</name></member>
   </compound>
@@ -467,9 +463,9 @@
     <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a5afad9754570b5153964f1e761d64a20" kind="enumvalue"><name>GEO_CUBE</name></member>
     <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a3856e41a9cefc395c3ce13df4f0fc8e4" kind="enumvalue"><name>GEO_BIGCUBE</name></member>
     <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9adb1dfb470126f2666dc77e993b812cd9" kind="enumvalue"><name>GEO_HOLD</name></member>
-    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a75d7798228d969991b30fa3c5f86ccb0" kind="enumvalue"><name>GEO_CCTV</name></member>
-    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aaf9edd54a9fcbec23ee9902955a9acf8" kind="enumvalue"><name>GEO_CCTV_CORNER</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa81aeca33d81a73aa5e3d4a1e5d8de29" kind="enumvalue"><name>GEO_OVERLAY</name></member>
     <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8c3bd4cc81793938afa77d7f147b8a05" kind="enumvalue"><name>GEO_TEXTBOX</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a192ad3a40d18698ee077496ea573b8af" kind="enumvalue"><name>GEO_TEXTBOX2</name></member>
     <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad1b0f2261404aecf11261df8df8725d4" kind="enumvalue"><name>NUM_GEOMETRY</name></member>
     <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8" kind="enum"><name>UNIFORM_TYPE</name></member>
     <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ac2b122d4c7eecd0b585e116eb578675d" kind="enumvalue"><name>U_MVP</name></member>
@@ -520,7 +516,7 @@
     <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a43b6627de77fd16e34d2ed0d86071d9a" kind="enumvalue"><name>U_TEXT_COLOR</name></member>
     <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aa18a8b559fd9f996f1339cc8612c39b4" kind="enumvalue"><name>U_TOTAL</name></member>
     <member refid="classMENUScene_1a9b42da9f5e52160b27d1987769ae29de" kind="variable"><name>inputDelay</name></member>
-    <member refid="classMENUScene_1a8adf29b7c860968aa57b62f16fa77119" kind="variable"><name>buttons</name></member>
+    <member refid="classMENUScene_1a1b8fc9d8c8a9b28ed1d1766505682e3f" kind="variable"><name>buttons</name></member>
     <member refid="classMENUScene_1a34300ff852ec28f342ae605571ce753f" kind="variable"><name>select</name></member>
     <member refid="classMENUScene_1ac01d75a557824e65d353bfe0e90def36" kind="variable"><name>m_vertexArrayID</name></member>
     <member refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" kind="variable"><name>meshList</name></member>
@@ -589,7 +585,7 @@
   <compound refid="classMoney" kind="class"><name>Money</name>
     <member refid="classMoney_1a6d726ea77f61bf6aa0b765d0d426aa2a" kind="variable"><name>value</name></member>
     <member refid="classMoney_1a883c32ea0f71c9d1422141c384d225ba" kind="function"><name>Money</name></member>
-    <member refid="classMoney_1ae17190b131b3974d27f011d4f8213f81" kind="function"><name>Money</name></member>
+    <member refid="classMoney_1a1a70dbf5d44197c13fd8705992d11737" kind="function"><name>Money</name></member>
     <member refid="classMoney_1a2e18e5d65d9e1304e3bcf19a349dcf32" kind="function"><name>~Money</name></member>
     <member refid="classMoney_1a0db36291448d43f5658494ab03fc1de8" kind="function"><name>getValue</name></member>
   </compound>
@@ -658,13 +654,12 @@
     <member refid="classNPC_1a1cd51708a5ef50107842fc224e08ff25" kind="variable"><name>quest</name></member>
     <member refid="classNPC_1afe0fca487242d2ec209bfc5599451d66" kind="variable"><name>inConversation</name></member>
     <member refid="classNPC_1af28ce051772f77e3b3c95545067d5ef5" kind="function"><name>NPC</name></member>
-    <member refid="classNPC_1a82bd4ced6842c4ed6638e414c2b75640" kind="function"><name>~NPC</name></member>
+    <member refid="classNPC_1a70053b4db8281a8ceb5fbaa8e4bf80e3" kind="function"><name>~NPC</name></member>
     <member refid="classNPC_1a892f70d177394372ca5d7d47b98bd166" kind="function"><name>getIdentity</name></member>
-    <member refid="classNPC_1a23a8a51ee056c9aa1fbb3018b92c7de4" kind="function"><name>getCriteria</name></member>
+    <member refid="classNPC_1ac863c71a461badaed687facf66afa094" kind="function"><name>getCriteria</name></member>
     <member refid="classNPC_1a6674302d1e96b04cdbf98ac01bc41448" kind="function"><name>Init</name></member>
     <member refid="classNPC_1ac3d14249a747c88c251e0291338bbed4" kind="function"><name>Control</name></member>
     <member refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" kind="function"><name>getConversation</name></member>
-    <member refid="classNPC_1ab83b95175ae5e71f6918bab2d7c238d5" kind="function"><name>InitClues</name></member>
     <member refid="classNPC_1a3ea41c7d9745e0be2d2b25187dbaf3f7" kind="function"><name>InitDialogue</name></member>
     <member refid="classNPC_1a7c05d38abb761bb503fdac5a36bc62a4" kind="function"><name>InitQuest</name></member>
     <member refid="classNPC_1a24721357146b87e473c740fe9f295841" kind="function"><name>Update</name></member>
@@ -691,11 +686,11 @@
     <member refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kind="variable"><name>ignoreCollision</name></member>
     <member refid="classObject_1a40860402e64d8008fb42329df7097cdb" kind="function"><name>Object</name></member>
     <member refid="classObject_1ab7afdfb51bccbc4cb09512454ae6c93a" kind="function"><name>Object</name></member>
-    <member refid="classObject_1a9ad82aaeaab22b9776810538e7c6a8f1" kind="function"><name>Object</name></member>
-    <member refid="classObject_1a1ff0e543bef7628740801ae660d91a7e" kind="function"><name>Object</name></member>
-    <member refid="classObject_1aab1e47237b6bf2df563b497426f1a8cc" kind="function"><name>Object</name></member>
-    <member refid="classObject_1aa8a3c32d7bdaf9d06dd9a65749ee0110" kind="function"><name>Object</name></member>
-    <member refid="classObject_1ae8f5483f459e46687bd01e6f9977afd3" kind="function"><name>~Object</name></member>
+    <member refid="classObject_1ab1ebb40265dc428d3e7c344adaee309a" kind="function"><name>Object</name></member>
+    <member refid="classObject_1afe9494bb43564cac7ee053c441448984" kind="function"><name>Object</name></member>
+    <member refid="classObject_1a4e1b0177b63d964d0275eb677c117f28" kind="function"><name>Object</name></member>
+    <member refid="classObject_1a9f11ed46bea1e2b0a850477a528a2534" kind="function"><name>Object</name></member>
+    <member refid="classObject_1aa3e791419d84c4c346ef9499513b8e00" kind="function"><name>~Object</name></member>
     <member refid="classObject_1a495d3c66ce43e267c5aac0066576dfb2" kind="function"><name>Update</name></member>
     <member refid="classObject_1ab7aa5400e08a3c023140d614d1448458" kind="function"><name>Update</name></member>
     <member refid="classObject_1a110cdaa911a12009dd5e37418fe3d35a" kind="function"><name>Knockback</name></member>
@@ -799,6 +794,8 @@
     <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaad2b82ef4862096a7a836ce575339ab5" kind="enumvalue"><name>GEO_CCTV</name></member>
     <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaff6b96d77b72cba2597f07fb0fe8148e" kind="enumvalue"><name>GEO_CCTV_CORNER</name></member>
     <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca45da439763c6adc241d60ec4ae5e69fd" kind="enumvalue"><name>GEO_TEXTBOX</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca2335276e145113194201c9d101b60748" kind="enumvalue"><name>GEO_OVERLAY</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca249e0d56dfcb804e4aa46ac075185631" kind="enumvalue"><name>GEO_BOUND</name></member>
     <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca075e65c4b7d90e191d4c5ca1a25eb287" kind="enumvalue"><name>NUM_GEOMETRY</name></member>
     <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997ba" kind="enum"><name>UNIFORM_TYPE</name></member>
     <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baabf3538a17acd6e6f23c5fdb9c8fe3dbf" kind="enumvalue"><name>U_MVP</name></member>
@@ -853,11 +850,11 @@
     <member refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" kind="variable"><name>meshList</name></member>
     <member refid="classPROJECTScene_1a33b0f80895bb5c797eda5de165430985" kind="variable"><name>m_programID</name></member>
     <member refid="classPROJECTScene_1aee8850dd4bc88a38076b993cc479021b" kind="variable"><name>m_parameters</name></member>
-    <member refid="classPROJECTScene_1a23b016feb6cbc575852f50219c8d0db9" kind="variable"><name>textbox</name></member>
     <member refid="classPROJECTScene_1a697465f68871bce2261142bbbec1da08" kind="variable"><name>text</name></member>
     <member refid="classPROJECTScene_1a86879351b07961b099488e0c43b16945" kind="variable"><name>text2D</name></member>
     <member refid="classPROJECTScene_1ac75e8c68d8290d5014ceff53f04d007b" kind="variable"><name>character</name></member>
     <member refid="classPROJECTScene_1a936c50286d2e83fddedc13edc79328a1" kind="variable"><name>object</name></member>
+    <member refid="classPROJECTScene_1a10531f639fab573636daf5f898ee7a96" kind="variable"><name>decoration</name></member>
     <member refid="classPROJECTScene_1ab8d23e211bd73adde59f273a1423207d" kind="variable"><name>blood</name></member>
     <member refid="classPROJECTScene_1adbc3a2d9a1bd8bb87be36063b3345095" kind="variable"><name>doorway</name></member>
     <member refid="classPROJECTScene_1abd2c67d8b0ae29a412d16dec56ec2fab" kind="variable"><name>doorway2</name></member>
@@ -897,6 +894,7 @@
   <compound refid="classQuest" kind="class"><name>Quest</name>
     <member refid="classQuest_1a534adb61e2d915d7ddc16acb0ab6eba4" kind="variable"><name>Accept</name></member>
     <member refid="classQuest_1aa21be157f656075b955ff62719cb7e7c" kind="variable"><name>Decline</name></member>
+    <member refid="classQuest_1aff1658bdde228c0a8c9d4b46283631e5" kind="variable"><name>criteria</name></member>
     <member refid="classQuest_1a5cdd6f02fdceaa7b7b53407740a22cf5" kind="function"><name>Quest</name></member>
     <member refid="classQuest_1a025ccedb4155d589cc10b99bdf42057a" kind="function"><name>Quest</name></member>
     <member refid="classQuest_1a3543707d634b3647b08bab8dabb09136" kind="function"><name>Quest</name></member>
@@ -924,9 +922,9 @@
     <member refid="structirrklang_1_1SAudioStreamFormat_1a9c6e9369bb5e519600915fd13b00e116" kind="function"><name>getBytesPerSecond</name></member>
   </compound>
   <compound refid="classScene" kind="class"><name>Scene</name>
-    <member refid="classScene_1a140d39ea291abd069dad5bf6bff97e37" kind="variable"><name>pause</name></member>
+    <member refid="classScene_1aadcef6167dbf42098111084d6c3aca14" kind="variable"><name>type</name></member>
     <member refid="classScene_1ad10176d75a9cc0da56626f682d083507" kind="function"><name>Scene</name></member>
-    <member refid="classScene_1a3b8cec2e32546713915f8c6303c951f1" kind="function"><name>~Scene</name></member>
+    <member refid="classScene_1aa0a5be58e2ee2d1fdafc5fb46b5e661e" kind="function"><name>~Scene</name></member>
     <member refid="classScene_1ac3c4677dfd702a3ffd5ffadd3f1ac478" kind="function"><name>Init</name></member>
     <member refid="classScene_1af5c6bcf2185087fb32c27fb8f6a18d91" kind="function"><name>Update</name></member>
     <member refid="classScene_1ae24d21e12b34839994ad265662ea24d7" kind="function"><name>Render</name></member>
@@ -973,9 +971,9 @@
   </compound>
   <compound refid="classStorage" kind="class"><name>Storage</name>
     <member refid="classStorage_1a80ef6af5e4c9fd4424ae16e808d05291" kind="function"><name>Storage</name></member>
-    <member refid="classStorage_1a1b9f9b9fdea18f675b5c676577bc88a7" kind="function"><name>Storage</name></member>
-    <member refid="classStorage_1a4d8af92e7dd83b220f63f051bf9f2cfd" kind="function"><name>Storage</name></member>
-    <member refid="classStorage_1ae2cec8e63e93c786ed2a21f4f5259e36" kind="function"><name>Storage</name></member>
+    <member refid="classStorage_1a0c2f388a7f4d259d2005e4545c7790df" kind="function"><name>Storage</name></member>
+    <member refid="classStorage_1aa59c7272ea2f0a44719de5caa0fca3d8" kind="function"><name>Storage</name></member>
+    <member refid="classStorage_1ab9e1f22d99dd5bb98647bdc696215ca6" kind="function"><name>Storage</name></member>
     <member refid="classStorage_1a73cf30f0a34250396f9eabee7dc5c93d" kind="function"><name>~Storage</name></member>
     <member refid="classStorage_1a6e6c426205e1ef6e6d72e24d57fd5f60" kind="function"><name>getStorePos</name></member>
   </compound>
@@ -992,6 +990,7 @@
     <member refid="classTextBox_1abfb2baf145b19b1748edbeb9ba7a1266" kind="variable"><name>position</name></member>
     <member refid="classTextBox_1a25b67e5ff6788c60b8aef3f3540879d0" kind="function"><name>TextBox</name></member>
     <member refid="classTextBox_1a0ef9abcf8b9fc8ff935b77777df18978" kind="function"><name>TextBox</name></member>
+    <member refid="classTextBox_1a2d339e960ed3990f5c4f057457067f34" kind="function"><name>TextBox</name></member>
     <member refid="classTextBox_1ac3cc88a3ac171658ebaf44b01f4adf80" kind="function"><name>~TextBox</name></member>
     <member refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" kind="function"><name>Update</name></member>
     <member refid="classTextBox_1a4cd6062d94cf951188f5dc779876b5bd" kind="function"><name>getAccept</name></member>
@@ -1262,8 +1261,10 @@
     <member refid="Application_8cpp_1ac325468d8b5ea73fd5e5831ba972bb59" kind="variable"><name>m_window</name></member>
     <member refid="Application_8cpp_1a677c5ab1ba0f5747ef76b40a17b6f803" kind="variable"><name>FPS</name></member>
     <member refid="Application_8cpp_1ae228418b33873657fa31313fb4189a8f" kind="variable"><name>frameTime</name></member>
-    <member refid="Application_8cpp_1a5f589e5ecc9e76fbe63f43ff76edf021" kind="variable"><name>pauseDelay</name></member>
-    <member refid="Application_8cpp_1a567a1d847c8e78035c765f75280f6180" kind="variable"><name>lastCursor</name></member>
+    <member refid="Application_8cpp_1a2474a5474cbff19523a51eb1de01cda4" kind="variable"><name>width</name></member>
+    <member refid="Application_8cpp_1ad12fc34ce789bce6c8a05d8a17138534" kind="variable"><name>height</name></member>
+    <member refid="Application_8cpp_1a64881c5f5f42c13aa0deb1dc0d7a8b26" kind="variable"><name>menu</name></member>
+    <member refid="Application_8cpp_1abdc0ed79982200fe114771223781e640" kind="variable"><name>main</name></member>
     <member refid="Application_8cpp_1ab6fcaa789c458a69920029339bcb303e" kind="variable"><name>play</name></member>
     <member refid="Application_8cpp_1ac746fa6ad48d19984a159f14bec028a3" kind="variable"><name>quit</name></member>
     <member refid="Application_8cpp_1a6e6d1771a9242858811be0a3569838fa" kind="function"><name>error_callback</name></member>
@@ -1281,6 +1282,8 @@
   <compound refid="Camera_8h" kind="file"><name>Camera.h</name>
   </compound>
   <compound refid="Camera3_8cpp" kind="file"><name>Camera3.cpp</name>
+    <member refid="Camera3_8cpp_1a2474a5474cbff19523a51eb1de01cda4" kind="variable"><name>width</name></member>
+    <member refid="Camera3_8cpp_1ad12fc34ce789bce6c8a05d8a17138534" kind="variable"><name>height</name></member>
   </compound>
   <compound refid="Camera3_8h" kind="file"><name>Camera3.h</name>
   </compound>
@@ -1322,11 +1325,18 @@
   <compound refid="Material_8h" kind="file"><name>Material.h</name>
   </compound>
   <compound refid="MENUScene_8cpp" kind="file"><name>MENUScene.cpp</name>
+    <member refid="MENUScene_8cpp_1abdc0ed79982200fe114771223781e640" kind="variable"><name>main</name></member>
+    <member refid="MENUScene_8cpp_1ad4f52f2ef88beb8d0ce1a23f3ea2cab7" kind="variable"><name>startupDelay</name></member>
     <member refid="MENUScene_8cpp_1a88b7b9afecc42ea3bdad4c38d34e56e9" kind="variable"><name>selectDelay</name></member>
     <member refid="MENUScene_8cpp_1a5f589e5ecc9e76fbe63f43ff76edf021" kind="variable"><name>pauseDelay</name></member>
     <member refid="MENUScene_8cpp_1ab56cdd798fa279dceae0e730285d5b5e" kind="variable"><name>engine</name></member>
+    <member refid="MENUScene_8cpp_1a64881c5f5f42c13aa0deb1dc0d7a8b26" kind="variable"><name>menu</name></member>
     <member refid="MENUScene_8cpp_1ab6fcaa789c458a69920029339bcb303e" kind="variable"><name>play</name></member>
     <member refid="MENUScene_8cpp_1ac746fa6ad48d19984a159f14bec028a3" kind="variable"><name>quit</name></member>
+    <member refid="MENUScene_8cpp_1a6f56637d22671d5fd81cefc137a624ff" kind="variable"><name>cheats</name></member>
+    <member refid="MENUScene_8cpp_1ae3a44f59d0925840deecc121b3bc18bb" kind="variable"><name>cheat</name></member>
+    <member refid="MENUScene_8cpp_1ac95d3ded64b72325401599f6ec60bdbc" kind="variable"><name>controls</name></member>
+    <member refid="MENUScene_8cpp_1aa445a70eef1b1c61f414ded6453ec61f" kind="variable"><name>lastKey</name></member>
   </compound>
   <compound refid="MENUScene_8h" kind="file"><name>MENUScene.h</name>
   </compound>
@@ -1355,6 +1365,7 @@
     <member refid="player_8cpp_1a6ddf4e66acb2a2af41c08a8218b62691" kind="variable"><name>knifeDir</name></member>
     <member refid="player_8cpp_1a33a00c62601a8c50f3d1e559011500ea" kind="variable"><name>stopCamera</name></member>
     <member refid="player_8cpp_1ab56cdd798fa279dceae0e730285d5b5e" kind="variable"><name>engine</name></member>
+    <member refid="player_8cpp_1a1d4d788755a89306144fb82d4db9d0bc" kind="variable"><name>textbox</name></member>
     <member refid="player_8cpp_1aa87e9afd12a7adc281ded05d27520a94" kind="variable"><name>eDelay</name></member>
     <member refid="player_8cpp_1aa44bf3fcc686d895aaa3265499f2920c" kind="variable"><name>entrance</name></member>
     <member refid="player_8cpp_1a65c818132a37d07697eca46bebcdb97f" kind="function"><name>CollisionResponse</name></member>
@@ -1362,17 +1373,21 @@
   <compound refid="player_8h" kind="file"><name>player.h</name>
   </compound>
   <compound refid="PROJECTScene_8cpp" kind="file"><name>PROJECTScene.cpp</name>
+    <member refid="PROJECTScene_8cpp_1a1d4d788755a89306144fb82d4db9d0bc" kind="variable"><name>textbox</name></member>
     <member refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" kind="variable"><name>x</name></member>
     <member refid="PROJECTScene_8cpp_1ad502eec197f7d286623cdc883a2ebf29" kind="variable"><name>fps</name></member>
     <member refid="PROJECTScene_8cpp_1ac3d272e8048af77a48361dc777d00bfc" kind="variable"><name>animateHeart</name></member>
-    <member refid="PROJECTScene_8cpp_1a4d44f2ee29f46aec5628697d410bdb67" kind="variable"><name>animateHeartDir</name></member>
+    <member refid="PROJECTScene_8cpp_1aa812bc70cac95b0ea4e716a891afb5d6" kind="variable"><name>animateHeartDir</name></member>
     <member refid="PROJECTScene_8cpp_1acd1a0cf435929df7f92dfee7c223bb13" kind="variable"><name>Select</name></member>
     <member refid="PROJECTScene_8cpp_1a88b7b9afecc42ea3bdad4c38d34e56e9" kind="variable"><name>selectDelay</name></member>
-    <member refid="PROJECTScene_8cpp_1a5f589e5ecc9e76fbe63f43ff76edf021" kind="variable"><name>pauseDelay</name></member>
     <member refid="PROJECTScene_8cpp_1aab4aca1d184256eaf1f29ca85502d228" kind="variable"><name>CCTV</name></member>
     <member refid="PROJECTScene_8cpp_1a33a00c62601a8c50f3d1e559011500ea" kind="variable"><name>stopCamera</name></member>
     <member refid="PROJECTScene_8cpp_1ab56cdd798fa279dceae0e730285d5b5e" kind="variable"><name>engine</name></member>
     <member refid="PROJECTScene_8cpp_1a82afce81dc7ebe7bec74e4154b956843" kind="variable"><name>showLevel</name></member>
+    <member refid="PROJECTScene_8cpp_1a2474a5474cbff19523a51eb1de01cda4" kind="variable"><name>width</name></member>
+    <member refid="PROJECTScene_8cpp_1ad12fc34ce789bce6c8a05d8a17138534" kind="variable"><name>height</name></member>
+    <member refid="PROJECTScene_8cpp_1a64881c5f5f42c13aa0deb1dc0d7a8b26" kind="variable"><name>menu</name></member>
+    <member refid="PROJECTScene_8cpp_1a66076fd4c94f1ef66bb0256b653cf37f" kind="variable"><name>pause</name></member>
   </compound>
   <compound refid="PROJECTScene_8h" kind="file"><name>PROJECTScene.h</name>
   </compound>

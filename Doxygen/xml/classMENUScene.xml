@@ -134,15 +134,8 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a75d7798228d969991b30fa3c5f86ccb0" prot="private">
-          <name>GEO_CCTV</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aaf9edd54a9fcbec23ee9902955a9acf8" prot="private">
-          <name>GEO_CCTV_CORNER</name>
+        <enumvalue id="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa81aeca33d81a73aa5e3d4a1e5d8de29" prot="private">
+          <name>GEO_OVERLAY</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -150,6 +143,13 @@
         </enumvalue>
         <enumvalue id="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8c3bd4cc81793938afa77d7f147b8a05" prot="private">
           <name>GEO_TEXTBOX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a192ad3a40d18698ee077496ea573b8af" prot="private">
+          <name>GEO_TEXTBOX2</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -168,7 +168,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="40" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="39" bodyend="63"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="62" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="61" bodyend="85"/>
       </memberdef>
       <memberdef kind="enum" id="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8" prot="private" static="no">
         <name>UNIFORM_TYPE</name>
@@ -508,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="65" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="64" bodyend="86"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="87" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="86" bodyend="108"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -524,15 +524,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="104" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="104" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="194" endline="248">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="126" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="233" endline="364">Update</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classMENUScene_1a8adf29b7c860968aa57b62f16fa77119" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classMENUScene_1a1b8fc9d8c8a9b28ed1d1766505682e3f" prot="public" static="no" mutable="no">
         <type><ref refid="classButton" kindref="compound">Button</ref></type>
-        <definition>Button MENUScene::buttons[3]</definition>
-        <argsstring>[3]</argsstring>
+        <definition>Button MENUScene::buttons[4]</definition>
+        <argsstring>[4]</argsstring>
         <name>buttons</name>
         <briefdescription>
         </briefdescription>
@@ -540,9 +540,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="106" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="106" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="128" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1a34300ff852ec28f342ae605571ce753f" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -555,10 +555,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="107" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="107" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
-        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="194" endline="248">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="129" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
+        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="233" endline="364">Update</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -573,9 +573,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="110" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="110" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1ab8f9680e38a47e6c124a8b4cb03e2432" compoundref="MENUScene_8cpp" startline="548" endline="555">Exit</referencedby>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="132" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="132" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1ab8f9680e38a47e6c124a8b4cb03e2432" compoundref="MENUScene_8cpp" startline="752" endline="759">Exit</referencedby>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1abffab70ee3696122d2555e25763a2a34" prot="private" static="no" mutable="no">
         <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
@@ -588,13 +588,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="111" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="111" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
-        <referencedby refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="22" endline="93">InitJunk</referencedby>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
-        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="601" endline="628">RenderCrosshair</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">RenderScene</referencedby>
-        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="557" endline="600">RenderSkybox</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="133" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="133" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
+        <referencedby refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="45" endline="114">InitJunk</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
+        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="818" endline="845">RenderCrosshair</referencedby>
+        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="767" endline="810">RenderSkybox</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1a495048712197b36f163ee7d6d7903f13" prot="private" static="no" mutable="no">
         <type>unsigned</type>
@@ -607,9 +606,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="112" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="112" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1ab8f9680e38a47e6c124a8b4cb03e2432" compoundref="MENUScene_8cpp" startline="548" endline="555">Exit</referencedby>
-        <referencedby refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="22" endline="93">InitJunk</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="134" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1ab8f9680e38a47e6c124a8b4cb03e2432" compoundref="MENUScene_8cpp" startline="752" endline="759">Exit</referencedby>
+        <referencedby refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="45" endline="114">InitJunk</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" prot="private" static="no" mutable="no">
         <type>unsigned</type>
@@ -622,12 +621,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="113" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="113" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
-        <referencedby refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="22" endline="93">InitJunk</referencedby>
-        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">RenderMesh</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">RenderScene</referencedby>
-        <referencedby refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="384" endline="474">RenderText</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="135" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="135" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
+        <referencedby refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="45" endline="114">InitJunk</referencedby>
+        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="525" endline="567">RenderMesh</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="372" endline="403">RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="575" endline="665">RenderText</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1af43fcd74ddf551857f2b7478b4d78f3f" prot="private" static="no" mutable="no">
         <type><ref refid="structLight" kindref="compound">Light</ref></type>
@@ -640,9 +639,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="115" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="115" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">RenderScene</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="137" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="372" endline="403">RenderScene</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1a03714ef328289367f776496466be18e0" prot="private" static="no" mutable="no">
         <type><ref refid="classCamera3" kindref="compound">Camera3</ref> *</type>
@@ -655,11 +654,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="122" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="122" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">RenderScene</referencedby>
-        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="194" endline="248">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="144" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="372" endline="403">RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" compoundref="MENUScene_8cpp" startline="233" endline="364">Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1a08ef3397ecf373a637c1a00cad6a39cd" prot="private" static="no" mutable="no">
         <type><ref refid="classPlayer" kindref="compound">Player</ref></type>
@@ -672,8 +671,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="123" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="123" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="145" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="145" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" prot="private" static="no" mutable="no">
         <type><ref refid="classMS" kindref="compound">MS</ref></type>
@@ -686,13 +685,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="125" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="125" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
-        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="601" endline="628">RenderCrosshair</referencedby>
-        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">RenderMesh</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">RenderScene</referencedby>
-        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="557" endline="600">RenderSkybox</referencedby>
-        <referencedby refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="384" endline="474">RenderText</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="147" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
+        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="818" endline="845">RenderCrosshair</referencedby>
+        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="525" endline="567">RenderMesh</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="372" endline="403">RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="767" endline="810">RenderSkybox</referencedby>
+        <referencedby refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="575" endline="665">RenderText</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" prot="private" static="no" mutable="no">
         <type><ref refid="classMS" kindref="compound">MS</ref></type>
@@ -705,11 +704,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="125" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="125" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
-        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">RenderMesh</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">RenderScene</referencedby>
-        <referencedby refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="384" endline="474">RenderText</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="147" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
+        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="525" endline="567">RenderMesh</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="372" endline="403">RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="575" endline="665">RenderText</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" prot="private" static="no" mutable="no">
         <type><ref refid="classMS" kindref="compound">MS</ref></type>
@@ -722,11 +721,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="125" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="125" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
-        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">RenderMesh</referencedby>
-        <referencedby refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="384" endline="474">RenderText</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="147" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
+        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="525" endline="567">RenderMesh</referencedby>
+        <referencedby refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="575" endline="665">RenderText</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -736,26 +735,26 @@
         <argsstring>()</argsstring>
         <name>RenderSkybox</name>
         <briefdescription>
-        </briefdescription>
+<para>Rendering the skybox. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="88" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="557" bodyend="600"/>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ab429b4bd0ed0b16c2a0366343136ec0a" compoundref="MENUScene_8h" startline="47">GEO_BACK</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a4f09859993b9ff635c8d39dc268d7395" compoundref="MENUScene_8h" startline="45">GEO_BOTTOM</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a313409490271c031bfe93c715de7dc72" compoundref="MENUScene_8h" startline="46">GEO_FRONT</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad2a6ea3ce5ec9e5ddc37b2529ff738ee" compoundref="MENUScene_8h" startline="42">GEO_LEFT</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9af597019975c7e406a689e4a07b190f3e" compoundref="MENUScene_8h" startline="43">GEO_RIGHT</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a060dbb38fc0df5757a3933458240fb8f" compoundref="MENUScene_8h" startline="44">GEO_TOP</references>
-        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="111">meshList</references>
-        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="125">modelStack</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="110" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="767" bodyend="810"/>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ab429b4bd0ed0b16c2a0366343136ec0a" compoundref="MENUScene_8h" startline="69">GEO_BACK</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a4f09859993b9ff635c8d39dc268d7395" compoundref="MENUScene_8h" startline="67">GEO_BOTTOM</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a313409490271c031bfe93c715de7dc72" compoundref="MENUScene_8h" startline="68">GEO_FRONT</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad2a6ea3ce5ec9e5ddc37b2529ff738ee" compoundref="MENUScene_8h" startline="64">GEO_LEFT</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9af597019975c7e406a689e4a07b190f3e" compoundref="MENUScene_8h" startline="65">GEO_RIGHT</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a060dbb38fc0df5757a3933458240fb8f" compoundref="MENUScene_8h" startline="66">GEO_TOP</references>
+        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="133">meshList</references>
+        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="147">modelStack</references>
         <references refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">MS::PopMatrix</references>
         <references refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">MS::PushMatrix</references>
-        <references refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">RenderMesh</references>
+        <references refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="525" endline="567">RenderMesh</references>
         <references refid="classMS_1a6ce592114042b920b648bca5519690cd" compoundref="MatrixStack_8cpp" startline="130" endline="134">MS::Rotate</references>
         <references refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">MS::Translate</references>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="372" endline="403">RenderScene</referencedby>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -763,18 +762,18 @@
         <argsstring>()</argsstring>
         <name>RenderCrosshair</name>
         <briefdescription>
-        </briefdescription>
+<para>Render Crosshair. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="89" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="601" bodyend="628"/>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8d1503e3e5b3b09beb89a201702ee572" compoundref="MENUScene_8h" startline="55">GEO_LINE</references>
-        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="111">meshList</references>
-        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="125">modelStack</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="111" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="818" bodyend="845"/>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8d1503e3e5b3b09beb89a201702ee572" compoundref="MENUScene_8h" startline="77">GEO_LINE</references>
+        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="133">meshList</references>
+        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="147">modelStack</references>
         <references refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">MS::PopMatrix</references>
         <references refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">MS::PushMatrix</references>
-        <references refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">RenderMesh</references>
+        <references refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="525" endline="567">RenderMesh</references>
         <references refid="classMS_1a6ce592114042b920b648bca5519690cd" compoundref="MatrixStack_8cpp" startline="130" endline="134">MS::Rotate</references>
         <references refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">MS::Translate</references>
       </memberdef>
@@ -789,7 +788,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="90" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="112" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1aa99998fe147d747f2515df88b37cb193" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -797,40 +796,36 @@
         <argsstring>()</argsstring>
         <name>RenderScene</name>
         <briefdescription>
-        </briefdescription>
+<para>Render. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="116" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="250" bodyend="289"/>
-        <references refid="classMENUScene_1a03714ef328289367f776496466be18e0" compoundref="MENUScene_8h" startline="122">camera</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aea3fa946bf95d37f29f4c65a2f38f739" compoundref="MENUScene_8h" startline="41">GEO_AXES</references>
-        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">Application::IsKeyPressed</references>
-        <references refid="classMENUScene_1af43fcd74ddf551857f2b7478b4d78f3f" compoundref="MENUScene_8h" startline="115">light</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="138" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="372" bodyend="403"/>
+        <references refid="classMENUScene_1a03714ef328289367f776496466be18e0" compoundref="MENUScene_8h" startline="144">camera</references>
+        <references refid="classMENUScene_1af43fcd74ddf551857f2b7478b4d78f3f" compoundref="MENUScene_8h" startline="137">light</references>
         <references refid="structLight_1aa7ed22cab99d811d72896efaee6d07cba9bf1f515ab954cb3379615aab42f30b6" compoundref="Light_8h" startline="31">Light::LIGHT_DIRECTIONAL</references>
         <references refid="structLight_1aa7ed22cab99d811d72896efaee6d07cba69dd6d65ad12b410709ae74c8d9b1e16" compoundref="Light_8h" startline="32">Light::LIGHT_SPOT</references>
-        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="113">m_parameters</references>
-        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="111">meshList</references>
-        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="125">modelStack</references>
+        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="135">m_parameters</references>
+        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="147">modelStack</references>
         <references refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">MS::PopMatrix</references>
         <references refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" compoundref="Camera_8h" startline="9">Camera::position</references>
         <references refid="structLight_1afeb738db41e987719e359166ef93314f" compoundref="Light_8h" startline="21">Light::position</references>
         <references refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">MS::PushMatrix</references>
-        <references refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">RenderMesh</references>
-        <references refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="557" endline="600">RenderSkybox</references>
+        <references refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="767" endline="810">RenderSkybox</references>
         <references refid="classMS_1a52109795de960e24663b315e9128533f" compoundref="MatrixStack_8cpp" startline="149" endline="153">MS::Scale</references>
         <references refid="structLight_1a6bd73eb0b27ef881f8442e20912d9258" compoundref="Light_8h" startline="36">Light::spotDirection</references>
-        <references refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" compoundref="Camera_8h" startline="10">Camera::target</references>
         <references refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" compoundref="MatrixStack_8cpp" startline="42" endline="44">MS::Top</references>
         <references refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">MS::Translate</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a9e38d03df35b2b390657435410f7d807" compoundref="MENUScene_8h" startline="74">U_LIGHT0_POSITION</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a3086bf43f58f9db6859e235b05407b66" compoundref="MENUScene_8h" startline="75">U_LIGHT0_SPOTDIRECTION</references>
-        <references refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" compoundref="MENUScene_8h" startline="125">viewStack</references>
+        <references refid="classScene_1aadcef6167dbf42098111084d6c3aca14" compoundref="Scene_8h" startline="17">Scene::type</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a9e38d03df35b2b390657435410f7d807" compoundref="MENUScene_8h" startline="96">U_LIGHT0_POSITION</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a3086bf43f58f9db6859e235b05407b66" compoundref="MENUScene_8h" startline="97">U_LIGHT0_SPOTDIRECTION</references>
+        <references refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" compoundref="MENUScene_8h" startline="147">viewStack</references>
         <references refid="structPosition_1af684446cbf0f6d53386686283da6dcc6" compoundref="vertex_8h" startline="10">Position::x</references>
         <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
         <references refid="structPosition_1a54a6182b5f7539295b32255808897d3f" compoundref="vertex_8h" startline="10">Position::y</references>
         <references refid="structPosition_1a5dc8c08d3d7209ba538ad21ba604aa44" compoundref="vertex_8h" startline="10">Position::z</references>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -846,12 +841,12 @@
           <declname>enableLight</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Render <ref refid="classMesh" kindref="compound">Mesh</ref>. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="117" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="341" bodyend="383"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="139" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="525" bodyend="567"/>
         <references refid="classMtx44_1a97018c3b3ef41a962e27340c144430ea" compoundref="Mtx44_8h" startline="50">Mtx44::a</references>
         <references refid="classMtx44_1aac1ba21ddfc5f3c24baa4f58d9c5c256" compoundref="Mtx44_8cpp" startline="139" endline="195">Mtx44::GetInverse</references>
         <references refid="classMtx44_1aebb16a0329c5237e314af0d75d8081fd" compoundref="Mtx44_8cpp" startline="123" endline="127">Mtx44::GetTranspose</references>
@@ -859,28 +854,28 @@
         <references refid="structMaterial_1aa88dd619cacf46e2f26ddd23fe032898" compoundref="Material_8h" startline="16">Material::kDiffuse</references>
         <references refid="structMaterial_1a07cec8956c43f81adeb6ba7aea104915" compoundref="Material_8h" startline="18">Material::kShininess</references>
         <references refid="structMaterial_1a97cc0bf34b02c758b198d12dd24e96e2" compoundref="Material_8h" startline="17">Material::kSpecular</references>
-        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="113">m_parameters</references>
+        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="135">m_parameters</references>
         <references refid="classMesh_1a3368c3bc60dd176e522df1542b764847" compoundref="Mesh_8h" startline="28">Mesh::material</references>
-        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="125">modelStack</references>
-        <references refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" compoundref="MENUScene_8h" startline="125">projectionStack</references>
+        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="147">modelStack</references>
+        <references refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" compoundref="MENUScene_8h" startline="147">projectionStack</references>
         <references refid="structComponent_1a490db57cde183ef5a233b6ff3386ef6f" compoundref="Material_8h" startline="6">Component::r</references>
         <references refid="classMesh_1a75e66bcd90c09492676a4cfe5b23c3af" compoundref="Mesh_8cpp" startline="45" endline="80">Mesh::Render</references>
         <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
         <references refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" compoundref="MatrixStack_8cpp" startline="42" endline="44">MS::Top</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abd21c0a288f36d1f9e52940db52db2e5" compoundref="MENUScene_8h" startline="82">U_COLOR_TEXTURE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a697a57e619b7a4b7e9c984a2304ce70c" compoundref="MENUScene_8h" startline="81">U_COLOR_TEXTURE_ENABLED</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1085ed8ea4d6dacea5bd6926c9aef617" compoundref="MENUScene_8h" startline="73">U_LIGHTENABLED</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad84540b125875a17176a5fa9991805b1" compoundref="MENUScene_8h" startline="69">U_MATERIAL_AMBIENT</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a50a210502033462ffc158c4ed642fdb4" compoundref="MENUScene_8h" startline="70">U_MATERIAL_DIFFUSE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a625a6804482639c08b141a6829dfaa61" compoundref="MENUScene_8h" startline="72">U_MATERIAL_SHININESS</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abcfcae546e51bc5c9e374bf84344a912" compoundref="MENUScene_8h" startline="71">U_MATERIAL_SPECULAR</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8adb0814660fbd91a8520059308b669d30" compoundref="MENUScene_8h" startline="67">U_MODELVIEW</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a4b96ab62968163ed59fa92a5838f0446" compoundref="MENUScene_8h" startline="68">U_MODELVIEW_INVERSE_TRANSPOSE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ac2b122d4c7eecd0b585e116eb578675d" compoundref="MENUScene_8h" startline="66">U_MVP</references>
-        <references refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" compoundref="MENUScene_8h" startline="125">viewStack</references>
-        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="601" endline="628">RenderCrosshair</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">RenderScene</referencedby>
-        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="557" endline="600">RenderSkybox</referencedby>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abd21c0a288f36d1f9e52940db52db2e5" compoundref="MENUScene_8h" startline="104">U_COLOR_TEXTURE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a697a57e619b7a4b7e9c984a2304ce70c" compoundref="MENUScene_8h" startline="103">U_COLOR_TEXTURE_ENABLED</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1085ed8ea4d6dacea5bd6926c9aef617" compoundref="MENUScene_8h" startline="95">U_LIGHTENABLED</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad84540b125875a17176a5fa9991805b1" compoundref="MENUScene_8h" startline="91">U_MATERIAL_AMBIENT</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a50a210502033462ffc158c4ed642fdb4" compoundref="MENUScene_8h" startline="92">U_MATERIAL_DIFFUSE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a625a6804482639c08b141a6829dfaa61" compoundref="MENUScene_8h" startline="94">U_MATERIAL_SHININESS</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abcfcae546e51bc5c9e374bf84344a912" compoundref="MENUScene_8h" startline="93">U_MATERIAL_SPECULAR</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8adb0814660fbd91a8520059308b669d30" compoundref="MENUScene_8h" startline="89">U_MODELVIEW</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a4b96ab62968163ed59fa92a5838f0446" compoundref="MENUScene_8h" startline="90">U_MODELVIEW_INVERSE_TRANSPOSE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ac2b122d4c7eecd0b585e116eb578675d" compoundref="MENUScene_8h" startline="88">U_MVP</references>
+        <references refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" compoundref="MENUScene_8h" startline="147">viewStack</references>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
+        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="818" endline="845">RenderCrosshair</referencedby>
+        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="767" endline="810">RenderSkybox</referencedby>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -900,29 +895,29 @@
           <declname>color</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>RenderText. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="118" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="384" bodyend="474"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="140" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="575" bodyend="665"/>
         <references refid="classMtx44_1a97018c3b3ef41a962e27340c144430ea" compoundref="Mtx44_8h" startline="50">Mtx44::a</references>
-        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="113">m_parameters</references>
-        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="125">modelStack</references>
-        <references refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" compoundref="MENUScene_8h" startline="125">projectionStack</references>
+        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="135">m_parameters</references>
+        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="147">modelStack</references>
+        <references refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" compoundref="MENUScene_8h" startline="147">projectionStack</references>
         <references refid="structColor_1a3958a556b47d2de3dd45c75aac833c20" compoundref="vertex_8h" startline="19">Color::r</references>
         <references refid="classMesh_1a75e66bcd90c09492676a4cfe5b23c3af" compoundref="Mesh_8cpp" startline="45" endline="80">Mesh::Render</references>
         <references refid="classMtx44_1a0cc88cc5c648da14effba480c4d2ac70" compoundref="Mtx44_8cpp" startline="376" endline="381">Mtx44::SetToTranslation</references>
         <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
         <references refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" compoundref="MatrixStack_8cpp" startline="42" endline="44">MS::Top</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abd21c0a288f36d1f9e52940db52db2e5" compoundref="MENUScene_8h" startline="82">U_COLOR_TEXTURE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a697a57e619b7a4b7e9c984a2304ce70c" compoundref="MENUScene_8h" startline="81">U_COLOR_TEXTURE_ENABLED</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1085ed8ea4d6dacea5bd6926c9aef617" compoundref="MENUScene_8h" startline="73">U_LIGHTENABLED</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ac2b122d4c7eecd0b585e116eb578675d" compoundref="MENUScene_8h" startline="66">U_MVP</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a43b6627de77fd16e34d2ed0d86071d9a" compoundref="MENUScene_8h" startline="84">U_TEXT_COLOR</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aaeb8325f99bf5584ab1eddd061c273e1" compoundref="MENUScene_8h" startline="83">U_TEXT_ENABLED</references>
-        <references refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" compoundref="MENUScene_8h" startline="125">viewStack</references>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abd21c0a288f36d1f9e52940db52db2e5" compoundref="MENUScene_8h" startline="104">U_COLOR_TEXTURE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a697a57e619b7a4b7e9c984a2304ce70c" compoundref="MENUScene_8h" startline="103">U_COLOR_TEXTURE_ENABLED</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1085ed8ea4d6dacea5bd6926c9aef617" compoundref="MENUScene_8h" startline="95">U_LIGHTENABLED</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ac2b122d4c7eecd0b585e116eb578675d" compoundref="MENUScene_8h" startline="88">U_MVP</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a43b6627de77fd16e34d2ed0d86071d9a" compoundref="MENUScene_8h" startline="106">U_TEXT_COLOR</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aaeb8325f99bf5584ab1eddd061c273e1" compoundref="MENUScene_8h" startline="105">U_TEXT_ENABLED</references>
+        <references refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" compoundref="MENUScene_8h" startline="147">viewStack</references>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1ae50ba41dad96291cda53625341eb394e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -959,7 +954,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="119" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="141" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1a979e332c145d4bc584c8e0aa9e3e92f7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -969,15 +964,16 @@
         <param>
           <type>string</type>
           <declname>t</declname>
+          <defname>text</defname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Get text width. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="120" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="476" bodyend="547"/>
-        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">Render</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="142" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="673" bodyend="744"/>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="410" endline="517">Render</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -987,12 +983,13 @@
         <argsstring>()</argsstring>
         <name>MENUScene</name>
         <briefdescription>
-        </briefdescription>
+<para>This is the constructor. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="93" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="16" bodyend="18"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="115" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="31" bodyend="34"/>
+        <references refid="classScene_1aadcef6167dbf42098111084d6c3aca14" compoundref="Scene_8h" startline="17">Scene::type</references>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1ac50671eefd8d5179accc82f25957adbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1005,7 +1002,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="94" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="19" bodyend="21"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="116" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="36" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1019,61 +1016,63 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="96" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="95" bodyend="185"/>
-        <references refid="classMENUScene_1a8adf29b7c860968aa57b62f16fa77119" compoundref="MENUScene_8h" startline="106">buttons</references>
-        <references refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" compoundref="player_8h" startline="98">Player::camera</references>
-        <references refid="classMENUScene_1a03714ef328289367f776496466be18e0" compoundref="MENUScene_8h" startline="122">camera</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="118" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="119" bodyend="211"/>
+        <references refid="classMENUScene_1a1b8fc9d8c8a9b28ed1d1766505682e3f" compoundref="MENUScene_8h" startline="128">buttons</references>
+        <references refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" compoundref="player_8h" startline="119">Player::camera</references>
+        <references refid="classMENUScene_1a03714ef328289367f776496466be18e0" compoundref="MENUScene_8h" startline="144">camera</references>
         <references refid="classMeshBuilder_1a7e35aba5341b1e012cc27598b38ca856" compoundref="MeshBuilder_8cpp" startline="254" endline="361">MeshBuilder::GenerateCube</references>
         <references refid="classMeshBuilder_1a2df7fd154b373c18089d1e8b9a6f76cc" compoundref="MeshBuilder_8cpp" startline="363" endline="470">MeshBuilder::GenerateCubeOnPlane</references>
         <references refid="classMeshBuilder_1aee21bf31b3be8ec382a35b066185c3c5" compoundref="MeshBuilder_8cpp" startline="79" endline="115">MeshBuilder::GenerateLine</references>
         <references refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" compoundref="MeshBuilder_8cpp" startline="1184" endline="1209">MeshBuilder::GenerateOBJ</references>
         <references refid="classMeshBuilder_1aac7c87881dbc08f8d41f2068e0f40c76" compoundref="MeshBuilder_8cpp" startline="1123" endline="1181">MeshBuilder::GenerateText</references>
         <references refid="classMeshBuilder_1a8e5663b9e284940453900fdf32fa354f" compoundref="MeshBuilder_8cpp" startline="185" endline="238">MeshBuilder::GenerateXYQuad</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a3856e41a9cefc395c3ce13df4f0fc8e4" compoundref="MENUScene_8h" startline="57">GEO_BIGCUBE</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a75d7798228d969991b30fa3c5f86ccb0" compoundref="MENUScene_8h" startline="59">GEO_CCTV</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aaf9edd54a9fcbec23ee9902955a9acf8" compoundref="MENUScene_8h" startline="60">GEO_CCTV_CORNER</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a5afad9754570b5153964f1e761d64a20" compoundref="MENUScene_8h" startline="56">GEO_CUBE</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9abfc0981829faa20039ced5c539e65236" compoundref="MENUScene_8h" startline="51">GEO_HEART</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9adb1dfb470126f2666dc77e993b812cd9" compoundref="MENUScene_8h" startline="58">GEO_HOLD</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a1164b3e83da15d9ed64c093077a518ea" compoundref="MENUScene_8h" startline="53">GEO_JUMP</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad1b42b8cbcc6d09e860e50d62a626fcc" compoundref="MENUScene_8h" startline="50">GEO_KNIFE</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8d1503e3e5b3b09beb89a201702ee572" compoundref="MENUScene_8h" startline="55">GEO_LINE</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8410e8ad9572c2783af741d247c89949" compoundref="MENUScene_8h" startline="49">GEO_QUAD</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a53337c1ed32673d6bdf110dba2065f19" compoundref="MENUScene_8h" startline="52">GEO_SPRINT</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa652bbc0ff1de780b72024e2458f5508" compoundref="MENUScene_8h" startline="54">GEO_TEXT</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8c3bd4cc81793938afa77d7f147b8a05" compoundref="MENUScene_8h" startline="61">GEO_TEXTBOX</references>
-        <references refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="22" endline="93">InitJunk</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a3856e41a9cefc395c3ce13df4f0fc8e4" compoundref="MENUScene_8h" startline="79">GEO_BIGCUBE</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a5afad9754570b5153964f1e761d64a20" compoundref="MENUScene_8h" startline="78">GEO_CUBE</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9abfc0981829faa20039ced5c539e65236" compoundref="MENUScene_8h" startline="73">GEO_HEART</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9adb1dfb470126f2666dc77e993b812cd9" compoundref="MENUScene_8h" startline="80">GEO_HOLD</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a1164b3e83da15d9ed64c093077a518ea" compoundref="MENUScene_8h" startline="75">GEO_JUMP</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad1b42b8cbcc6d09e860e50d62a626fcc" compoundref="MENUScene_8h" startline="72">GEO_KNIFE</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8d1503e3e5b3b09beb89a201702ee572" compoundref="MENUScene_8h" startline="77">GEO_LINE</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa81aeca33d81a73aa5e3d4a1e5d8de29" compoundref="MENUScene_8h" startline="81">GEO_OVERLAY</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8410e8ad9572c2783af741d247c89949" compoundref="MENUScene_8h" startline="71">GEO_QUAD</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a53337c1ed32673d6bdf110dba2065f19" compoundref="MENUScene_8h" startline="74">GEO_SPRINT</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa652bbc0ff1de780b72024e2458f5508" compoundref="MENUScene_8h" startline="76">GEO_TEXT</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8c3bd4cc81793938afa77d7f147b8a05" compoundref="MENUScene_8h" startline="82">GEO_TEXTBOX</references>
+        <references refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="45" endline="114">InitJunk</references>
         <references refid="structLight_1a888f11000d2baf1228d9e5c8d8c90fcb" compoundref="Light_8h" startline="26">Light::kC</references>
-        <references refid="classMENUScene_1af43fcd74ddf551857f2b7478b4d78f3f" compoundref="MENUScene_8h" startline="115">light</references>
+        <references refid="classMENUScene_1af43fcd74ddf551857f2b7478b4d78f3f" compoundref="MENUScene_8h" startline="137">light</references>
         <references refid="structLight_1aa7ed22cab99d811d72896efaee6d07cba9bf1f515ab954cb3379615aab42f30b6" compoundref="Light_8h" startline="31">Light::LIGHT_DIRECTIONAL</references>
         <references refid="structLight_1aa7ed22cab99d811d72896efaee6d07cbab02ff4ee1e2a9673edac03cf11b66338" compoundref="Light_8h" startline="30">Light::LIGHT_POINT</references>
         <references refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" compoundref="MatrixStack_8cpp" startline="98" endline="100">MS::LoadMatrix</references>
         <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
-        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="113">m_parameters</references>
-        <references refid="classMENUScene_1ac01d75a557824e65d353bfe0e90def36" compoundref="MENUScene_8h" startline="110">m_vertexArrayID</references>
-        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="111">meshList</references>
-        <references refid="classButton_1a9a79182881bfd9a9e35aafd9dab955ae" compoundref="MENUScene_8h" startline="35">Button::name</references>
-        <references refid="classMENUScene_1a08ef3397ecf373a637c1a00cad6a39cd" compoundref="MENUScene_8h" startline="123">player</references>
+        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="135">m_parameters</references>
+        <references refid="classMENUScene_1ac01d75a557824e65d353bfe0e90def36" compoundref="MENUScene_8h" startline="132">m_vertexArrayID</references>
+        <references refid="MENUScene_8cpp_1abdc0ed79982200fe114771223781e640" compoundref="MENUScene_8cpp" startline="116">main</references>
+        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="133">meshList</references>
+        <references refid="classButton_1a9a79182881bfd9a9e35aafd9dab955ae" compoundref="MENUScene_8h" startline="50">Button::name</references>
+        <references refid="classMENUScene_1a08ef3397ecf373a637c1a00cad6a39cd" compoundref="MENUScene_8h" startline="145">player</references>
         <references refid="structLight_1afeb738db41e987719e359166ef93314f" compoundref="Light_8h" startline="21">Light::position</references>
-        <references refid="classButton_1a9fdba00d70de312b444e2aaca608e929" compoundref="MENUScene_8h" startline="32">Button::position</references>
+        <references refid="classButton_1a9fdba00d70de312b444e2aaca608e929" compoundref="MENUScene_8h" startline="47">Button::position</references>
         <references refid="structLight_1a6c4c401141c4cdb3b9b9b3bab7dd6fbb" compoundref="Light_8h" startline="25">Light::power</references>
-        <references refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" compoundref="MENUScene_8h" startline="125">projectionStack</references>
-        <references refid="classMENUScene_1a34300ff852ec28f342ae605571ce753f" compoundref="MENUScene_8h" startline="107">select</references>
+        <references refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" compoundref="MENUScene_8h" startline="147">projectionStack</references>
+        <references refid="classMENUScene_1a34300ff852ec28f342ae605571ce753f" compoundref="MENUScene_8h" startline="129">select</references>
         <references refid="structPosition_1a2919b2441baf7a2f799791d65a1cfc15" compoundref="vertex_8h" startline="13" endline="14">Position::Set</references>
         <references refid="classMtx44_1ac6e6521111d78ff36d539bf111a902c6" compoundref="Mtx44_8cpp" startline="466" endline="472">Mtx44::SetToPerspective</references>
-        <references refid="classMENUScene_1a8322d7ffc34365f34d07a74212533aa2" compoundref="audio_8cpp" startline="16" endline="24">soundInit</references>
+        <references refid="classMENUScene_1a8322d7ffc34365f34d07a74212533aa2" compoundref="audio_8cpp" startline="37" endline="45">soundInit</references>
+        <references refid="MENUScene_8cpp_1ad4f52f2ef88beb8d0ce1a23f3ea2cab7" compoundref="MENUScene_8cpp" startline="117">startupDelay</references>
         <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
+        <references refid="classScene_1aadcef6167dbf42098111084d6c3aca14" compoundref="Scene_8h" startline="17">Scene::type</references>
         <references refid="structLight_1a5dcdb101afc28979b5aaff0a2ec79ba5" compoundref="Light_8h" startline="35">Light::type</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8acb823f451f90c8666c6449b8c44420fc" compoundref="MENUScene_8h" startline="74">U_LIGHT0_COLOR</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8af7331cca0e427036732d05e869180988" compoundref="MENUScene_8h" startline="75">U_LIGHT0_COSCUTOFF</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8afff3a1df7aff47b65cda81ee26f71d80" compoundref="MENUScene_8h" startline="75">U_LIGHT0_COSINNER</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a0a5079c54ffc05c11c68452c52a12b74" compoundref="MENUScene_8h" startline="75">U_LIGHT0_EXPONENT</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a96f4df087b2833e3f6f8e8fc50d50559" compoundref="MENUScene_8h" startline="74">U_LIGHT0_KC</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a169d95378cadfb787c8e07c10f788364" compoundref="MENUScene_8h" startline="74">U_LIGHT0_KL</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a86b8e2c8120aedb60f94242a1f9cf07e" compoundref="MENUScene_8h" startline="74">U_LIGHT0_KQ</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a675909daa087397b7c7f809b022a9dd9" compoundref="MENUScene_8h" startline="74">U_LIGHT0_POWER</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a44909b3c84c00763fbfb545017408e92" compoundref="MENUScene_8h" startline="75">U_LIGHT0_TYPE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a05ffe210dfd36fe0e1bcb95c1e4966e5" compoundref="MENUScene_8h" startline="80">U_NUMLIGHTS</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8acb823f451f90c8666c6449b8c44420fc" compoundref="MENUScene_8h" startline="96">U_LIGHT0_COLOR</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8af7331cca0e427036732d05e869180988" compoundref="MENUScene_8h" startline="97">U_LIGHT0_COSCUTOFF</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8afff3a1df7aff47b65cda81ee26f71d80" compoundref="MENUScene_8h" startline="97">U_LIGHT0_COSINNER</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a0a5079c54ffc05c11c68452c52a12b74" compoundref="MENUScene_8h" startline="97">U_LIGHT0_EXPONENT</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a96f4df087b2833e3f6f8e8fc50d50559" compoundref="MENUScene_8h" startline="96">U_LIGHT0_KC</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a169d95378cadfb787c8e07c10f788364" compoundref="MENUScene_8h" startline="96">U_LIGHT0_KL</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a86b8e2c8120aedb60f94242a1f9cf07e" compoundref="MENUScene_8h" startline="96">U_LIGHT0_KQ</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a675909daa087397b7c7f809b022a9dd9" compoundref="MENUScene_8h" startline="96">U_LIGHT0_POWER</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a44909b3c84c00763fbfb545017408e92" compoundref="MENUScene_8h" startline="97">U_LIGHT0_TYPE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a05ffe210dfd36fe0e1bcb95c1e4966e5" compoundref="MENUScene_8h" startline="102">U_NUMLIGHTS</references>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1081,75 +1080,74 @@
         <argsstring>()</argsstring>
         <name>InitJunk</name>
         <briefdescription>
-        </briefdescription>
+<para>Initializers. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="97" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="22" bodyend="93"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="119" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="45" bodyend="114"/>
         <references refid="classMeshBuilder_1a00798a7dc69cc94df659289c7f79eacf" compoundref="MeshBuilder_8cpp" startline="29" endline="77">MeshBuilder::GenerateAxes</references>
         <references refid="classMeshBuilder_1a2ddad55094b75f084de4cb51e5ec37c4" compoundref="MeshBuilder_8cpp" startline="130" endline="183">MeshBuilder::GenerateQuad</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aea3fa946bf95d37f29f4c65a2f38f739" compoundref="MENUScene_8h" startline="41">GEO_AXES</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ab429b4bd0ed0b16c2a0366343136ec0a" compoundref="MENUScene_8h" startline="47">GEO_BACK</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a4f09859993b9ff635c8d39dc268d7395" compoundref="MENUScene_8h" startline="45">GEO_BOTTOM</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a313409490271c031bfe93c715de7dc72" compoundref="MENUScene_8h" startline="46">GEO_FRONT</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad2a6ea3ce5ec9e5ddc37b2529ff738ee" compoundref="MENUScene_8h" startline="42">GEO_LEFT</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9af597019975c7e406a689e4a07b190f3e" compoundref="MENUScene_8h" startline="43">GEO_RIGHT</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a060dbb38fc0df5757a3933458240fb8f" compoundref="MENUScene_8h" startline="44">GEO_TOP</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aea3fa946bf95d37f29f4c65a2f38f739" compoundref="MENUScene_8h" startline="63">GEO_AXES</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ab429b4bd0ed0b16c2a0366343136ec0a" compoundref="MENUScene_8h" startline="69">GEO_BACK</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a4f09859993b9ff635c8d39dc268d7395" compoundref="MENUScene_8h" startline="67">GEO_BOTTOM</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a313409490271c031bfe93c715de7dc72" compoundref="MENUScene_8h" startline="68">GEO_FRONT</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad2a6ea3ce5ec9e5ddc37b2529ff738ee" compoundref="MENUScene_8h" startline="64">GEO_LEFT</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9af597019975c7e406a689e4a07b190f3e" compoundref="MENUScene_8h" startline="65">GEO_RIGHT</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a060dbb38fc0df5757a3933458240fb8f" compoundref="MENUScene_8h" startline="66">GEO_TOP</references>
         <references refid="shader_8cpp_1a833f10cca6a76fe34ae9efa23ac5e73c" compoundref="shader_8cpp" startline="16" endline="107">LoadShaders</references>
         <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
-        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="113">m_parameters</references>
-        <references refid="classMENUScene_1a495048712197b36f163ee7d6d7903f13" compoundref="MENUScene_8h" startline="112">m_programID</references>
-        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="111">meshList</references>
-        <references refid="classScene_1a140d39ea291abd069dad5bf6bff97e37" compoundref="Scene_8h" startline="15">Scene::pause</references>
+        <references refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" compoundref="MENUScene_8h" startline="135">m_parameters</references>
+        <references refid="classMENUScene_1a495048712197b36f163ee7d6d7903f13" compoundref="MENUScene_8h" startline="134">m_programID</references>
+        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="133">meshList</references>
         <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abd21c0a288f36d1f9e52940db52db2e5" compoundref="MENUScene_8h" startline="82">U_COLOR_TEXTURE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a697a57e619b7a4b7e9c984a2304ce70c" compoundref="MENUScene_8h" startline="81">U_COLOR_TEXTURE_ENABLED</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8acb823f451f90c8666c6449b8c44420fc" compoundref="MENUScene_8h" startline="74">U_LIGHT0_COLOR</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8af7331cca0e427036732d05e869180988" compoundref="MENUScene_8h" startline="75">U_LIGHT0_COSCUTOFF</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8afff3a1df7aff47b65cda81ee26f71d80" compoundref="MENUScene_8h" startline="75">U_LIGHT0_COSINNER</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a0a5079c54ffc05c11c68452c52a12b74" compoundref="MENUScene_8h" startline="75">U_LIGHT0_EXPONENT</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a96f4df087b2833e3f6f8e8fc50d50559" compoundref="MENUScene_8h" startline="74">U_LIGHT0_KC</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a169d95378cadfb787c8e07c10f788364" compoundref="MENUScene_8h" startline="74">U_LIGHT0_KL</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a86b8e2c8120aedb60f94242a1f9cf07e" compoundref="MENUScene_8h" startline="74">U_LIGHT0_KQ</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a9e38d03df35b2b390657435410f7d807" compoundref="MENUScene_8h" startline="74">U_LIGHT0_POSITION</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a675909daa087397b7c7f809b022a9dd9" compoundref="MENUScene_8h" startline="74">U_LIGHT0_POWER</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a3086bf43f58f9db6859e235b05407b66" compoundref="MENUScene_8h" startline="75">U_LIGHT0_SPOTDIRECTION</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a44909b3c84c00763fbfb545017408e92" compoundref="MENUScene_8h" startline="75">U_LIGHT0_TYPE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a99bdf0ccfa61f3df47493a3a705ec00d" compoundref="MENUScene_8h" startline="76">U_LIGHT1_COLOR</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a19f14535e27531b46484232d1a5a2372" compoundref="MENUScene_8h" startline="77">U_LIGHT1_COSCUTOFF</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1b9658626fb85900e5e3dc552c1871c8" compoundref="MENUScene_8h" startline="77">U_LIGHT1_COSINNER</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a26b2f7171d4ac6513ad2a18689b02fdb" compoundref="MENUScene_8h" startline="77">U_LIGHT1_EXPONENT</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad5ac0094ac9c7f23b60b48281735dd74" compoundref="MENUScene_8h" startline="76">U_LIGHT1_KC</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a75255bd364a8071d206c8530c5b3018e" compoundref="MENUScene_8h" startline="76">U_LIGHT1_KL</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ae260422861f260b1019bce259010a553" compoundref="MENUScene_8h" startline="76">U_LIGHT1_KQ</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a9ee00161ca80b67ec67ef3d0bba192cf" compoundref="MENUScene_8h" startline="76">U_LIGHT1_POSITION</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a5b28532ad04f9645365ce65a03b97136" compoundref="MENUScene_8h" startline="76">U_LIGHT1_POWER</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a207dd37d5030cdf63d1e470a0b727e3e" compoundref="MENUScene_8h" startline="77">U_LIGHT1_SPOTDIRECTION</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a14fa680b425fb554dde0f47911a7ade1" compoundref="MENUScene_8h" startline="77">U_LIGHT1_TYPE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a35ea2242aca1ded933a49f58d7c25b1c" compoundref="MENUScene_8h" startline="78">U_LIGHT2_COLOR</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ae5da010acc5874d7cbff3cc9ce26d22a" compoundref="MENUScene_8h" startline="79">U_LIGHT2_COSCUTOFF</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ae044c41d4dc44908603688e8f59aab8c" compoundref="MENUScene_8h" startline="79">U_LIGHT2_COSINNER</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a175dc467472272410e3b575068cd72da" compoundref="MENUScene_8h" startline="79">U_LIGHT2_EXPONENT</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aceaca1f552f2758872ce49b6aa051f26" compoundref="MENUScene_8h" startline="78">U_LIGHT2_KC</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a93406fcbb5becfa9fb939165e62c4095" compoundref="MENUScene_8h" startline="78">U_LIGHT2_KL</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a0e72559dcfb476cf8d14ef55e83d3fae" compoundref="MENUScene_8h" startline="78">U_LIGHT2_KQ</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8adbb4a92e25d10469c7218453d411046a" compoundref="MENUScene_8h" startline="78">U_LIGHT2_POSITION</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad4db6469a9a9ce31119299478519b5c9" compoundref="MENUScene_8h" startline="78">U_LIGHT2_POWER</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a78f03dcb955ed9c3a5e59cc119f00819" compoundref="MENUScene_8h" startline="79">U_LIGHT2_SPOTDIRECTION</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abf343aa02b7a682aba5e430194c3325c" compoundref="MENUScene_8h" startline="79">U_LIGHT2_TYPE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1085ed8ea4d6dacea5bd6926c9aef617" compoundref="MENUScene_8h" startline="73">U_LIGHTENABLED</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad84540b125875a17176a5fa9991805b1" compoundref="MENUScene_8h" startline="69">U_MATERIAL_AMBIENT</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a50a210502033462ffc158c4ed642fdb4" compoundref="MENUScene_8h" startline="70">U_MATERIAL_DIFFUSE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a625a6804482639c08b141a6829dfaa61" compoundref="MENUScene_8h" startline="72">U_MATERIAL_SHININESS</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abcfcae546e51bc5c9e374bf84344a912" compoundref="MENUScene_8h" startline="71">U_MATERIAL_SPECULAR</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8adb0814660fbd91a8520059308b669d30" compoundref="MENUScene_8h" startline="67">U_MODELVIEW</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a4b96ab62968163ed59fa92a5838f0446" compoundref="MENUScene_8h" startline="68">U_MODELVIEW_INVERSE_TRANSPOSE</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ac2b122d4c7eecd0b585e116eb578675d" compoundref="MENUScene_8h" startline="66">U_MVP</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a05ffe210dfd36fe0e1bcb95c1e4966e5" compoundref="MENUScene_8h" startline="80">U_NUMLIGHTS</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a43b6627de77fd16e34d2ed0d86071d9a" compoundref="MENUScene_8h" startline="84">U_TEXT_COLOR</references>
-        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aaeb8325f99bf5584ab1eddd061c273e1" compoundref="MENUScene_8h" startline="83">U_TEXT_ENABLED</references>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abd21c0a288f36d1f9e52940db52db2e5" compoundref="MENUScene_8h" startline="104">U_COLOR_TEXTURE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a697a57e619b7a4b7e9c984a2304ce70c" compoundref="MENUScene_8h" startline="103">U_COLOR_TEXTURE_ENABLED</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8acb823f451f90c8666c6449b8c44420fc" compoundref="MENUScene_8h" startline="96">U_LIGHT0_COLOR</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8af7331cca0e427036732d05e869180988" compoundref="MENUScene_8h" startline="97">U_LIGHT0_COSCUTOFF</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8afff3a1df7aff47b65cda81ee26f71d80" compoundref="MENUScene_8h" startline="97">U_LIGHT0_COSINNER</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a0a5079c54ffc05c11c68452c52a12b74" compoundref="MENUScene_8h" startline="97">U_LIGHT0_EXPONENT</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a96f4df087b2833e3f6f8e8fc50d50559" compoundref="MENUScene_8h" startline="96">U_LIGHT0_KC</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a169d95378cadfb787c8e07c10f788364" compoundref="MENUScene_8h" startline="96">U_LIGHT0_KL</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a86b8e2c8120aedb60f94242a1f9cf07e" compoundref="MENUScene_8h" startline="96">U_LIGHT0_KQ</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a9e38d03df35b2b390657435410f7d807" compoundref="MENUScene_8h" startline="96">U_LIGHT0_POSITION</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a675909daa087397b7c7f809b022a9dd9" compoundref="MENUScene_8h" startline="96">U_LIGHT0_POWER</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a3086bf43f58f9db6859e235b05407b66" compoundref="MENUScene_8h" startline="97">U_LIGHT0_SPOTDIRECTION</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a44909b3c84c00763fbfb545017408e92" compoundref="MENUScene_8h" startline="97">U_LIGHT0_TYPE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a99bdf0ccfa61f3df47493a3a705ec00d" compoundref="MENUScene_8h" startline="98">U_LIGHT1_COLOR</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a19f14535e27531b46484232d1a5a2372" compoundref="MENUScene_8h" startline="99">U_LIGHT1_COSCUTOFF</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1b9658626fb85900e5e3dc552c1871c8" compoundref="MENUScene_8h" startline="99">U_LIGHT1_COSINNER</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a26b2f7171d4ac6513ad2a18689b02fdb" compoundref="MENUScene_8h" startline="99">U_LIGHT1_EXPONENT</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad5ac0094ac9c7f23b60b48281735dd74" compoundref="MENUScene_8h" startline="98">U_LIGHT1_KC</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a75255bd364a8071d206c8530c5b3018e" compoundref="MENUScene_8h" startline="98">U_LIGHT1_KL</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ae260422861f260b1019bce259010a553" compoundref="MENUScene_8h" startline="98">U_LIGHT1_KQ</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a9ee00161ca80b67ec67ef3d0bba192cf" compoundref="MENUScene_8h" startline="98">U_LIGHT1_POSITION</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a5b28532ad04f9645365ce65a03b97136" compoundref="MENUScene_8h" startline="98">U_LIGHT1_POWER</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a207dd37d5030cdf63d1e470a0b727e3e" compoundref="MENUScene_8h" startline="99">U_LIGHT1_SPOTDIRECTION</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a14fa680b425fb554dde0f47911a7ade1" compoundref="MENUScene_8h" startline="99">U_LIGHT1_TYPE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a35ea2242aca1ded933a49f58d7c25b1c" compoundref="MENUScene_8h" startline="100">U_LIGHT2_COLOR</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ae5da010acc5874d7cbff3cc9ce26d22a" compoundref="MENUScene_8h" startline="101">U_LIGHT2_COSCUTOFF</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ae044c41d4dc44908603688e8f59aab8c" compoundref="MENUScene_8h" startline="101">U_LIGHT2_COSINNER</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a175dc467472272410e3b575068cd72da" compoundref="MENUScene_8h" startline="101">U_LIGHT2_EXPONENT</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aceaca1f552f2758872ce49b6aa051f26" compoundref="MENUScene_8h" startline="100">U_LIGHT2_KC</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a93406fcbb5becfa9fb939165e62c4095" compoundref="MENUScene_8h" startline="100">U_LIGHT2_KL</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a0e72559dcfb476cf8d14ef55e83d3fae" compoundref="MENUScene_8h" startline="100">U_LIGHT2_KQ</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8adbb4a92e25d10469c7218453d411046a" compoundref="MENUScene_8h" startline="100">U_LIGHT2_POSITION</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad4db6469a9a9ce31119299478519b5c9" compoundref="MENUScene_8h" startline="100">U_LIGHT2_POWER</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a78f03dcb955ed9c3a5e59cc119f00819" compoundref="MENUScene_8h" startline="101">U_LIGHT2_SPOTDIRECTION</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abf343aa02b7a682aba5e430194c3325c" compoundref="MENUScene_8h" startline="101">U_LIGHT2_TYPE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1085ed8ea4d6dacea5bd6926c9aef617" compoundref="MENUScene_8h" startline="95">U_LIGHTENABLED</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad84540b125875a17176a5fa9991805b1" compoundref="MENUScene_8h" startline="91">U_MATERIAL_AMBIENT</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a50a210502033462ffc158c4ed642fdb4" compoundref="MENUScene_8h" startline="92">U_MATERIAL_DIFFUSE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a625a6804482639c08b141a6829dfaa61" compoundref="MENUScene_8h" startline="94">U_MATERIAL_SHININESS</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abcfcae546e51bc5c9e374bf84344a912" compoundref="MENUScene_8h" startline="93">U_MATERIAL_SPECULAR</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8adb0814660fbd91a8520059308b669d30" compoundref="MENUScene_8h" startline="89">U_MODELVIEW</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a4b96ab62968163ed59fa92a5838f0446" compoundref="MENUScene_8h" startline="90">U_MODELVIEW_INVERSE_TRANSPOSE</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ac2b122d4c7eecd0b585e116eb578675d" compoundref="MENUScene_8h" startline="88">U_MVP</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a05ffe210dfd36fe0e1bcb95c1e4966e5" compoundref="MENUScene_8h" startline="102">U_NUMLIGHTS</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a43b6627de77fd16e34d2ed0d86071d9a" compoundref="MENUScene_8h" startline="106">U_TEXT_COLOR</references>
+        <references refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aaeb8325f99bf5584ab1eddd061c273e1" compoundref="MENUScene_8h" startline="105">U_TEXT_ENABLED</references>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1162,24 +1160,30 @@
           <declname>dt</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Update. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="98" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="194" bodyend="248"/>
-        <references refid="classMENUScene_1a03714ef328289367f776496466be18e0" compoundref="MENUScene_8h" startline="122">camera</references>
-        <references refid="classMENUScene_1a9b42da9f5e52160b27d1987769ae29de" compoundref="MENUScene_8h" startline="104">inputDelay</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="120" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="233" bodyend="364"/>
+        <references refid="classMENUScene_1a03714ef328289367f776496466be18e0" compoundref="MENUScene_8h" startline="144">camera</references>
+        <references refid="MENUScene_8cpp_1ae3a44f59d0925840deecc121b3bc18bb" compoundref="MENUScene_8cpp" startline="222">cheat</references>
+        <references refid="MENUScene_8cpp_1a6f56637d22671d5fd81cefc137a624ff" compoundref="MENUScene_8cpp" startline="221">cheats</references>
+        <references refid="MENUScene_8cpp_1ac95d3ded64b72325401599f6ec60bdbc" compoundref="MENUScene_8cpp" startline="223">controls</references>
+        <references refid="classMENUScene_1a9b42da9f5e52160b27d1987769ae29de" compoundref="MENUScene_8h" startline="126">inputDelay</references>
         <references refid="classirrklang_1_1ISoundEngine_1a1084577f9f43cb12e86cea43c323b12c">irrklang::ISoundEngine::isCurrentlyPlaying</references>
-        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">Application::IsKeyPressed</references>
+        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="48" endline="51">Application::IsKeyPressed</references>
+        <references refid="MENUScene_8cpp_1aa445a70eef1b1c61f414ded6453ec61f" compoundref="MENUScene_8cpp" startline="225">lastKey</references>
+        <references refid="MENUScene_8cpp_1abdc0ed79982200fe114771223781e640" compoundref="MENUScene_8cpp" startline="116">main</references>
         <references refid="classApplication_1a53bab02ca90bd8f8a989cda091a78eed" compoundref="Application_8h" startline="18">Application::mouseScroll</references>
-        <references refid="classCamera3_1a21148dcf9f21fdd2952e6c21bf87c45d" compoundref="Camera3_8h" startline="22">Camera3::orientation</references>
-        <references refid="MENUScene_8cpp_1ab6fcaa789c458a69920029339bcb303e" compoundref="MENUScene_8cpp" startline="191">play</references>
+        <references refid="classCamera3_1a21148dcf9f21fdd2952e6c21bf87c45d" compoundref="Camera3_8h" startline="38">Camera3::orientation</references>
+        <references refid="MENUScene_8cpp_1ab6fcaa789c458a69920029339bcb303e" compoundref="MENUScene_8cpp" startline="218">play</references>
         <references refid="classirrklang_1_1ISoundEngine_1a25f612fe6479d3b22dc5bab2a2eaa927">irrklang::ISoundEngine::play2D</references>
-        <references refid="MENUScene_8cpp_1ac746fa6ad48d19984a159f14bec028a3" compoundref="MENUScene_8cpp" startline="192">quit</references>
-        <references refid="classMENUScene_1a34300ff852ec28f342ae605571ce753f" compoundref="MENUScene_8h" startline="107">select</references>
-        <references refid="MENUScene_8cpp_1a88b7b9afecc42ea3bdad4c38d34e56e9" compoundref="PROJECTScene_8cpp" startline="1183">selectDelay</references>
-        <references refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe" compoundref="Camera3_8cpp" startline="61" endline="69">Camera3::Update</references>
+        <references refid="MENUScene_8cpp_1ac746fa6ad48d19984a159f14bec028a3" compoundref="MENUScene_8cpp" startline="219">quit</references>
+        <references refid="classMENUScene_1a34300ff852ec28f342ae605571ce753f" compoundref="MENUScene_8h" startline="129">select</references>
+        <references refid="MENUScene_8cpp_1a88b7b9afecc42ea3bdad4c38d34e56e9" compoundref="PROJECTScene_8cpp" startline="1243">selectDelay</references>
+        <references refid="MENUScene_8cpp_1ad4f52f2ef88beb8d0ce1a23f3ea2cab7" compoundref="MENUScene_8cpp" startline="117">startupDelay</references>
+        <references refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe" compoundref="Camera3_8cpp" startline="108" endline="116">Camera3::Update</references>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1188,36 +1192,44 @@
         <name>Render</name>
         <reimplements refid="classScene_1ae24d21e12b34839994ad265662ea24d7">Render</reimplements>
         <briefdescription>
-        </briefdescription>
+<para>Render. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="99" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="290" bodyend="339"/>
-        <references refid="classMENUScene_1a8adf29b7c860968aa57b62f16fa77119" compoundref="MENUScene_8h" startline="106">buttons</references>
-        <references refid="classMENUScene_1a03714ef328289367f776496466be18e0" compoundref="MENUScene_8h" startline="122">camera</references>
-        <references refid="classCamera3_1a2de4550bc7ac9c4ac3f36b059e3d8bbd" compoundref="Camera3_8h" startline="21">Camera3::fov</references>
-        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa652bbc0ff1de780b72024e2458f5508" compoundref="MENUScene_8h" startline="54">GEO_TEXT</references>
-        <references refid="classMENUScene_1a979e332c145d4bc584c8e0aa9e3e92f7" compoundref="MENUScene_8cpp" startline="476" endline="547">getTextWidth</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="121" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="410" bodyend="517"/>
+        <references refid="classMENUScene_1a1b8fc9d8c8a9b28ed1d1766505682e3f" compoundref="MENUScene_8h" startline="128">buttons</references>
+        <references refid="classMENUScene_1a03714ef328289367f776496466be18e0" compoundref="MENUScene_8h" startline="144">camera</references>
+        <references refid="MENUScene_8cpp_1ae3a44f59d0925840deecc121b3bc18bb" compoundref="MENUScene_8cpp" startline="222">cheat</references>
+        <references refid="MENUScene_8cpp_1a6f56637d22671d5fd81cefc137a624ff" compoundref="MENUScene_8cpp" startline="221">cheats</references>
+        <references refid="MENUScene_8cpp_1ac95d3ded64b72325401599f6ec60bdbc" compoundref="MENUScene_8cpp" startline="223">controls</references>
+        <references refid="classCamera3_1a2de4550bc7ac9c4ac3f36b059e3d8bbd" compoundref="Camera3_8h" startline="37">Camera3::fov</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa81aeca33d81a73aa5e3d4a1e5d8de29" compoundref="MENUScene_8h" startline="81">GEO_OVERLAY</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8410e8ad9572c2783af741d247c89949" compoundref="MENUScene_8h" startline="71">GEO_QUAD</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa652bbc0ff1de780b72024e2458f5508" compoundref="MENUScene_8h" startline="76">GEO_TEXT</references>
+        <references refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8c3bd4cc81793938afa77d7f147b8a05" compoundref="MENUScene_8h" startline="82">GEO_TEXTBOX</references>
+        <references refid="classMENUScene_1a979e332c145d4bc584c8e0aa9e3e92f7" compoundref="MENUScene_8cpp" startline="673" endline="744">getTextWidth</references>
         <references refid="classMS_1a77c5f7e4a21ea48dcf902a7ff6824a11" compoundref="MatrixStack_8cpp" startline="83" endline="87">MS::LoadIdentity</references>
         <references refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" compoundref="MatrixStack_8cpp" startline="98" endline="100">MS::LoadMatrix</references>
         <references refid="classMS_1a2638cd3249260877cc31329978fb6b38" compoundref="MatrixStack_8cpp" startline="242" endline="249">MS::LookAt</references>
-        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="111">meshList</references>
-        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="125">modelStack</references>
+        <references refid="MENUScene_8cpp_1abdc0ed79982200fe114771223781e640" compoundref="MENUScene_8cpp" startline="116">main</references>
+        <references refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" compoundref="MENUScene_8h" startline="133">meshList</references>
+        <references refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" compoundref="MENUScene_8h" startline="147">modelStack</references>
         <references refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">MS::PopMatrix</references>
         <references refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" compoundref="Camera_8h" startline="9">Camera::position</references>
-        <references refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" compoundref="MENUScene_8h" startline="125">projectionStack</references>
+        <references refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" compoundref="MENUScene_8h" startline="147">projectionStack</references>
         <references refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">MS::PushMatrix</references>
-        <references refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">RenderScene</references>
-        <references refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="384" endline="474">RenderText</references>
+        <references refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="525" endline="567">RenderMesh</references>
+        <references refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="372" endline="403">RenderScene</references>
+        <references refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="575" endline="665">RenderText</references>
         <references refid="classMS_1a52109795de960e24663b315e9128533f" compoundref="MatrixStack_8cpp" startline="149" endline="153">MS::Scale</references>
-        <references refid="classMENUScene_1a34300ff852ec28f342ae605571ce753f" compoundref="MENUScene_8h" startline="107">select</references>
+        <references refid="classMENUScene_1a34300ff852ec28f342ae605571ce753f" compoundref="MENUScene_8h" startline="129">select</references>
         <references refid="classMtx44_1a0a4c7818be7c1aeb0601ad069c1a591d" compoundref="Mtx44_8cpp" startline="492" endline="497">Mtx44::SetToOrtho</references>
         <references refid="classMtx44_1ac6e6521111d78ff36d539bf111a902c6" compoundref="Mtx44_8cpp" startline="466" endline="472">Mtx44::SetToPerspective</references>
         <references refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" compoundref="Camera_8h" startline="10">Camera::target</references>
         <references refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">MS::Translate</references>
         <references refid="classCamera_1ab76ce866ca2acd6ab54447f474077245" compoundref="Camera_8h" startline="11">Camera::up</references>
-        <references refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" compoundref="MENUScene_8h" startline="125">viewStack</references>
+        <references refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" compoundref="MENUScene_8h" startline="147">viewStack</references>
         <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
         <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
         <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
@@ -1229,14 +1241,14 @@
         <name>Exit</name>
         <reimplements refid="classScene_1aae8e24654ef98c79961c2b804b12852c">Exit</reimplements>
         <briefdescription>
-        </briefdescription>
+<para>Exit. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classMENUScene" kindref="compound">MENUScene</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="100" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.cpp" bodystart="548" bodyend="555"/>
-        <references refid="classMENUScene_1a495048712197b36f163ee7d6d7903f13" compoundref="MENUScene_8h" startline="112">m_programID</references>
-        <references refid="classMENUScene_1ac01d75a557824e65d353bfe0e90def36" compoundref="MENUScene_8h" startline="110">m_vertexArrayID</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="122" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.cpp" bodystart="752" bodyend="759"/>
+        <references refid="classMENUScene_1a495048712197b36f163ee7d6d7903f13" compoundref="MENUScene_8h" startline="134">m_programID</references>
+        <references refid="classMENUScene_1ac01d75a557824e65d353bfe0e90def36" compoundref="MENUScene_8h" startline="132">m_vertexArrayID</references>
         <references refid="classirrklang_1_1ISoundEngine_1a38dbc2f1d49e3127fc4a81a9c1a2f82d">irrklang::ISoundEngine::stopAllSounds</references>
       </memberdef>
       <memberdef kind="function" id="classMENUScene_1a8322d7ffc34365f34d07a74212533aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1245,195 +1257,195 @@
         <argsstring>()</argsstring>
         <name>soundInit</name>
         <briefdescription>
-        </briefdescription>
+<para>the sound initializer for the menu scene </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Class <ref refid="classMENUScene_1a8322d7ffc34365f34d07a74212533aa2" kindref="member">MENUScene::soundInit</ref> </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="102" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/audio.cpp" bodystart="16" bodyend="24"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="124" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/audio.cpp" bodystart="37" bodyend="45"/>
         <references refid="namespaceirrklang_1ad9829f898bc0665fdd2554a6f5c7ca1c">irrklang::createIrrKlangDevice</references>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">Init</referencedby>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">Init</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>The <ref refid="classMENUScene" kindref="compound">MENUScene</ref> class. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Class <ref refid="classMENUScene" kindref="compound">MENUScene</ref>: scene </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1233">
+      <node id="1197">
         <label>MENUScene</label>
         <link refid="classMENUScene"/>
-        <childnode refid="1234" relation="public-inheritance">
+        <childnode refid="1198" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1234">
+      <node id="1198">
         <label>Scene</label>
         <link refid="classScene"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1242">
+      <node id="1206">
         <label>Position</label>
         <link refid="structPosition"/>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
-      <node id="1248">
+      <node id="1212">
         <label>stack&lt; Mtx44 &gt;</label>
       </node>
-      <node id="1251">
+      <node id="1215">
         <label>Component</label>
         <link refid="structComponent"/>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>g</edgelabel>
           <edgelabel>r</edgelabel>
           <edgelabel>b</edgelabel>
         </childnode>
       </node>
-      <node id="1239">
+      <node id="1203">
         <label>LIGHT_TYPE</label>
       </node>
-      <node id="1249">
+      <node id="1213">
         <label>Mesh</label>
         <link refid="classMesh"/>
-        <childnode refid="1250" relation="usage">
+        <childnode refid="1214" relation="usage">
           <edgelabel>material</edgelabel>
         </childnode>
-        <childnode refid="1252" relation="usage">
+        <childnode refid="1216" relation="usage">
           <edgelabel>mode</edgelabel>
         </childnode>
-        <childnode refid="1253" relation="usage">
+        <childnode refid="1201" relation="usage">
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="1254" relation="usage">
+        <childnode refid="1217" relation="usage">
           <edgelabel>textureID</edgelabel>
           <edgelabel>indexBuffer</edgelabel>
           <edgelabel>indexSize</edgelabel>
           <edgelabel>vertexBuffer</edgelabel>
         </childnode>
       </node>
-      <node id="1261">
+      <node id="1225">
         <label>Slot</label>
         <link refid="classSlot"/>
-        <childnode refid="1241" relation="usage">
+        <childnode refid="1205" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1262" relation="usage">
+        <childnode refid="1226" relation="usage">
           <edgelabel>item</edgelabel>
         </childnode>
-        <childnode refid="1249" relation="usage">
+        <childnode refid="1213" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1235">
+      <node id="1199">
         <label>MENUScene</label>
         <link refid="classMENUScene"/>
-        <childnode refid="1236" relation="public-inheritance">
+        <childnode refid="1200" relation="public-inheritance">
         </childnode>
-        <childnode refid="1238" relation="usage">
+        <childnode refid="1202" relation="usage">
           <edgelabel>light</edgelabel>
         </childnode>
-        <childnode refid="1244" relation="usage">
+        <childnode refid="1208" relation="usage">
           <edgelabel>camera</edgelabel>
         </childnode>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>inputDelay</edgelabel>
         </childnode>
-        <childnode refid="1247" relation="usage">
+        <childnode refid="1211" relation="usage">
           <edgelabel>projectionStack</edgelabel>
           <edgelabel>modelStack</edgelabel>
           <edgelabel>viewStack</edgelabel>
         </childnode>
-        <childnode refid="1246" relation="usage">
+        <childnode refid="1210" relation="usage">
           <edgelabel>select</edgelabel>
         </childnode>
-        <childnode refid="1249" relation="usage">
+        <childnode refid="1213" relation="usage">
           <edgelabel>meshList</edgelabel>
         </childnode>
-        <childnode refid="1255" relation="usage">
+        <childnode refid="1218" relation="usage">
           <edgelabel>player</edgelabel>
         </childnode>
-        <childnode refid="1254" relation="usage">
+        <childnode refid="1217" relation="usage">
           <edgelabel>m_parameters</edgelabel>
           <edgelabel>m_programID</edgelabel>
           <edgelabel>m_vertexArrayID</edgelabel>
         </childnode>
-        <childnode refid="1264" relation="usage">
+        <childnode refid="1228" relation="usage">
           <edgelabel>buttons</edgelabel>
         </childnode>
       </node>
-      <node id="1260">
+      <node id="1224">
         <label>Wallet</label>
         <link refid="classWallet"/>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>apparentValue</edgelabel>
           <edgelabel>trueValue</edgelabel>
         </childnode>
       </node>
-      <node id="1252">
+      <node id="1216">
         <label>DRAW_MODE</label>
       </node>
-      <node id="1264">
+      <node id="1228">
         <label>Button</label>
         <link refid="classButton"/>
-        <childnode refid="1241" relation="usage">
+        <childnode refid="1205" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1253" relation="usage">
+        <childnode refid="1201" relation="usage">
           <edgelabel>name</edgelabel>
         </childnode>
       </node>
-      <node id="1245">
+      <node id="1209">
         <label>Camera</label>
         <link refid="classCamera"/>
-        <childnode refid="1241" relation="usage">
+        <childnode refid="1205" relation="usage">
           <edgelabel>target</edgelabel>
           <edgelabel>position</edgelabel>
           <edgelabel>up</edgelabel>
         </childnode>
       </node>
-      <node id="1253">
+      <node id="1201">
         <label>string</label>
       </node>
-      <node id="1250">
+      <node id="1214">
         <label>Material</label>
         <link refid="structMaterial"/>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>kShininess</edgelabel>
         </childnode>
-        <childnode refid="1251" relation="usage">
+        <childnode refid="1215" relation="usage">
           <edgelabel>kDiffuse</edgelabel>
           <edgelabel>kAmbient</edgelabel>
           <edgelabel>kSpecular</edgelabel>
         </childnode>
       </node>
-      <node id="1240">
+      <node id="1204">
         <label>float</label>
       </node>
-      <node id="1247">
+      <node id="1211">
         <label>MS</label>
         <link refid="classMS"/>
-        <childnode refid="1248" relation="usage">
+        <childnode refid="1212" relation="usage">
           <edgelabel>ms</edgelabel>
         </childnode>
       </node>
-      <node id="1236">
+      <node id="1200">
         <label>Scene</label>
         <link refid="classScene"/>
-        <childnode refid="1237" relation="usage">
-          <edgelabel>pause</edgelabel>
-        </childnode>
-      </node>
-      <node id="1238">
-        <label>Light</label>
-        <link refid="structLight"/>
-        <childnode refid="1239" relation="usage">
+        <childnode refid="1201" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="1240" relation="usage">
+      </node>
+      <node id="1202">
+        <label>Light</label>
+        <link refid="structLight"/>
+        <childnode refid="1203" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="1204" relation="usage">
           <edgelabel>exponent</edgelabel>
           <edgelabel>kL</edgelabel>
           <edgelabel>cosCutoff</edgelabel>
@@ -1442,185 +1454,180 @@
           <edgelabel>kC</edgelabel>
           <edgelabel>power</edgelabel>
         </childnode>
-        <childnode refid="1241" relation="usage">
+        <childnode refid="1205" relation="usage">
           <edgelabel>spotDirection</edgelabel>
         </childnode>
-        <childnode refid="1242" relation="usage">
+        <childnode refid="1206" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1243" relation="usage">
+        <childnode refid="1207" relation="usage">
           <edgelabel>color</edgelabel>
         </childnode>
       </node>
-      <node id="1257">
+      <node id="1220">
         <label>Object</label>
         <link refid="classObject"/>
-        <childnode refid="1258" relation="usage">
+        <childnode refid="1221" relation="usage">
           <edgelabel>collision</edgelabel>
         </childnode>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>size</edgelabel>
           <edgelabel>orientation</edgelabel>
         </childnode>
-        <childnode refid="1241" relation="usage">
+        <childnode refid="1205" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1237" relation="usage">
+        <childnode refid="1222" relation="usage">
           <edgelabel>ignoreCollision</edgelabel>
         </childnode>
-        <childnode refid="1253" relation="usage">
+        <childnode refid="1201" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="1249" relation="usage">
+        <childnode refid="1213" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1244">
+      <node id="1208">
         <label>Camera3</label>
         <link refid="classCamera3"/>
-        <childnode refid="1245" relation="public-inheritance">
+        <childnode refid="1209" relation="public-inheritance">
         </childnode>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>fov</edgelabel>
           <edgelabel>defaultLook</edgelabel>
           <edgelabel>defaultOrientation</edgelabel>
           <edgelabel>orientation</edgelabel>
           <edgelabel>look</edgelabel>
         </childnode>
-        <childnode refid="1246" relation="usage">
+        <childnode refid="1210" relation="usage">
           <edgelabel>lookAt</edgelabel>
         </childnode>
-        <childnode refid="1241" relation="usage">
+        <childnode refid="1205" relation="usage">
           <edgelabel>defaultTarget</edgelabel>
           <edgelabel>defaultPosition</edgelabel>
           <edgelabel>defaultUp</edgelabel>
         </childnode>
       </node>
-      <node id="1246">
+      <node id="1210">
         <label>int</label>
       </node>
-      <node id="1263">
+      <node id="1227">
         <label>Selector</label>
         <link refid="classSelector"/>
-        <childnode refid="1261" relation="usage">
+        <childnode refid="1225" relation="usage">
           <edgelabel>selectedSlot</edgelabel>
         </childnode>
-        <childnode refid="1249" relation="usage">
+        <childnode refid="1213" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1243">
+      <node id="1207">
         <label>Color</label>
         <link refid="structColor"/>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>g</edgelabel>
           <edgelabel>r</edgelabel>
           <edgelabel>b</edgelabel>
         </childnode>
       </node>
-      <node id="1262">
+      <node id="1226">
         <label>vector&lt; Object * &gt;</label>
       </node>
-      <node id="1258">
+      <node id="1221">
         <label>Collision</label>
         <link refid="structCollision"/>
-        <childnode refid="1241" relation="usage">
+        <childnode refid="1205" relation="usage">
           <edgelabel>hitbox</edgelabel>
           <edgelabel>centre</edgelabel>
         </childnode>
-        <childnode refid="1249" relation="usage">
-          <edgelabel>boundingBox</edgelabel>
-        </childnode>
       </node>
-      <node id="1255">
+      <node id="1218">
         <label>Player</label>
         <link refid="classPlayer"/>
-        <childnode refid="1256" relation="public-inheritance">
+        <childnode refid="1219" relation="public-inheritance">
         </childnode>
-        <childnode refid="1244" relation="usage">
+        <childnode refid="1208" relation="usage">
           <edgelabel>camera</edgelabel>
         </childnode>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>vOrientation</edgelabel>
           <edgelabel>apparentHealth</edgelabel>
           <edgelabel>value</edgelabel>
           <edgelabel>hOrientation</edgelabel>
         </childnode>
-        <childnode refid="1246" relation="usage">
+        <childnode refid="1210" relation="usage">
           <edgelabel>speed</edgelabel>
           <edgelabel>holding</edgelabel>
           <edgelabel>jump</edgelabel>
         </childnode>
-        <childnode refid="1259" relation="usage">
+        <childnode refid="1223" relation="usage">
           <edgelabel>inventory</edgelabel>
         </childnode>
-        <childnode refid="1237" relation="usage">
+        <childnode refid="1222" relation="usage">
           <edgelabel>inConversation</edgelabel>
           <edgelabel>state</edgelabel>
         </childnode>
       </node>
-      <node id="1254">
+      <node id="1217">
         <label>unsigned</label>
       </node>
-      <node id="1256">
+      <node id="1219">
         <label>dynamicObject</label>
         <link refid="classdynamicObject"/>
-        <childnode refid="1257" relation="public-inheritance">
+        <childnode refid="1220" relation="public-inheritance">
         </childnode>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>health</edgelabel>
           <edgelabel>hitDelay</edgelabel>
         </childnode>
-        <childnode refid="1241" relation="usage">
+        <childnode refid="1205" relation="usage">
           <edgelabel>velocity</edgelabel>
         </childnode>
       </node>
-      <node id="1237">
+      <node id="1222">
         <label>bool</label>
       </node>
-      <node id="1259">
+      <node id="1223">
         <label>Inventory</label>
         <link refid="classInventory"/>
-        <childnode refid="1260" relation="usage">
+        <childnode refid="1224" relation="usage">
           <edgelabel>wallet</edgelabel>
         </childnode>
-        <childnode refid="1246" relation="usage">
+        <childnode refid="1210" relation="usage">
           <edgelabel>index</edgelabel>
         </childnode>
-        <childnode refid="1241" relation="usage">
+        <childnode refid="1205" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1249" relation="usage">
+        <childnode refid="1213" relation="usage">
           <edgelabel>slotMeshes</edgelabel>
         </childnode>
-        <childnode refid="1261" relation="usage">
+        <childnode refid="1225" relation="usage">
           <edgelabel>slots</edgelabel>
         </childnode>
-        <childnode refid="1263" relation="usage">
+        <childnode refid="1227" relation="usage">
           <edgelabel>selector</edgelabel>
         </childnode>
       </node>
-      <node id="1241">
+      <node id="1205">
         <label>Vector3</label>
         <link refid="structVector3"/>
-        <childnode refid="1240" relation="usage">
+        <childnode refid="1204" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="38" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="37" bodyend="126"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" line="60" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/MENUScene.h" bodystart="59" bodyend="148"/>
     <listofallmembers>
-      <member refid="classMENUScene_1a8adf29b7c860968aa57b62f16fa77119" prot="public" virt="non-virtual"><scope>MENUScene</scope><name>buttons</name></member>
+      <member refid="classMENUScene_1a1b8fc9d8c8a9b28ed1d1766505682e3f" prot="public" virt="non-virtual"><scope>MENUScene</scope><name>buttons</name></member>
       <member refid="classMENUScene_1a03714ef328289367f776496466be18e0" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>camera</name></member>
       <member refid="classMENUScene_1ab8f9680e38a47e6c124a8b4cb03e2432" prot="public" virt="virtual"><scope>MENUScene</scope><name>Exit</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aea3fa946bf95d37f29f4c65a2f38f739" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_AXES</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ab429b4bd0ed0b16c2a0366343136ec0a" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_BACK</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a3856e41a9cefc395c3ce13df4f0fc8e4" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_BIGCUBE</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a4f09859993b9ff635c8d39dc268d7395" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_BOTTOM</name></member>
-      <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a75d7798228d969991b30fa3c5f86ccb0" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_CCTV</name></member>
-      <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aaf9edd54a9fcbec23ee9902955a9acf8" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_CCTV_CORNER</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a5afad9754570b5153964f1e761d64a20" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_CUBE</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a313409490271c031bfe93c715de7dc72" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_FRONT</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9abfc0981829faa20039ced5c539e65236" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_HEART</name></member>
@@ -1630,11 +1637,13 @@
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad2a6ea3ce5ec9e5ddc37b2529ff738ee" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_LEFT</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a00b4c6b10740b1483548f07fae729f5b" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_LIGHTBALL</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8d1503e3e5b3b09beb89a201702ee572" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_LINE</name></member>
+      <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa81aeca33d81a73aa5e3d4a1e5d8de29" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_OVERLAY</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8410e8ad9572c2783af741d247c89949" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_QUAD</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9af597019975c7e406a689e4a07b190f3e" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_RIGHT</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a53337c1ed32673d6bdf110dba2065f19" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_SPRINT</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa652bbc0ff1de780b72024e2458f5508" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_TEXT</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8c3bd4cc81793938afa77d7f147b8a05" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_TEXTBOX</name></member>
+      <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a192ad3a40d18698ee077496ea573b8af" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_TEXTBOX2</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a060dbb38fc0df5757a3933458240fb8f" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEO_TOP</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>GEOMETRY_TYPE</name></member>
       <member refid="classMENUScene_1a979e332c145d4bc584c8e0aa9e3e92f7" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>getTextWidth</name></member>
@@ -1650,7 +1659,6 @@
       <member refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>meshList</name></member>
       <member refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>modelStack</name></member>
       <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad1b0f2261404aecf11261df8df8725d4" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>NUM_GEOMETRY</name></member>
-      <member refid="classScene_1a140d39ea291abd069dad5bf6bff97e37" prot="public" virt="non-virtual"><scope>MENUScene</scope><name>pause</name></member>
       <member refid="classMENUScene_1a08ef3397ecf373a637c1a00cad6a39cd" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>player</name></member>
       <member refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>projectionStack</name></member>
       <member refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" prot="public" virt="virtual"><scope>MENUScene</scope><name>Render</name></member>
@@ -1663,6 +1671,7 @@
       <member refid="classScene_1ad10176d75a9cc0da56626f682d083507" prot="public" virt="non-virtual"><scope>MENUScene</scope><name>Scene</name></member>
       <member refid="classMENUScene_1a34300ff852ec28f342ae605571ce753f" prot="public" virt="non-virtual"><scope>MENUScene</scope><name>select</name></member>
       <member refid="classMENUScene_1a8322d7ffc34365f34d07a74212533aa2" prot="public" virt="non-virtual"><scope>MENUScene</scope><name>soundInit</name></member>
+      <member refid="classScene_1aadcef6167dbf42098111084d6c3aca14" prot="public" virt="non-virtual"><scope>MENUScene</scope><name>type</name></member>
       <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abd21c0a288f36d1f9e52940db52db2e5" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>U_COLOR_TEXTURE</name></member>
       <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a697a57e619b7a4b7e9c984a2304ce70c" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>U_COLOR_TEXTURE_ENABLED</name></member>
       <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8acb823f451f90c8666c6449b8c44420fc" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>U_LIGHT0_COLOR</name></member>
@@ -1714,7 +1723,7 @@
       <member refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" prot="public" virt="virtual"><scope>MENUScene</scope><name>Update</name></member>
       <member refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" prot="private" virt="non-virtual"><scope>MENUScene</scope><name>viewStack</name></member>
       <member refid="classMENUScene_1ac50671eefd8d5179accc82f25957adbb" prot="public" virt="non-virtual"><scope>MENUScene</scope><name>~MENUScene</name></member>
-      <member refid="classScene_1a3b8cec2e32546713915f8c6303c951f1" prot="public" virt="non-virtual"><scope>MENUScene</scope><name>~Scene</name></member>
+      <member refid="classScene_1aa0a5be58e2ee2d1fdafc5fb46b5e661e" prot="public" virt="virtual"><scope>MENUScene</scope><name>~Scene</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

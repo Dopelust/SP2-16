@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStream.h" line="21" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStream.h" bodystart="21" bodyend="21"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IAudioStream.h" line="21" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IAudioStream.h" bodystart="21" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IAudioStream_1a179a1fc826d94884f9cb3dd4f5e52943" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="structirrklang_1_1SAudioStreamFormat" kindref="compound">SAudioStreamFormat</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStream.h" line="24" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IAudioStream.h" line="24" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IAudioStream_1a1ac6276613e91d0f530bfee3cf5f92ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -54,7 +54,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStream.h" line="31" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IAudioStream.h" line="31" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IAudioStream_1a4e10ae9405140ec6b4f09422c8c2eaa4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>bool</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStream.h" line="35" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStream.h" bodystart="35" bodyend="35"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IAudioStream.h" line="35" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IAudioStream.h" bodystart="35" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IAudioStream_1a09d6d3de70aa95df109f5eb58c799980" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1af8028b1c477e50d479270611ecb76e92" kindref="member">ik_s32</ref></type>
@@ -104,7 +104,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStream.h" line="42" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IAudioStream.h" line="42" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -112,36 +112,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="1091">
+      <node id="1055">
         <label>irrklang::IAudioStream</label>
         <link refid="classirrklang_1_1IAudioStream"/>
-        <childnode refid="1092" relation="public-inheritance">
+        <childnode refid="1056" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1092">
+      <node id="1056">
         <label>irrklang::IRefCounted</label>
         <link refid="classirrklang_1_1IRefCounted"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1095">
+      <node id="1059">
         <label>int</label>
       </node>
-      <node id="1093">
+      <node id="1057">
         <label>irrklang::IAudioStream</label>
         <link refid="classirrklang_1_1IAudioStream"/>
-        <childnode refid="1094" relation="public-inheritance">
+        <childnode refid="1058" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1094">
+      <node id="1058">
         <label>irrklang::IRefCounted</label>
         <link refid="classirrklang_1_1IRefCounted"/>
-        <childnode refid="1095" relation="usage">
+        <childnode refid="1059" relation="usage">
           <edgelabel>ReferenceCounter</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStream.h" line="17" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStream.h" bodystart="16" bodyend="43"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IAudioStream.h" line="17" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IAudioStream.h" bodystart="16" bodyend="43"/>
     <listofallmembers>
       <member refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" prot="public" virt="non-virtual"><scope>irrklang::IAudioStream</scope><name>drop</name></member>
       <member refid="classirrklang_1_1IAudioStream_1a179a1fc826d94884f9cb3dd4f5e52943" prot="public" virt="pure-virtual"><scope>irrklang::IAudioStream</scope><name>getFormat</name></member>

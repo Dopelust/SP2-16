@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundStopEventReceiver.h" line="46" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundStopEventReceiver.h" bodystart="46" bodyend="46"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundStopEventReceiver.h" line="46" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundStopEventReceiver.h" bodystart="46" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundStopEventReceiver_1a8e975104683b71cd45436ae5f8bfaf9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -62,14 +62,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundStopEventReceiver.h" line="63" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundStopEventReceiver.h" line="63" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Interface to be implemented by the user, which recieves sound stop events. </para>    </briefdescription>
     <detaileddescription>
 <para>The interface has only one method to be implemented by the user: <ref refid="classirrklang_1_1ISoundStopEventReceiver_1a8e975104683b71cd45436ae5f8bfaf9f" kindref="member">OnSoundStopped()</ref>. Implement this interface and set it via <ref refid="classirrklang_1_1ISound_1a50dc71426d0abec7af56fa68a5bb87b5" kindref="member">ISound::setSoundStopEventReceiver()</ref>. The sound stop event is guaranteed to be called when a sound or sound stream is finished, either because the sound reached its playback end, its sound source was removed, <ref refid="classirrklang_1_1ISoundEngine_1a38dbc2f1d49e3127fc4a81a9c1a2f82d" kindref="member">ISoundEngine::stopAllSounds()</ref> has been called or the whole engine was deleted. </para>    </detaileddescription>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundStopEventReceiver.h" line="42" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundStopEventReceiver.h" bodystart="41" bodyend="65"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundStopEventReceiver.h" line="42" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundStopEventReceiver.h" bodystart="41" bodyend="65"/>
     <listofallmembers>
       <member refid="classirrklang_1_1ISoundStopEventReceiver_1a8e975104683b71cd45436ae5f8bfaf9f" prot="public" virt="pure-virtual"><scope>irrklang::ISoundStopEventReceiver</scope><name>OnSoundStopped</name></member>
       <member refid="classirrklang_1_1ISoundStopEventReceiver_1a26adc3eec345f11286e576e449e6647d" prot="public" virt="virtual"><scope>irrklang::ISoundStopEventReceiver</scope><name>~ISoundStopEventReceiver</name></member>

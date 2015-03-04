@@ -10,244 +10,246 @@
     <includedby refid="dialogue_8h" local="yes">MyGraphics/Source/dialogue.h</includedby>
     <includedby refid="inventory_8cpp" local="yes">MyGraphics/Source/inventory.cpp</includedby>
     <incdepgraph>
-      <node id="3029">
-        <label>Mesh.h</label>
-        <link refid="Mesh_8h"/>
-        <childnode refid="3030" relation="include">
+      <node id="3039">
+        <label>LoadTGA.h</label>
+        <link refid="LoadTGA_8h"/>
+        <childnode refid="3040" relation="include">
+        </childnode>
+      </node>
+      <node id="3023">
+        <label>windows.h</label>
+      </node>
+      <node id="3036">
+        <label>MeshBuilder.h</label>
+        <link refid="MeshBuilder_8h"/>
+        <childnode refid="3033" relation="include">
+        </childnode>
+        <childnode refid="3024" relation="include">
+        </childnode>
+        <childnode refid="3037" relation="include">
+        </childnode>
+      </node>
+      <node id="3022">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="3023" relation="include">
+        </childnode>
+      </node>
+      <node id="3027">
+        <label>cmath</label>
+      </node>
+      <node id="3040">
+        <label>GL\glew.h</label>
+      </node>
+      <node id="3034">
+        <label>string</label>
+      </node>
+      <node id="3028">
+        <label>exception</label>
+      </node>
+      <node id="3025">
+        <label>Vector3.h</label>
+        <link refid="Vector3_8h"/>
+        <childnode refid="3026" relation="include">
         </childnode>
         <childnode refid="3031" relation="include">
         </childnode>
       </node>
-      <node id="3017">
-        <label>Application.h</label>
-        <link refid="Application_8h"/>
-        <childnode refid="3018" relation="include">
-        </childnode>
-        <childnode refid="3020" relation="include">
-        </childnode>
+      <node id="3029">
+        <label>ctime</label>
       </node>
-      <node id="3019">
-        <label>windows.h</label>
-      </node>
-      <node id="3032">
-        <label>MeshBuilder.h</label>
-        <link refid="MeshBuilder_8h"/>
-        <childnode refid="3029" relation="include">
-        </childnode>
-        <childnode refid="3020" relation="include">
-        </childnode>
-        <childnode refid="3033" relation="include">
-        </childnode>
-      </node>
-      <node id="3023">
-        <label>cmath</label>
-      </node>
-      <node id="3036">
-        <label>GL\glew.h</label>
-      </node>
-      <node id="3030">
-        <label>string</label>
-      </node>
-      <node id="3021">
-        <label>Vector3.h</label>
-        <link refid="Vector3_8h"/>
-        <childnode refid="3022" relation="include">
-        </childnode>
-        <childnode refid="3027" relation="include">
-        </childnode>
-      </node>
-      <node id="3028">
-        <label>collision.h</label>
-        <link refid="collision_8h"/>
+      <node id="3020">
+        <label>MyGraphics/Source/inventory.h</label>
+        <link refid="inventory.h"/>
         <childnode refid="3021" relation="include">
-        </childnode>
-        <childnode refid="3029" relation="include">
         </childnode>
         <childnode refid="3032" relation="include">
         </childnode>
-        <childnode refid="3035" relation="include">
-        </childnode>
-        <childnode refid="3030" relation="include">
+        <childnode refid="3038" relation="include">
         </childnode>
         <childnode refid="3034" relation="include">
         </childnode>
       </node>
-      <node id="3022">
-        <label>MyMath.h</label>
-        <link refid="MyMath_8h"/>
-        <childnode refid="3023" relation="include">
+      <node id="3021">
+        <label>Application.h</label>
+        <link refid="Application_8h"/>
+        <childnode refid="3022" relation="include">
+        </childnode>
+        <childnode refid="3024" relation="include">
+        </childnode>
+      </node>
+      <node id="3024">
+        <label>vertex.h</label>
+        <link refid="vertex_8h"/>
+        <childnode refid="3025" relation="include">
+        </childnode>
+      </node>
+      <node id="3038">
+        <label>vector</label>
+      </node>
+      <node id="3037">
+        <label>LoadOBJ.h</label>
+        <link refid="LoadOBJ_8h"/>
+        <childnode refid="3038" relation="include">
         </childnode>
         <childnode refid="3024" relation="include">
         </childnode>
         <childnode refid="3025" relation="include">
         </childnode>
-        <childnode refid="3026" relation="include">
+      </node>
+      <node id="3033">
+        <label>Mesh.h</label>
+        <link refid="Mesh_8h"/>
+        <childnode refid="3034" relation="include">
+        </childnode>
+        <childnode refid="3035" relation="include">
         </childnode>
       </node>
-      <node id="3024">
-        <label>exception</label>
+      <node id="3030">
+        <label>cstdlib</label>
       </node>
-      <node id="3020">
-        <label>vertex.h</label>
-        <link refid="vertex_8h"/>
-        <childnode refid="3021" relation="include">
+      <node id="3031">
+        <label>iostream</label>
+      </node>
+      <node id="3032">
+        <label>collision.h</label>
+        <link refid="collision_8h"/>
+        <childnode refid="3025" relation="include">
+        </childnode>
+        <childnode refid="3033" relation="include">
+        </childnode>
+        <childnode refid="3036" relation="include">
+        </childnode>
+        <childnode refid="3039" relation="include">
+        </childnode>
+        <childnode refid="3034" relation="include">
+        </childnode>
+        <childnode refid="3038" relation="include">
         </childnode>
       </node>
-      <node id="3016">
-        <label>MyGraphics/Source/inventory.h</label>
-        <link refid="inventory.h"/>
-        <childnode refid="3017" relation="include">
+      <node id="3026">
+        <label>MyMath.h</label>
+        <link refid="MyMath_8h"/>
+        <childnode refid="3027" relation="include">
         </childnode>
         <childnode refid="3028" relation="include">
         </childnode>
-        <childnode refid="3034" relation="include">
+        <childnode refid="3029" relation="include">
         </childnode>
         <childnode refid="3030" relation="include">
         </childnode>
       </node>
-      <node id="3033">
-        <label>LoadOBJ.h</label>
-        <link refid="LoadOBJ_8h"/>
-        <childnode refid="3034" relation="include">
-        </childnode>
-        <childnode refid="3020" relation="include">
-        </childnode>
-        <childnode refid="3021" relation="include">
-        </childnode>
-      </node>
-      <node id="3025">
-        <label>ctime</label>
-      </node>
-      <node id="3034">
-        <label>vector</label>
-      </node>
       <node id="3035">
-        <label>LoadTGA.h</label>
-        <link refid="LoadTGA_8h"/>
-        <childnode refid="3036" relation="include">
-        </childnode>
-      </node>
-      <node id="3031">
         <label>Material.h</label>
         <link refid="Material_8h"/>
       </node>
-      <node id="3026">
-        <label>cstdlib</label>
-      </node>
-      <node id="3027">
-        <label>iostream</label>
-      </node>
-      <node id="3018">
-        <label>timer.h</label>
-        <link refid="timer_8h"/>
-        <childnode refid="3019" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3040">
-        <label>MyGraphics/Source/Application.cpp</label>
-        <link refid="Application_8cpp"/>
-      </node>
-      <node id="3039">
-        <label>MyGraphics/Source/PROJECTScene.h</label>
-        <link refid="PROJECTScene_8h"/>
-        <childnode refid="3040" relation="include">
-        </childnode>
-        <childnode refid="3041" relation="include">
-        </childnode>
-        <childnode refid="3042" relation="include">
+      <node id="3054">
+        <label>MyGraphics/Source/dialogue.h</label>
+        <link refid="dialogue_8h"/>
+        <childnode refid="3048" relation="include">
         </childnode>
         <childnode refid="3043" relation="include">
         </childnode>
-      </node>
-      <node id="3048">
-        <label>MyGraphics/Source/NPC.cpp</label>
-        <link refid="NPC_8cpp"/>
-      </node>
-      <node id="3045">
-        <label>MyGraphics/Source/MENUScene.h</label>
-        <link refid="MENUScene_8h"/>
-        <childnode refid="3040" relation="include">
-        </childnode>
-        <childnode refid="3041" relation="include">
-        </childnode>
-        <childnode refid="3046" relation="include">
-        </childnode>
-      </node>
-      <node id="3043">
-        <label>MyGraphics/Source/PROJECTScene.cpp</label>
-        <link refid="PROJECTScene_8cpp"/>
-      </node>
-      <node id="3046">
-        <label>MyGraphics/Source/MENUScene.cpp</label>
-        <link refid="MENUScene_8cpp"/>
-      </node>
-      <node id="3042">
-        <label>MyGraphics/Source/Camera3.cpp</label>
-        <link refid="Camera3_8cpp"/>
-      </node>
-      <node id="3038">
-        <label>MyGraphics/Source/player.h</label>
-        <link refid="player_8h"/>
-        <childnode refid="3039" relation="include">
-        </childnode>
-        <childnode refid="3044" relation="include">
-        </childnode>
-        <childnode refid="3045" relation="include">
-        </childnode>
         <childnode refid="3049" relation="include">
-        </childnode>
-      </node>
-      <node id="3037">
-        <label>MyGraphics/Source/inventory.h</label>
-        <link refid="inventory.h"/>
-        <childnode refid="3038" relation="include">
-        </childnode>
-        <childnode refid="3050" relation="include">
         </childnode>
         <childnode refid="3051" relation="include">
         </childnode>
-      </node>
-      <node id="3041">
-        <label>MyGraphics/Source/audio.cpp</label>
-        <link refid="audio_8cpp"/>
-      </node>
-      <node id="3047">
-        <label>MyGraphics/Source/dialogue.cpp</label>
-        <link refid="dialogue_8cpp"/>
-      </node>
-      <node id="3044">
-        <label>MyGraphics/Source/NPC.h</label>
-        <link refid="NPC_8h"/>
-        <childnode refid="3039" relation="include">
-        </childnode>
-        <childnode refid="3045" relation="include">
-        </childnode>
-        <childnode refid="3047" relation="include">
-        </childnode>
-        <childnode refid="3048" relation="include">
-        </childnode>
-      </node>
-      <node id="3049">
-        <label>MyGraphics/Source/player.cpp</label>
-        <link refid="player_8cpp"/>
-      </node>
-      <node id="3050">
-        <label>MyGraphics/Source/dialogue.h</label>
-        <link refid="dialogue_8h"/>
-        <childnode refid="3044" relation="include">
-        </childnode>
-        <childnode refid="3039" relation="include">
-        </childnode>
-        <childnode refid="3045" relation="include">
-        </childnode>
-        <childnode refid="3047" relation="include">
+        <childnode refid="3053" relation="include">
         </childnode>
       </node>
       <node id="3051">
+        <label>MyGraphics/Source/dialogue.cpp</label>
+        <link refid="dialogue_8cpp"/>
+      </node>
+      <node id="3053">
+        <label>MyGraphics/Source/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="3043">
+        <label>MyGraphics/Source/PROJECTScene.h</label>
+        <link refid="PROJECTScene_8h"/>
+        <childnode refid="3044" relation="include">
+        </childnode>
+        <childnode refid="3045" relation="include">
+        </childnode>
+        <childnode refid="3046" relation="include">
+        </childnode>
+        <childnode refid="3047" relation="include">
+        </childnode>
+      </node>
+      <node id="3046">
+        <label>MyGraphics/Source/Camera3.cpp</label>
+        <link refid="Camera3_8cpp"/>
+      </node>
+      <node id="3044">
+        <label>MyGraphics/Source/Application.cpp</label>
+        <link refid="Application_8cpp"/>
+      </node>
+      <node id="3055">
         <label>MyGraphics/Source/inventory.cpp</label>
         <link refid="inventory_8cpp"/>
+      </node>
+      <node id="3048">
+        <label>MyGraphics/Source/NPC.h</label>
+        <link refid="NPC_8h"/>
+        <childnode refid="3043" relation="include">
+        </childnode>
+        <childnode refid="3049" relation="include">
+        </childnode>
+        <childnode refid="3051" relation="include">
+        </childnode>
+        <childnode refid="3052" relation="include">
+        </childnode>
+      </node>
+      <node id="3050">
+        <label>MyGraphics/Source/MENUScene.cpp</label>
+        <link refid="MENUScene_8cpp"/>
+      </node>
+      <node id="3041">
+        <label>MyGraphics/Source/inventory.h</label>
+        <link refid="inventory.h"/>
+        <childnode refid="3042" relation="include">
+        </childnode>
+        <childnode refid="3054" relation="include">
+        </childnode>
+        <childnode refid="3055" relation="include">
+        </childnode>
+      </node>
+      <node id="3052">
+        <label>MyGraphics/Source/NPC.cpp</label>
+        <link refid="NPC_8cpp"/>
+      </node>
+      <node id="3047">
+        <label>MyGraphics/Source/PROJECTScene.cpp</label>
+        <link refid="PROJECTScene_8cpp"/>
+      </node>
+      <node id="3045">
+        <label>MyGraphics/Source/audio.cpp</label>
+        <link refid="audio_8cpp"/>
+      </node>
+      <node id="3042">
+        <label>MyGraphics/Source/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="3043" relation="include">
+        </childnode>
+        <childnode refid="3048" relation="include">
+        </childnode>
+        <childnode refid="3049" relation="include">
+        </childnode>
+        <childnode refid="3053" relation="include">
+        </childnode>
+      </node>
+      <node id="3049">
+        <label>MyGraphics/Source/MENUScene.h</label>
+        <link refid="MENUScene_8h"/>
+        <childnode refid="3044" relation="include">
+        </childnode>
+        <childnode refid="3045" relation="include">
+        </childnode>
+        <childnode refid="3050" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="classWallet" prot="public">Wallet</innerclass>
@@ -256,129 +258,142 @@
     <innerclass refid="classSelector" prot="public">Selector</innerclass>
     <innerclass refid="classInventory" prot="public">Inventory</innerclass>
     <briefdescription>
-    </briefdescription>
+<para>This is for player inventory. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><simplesect kind="author"><para>Ricsson </para></simplesect>
+<simplesect kind="par"><title></title><para></para></simplesect>
+</para>    </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INVENTORY_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INVENTORY_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Application_8h" kindref="compound">Application.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="collision_8h" kindref="compound">collision.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>namespace::std;</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12" refid="classWallet" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classWallet" kindref="compound">Wallet</ref></highlight></codeline>
-<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="15" refid="classWallet_1ad9be9e49244b78db9099fcaeccd1af04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWallet_1ad9be9e49244b78db9099fcaeccd1af04" kindref="member">Wallet</ref>()<sp/>{<ref refid="classWallet_1acf1b2032056f3f7cd5bb4f32812b548c" kindref="member">apparentValue</ref><sp/>=<sp/>0.f;<sp/><ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref><sp/>=<sp/>50.f;};</highlight></codeline>
-<codeline lineno="16" refid="classWallet_1a443dc95f50e4a9d8e6d5282e13fedcde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWallet_1a443dc95f50e4a9d8e6d5282e13fedcde" kindref="member">~Wallet</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref>;</highlight></codeline>
-<codeline lineno="19" refid="classWallet_1acf1b2032056f3f7cd5bb4f32812b548c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classWallet_1acf1b2032056f3f7cd5bb4f32812b548c" kindref="member">apparentValue</ref>;</highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INVENTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INVENTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Application_8h" kindref="compound">Application.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="collision_8h" kindref="compound">collision.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>namespace::std;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWallet_1ac6da526b7aad36671591fe245777a234" kindref="member">Update</ref>();</highlight></codeline>
-<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25" refid="classATM" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classATM" kindref="compound">ATM</ref></highlight></codeline>
-<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="28" refid="classATM_1a9c46b139699582bdc3c9dc1503ff8923" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classATM_1a9c46b139699582bdc3c9dc1503ff8923" kindref="member">ATM</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="29" refid="classATM_1a57ee70516ca85922e4d9b265421d1652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classATM_1a57ee70516ca85922e4d9b265421d1652" kindref="member">ATM</ref>(<ref refid="classObject" kindref="compound">Object</ref><sp/>D,<sp/><ref refid="classObject" kindref="compound">Object</ref><sp/>W)<sp/>{<sp/><ref refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" kindref="member">Deposit</ref><sp/>=<sp/>D;<sp/><ref refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" kindref="member">Withdraw</ref><sp/>=<sp/>W;<sp/><ref refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" kindref="member">Deposit</ref>.<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ATM&quot;</highlight><highlight class="normal">;<sp/><ref refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" kindref="member">Withdraw</ref>.<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ATM&quot;</highlight><highlight class="normal">;<sp/><ref refid="classATM_1a6739d5222a4be86f6acb0c1da33e1ee2" kindref="member">savings</ref><sp/>=<sp/>0;};</highlight></codeline>
-<codeline lineno="30" refid="classATM_1a8c00afde46586626ebf558742858322d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classATM_1a8c00afde46586626ebf558742858322d" kindref="member">~ATM</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classATM_1a6739d5222a4be86f6acb0c1da33e1ee2" kindref="member">savings</ref>;</highlight></codeline>
-<codeline lineno="33" refid="classATM_1a0f22448380cc111be1c3cf52bb26f206" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classATM_1a0f22448380cc111be1c3cf52bb26f206" kindref="member">getSavings</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classATM_1a6739d5222a4be86f6acb0c1da33e1ee2" kindref="member">savings</ref>;};</highlight></codeline>
-<codeline lineno="34" refid="classATM_1a115c0205f98d83bfb8b40c39d1bbf64f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classATM_1a115c0205f98d83bfb8b40c39d1bbf64f" kindref="member">withdraw</ref>(<ref refid="classWallet" kindref="compound">Wallet</ref>&amp;<sp/>wallet)<sp/></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(savings<sp/>!=<sp/>0)</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savings--;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wallet.<ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref>++;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="45" refid="classATM_1a092b8157714bbb779562aac06e518287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classATM_1a092b8157714bbb779562aac06e518287" kindref="member">deposit</ref>(<ref refid="classWallet" kindref="compound">Wallet</ref>&amp;<sp/>wallet)<sp/></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wallet.<ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref><sp/>!=<sp/>0)</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wallet.<ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref>--;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savings++;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="55" refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref><sp/><ref refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" kindref="member">Deposit</ref>;</highlight></codeline>
-<codeline lineno="58" refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref><sp/><ref refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" kindref="member">Withdraw</ref>;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="classSlot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSlot" kindref="compound">Slot</ref></highlight></codeline>
-<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="64" refid="classSlot_1a92a49d49328f84e7f8eb6c709d80b33c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSlot_1a92a49d49328f84e7f8eb6c709d80b33c" kindref="member">Slot</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="65" refid="classSlot_1a99115e7fec239e2cf7fdc2c27c913fcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSlot_1a99115e7fec239e2cf7fdc2c27c913fcc" kindref="member">~Slot</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classSlot_1a810ef7b9daede95614e80499518daf81" kindref="member">position</ref>;</highlight></codeline>
-<codeline lineno="68" refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;Object*&gt;<sp/><ref refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" kindref="member">item</ref>;</highlight></codeline>
-<codeline lineno="69" refid="classSlot_1ab524624ead0372ebd8c968657791b345" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/><ref refid="classSlot_1ab524624ead0372ebd8c968657791b345" kindref="member">mesh</ref>;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="classSelector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSelector" kindref="compound">Selector</ref></highlight></codeline>
-<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="75" refid="classSelector_1a55730d11cba896e63144c0f0e1cdafd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSelector_1a55730d11cba896e63144c0f0e1cdafd2" kindref="member">Selector</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="76" refid="classSelector_1a4ee34f2ccef257f9f866047cfe9bc8fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSelector_1a4ee34f2ccef257f9f866047cfe9bc8fc" kindref="member">~Selector</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="classWallet" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classWallet" kindref="compound">Wallet</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30" refid="classWallet_1ad9be9e49244b78db9099fcaeccd1af04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWallet_1ad9be9e49244b78db9099fcaeccd1af04" kindref="member">Wallet</ref>()<sp/>{<ref refid="classWallet_1acf1b2032056f3f7cd5bb4f32812b548c" kindref="member">apparentValue</ref><sp/>=<sp/>0.f;<sp/><ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref><sp/>=<sp/>50.f;};</highlight></codeline>
+<codeline lineno="31" refid="classWallet_1a443dc95f50e4a9d8e6d5282e13fedcde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWallet_1a443dc95f50e4a9d8e6d5282e13fedcde" kindref="member">~Wallet</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref>;</highlight></codeline>
+<codeline lineno="34" refid="classWallet_1acf1b2032056f3f7cd5bb4f32812b548c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classWallet_1acf1b2032056f3f7cd5bb4f32812b548c" kindref="member">apparentValue</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWallet_1ac6da526b7aad36671591fe245777a234" kindref="member">Update</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classATM" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classATM" kindref="compound">ATM</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="classATM_1a9c46b139699582bdc3c9dc1503ff8923" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classATM_1a9c46b139699582bdc3c9dc1503ff8923" kindref="member">ATM</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="50" refid="classATM_1a57ee70516ca85922e4d9b265421d1652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classATM_1a57ee70516ca85922e4d9b265421d1652" kindref="member">ATM</ref>(<ref refid="classObject" kindref="compound">Object</ref><sp/>D,<sp/><ref refid="classObject" kindref="compound">Object</ref><sp/>W)<sp/>{<sp/><ref refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" kindref="member">Deposit</ref><sp/>=<sp/>D;<sp/><ref refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" kindref="member">Withdraw</ref><sp/>=<sp/>W;<sp/><ref refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" kindref="member">Deposit</ref>.<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ATM&quot;</highlight><highlight class="normal">;<sp/><ref refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" kindref="member">Withdraw</ref>.<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ATM&quot;</highlight><highlight class="normal">;<sp/><ref refid="classATM_1a6739d5222a4be86f6acb0c1da33e1ee2" kindref="member">savings</ref><sp/>=<sp/>0;};</highlight></codeline>
+<codeline lineno="51" refid="classATM_1a8c00afde46586626ebf558742858322d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classATM_1a8c00afde46586626ebf558742858322d" kindref="member">~ATM</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classATM_1a6739d5222a4be86f6acb0c1da33e1ee2" kindref="member">savings</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classATM_1a0f22448380cc111be1c3cf52bb26f206" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classATM_1a0f22448380cc111be1c3cf52bb26f206" kindref="member">getSavings</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classATM_1a6739d5222a4be86f6acb0c1da33e1ee2" kindref="member">savings</ref>;};</highlight></codeline>
+<codeline lineno="55" refid="classATM_1a115c0205f98d83bfb8b40c39d1bbf64f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classATM_1a115c0205f98d83bfb8b40c39d1bbf64f" kindref="member">withdraw</ref>(<ref refid="classWallet" kindref="compound">Wallet</ref>&amp;<sp/>wallet)<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(savings<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savings--;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wallet.<ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref>++;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="66" refid="classATM_1a092b8157714bbb779562aac06e518287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classATM_1a092b8157714bbb779562aac06e518287" kindref="member">deposit</ref>(<ref refid="classWallet" kindref="compound">Wallet</ref>&amp;<sp/>wallet)<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wallet.<ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref><sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wallet.<ref refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kindref="member">trueValue</ref>--;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savings++;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76" refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/><ref refid="classSelector_1a6232d34f74db3d6aa7a866db76223f5c" kindref="member">mesh</ref>;</highlight></codeline>
-<codeline lineno="79" refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSlot" kindref="compound">Slot</ref><sp/>*<sp/><ref refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" kindref="member">selectedSlot</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref><sp/><ref refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" kindref="member">Deposit</ref>;</highlight></codeline>
+<codeline lineno="79" refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref><sp/><ref refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" kindref="member">Withdraw</ref>;</highlight></codeline>
 <codeline lineno="80"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82" refid="classInventory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classInventory" kindref="compound">Inventory</ref></highlight></codeline>
-<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="85" refid="classInventory_1a10485613fc8bfb32ee564d9b5110f8fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInventory_1a10485613fc8bfb32ee564d9b5110f8fb" kindref="member">Inventory</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="86" refid="classInventory_1a6c6dfcb6d977c74a7abf46809e892e3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInventory_1a6c6dfcb6d977c74a7abf46809e892e3d" kindref="member">~Inventory</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWallet" kindref="compound">Wallet</ref><sp/><ref refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" kindref="member">wallet</ref>;</highlight></codeline>
-<codeline lineno="89" refid="classInventory_1afe301a142d60f17405fd1594b048ea1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classInventory_1afe301a142d60f17405fd1594b048ea1b" kindref="member">position</ref>;</highlight></codeline>
-<codeline lineno="90" refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSlot" kindref="compound">Slot</ref><sp/><ref refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" kindref="member">slots</ref>[9];</highlight></codeline>
-<codeline lineno="91" refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSelector" kindref="compound">Selector</ref><sp/><ref refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" kindref="member">selector</ref>;</highlight></codeline>
-<codeline lineno="92" refid="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" kindref="member">index</ref>;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classInventory_1ab906623075379c75c63b267d2cccbcae" kindref="member">emptySlot</ref>();</highlight></codeline>
-<codeline lineno="94" refid="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/><ref refid="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" kindref="member">slotMeshes</ref>[3];</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1add9b431527557df4a701a54db3d56d75" kindref="member">checkPaid</ref>();</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" kindref="member">canUse</ref>();</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a8d6d927ace25d6913479748b89bf96a0" kindref="member">Insert</ref>(<ref refid="classObject" kindref="compound">Object</ref>*<sp/>o);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" kindref="member">checkPrice</ref>();</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" kindref="member">Checkout</ref>();</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1ad55678fdf4c3f5a1038ce7e7eaa243f4" kindref="member">Remove</ref>();</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" kindref="member">Delete</ref>();</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" kindref="member">Init</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>pos);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt);</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109" refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref><sp/>*<sp/><ref refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" kindref="member">getHolding</ref>()</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!selector.<ref refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" kindref="member">selectedSlot</ref>-&gt;<ref refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" kindref="member">item</ref>.empty())</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>selector.<ref refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" kindref="member">selectedSlot</ref>-&gt;<ref refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" kindref="member">item</ref>[<sp/>selector.<ref refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" kindref="member">selectedSlot</ref>-&gt;<ref refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" kindref="member">item</ref>.size()<sp/>-<sp/>1<sp/>];</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="87"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classSlot" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSlot" kindref="compound">Slot</ref></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="91" refid="classSlot_1a92a49d49328f84e7f8eb6c709d80b33c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSlot_1a92a49d49328f84e7f8eb6c709d80b33c" kindref="member">Slot</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="92" refid="classSlot_1a99115e7fec239e2cf7fdc2c27c913fcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSlot_1a99115e7fec239e2cf7fdc2c27c913fcc" kindref="member">~Slot</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classSlot_1a810ef7b9daede95614e80499518daf81" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="95" refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;Object*&gt;<sp/><ref refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" kindref="member">item</ref>;</highlight></codeline>
+<codeline lineno="96" refid="classSlot_1ab524624ead0372ebd8c968657791b345" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/><ref refid="classSlot_1ab524624ead0372ebd8c968657791b345" kindref="member">mesh</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="104"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classSelector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSelector" kindref="compound">Selector</ref></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108" refid="classSelector_1a55730d11cba896e63144c0f0e1cdafd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSelector_1a55730d11cba896e63144c0f0e1cdafd2" kindref="member">Selector</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="109" refid="classSelector_1a4ee34f2ccef257f9f866047cfe9bc8fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSelector_1a4ee34f2ccef257f9f866047cfe9bc8fc" kindref="member">~Selector</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/><ref refid="classSelector_1a6232d34f74db3d6aa7a866db76223f5c" kindref="member">mesh</ref>;</highlight></codeline>
+<codeline lineno="112" refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSlot" kindref="compound">Slot</ref><sp/>*<sp/><ref refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" kindref="member">selectedSlot</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="120"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classInventory" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classInventory" kindref="compound">Inventory</ref></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="124" refid="classInventory_1a10485613fc8bfb32ee564d9b5110f8fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInventory_1a10485613fc8bfb32ee564d9b5110f8fb" kindref="member">Inventory</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="125" refid="classInventory_1a6c6dfcb6d977c74a7abf46809e892e3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classInventory_1a6c6dfcb6d977c74a7abf46809e892e3d" kindref="member">~Inventory</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWallet" kindref="compound">Wallet</ref><sp/><ref refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" kindref="member">wallet</ref>;</highlight></codeline>
+<codeline lineno="128" refid="classInventory_1afe301a142d60f17405fd1594b048ea1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classInventory_1afe301a142d60f17405fd1594b048ea1b" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="129" refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSlot" kindref="compound">Slot</ref><sp/><ref refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" kindref="member">slots</ref>[9];</highlight></codeline>
+<codeline lineno="130" refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSelector" kindref="compound">Selector</ref><sp/><ref refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" kindref="member">selector</ref>;</highlight></codeline>
+<codeline lineno="131" refid="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" kindref="member">index</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classInventory_1ab906623075379c75c63b267d2cccbcae" kindref="member">emptySlot</ref>();</highlight></codeline>
+<codeline lineno="133" refid="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/><ref refid="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" kindref="member">slotMeshes</ref>[3];</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1add9b431527557df4a701a54db3d56d75" kindref="member">checkPaid</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" kindref="member">canUse</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a8d6d927ace25d6913479748b89bf96a0" kindref="member">Insert</ref>(<ref refid="classObject" kindref="compound">Object</ref>*<sp/>o);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" kindref="member">checkPrice</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" kindref="member">Checkout</ref>();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1ad55678fdf4c3f5a1038ce7e7eaa243f4" kindref="member">Remove</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" kindref="member">Delete</ref>();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" kindref="member">Init</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>pos);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref><sp/>*<sp/><ref refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" kindref="member">getHolding</ref>()</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!selector.<ref refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" kindref="member">selectedSlot</ref>-&gt;<ref refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" kindref="member">item</ref>.empty())</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>selector.<ref refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" kindref="member">selectedSlot</ref>-&gt;<ref refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" kindref="member">item</ref>[<sp/>selector.<ref refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" kindref="member">selectedSlot</ref>-&gt;<ref refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" kindref="member">item</ref>.size()<sp/>-<sp/>1<sp/>];</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h"/>
   </compounddef>
 </doxygen>

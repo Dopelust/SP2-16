@@ -15,12 +15,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="88" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="86" bodyend="-1"/>
-        <referencedby refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" compoundref="inventory_8cpp" startline="107" endline="147">Checkout</referencedby>
-        <referencedby refid="classPlayer_1a3c70ef822192421f8221e75a707417d7" compoundref="player_8h" startline="111" endline="111">Player::getRenderWallet</referencedby>
-        <referencedby refid="classPlayer_1abbb830a52713bb1953581d2be65d4a5d" compoundref="player_8h" startline="112" endline="112">Player::getWallet</referencedby>
-        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="29" endline="84">Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="127" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" compoundref="inventory_8cpp" startline="141" endline="181">Checkout</referencedby>
+        <referencedby refid="classPlayer_1a3c70ef822192421f8221e75a707417d7" compoundref="player_8h" startline="132" endline="132">Player::getRenderWallet</referencedby>
+        <referencedby refid="classPlayer_1abbb830a52713bb1953581d2be65d4a5d" compoundref="player_8h" startline="133" endline="133">Player::getWallet</referencedby>
+        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="51" endline="106">Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classInventory_1afe301a142d60f17405fd1594b048ea1b" prot="public" static="no" mutable="no">
         <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
@@ -33,8 +33,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="89" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="89" bodyend="-1"/>
-        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="3" endline="27">Init</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="128" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="19" endline="43">Init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" prot="public" static="no" mutable="no">
         <type><ref refid="classSlot" kindref="compound">Slot</ref></type>
@@ -47,15 +47,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="90" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="90" bodyend="-1"/>
-        <referencedby refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" compoundref="inventory_8cpp" startline="107" endline="147">Checkout</referencedby>
-        <referencedby refid="classInventory_1add9b431527557df4a701a54db3d56d75" compoundref="inventory_8cpp" startline="204" endline="216">checkPaid</referencedby>
-        <referencedby refid="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" compoundref="inventory_8cpp" startline="86" endline="105">checkPrice</referencedby>
-        <referencedby refid="classInventory_1ab906623075379c75c63b267d2cccbcae" compoundref="inventory_8cpp" startline="218" endline="227">emptySlot</referencedby>
-        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="3" endline="27">Init</referencedby>
-        <referencedby refid="classInventory_1a8d6d927ace25d6913479748b89bf96a0" compoundref="inventory_8cpp" startline="149" endline="168">Insert</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="29" endline="84">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="129" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" compoundref="inventory_8cpp" startline="141" endline="181">Checkout</referencedby>
+        <referencedby refid="classInventory_1add9b431527557df4a701a54db3d56d75" compoundref="inventory_8cpp" startline="268" endline="280">checkPaid</referencedby>
+        <referencedby refid="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" compoundref="inventory_8cpp" startline="114" endline="133">checkPrice</referencedby>
+        <referencedby refid="classInventory_1ab906623075379c75c63b267d2cccbcae" compoundref="inventory_8cpp" startline="288" endline="297">emptySlot</referencedby>
+        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="19" endline="43">Init</referencedby>
+        <referencedby refid="classInventory_1a8d6d927ace25d6913479748b89bf96a0" compoundref="inventory_8cpp" startline="189" endline="208">Insert</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="51" endline="106">Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" prot="public" static="no" mutable="no">
         <type><ref refid="classSelector" kindref="compound">Selector</ref></type>
@@ -68,14 +68,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="91" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="91" bodyend="-1"/>
-        <referencedby refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" compoundref="inventory_8cpp" startline="193" endline="202">canUse</referencedby>
-        <referencedby refid="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" compoundref="inventory_8cpp" startline="170" endline="180">Delete</referencedby>
-        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="3" endline="27">Init</referencedby>
-        <referencedby refid="classInventory_1ad55678fdf4c3f5a1038ce7e7eaa243f4" compoundref="inventory_8cpp" startline="182" endline="191">Remove</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="29" endline="84">Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="130" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" compoundref="inventory_8cpp" startline="251" endline="260">canUse</referencedby>
+        <referencedby refid="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" compoundref="inventory_8cpp" startline="216" endline="226">Delete</referencedby>
+        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="19" endline="43">Init</referencedby>
+        <referencedby refid="classInventory_1ad55678fdf4c3f5a1038ce7e7eaa243f4" compoundref="inventory_8cpp" startline="234" endline="243">Remove</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="51" endline="106">Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -88,9 +88,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="92" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="92" bodyend="-1"/>
-        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="3" endline="27">Init</referencedby>
-        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="29" endline="84">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="131" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="131" bodyend="-1"/>
+        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="19" endline="43">Init</referencedby>
+        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="51" endline="106">Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" prot="public" static="no" mutable="no">
         <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
@@ -103,9 +103,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="94" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="94" bodyend="-1"/>
-        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="3" endline="27">Init</referencedby>
-        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="29" endline="84">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="133" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="133" bodyend="-1"/>
+        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="19" endline="43">Init</referencedby>
+        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="51" endline="106">Update</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="85" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="85" bodyend="85"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="124" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="124" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="classInventory_1a6c6dfcb6d977c74a7abf46809e892e3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="86" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="86" bodyend="86"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="125" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="125" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="classInventory_1ab906623075379c75c63b267d2cccbcae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -141,14 +141,14 @@
         <argsstring>()</argsstring>
         <name>emptySlot</name>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> emptySlot to find out the number of emptyslots left in the players inventory. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="93" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="218" bodyend="227"/>
-        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="90">slots</references>
-        <referencedby refid="classInventory_1a8d6d927ace25d6913479748b89bf96a0" compoundref="inventory_8cpp" startline="149" endline="168">Insert</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="132" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="288" bodyend="297"/>
+        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="129">slots</references>
+        <referencedby refid="classInventory_1a8d6d927ace25d6913479748b89bf96a0" compoundref="inventory_8cpp" startline="189" endline="208">Insert</referencedby>
       </memberdef>
       <memberdef kind="function" id="classInventory_1add9b431527557df4a701a54db3d56d75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -156,15 +156,15 @@
         <argsstring>()</argsstring>
         <name>checkPaid</name>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> checkPaid function to check if the items in inventory is already paid. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="96" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="204" bodyend="216"/>
-        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="90">slots</references>
-        <referencedby refid="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" compoundref="NPC_8cpp" startline="482" endline="518">S_Guard::Control</referencedby>
-        <referencedby refid="classCashier_1a9b6de754df0c601b8122a1b46bf3080c" compoundref="NPC_8h" startline="162" endline="178">Cashier::getConversation</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="135" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="268" bodyend="280"/>
+        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="129">slots</references>
+        <referencedby refid="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" compoundref="NPC_8cpp" startline="623" endline="659">S_Guard::Control</referencedby>
+        <referencedby refid="classCashier_1a9b6de754df0c601b8122a1b46bf3080c" compoundref="NPC_8h" startline="197" endline="213">Cashier::getConversation</referencedby>
       </memberdef>
       <memberdef kind="function" id="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -172,17 +172,17 @@
         <argsstring>()</argsstring>
         <name>canUse</name>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> canUse function to check whether the item is edible. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="97" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="193" bodyend="202"/>
-        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="68">Slot::item</references>
-        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="79">Selector::selectedSlot</references>
-        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="91">selector</references>
-        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Player::Control</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Player::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="136" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="251" bodyend="260"/>
+        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="95">Slot::item</references>
+        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="112">Selector::selectedSlot</references>
+        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="130">selector</references>
+        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="330" endline="402">Player::Control</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Player::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classInventory_1a8d6d927ace25d6913479748b89bf96a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -194,19 +194,19 @@
           <declname>o</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> insert function to insert items into the players inventory. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="98" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="149" bodyend="168"/>
-        <references refid="classInventory_1ab906623075379c75c63b267d2cccbcae" compoundref="inventory_8cpp" startline="218" endline="227">emptySlot</references>
-        <references refid="classObject_1abd775688f7362fe926da1aea7f88e27c" compoundref="collision_8h" startline="51" endline="51">Object::getPaid</references>
-        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="68">Slot::item</references>
-        <references refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" compoundref="collision_8h" startline="39">Object::mesh</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="137" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="189" bodyend="208"/>
+        <references refid="classInventory_1ab906623075379c75c63b267d2cccbcae" compoundref="inventory_8cpp" startline="288" endline="297">emptySlot</references>
+        <references refid="classObject_1abd775688f7362fe926da1aea7f88e27c" compoundref="collision_8h" startline="71" endline="71">Object::getPaid</references>
+        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="95">Slot::item</references>
+        <references refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" compoundref="collision_8h" startline="59">Object::mesh</references>
         <references refid="classMesh_1aa956ea809178c5713ca3e9220cee7980" compoundref="Mesh_8h" startline="30">Mesh::name</references>
-        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="90">slots</references>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="129">slots</references>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -214,17 +214,17 @@
         <argsstring>()</argsstring>
         <name>checkPrice</name>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> checkprice function of total items in players inventory. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="100" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="86" bodyend="105"/>
-        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="68">Slot::item</references>
-        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="90">slots</references>
-        <referencedby refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" compoundref="inventory_8cpp" startline="107" endline="147">Checkout</referencedby>
-        <referencedby refid="classCheckout_1a80a605b2f1447e43401abe9f17ea135e" compoundref="dialogue_8h" startline="97" endline="102">Checkout::GenerateText</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="139" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="114" bodyend="133"/>
+        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="95">Slot::item</references>
+        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="129">slots</references>
+        <referencedby refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" compoundref="inventory_8cpp" startline="141" endline="181">Checkout</referencedby>
+        <referencedby refid="classCheckout_1a80a605b2f1447e43401abe9f17ea135e" compoundref="dialogue_8h" startline="140" endline="145">Checkout::GenerateText</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -232,18 +232,18 @@
         <argsstring>()</argsstring>
         <name>Checkout</name>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> the checkout function to pay for all the items in the players inventory. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="101" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="107" bodyend="147"/>
-        <references refid="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" compoundref="inventory_8cpp" startline="86" endline="105">checkPrice</references>
-        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="68">Slot::item</references>
-        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="90">slots</references>
-        <references refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" compoundref="inventory_8h" startline="16">Wallet::trueValue</references>
-        <references refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" compoundref="inventory_8h" startline="86">wallet</references>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="140" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="141" bodyend="181"/>
+        <references refid="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" compoundref="inventory_8cpp" startline="114" endline="133">checkPrice</references>
+        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="95">Slot::item</references>
+        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="129">slots</references>
+        <references refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" compoundref="inventory_8h" startline="31">Wallet::trueValue</references>
+        <references refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" compoundref="inventory_8h" startline="125">wallet</references>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classInventory_1ad55678fdf4c3f5a1038ce7e7eaa243f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -251,16 +251,16 @@
         <argsstring>()</argsstring>
         <name>Remove</name>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> remove function to put back items. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="103" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="182" bodyend="191"/>
-        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="68">Slot::item</references>
-        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="79">Selector::selectedSlot</references>
-        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="91">selector</references>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="142" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="234" bodyend="243"/>
+        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="95">Slot::item</references>
+        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="112">Selector::selectedSlot</references>
+        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="130">selector</references>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -268,17 +268,17 @@
         <argsstring>()</argsstring>
         <name>Delete</name>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> delete function to delete items in players inventory slot. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="104" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="170" bodyend="180"/>
-        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="68">Slot::item</references>
-        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="79">Selector::selectedSlot</references>
-        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="91">selector</references>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Player::Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="143" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="216" bodyend="226"/>
+        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="95">Slot::item</references>
+        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="112">Selector::selectedSlot</references>
+        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="130">selector</references>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Player::Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -290,23 +290,23 @@
           <declname>pos</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> initialzer. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="106" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="3" bodyend="27"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="145" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="19" bodyend="43"/>
         <references refid="classMeshBuilder_1a8e5663b9e284940453900fdf32fa354f" compoundref="MeshBuilder_8cpp" startline="185" endline="238">MeshBuilder::GenerateXYQuad</references>
-        <references refid="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" compoundref="inventory_8h" startline="92">index</references>
+        <references refid="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" compoundref="inventory_8h" startline="131">index</references>
         <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
-        <references refid="classSlot_1ab524624ead0372ebd8c968657791b345" compoundref="inventory_8h" startline="69">Slot::mesh</references>
-        <references refid="classSelector_1a6232d34f74db3d6aa7a866db76223f5c" compoundref="inventory_8h" startline="76">Selector::mesh</references>
-        <references refid="classSlot_1a810ef7b9daede95614e80499518daf81" compoundref="inventory_8h" startline="65">Slot::position</references>
-        <references refid="classInventory_1afe301a142d60f17405fd1594b048ea1b" compoundref="inventory_8h" startline="89">position</references>
-        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="79">Selector::selectedSlot</references>
-        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="91">selector</references>
-        <references refid="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" compoundref="inventory_8h" startline="94">slotMeshes</references>
-        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="90">slots</references>
+        <references refid="classSlot_1ab524624ead0372ebd8c968657791b345" compoundref="inventory_8h" startline="96">Slot::mesh</references>
+        <references refid="classSelector_1a6232d34f74db3d6aa7a866db76223f5c" compoundref="inventory_8h" startline="109">Selector::mesh</references>
+        <references refid="classSlot_1a810ef7b9daede95614e80499518daf81" compoundref="inventory_8h" startline="92">Slot::position</references>
+        <references refid="classInventory_1afe301a142d60f17405fd1594b048ea1b" compoundref="inventory_8h" startline="128">position</references>
+        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="112">Selector::selectedSlot</references>
+        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="130">selector</references>
+        <references refid="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" compoundref="inventory_8h" startline="133">slotMeshes</references>
+        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="129">slots</references>
         <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
         <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
       </memberdef>
@@ -320,23 +320,23 @@
           <declname>dt</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classInventory" kindref="compound">Inventory</ref> update. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>inventory: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="107" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.cpp" bodystart="29" bodyend="84"/>
-        <references refid="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" compoundref="inventory_8h" startline="92">index</references>
-        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">Application::IsKeyPressed</references>
-        <references refid="classSlot_1ab524624ead0372ebd8c968657791b345" compoundref="inventory_8h" startline="69">Slot::mesh</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="146" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.cpp" bodystart="51" bodyend="106"/>
+        <references refid="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" compoundref="inventory_8h" startline="131">index</references>
+        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="48" endline="51">Application::IsKeyPressed</references>
+        <references refid="classSlot_1ab524624ead0372ebd8c968657791b345" compoundref="inventory_8h" startline="96">Slot::mesh</references>
         <references refid="classApplication_1a53bab02ca90bd8f8a989cda091a78eed" compoundref="Application_8h" startline="18">Application::mouseScroll</references>
-        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="79">Selector::selectedSlot</references>
-        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="91">selector</references>
-        <references refid="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" compoundref="inventory_8h" startline="94">slotMeshes</references>
-        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="90">slots</references>
-        <references refid="classWallet_1ac6da526b7aad36671591fe245777a234" compoundref="inventory_8cpp" startline="229" endline="245">Wallet::Update</references>
-        <references refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" compoundref="inventory_8h" startline="86">wallet</references>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Player::Update</referencedby>
+        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="112">Selector::selectedSlot</references>
+        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="130">selector</references>
+        <references refid="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" compoundref="inventory_8h" startline="133">slotMeshes</references>
+        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="129">slots</references>
+        <references refid="classWallet_1ac6da526b7aad36671591fe245777a234" compoundref="inventory_8cpp" startline="305" endline="324">Wallet::Update</references>
+        <references refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" compoundref="inventory_8h" startline="125">wallet</references>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Player::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classObject" kindref="compound">Object</ref> *</type>
@@ -349,143 +349,143 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="109" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="109" bodyend="115"/>
-        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="68">Slot::item</references>
-        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="79">Selector::selectedSlot</references>
-        <referencedby refid="classDonation_1ab53d6d044ee4d37bad08fa7d65ac82c4" compoundref="dialogue_8h" startline="119" endline="133">Donation::GenerateText</referencedby>
-        <referencedby refid="classHobo_1ade0a53cb6febb71853f257200d566d28" compoundref="NPC_8h" startline="104" endline="120">Hobo::getConversation</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Player::Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="148" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="148" bodyend="154"/>
+        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="95">Slot::item</references>
+        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="112">Selector::selectedSlot</references>
+        <referencedby refid="classDonation_1ab53d6d044ee4d37bad08fa7d65ac82c4" compoundref="dialogue_8h" startline="168" endline="182">Donation::GenerateText</referencedby>
+        <referencedby refid="classHobo_1ade0a53cb6febb71853f257200d566d28" compoundref="NPC_8h" startline="127" endline="143">Hobo::getConversation</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Player::Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>Basic functionality of keepnig track of looted items as well as checking out items. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Class <ref refid="classInventory" kindref="compound">Inventory</ref>: </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="1124">
+      <node id="1088">
         <label>Component</label>
         <link refid="structComponent"/>
-        <childnode refid="1119" relation="usage">
+        <childnode refid="1083" relation="usage">
           <edgelabel>g</edgelabel>
           <edgelabel>r</edgelabel>
           <edgelabel>b</edgelabel>
         </childnode>
       </node>
-      <node id="1122">
+      <node id="1086">
         <label>Mesh</label>
         <link refid="classMesh"/>
-        <childnode refid="1123" relation="usage">
+        <childnode refid="1087" relation="usage">
           <edgelabel>material</edgelabel>
         </childnode>
-        <childnode refid="1125" relation="usage">
+        <childnode refid="1089" relation="usage">
           <edgelabel>mode</edgelabel>
         </childnode>
-        <childnode refid="1126" relation="usage">
+        <childnode refid="1090" relation="usage">
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="1127" relation="usage">
+        <childnode refid="1091" relation="usage">
           <edgelabel>textureID</edgelabel>
           <edgelabel>indexBuffer</edgelabel>
           <edgelabel>indexSize</edgelabel>
           <edgelabel>vertexBuffer</edgelabel>
         </childnode>
       </node>
-      <node id="1128">
+      <node id="1092">
         <label>Slot</label>
         <link refid="classSlot"/>
-        <childnode refid="1121" relation="usage">
+        <childnode refid="1085" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1129" relation="usage">
+        <childnode refid="1093" relation="usage">
           <edgelabel>item</edgelabel>
         </childnode>
-        <childnode refid="1122" relation="usage">
+        <childnode refid="1086" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1118">
+      <node id="1082">
         <label>Wallet</label>
         <link refid="classWallet"/>
-        <childnode refid="1119" relation="usage">
+        <childnode refid="1083" relation="usage">
           <edgelabel>apparentValue</edgelabel>
           <edgelabel>trueValue</edgelabel>
         </childnode>
       </node>
-      <node id="1125">
+      <node id="1089">
         <label>DRAW_MODE</label>
       </node>
-      <node id="1126">
+      <node id="1090">
         <label>string</label>
       </node>
-      <node id="1123">
+      <node id="1087">
         <label>Material</label>
         <link refid="structMaterial"/>
-        <childnode refid="1119" relation="usage">
+        <childnode refid="1083" relation="usage">
           <edgelabel>kShininess</edgelabel>
         </childnode>
-        <childnode refid="1124" relation="usage">
+        <childnode refid="1088" relation="usage">
           <edgelabel>kDiffuse</edgelabel>
           <edgelabel>kAmbient</edgelabel>
           <edgelabel>kSpecular</edgelabel>
         </childnode>
       </node>
-      <node id="1119">
+      <node id="1083">
         <label>float</label>
       </node>
-      <node id="1120">
+      <node id="1084">
         <label>int</label>
       </node>
-      <node id="1130">
+      <node id="1094">
         <label>Selector</label>
         <link refid="classSelector"/>
-        <childnode refid="1128" relation="usage">
+        <childnode refid="1092" relation="usage">
           <edgelabel>selectedSlot</edgelabel>
         </childnode>
-        <childnode refid="1122" relation="usage">
+        <childnode refid="1086" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1129">
+      <node id="1093">
         <label>vector&lt; Object * &gt;</label>
       </node>
-      <node id="1127">
+      <node id="1091">
         <label>unsigned</label>
       </node>
-      <node id="1117">
+      <node id="1081">
         <label>Inventory</label>
         <link refid="classInventory"/>
-        <childnode refid="1118" relation="usage">
+        <childnode refid="1082" relation="usage">
           <edgelabel>wallet</edgelabel>
         </childnode>
-        <childnode refid="1120" relation="usage">
+        <childnode refid="1084" relation="usage">
           <edgelabel>index</edgelabel>
         </childnode>
-        <childnode refid="1121" relation="usage">
+        <childnode refid="1085" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1122" relation="usage">
+        <childnode refid="1086" relation="usage">
           <edgelabel>slotMeshes</edgelabel>
         </childnode>
-        <childnode refid="1128" relation="usage">
+        <childnode refid="1092" relation="usage">
           <edgelabel>slots</edgelabel>
         </childnode>
-        <childnode refid="1130" relation="usage">
+        <childnode refid="1094" relation="usage">
           <edgelabel>selector</edgelabel>
         </childnode>
       </node>
-      <node id="1121">
+      <node id="1085">
         <label>Vector3</label>
         <link refid="structVector3"/>
-        <childnode refid="1119" relation="usage">
+        <childnode refid="1083" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="83" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="82" bodyend="116"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" line="122" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/inventory.h" bodystart="121" bodyend="155"/>
     <listofallmembers>
       <member refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" prot="public" virt="non-virtual"><scope>Inventory</scope><name>canUse</name></member>
       <member refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" prot="public" virt="non-virtual"><scope>Inventory</scope><name>Checkout</name></member>
