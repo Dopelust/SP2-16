@@ -226,7 +226,7 @@ void MENUScene::Update(double dt)
 		else if (select == 2)
 			quit = true;
 	}
-	camera->orientation -= 5 * dt;
+	camera->orientation -=float( 5 * dt);
 	camera->Update(dt);
 
 	if (selectDelay > 0)

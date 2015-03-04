@@ -191,7 +191,7 @@ public:
 	Blindman()
 	{
 		position = Vector3(0,2,-10);
-		orientation = rand () % 360;
+		orientation =float (rand () % 360);
 		Vector3 direction;
 		direction.SphericalToCartesian(orientation, 0.f);
 		target = position + direction * 5;
@@ -247,7 +247,7 @@ public:
 		tOrientation = t[0].orientation;
 		targets = t;
 
-		for (int i = 0; i < targets.size(); i++)
+		for (unsigned int i = 0; i < targets.size(); i++)
 		{
 			targets[i].position.y = 0;
 		}
