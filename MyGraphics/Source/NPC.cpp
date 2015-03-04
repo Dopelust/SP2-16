@@ -278,7 +278,7 @@ void Hobo::Init()
 
 	InitDialogue("Filestream//hobo.txt");
 	InitQuest("Filestream//Quests//hobo.txt");
-	//InitClues ("Filestream//Quests//Hint//hobo.txt");
+	InitClues ("Filestream//Quests//Hints//hobo.txt");
 }
 
 void Hobo::Control(double dt, vector<Object*>object, Player* player)
@@ -300,7 +300,7 @@ void Thug::Init()
 	}
 
 	InitDialogue("Filestream//thug.txt");
-	//InitClues ("Filestream//Quests//Hint//thug.txt");
+	InitClues ("Filestream//Quests//Hints//thug.txt");
 }
 
 void Thug::Control(double dt, vector<Object*>object, Player* player)
@@ -329,7 +329,7 @@ void Cashier::Init()
 
 	InitDialogue("Filestream//cashier.txt");
 	InitQuest("Filestream//Quests//cashier.txt");
-	//InitClues ("Filestream//Quests//Hint//cashier.txt");
+	InitClues ("Filestream//Quests//Hints//cashier.txt");
 }
 
 void Cashier::Control(double dt, vector<Object*>object, Player* player)
@@ -359,7 +359,7 @@ void Blindman::Init()
 	}
 
 	InitDialogue("Filestream//blindman.txt");
-	//InitClues ("Filestream//Quests//Hint//blindman.txt");
+	InitClues ("Filestream//Quests//Hints//blindman.txt");
 }
 
 void Blindman::Control(double dt, vector<Object*>object, Player* player)
@@ -452,7 +452,7 @@ void Detective::Init()
 
 	InitDialogue("Filestream//detective.txt");
 	InitQuest("Filestream//Quests//detective.txt");
-	//InitClues ("Filestream//Quests//Hint//detective.txt");
+	InitClues ("Filestream//Quests//Hints//detective.txt");
 }
 
 void Detective::Control(double dt, vector<Object*>object, Player* player)
@@ -474,7 +474,7 @@ void S_Guard::Init()
 	}
 
 	InitDialogue("Filestream//security.txt");
-	//InitClues ("Filestream//Quests//Hint//security.txt");
+	InitClues ("Filestream//Quests//Hints//security.txt");
 }
 
 extern bool entrance;
@@ -530,11 +530,17 @@ void Manager::Init()
 
 	InitDialogue("Filestream//manager.txt");
 	InitQuest("Filestream//Quests//manager.txt");
-	//InitClues ("Filestream//Quests//Hints//manager.txt");
+	InitClues ("Filestream//Quests//Hints//manager.txt");
 }
 
 void Manager::Control(double dt, vector<Object*>object, Player* player)
 {
+	if (quest != NULL)
+	{
+		if (collection.Criteria(object))
+			quest->criteria = true;
+	}
+
 	Orientate(-145, dt, 150.f);
 	target = position;
 	velocity = 0;

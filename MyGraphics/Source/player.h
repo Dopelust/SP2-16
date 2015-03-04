@@ -82,7 +82,7 @@ public:
 		holding = -1;
 
 		camera.Init(position, hOrientation, vOrientation); 
-		inventory.Init(Vector3(0,-10.5,0));
+		inventory.Init(Vector3(0,-12.f,0));
 		inConversation = false;
 		mesh =  NULL;
 

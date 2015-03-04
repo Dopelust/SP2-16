@@ -164,24 +164,15 @@ void PROJECTScene::RicssonInit()
 		object.push_back( new Item(Vector3(x-9,0.5,-54.75), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, true) );
 	}
 	*/
-	for (float y = 0; y <= 6; y+=3)
+	
+	for (int y = 0; y <= 6; y+=3)
 	{
 		hitBox = Vector3(3, 3, 3);
 		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
 		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube,float (rand() % 21 - 10)) );
+		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, rand() % 21 - 10) );
 	}
-	for(float x = 78; x >= 75; x-=3)
-	{
-		for (float y = 28; y <= 31; y+=3)
-		{
-		hitBox = Vector3(3, 3, 3);
-		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
-		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-		object.push_back( new dynamicObject(Vector3(x,y,39.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube,float (rand() % 21 - 10)) );
-		}
-	}
-	for ( float x = 0; x < 3; x++)
+	for ( int x = 0; x < 3; x++)
 	{
 		for (float z = 0; z < 3; z++)
 		{
@@ -251,7 +242,7 @@ void PROJECTScene::JeremiahInit()
 	}
 	character.push_back( new Customer(path, "Customer-san", LoadTGA("Image//CharTGA//customer-2.tga"), 5.f) );
 	path.clear();
-	cout << path.size();
+
 	path.push_back(NPCTarget(Vector3(-8,0,-41), 180.f));
 	path.push_back(NPCTarget(Vector3(0,0,-41), 180.f));
 	path.push_back(NPCTarget(Vector3(8,0,-41), 180.f));
@@ -727,7 +718,7 @@ void PROJECTScene::JessicaInit()
 	
 	//~~~~~~POSTER~~~~~
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice.tga");
-	object.push_back( new Object(Vector3(-79.5f,5.5,-36), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(-79.5,5.5,-36), tempMesh, 90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
 	object.push_back( new Object(Vector3(-79.55f,5.5,-25), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
@@ -909,10 +900,12 @@ void PROJECTScene::JessicaInit()
 	
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city1.tga");
-	object.push_back( new Object(Vector3(140,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	object.push_back( new Object(Vector3(141,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	object.push_back( new Object(Vector3(81,35,-28), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city2.tga");
-	object.push_back( new Object(Vector3(-140,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	object.push_back( new Object(Vector3(-141,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	object.push_back( new Object(Vector3(-81,35,-28), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , -90, true) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
 	object.push_back( new Object(Vector3(199,40,-158), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
@@ -1121,7 +1114,7 @@ void PROJECTScene::Init()
 	meshList[GEO_TEXTBOX] = MeshBuilder::GenerateXYQuad("Text Box", Color(1,1,1), 32, 8.5f, 1);
 	meshList[GEO_TEXTBOX]->textureID = LoadTGA("Image//textbox.tga");
 
-	meshList[GEO_QUAD] = MeshBuilder::GenerateXYQuad("Overlay", Color(1,1,1), 8, 1.5f, 1);
+	meshList[GEO_QUAD] = MeshBuilder::GenerateXYQuad("Overlay", Color(1,1,1), 8.05f, 1.5f, 1);
 	meshList[GEO_QUAD]->textureID = LoadTGA("Image//UI//ui_overlay.tga");
 
 	meshList[GEO_HEART] = MeshBuilder::GenerateXYQuad("Heart", Color(1,1,1), 1, 1, 1);
@@ -1189,6 +1182,9 @@ extern ISoundEngine * engine;
 
 float showLevel = -2.f;
 
+extern int width;
+extern int height;
+
 void PROJECTScene::Update(double dt)
 {
 	soundUpdate(player);
@@ -1246,7 +1242,7 @@ void PROJECTScene::Update(double dt)
 
 				string price = "-$";
 				price += to_string(long double(Machine.price));
-				text2D.push_back( new OnScreenText(price, Vector3(-15.f, 1.5f, 0), true) );
+				text2D.push_back( new OnScreenText(price, Vector3(-23.f, 1.5f, 0), true) );
 
 				player.inventory.Insert(Machine.generateDrink());
 			}
@@ -1264,7 +1260,7 @@ void PROJECTScene::Update(double dt)
 
 			inputDelay = 0.2f;
 			string add = "+$"; add += to_string(long double(object[camera->lookAt]->getValue()));
-			text2D.push_back( new OnScreenText(add, Vector3(-15.f, 2.5f, 0)) );
+			text2D.push_back( new OnScreenText(add, Vector3(-23.f, 2.5f, 0)) );
 
 			delete object[camera->lookAt];
 			object.erase(object.begin()+camera->lookAt);
@@ -1274,14 +1270,14 @@ void PROJECTScene::Update(double dt)
 			inputDelay = 0.15f;
 
 			if (Bank.withdraw(player.inventory.wallet))
-				text2D.push_back( new OnScreenText("+$1", Vector3(-15.f, 2.5f, 0)) );
+				text2D.push_back( new OnScreenText("+$1", Vector3(-23.f, 2.5f, 0)) );
 		}
 		else if(object[camera->lookAt] == &Bank.Deposit)
 		{
 			inputDelay = 0.15f;
 
 			if (Bank.deposit(player.inventory.wallet))
-				text2D.push_back( new OnScreenText("-$1", Vector3(-15.f, 1.5f, 0), true) );
+				text2D.push_back( new OnScreenText("-$1", Vector3(-23.f, 1.5f, 0), true) );
 		}
 	}
 	if ((Application::mouseButton(0)) && inputDelay == 0)
@@ -1350,7 +1346,7 @@ void PROJECTScene::Update(double dt)
 						{
 							textbox = textbox->getAccept().next;
 
-							Vector3 tPos = Vector3(-15.f, 1.5f, 0);
+							Vector3 tPos = Vector3(-23.f, 1.5f, 0);
 							string add = "-$"; add += to_string (long double (totalPrice) );
 							text2D.push_back( new OnScreenText(add, tPos, true) );
 						}
@@ -1370,13 +1366,19 @@ void PROJECTScene::Update(double dt)
 					{
 						player.inventory.Delete();
 
-						if (rand () % 2 == 0)
+						if (rand () % 4 != 0)
 						{
 							textbox = textbox->getAccept().next;
 						}
 						else
 						{
 							textbox = textbox->getAccept().altNext;
+
+							int r = rand () % 30 + 1;
+							player.inventory.wallet.trueValue += r;
+
+							string add = "+$"; add += to_string(long double(r));
+							text2D.push_back( new OnScreenText(add, Vector3(-23.f, 2.5f, 0)) );
 						}
 					}
 					else
@@ -1409,13 +1411,13 @@ void PROJECTScene::Update(double dt)
 	{
 		if (object[i]->type == "Dynamic" || object[i]->type == "NPC" || object[i]->type == "Player")
 		{
-			if(Object::checkCollision(&doorway.Range, object[i]) == true && doorway.close == true)
+			if(Object::checkCollision(&doorway.Range, object[i]) && doorway.close)
 			{
 				object[i]->position.y = 27;
 				doorway2.open = true;
 				doorway2.close = false;
 			}
-			else if(Object::checkCollision(&doorway2.Range, object[i]) == true && doorway2.close == true)
+			else if(Object::checkCollision(&doorway2.Range, object[i]) && doorway2.close)
 			{
 				object[i]->position.y = 0;
 				doorway.open = true;
@@ -1430,12 +1432,12 @@ void PROJECTScene::Update(double dt)
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		character[i]->Update(dt, object, &player);
-		cout << character[i]->getCriteria(object) << endl;
+
 		if (textbox == NULL)
 			character[i]->inConversation = false;
 
 		if (camera == &player.camera)
-		if (object[camera->lookAt] == character[i])
+		if (object[camera->lookAt] == character[i] && character[i]->health > 0)
 			if (Application::IsKeyPressed('E') && inputDelay == 0)
 			{
 				if (!character[i]->inConversation)
@@ -1478,7 +1480,7 @@ void PROJECTScene::Update(double dt)
 	{
 		text2D[i]->Update(dt);
 
-		if (text2D[i]->elapsedTime > 0.7f)
+		if (text2D[i]->elapsedTime > 0.8f)
 		{
 			delete text2D[i];
 			text2D.erase(text2D.begin()+i);
@@ -1540,28 +1542,28 @@ void PROJECTScene::Update(double dt)
 	{
 		if (Application::IsKeyPressed('1'))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, width, height);
 			camera = &controlPanel.CCTVs[0];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
 		else if (Application::IsKeyPressed('2'))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, width, height);
 			camera = &controlPanel.CCTVs[1];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
 		else if (Application::IsKeyPressed('3'))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, width, height);
 			camera = &controlPanel.CCTVs[2];
 			CCTV = false;
 			inputDelay = 0.2f;
 		}
 		else if (Application::IsKeyPressed('4'))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, width, height);
 			camera = &controlPanel.CCTVs[3];
 			CCTV = false;
 			inputDelay = 0.2f;
@@ -1569,7 +1571,7 @@ void PROJECTScene::Update(double dt)
 
 		else if (Application::IsKeyPressed(VK_BACK))
 		{
-			glViewport(0, 0, 880, 660);
+			glViewport(0, 0, width, height);
 			camera = &player.camera;
 			CCTV = false;
 			stopCamera = false;
@@ -1638,7 +1640,7 @@ void PROJECTScene::RenderScene()
 
 	modelStack.PushMatrix();
 	modelStack.Translate(camera->position);
-	modelStack.Scale(500);
+	modelStack.Scale(700);
 	RenderSkybox();
 	modelStack.PopMatrix();
 
@@ -1648,7 +1650,8 @@ void PROJECTScene::RenderScene()
 		{
 			modelStack.PushMatrix();
 			modelStack.Translate(character[i]->position);
-			
+			if (character[i]->health == 0)
+				modelStack.Translate(0,0.5f,0);
 			modelStack.Rotate(character[i]->orientation, 0, 1, 0); 
 			if (character[i]->health == 0)
 				modelStack.Rotate(90,1,0,0);
@@ -1761,7 +1764,7 @@ void PROJECTScene::RenderScene()
 
 	if (camera == &player.camera)
 	{
-	if (object[camera->lookAt]->type == "NPC")
+	if (object[camera->lookAt]->type == "NPC" && object[camera->lookAt]->getHealth() > 0)
 	{
 		modelStack.PushMatrix();
 		modelStack.Translate(object[camera->lookAt]->position);
@@ -1831,39 +1834,44 @@ void PROJECTScene::RenderCCTVUI(int number)
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-12,9,0);
+	modelStack.Translate(-13,9,0);
 	modelStack.Scale(1.5f);
 	RenderMesh(meshList[GEO_CCTV_CORNER], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-12,-9,0);
+	modelStack.Translate(-13,-9,0);
 	modelStack.Rotate(90,0,0,1);
 	modelStack.Scale(1.5f);
 	RenderMesh(meshList[GEO_CCTV_CORNER], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(12,-9,0);
+	modelStack.Translate(13,-9,0);
 	modelStack.Rotate(180,0,0,1);
 	modelStack.Scale(1.5f);
 	RenderMesh(meshList[GEO_CCTV_CORNER], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(12,9,0);
+	modelStack.Translate(13,9,0);
 	modelStack.Rotate(-90,0,0,1);
 	modelStack.Scale(1.5f);
 	RenderMesh(meshList[GEO_CCTV_CORNER], false);
 	modelStack.PopMatrix();
 
+	modelStack.LoadIdentity();
+	viewStack.LoadIdentity();
+	projection.SetToOrtho(-16, 16, -9, 9, -20, 20);
+	projectionStack.LoadMatrix(projection);
+
 	string Cam = "Camera ";
 	Cam += to_string(long double(number));
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,10,0);
+	modelStack.Translate(0,7.8f,0);
 	float textLength = getTextWidth(Cam);
-	modelStack.Scale(1.5f);
+	modelStack.Scale(1.3f);
 	modelStack.Translate(-textLength/2, 0, 0);
 	RenderText(meshList[GEO_TEXT], Cam , Color(1, 1, 1));
 	modelStack.PopMatrix();
@@ -1871,7 +1879,7 @@ void PROJECTScene::RenderCCTVUI(int number)
 	if (!CCTV)
 	{
 		modelStack.PushMatrix();
-		modelStack.Translate(0,-10,0);
+		modelStack.Translate(0,-7.8f,0);
 		float textLength = getTextWidth("Backspace to return");
 		modelStack.Scale(0.7f);
 		modelStack.Translate(-textLength/2, 0, 0);
@@ -1907,13 +1915,13 @@ void PROJECTScene::Render()
 		for (int i = 0; i < 4; i++)
 		{
 			if (i == 0)
-				glViewport(0, 330, 440, 330);
+				glViewport(0, double(height)/2, double(width)/2, double(height)/2);
 			if (i == 1)
-				glViewport(440, 330, 440, 330);
+				glViewport(double(width)/2, double(height)/2, double(width)/2, double(height)/2);
 			if (i == 2)
-				glViewport(0, 0, 440, 330);
+				glViewport(0, 0, double(width)/2, double(height)/2);
 			if (i == 3)
-				glViewport(440, 0, 440, 330);
+				glViewport(double(width)/2, 0, double(width)/2, double(height)/2);
 
 			camera = &controlPanel.CCTVs[i];
 
@@ -1936,7 +1944,7 @@ void PROJECTScene::Render()
 		projection.SetToOrtho(-16, 16, -9, 9, -20, 20);
 		projectionStack.LoadMatrix(projection);
 
-		glViewport(0, 0, 880, 660);
+		glViewport(0, 0, width, height);
 
 		modelStack.PushMatrix();
 		modelStack.Translate(0,0,0);
@@ -1953,7 +1961,7 @@ void PROJECTScene::Render()
 
 	modelStack.LoadIdentity();
 	viewStack.LoadIdentity();
-	projection.SetToOrtho(-16, 16, -9, 9, -20, 20);
+	projection.SetToOrtho(-24, 24, -13.5f, 13.5f, -20, 20);
 	projectionStack.LoadMatrix(projection);
 
 	if (camera == &player.camera)
@@ -2176,7 +2184,6 @@ void PROJECTScene::Render()
 			modelStack.Translate(player.inventory.slots[i].position - Vector3(0,0.5f,0));
 			modelStack.Rotate(0, 0,1,0);
 			modelStack.Rotate(-5, 1,0,0);
-			//modelStack.Scale(0.5f,0.5f,0.5f);
 			RenderMesh(player.inventory.slots[i].item[0]->mesh, false);
 			RenderText(meshList[GEO_TEXT], stack, Color(1, 1, 1));
 			modelStack.PopMatrix();
@@ -2189,7 +2196,7 @@ void PROJECTScene::Render()
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-12,-10.5f,0);
+	modelStack.Translate(-20,-12.f,0);
 	RenderMesh(meshList[GEO_QUAD], false);
 		modelStack.PushMatrix();
 		modelStack.Translate(-2.5f,0,0);
@@ -2198,7 +2205,7 @@ void PROJECTScene::Render()
 		modelStack.PopMatrix();
 
 		modelStack.PushMatrix();
-		modelStack.Translate(0,12.5,0);
+		modelStack.Translate(0,14,0);
 		RenderMesh(meshList[GEO_QUAD], false);
 		modelStack.PopMatrix();
 	modelStack.PopMatrix();
@@ -2207,7 +2214,7 @@ void PROJECTScene::Render()
 	level = to_string( long long (player.speed));
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-14.5f + showLevel,6,0);
+	modelStack.Translate(-22.5f + showLevel,6,0);
 		modelStack.PushMatrix();
 		modelStack.Scale(0.45f,1,1);
 		RenderMesh(meshList[GEO_QUAD], false);
@@ -2225,7 +2232,7 @@ void PROJECTScene::Render()
 	level = to_string( long long (player.jump));
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-14.5f + showLevel,4,0);
+	modelStack.Translate(-22.5f + showLevel,4,0);
 		modelStack.PushMatrix();
 		modelStack.Scale(0.45f,1,1);
 		RenderMesh(meshList[GEO_QUAD], false);
@@ -2241,7 +2248,7 @@ void PROJECTScene::Render()
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(12,-10.5f,0);
+	modelStack.Translate(20,-12.f,0);
 	modelStack.Rotate(180,0,1,0);
 	RenderMesh(meshList[GEO_QUAD], false);
 	modelStack.PopMatrix();
@@ -2249,13 +2256,13 @@ void PROJECTScene::Render()
 	string cash = "$ ";
 	cash += to_string(long double(player.getRenderWallet()));
 	modelStack.PushMatrix();
-	modelStack.Translate(-14.8f,2,0);
+	modelStack.Translate(-22.8f,2.f,0);
 	RenderText(meshList[GEO_TEXT], cash, Color(1, 1, 1));
 	modelStack.PopMatrix();
 
 	string health = to_string(long long(player.getHealth()));
 	modelStack.PushMatrix();
-	modelStack.Translate(-13.4f,-10.5f,0);
+	modelStack.Translate(-21.4f,-12.f,0);
 	RenderText(meshList[GEO_TEXT], health, Color(1, player.getHealth() / 100, player.getHealth() / 100));
 	modelStack.PopMatrix();
 
@@ -2272,7 +2279,7 @@ void PROJECTScene::Render()
 	string z = to_string(long double(camera->position.z));
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-15,11,0);
+	modelStack.Translate(-23,12.5f,0);
 	RenderText(meshList[GEO_TEXT], x, Color(1, 1, 1));
 	modelStack.Translate(0,-1,0);
 	RenderText(meshList[GEO_TEXT], y, Color(1, 1, 1));

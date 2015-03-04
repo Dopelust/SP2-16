@@ -53,7 +53,7 @@ public:
 	vector<TextBox> clues;
 	Quest * quest;
 	bool inConversation;
-	virtual bool getCriteria(vector<Object*>object) {return 0;};
+	virtual bool getCriteria() {return 0;};
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
@@ -70,7 +70,12 @@ public:
 				return &greetings[r];
 			}
 			else if (quest->Accept.trigger)
+			{
+				if (quest->criteria)
+					return quest->Accept.altNext;
+
 				return quest->Accept.next;
+			}
 			else
 				return quest;
 		}
@@ -229,7 +234,7 @@ public:
 		orientation = -90;
 		Init();	
 		InitDialogue("Filestream//customer.txt");
-		//InitClues("Filestream//Quests//Hints//customer.txt");
+		InitClues("Filestream//Quests//Hints//customer.txt");
 	};
 	Customer(vector<NPCTarget> t, string name, unsigned tID, float d)
 	{
@@ -254,7 +259,7 @@ public:
 			bodyParts[i].identity = identity;
 		}
 		InitDialogue("Filestream//customer.txt");
-		//InitClues("Filestream//Quests//Hints//customer.txt");
+		InitClues("Filestream//Quests//Hints//customer.txt");
 	}
 	~Customer() {};
 
@@ -336,11 +341,9 @@ public:
 
 	ManagerQuest collection;
 
-	virtual bool getCriteria(vector<Object*>object) 
+	virtual bool getCriteria() 
 	{
-		if(quest->Accept.trigger)
-			return collection.Criteria(object);
-		return 0;
+		return quest->criteria;
 	};
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);

@@ -54,6 +54,12 @@ public:
 class Aesthetics
 {
 	Aesthetics() {};
+	Aesthetics(Vector3 p, Mesh* m, float o) 
+	{
+		position = p;
+		mesh = m;
+		orientation = o;
+	}; //Item Constructor
 	~Aesthetics() {};
 
 	Vector3 position;
@@ -146,6 +152,7 @@ private:
 	vector<OnScreenText*> text2D;
 	vector<NPC*> character;
 	vector<Object*> object;
+	vector<Aesthetics*> decoration;
 	vector<Particles*> blood;
 
 	Doorway doorway;

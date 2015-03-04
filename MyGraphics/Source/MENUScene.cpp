@@ -204,6 +204,7 @@ void MENUScene::Update(double dt)
 			{
 				selectDelay = 0.16f;
 				select--;
+
 				engine->play2D("Media/select.mp3");
 			}
 		}
