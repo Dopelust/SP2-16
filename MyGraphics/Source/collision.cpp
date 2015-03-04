@@ -8,6 +8,7 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h)
 	orientation = 0; size = 1;
 	ignoreCollision = false;
 	mesh = NULL;
+	type = "";
 }
 Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m)
 {
@@ -17,6 +18,7 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m)
 	collision.centre = c;
 	orientation = 0; size = 1;
 	ignoreCollision = false;
+	type = "";
 }
 
 Object::Object(Vector3 p, Vector3 c, Vector3 h, float s, float o, bool i)
@@ -27,6 +29,7 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h, float s, float o, bool i)
 	collision.centre = c;
 	orientation = o; size = s;
 	ignoreCollision = i;
+	type = "";
 }
 
 Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i)
@@ -37,6 +40,7 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool 
 	collision.centre = c;
 	orientation = o; size = s;
 	ignoreCollision = i;
+	type = "";
 }
 
 bool Object::checkCollision(Object* a, Object*  b)

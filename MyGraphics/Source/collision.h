@@ -29,7 +29,7 @@ public:
 	Object(Vector3 p, Vector3 c, Vector3 h, float s, float o, bool i); 
 	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i); //Full Constructor
 	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i, bool paid) {}; //Item Constructor
-	~Object() {};
+	virtual ~Object() {};
 
 	std::string type;
 	Vector3 position;
@@ -87,7 +87,7 @@ class Item : public Object
 public:
 	Item() {ignoreCollision = true;};
 	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i) :	Object(p,c,h,m,s,o,i) {paid = false; type = "Item";}
-	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i, float P, float R) :	Object(p,c,h,m,s,o,i) {restore = R;price = P; paid = false; type = "Item";};
+	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i, float P, float R) : Object(p,c,h,m,s,o,i) {restore = R;price = P; paid = false; type = "Item";};
 	Item(Mesh * m, string t, bool p) {mesh = m; type = t; paid = p;}
 	~Item() {};
 

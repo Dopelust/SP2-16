@@ -32,6 +32,13 @@ PROJECTScene::~PROJECTScene()
 	}
 	text2D.clear();
 
+	for (unsigned int i = 0; i < object.size(); i++)
+	{
+		if (object[i]->type == "Item" || object[i]->type == "Storage" || object[i]->type == "Dynamic" || object[i]->type == "Money") 
+		delete object[i];
+	}
+	object.clear();
+
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		delete character[i]->quest;
@@ -45,17 +52,8 @@ PROJECTScene::~PROJECTScene()
 	}
 	character.clear();
 
-	
-	for (unsigned int i = 1; i < object.size(); i++)
-	{
-		object[i]->mesh = NULL;
-		delete object[i];
-	}
-	object.clear();
-	
 	for (unsigned int i = 0; i < decoration.size(); i++)
 	{
-		decoration[i]->mesh = NULL;
 		delete decoration[i];
 	}
 	decoration.clear();
@@ -65,12 +63,6 @@ PROJECTScene::~PROJECTScene()
 		delete blood[i];
 	}
 	blood.clear();
-
-	for (unsigned int i = 0; i < NUM_GEOMETRY; i++)
-	{
-		meshList[i] = NULL;
-		delete meshList[i];
-	}
 }
 void PROJECTScene::InitJunk()
 {
