@@ -1,4 +1,5 @@
 #include "player.h"
+#include "dialogue.h"
 
 static int bobXDir = 1;
 static int bobYDir = 1;
@@ -75,6 +76,7 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 
 extern bool stopCamera;
 extern ISoundEngine * engine;
+extern TextBox * textbox;
 
 void Player::Update(double dt, vector<Object*>object)
 {
@@ -122,53 +124,69 @@ void Player::Update(double dt, vector<Object*>object)
 	hOrientation = camera.orientation;
 	vOrientation = camera.look;
 
-	if (!stopCamera && !inConversation)
+	if (!stopCamera && !inConversation && Application::mouseButton(1) && inventory.canUse() && value[eatCooldown] == 0)
 	{
-		if (Application::mouseButton(1) && inventory.canUse() && value[eatCooldown] == 0)
+		state[EATING] = true;
+		value[eatElapsed] += float(dt);
+
+		if (!engine->isCurrentlyPlaying("Media/eat1.ogg") && !engine->isCurrentlyPlaying("Media/eat2.ogg") && !engine->isCurrentlyPlaying("Media/eat3.ogg"))
 		{
-			state[EATING] = true;
-			value[eatElapsed] += float(dt);
+			int r = rand () % 3;
 
-			if (!engine->isCurrentlyPlaying("Media/eat1.ogg") && !engine->isCurrentlyPlaying("Media/eat2.ogg") && !engine->isCurrentlyPlaying("Media/eat3.ogg"))
+			if (r == 0)
+				engine->play2D("Media/eat1.ogg");
+			else if (r == 1)
+				engine->play2D("Media/eat2.ogg");
+			else 
+				engine->play2D("Media/eat3.ogg");
+		}
+	}
+	else
+	{
+		state[EATING] = false;
+		value[eatElapsed] = 0;
+	}
+	if (value[eatElapsed] > 1.5f)
+	{
+		if (inventory.getHolding()->type == "Statboost")
+		{
+			if (rand () % 2 == 0)
 			{
-				int r = rand () % 3;
+				speed++;
 
-				if (r == 0)
-					engine->play2D("Media/eat1.ogg");
-				else if (r == 1)
-					engine->play2D("Media/eat2.ogg");
-				else 
-					engine->play2D("Media/eat3.ogg");
+				if (textbox == NULL)
+				{
+					inConversation = true;
+					stopCamera = true;
+					textbox = new TextBox("Sprinting speed increased! SHIFT to sprint and TAB to check current level.", "Message");
+				}
+
+			}
+			else
+			{
+				jump++;
+
+				if (textbox == NULL)
+				{
+					inConversation = true;
+					stopCamera = true;
+					textbox = new TextBox("MegaJump height increased! CTRL + SPACE to MegaJump and TAB to check current level.", "Message");
+				}
 			}
 		}
 		else
-		{
-			state[EATING] = false;
-			value[eatElapsed] = 0;
-		}
-		if (value[eatElapsed] > 1.5f)
-		{
-			if (inventory.getHolding()->type == "Statboost")
-			{
-				if (rand () % 2 == 0)
-					speed++;
-				else
-					jump++;
-			}
-			else
-				health += inventory.getHolding()->getHealth();
+			health += inventory.getHolding()->getHealth();
 
-			inventory.Delete();
+		inventory.Delete();
 
-			state[EATING] = false;
-			value[eatElapsed] = 0;
-			value[eatCooldown] = 0.2f;
+		state[EATING] = false;
+		value[eatElapsed] = 0;
+		value[eatCooldown] = 0.2f;
 
-			if (!engine->isCurrentlyPlaying("Media/burp.ogg"))
-					engine->play2D("Media/burp.ogg");
-		}
-
+		if (!engine->isCurrentlyPlaying("Media/burp.ogg"))
+			engine->play2D("Media/burp.ogg");
 	}
+
 	if (!stopCamera || inConversation)
 	{
 		inventory.Update(dt);

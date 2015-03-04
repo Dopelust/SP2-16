@@ -53,13 +53,14 @@ public:
 
 class Aesthetics
 {
+public:
 	Aesthetics() {};
 	Aesthetics(Vector3 p, Mesh* m, float o) 
 	{
 		position = p;
 		mesh = m;
 		orientation = o;
-	}; //Item Constructor
+	}; 
 	~Aesthetics() {};
 
 	Vector3 position;
@@ -147,7 +148,6 @@ private:
 	unsigned m_programID;
 	unsigned m_parameters[U_TOTAL];
 
-	TextBox * textbox;
 	vector<OnScreenText*> text;
 	vector<OnScreenText*> text2D;
 	vector<NPC*> character;

@@ -4,7 +4,8 @@ bool dynamicObject::Knockback(Vector3 dir, Vector3 vel)
 {
 	if (hitDelay == 0)
 	{
-		health -= (vel.Length() / 15);
+
+		health -= (vel.Length() / (10 + rand () % 8));
 		
 		velocity.x = dir.x * vel.x;
 		velocity.z = dir.z * vel.z;
@@ -268,6 +269,7 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 void Hobo::Init()
 {
 	identity = "Homeless Man";
+	health = INT_MAX;
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{	
@@ -442,6 +444,7 @@ void Customer::Control(double dt, vector<Object*>object, Player* player)
 void Detective::Init()
 {
 	identity = "Detective-san";
+	health = INT_MAX;
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{	
@@ -457,6 +460,18 @@ void Detective::Init()
 
 void Detective::Control(double dt, vector<Object*>object, Player* player)
 {
+	if (quest != NULL)
+	{
+		for (unsigned int i = 0; i < object.size(); i++)
+		{
+			if(object[i]->getIdentity() == "Thug" && object[i]->getHealth() > 0)
+				break;
+			
+			if (i == object.size() - 1)
+				quest->criteria = true;
+		}
+	}
+
 	Orientate(30, dt, 150.f);
 	target = position;
 	velocity = 0;
@@ -520,6 +535,7 @@ void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 void Manager::Init()
 {
 	identity = "Manager-taichou";
+	health = INT_MAX;
 
 	for (int i = 0; i < NUM_BODYPARTS; i++)
 	{	

@@ -12,6 +12,7 @@
 using namespace::std;
 
 float PROJECTScene::inputDelay = 0.f;
+TextBox * textbox;
 
 PROJECTScene::PROJECTScene()
 {
@@ -1387,6 +1388,10 @@ void PROJECTScene::Update(double dt)
 				else
 				{
 					textbox->apparentext.clear();
+
+					if (textbox->type == "Message")
+						delete textbox;
+
 					textbox = NULL;
 					player.inConversation = false;
 					stopCamera = false;
@@ -1799,7 +1804,7 @@ void PROJECTScene::RenderScene()
 	}
 	else if (object[camera->lookAt]->type == "Vending Machine")
 	{
-		string P_Drink = "Permanent Stat Boost!";
+		string P_Drink = "Permanent Stat Boost Drinks!";
 		modelStack.PushMatrix();
 		modelStack.Translate(object[camera->lookAt]->position);
 		modelStack.Translate(0,9.f,0);

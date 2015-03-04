@@ -36,6 +36,12 @@ public:
 		type = "Normal";
 		apparentext = "";
 	};
+	TextBox(string t, string T)
+	{
+		text = t;
+		type = T;
+		apparentext = "";
+	};
 	~TextBox() {};
 
 	string type;
@@ -167,23 +173,5 @@ public:
 		return false;
 
 	}
-};
-
-class DetectiveQuest : public Quest
-{
-public:
-	DetectiveQuest() {};
-	DetectiveQuest(string t) 
-	{
-		text = t;
-		type = "DQ";
-
-		Accept = Button2D("Found", Vector3(7,-8.3f,0));
-		Decline = Button2D("Not Found", Vector3(11,-8.3f,0));
-	}
-
-	~DetectiveQuest() {};
-
-
 };
 #endif
