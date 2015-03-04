@@ -718,7 +718,7 @@ void PROJECTScene::JessicaInit()
 	
 	//~~~~~~POSTER~~~~~
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice.tga");
-	object.push_back( new Object(Vector3(-79.5,5.5,-36), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(-79.5,5.5,-36), tempMesh, 90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
 	object.push_back( new Object(Vector3(-79.55,5.5,-25), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
