@@ -171,6 +171,16 @@ void PROJECTScene::RicssonInit()
 		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, rand() % 21 - 10) );
 	}
+	for(int x = 78; x >= 75; x-=3)
+	{
+		for (int y = 28; y <= 31; y+=3)
+		{
+		hitBox = Vector3(3, 3, 3);
+		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
+		cube = MeshBuilder::GenerateCube("CrateHitbox", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
+		object.push_back( new dynamicObject(Vector3(x,y,39.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, rand() % 21 - 10) );
+		}
+	}
 	for ( int x = 0; x < 3; x++)
 	{
 		for (int z = 0; z < 3; z++)
@@ -788,6 +798,15 @@ void PROJECTScene::JessicaInit()
 	{
 		object.push_back( new Money(Vector3(-55,y,-89), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, 10) );
 	}
+	for (float y = 0; y <= 0.25f; y+= 0.05f)
+	{
+		for (float x = -70; x <= 70; x+= 30)
+		{
+			for (float z = -195; z <= -165; z+= 30)
+			object.push_back( new Money(Vector3(x,y,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, rand()% 180, 10) );
+		}
+	}
+
 
 	tempMesh = MeshBuilder::GenerateOBJ("Dollar", "OBJ//Money.obj"); tempMesh->textureID = LoadTGA("Image//Money1.tga");
 	object.push_back( new Money(Vector3(53,3.5,-51), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1,0, 1) );
@@ -819,6 +838,7 @@ void PROJECTScene::JessicaInit()
 	{
 			object.push_back( new Money(Vector3(-9.5,y,-21.25), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, cube, 1, 0, 50) );
 	}
+
 
 	//~~~~~VENDING~~~~~
 
@@ -854,15 +874,19 @@ void PROJECTScene::JessicaInit()
 	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
 	object.push_back( new Object(Vector3(-95,hitBox.y/2+25,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
-	/*hitBox = Vector3(27, 2, 33); 
+	hitBox = Vector3(27, 2, 33); 
 	tempMesh = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Floor&Ceiling.tga");
 	cube = MeshBuilder::GenerateCube("2ndFloor", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 0);
-	object.push_back( new Object(Vector3(-95.5,hitBox.y/2+48,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );*/
+	object.push_back( new Object(Vector3(-95.5,hitBox.y/2+48,25.5f), Vector3(0,0,0), hitBox, tempMesh, cube) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Security Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
 	object.push_back( new Object(Vector3(-79.95f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+
+	hitBox = Vector3();
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
+	object.push_back( new Object(Vector3(-82.01f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
 
 	//~~~~SECURITY ITEMS~~~~~
 
@@ -932,13 +956,13 @@ void PROJECTScene::JessicaInit()
 	}
 
 	tempMesh = MeshBuilder::GenerateCube("Block", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); 
-	hitBox = Vector3(1,60,85); cube = MeshBuilder::GenerateCube("CityHitbox",Color(1,1,1),hitBox.x,hitBox.y,hitBox.z,0);
-	object.push_back( new Object(Vector3(-60,0,-130), Vector3(0,hitBox.y/2,0), hitBox, NULL, cube, 1,0, false));
-	object.push_back( new Object(Vector3(60,0,-130), Vector3(0,hitBox.y/2,0), hitBox, NULL, cube, 1,0, false));
+	hitBox = Vector3(1,60,125); cube = MeshBuilder::GenerateCube("CityHitbox",Color(1,1,1),hitBox.x,hitBox.y,hitBox.z,0);
+	object.push_back( new Object(Vector3(-75,0,-150), Vector3(0,hitBox.y/2,0), hitBox, NULL, cube, 1,0, false));
+	object.push_back( new Object(Vector3(75,0,-150), Vector3(0,hitBox.y/2,0), hitBox, NULL, cube, 1,0, false));
 
 	tempMesh = MeshBuilder::GenerateCube("Block", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); 
-	hitBox = Vector3(150,60,1); cube = MeshBuilder::GenerateCube("CityHitbox",Color(1,1,1),hitBox.x,hitBox.y,hitBox.z,0);
-	object.push_back( new Object(Vector3(0,0,-150), Vector3(0,hitBox.y/2,0), hitBox, NULL, cube, 1, 0, false));
+	hitBox = Vector3(240,60,1); cube = MeshBuilder::GenerateCube("CityHitbox",Color(1,1,1),hitBox.x,hitBox.y,hitBox.z,0);
+	object.push_back( new Object(Vector3(0,0,-210), Vector3(0,hitBox.y/2,0), hitBox, NULL, cube, 1, 0, false));
 }
 void PROJECTScene::DarrenInit()
 {	
@@ -1270,6 +1294,7 @@ void PROJECTScene::Update(double dt)
 			{
 				delete object[camera->lookAt];
 				object.erase(object.begin()+camera->lookAt);
+				engine->play2D("Media/vent_break.mp3");
 			}
 		}
 

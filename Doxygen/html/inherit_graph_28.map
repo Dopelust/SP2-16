@@ -1,0 +1,18 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classObject.html" title="Object" alt="" coords="5,259,65,285"/>
+<area shape="rect" id="node2" href="$classBodypart.html" title="Bodypart" alt="" coords="131,157,205,184"/>
+<area shape="rect" id="node3" href="$classdynamicObject.html" title="dynamicObject" alt="" coords="113,208,223,235"/>
+<area shape="rect" id="node14" href="$classItem.html" title="Item" alt="" coords="145,259,191,285"/>
+<area shape="rect" id="node15" href="$classMoney.html" title="Money" alt="" coords="137,309,199,336"/>
+<area shape="rect" id="node16" href="$classStorage.html" title="Storage" alt="" coords="135,360,201,387"/>
+<area shape="rect" id="node4" href="$classNPC.html" title="NPC" alt="" coords="275,183,325,209"/>
+<area shape="rect" id="node13" href="$classPlayer.html" title="Player" alt="" coords="271,233,329,260"/>
+<area shape="rect" id="node5" href="$classBlindman.html" title="Blindman" alt="" coords="379,5,455,32"/>
+<area shape="rect" id="node6" href="$classCashier.html" title="Cashier" alt="" coords="383,56,450,83"/>
+<area shape="rect" id="node7" href="$classCustomer.html" title="Customer" alt="" coords="377,107,456,133"/>
+<area shape="rect" id="node8" href="$classDetective.html" title="Detective" alt="" coords="379,157,454,184"/>
+<area shape="rect" id="node9" href="$classHobo.html" title="Hobo" alt="" coords="391,208,443,235"/>
+<area shape="rect" id="node10" href="$classManager.html" title="Manager" alt="" coords="381,259,453,285"/>
+<area shape="rect" id="node11" href="$classS__Guard.html" title="S_Guard" alt="" coords="380,309,453,336"/>
+<area shape="rect" id="node12" href="$classThug.html" title="Thug" alt="" coords="391,360,442,387"/>
+</map>

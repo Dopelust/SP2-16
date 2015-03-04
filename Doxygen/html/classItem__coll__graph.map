@@ -1,0 +1,8 @@
+<map id="Item" name="Item">
+<area shape="rect" id="node2" href="$classObject.html" title="Object" alt="" coords="412,572,472,599"/>
+<area shape="rect" id="node3" href="$structCollision.html" title="Collision" alt="" coords="269,483,340,509"/>
+<area shape="rect" id="node4" href="$structVector3.html" title="Defines a 3D vector and its methods. " alt="" coords="418,377,485,404"/>
+<area shape="rect" id="node7" href="$structMaterial.html" title="Material" alt="" coords="5,243,73,269"/>
+<area shape="rect" id="node8" href="$structComponent.html" title="Component" alt="" coords="301,124,389,151"/>
+<area shape="rect" id="node6" href="$classMesh.html" title="To store VBO (vertex &amp; color buffer) and IBO (index buffer) " alt="" coords="185,377,240,404"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="IrrKlang/include/ik_IFileReader.h" name="IrrKlang/include/ik_IFileReader.h">
+<area shape="rect" id="node2" href="$ik__IAudioStreamLoader_8h.html" title="IrrKlang/include/ik\l_IAudioStreamLoader.h" alt="" coords="738,95,895,136"/>
+<area shape="rect" id="node3" href="$irrKlang_8h.html" title="Main header file of the irrKlang sound library, the only file needed to include. " alt="" coords="673,184,843,211"/>
+<area shape="rect" id="node4" href="$player_8h.html" title="MyGraphics/Source/player.h" alt="" coords="665,259,851,285"/>
+<area shape="rect" id="node5" href="$PROJECTScene_8h.html" title="MyGraphics/Source/PROJECTScene.h" alt="" coords="278,408,526,435"/>
+<area shape="rect" id="node11" href="$MENUScene_8h.html" title="MyGraphics/Source/MENUScene.h" alt="" coords="1007,408,1234,435"/>
+<area shape="rect" id="node10" href="$NPC_8h.html" title="MyGraphics/Source/NPC.h" alt="" coords="777,333,955,360"/>
+<area shape="rect" id="node15" href="$player_8cpp.html" title="MyGraphics/Source/player.cpp" alt="" coords="551,333,752,360"/>
+<area shape="rect" id="node6" href="$Application_8cpp.html" title="MyGraphics/Source/Application.cpp" alt="" coords="757,483,988,509"/>
+<area shape="rect" id="node7" href="$audio_8cpp.html" title="MyGraphics/Source/audio.cpp" alt="" coords="535,483,733,509"/>
+<area shape="rect" id="node8" href="$Camera3_8cpp.html" title="MyGraphics/Source/Camera3.cpp" alt="" coords="293,483,511,509"/>
+<area shape="rect" id="node9" href="$PROJECTScene_8cpp.html" title="MyGraphics/Source/PROJECTScene.cpp" alt="" coords="5,483,268,509"/>
+<area shape="rect" id="node13" href="$dialogue_8cpp.html" title="MyGraphics/Source/dialogue.cpp" alt="" coords="768,408,983,435"/>
+<area shape="rect" id="node14" href="$NPC_8cpp.html" title="MyGraphics/Source/NPC.cpp" alt="" coords="551,408,744,435"/>
+<area shape="rect" id="node12" href="$MENUScene_8cpp.html" title="MyGraphics/Source/MENUScene.cpp" alt="" coords="1012,483,1253,509"/>
+</map>

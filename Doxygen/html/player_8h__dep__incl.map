@@ -1,0 +1,13 @@
+<map id="MyGraphics/Source/player.h" name="MyGraphics/Source/player.h">
+<area shape="rect" id="node2" href="$PROJECTScene_8h.html" title="MyGraphics/Source/PROJECTScene.h" alt="" coords="507,155,755,181"/>
+<area shape="rect" id="node7" href="$NPC_8h.html" title="MyGraphics/Source/NPC.h" alt="" coords="605,80,783,107"/>
+<area shape="rect" id="node8" href="$MENUScene_8h.html" title="MyGraphics/Source/MENUScene.h" alt="" coords="257,155,483,181"/>
+<area shape="rect" id="node12" href="$player_8cpp.html" title="MyGraphics/Source/player.cpp" alt="" coords="808,80,1009,107"/>
+<area shape="rect" id="node3" href="$Application_8cpp.html" title="MyGraphics/Source/Application.cpp" alt="" coords="493,229,724,256"/>
+<area shape="rect" id="node4" href="$audio_8cpp.html" title="MyGraphics/Source/audio.cpp" alt="" coords="271,229,469,256"/>
+<area shape="rect" id="node5" href="$Camera3_8cpp.html" title="MyGraphics/Source/Camera3.cpp" alt="" coords="1035,229,1254,256"/>
+<area shape="rect" id="node6" href="$PROJECTScene_8cpp.html" title="MyGraphics/Source/PROJECTScene.cpp" alt="" coords="748,229,1011,256"/>
+<area shape="rect" id="node10" href="$dialogue_8cpp.html" title="MyGraphics/Source/dialogue.cpp" alt="" coords="780,155,995,181"/>
+<area shape="rect" id="node11" href="$NPC_8cpp.html" title="MyGraphics/Source/NPC.cpp" alt="" coords="1019,155,1212,181"/>
+<area shape="rect" id="node9" href="$MENUScene_8cpp.html" title="MyGraphics/Source/MENUScene.cpp" alt="" coords="5,229,247,256"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Selector" name="Selector">
+<area shape="rect" id="node2" href="$classSlot.html" title="Slot" alt="" coords="83,465,128,492"/>
+<area shape="rect" id="node3" href="$structVector3.html" title="Defines a 3D vector and its methods. " alt="" coords="19,183,85,210"/>
+<area shape="rect" id="node7" href="$structMaterial.html" title="Material" alt="" coords="347,243,415,269"/>
+<area shape="rect" id="node8" href="$structComponent.html" title="Component" alt="" coords="245,124,333,151"/>
+<area shape="rect" id="node6" href="$classMesh.html" title="To store VBO (vertex &amp; color buffer) and IBO (index buffer) " alt="" coords="189,376,243,403"/>
+</map>

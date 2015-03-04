@@ -1,0 +1,717 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classMS" kind="class" prot="public">
+    <compoundname>MS</compoundname>
+    <includes refid="MatrixStack_8h" local="no">MatrixStack.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMS_1a52ff310fee5be24b7777e472ef2acea6" prot="private" static="no" mutable="no">
+        <type>std::stack&lt; <ref refid="classMtx44" kindref="compound">Mtx44</ref> &gt;</type>
+        <definition>std::stack&lt;Mtx44&gt; MS::ms</definition>
+        <argsstring></argsstring>
+        <name>ms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="23" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classMS_1ab3eb89506a55a00137cba928686b0201" compoundref="MatrixStack_8cpp" startline="72" endline="75">Clear</referencedby>
+        <referencedby refid="classMS_1a155508354e47f5aa755e181e69fc3cd4" compoundref="MatrixStack_8cpp" startline="206" endline="210">Frustum</referencedby>
+        <referencedby refid="classMS_1a77c5f7e4a21ea48dcf902a7ff6824a11" compoundref="MatrixStack_8cpp" startline="83" endline="87">LoadIdentity</referencedby>
+        <referencedby refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" compoundref="MatrixStack_8cpp" startline="98" endline="100">LoadMatrix</referencedby>
+        <referencedby refid="classMS_1a2638cd3249260877cc31329978fb6b38" compoundref="MatrixStack_8cpp" startline="242" endline="249">LookAt</referencedby>
+        <referencedby refid="classMS_1adddd1194f4978eab6618be6a22ed8e48" compoundref="MatrixStack_8cpp" startline="18" endline="22">MS</referencedby>
+        <referencedby refid="classMS_1af5a89751ef3b273288bee108113d4899" compoundref="MatrixStack_8cpp" startline="111" endline="113">MultMatrix</referencedby>
+        <referencedby refid="classMS_1a297adfaa8a90e5b1c39e8b4d142d08c4" compoundref="MatrixStack_8cpp" startline="212" endline="216">Ortho</referencedby>
+        <referencedby refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">PopMatrix</referencedby>
+        <referencedby refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">PushMatrix</referencedby>
+        <referencedby refid="classMS_1a6ce592114042b920b648bca5519690cd" compoundref="MatrixStack_8cpp" startline="130" endline="134">Rotate</referencedby>
+        <referencedby refid="classMS_1a52109795de960e24663b315e9128533f" compoundref="MatrixStack_8cpp" startline="149" endline="153">Scale</referencedby>
+        <referencedby refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" compoundref="MatrixStack_8cpp" startline="42" endline="44">Top</referencedby>
+        <referencedby refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">Translate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMS_1adddd1194f4978eab6618be6a22ed8e48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MS::MS</definition>
+        <argsstring>()</argsstring>
+        <name>MS</name>
+        <briefdescription>
+<para><ref refid="classMS" kindref="compound">MS</ref> default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="25" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="18" bodyend="22"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1a3ac8a0afd66412e15e4246474b893da2" compoundref="Mtx44_8cpp" startline="74" endline="77">Mtx44::SetToIdentity</references>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1ac7ec3f1bdabca61e69d3068ee9ba0995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MS::~MS</definition>
+        <argsstring>()</argsstring>
+        <name>~MS</name>
+        <briefdescription>
+<para><ref refid="classMS" kindref="compound">MS</ref> destructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="26" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="30" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a21291d7fb488f63c589bdc9bd620ba58" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classMtx44" kindref="compound">Mtx44</ref> &amp;</type>
+        <definition>const Mtx44 &amp; MS::Top</definition>
+        <argsstring>() const </argsstring>
+        <name>Top</name>
+        <briefdescription>
+<para>Return the top matrix on the matrix stack. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A copy of the top matrix </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="27" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="42" bodyend="44"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">MENUScene::RenderMesh</referencedby>
+        <referencedby refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">PROJECTScene::RenderMesh</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" compoundref="MENUScene_8cpp" startline="384" endline="474">MENUScene::RenderText</referencedby>
+        <referencedby refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" compoundref="PROJECTScene_8cpp" startline="2345" endline="2430">PROJECTScene::RenderText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::PopMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>PopMatrix</name>
+        <briefdescription>
+<para>Pop the top matrix on the matrix stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="28" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="52" bodyend="54"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">PROJECTScene::RenderCCTVUI</referencedby>
+        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="601" endline="628">MENUScene::RenderCrosshair</referencedby>
+        <referencedby refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" compoundref="PROJECTScene_8cpp" startline="2592" endline="2619">PROJECTScene::RenderCrosshair</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="557" endline="600">MENUScene::RenderSkybox</referencedby>
+        <referencedby refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" compoundref="PROJECTScene_8cpp" startline="2548" endline="2591">PROJECTScene::RenderSkybox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::PushMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>PushMatrix</name>
+        <briefdescription>
+<para>Make a copy of the top matrix on the matrix stack and push it on top. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="29" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="62" bodyend="64"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">PROJECTScene::RenderCCTVUI</referencedby>
+        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="601" endline="628">MENUScene::RenderCrosshair</referencedby>
+        <referencedby refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" compoundref="PROJECTScene_8cpp" startline="2592" endline="2619">PROJECTScene::RenderCrosshair</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="557" endline="600">MENUScene::RenderSkybox</referencedby>
+        <referencedby refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" compoundref="PROJECTScene_8cpp" startline="2548" endline="2591">PROJECTScene::RenderSkybox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1ab3eb89506a55a00137cba928686b0201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+<para>Clear the matrix stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="30" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="72" bodyend="75"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a77c5f7e4a21ea48dcf902a7ff6824a11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::LoadIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>LoadIdentity</name>
+        <briefdescription>
+<para>Replace the top matrix with an identity matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="31" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="83" bodyend="87"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1a3ac8a0afd66412e15e4246474b893da2" compoundref="Mtx44_8cpp" startline="74" endline="77">Mtx44::SetToIdentity</references>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">PROJECTScene::RenderCCTVUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a86606fe9f575ccb747d77195c8aefdaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::LoadMatrix</definition>
+        <argsstring>(const Mtx44 &amp;matrix)</argsstring>
+        <name>LoadMatrix</name>
+        <param>
+          <type>const <ref refid="classMtx44" kindref="compound">Mtx44</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+<para>Return the top matrix with a new matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new matrix to replace the top </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="32" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="98" bodyend="100"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">MENUScene::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">PROJECTScene::Init</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">PROJECTScene::RenderCCTVUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1af5a89751ef3b273288bee108113d4899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::MultMatrix</definition>
+        <argsstring>(const Mtx44 &amp;matrix)</argsstring>
+        <name>MultMatrix</name>
+        <param>
+          <type>const <ref refid="classMtx44" kindref="compound">Mtx44</ref> &amp;</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+<para>Multiply the top matrix with a new matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>matrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new matrix to replace the top </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="33" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="111" bodyend="113"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a6ce592114042b920b648bca5519690cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::Rotate</definition>
+        <argsstring>(float degrees, float axisX, float axisY, float axisZ)</argsstring>
+        <name>Rotate</name>
+        <param>
+          <type>float</type>
+          <declname>degrees</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>axisX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>axisY</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>axisZ</declname>
+        </param>
+        <briefdescription>
+<para>Multiply the top matrix with a rotation matrix based on the following parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>degrees</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Angle of rotation, in degrees, clockwise </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axisX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>X-component of the rotation axis </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axisY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Y-component of the rotation axis </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axisZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Z-component of the rotation axis </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="34" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="130" bodyend="134"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1ac0587ffb5ff9fd58ad5768d28fc06574" compoundref="Mtx44_8cpp" startline="319" endline="341">Mtx44::SetToRotation</references>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">PROJECTScene::RenderCCTVUI</referencedby>
+        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="601" endline="628">MENUScene::RenderCrosshair</referencedby>
+        <referencedby refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" compoundref="PROJECTScene_8cpp" startline="2592" endline="2619">PROJECTScene::RenderCrosshair</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="557" endline="600">MENUScene::RenderSkybox</referencedby>
+        <referencedby refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" compoundref="PROJECTScene_8cpp" startline="2548" endline="2591">PROJECTScene::RenderSkybox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a52109795de960e24663b315e9128533f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::Scale</definition>
+        <argsstring>(float scaleX, float scaleY, float scaleZ)</argsstring>
+        <name>Scale</name>
+        <param>
+          <type>float</type>
+          <declname>scaleX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaleY</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaleZ</declname>
+        </param>
+        <briefdescription>
+<para>Multiply the top matrix with a scale matrix based on the following parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scaleX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor to scale along x-axis </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor to scale along y-axis </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Factor to scale along z-axis </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="35" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="149" bodyend="153"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1a04c49a922f8e8ffcb57a90c6ce955600" compoundref="Mtx44_8cpp" startline="356" endline="361">Mtx44::SetToScale</references>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">PROJECTScene::RenderCCTVUI</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a7b0ae1b56e92cd627707c18a637d68f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::Scale</definition>
+        <argsstring>(float scaleXYZ)</argsstring>
+        <name>Scale</name>
+        <param>
+          <type>float</type>
+          <declname>scaleXYZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="36" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="155" bodyend="159"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1a04c49a922f8e8ffcb57a90c6ce955600" compoundref="Mtx44_8cpp" startline="356" endline="361">Mtx44::SetToScale</references>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::Translate</definition>
+        <argsstring>(float translateX, float translateY, float translateZ)</argsstring>
+        <name>Translate</name>
+        <param>
+          <type>float</type>
+          <declname>translateX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>translateY</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>translateZ</declname>
+        </param>
+        <briefdescription>
+<para>Multiply the top matrix with a translation matrix based on the following parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>translateX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset along x-axis </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset along y-axis </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset along z-axis </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="37" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="175" bodyend="179"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1a0cc88cc5c648da14effba480c4d2ac70" compoundref="Mtx44_8cpp" startline="376" endline="381">Mtx44::SetToTranslation</references>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">PROJECTScene::RenderCCTVUI</referencedby>
+        <referencedby refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" compoundref="MENUScene_8cpp" startline="601" endline="628">MENUScene::RenderCrosshair</referencedby>
+        <referencedby refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" compoundref="PROJECTScene_8cpp" startline="2592" endline="2619">PROJECTScene::RenderCrosshair</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" compoundref="MENUScene_8cpp" startline="557" endline="600">MENUScene::RenderSkybox</referencedby>
+        <referencedby refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" compoundref="PROJECTScene_8cpp" startline="2548" endline="2591">PROJECTScene::RenderSkybox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a832bd93b3156899bc1980ae954a79232" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::Translate</definition>
+        <argsstring>(Vector3 translateXYZ)</argsstring>
+        <name>Translate</name>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>translateXYZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="38" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="181" bodyend="185"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1a0cc88cc5c648da14effba480c4d2ac70" compoundref="Mtx44_8cpp" startline="376" endline="381">Mtx44::SetToTranslation</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+        <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a155508354e47f5aa755e181e69fc3cd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::Frustum</definition>
+        <argsstring>(double left, double right, double bottom, double top, double near, double far)</argsstring>
+        <name>Frustum</name>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>near</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>far</declname>
+        </param>
+        <briefdescription>
+<para>Setup frustum matrix and push to matrix stack. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>left</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frustum - left </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>right</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frustum - right </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bottom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frustum - bottom </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>top</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frustum - top </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>near</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frustum - front </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>far</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frustum - back </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="39" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="206" bodyend="210"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1a465dcf811eb34049aab4266795d7bd62" compoundref="Mtx44_8cpp" startline="402" endline="407">Mtx44::SetToFrustum</references>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a297adfaa8a90e5b1c39e8b4d142d08c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::Ortho</definition>
+        <argsstring>(double left, double right, double bottom, double top, double nearVal, double farVal)</argsstring>
+        <name>Ortho</name>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>nearVal</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>farVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="40" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="212" bodyend="216"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1a0a4c7818be7c1aeb0601ad069c1a591d" compoundref="Mtx44_8cpp" startline="492" endline="497">Mtx44::SetToOrtho</references>
+      </memberdef>
+      <memberdef kind="function" id="classMS_1a2638cd3249260877cc31329978fb6b38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MS::LookAt</definition>
+        <argsstring>(double eyeX, double eyeY, double eyeZ, double centerX, double centerY, double centerZ, double upX, double upY, double upZ)</argsstring>
+        <name>LookAt</name>
+        <param>
+          <type>double</type>
+          <declname>eyeX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eyeY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eyeZ</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>centerX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>centerY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>centerZ</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upX</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upY</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upZ</declname>
+        </param>
+        <briefdescription>
+<para>Setup lookat matrix and push to matrix stack. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eyeX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eye vector x value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eyeY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eye vector y value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eyeZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>eye vector z value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centerX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target position x value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centerY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target position y value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centerZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target position z value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>up vector x value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>up vector y value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>up vector z value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="41" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp" bodystart="242" bodyend="249"/>
+        <references refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" compoundref="MatrixStack_8h" startline="23">ms</references>
+        <references refid="classMtx44_1a7c3d2d30d9ed5bfca2ba97d0e570930f" compoundref="Mtx44_8cpp" startline="433" endline="450">Mtx44::SetToLookAt</references>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Matrix Stack class. </para>    </briefdescription>
+    <detaileddescription>
+<para>Class <ref refid="classMS" kindref="compound">MS</ref>: </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="1291">
+        <label>stack&lt; Mtx44 &gt;</label>
+      </node>
+      <node id="1290">
+        <label>MS</label>
+        <link refid="classMS"/>
+        <childnode refid="1291" relation="usage">
+          <edgelabel>ms</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" line="22" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.h" bodystart="22" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classMS_1ab3eb89506a55a00137cba928686b0201" prot="public" virt="non-virtual"><scope>MS</scope><name>Clear</name></member>
+      <member refid="classMS_1a155508354e47f5aa755e181e69fc3cd4" prot="public" virt="non-virtual"><scope>MS</scope><name>Frustum</name></member>
+      <member refid="classMS_1a77c5f7e4a21ea48dcf902a7ff6824a11" prot="public" virt="non-virtual"><scope>MS</scope><name>LoadIdentity</name></member>
+      <member refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" prot="public" virt="non-virtual"><scope>MS</scope><name>LoadMatrix</name></member>
+      <member refid="classMS_1a2638cd3249260877cc31329978fb6b38" prot="public" virt="non-virtual"><scope>MS</scope><name>LookAt</name></member>
+      <member refid="classMS_1adddd1194f4978eab6618be6a22ed8e48" prot="public" virt="non-virtual"><scope>MS</scope><name>MS</name></member>
+      <member refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" prot="private" virt="non-virtual"><scope>MS</scope><name>ms</name></member>
+      <member refid="classMS_1af5a89751ef3b273288bee108113d4899" prot="public" virt="non-virtual"><scope>MS</scope><name>MultMatrix</name></member>
+      <member refid="classMS_1a297adfaa8a90e5b1c39e8b4d142d08c4" prot="public" virt="non-virtual"><scope>MS</scope><name>Ortho</name></member>
+      <member refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" prot="public" virt="non-virtual"><scope>MS</scope><name>PopMatrix</name></member>
+      <member refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" prot="public" virt="non-virtual"><scope>MS</scope><name>PushMatrix</name></member>
+      <member refid="classMS_1a6ce592114042b920b648bca5519690cd" prot="public" virt="non-virtual"><scope>MS</scope><name>Rotate</name></member>
+      <member refid="classMS_1a52109795de960e24663b315e9128533f" prot="public" virt="non-virtual"><scope>MS</scope><name>Scale</name></member>
+      <member refid="classMS_1a7b0ae1b56e92cd627707c18a637d68f2" prot="public" virt="non-virtual"><scope>MS</scope><name>Scale</name></member>
+      <member refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" prot="public" virt="non-virtual"><scope>MS</scope><name>Top</name></member>
+      <member refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" prot="public" virt="non-virtual"><scope>MS</scope><name>Translate</name></member>
+      <member refid="classMS_1a832bd93b3156899bc1980ae954a79232" prot="public" virt="non-virtual"><scope>MS</scope><name>Translate</name></member>
+      <member refid="classMS_1ac7ec3f1bdabca61e69d3068ee9ba0995" prot="public" virt="non-virtual"><scope>MS</scope><name>~MS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

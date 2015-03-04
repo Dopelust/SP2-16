@@ -1,0 +1,7 @@
+<map id="Player::Control" name="Player::Control">
+<area shape="rect" id="node2" href="$classInventory.html#a6eef2cbeaeb10c437e2ead8e2b7bb4de" title="Inventory::canUse" alt="" coords="198,5,323,32"/>
+<area shape="rect" id="node3" href="$classApplication.html#a72cc9bba26506a7c0f54c346dfbd5cfe" title="Application::IsKeyPressed" alt="" coords="173,56,348,83"/>
+<area shape="rect" id="node4" href="$classApplication.html#a1bfd134bb982a2e1a07d359c46d71483" title="Application::mouseButton" alt="" coords="175,107,346,133"/>
+<area shape="rect" id="node5" href="$structVector3.html#ab3b1af4c82ca09bf8ce997c205e3cb10" title="Vector3::SphericalToCartesian" alt="" coords="161,157,360,184"/>
+<area shape="rect" id="node6" href="$namespaceMath.html#ac04b987cc6c574a059e68cb58f58c09a" title="Converts from degrees to radians. " alt="" coords="408,157,563,184"/>
+</map>

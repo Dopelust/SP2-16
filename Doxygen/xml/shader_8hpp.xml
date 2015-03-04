@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="shader_8hpp" kind="file">
+    <compoundname>shader.hpp</compoundname>
+    <includedby refid="MENUScene_8cpp" local="yes">MyGraphics/Source/MENUScene.cpp</includedby>
+    <includedby refid="PROJECTScene_8cpp" local="yes">MyGraphics/Source/PROJECTScene.cpp</includedby>
+    <includedby refid="shader_8cpp" local="yes">MyGraphics/Source/shader.cpp</includedby>
+    <invincdepgraph>
+      <node id="3761">
+        <label>MyGraphics/Source/PROJECTScene.cpp</label>
+        <link refid="PROJECTScene_8cpp"/>
+      </node>
+      <node id="3760">
+        <label>MyGraphics/Source/MENUScene.cpp</label>
+        <link refid="MENUScene_8cpp"/>
+      </node>
+      <node id="3759">
+        <label>MyGraphics/Source/shader.hpp</label>
+        <link refid="shader.hpp"/>
+        <childnode refid="3760" relation="include">
+        </childnode>
+        <childnode refid="3761" relation="include">
+        </childnode>
+        <childnode refid="3762" relation="include">
+        </childnode>
+      </node>
+      <node id="3762">
+        <label>MyGraphics/Source/shader.cpp</label>
+        <link refid="shader_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="shader_8hpp_1a833f10cca6a76fe34ae9efa23ac5e73c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>GLuint</type>
+        <definition>GLuint LoadShaders</definition>
+        <argsstring>(const char *vertex_file_path, const char *fragment_file_path)</argsstring>
+        <name>LoadShaders</name>
+        <param>
+          <type>const char *</type>
+          <declname>vertex_file_path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>fragment_file_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/shader.hpp" line="4" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/shader.cpp" bodystart="16" bodyend="107"/>
+        <referencedby refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="22" endline="93">MENUScene::InitJunk</referencedby>
+        <referencedby refid="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" compoundref="PROJECTScene_8cpp" startline="22" endline="93">PROJECTScene::InitJunk</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SHADER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHADER_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">GLuint<sp/><ref refid="shader_8hpp_1a833f10cca6a76fe34ae9efa23ac5e73c" kindref="member">LoadShaders</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>vertex_file_path,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>fragment_file_path);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/shader.hpp"/>
+  </compounddef>
+</doxygen>

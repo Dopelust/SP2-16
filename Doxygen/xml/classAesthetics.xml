@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classAesthetics" kind="class" prot="public">
+    <compoundname>Aesthetics</compoundname>
+    <includes refid="PROJECTScene_8h" local="no">PROJECTScene.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAesthetics_1a503d2ecfb95c3336f6d99ccf31c9af21" prot="private" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Aesthetics::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="59" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAesthetics_1a2752f47fc675ccfcc19895c97d02f98a" prot="private" static="no" mutable="no">
+        <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+        <definition>Mesh* Aesthetics::mesh</definition>
+        <argsstring></argsstring>
+        <name>mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="60" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAesthetics_1a0eb640ce6f39564ff6768ff22ad6c03e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Aesthetics::orientation</definition>
+        <argsstring></argsstring>
+        <name>orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="61" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classAesthetics_1a9edeeb818cca3bd83692de825feeabf7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Aesthetics::Aesthetics</definition>
+        <argsstring>()</argsstring>
+        <name>Aesthetics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="56" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classAesthetics_1af43d476334b9b05621c00d521236e2a5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Aesthetics::~Aesthetics</definition>
+        <argsstring>()</argsstring>
+        <name>~Aesthetics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="57" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="814">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="810" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="812">
+        <label>Mesh</label>
+        <link refid="classMesh"/>
+        <childnode refid="813" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+        <childnode refid="815" relation="usage">
+          <edgelabel>mode</edgelabel>
+        </childnode>
+        <childnode refid="816" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="817" relation="usage">
+          <edgelabel>textureID</edgelabel>
+          <edgelabel>indexBuffer</edgelabel>
+          <edgelabel>indexSize</edgelabel>
+          <edgelabel>vertexBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="815">
+        <label>DRAW_MODE</label>
+      </node>
+      <node id="816">
+        <label>string</label>
+      </node>
+      <node id="813">
+        <label>Material</label>
+        <link refid="structMaterial"/>
+        <childnode refid="810" relation="usage">
+          <edgelabel>kShininess</edgelabel>
+        </childnode>
+        <childnode refid="814" relation="usage">
+          <edgelabel>kDiffuse</edgelabel>
+          <edgelabel>kAmbient</edgelabel>
+          <edgelabel>kSpecular</edgelabel>
+        </childnode>
+      </node>
+      <node id="810">
+        <label>float</label>
+      </node>
+      <node id="817">
+        <label>unsigned</label>
+      </node>
+      <node id="809">
+        <label>Aesthetics</label>
+        <link refid="classAesthetics"/>
+        <childnode refid="810" relation="usage">
+          <edgelabel>orientation</edgelabel>
+        </childnode>
+        <childnode refid="811" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="812" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="811">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="810" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="55" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="54" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classAesthetics_1a9edeeb818cca3bd83692de825feeabf7" prot="private" virt="non-virtual"><scope>Aesthetics</scope><name>Aesthetics</name></member>
+      <member refid="classAesthetics_1a2752f47fc675ccfcc19895c97d02f98a" prot="private" virt="non-virtual"><scope>Aesthetics</scope><name>mesh</name></member>
+      <member refid="classAesthetics_1a0eb640ce6f39564ff6768ff22ad6c03e" prot="private" virt="non-virtual"><scope>Aesthetics</scope><name>orientation</name></member>
+      <member refid="classAesthetics_1a503d2ecfb95c3336f6d99ccf31c9af21" prot="private" virt="non-virtual"><scope>Aesthetics</scope><name>position</name></member>
+      <member refid="classAesthetics_1af43d476334b9b05621c00d521236e2a5" prot="private" virt="non-virtual"><scope>Aesthetics</scope><name>~Aesthetics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

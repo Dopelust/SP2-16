@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="namespaceMath" kind="namespace">
+    <compoundname>Math</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceMath_1a5ee876d5cb049f0b3b71f3c54ed8efa0" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float Math::EPSILON</definition>
+        <argsstring></argsstring>
+        <name>EPSILON</name>
+        <initializer>=	0.00001f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="27" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classMtx44_1aac1ba21ddfc5f3c24baa4f58d9c5c256" compoundref="Mtx44_8cpp" startline="139" endline="195">Mtx44::GetInverse</referencedby>
+        <referencedby refid="structVector3_1abdc9a7f223e3628ed1cbccd107d49c44" compoundref="Vector3_8cpp" startline="13" endline="16">Vector3::IsEqual</referencedby>
+        <referencedby refid="structVector3_1aaef4f25a38878a640ab4a48002a7eff8" compoundref="Vector3_8cpp" startline="382" endline="391">Vector3::Normalize</referencedby>
+        <referencedby refid="structVector3_1a2da0f00c5529bced69763320dac9c414" compoundref="Vector3_8cpp" startline="361" endline="367">Vector3::Normalized</referencedby>
+        <referencedby refid="classMtx44_1ac0587ffb5ff9fd58ad5768d28fc06574" compoundref="Mtx44_8cpp" startline="319" endline="341">Mtx44::SetToRotation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceMath_1af8c064b6b688407b9999ee677efd715d" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float Math::PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <initializer>= 3.1415926535897932384626433832795f</initializer>
+        <briefdescription>
+<para>Used for error checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="28" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="namespaceMath_1a1a1d364c850f9d66fda85cf71598bbe5" compoundref="MyMath_8h" startline="69" endline="72">RadianToDegree</referencedby>
+        <referencedby refid="classMtx44_1ac6e6521111d78ff36d539bf111a902c6" compoundref="Mtx44_8cpp" startline="466" endline="472">Mtx44::SetToPerspective</referencedby>
+        <referencedby refid="classMtx44_1ac0587ffb5ff9fd58ad5768d28fc06574" compoundref="Mtx44_8cpp" startline="319" endline="341">Mtx44::SetToRotation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceMath_1a52cf11c3d21a83ced7f3e73d73b438bf" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float Math::TWO_PI</definition>
+        <argsstring></argsstring>
+        <name>TWO_PI</name>
+        <initializer>= <ref refid="namespaceMath_1af8c064b6b688407b9999ee677efd715d" kindref="member">PI</ref> * 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="29" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceMath_1a6475d0f7b5d131ca9bacd916606bf295" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float Math::HALF_PI</definition>
+        <argsstring></argsstring>
+        <name>HALF_PI</name>
+        <initializer>= <ref refid="namespaceMath_1af8c064b6b688407b9999ee677efd715d" kindref="member">PI</ref> / 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="30" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceMath_1aceaa8f6fecb9720eb0e13330bf45d710" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float Math::QUARTER_PI</definition>
+        <argsstring></argsstring>
+        <name>QUARTER_PI</name>
+        <initializer>= <ref refid="namespaceMath_1af8c064b6b688407b9999ee677efd715d" kindref="member">PI</ref> / 4.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="31" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceMath_1ac91173ab2efdf7313fe7aaeb6cb44cf6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Math::FAbs</definition>
+        <argsstring>(float value)</argsstring>
+        <name>FAbs</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="33" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="33" bodyend="36"/>
+        <referencedby refid="classMtx44_1aac1ba21ddfc5f3c24baa4f58d9c5c256" compoundref="Mtx44_8cpp" startline="139" endline="195">Mtx44::GetInverse</referencedby>
+        <referencedby refid="classMtx44_1ac0587ffb5ff9fd58ad5768d28fc06574" compoundref="Mtx44_8cpp" startline="319" endline="341">Mtx44::SetToRotation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1ac04b987cc6c574a059e68cb58f58c09a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Math::DegreeToRadian</definition>
+        <argsstring>(float value)</argsstring>
+        <name>DegreeToRadian</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Converts from degrees to radians. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an angle in degress</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the angle in radians </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="49" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="49" bodyend="52"/>
+        <referencedby refid="MeshBuilder_8cpp_1af69cd953e182610b7858d10e44de8095" compoundref="MeshBuilder_8cpp" startline="584" endline="587">cylinderX</referencedby>
+        <referencedby refid="MeshBuilder_8cpp_1ad4c5cfc88779344e551288f07a734b99" compoundref="MeshBuilder_8cpp" startline="589" endline="592">cylinderZ</referencedby>
+        <referencedby refid="classMeshBuilder_1a27562f4f20e5e089cc5680c1d20f36ab" compoundref="MeshBuilder_8cpp" startline="739" endline="806">MeshBuilder::GenerateCone</referencedby>
+        <referencedby refid="classMeshBuilder_1af27e0bbaa8cfa853111d443a4ba37d5c" compoundref="MeshBuilder_8cpp" startline="672" endline="737">MeshBuilder::GenerateHemi</referencedby>
+        <referencedby refid="classMeshBuilder_1aa0fd7de9ef15dbc113a3f84b859ebe95" compoundref="MeshBuilder_8cpp" startline="1067" endline="1121">MeshBuilder::GenerateTorus</referencedby>
+        <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light::Light</referencedby>
+        <referencedby refid="MeshBuilder_8cpp_1a42b85724173510abff8489cfe7806c3f" compoundref="MeshBuilder_8cpp" startline="569" endline="572">sphereX</referencedby>
+        <referencedby refid="MeshBuilder_8cpp_1a2eecb745cd0d786dbb888a9439ff2794" compoundref="MeshBuilder_8cpp" startline="574" endline="577">sphereY</referencedby>
+        <referencedby refid="MeshBuilder_8cpp_1ad611a1f30697cb26b310c16a493d8c4f" compoundref="MeshBuilder_8cpp" startline="579" endline="582">sphereZ</referencedby>
+        <referencedby refid="structVector3_1ab3b1af4c82ca09bf8ce997c205e3cb10" compoundref="Vector3_8cpp" startline="422" endline="429">Vector3::SphericalToCartesian</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1a66ecee51e9dfd1a68d7863d17d60e6ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Math::distBetween</definition>
+        <argsstring>(float x, float y)</argsstring>
+        <name>distBetween</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="54" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="54" bodyend="57"/>
+        <referencedby refid="player_8cpp_1a65c818132a37d07697eca46bebcdb97f" compoundref="player_8cpp" startline="10" endline="74">CollisionResponse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1a1a1d364c850f9d66fda85cf71598bbe5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Math::RadianToDegree</definition>
+        <argsstring>(float value)</argsstring>
+        <name>RadianToDegree</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Converts from radians to degrees. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- an angle in radians</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the angle in degrees </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="69" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="69" bodyend="72"/>
+        <references refid="namespaceMath_1af8c064b6b688407b9999ee677efd715d" compoundref="MyMath_8h" startline="28">PI</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1a6cc12fd546c2f3dbebade9e4234b5f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Math::Wrap</definition>
+        <argsstring>(T val, T minVal, T maxVal)</argsstring>
+        <name>Wrap</name>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>minVal</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>maxVal</declname>
+        </param>
+        <briefdescription>
+<para>Keeps a value between a min and max point. If it goes to low, it will become the max. If the value gets too high, it will become the min. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the value to Wrap. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the minimum value allowed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the maximum value allowed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The wrapped value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="88" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="88" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1af8dc69787ee8df1ea409e97f53fce3cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Math::Clamp</definition>
+        <argsstring>(T val, T minVal, T maxVal)</argsstring>
+        <name>Clamp</name>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>minVal</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>maxVal</declname>
+        </param>
+        <briefdescription>
+<para>Keeps a value between a min and max point. If it goes to low, it will become the min. If the value gets too high, it will become the max. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the value to clamp. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the minimum value allowed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxVal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the maximum value allowed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The clampped value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="116" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="116" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1af308aea473e7e8e6352e1bd452e11df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Math::Min</definition>
+        <argsstring>(T x, T y)</argsstring>
+        <name>Min</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Returns the smaller of the two values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first value to check </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second value to check</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The smaller of the two values </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="142" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1af25f5d487204a1402974cb46444cfc74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Math::Max</definition>
+        <argsstring>(T x, T y)</argsstring>
+        <name>Max</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Returns the larger of the two values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the first value to check </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the second value to check</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The larger of the two values </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="159" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1ae3a0c56b76d652066a652f8285494761" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Math::Square</definition>
+        <argsstring>(T x)</argsstring>
+        <name>Square</name>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Returns the square of a value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The square of the value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="175" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="175" bodyend="178"/>
+        <references refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" compoundref="PROJECTScene_8cpp" startline="1178">x</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1a33d6cf633b5ddf82fff77d1d40140b85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Math::InitRNG</definition>
+        <argsstring>(void)</argsstring>
+        <name>InitRNG</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize Random Number Generator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="189" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1a7ab621ad66eb2f61e2b9cff366fed0e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned Math::RandInt</definition>
+        <argsstring>(void)</argsstring>
+        <name>RandInt</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return a random integer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Random integer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="204" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1a7609565ca241d0f70dfd677a7fdac281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Math::RandIntMinMax</definition>
+        <argsstring>(int min, int max)</argsstring>
+        <name>RandIntMinMax</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Return a random integer between min and max. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- minimum range </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- maximum range</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Random integer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="220" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="220" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1a9b2e7be835afb6d9fe78f6c1efa26998" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Math::RandFloat</definition>
+        <argsstring>(void)</argsstring>
+        <name>RandFloat</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return a random float. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Random float </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="236" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="236" bodyend="239"/>
+        <referencedby refid="namespaceMath_1aa21138cd1585c3dab1e901c4ead9204d" compoundref="MyMath_8h" startline="252" endline="256">RandFloatMinMax</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceMath_1aa21138cd1585c3dab1e901c4ead9204d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Math::RandFloatMinMax</definition>
+        <argsstring>(float min, float max)</argsstring>
+        <name>RandFloatMinMax</name>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Return a random float between min and max. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- minimum range </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- maximum range</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Random float </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="252" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="252" bodyend="256"/>
+        <references refid="namespaceMath_1a9b2e7be835afb6d9fe78f6c1efa26998" compoundref="MyMath_8h" startline="236" endline="239">RandFloat</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespaceMath" kindref="compound">Math</ref> namespace. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="25" column="1"/>
+  </compounddef>
+</doxygen>

@@ -50,6 +50,7 @@ public:
 	int rotationDir[NUM_BODYPARTS];
 	float elapsedTime;
 	vector<TextBox> greetings;
+	vector<TextBox> clues;
 	Quest * quest;
 	bool inConversation;
 	virtual bool getCriteria() {return 0;};
@@ -81,6 +82,7 @@ public:
 
 		return NULL;
 	};
+	void InitClues(const char* filename);
 	void InitDialogue(const char* filename);
 	virtual void InitQuest(const char* filename);
 	void Update(double dt, vector<Object*>object, Player* player);
@@ -232,6 +234,7 @@ public:
 		orientation = -90;
 		Init();	
 		InitDialogue("Filestream//customer.txt");
+		//InitClues("Filestream//Quests//Hints//customer.txt");
 	};
 	Customer(vector<NPCTarget> t, string name, unsigned tID, float d)
 	{
@@ -256,6 +259,7 @@ public:
 			bodyParts[i].identity = identity;
 		}
 		InitDialogue("Filestream//customer.txt");
+		//InitClues("Filestream//Quests//Hints//customer.txt");
 	}
 	~Customer() {};
 

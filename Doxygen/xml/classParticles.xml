@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classParticles" kind="class" prot="public">
+    <compoundname>Particles</compoundname>
+    <includes refid="collision_8h" local="no">collision.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classParticles_1a439a38d2df47b36023850bec5d05f50d" prot="public" static="no" mutable="no">
+        <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+        <definition>Mesh* Particles::mesh</definition>
+        <argsstring></argsstring>
+        <name>mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="161" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="159" bodyend="-1"/>
+        <referencedby refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" compoundref="collision_8h" startline="147" endline="158">Particles</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Particles::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="162" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="162" bodyend="-1"/>
+        <referencedby refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" compoundref="collision_8h" startline="147" endline="158">Particles</referencedby>
+        <referencedby refid="classParticles_1a9c6cee78ad5de19616b1a9ba503ae06d" compoundref="collision_8cpp" startline="64" endline="68">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classParticles_1a386f32a61814b4213fa07b914c4b858e" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Particles::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="163" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="163" bodyend="-1"/>
+        <referencedby refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" compoundref="collision_8h" startline="147" endline="158">Particles</referencedby>
+        <referencedby refid="classParticles_1a9c6cee78ad5de19616b1a9ba503ae06d" compoundref="collision_8cpp" startline="64" endline="68">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Particles::elapsedTime</definition>
+        <argsstring></argsstring>
+        <name>elapsedTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="164" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="164" bodyend="-1"/>
+        <referencedby refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" compoundref="collision_8h" startline="147" endline="158">Particles</referencedby>
+        <referencedby refid="classParticles_1a9c6cee78ad5de19616b1a9ba503ae06d" compoundref="collision_8cpp" startline="64" endline="68">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Particles::Particles</definition>
+        <argsstring>(Vector3 pos)</argsstring>
+        <name>Particles</name>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="147" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="147" bodyend="158"/>
+        <references refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" compoundref="collision_8h" startline="163">direction</references>
+        <references refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" compoundref="collision_8h" startline="164">elapsedTime</references>
+        <references refid="classMeshBuilder_1abab6044835556126c51f5e8c9f00f501" compoundref="MeshBuilder_8cpp" startline="484" endline="518">MeshBuilder::GenerateCircle</references>
+        <references refid="classParticles_1a439a38d2df47b36023850bec5d05f50d" compoundref="collision_8h" startline="159">mesh</references>
+        <references refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" compoundref="collision_8h" startline="162">position</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+        <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classParticles_1a06dde9ff5c48d92d9ae273ad9501daa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Particles::~Particles</definition>
+        <argsstring>()</argsstring>
+        <name>~Particles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="159" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="159" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classParticles_1a9c6cee78ad5de19616b1a9ba503ae06d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Particles::Update</definition>
+        <argsstring>(double dt)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="166" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.cpp" bodystart="64" bodyend="68"/>
+        <references refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" compoundref="collision_8h" startline="163">direction</references>
+        <references refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" compoundref="collision_8h" startline="164">elapsedTime</references>
+        <references refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" compoundref="collision_8h" startline="162">position</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1374">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="1370" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="1372">
+        <label>Mesh</label>
+        <link refid="classMesh"/>
+        <childnode refid="1373" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+        <childnode refid="1375" relation="usage">
+          <edgelabel>mode</edgelabel>
+        </childnode>
+        <childnode refid="1376" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="1377" relation="usage">
+          <edgelabel>textureID</edgelabel>
+          <edgelabel>indexBuffer</edgelabel>
+          <edgelabel>indexSize</edgelabel>
+          <edgelabel>vertexBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1375">
+        <label>DRAW_MODE</label>
+      </node>
+      <node id="1376">
+        <label>string</label>
+      </node>
+      <node id="1373">
+        <label>Material</label>
+        <link refid="structMaterial"/>
+        <childnode refid="1370" relation="usage">
+          <edgelabel>kShininess</edgelabel>
+        </childnode>
+        <childnode refid="1374" relation="usage">
+          <edgelabel>kDiffuse</edgelabel>
+          <edgelabel>kAmbient</edgelabel>
+          <edgelabel>kSpecular</edgelabel>
+        </childnode>
+      </node>
+      <node id="1370">
+        <label>float</label>
+      </node>
+      <node id="1369">
+        <label>Particles</label>
+        <link refid="classParticles"/>
+        <childnode refid="1370" relation="usage">
+          <edgelabel>elapsedTime</edgelabel>
+        </childnode>
+        <childnode refid="1371" relation="usage">
+          <edgelabel>position</edgelabel>
+          <edgelabel>direction</edgelabel>
+        </childnode>
+        <childnode refid="1372" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="1377">
+        <label>unsigned</label>
+      </node>
+      <node id="1371">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="1370" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="145" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="144" bodyend="167"/>
+    <listofallmembers>
+      <member refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" prot="public" virt="non-virtual"><scope>Particles</scope><name>direction</name></member>
+      <member refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" prot="public" virt="non-virtual"><scope>Particles</scope><name>elapsedTime</name></member>
+      <member refid="classParticles_1a439a38d2df47b36023850bec5d05f50d" prot="public" virt="non-virtual"><scope>Particles</scope><name>mesh</name></member>
+      <member refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" prot="public" virt="non-virtual"><scope>Particles</scope><name>Particles</name></member>
+      <member refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" prot="public" virt="non-virtual"><scope>Particles</scope><name>position</name></member>
+      <member refid="classParticles_1a9c6cee78ad5de19616b1a9ba503ae06d" prot="public" virt="non-virtual"><scope>Particles</scope><name>Update</name></member>
+      <member refid="classParticles_1a06dde9ff5c48d92d9ae273ad9501daa3" prot="public" virt="non-virtual"><scope>Particles</scope><name>~Particles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

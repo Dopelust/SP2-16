@@ -1,0 +1,7 @@
+<map id="NPC::Goto" name="NPC::Goto">
+<area shape="rect" id="node2" href="$classThug.html#acb36644581f6c78939ad2711b96fc7ba" title="Thug::Control" alt="" coords="153,5,251,32"/>
+<area shape="rect" id="node3" href="$classCashier.html#a4932c14600f942a852991044f7d99fcb" title="Cashier::Control" alt="" coords="145,56,259,83"/>
+<area shape="rect" id="node4" href="$classBlindman.html#a1075050c7a1ad2ccb92e39f107bdc831" title="Blindman::Control" alt="" coords="139,107,265,133"/>
+<area shape="rect" id="node5" href="$classCustomer.html#a21ad635f8e45a5a82d28ce59c11b37d0" title="Customer::Control" alt="" coords="139,157,265,184"/>
+<area shape="rect" id="node6" href="$classS__Guard.html#a757e5c4e30aeae82816f6f93c20858b2" title="S_Guard::Control" alt="" coords="141,208,263,235"/>
+</map>

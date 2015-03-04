@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classNPCTarget" kind="class" prot="public">
+    <compoundname>NPCTarget</compoundname>
+    <includes refid="NPC_8h" local="no">NPC.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classNPCTarget_1a1dab826b2b7e3311c8a337cb11578b0b" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 NPCTarget::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="218" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="216" bodyend="-1"/>
+        <referencedby refid="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" compoundref="NPC_8cpp" startline="482" endline="518">S_Guard::Control</referencedby>
+        <referencedby refid="classNPCTarget_1a0906c9c16f22db16c992ab863fe03faa" compoundref="NPC_8h" startline="215" endline="215">NPCTarget</referencedby>
+        <referencedby refid="classS__Guard_1a9799d85fa2ce1a6991b6ecc00cc43c4f" compoundref="NPC_8h" startline="300" endline="309">S_Guard::S_Guard</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classNPCTarget_1a2f580e69045e8c22f775686c86c3efad" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float NPCTarget::orientation</definition>
+        <argsstring></argsstring>
+        <name>orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="219" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="219" bodyend="-1"/>
+        <referencedby refid="classNPCTarget_1a0906c9c16f22db16c992ab863fe03faa" compoundref="NPC_8h" startline="215" endline="215">NPCTarget</referencedby>
+        <referencedby refid="classS__Guard_1a9799d85fa2ce1a6991b6ecc00cc43c4f" compoundref="NPC_8h" startline="300" endline="309">S_Guard::S_Guard</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNPCTarget_1ae8795b890780bdc2e4bdb01d6c79f6f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NPCTarget::NPCTarget</definition>
+        <argsstring>()</argsstring>
+        <name>NPCTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="214" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="214" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classNPCTarget_1a0906c9c16f22db16c992ab863fe03faa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NPCTarget::NPCTarget</definition>
+        <argsstring>(Vector3 p, float o)</argsstring>
+        <name>NPCTarget</name>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="215" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="215" bodyend="215"/>
+        <references refid="classNPCTarget_1a2f580e69045e8c22f775686c86c3efad" compoundref="NPC_8h" startline="219">orientation</references>
+        <references refid="classNPCTarget_1a1dab826b2b7e3311c8a337cb11578b0b" compoundref="NPC_8h" startline="216">position</references>
+      </memberdef>
+      <memberdef kind="function" id="classNPCTarget_1a990b50ee92d257b9357e2852f7959f8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>NPCTarget::~NPCTarget</definition>
+        <argsstring>()</argsstring>
+        <name>~NPCTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="216" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="216" bodyend="216"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1327">
+        <label>float</label>
+      </node>
+      <node id="1326">
+        <label>NPCTarget</label>
+        <link refid="classNPCTarget"/>
+        <childnode refid="1327" relation="usage">
+          <edgelabel>orientation</edgelabel>
+        </childnode>
+        <childnode refid="1328" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+      </node>
+      <node id="1328">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="1327" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="212" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="211" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classNPCTarget_1ae8795b890780bdc2e4bdb01d6c79f6f8" prot="public" virt="non-virtual"><scope>NPCTarget</scope><name>NPCTarget</name></member>
+      <member refid="classNPCTarget_1a0906c9c16f22db16c992ab863fe03faa" prot="public" virt="non-virtual"><scope>NPCTarget</scope><name>NPCTarget</name></member>
+      <member refid="classNPCTarget_1a2f580e69045e8c22f775686c86c3efad" prot="public" virt="non-virtual"><scope>NPCTarget</scope><name>orientation</name></member>
+      <member refid="classNPCTarget_1a1dab826b2b7e3311c8a337cb11578b0b" prot="public" virt="non-virtual"><scope>NPCTarget</scope><name>position</name></member>
+      <member refid="classNPCTarget_1a990b50ee92d257b9357e2852f7959f8d" prot="public" virt="non-virtual"><scope>NPCTarget</scope><name>~NPCTarget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classItem" kind="class" prot="public">
+    <compoundname>Item</compoundname>
+    <basecompoundref refid="classObject" prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="collision_8h" local="no">collision.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classItem_1a541992483e11953ad3c2026f3a163864" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Item::paid</definition>
+        <argsstring></argsstring>
+        <name>paid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="98" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="classItem_1afb088e339e1ab8d7cbdf606583b0e53a" compoundref="collision_8h" startline="91" endline="91">Item</referencedby>
+        <referencedby refid="classItem_1a82ff126c35c7513cdca4cb91f2ba00db" compoundref="collision_8h" startline="96" endline="96">setPaid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Item::price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="100" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="classItem_1a893141a75506836c77f4b88da24892f0" compoundref="collision_8h" startline="102" endline="102">getValue</referencedby>
+        <referencedby refid="classItem_1ac8567583f60adbddabdaae556b901aca" compoundref="collision_8h" startline="92" endline="92">Item</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classItem_1a173318c7256c0bb9510563e4a42dc3b2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Item::restore</definition>
+        <argsstring></argsstring>
+        <name>restore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="101" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classItem_1a887d35ef6bee698d6d5408c6c38834b4" compoundref="collision_8h" startline="103" endline="103">getHealth</referencedby>
+        <referencedby refid="classItem_1ac8567583f60adbddabdaae556b901aca" compoundref="collision_8h" startline="92" endline="92">Item</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classItem_1a297720c02984eab37332ae795d22189d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Item::Item</definition>
+        <argsstring>()</argsstring>
+        <name>Item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="90" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="90" bodyend="90"/>
+        <references refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" compoundref="collision_8h" startline="42">Object::ignoreCollision</references>
+      </memberdef>
+      <memberdef kind="function" id="classItem_1afb088e339e1ab8d7cbdf606583b0e53a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Item::Item</definition>
+        <argsstring>(Vector3 p, Vector3 c, Vector3 h, Mesh *m, Mesh *b, float s, float o, bool i)</argsstring>
+        <name>Item</name>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="91" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="91" bodyend="91"/>
+        <references refid="classItem_1a541992483e11953ad3c2026f3a163864" compoundref="collision_8h" startline="97">paid</references>
+        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="34">Object::type</references>
+      </memberdef>
+      <memberdef kind="function" id="classItem_1ac8567583f60adbddabdaae556b901aca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Item::Item</definition>
+        <argsstring>(Vector3 p, Vector3 c, Vector3 h, Mesh *m, Mesh *b, float s, float o, bool i, float P, float R)</argsstring>
+        <name>Item</name>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="92" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="92" bodyend="92"/>
+        <references refid="classItem_1a541992483e11953ad3c2026f3a163864" compoundref="collision_8h" startline="97">paid</references>
+        <references refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" compoundref="collision_8h" startline="100">price</references>
+        <references refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" compoundref="collision_8h" startline="101">restore</references>
+        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="34">Object::type</references>
+      </memberdef>
+      <memberdef kind="function" id="classItem_1a1e4bc4a18402c13baca9ae369232a1c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Item::Item</definition>
+        <argsstring>(Mesh *m, string t, bool p)</argsstring>
+        <name>Item</name>
+        <param>
+          <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="93" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="93" bodyend="93"/>
+        <references refid="structCollision_1a93d586902c737c5045bb518248501e8b" compoundref="collision_8h" startline="22">Collision::boundingBox</references>
+        <references refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" compoundref="collision_8h" startline="38">Object::collision</references>
+        <references refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" compoundref="collision_8h" startline="39">Object::mesh</references>
+        <references refid="classItem_1a541992483e11953ad3c2026f3a163864" compoundref="collision_8h" startline="97">paid</references>
+        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="34">Object::type</references>
+      </memberdef>
+      <memberdef kind="function" id="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Item::~Item</definition>
+        <argsstring>()</argsstring>
+        <name>~Item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="94" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classItem_1a82ff126c35c7513cdca4cb91f2ba00db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Item::setPaid</definition>
+        <argsstring>(bool p)</argsstring>
+        <name>setPaid</name>
+        <reimplements refid="classObject_1a108db6d26b912a01de560fd940f90d71">setPaid</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="96" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="96" bodyend="96"/>
+        <references refid="classItem_1a541992483e11953ad3c2026f3a163864" compoundref="collision_8h" startline="97">paid</references>
+      </memberdef>
+      <memberdef kind="function" id="classItem_1aac27cacc8aaf201040a6030d06b3493d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool Item::getPaid</definition>
+        <argsstring>()</argsstring>
+        <name>getPaid</name>
+        <reimplements refid="classObject_1abd775688f7362fe926da1aea7f88e27c">getPaid</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="97" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classItem_1a893141a75506836c77f4b88da24892f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>float Item::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <reimplements refid="classObject_1a44a83bdec0ad56d911951cfd780a1d85">getValue</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="102" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="102" bodyend="102"/>
+        <references refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" compoundref="collision_8h" startline="100">price</references>
+      </memberdef>
+      <memberdef kind="function" id="classItem_1a887d35ef6bee698d6d5408c6c38834b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float</type>
+        <definition>float Item::getHealth</definition>
+        <argsstring>()</argsstring>
+        <name>getHealth</name>
+        <reimplements refid="classObject_1a651e2aff564de5a4766863b332f14d33">getHealth</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="103" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="103" bodyend="103"/>
+        <references refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" compoundref="collision_8h" startline="101">restore</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1167">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="1166">
+        <label>Item</label>
+        <link refid="classItem"/>
+        <childnode refid="1167" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1175">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="1172" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="1173">
+        <label>Mesh</label>
+        <link refid="classMesh"/>
+        <childnode refid="1174" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+        <childnode refid="1176" relation="usage">
+          <edgelabel>mode</edgelabel>
+        </childnode>
+        <childnode refid="1177" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="1178" relation="usage">
+          <edgelabel>textureID</edgelabel>
+          <edgelabel>indexBuffer</edgelabel>
+          <edgelabel>indexSize</edgelabel>
+          <edgelabel>vertexBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1176">
+        <label>DRAW_MODE</label>
+      </node>
+      <node id="1177">
+        <label>string</label>
+      </node>
+      <node id="1174">
+        <label>Material</label>
+        <link refid="structMaterial"/>
+        <childnode refid="1172" relation="usage">
+          <edgelabel>kShininess</edgelabel>
+        </childnode>
+        <childnode refid="1175" relation="usage">
+          <edgelabel>kDiffuse</edgelabel>
+          <edgelabel>kAmbient</edgelabel>
+          <edgelabel>kSpecular</edgelabel>
+        </childnode>
+      </node>
+      <node id="1172">
+        <label>float</label>
+      </node>
+      <node id="1169">
+        <label>Object</label>
+        <link refid="classObject"/>
+        <childnode refid="1170" relation="usage">
+          <edgelabel>collision</edgelabel>
+        </childnode>
+        <childnode refid="1172" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>orientation</edgelabel>
+        </childnode>
+        <childnode refid="1171" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1179" relation="usage">
+          <edgelabel>ignoreCollision</edgelabel>
+        </childnode>
+        <childnode refid="1177" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="1173" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="1168">
+        <label>Item</label>
+        <link refid="classItem"/>
+        <childnode refid="1169" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1172" relation="usage">
+          <edgelabel>price</edgelabel>
+          <edgelabel>restore</edgelabel>
+        </childnode>
+        <childnode refid="1179" relation="usage">
+          <edgelabel>paid</edgelabel>
+        </childnode>
+      </node>
+      <node id="1170">
+        <label>Collision</label>
+        <link refid="structCollision"/>
+        <childnode refid="1171" relation="usage">
+          <edgelabel>hitbox</edgelabel>
+          <edgelabel>centre</edgelabel>
+        </childnode>
+        <childnode refid="1173" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="1178">
+        <label>unsigned</label>
+      </node>
+      <node id="1179">
+        <label>bool</label>
+      </node>
+      <node id="1171">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="1172" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="88" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="87" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classObject_1ab0f9523e4bdbfa635a079c1cc01f9b8a" prot="public" virt="non-virtual"><scope>Item</scope><name>checkCollision</name></member>
+      <member refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" prot="public" virt="non-virtual"><scope>Item</scope><name>collision</name></member>
+      <member refid="classItem_1a887d35ef6bee698d6d5408c6c38834b4" prot="public" virt="virtual"><scope>Item</scope><name>getHealth</name></member>
+      <member refid="classObject_1a084dbdfbf0fedcea9a67cc3eaa5f9bcf" prot="public" virt="virtual"><scope>Item</scope><name>getIdentity</name></member>
+      <member refid="classItem_1aac27cacc8aaf201040a6030d06b3493d" prot="public" virt="virtual"><scope>Item</scope><name>getPaid</name></member>
+      <member refid="classObject_1a03411698caca81d9ee219b3576fa984f" prot="public" virt="virtual"><scope>Item</scope><name>getStorePos</name></member>
+      <member refid="classItem_1a893141a75506836c77f4b88da24892f0" prot="public" virt="virtual"><scope>Item</scope><name>getValue</name></member>
+      <member refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" prot="public" virt="non-virtual"><scope>Item</scope><name>ignoreCollision</name></member>
+      <member refid="classItem_1a297720c02984eab37332ae795d22189d" prot="public" virt="non-virtual"><scope>Item</scope><name>Item</name></member>
+      <member refid="classItem_1afb088e339e1ab8d7cbdf606583b0e53a" prot="public" virt="non-virtual"><scope>Item</scope><name>Item</name></member>
+      <member refid="classItem_1ac8567583f60adbddabdaae556b901aca" prot="public" virt="non-virtual"><scope>Item</scope><name>Item</name></member>
+      <member refid="classItem_1a1e4bc4a18402c13baca9ae369232a1c7" prot="public" virt="non-virtual"><scope>Item</scope><name>Item</name></member>
+      <member refid="classObject_1a110cdaa911a12009dd5e37418fe3d35a" prot="public" virt="virtual"><scope>Item</scope><name>Knockback</name></member>
+      <member refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" prot="public" virt="non-virtual"><scope>Item</scope><name>mesh</name></member>
+      <member refid="classObject_1a40860402e64d8008fb42329df7097cdb" prot="public" virt="non-virtual"><scope>Item</scope><name>Object</name></member>
+      <member refid="classObject_1ab7afdfb51bccbc4cb09512454ae6c93a" prot="public" virt="non-virtual"><scope>Item</scope><name>Object</name></member>
+      <member refid="classObject_1a9ad82aaeaab22b9776810538e7c6a8f1" prot="public" virt="non-virtual"><scope>Item</scope><name>Object</name></member>
+      <member refid="classObject_1a1ff0e543bef7628740801ae660d91a7e" prot="public" virt="non-virtual"><scope>Item</scope><name>Object</name></member>
+      <member refid="classObject_1aab1e47237b6bf2df563b497426f1a8cc" prot="public" virt="non-virtual"><scope>Item</scope><name>Object</name></member>
+      <member refid="classObject_1aa8a3c32d7bdaf9d06dd9a65749ee0110" prot="public" virt="non-virtual"><scope>Item</scope><name>Object</name></member>
+      <member refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" prot="public" virt="non-virtual"><scope>Item</scope><name>orientation</name></member>
+      <member refid="classItem_1a541992483e11953ad3c2026f3a163864" prot="public" virt="non-virtual"><scope>Item</scope><name>paid</name></member>
+      <member refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" prot="public" virt="non-virtual"><scope>Item</scope><name>position</name></member>
+      <member refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" prot="public" virt="non-virtual"><scope>Item</scope><name>price</name></member>
+      <member refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" prot="public" virt="non-virtual"><scope>Item</scope><name>restore</name></member>
+      <member refid="classItem_1a82ff126c35c7513cdca4cb91f2ba00db" prot="public" virt="virtual"><scope>Item</scope><name>setPaid</name></member>
+      <member refid="classObject_1a943828436a63520b4059b749df5564c3" prot="public" virt="non-virtual"><scope>Item</scope><name>size</name></member>
+      <member refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" prot="public" virt="non-virtual"><scope>Item</scope><name>type</name></member>
+      <member refid="classObject_1a495d3c66ce43e267c5aac0066576dfb2" prot="public" virt="virtual"><scope>Item</scope><name>Update</name></member>
+      <member refid="classObject_1ab7aa5400e08a3c023140d614d1448458" prot="public" virt="virtual"><scope>Item</scope><name>Update</name></member>
+      <member refid="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" prot="public" virt="non-virtual"><scope>Item</scope><name>~Item</name></member>
+      <member refid="classObject_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" virt="non-virtual"><scope>Item</scope><name>~Object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

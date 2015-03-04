@@ -1,0 +1,8 @@
+<map id="MeshBuilder::GenerateCapsule" name="MeshBuilder::GenerateCapsule">
+<area shape="rect" id="node2" href="$structPosition.html#a2919b2441baf7a2f799791d65a1cfc15" title="Position::Set" alt="" coords="256,5,353,32"/>
+<area shape="rect" id="node3" href="$structVector3.html#a9c25d604bd52b162cfcb56302ef032bb" title="Set the elements of this vector. " alt="" coords="257,56,352,83"/>
+<area shape="rect" id="node4" href="$MeshBuilder_8cpp.html#a42b85724173510abff8489cfe7806c3f" title="sphereX" alt="" coords="271,107,339,133"/>
+<area shape="rect" id="node6" href="$MeshBuilder_8cpp.html#a2eecb745cd0d786dbb888a9439ff2794" title="sphereY" alt="" coords="269,157,340,184"/>
+<area shape="rect" id="node7" href="$MeshBuilder_8cpp.html#ad611a1f30697cb26b310c16a493d8c4f" title="sphereZ" alt="" coords="271,208,339,235"/>
+<area shape="rect" id="node5" href="$namespaceMath.html#ac04b987cc6c574a059e68cb58f58c09a" title="Converts from degrees to radians. " alt="" coords="401,157,556,184"/>
+</map>

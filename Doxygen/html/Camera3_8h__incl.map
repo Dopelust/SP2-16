@@ -1,0 +1,12 @@
+<map id="MyGraphics/Source/Camera3.h" name="MyGraphics/Source/Camera3.h">
+<area shape="rect" id="node2" href="$Camera_8h.html" title="Camera.h" alt="" coords="89,80,167,107"/>
+<area shape="rect" id="node10" href="$collision_8h.html" title="collision.h" alt="" coords="228,80,308,107"/>
+<area shape="rect" id="node3" href="$Vector3_8h.html" title="Struct to define a 3D vector. " alt="" coords="183,379,262,405"/>
+<area shape="rect" id="node4" href="$MyMath_8h.html" title="Header file for math helper functions. " alt="" coords="133,453,213,480"/>
+<area shape="rect" id="node11" href="$Mesh_8h.html" title="Mesh.h" alt="" coords="199,229,265,256"/>
+<area shape="rect" id="node14" href="$MeshBuilder_8h.html" title="Class to generate meshes. " alt="" coords="261,155,366,181"/>
+<area shape="rect" id="node18" href="$LoadTGA_8h.html" title="LoadTGA.h" alt="" coords="501,155,587,181"/>
+<area shape="rect" id="node13" href="$Material_8h.html" title="Material.h" alt="" coords="213,304,291,331"/>
+<area shape="rect" id="node15" href="$vertex_8h.html" title="vertex.h" alt="" coords="316,304,383,331"/>
+<area shape="rect" id="node16" href="$LoadOBJ_8h.html" title="LoadOBJ.h" alt="" coords="341,229,427,256"/>
+</map>

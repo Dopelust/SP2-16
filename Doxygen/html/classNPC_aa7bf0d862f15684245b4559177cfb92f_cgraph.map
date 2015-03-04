@@ -1,0 +1,8 @@
+<map id="NPC::Orientate" name="NPC::Orientate">
+<area shape="rect" id="node2" href="$structVector3.html#aa1cdc5357009b47fe585ddd61e263aad" title="Cross product of 2 vectors. " alt="" coords="209,5,318,32"/>
+<area shape="rect" id="node4" href="$structVector3.html#a2da0f00c5529bced69763320dac9c414" title="Return a copy of this vector, normalized. " alt="" coords="193,56,333,83"/>
+<area shape="rect" id="node6" href="$structVector3.html#ab3b1af4c82ca09bf8ce997c205e3cb10" title="Vector3::SphericalToCartesian" alt="" coords="164,107,363,133"/>
+<area shape="rect" id="node3" href="$structVector3.html#afa5e0c801fc2c8a820a54ea99302fe08" title="Vector3 default constructor. " alt="" coords="428,5,548,32"/>
+<area shape="rect" id="node5" href="$structVector3.html#a200024a8442329de9a625ed58ffe7075" title="Return length of vector. " alt="" coords="431,56,545,83"/>
+<area shape="rect" id="node7" href="$namespaceMath.html#ac04b987cc6c574a059e68cb58f58c09a" title="Converts from degrees to radians. " alt="" coords="411,107,565,133"/>
+</map>

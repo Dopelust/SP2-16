@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classSlot" kind="class" prot="public">
+    <compoundname>Slot</compoundname>
+    <includes refid="inventory_8h" local="no">inventory.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSlot_1a810ef7b9daede95614e80499518daf81" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Slot::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="67" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="3" endline="27">Inventory::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSlot_1ab7c0f22db7162e199958129cdf48c950" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classObject" kindref="compound">Object</ref> * &gt;</type>
+        <definition>vector&lt;Object*&gt; Slot::item</definition>
+        <argsstring></argsstring>
+        <name>item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="68" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" compoundref="inventory_8cpp" startline="193" endline="202">Inventory::canUse</referencedby>
+        <referencedby refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" compoundref="inventory_8cpp" startline="107" endline="147">Inventory::Checkout</referencedby>
+        <referencedby refid="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" compoundref="inventory_8cpp" startline="86" endline="105">Inventory::checkPrice</referencedby>
+        <referencedby refid="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" compoundref="inventory_8cpp" startline="170" endline="180">Inventory::Delete</referencedby>
+        <referencedby refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" compoundref="inventory_8h" startline="109" endline="115">Inventory::getHolding</referencedby>
+        <referencedby refid="classInventory_1a8d6d927ace25d6913479748b89bf96a0" compoundref="inventory_8cpp" startline="149" endline="168">Inventory::Insert</referencedby>
+        <referencedby refid="classInventory_1ad55678fdf4c3f5a1038ce7e7eaa243f4" compoundref="inventory_8cpp" startline="182" endline="191">Inventory::Remove</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSlot_1ab524624ead0372ebd8c968657791b345" prot="public" static="no" mutable="no">
+        <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+        <definition>Mesh* Slot::mesh</definition>
+        <argsstring></argsstring>
+        <name>mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="69" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="3" endline="27">Inventory::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="29" endline="84">Inventory::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSlot_1a92a49d49328f84e7f8eb6c709d80b33c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Slot::Slot</definition>
+        <argsstring>()</argsstring>
+        <name>Slot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="64" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classSlot_1a99115e7fec239e2cf7fdc2c27c913fcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Slot::~Slot</definition>
+        <argsstring>()</argsstring>
+        <name>~Slot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="65" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1529">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="1525" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="1527">
+        <label>Mesh</label>
+        <link refid="classMesh"/>
+        <childnode refid="1528" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+        <childnode refid="1530" relation="usage">
+          <edgelabel>mode</edgelabel>
+        </childnode>
+        <childnode refid="1531" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="1532" relation="usage">
+          <edgelabel>textureID</edgelabel>
+          <edgelabel>indexBuffer</edgelabel>
+          <edgelabel>indexSize</edgelabel>
+          <edgelabel>vertexBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1523">
+        <label>Slot</label>
+        <link refid="classSlot"/>
+        <childnode refid="1524" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1526" relation="usage">
+          <edgelabel>item</edgelabel>
+        </childnode>
+        <childnode refid="1527" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="1530">
+        <label>DRAW_MODE</label>
+      </node>
+      <node id="1531">
+        <label>string</label>
+      </node>
+      <node id="1528">
+        <label>Material</label>
+        <link refid="structMaterial"/>
+        <childnode refid="1525" relation="usage">
+          <edgelabel>kShininess</edgelabel>
+        </childnode>
+        <childnode refid="1529" relation="usage">
+          <edgelabel>kDiffuse</edgelabel>
+          <edgelabel>kAmbient</edgelabel>
+          <edgelabel>kSpecular</edgelabel>
+        </childnode>
+      </node>
+      <node id="1525">
+        <label>float</label>
+      </node>
+      <node id="1526">
+        <label>vector&lt; Object * &gt;</label>
+      </node>
+      <node id="1532">
+        <label>unsigned</label>
+      </node>
+      <node id="1524">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="1525" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" line="62" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/inventory.h" bodystart="61" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" prot="public" virt="non-virtual"><scope>Slot</scope><name>item</name></member>
+      <member refid="classSlot_1ab524624ead0372ebd8c968657791b345" prot="public" virt="non-virtual"><scope>Slot</scope><name>mesh</name></member>
+      <member refid="classSlot_1a810ef7b9daede95614e80499518daf81" prot="public" virt="non-virtual"><scope>Slot</scope><name>position</name></member>
+      <member refid="classSlot_1a92a49d49328f84e7f8eb6c709d80b33c" prot="public" virt="non-virtual"><scope>Slot</scope><name>Slot</name></member>
+      <member refid="classSlot_1a99115e7fec239e2cf7fdc2c27c913fcc" prot="public" virt="non-virtual"><scope>Slot</scope><name>~Slot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

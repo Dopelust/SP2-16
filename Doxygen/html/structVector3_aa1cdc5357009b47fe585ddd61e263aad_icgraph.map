@@ -1,0 +1,23 @@
+<map id="Vector3::Cross" name="Vector3::Cross">
+<area shape="rect" id="node2" href="$classCamera3.html#a1cb8d466abcd4d1ad4567846dcca1ce5" title="Camera3::Init" alt="" coords="184,107,283,133"/>
+<area shape="rect" id="node4" href="$classNPC.html#a1dd6753d963d97c35971f223843fa20b" title="NPC::Orientate" alt="" coords="178,259,289,285"/>
+<area shape="rect" id="node15" href="$classMtx44.html#a7c3d2d30d9ed5bfca2ba97d0e570930f" title="Set matrix to be a lookat matrix. " alt="" coords="163,385,304,412"/>
+<area shape="rect" id="node19" href="$classCamera3.html#acc5d4103826cda6d20b80a0d35eacdbe" title="Camera3::Update" alt="" coords="172,537,295,564"/>
+<area shape="rect" id="node3" href="$classSecurity.html#ae7a09d00c186c6587e9fda320a885c28" title="Security::Security" alt="" coords="362,5,489,32"/>
+<area shape="rect" id="node5" href="$classHobo.html#afcf4cdc2748d1a3ace0059ac87631509" title="Hobo::Control" alt="" coords="375,411,476,437"/>
+<area shape="rect" id="node6" href="$classCashier.html#a4932c14600f942a852991044f7d99fcb" title="Cashier::Control" alt="" coords="573,56,687,83"/>
+<area shape="rect" id="node7" href="$classCustomer.html#a21ad635f8e45a5a82d28ce59c11b37d0" title="Customer::Control" alt="" coords="567,107,693,133"/>
+<area shape="rect" id="node8" href="$classDetective.html#a6c4bd2e90dc9cd222cab66e86bee7a49" title="Detective::Control" alt="" coords="363,259,487,285"/>
+<area shape="rect" id="node9" href="$classS__Guard.html#a757e5c4e30aeae82816f6f93c20858b2" title="S_Guard::Control" alt="" coords="569,259,691,285"/>
+<area shape="rect" id="node10" href="$classManager.html#aa23a22bfd454e602d39588a6b6b23224" title="Manager::Control" alt="" coords="365,309,486,336"/>
+<area shape="rect" id="node11" href="$classNPC.html#a6f8d69aac667c616c6e42d49358cf968" title="NPC::Goto" alt="" coords="383,157,468,184"/>
+<area shape="rect" id="node14" href="$classNPC.html#a24721357146b87e473c740fe9f295841" title="NPC::Update" alt="" coords="376,360,475,387"/>
+<area shape="rect" id="node12" href="$classThug.html#acb36644581f6c78939ad2711b96fc7ba" title="Thug::Control" alt="" coords="581,157,679,184"/>
+<area shape="rect" id="node13" href="$classBlindman.html#a1075050c7a1ad2ccb92e39f107bdc831" title="Blindman::Control" alt="" coords="567,208,693,235"/>
+<area shape="rect" id="node16" href="$classMS.html#a2638cd3249260877cc31329978fb6b38" title="Setup lookat matrix and push to matrix stack. " alt="" coords="380,461,471,488"/>
+<area shape="rect" id="node17" href="$classMENUScene.html#a14c0bfb1f360fd99dbc81b66ea2dcc84" title="MENUScene::Render" alt="" coords="557,449,703,476"/>
+<area shape="rect" id="node18" href="$classPROJECTScene.html#a67fe944ad8dbaf81cedfb07cff9b860c" title="PROJECTScene::Render" alt="" coords="547,500,713,527"/>
+<area shape="rect" id="node20" href="$classMENUScene.html#af3d760e446184aaac26ae0af2163ad3a" title="MENUScene::Update" alt="" coords="352,512,499,539"/>
+<area shape="rect" id="node21" href="$classPlayer.html#a522cbf980cc179616292e2b25399c1dc" title="Player::Update" alt="" coords="371,563,479,589"/>
+<area shape="rect" id="node22" href="$classPROJECTScene.html#ab4521f32fd8e1e5901c9896404e09789" title="PROJECTScene::Update" alt="" coords="547,576,713,603"/>
+</map>

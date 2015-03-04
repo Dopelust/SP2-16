@@ -1,0 +1,7 @@
+<map id="Inventory::getHolding" name="Inventory::getHolding">
+<area shape="rect" id="node2" href="$classDonation.html#ab53d6d044ee4d37bad08fa7d65ac82c4" title="Donation::GenerateText" alt="" coords="200,5,359,32"/>
+<area shape="rect" id="node3" href="$classHobo.html#ade0a53cb6febb71853f257200d566d28" title="Hobo::getConversation" alt="" coords="203,56,355,83"/>
+<area shape="rect" id="node4" href="$classPROJECTScene.html#a67fe944ad8dbaf81cedfb07cff9b860c" title="PROJECTScene::Render" alt="" coords="196,107,363,133"/>
+<area shape="rect" id="node5" href="$classPlayer.html#a522cbf980cc179616292e2b25399c1dc" title="Player::Update" alt="" coords="225,157,333,184"/>
+<area shape="rect" id="node6" href="$classPROJECTScene.html#ab4521f32fd8e1e5901c9896404e09789" title="PROJECTScene::Update" alt="" coords="411,183,577,209"/>
+</map>

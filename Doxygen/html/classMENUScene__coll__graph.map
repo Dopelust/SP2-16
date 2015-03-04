@@ -1,0 +1,22 @@
+<map id="MENUScene" name="MENUScene">
+<area shape="rect" id="node2" href="$classScene.html" title="Scene" alt="" coords="1214,1087,1273,1113"/>
+<area shape="rect" id="node21" href="$classPlayer.html" title="Player" alt="" coords="1531,737,1589,764"/>
+<area shape="rect" id="node23" href="$classObject.html" title="Object" alt="" coords="1097,892,1157,919"/>
+<area shape="rect" id="node4" href="$structLight.html" title="Light" alt="" coords="881,236,931,263"/>
+<area shape="rect" id="node7" href="$structVector3.html" title="Defines a 3D vector and its methods. " alt="" coords="638,675,705,701"/>
+<area shape="rect" id="node8" href="$structPosition.html" title="Position" alt="" coords="515,171,584,197"/>
+<area shape="rect" id="node9" href="$structColor.html" title="Color" alt="" coords="206,239,258,265"/>
+<area shape="rect" id="node10" href="$classCamera3.html" title="Camera3" alt="" coords="1332,605,1407,632"/>
+<area shape="rect" id="node16" href="$structMaterial.html" title="Material" alt="" coords="403,1005,471,1032"/>
+<area shape="rect" id="node17" href="$structComponent.html" title="Component" alt="" coords="188,919,276,945"/>
+<area shape="rect" id="node22" href="$classdynamicObject.html" title="dynamicObject" alt="" coords="1315,800,1424,827"/>
+<area shape="rect" id="node26" href="$classWallet.html" title="Wallet" alt="" coords="300,1344,359,1371"/>
+<area shape="rect" id="node11" href="$classCamera.html" title="Camera" alt="" coords="977,645,1043,672"/>
+<area shape="rect" id="node24" href="$structCollision.html" title="Collision" alt="" coords="871,913,941,940"/>
+<area shape="rect" id="node25" href="$classInventory.html" title="Inventory" alt="" coords="1333,1180,1406,1207"/>
+<area shape="rect" id="node27" href="$classSlot.html" title="Slot" alt="" coords="883,1179,929,1205"/>
+<area shape="rect" id="node30" href="$classButton.html" title="Button" alt="" coords="876,507,936,533"/>
+<area shape="rect" id="node13" href="$classMS.html" title="Matrix Stack class. " alt="" coords="1539,439,1581,465"/>
+<area shape="rect" id="node15" href="$classMesh.html" title="To store VBO (vertex &amp; color buffer) and IBO (index buffer) " alt="" coords="644,1185,699,1212"/>
+<area shape="rect" id="node29" href="$classSelector.html" title="Selector" alt="" coords="1091,1241,1162,1268"/>
+</map>

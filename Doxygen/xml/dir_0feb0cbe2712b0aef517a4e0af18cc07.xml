@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="dir_0feb0cbe2712b0aef517a4e0af18cc07" kind="dir">
+    <compoundname>MyGraphics/Source</compoundname>
+    <innerfile refid="Application_8cpp">Application.cpp</innerfile>
+    <innerfile refid="Application_8h">Application.h</innerfile>
+    <innerfile refid="audio_8cpp">audio.cpp</innerfile>
+    <innerfile refid="Camera_8cpp">Camera.cpp</innerfile>
+    <innerfile refid="Camera_8h">Camera.h</innerfile>
+    <innerfile refid="Camera3_8cpp">Camera3.cpp</innerfile>
+    <innerfile refid="Camera3_8h">Camera3.h</innerfile>
+    <innerfile refid="collision_8cpp">collision.cpp</innerfile>
+    <innerfile refid="collision_8h">collision.h</innerfile>
+    <innerfile refid="dialogue_8cpp">dialogue.cpp</innerfile>
+    <innerfile refid="dialogue_8h">dialogue.h</innerfile>
+    <innerfile refid="inventory_8cpp">inventory.cpp</innerfile>
+    <innerfile refid="inventory_8h">inventory.h</innerfile>
+    <innerfile refid="Light_8h">Light.h</innerfile>
+    <innerfile refid="LoadOBJ_8cpp">LoadOBJ.cpp</innerfile>
+    <innerfile refid="LoadOBJ_8h">LoadOBJ.h</innerfile>
+    <innerfile refid="LoadTGA_8cpp">LoadTGA.cpp</innerfile>
+    <innerfile refid="LoadTGA_8h">LoadTGA.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="Material_8h">Material.h</innerfile>
+    <innerfile refid="MENUScene_8cpp">MENUScene.cpp</innerfile>
+    <innerfile refid="MENUScene_8h">MENUScene.h</innerfile>
+    <innerfile refid="Mesh_8cpp">Mesh.cpp</innerfile>
+    <innerfile refid="Mesh_8h">Mesh.h</innerfile>
+    <innerfile refid="MeshBuilder_8cpp">MeshBuilder.cpp</innerfile>
+    <innerfile refid="MeshBuilder_8h">MeshBuilder.h</innerfile>
+    <innerfile refid="NPC_8cpp">NPC.cpp</innerfile>
+    <innerfile refid="NPC_8h">NPC.h</innerfile>
+    <innerfile refid="player_8cpp">player.cpp</innerfile>
+    <innerfile refid="player_8h">player.h</innerfile>
+    <innerfile refid="PROJECTScene_8cpp">PROJECTScene.cpp</innerfile>
+    <innerfile refid="PROJECTScene_8h">PROJECTScene.h</innerfile>
+    <innerfile refid="Scene_8h">Scene.h</innerfile>
+    <innerfile refid="shader_8cpp">shader.cpp</innerfile>
+    <innerfile refid="shader_8hpp">shader.hpp</innerfile>
+    <innerfile refid="Utility_8cpp">Utility.cpp</innerfile>
+    <innerfile refid="Utility_8h">Utility.h</innerfile>
+    <innerfile refid="vertex_8h">vertex.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/"/>
+  </compounddef>
+</doxygen>

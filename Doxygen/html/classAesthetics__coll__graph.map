@@ -1,0 +1,6 @@
+<map id="Aesthetics" name="Aesthetics">
+<area shape="rect" id="node3" href="$structVector3.html" title="Defines a 3D vector and its methods. " alt="" coords="36,183,103,210"/>
+<area shape="rect" id="node5" href="$structMaterial.html" title="Material" alt="" coords="146,243,214,269"/>
+<area shape="rect" id="node6" href="$structComponent.html" title="Component" alt="" coords="220,124,308,151"/>
+<area shape="rect" id="node4" href="$classMesh.html" title="To store VBO (vertex &amp; color buffer) and IBO (index buffer) " alt="" coords="265,376,319,403"/>
+</map>

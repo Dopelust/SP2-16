@@ -1,0 +1,7 @@
+<map id="Hobo::Control" name="Hobo::Control">
+<area shape="rect" id="node2" href="$classNPC.html#a1dd6753d963d97c35971f223843fa20b" title="NPC::Orientate" alt="" coords="155,31,265,57"/>
+<area shape="rect" id="node3" href="$structVector3.html#ab3b1af4c82ca09bf8ce997c205e3cb10" title="Vector3::SphericalToCartesian" alt="" coords="313,5,512,32"/>
+<area shape="rect" id="node5" href="$structVector3.html#aa1cdc5357009b47fe585ddd61e263aad" title="Cross product of 2 vectors. " alt="" coords="358,56,467,83"/>
+<area shape="rect" id="node4" href="$namespaceMath.html#ac04b987cc6c574a059e68cb58f58c09a" title="Converts from degrees to radians. " alt="" coords="560,5,715,32"/>
+<area shape="rect" id="node6" href="$structVector3.html#afa5e0c801fc2c8a820a54ea99302fe08" title="Vector3 default constructor. " alt="" coords="577,56,697,83"/>
+</map>

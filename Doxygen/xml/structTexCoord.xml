@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="structTexCoord" kind="struct" prot="public">
+    <compoundname>TexCoord</compoundname>
+    <includes refid="vertex_8h" local="no">vertex.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTexCoord_1a3be8371ac57f9ddc6ff5853e4bb58190" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TexCoord::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" line="26" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="LoadOBJ_8h_1aa634e9cac0a72d751731db6b4479cbda" compoundref="LoadOBJ_8cpp" startline="7" endline="121">LoadOBJ</referencedby>
+        <referencedby refid="structTexCoord_1a64b4ceeb1733c478cb4b5b1216146c32" compoundref="vertex_8h" startline="28" endline="28">Set</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structTexCoord_1ad525bc2c53d6402267c51022db33f85e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TexCoord::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" line="26" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="LoadOBJ_8h_1aa634e9cac0a72d751731db6b4479cbda" compoundref="LoadOBJ_8cpp" startline="7" endline="121">LoadOBJ</referencedby>
+        <referencedby refid="structTexCoord_1a64b4ceeb1733c478cb4b5b1216146c32" compoundref="vertex_8h" startline="28" endline="28">Set</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structTexCoord_1adec9b45bb816162fe2f22a677ebfc11c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TexCoord::TexCoord</definition>
+        <argsstring>(float u=0, float v=0)</argsstring>
+        <name>TexCoord</name>
+        <param>
+          <type>float</type>
+          <declname>u</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" line="27" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" bodystart="27" bodyend="27"/>
+        <references refid="structTexCoord_1a64b4ceeb1733c478cb4b5b1216146c32" compoundref="vertex_8h" startline="28" endline="28">Set</references>
+      </memberdef>
+      <memberdef kind="function" id="structTexCoord_1a64b4ceeb1733c478cb4b5b1216146c32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TexCoord::Set</definition>
+        <argsstring>(float u, float v)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>float</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" line="28" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" bodystart="28" bodyend="28"/>
+        <references refid="structTexCoord_1a3be8371ac57f9ddc6ff5853e4bb58190" compoundref="vertex_8h" startline="26">u</references>
+        <references refid="structTexCoord_1ad525bc2c53d6402267c51022db33f85e" compoundref="vertex_8h" startline="26">v</references>
+        <referencedby refid="classMeshBuilder_1a7e35aba5341b1e012cc27598b38ca856" compoundref="MeshBuilder_8cpp" startline="254" endline="361">MeshBuilder::GenerateCube</referencedby>
+        <referencedby refid="classMeshBuilder_1a2df7fd154b373c18089d1e8b9a6f76cc" compoundref="MeshBuilder_8cpp" startline="363" endline="470">MeshBuilder::GenerateCubeOnPlane</referencedby>
+        <referencedby refid="classMeshBuilder_1a2ddad55094b75f084de4cb51e5ec37c4" compoundref="MeshBuilder_8cpp" startline="130" endline="183">MeshBuilder::GenerateQuad</referencedby>
+        <referencedby refid="classMeshBuilder_1aac7c87881dbc08f8d41f2068e0f40c76" compoundref="MeshBuilder_8cpp" startline="1123" endline="1181">MeshBuilder::GenerateText</referencedby>
+        <referencedby refid="classMeshBuilder_1a8e5663b9e284940453900fdf32fa354f" compoundref="MeshBuilder_8cpp" startline="185" endline="238">MeshBuilder::GenerateXYQuad</referencedby>
+        <referencedby refid="LoadOBJ_8h_1aa99ef9426a57205ed8acb8f7d41f3bae" compoundref="LoadOBJ_8cpp" startline="149" endline="189">IndexVBO</referencedby>
+        <referencedby refid="structTexCoord_1adec9b45bb816162fe2f22a677ebfc11c" compoundref="vertex_8h" startline="27" endline="27">TexCoord</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1552">
+        <label>TexCoord</label>
+        <link refid="structTexCoord"/>
+        <childnode refid="1553" relation="usage">
+          <edgelabel>u</edgelabel>
+          <edgelabel>v</edgelabel>
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>float</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" line="25" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/vertex.h" bodystart="24" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structTexCoord_1a64b4ceeb1733c478cb4b5b1216146c32" prot="public" virt="non-virtual"><scope>TexCoord</scope><name>Set</name></member>
+      <member refid="structTexCoord_1adec9b45bb816162fe2f22a677ebfc11c" prot="public" virt="non-virtual"><scope>TexCoord</scope><name>TexCoord</name></member>
+      <member refid="structTexCoord_1a3be8371ac57f9ddc6ff5853e4bb58190" prot="public" virt="non-virtual"><scope>TexCoord</scope><name>u</name></member>
+      <member refid="structTexCoord_1ad525bc2c53d6402267c51022db33f85e" prot="public" virt="non-virtual"><scope>TexCoord</scope><name>v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

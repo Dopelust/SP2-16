@@ -1,0 +1,5 @@
+<map id="Wallet::Update" name="Wallet::Update">
+<area shape="rect" id="node2" href="$classInventory.html#ad1e0335759db12e806b0cd4b16ce0643" title="Inventory::Update" alt="" coords="161,5,284,32"/>
+<area shape="rect" id="node3" href="$classPlayer.html#a522cbf980cc179616292e2b25399c1dc" title="Player::Update" alt="" coords="332,5,440,32"/>
+<area shape="rect" id="node4" href="$classPROJECTScene.html#ab4521f32fd8e1e5901c9896404e09789" title="PROJECTScene::Update" alt="" coords="488,5,655,32"/>
+</map>

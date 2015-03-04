@@ -1,0 +1,20 @@
+<map id="IrrKlang/include/ik_IVirtualRefCounted.h" name="IrrKlang/include/ik_IVirtualRefCounted.h">
+<area shape="rect" id="node2" href="$ik__ISoundSource_8h.html" title="IrrKlang/include/ik\l_ISoundSource.h" alt="" coords="621,184,746,225"/>
+<area shape="rect" id="node4" href="$irrKlang_8h.html" title="Main header file of the irrKlang sound library, the only file needed to include. " alt="" coords="673,363,843,389"/>
+<area shape="rect" id="node18" href="$ik__ISound_8h.html" title="IrrKlang/include/ik\l_ISound.h" alt="" coords="779,184,905,225"/>
+<area shape="rect" id="node19" href="$ik__ISoundEffectControl_8h.html" title="IrrKlang/include/ik\l_ISoundEffectControl.h" alt="" coords="771,95,926,136"/>
+<area shape="rect" id="node3" href="$ik__IAudioRecorder_8h.html" title="IrrKlang/include/ik\l_IAudioRecorder.h" alt="" coords="619,273,747,315"/>
+<area shape="rect" id="node17" href="$ik__ISoundEngine_8h.html" title="IrrKlang/include/ik\l_ISoundEngine.h" alt="" coords="771,273,897,315"/>
+<area shape="rect" id="node5" href="$player_8h.html" title="MyGraphics/Source/player.h" alt="" coords="665,437,851,464"/>
+<area shape="rect" id="node6" href="$PROJECTScene_8h.html" title="MyGraphics/Source/PROJECTScene.h" alt="" coords="278,587,526,613"/>
+<area shape="rect" id="node12" href="$MENUScene_8h.html" title="MyGraphics/Source/MENUScene.h" alt="" coords="1007,587,1234,613"/>
+<area shape="rect" id="node11" href="$NPC_8h.html" title="MyGraphics/Source/NPC.h" alt="" coords="777,512,955,539"/>
+<area shape="rect" id="node16" href="$player_8cpp.html" title="MyGraphics/Source/player.cpp" alt="" coords="551,512,752,539"/>
+<area shape="rect" id="node7" href="$Application_8cpp.html" title="MyGraphics/Source/Application.cpp" alt="" coords="757,661,988,688"/>
+<area shape="rect" id="node8" href="$audio_8cpp.html" title="MyGraphics/Source/audio.cpp" alt="" coords="535,661,733,688"/>
+<area shape="rect" id="node9" href="$Camera3_8cpp.html" title="MyGraphics/Source/Camera3.cpp" alt="" coords="293,661,511,688"/>
+<area shape="rect" id="node10" href="$PROJECTScene_8cpp.html" title="MyGraphics/Source/PROJECTScene.cpp" alt="" coords="5,661,268,688"/>
+<area shape="rect" id="node14" href="$dialogue_8cpp.html" title="MyGraphics/Source/dialogue.cpp" alt="" coords="768,587,983,613"/>
+<area shape="rect" id="node15" href="$NPC_8cpp.html" title="MyGraphics/Source/NPC.cpp" alt="" coords="551,587,744,613"/>
+<area shape="rect" id="node13" href="$MENUScene_8cpp.html" title="MyGraphics/Source/MENUScene.cpp" alt="" coords="1012,661,1253,688"/>
+</map>

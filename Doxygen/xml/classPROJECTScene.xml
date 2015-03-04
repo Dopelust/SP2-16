@@ -1,0 +1,2304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classPROJECTScene" kind="class" prot="public">
+    <compoundname>PROJECTScene</compoundname>
+    <basecompoundref refid="classScene" prot="public" virt="non-virtual">Scene</basecompoundref>
+    <includes refid="PROJECTScene_8h" local="no">PROJECTScene.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80ac" prot="private" static="no">
+        <name>GEOMETRY_TYPE</name>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca91af7832b6ffd7b107b9fb58839fd4d0" prot="private">
+          <name>GEO_AXES</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca40f3489cbfffe73d88a84f2cea0b70fa" prot="private">
+          <name>GEO_LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9448bdaeaf4661b4c2cd053b70484792" prot="private">
+          <name>GEO_RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca478812e0927f753be9bb0f9658ca4c0c" prot="private">
+          <name>GEO_TOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa014f07655acd1da8950bdecc0566770" prot="private">
+          <name>GEO_BOTTOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa6e0d3136d867757d902fbe40465b42a" prot="private">
+          <name>GEO_FRONT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9e10e954addde6b2aae06110b86ea634" prot="private">
+          <name>GEO_BACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca3e2b5b70656bf521e8b658b628d04e4d" prot="private">
+          <name>GEO_LIGHTBALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa7b0aaf5251eded81601ea088bd8e240" prot="private">
+          <name>GEO_QUAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca02c4b786f0a356568ab7d54f6dbcacda" prot="private">
+          <name>GEO_KNIFE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca0ccbbd5b23e2c81fdab9a59b2f37220c" prot="private">
+          <name>GEO_HEART</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca6fb3fdf8cbcda6b30b4479c2b6071576" prot="private">
+          <name>GEO_SPRINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabb555dcec9f3f7c4250431f9c7ea9dc9" prot="private">
+          <name>GEO_JUMP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acadad7eb7e21a96e81688e0eb7f7e48385" prot="private">
+          <name>GEO_TEXT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9f202500e728f158365dbc13c208122d" prot="private">
+          <name>GEO_LINE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca21cf44a1ead8b06c6d04ff01e87fbe71" prot="private">
+          <name>GEO_CUBE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca950916a95c8ef9b35d40ca0e6c8beef2" prot="private">
+          <name>GEO_BIGCUBE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabcf75f4cd43f75ef2429209e338a28bd" prot="private">
+          <name>GEO_HOLD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaad2b82ef4862096a7a836ce575339ab5" prot="private">
+          <name>GEO_CCTV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaff6b96d77b72cba2597f07fb0fe8148e" prot="private">
+          <name>GEO_CCTV_CORNER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca45da439763c6adc241d60ec4ae5e69fd" prot="private">
+          <name>GEO_TEXTBOX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca075e65c4b7d90e191d4c5ca1a25eb287" prot="private">
+          <name>NUM_GEOMETRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="67" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="66" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="classPROJECTScene_1aff704f91c1245453c5656acf587997ba" prot="private" static="no">
+        <name>UNIFORM_TYPE</name>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baabf3538a17acd6e6f23c5fdb9c8fe3dbf" prot="private">
+          <name>U_MVP</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa2ee781edbf9f060af691c80e7344154b" prot="private">
+          <name>U_MODELVIEW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa40594efa84a4475144d2ba4eeb72fd05" prot="private">
+          <name>U_MODELVIEW_INVERSE_TRANSPOSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baab3a889cc289a9fb91cff8f991ce24367" prot="private">
+          <name>U_MATERIAL_AMBIENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa0c55b1002c6d74237249672e3e0b9404" prot="private">
+          <name>U_MATERIAL_DIFFUSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7b77061e10ba0a991305bb52aaf3f7f2" prot="private">
+          <name>U_MATERIAL_SPECULAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baad2163115352cdd13b059b859761f2081" prot="private">
+          <name>U_MATERIAL_SHININESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baae4daefee557cac1c4f73b95346602d01" prot="private">
+          <name>U_LIGHTENABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa30c02ae49fe81adfbaaf241c58cde568" prot="private">
+          <name>U_LIGHT0_POSITION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa62b03d9b75b33588761e2b90c975eca5" prot="private">
+          <name>U_LIGHT0_COLOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baac61359b5f34a447212e1a58819d0edef" prot="private">
+          <name>U_LIGHT0_POWER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa462a03e7d62fe1cd3c7a57e608554681" prot="private">
+          <name>U_LIGHT0_KC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa70b3f3cf9a28b13f53239526ee77b7ba" prot="private">
+          <name>U_LIGHT0_KL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3ee40eec18349ee1b4e34b3601399de6" prot="private">
+          <name>U_LIGHT0_KQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa84e781530f40259eca1f1bba1a2d9566" prot="private">
+          <name>U_LIGHT0_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7ee7c3b69bf150069a4d316a1d6b32e0" prot="private">
+          <name>U_LIGHT0_SPOTDIRECTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa515e38b4edd123686619be04d98c7d09" prot="private">
+          <name>U_LIGHT0_COSCUTOFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa4bee939de2f63706e8bf261178faefea" prot="private">
+          <name>U_LIGHT0_COSINNER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baaae7fd7411043dbffa5544ade186b8cba" prot="private">
+          <name>U_LIGHT0_EXPONENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa9171037d977e9436f4b27f62acf919ba" prot="private">
+          <name>U_LIGHT1_POSITION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa6e6aef185ca3f7399ed33326d1fda945" prot="private">
+          <name>U_LIGHT1_COLOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa8ad1f459814c08ab3e17db8f882961f0" prot="private">
+          <name>U_LIGHT1_POWER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baacc1cec7d9385a1189c6d6e5a3bdc7cc8" prot="private">
+          <name>U_LIGHT1_KC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baaa41c06102ddf294be480bcf80c9fe99c" prot="private">
+          <name>U_LIGHT1_KL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa64d9a98ef1986240e4797e2ec6309dcf" prot="private">
+          <name>U_LIGHT1_KQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baac58b3fa092c640f0c4d25d1450547286" prot="private">
+          <name>U_LIGHT1_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3b383bb84659c288576dd49a55011308" prot="private">
+          <name>U_LIGHT1_SPOTDIRECTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baae0d68691cea2f615c2ff5eab45ebfdf5" prot="private">
+          <name>U_LIGHT1_COSCUTOFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa80f38c53f4c1977a13e600cbef4464ba" prot="private">
+          <name>U_LIGHT1_COSINNER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baae40fd94c72f835a2005f688dd620bf85" prot="private">
+          <name>U_LIGHT1_EXPONENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baaee183127e7b2bc7b77192835067b8a4f" prot="private">
+          <name>U_LIGHT2_POSITION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baac10b156aab228b80d9cc24843b5bb0b2" prot="private">
+          <name>U_LIGHT2_COLOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3aefb105deae1f368ee1f324f35affac" prot="private">
+          <name>U_LIGHT2_POWER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa30b80f65647bb9a53b3013d27e90124d" prot="private">
+          <name>U_LIGHT2_KC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baad6c1f46a267f405911efde7048c7b00d" prot="private">
+          <name>U_LIGHT2_KL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa54199152d7f363bb24ec2181e8f34936" prot="private">
+          <name>U_LIGHT2_KQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baaf14dd834efd0122bd6b9b2a82ce00c81" prot="private">
+          <name>U_LIGHT2_TYPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa28b7a181296454f98f913079689de024" prot="private">
+          <name>U_LIGHT2_SPOTDIRECTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baafdf23ec0aea28019f19e0b9a43c9f9c7" prot="private">
+          <name>U_LIGHT2_COSCUTOFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa2c24c1078eb30ad74e2bc406bae651d9" prot="private">
+          <name>U_LIGHT2_COSINNER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baae2b69c4399b71d9aafdbbfe8d5363f10" prot="private">
+          <name>U_LIGHT2_EXPONENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baacb41ea1afa3d3c941a6718e3f238bad7" prot="private">
+          <name>U_NUMLIGHTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa76629f2a1a2a9d87fd13f946fe725001" prot="private">
+          <name>U_COLOR_TEXTURE_ENABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa819a3dbc154d47c777e5012bf75768b3" prot="private">
+          <name>U_COLOR_TEXTURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baacc3df16e569f3d9d8e6a63947af9e36b" prot="private">
+          <name>U_TEXT_ENABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa43acf2b36b61d1f1b76813f28cfbb8a6" prot="private">
+          <name>U_TEXT_COLOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classPROJECTScene_1aff704f91c1245453c5656acf587997baa5a27c8aa899cc9094087c27be3931d94" prot="private">
+          <name>U_TOTAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="92" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="91" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classPROJECTScene_1acd8318d6e53a1ee41fd7e689212c3a31" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float PROJECTScene::inputDelay</definition>
+        <argsstring></argsstring>
+        <name>inputDelay</name>
+        <initializer>= 0.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="137" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" compoundref="PROJECTScene_8cpp" startline="2449" endline="2473">dynamicObject::Control</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classPROJECTScene_1ad0f7574ccd32f485aad7a052eed0dd5e" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned PROJECTScene::m_vertexArrayID</definition>
+        <argsstring></argsstring>
+        <name>m_vertexArrayID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="139" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="139" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a2cc825520ffd8d4e62db833bbfb1aeb4" compoundref="PROJECTScene_8cpp" startline="2541" endline="2546">Exit</referencedby>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" prot="private" static="no" mutable="no">
+        <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+        <definition>Mesh* PROJECTScene::meshList[NUM_GEOMETRY]</definition>
+        <argsstring>[NUM_GEOMETRY]</argsstring>
+        <name>meshList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="140" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="140" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" compoundref="PROJECTScene_8cpp" startline="22" endline="93">InitJunk</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">RenderCCTVUI</referencedby>
+        <referencedby refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" compoundref="PROJECTScene_8cpp" startline="2592" endline="2619">RenderCrosshair</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" compoundref="PROJECTScene_8cpp" startline="2548" endline="2591">RenderSkybox</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a33b0f80895bb5c797eda5de165430985" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned PROJECTScene::m_programID</definition>
+        <argsstring></argsstring>
+        <name>m_programID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="141" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="141" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a2cc825520ffd8d4e62db833bbfb1aeb4" compoundref="PROJECTScene_8cpp" startline="2541" endline="2546">Exit</referencedby>
+        <referencedby refid="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" compoundref="PROJECTScene_8cpp" startline="22" endline="93">InitJunk</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1aee8850dd4bc88a38076b993cc479021b" prot="private" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned PROJECTScene::m_parameters[U_TOTAL]</definition>
+        <argsstring>[U_TOTAL]</argsstring>
+        <name>m_parameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="142" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="142" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" compoundref="PROJECTScene_8cpp" startline="22" endline="93">InitJunk</referencedby>
+        <referencedby refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">RenderMesh</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" compoundref="PROJECTScene_8cpp" startline="2345" endline="2430">RenderText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a23b016feb6cbc575852f50219c8d0db9" prot="private" static="no" mutable="no">
+        <type><ref refid="classTextBox" kindref="compound">TextBox</ref> *</type>
+        <definition>TextBox* PROJECTScene::textbox</definition>
+        <argsstring></argsstring>
+        <name>textbox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="144" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a697465f68871bce2261142bbbec1da08" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classOnScreenText" kindref="compound">OnScreenText</ref> * &gt;</type>
+        <definition>vector&lt;OnScreenText*&gt; PROJECTScene::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="145" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="145" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a86879351b07961b099488e0c43b16945" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classOnScreenText" kindref="compound">OnScreenText</ref> * &gt;</type>
+        <definition>vector&lt;OnScreenText*&gt; PROJECTScene::text2D</definition>
+        <argsstring></argsstring>
+        <name>text2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="146" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="146" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1ac75e8c68d8290d5014ceff53f04d007b" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classNPC" kindref="compound">NPC</ref> * &gt;</type>
+        <definition>vector&lt;NPC*&gt; PROJECTScene::character</definition>
+        <argsstring></argsstring>
+        <name>character</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="147" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1aad5e71b6898152054906af5515c3e200" compoundref="PROJECTScene_8cpp" startline="222" endline="517">JeremiahInit</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a936c50286d2e83fddedc13edc79328a1" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classObject" kindref="compound">Object</ref> * &gt;</type>
+        <definition>vector&lt;Object*&gt; PROJECTScene::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="148" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1ab8d23e211bd73adde59f273a1423207d" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classParticles" kindref="compound">Particles</ref> * &gt;</type>
+        <definition>vector&lt;Particles*&gt; PROJECTScene::blood</definition>
+        <argsstring></argsstring>
+        <name>blood</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="149" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="149" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1adbc3a2d9a1bd8bb87be36063b3345095" prot="private" static="no" mutable="no">
+        <type><ref refid="classDoorway" kindref="compound">Doorway</ref></type>
+        <definition>Doorway PROJECTScene::doorway</definition>
+        <argsstring></argsstring>
+        <name>doorway</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="151" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="151" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="967" endline="1087">DarrenInit</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1abd2c67d8b0ae29a412d16dec56ec2fab" prot="private" static="no" mutable="no">
+        <type><ref refid="classDoorway" kindref="compound">Doorway</ref></type>
+        <definition>Doorway PROJECTScene::doorway2</definition>
+        <argsstring></argsstring>
+        <name>doorway2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="152" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="152" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="967" endline="1087">DarrenInit</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a5f7e5d41d2005fdb9729b2f734e2988c" prot="private" static="no" mutable="no">
+        <type><ref refid="classDoorway" kindref="compound">Doorway</ref></type>
+        <definition>Doorway PROJECTScene::AutoDoor</definition>
+        <argsstring></argsstring>
+        <name>AutoDoor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="153" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="153" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="967" endline="1087">DarrenInit</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a671487d6bda4a603a330eb13a03e88ac" prot="private" static="no" mutable="no">
+        <type><ref refid="classATM" kindref="compound">ATM</ref></type>
+        <definition>ATM PROJECTScene::Bank</definition>
+        <argsstring></argsstring>
+        <name>Bank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="154" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="967" endline="1087">DarrenInit</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a4fc9422b13c6d64ce1f3b6c64319e7d0" prot="private" static="no" mutable="no">
+        <type><ref refid="classVending" kindref="compound">Vending</ref></type>
+        <definition>Vending PROJECTScene::Machine</definition>
+        <argsstring></argsstring>
+        <name>Machine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="155" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="155" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" compoundref="PROJECTScene_8cpp" startline="518" endline="966">JessicaInit</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a4998a0a13d5279ac651bd9fbe4327aaa" prot="private" static="no" mutable="no">
+        <type><ref refid="classSecurity" kindref="compound">Security</ref></type>
+        <definition>Security PROJECTScene::controlPanel</definition>
+        <argsstring></argsstring>
+        <name>controlPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="156" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="156" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" compoundref="PROJECTScene_8cpp" startline="518" endline="966">JessicaInit</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1adf6149f37a7ba08f88cc89e3e93ef9dc" prot="private" static="no" mutable="no">
+        <type><ref refid="structLight" kindref="compound">Light</ref></type>
+        <definition>Light PROJECTScene::light[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="158" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="158" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1aea295a310a8fcee7da676f9a732e97c6" prot="private" static="no" mutable="no">
+        <type><ref refid="classCamera3" kindref="compound">Camera3</ref> *</type>
+        <definition>Camera3* PROJECTScene::camera</definition>
+        <argsstring></argsstring>
+        <name>camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="166" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="166" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1afbcfd4aee5cd2bc2b35d5813cc71a80f" prot="private" static="no" mutable="no">
+        <type><ref refid="classPlayer" kindref="compound">Player</ref></type>
+        <definition>Player PROJECTScene::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="167" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="167" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab2f2f2e5df135948e5505d9978d46b75" compoundref="PROJECTScene_8cpp" startline="94" endline="221">RicssonInit</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" prot="private" static="no" mutable="no">
+        <type><ref refid="classMS" kindref="compound">MS</ref></type>
+        <definition>MS PROJECTScene::modelStack</definition>
+        <argsstring></argsstring>
+        <name>modelStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="169" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="169" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">RenderCCTVUI</referencedby>
+        <referencedby refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" compoundref="PROJECTScene_8cpp" startline="2592" endline="2619">RenderCrosshair</referencedby>
+        <referencedby refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">RenderMesh</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" compoundref="PROJECTScene_8cpp" startline="2548" endline="2591">RenderSkybox</referencedby>
+        <referencedby refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" compoundref="PROJECTScene_8cpp" startline="2345" endline="2430">RenderText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a2fe9e514caef26154827f06158dadc66" prot="private" static="no" mutable="no">
+        <type><ref refid="classMS" kindref="compound">MS</ref></type>
+        <definition>MS PROJECTScene::viewStack</definition>
+        <argsstring></argsstring>
+        <name>viewStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="169" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="169" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">RenderCCTVUI</referencedby>
+        <referencedby refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">RenderMesh</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" compoundref="PROJECTScene_8cpp" startline="2345" endline="2430">RenderText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classPROJECTScene_1a441532a87975f7805fd45f7d713b60d2" prot="private" static="no" mutable="no">
+        <type><ref refid="classMS" kindref="compound">MS</ref></type>
+        <definition>MS PROJECTScene::projectionStack</definition>
+        <argsstring></argsstring>
+        <name>projectionStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="169" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="169" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">RenderCCTVUI</referencedby>
+        <referencedby refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">RenderMesh</referencedby>
+        <referencedby refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" compoundref="PROJECTScene_8cpp" startline="2345" endline="2430">RenderText</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::RenderSkybox</definition>
+        <argsstring>()</argsstring>
+        <name>RenderSkybox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="115" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="2548" bodyend="2591"/>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9e10e954addde6b2aae06110b86ea634" compoundref="PROJECTScene_8h" startline="74">GEO_BACK</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa014f07655acd1da8950bdecc0566770" compoundref="PROJECTScene_8h" startline="72">GEO_BOTTOM</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa6e0d3136d867757d902fbe40465b42a" compoundref="PROJECTScene_8h" startline="73">GEO_FRONT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca40f3489cbfffe73d88a84f2cea0b70fa" compoundref="PROJECTScene_8h" startline="69">GEO_LEFT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9448bdaeaf4661b4c2cd053b70484792" compoundref="PROJECTScene_8h" startline="70">GEO_RIGHT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca478812e0927f753be9bb0f9658ca4c0c" compoundref="PROJECTScene_8h" startline="71">GEO_TOP</references>
+        <references refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" compoundref="PROJECTScene_8h" startline="140">meshList</references>
+        <references refid="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" compoundref="PROJECTScene_8h" startline="169">modelStack</references>
+        <references refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">MS::PopMatrix</references>
+        <references refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">MS::PushMatrix</references>
+        <references refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">RenderMesh</references>
+        <references refid="classMS_1a6ce592114042b920b648bca5519690cd" compoundref="MatrixStack_8cpp" startline="130" endline="134">MS::Rotate</references>
+        <references refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">MS::Translate</references>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::RenderCrosshair</definition>
+        <argsstring>()</argsstring>
+        <name>RenderCrosshair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="116" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="2592" bodyend="2619"/>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9f202500e728f158365dbc13c208122d" compoundref="PROJECTScene_8h" startline="82">GEO_LINE</references>
+        <references refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" compoundref="PROJECTScene_8h" startline="140">meshList</references>
+        <references refid="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" compoundref="PROJECTScene_8h" startline="169">modelStack</references>
+        <references refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">MS::PopMatrix</references>
+        <references refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">MS::PushMatrix</references>
+        <references refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">RenderMesh</references>
+        <references refid="classMS_1a6ce592114042b920b648bca5519690cd" compoundref="MatrixStack_8cpp" startline="130" endline="134">MS::Rotate</references>
+        <references refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">MS::Translate</references>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1a81babc41abb455739db46854c5cf848b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::InitSuperMarket</definition>
+        <argsstring>()</argsstring>
+        <name>InitSuperMarket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1ab65b60700be67645ec699984ff933671" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::RenderScene</definition>
+        <argsstring>()</argsstring>
+        <name>RenderScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="159" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="1607" bodyend="1815"/>
+        <references refid="classPROJECTScene_1a671487d6bda4a603a330eb13a03e88ac" compoundref="PROJECTScene_8h" startline="154">Bank</references>
+        <references refid="classPROJECTScene_1ab8d23e211bd73adde59f273a1423207d" compoundref="PROJECTScene_8h" startline="149">blood</references>
+        <references refid="structCollision_1a93d586902c737c5045bb518248501e8b" compoundref="collision_8h" startline="22">Collision::boundingBox</references>
+        <references refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" compoundref="player_8h" startline="98">Player::camera</references>
+        <references refid="classPROJECTScene_1aea295a310a8fcee7da676f9a732e97c6" compoundref="PROJECTScene_8h" startline="166">camera</references>
+        <references refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" compoundref="collision_8h" startline="19">Collision::centre</references>
+        <references refid="classPROJECTScene_1ac75e8c68d8290d5014ceff53f04d007b" compoundref="PROJECTScene_8h" startline="147">character</references>
+        <references refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" compoundref="collision_8h" startline="38">Object::collision</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca91af7832b6ffd7b107b9fb58839fd4d0" compoundref="PROJECTScene_8h" startline="68">GEO_AXES</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabcf75f4cd43f75ef2429209e338a28bd" compoundref="PROJECTScene_8h" startline="85">GEO_HOLD</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acadad7eb7e21a96e81688e0eb7f7e48385" compoundref="PROJECTScene_8h" startline="81">GEO_TEXT</references>
+        <references refid="classATM_1a0f22448380cc111be1c3cf52bb26f206" compoundref="inventory_8h" startline="33" endline="33">ATM::getSavings</references>
+        <references refid="classPROJECTScene_1aa07dd9d2f6132b9936be816a7a863fcb" compoundref="PROJECTScene_8cpp" startline="2474" endline="2540">getTextWidth</references>
+        <references refid="classPlayer_1aa1544a1feb4e29c1b57a720751057395" compoundref="player_8h" startline="103">Player::holding</references>
+        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">Application::IsKeyPressed</references>
+        <references refid="classPROJECTScene_1adf6149f37a7ba08f88cc89e3e93ef9dc" compoundref="PROJECTScene_8h" startline="158">light</references>
+        <references refid="structLight_1aa7ed22cab99d811d72896efaee6d07cba9bf1f515ab954cb3379615aab42f30b6" compoundref="Light_8h" startline="31">Light::LIGHT_DIRECTIONAL</references>
+        <references refid="structLight_1aa7ed22cab99d811d72896efaee6d07cba69dd6d65ad12b410709ae74c8d9b1e16" compoundref="Light_8h" startline="32">Light::LIGHT_SPOT</references>
+        <references refid="classCamera3_1a8b792e4458ca2bc4df9f5226ddf7e8ea" compoundref="Camera3_8h" startline="23">Camera3::look</references>
+        <references refid="classCamera3_1ab6a0582c35355b63be1f69dfed21027d" compoundref="Camera3_8h" startline="24">Camera3::lookAt</references>
+        <references refid="classPROJECTScene_1aee8850dd4bc88a38076b993cc479021b" compoundref="PROJECTScene_8h" startline="142">m_parameters</references>
+        <references refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" compoundref="PROJECTScene_8h" startline="140">meshList</references>
+        <references refid="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" compoundref="PROJECTScene_8h" startline="169">modelStack</references>
+        <references refid="classCamera3_1a21148dcf9f21fdd2952e6c21bf87c45d" compoundref="Camera3_8h" startline="22">Camera3::orientation</references>
+        <references refid="classPROJECTScene_1afbcfd4aee5cd2bc2b35d5813cc71a80f" compoundref="PROJECTScene_8h" startline="167">player</references>
+        <references refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">MS::PopMatrix</references>
+        <references refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" compoundref="Camera_8h" startline="9">Camera::position</references>
+        <references refid="structLight_1afeb738db41e987719e359166ef93314f" compoundref="Light_8h" startline="21">Light::position</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
+        <references refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">MS::PushMatrix</references>
+        <references refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">RenderMesh</references>
+        <references refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" compoundref="PROJECTScene_8cpp" startline="2548" endline="2591">RenderSkybox</references>
+        <references refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" compoundref="PROJECTScene_8cpp" startline="2345" endline="2430">RenderText</references>
+        <references refid="classMS_1a6ce592114042b920b648bca5519690cd" compoundref="MatrixStack_8cpp" startline="130" endline="134">MS::Rotate</references>
+        <references refid="classMS_1a52109795de960e24663b315e9128533f" compoundref="MatrixStack_8cpp" startline="149" endline="153">MS::Scale</references>
+        <references refid="structLight_1a6bd73eb0b27ef881f8442e20912d9258" compoundref="Light_8h" startline="36">Light::spotDirection</references>
+        <references refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" compoundref="Camera_8h" startline="10">Camera::target</references>
+        <references refid="classPROJECTScene_1a697465f68871bce2261142bbbec1da08" compoundref="PROJECTScene_8h" startline="145">text</references>
+        <references refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" compoundref="MatrixStack_8cpp" startline="42" endline="44">MS::Top</references>
+        <references refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">MS::Translate</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa30c02ae49fe81adfbaaf241c58cde568" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_POSITION</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7ee7c3b69bf150069a4d316a1d6b32e0" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_SPOTDIRECTION</references>
+        <references refid="classPROJECTScene_1a2fe9e514caef26154827f06158dadc66" compoundref="PROJECTScene_8h" startline="169">viewStack</references>
+        <references refid="structPosition_1af684446cbf0f6d53386686283da6dcc6" compoundref="vertex_8h" startline="10">Position::x</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="structPosition_1a54a6182b5f7539295b32255808897d3f" compoundref="vertex_8h" startline="10">Position::y</references>
+        <references refid="structPosition_1a5dc8c08d3d7209ba538ad21ba604aa44" compoundref="vertex_8h" startline="10">Position::z</references>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::RenderCCTVUI</definition>
+        <argsstring>(int number)</argsstring>
+        <name>RenderCCTVUI</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="160" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="1817" bodyend="1883"/>
+        <references refid="PROJECTScene_8cpp_1aab4aca1d184256eaf1f29ca85502d228" compoundref="PROJECTScene_8cpp" startline="1186">CCTV</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaad2b82ef4862096a7a836ce575339ab5" compoundref="PROJECTScene_8h" startline="86">GEO_CCTV</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaff6b96d77b72cba2597f07fb0fe8148e" compoundref="PROJECTScene_8h" startline="87">GEO_CCTV_CORNER</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acadad7eb7e21a96e81688e0eb7f7e48385" compoundref="PROJECTScene_8h" startline="81">GEO_TEXT</references>
+        <references refid="classPROJECTScene_1aa07dd9d2f6132b9936be816a7a863fcb" compoundref="PROJECTScene_8cpp" startline="2474" endline="2540">getTextWidth</references>
+        <references refid="classMS_1a77c5f7e4a21ea48dcf902a7ff6824a11" compoundref="MatrixStack_8cpp" startline="83" endline="87">MS::LoadIdentity</references>
+        <references refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" compoundref="MatrixStack_8cpp" startline="98" endline="100">MS::LoadMatrix</references>
+        <references refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" compoundref="PROJECTScene_8h" startline="140">meshList</references>
+        <references refid="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" compoundref="PROJECTScene_8h" startline="169">modelStack</references>
+        <references refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">MS::PopMatrix</references>
+        <references refid="classPROJECTScene_1a441532a87975f7805fd45f7d713b60d2" compoundref="PROJECTScene_8h" startline="169">projectionStack</references>
+        <references refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">MS::PushMatrix</references>
+        <references refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">RenderMesh</references>
+        <references refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" compoundref="PROJECTScene_8cpp" startline="2345" endline="2430">RenderText</references>
+        <references refid="classMS_1a6ce592114042b920b648bca5519690cd" compoundref="MatrixStack_8cpp" startline="130" endline="134">MS::Rotate</references>
+        <references refid="classMS_1a52109795de960e24663b315e9128533f" compoundref="MatrixStack_8cpp" startline="149" endline="153">MS::Scale</references>
+        <references refid="classMtx44_1a0a4c7818be7c1aeb0601ad069c1a591d" compoundref="Mtx44_8cpp" startline="492" endline="497">Mtx44::SetToOrtho</references>
+        <references refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">MS::Translate</references>
+        <references refid="classPROJECTScene_1a2fe9e514caef26154827f06158dadc66" compoundref="PROJECTScene_8h" startline="169">viewStack</references>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::RenderMesh</definition>
+        <argsstring>(Mesh *mesh, bool enableLight)</argsstring>
+        <name>RenderMesh</name>
+        <param>
+          <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enableLight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="161" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="2302" bodyend="2344"/>
+        <references refid="classMtx44_1a97018c3b3ef41a962e27340c144430ea" compoundref="Mtx44_8h" startline="50">Mtx44::a</references>
+        <references refid="classMtx44_1aac1ba21ddfc5f3c24baa4f58d9c5c256" compoundref="Mtx44_8cpp" startline="139" endline="195">Mtx44::GetInverse</references>
+        <references refid="classMtx44_1aebb16a0329c5237e314af0d75d8081fd" compoundref="Mtx44_8cpp" startline="123" endline="127">Mtx44::GetTranspose</references>
+        <references refid="structMaterial_1ab3819b3151cbf3ac1892195ab091e3b8" compoundref="Material_8h" startline="15">Material::kAmbient</references>
+        <references refid="structMaterial_1aa88dd619cacf46e2f26ddd23fe032898" compoundref="Material_8h" startline="16">Material::kDiffuse</references>
+        <references refid="structMaterial_1a07cec8956c43f81adeb6ba7aea104915" compoundref="Material_8h" startline="18">Material::kShininess</references>
+        <references refid="structMaterial_1a97cc0bf34b02c758b198d12dd24e96e2" compoundref="Material_8h" startline="17">Material::kSpecular</references>
+        <references refid="classPROJECTScene_1aee8850dd4bc88a38076b993cc479021b" compoundref="PROJECTScene_8h" startline="142">m_parameters</references>
+        <references refid="classMesh_1a3368c3bc60dd176e522df1542b764847" compoundref="Mesh_8h" startline="28">Mesh::material</references>
+        <references refid="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" compoundref="PROJECTScene_8h" startline="169">modelStack</references>
+        <references refid="classPROJECTScene_1a441532a87975f7805fd45f7d713b60d2" compoundref="PROJECTScene_8h" startline="169">projectionStack</references>
+        <references refid="structComponent_1a490db57cde183ef5a233b6ff3386ef6f" compoundref="Material_8h" startline="6">Component::r</references>
+        <references refid="classMesh_1a75e66bcd90c09492676a4cfe5b23c3af" compoundref="Mesh_8cpp" startline="45" endline="80">Mesh::Render</references>
+        <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
+        <references refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" compoundref="MatrixStack_8cpp" startline="42" endline="44">MS::Top</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa819a3dbc154d47c777e5012bf75768b3" compoundref="PROJECTScene_8h" startline="109">U_COLOR_TEXTURE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa76629f2a1a2a9d87fd13f946fe725001" compoundref="PROJECTScene_8h" startline="108">U_COLOR_TEXTURE_ENABLED</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae4daefee557cac1c4f73b95346602d01" compoundref="PROJECTScene_8h" startline="100">U_LIGHTENABLED</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baab3a889cc289a9fb91cff8f991ce24367" compoundref="PROJECTScene_8h" startline="96">U_MATERIAL_AMBIENT</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa0c55b1002c6d74237249672e3e0b9404" compoundref="PROJECTScene_8h" startline="97">U_MATERIAL_DIFFUSE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baad2163115352cdd13b059b859761f2081" compoundref="PROJECTScene_8h" startline="99">U_MATERIAL_SHININESS</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7b77061e10ba0a991305bb52aaf3f7f2" compoundref="PROJECTScene_8h" startline="98">U_MATERIAL_SPECULAR</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa2ee781edbf9f060af691c80e7344154b" compoundref="PROJECTScene_8h" startline="94">U_MODELVIEW</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa40594efa84a4475144d2ba4eeb72fd05" compoundref="PROJECTScene_8h" startline="95">U_MODELVIEW_INVERSE_TRANSPOSE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baabf3538a17acd6e6f23c5fdb9c8fe3dbf" compoundref="PROJECTScene_8h" startline="93">U_MVP</references>
+        <references refid="classPROJECTScene_1a2fe9e514caef26154827f06158dadc66" compoundref="PROJECTScene_8h" startline="169">viewStack</references>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">RenderCCTVUI</referencedby>
+        <referencedby refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" compoundref="PROJECTScene_8cpp" startline="2592" endline="2619">RenderCrosshair</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" compoundref="PROJECTScene_8cpp" startline="2548" endline="2591">RenderSkybox</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::RenderText</definition>
+        <argsstring>(Mesh *mesh, std::string text, Color color)</argsstring>
+        <name>RenderText</name>
+        <param>
+          <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="structColor" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="162" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="2345" bodyend="2430"/>
+        <references refid="classMtx44_1a97018c3b3ef41a962e27340c144430ea" compoundref="Mtx44_8h" startline="50">Mtx44::a</references>
+        <references refid="classPROJECTScene_1aee8850dd4bc88a38076b993cc479021b" compoundref="PROJECTScene_8h" startline="142">m_parameters</references>
+        <references refid="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" compoundref="PROJECTScene_8h" startline="169">modelStack</references>
+        <references refid="classPROJECTScene_1a441532a87975f7805fd45f7d713b60d2" compoundref="PROJECTScene_8h" startline="169">projectionStack</references>
+        <references refid="structColor_1a3958a556b47d2de3dd45c75aac833c20" compoundref="vertex_8h" startline="19">Color::r</references>
+        <references refid="classMesh_1a75e66bcd90c09492676a4cfe5b23c3af" compoundref="Mesh_8cpp" startline="45" endline="80">Mesh::Render</references>
+        <references refid="classMtx44_1a0cc88cc5c648da14effba480c4d2ac70" compoundref="Mtx44_8cpp" startline="376" endline="381">Mtx44::SetToTranslation</references>
+        <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
+        <references refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" compoundref="MatrixStack_8cpp" startline="42" endline="44">MS::Top</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa819a3dbc154d47c777e5012bf75768b3" compoundref="PROJECTScene_8h" startline="109">U_COLOR_TEXTURE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa76629f2a1a2a9d87fd13f946fe725001" compoundref="PROJECTScene_8h" startline="108">U_COLOR_TEXTURE_ENABLED</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae4daefee557cac1c4f73b95346602d01" compoundref="PROJECTScene_8h" startline="100">U_LIGHTENABLED</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baabf3538a17acd6e6f23c5fdb9c8fe3dbf" compoundref="PROJECTScene_8h" startline="93">U_MVP</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa43acf2b36b61d1f1b76813f28cfbb8a6" compoundref="PROJECTScene_8h" startline="111">U_TEXT_COLOR</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacc3df16e569f3d9d8e6a63947af9e36b" compoundref="PROJECTScene_8h" startline="110">U_TEXT_ENABLED</references>
+        <references refid="classPROJECTScene_1a2fe9e514caef26154827f06158dadc66" compoundref="PROJECTScene_8h" startline="169">viewStack</references>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">RenderCCTVUI</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1ad3c28e9ca3b8f32fe419b775331d87ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::RenderTextOnScreen</definition>
+        <argsstring>(Mesh *mesh, std::string text, Color color, float size, float x, float y)</argsstring>
+        <name>RenderTextOnScreen</name>
+        <param>
+          <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+          <declname>mesh</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type><ref refid="structColor" kindref="compound">Color</ref></type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1aa07dd9d2f6132b9936be816a7a863fcb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float PROJECTScene::getTextWidth</definition>
+        <argsstring>(string t)</argsstring>
+        <name>getTextWidth</name>
+        <param>
+          <type>string</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="164" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="2474" bodyend="2540"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">RenderCCTVUI</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPROJECTScene_1a4e1102302efcb6a0b6f1096ee89ca653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PROJECTScene::PROJECTScene</definition>
+        <argsstring>()</argsstring>
+        <name>PROJECTScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="120" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1a94013a21425314222e95a4707ff80b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PROJECTScene::~PROJECTScene</definition>
+        <argsstring>()</argsstring>
+        <name>~PROJECTScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="121" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <reimplements refid="classScene_1ac3c4677dfd702a3ffd5ffadd3f1ac478">Init</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="123" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="1088" bodyend="1176"/>
+        <references refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" compoundref="player_8h" startline="98">Player::camera</references>
+        <references refid="classPROJECTScene_1aea295a310a8fcee7da676f9a732e97c6" compoundref="PROJECTScene_8h" startline="166">camera</references>
+        <references refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="967" endline="1087">DarrenInit</references>
+        <references refid="classMeshBuilder_1a7e35aba5341b1e012cc27598b38ca856" compoundref="MeshBuilder_8cpp" startline="254" endline="361">MeshBuilder::GenerateCube</references>
+        <references refid="classMeshBuilder_1a2df7fd154b373c18089d1e8b9a6f76cc" compoundref="MeshBuilder_8cpp" startline="363" endline="470">MeshBuilder::GenerateCubeOnPlane</references>
+        <references refid="classMeshBuilder_1aee21bf31b3be8ec382a35b066185c3c5" compoundref="MeshBuilder_8cpp" startline="79" endline="115">MeshBuilder::GenerateLine</references>
+        <references refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" compoundref="MeshBuilder_8cpp" startline="1184" endline="1209">MeshBuilder::GenerateOBJ</references>
+        <references refid="classMeshBuilder_1aac7c87881dbc08f8d41f2068e0f40c76" compoundref="MeshBuilder_8cpp" startline="1123" endline="1181">MeshBuilder::GenerateText</references>
+        <references refid="classMeshBuilder_1a8e5663b9e284940453900fdf32fa354f" compoundref="MeshBuilder_8cpp" startline="185" endline="238">MeshBuilder::GenerateXYQuad</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca950916a95c8ef9b35d40ca0e6c8beef2" compoundref="PROJECTScene_8h" startline="84">GEO_BIGCUBE</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaad2b82ef4862096a7a836ce575339ab5" compoundref="PROJECTScene_8h" startline="86">GEO_CCTV</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaff6b96d77b72cba2597f07fb0fe8148e" compoundref="PROJECTScene_8h" startline="87">GEO_CCTV_CORNER</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca21cf44a1ead8b06c6d04ff01e87fbe71" compoundref="PROJECTScene_8h" startline="83">GEO_CUBE</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca0ccbbd5b23e2c81fdab9a59b2f37220c" compoundref="PROJECTScene_8h" startline="78">GEO_HEART</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabcf75f4cd43f75ef2429209e338a28bd" compoundref="PROJECTScene_8h" startline="85">GEO_HOLD</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabb555dcec9f3f7c4250431f9c7ea9dc9" compoundref="PROJECTScene_8h" startline="80">GEO_JUMP</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca02c4b786f0a356568ab7d54f6dbcacda" compoundref="PROJECTScene_8h" startline="77">GEO_KNIFE</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9f202500e728f158365dbc13c208122d" compoundref="PROJECTScene_8h" startline="82">GEO_LINE</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa7b0aaf5251eded81601ea088bd8e240" compoundref="PROJECTScene_8h" startline="76">GEO_QUAD</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca6fb3fdf8cbcda6b30b4479c2b6071576" compoundref="PROJECTScene_8h" startline="79">GEO_SPRINT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acadad7eb7e21a96e81688e0eb7f7e48385" compoundref="PROJECTScene_8h" startline="81">GEO_TEXT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca45da439763c6adc241d60ec4ae5e69fd" compoundref="PROJECTScene_8h" startline="88">GEO_TEXTBOX</references>
+        <references refid="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" compoundref="PROJECTScene_8cpp" startline="22" endline="93">InitJunk</references>
+        <references refid="classPROJECTScene_1aad5e71b6898152054906af5515c3e200" compoundref="PROJECTScene_8cpp" startline="222" endline="517">JeremiahInit</references>
+        <references refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" compoundref="PROJECTScene_8cpp" startline="518" endline="966">JessicaInit</references>
+        <references refid="structLight_1a888f11000d2baf1228d9e5c8d8c90fcb" compoundref="Light_8h" startline="26">Light::kC</references>
+        <references refid="classPROJECTScene_1adf6149f37a7ba08f88cc89e3e93ef9dc" compoundref="PROJECTScene_8h" startline="158">light</references>
+        <references refid="structLight_1aa7ed22cab99d811d72896efaee6d07cba9bf1f515ab954cb3379615aab42f30b6" compoundref="Light_8h" startline="31">Light::LIGHT_DIRECTIONAL</references>
+        <references refid="structLight_1aa7ed22cab99d811d72896efaee6d07cbab02ff4ee1e2a9673edac03cf11b66338" compoundref="Light_8h" startline="30">Light::LIGHT_POINT</references>
+        <references refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" compoundref="MatrixStack_8cpp" startline="98" endline="100">MS::LoadMatrix</references>
+        <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
+        <references refid="classPROJECTScene_1aee8850dd4bc88a38076b993cc479021b" compoundref="PROJECTScene_8h" startline="142">m_parameters</references>
+        <references refid="classPROJECTScene_1ad0f7574ccd32f485aad7a052eed0dd5e" compoundref="PROJECTScene_8h" startline="139">m_vertexArrayID</references>
+        <references refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" compoundref="PROJECTScene_8h" startline="140">meshList</references>
+        <references refid="classPROJECTScene_1afbcfd4aee5cd2bc2b35d5813cc71a80f" compoundref="PROJECTScene_8h" startline="167">player</references>
+        <references refid="structLight_1afeb738db41e987719e359166ef93314f" compoundref="Light_8h" startline="21">Light::position</references>
+        <references refid="structLight_1a6c4c401141c4cdb3b9b9b3bab7dd6fbb" compoundref="Light_8h" startline="25">Light::power</references>
+        <references refid="classPROJECTScene_1a441532a87975f7805fd45f7d713b60d2" compoundref="PROJECTScene_8h" startline="169">projectionStack</references>
+        <references refid="classPROJECTScene_1ab2f2f2e5df135948e5505d9978d46b75" compoundref="PROJECTScene_8cpp" startline="94" endline="221">RicssonInit</references>
+        <references refid="structPosition_1a2919b2441baf7a2f799791d65a1cfc15" compoundref="vertex_8h" startline="13" endline="14">Position::Set</references>
+        <references refid="classMtx44_1ac6e6521111d78ff36d539bf111a902c6" compoundref="Mtx44_8cpp" startline="466" endline="472">Mtx44::SetToPerspective</references>
+        <references refid="classPROJECTScene_1ab7bb838e969fe7597cee45e0520ef649" compoundref="audio_8cpp" startline="6" endline="14">soundInit</references>
+        <references refid="classPROJECTScene_1a86879351b07961b099488e0c43b16945" compoundref="PROJECTScene_8h" startline="146">text2D</references>
+        <references refid="classPROJECTScene_1a23b016feb6cbc575852f50219c8d0db9" compoundref="PROJECTScene_8h" startline="144">textbox</references>
+        <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
+        <references refid="structLight_1a5dcdb101afc28979b5aaff0a2ec79ba5" compoundref="Light_8h" startline="35">Light::type</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa62b03d9b75b33588761e2b90c975eca5" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_COLOR</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa515e38b4edd123686619be04d98c7d09" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_COSCUTOFF</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa4bee939de2f63706e8bf261178faefea" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_COSINNER</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaae7fd7411043dbffa5544ade186b8cba" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_EXPONENT</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa462a03e7d62fe1cd3c7a57e608554681" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_KC</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa70b3f3cf9a28b13f53239526ee77b7ba" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_KL</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3ee40eec18349ee1b4e34b3601399de6" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_KQ</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac61359b5f34a447212e1a58819d0edef" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_POWER</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa84e781530f40259eca1f1bba1a2d9566" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_TYPE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacb41ea1afa3d3c941a6718e3f238bad7" compoundref="PROJECTScene_8h" startline="107">U_NUMLIGHTS</references>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::InitJunk</definition>
+        <argsstring>()</argsstring>
+        <name>InitJunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="124" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="22" bodyend="93"/>
+        <references refid="classMeshBuilder_1a00798a7dc69cc94df659289c7f79eacf" compoundref="MeshBuilder_8cpp" startline="29" endline="77">MeshBuilder::GenerateAxes</references>
+        <references refid="classMeshBuilder_1a2ddad55094b75f084de4cb51e5ec37c4" compoundref="MeshBuilder_8cpp" startline="130" endline="183">MeshBuilder::GenerateQuad</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca91af7832b6ffd7b107b9fb58839fd4d0" compoundref="PROJECTScene_8h" startline="68">GEO_AXES</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9e10e954addde6b2aae06110b86ea634" compoundref="PROJECTScene_8h" startline="74">GEO_BACK</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa014f07655acd1da8950bdecc0566770" compoundref="PROJECTScene_8h" startline="72">GEO_BOTTOM</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa6e0d3136d867757d902fbe40465b42a" compoundref="PROJECTScene_8h" startline="73">GEO_FRONT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca40f3489cbfffe73d88a84f2cea0b70fa" compoundref="PROJECTScene_8h" startline="69">GEO_LEFT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9448bdaeaf4661b4c2cd053b70484792" compoundref="PROJECTScene_8h" startline="70">GEO_RIGHT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca478812e0927f753be9bb0f9658ca4c0c" compoundref="PROJECTScene_8h" startline="71">GEO_TOP</references>
+        <references refid="shader_8cpp_1a833f10cca6a76fe34ae9efa23ac5e73c" compoundref="shader_8cpp" startline="16" endline="107">LoadShaders</references>
+        <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
+        <references refid="classPROJECTScene_1aee8850dd4bc88a38076b993cc479021b" compoundref="PROJECTScene_8h" startline="142">m_parameters</references>
+        <references refid="classPROJECTScene_1a33b0f80895bb5c797eda5de165430985" compoundref="PROJECTScene_8h" startline="141">m_programID</references>
+        <references refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" compoundref="PROJECTScene_8h" startline="140">meshList</references>
+        <references refid="classScene_1a140d39ea291abd069dad5bf6bff97e37" compoundref="Scene_8h" startline="15">Scene::pause</references>
+        <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa819a3dbc154d47c777e5012bf75768b3" compoundref="PROJECTScene_8h" startline="109">U_COLOR_TEXTURE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa76629f2a1a2a9d87fd13f946fe725001" compoundref="PROJECTScene_8h" startline="108">U_COLOR_TEXTURE_ENABLED</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa62b03d9b75b33588761e2b90c975eca5" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_COLOR</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa515e38b4edd123686619be04d98c7d09" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_COSCUTOFF</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa4bee939de2f63706e8bf261178faefea" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_COSINNER</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaae7fd7411043dbffa5544ade186b8cba" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_EXPONENT</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa462a03e7d62fe1cd3c7a57e608554681" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_KC</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa70b3f3cf9a28b13f53239526ee77b7ba" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_KL</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3ee40eec18349ee1b4e34b3601399de6" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_KQ</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa30c02ae49fe81adfbaaf241c58cde568" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_POSITION</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac61359b5f34a447212e1a58819d0edef" compoundref="PROJECTScene_8h" startline="101">U_LIGHT0_POWER</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7ee7c3b69bf150069a4d316a1d6b32e0" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_SPOTDIRECTION</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa84e781530f40259eca1f1bba1a2d9566" compoundref="PROJECTScene_8h" startline="102">U_LIGHT0_TYPE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa6e6aef185ca3f7399ed33326d1fda945" compoundref="PROJECTScene_8h" startline="103">U_LIGHT1_COLOR</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae0d68691cea2f615c2ff5eab45ebfdf5" compoundref="PROJECTScene_8h" startline="104">U_LIGHT1_COSCUTOFF</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa80f38c53f4c1977a13e600cbef4464ba" compoundref="PROJECTScene_8h" startline="104">U_LIGHT1_COSINNER</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae40fd94c72f835a2005f688dd620bf85" compoundref="PROJECTScene_8h" startline="104">U_LIGHT1_EXPONENT</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacc1cec7d9385a1189c6d6e5a3bdc7cc8" compoundref="PROJECTScene_8h" startline="103">U_LIGHT1_KC</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaa41c06102ddf294be480bcf80c9fe99c" compoundref="PROJECTScene_8h" startline="103">U_LIGHT1_KL</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa64d9a98ef1986240e4797e2ec6309dcf" compoundref="PROJECTScene_8h" startline="103">U_LIGHT1_KQ</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa9171037d977e9436f4b27f62acf919ba" compoundref="PROJECTScene_8h" startline="103">U_LIGHT1_POSITION</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa8ad1f459814c08ab3e17db8f882961f0" compoundref="PROJECTScene_8h" startline="103">U_LIGHT1_POWER</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3b383bb84659c288576dd49a55011308" compoundref="PROJECTScene_8h" startline="104">U_LIGHT1_SPOTDIRECTION</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac58b3fa092c640f0c4d25d1450547286" compoundref="PROJECTScene_8h" startline="104">U_LIGHT1_TYPE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac10b156aab228b80d9cc24843b5bb0b2" compoundref="PROJECTScene_8h" startline="105">U_LIGHT2_COLOR</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baafdf23ec0aea28019f19e0b9a43c9f9c7" compoundref="PROJECTScene_8h" startline="106">U_LIGHT2_COSCUTOFF</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa2c24c1078eb30ad74e2bc406bae651d9" compoundref="PROJECTScene_8h" startline="106">U_LIGHT2_COSINNER</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae2b69c4399b71d9aafdbbfe8d5363f10" compoundref="PROJECTScene_8h" startline="106">U_LIGHT2_EXPONENT</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa30b80f65647bb9a53b3013d27e90124d" compoundref="PROJECTScene_8h" startline="105">U_LIGHT2_KC</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baad6c1f46a267f405911efde7048c7b00d" compoundref="PROJECTScene_8h" startline="105">U_LIGHT2_KL</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa54199152d7f363bb24ec2181e8f34936" compoundref="PROJECTScene_8h" startline="105">U_LIGHT2_KQ</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaee183127e7b2bc7b77192835067b8a4f" compoundref="PROJECTScene_8h" startline="105">U_LIGHT2_POSITION</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3aefb105deae1f368ee1f324f35affac" compoundref="PROJECTScene_8h" startline="105">U_LIGHT2_POWER</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa28b7a181296454f98f913079689de024" compoundref="PROJECTScene_8h" startline="106">U_LIGHT2_SPOTDIRECTION</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaf14dd834efd0122bd6b9b2a82ce00c81" compoundref="PROJECTScene_8h" startline="106">U_LIGHT2_TYPE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae4daefee557cac1c4f73b95346602d01" compoundref="PROJECTScene_8h" startline="100">U_LIGHTENABLED</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baab3a889cc289a9fb91cff8f991ce24367" compoundref="PROJECTScene_8h" startline="96">U_MATERIAL_AMBIENT</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa0c55b1002c6d74237249672e3e0b9404" compoundref="PROJECTScene_8h" startline="97">U_MATERIAL_DIFFUSE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baad2163115352cdd13b059b859761f2081" compoundref="PROJECTScene_8h" startline="99">U_MATERIAL_SHININESS</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7b77061e10ba0a991305bb52aaf3f7f2" compoundref="PROJECTScene_8h" startline="98">U_MATERIAL_SPECULAR</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa2ee781edbf9f060af691c80e7344154b" compoundref="PROJECTScene_8h" startline="94">U_MODELVIEW</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa40594efa84a4475144d2ba4eeb72fd05" compoundref="PROJECTScene_8h" startline="95">U_MODELVIEW_INVERSE_TRANSPOSE</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baabf3538a17acd6e6f23c5fdb9c8fe3dbf" compoundref="PROJECTScene_8h" startline="93">U_MVP</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacb41ea1afa3d3c941a6718e3f238bad7" compoundref="PROJECTScene_8h" startline="107">U_NUMLIGHTS</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa43acf2b36b61d1f1b76813f28cfbb8a6" compoundref="PROJECTScene_8h" startline="111">U_TEXT_COLOR</references>
+        <references refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacc3df16e569f3d9d8e6a63947af9e36b" compoundref="PROJECTScene_8h" startline="110">U_TEXT_ENABLED</references>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::Update</definition>
+        <argsstring>(double dt)</argsstring>
+        <name>Update</name>
+        <reimplements refid="classScene_1af5c6bcf2185087fb32c27fb8f6a18d91">Update</reimplements>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="125" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="1192" bodyend="1605"/>
+        <references refid="classButton2D_1a509777ecad03fd8760b010c53540bd82" compoundref="dialogue_8h" startline="25">Button2D::altNext</references>
+        <references refid="PROJECTScene_8cpp_1ac3d272e8048af77a48361dc777d00bfc" compoundref="PROJECTScene_8cpp" startline="1180">animateHeart</references>
+        <references refid="PROJECTScene_8cpp_1a4d44f2ee29f46aec5628697d410bdb67" compoundref="PROJECTScene_8cpp" startline="1181">animateHeartDir</references>
+        <references refid="classTextBox_1acf27c185eff76543d596e6c9d894dfee" compoundref="dialogue_8h" startline="43">TextBox::apparentext</references>
+        <references refid="classPROJECTScene_1a5f7e5d41d2005fdb9729b2f734e2988c" compoundref="PROJECTScene_8h" startline="153">AutoDoor</references>
+        <references refid="classPROJECTScene_1a671487d6bda4a603a330eb13a03e88ac" compoundref="PROJECTScene_8h" startline="154">Bank</references>
+        <references refid="classPROJECTScene_1ab8d23e211bd73adde59f273a1423207d" compoundref="PROJECTScene_8h" startline="149">blood</references>
+        <references refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="505" endline="514">Doorway::ButtonUpdate</references>
+        <references refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" compoundref="player_8h" startline="98">Player::camera</references>
+        <references refid="classPROJECTScene_1aea295a310a8fcee7da676f9a732e97c6" compoundref="PROJECTScene_8h" startline="166">camera</references>
+        <references refid="PROJECTScene_8cpp_1aab4aca1d184256eaf1f29ca85502d228" compoundref="PROJECTScene_8cpp" startline="1186">CCTV</references>
+        <references refid="classSecurity_1a2268ac67b53ffa02cd63e78a7b271727" compoundref="Camera3_8h" startline="55">Security::CCTVs</references>
+        <references refid="classPROJECTScene_1ac75e8c68d8290d5014ceff53f04d007b" compoundref="PROJECTScene_8h" startline="147">character</references>
+        <references refid="classObject_1ab0f9523e4bdbfa635a079c1cc01f9b8a" compoundref="collision_8cpp" startline="45" endline="62">Object::checkCollision</references>
+        <references refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" compoundref="inventory_8cpp" startline="107" endline="147">Inventory::Checkout</references>
+        <references refid="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" compoundref="inventory_8cpp" startline="86" endline="105">Inventory::checkPrice</references>
+        <references refid="classDoorway_1a5f959ec67e3410d17cb2e20ed05a1fd8" compoundref="player_8h" startline="154">Doorway::close</references>
+        <references refid="classPROJECTScene_1a4998a0a13d5279ac651bd9fbe4327aaa" compoundref="PROJECTScene_8h" startline="156">controlPanel</references>
+        <references refid="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" compoundref="inventory_8cpp" startline="170" endline="180">Inventory::Delete</references>
+        <references refid="classATM_1a092b8157714bbb779562aac06e518287" compoundref="inventory_8h" startline="45" endline="55">ATM::deposit</references>
+        <references refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" compoundref="inventory_8h" startline="55">ATM::Deposit</references>
+        <references refid="classPROJECTScene_1adbc3a2d9a1bd8bb87be36063b3345095" compoundref="PROJECTScene_8h" startline="151">doorway</references>
+        <references refid="classPROJECTScene_1abd2c67d8b0ae29a412d16dec56ec2fab" compoundref="PROJECTScene_8h" startline="152">doorway2</references>
+        <references refid="PROJECTScene_8cpp_1ad502eec197f7d286623cdc883a2ebf29" compoundref="PROJECTScene_8cpp" startline="1179">fps</references>
+        <references refid="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" compoundref="collision_8h" startline="118" endline="127">Vending::generateDrink</references>
+        <references refid="classTextBox_1ac367f8d55c2f1490bda97190d21676b1" compoundref="dialogue_8h" startline="50" endline="50">TextBox::GenerateText</references>
+        <references refid="classTextBox_1a4cd6062d94cf951188f5dc779876b5bd" compoundref="dialogue_8h" startline="47" endline="47">TextBox::getAccept</references>
+        <references refid="classTextBox_1a6d9c15d2facabf388328d6cab33f5bd0" compoundref="dialogue_8h" startline="49" endline="49">TextBox::getDecline</references>
+        <references refid="classPlayer_1a2d1542816021d46bf0d007d57a2c7291" compoundref="player_8h" startline="113" endline="113">Player::getHealth</references>
+        <references refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" compoundref="inventory_8h" startline="109" endline="115">Inventory::getHolding</references>
+        <references refid="classPlayer_1aa1544a1feb4e29c1b57a720751057395" compoundref="player_8h" startline="103">Player::holding</references>
+        <references refid="classPlayer_1aaee62ad90811104f8fa03cdd8f758ce8" compoundref="player_8h" startline="105">Player::inConversation</references>
+        <references refid="classPROJECTScene_1acd8318d6e53a1ee41fd7e689212c3a31" compoundref="PROJECTScene_8h" startline="137">inputDelay</references>
+        <references refid="classInventory_1a8d6d927ace25d6913479748b89bf96a0" compoundref="inventory_8cpp" startline="149" endline="168">Inventory::Insert</references>
+        <references refid="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" compoundref="player_8h" startline="97">Player::inventory</references>
+        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">Application::IsKeyPressed</references>
+        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="68">Slot::item</references>
+        <references refid="classCamera3_1ab6a0582c35355b63be1f69dfed21027d" compoundref="Camera3_8h" startline="24">Camera3::lookAt</references>
+        <references refid="classCamera3_1a44474d04a473a6d07d39b8b2dfba671e" compoundref="Camera3_8cpp" startline="71" endline="107">Camera3::lookingAt</references>
+        <references refid="classPROJECTScene_1a4fc9422b13c6d64ce1f3b6c64319e7d0" compoundref="PROJECTScene_8h" startline="155">Machine</references>
+        <references refid="classApplication_1a1bfd134bb982a2e1a07d359c46d71483" compoundref="Application_8cpp" startline="51" endline="54">Application::mouseButton</references>
+        <references refid="classApplication_1a53bab02ca90bd8f8a989cda091a78eed" compoundref="Application_8h" startline="18">Application::mouseScroll</references>
+        <references refid="classCamera3_1a4cead3bb5a13f53d2f4043435937553d" compoundref="Camera3_8cpp" startline="43" endline="59">Camera3::Move</references>
+        <references refid="classButton2D_1aaddd13eb1c619ee976e3ab94b6c2dc85" compoundref="dialogue_8h" startline="24">Button2D::next</references>
+        <references refid="classDoorway_1a34fd6a1b0d2bc1abdbf4847148927cd3" compoundref="player_8h" startline="154">Doorway::open</references>
+        <references refid="classScene_1a140d39ea291abd069dad5bf6bff97e37" compoundref="Scene_8h" startline="15">Scene::pause</references>
+        <references refid="PROJECTScene_8cpp_1a5f589e5ecc9e76fbe63f43ff76edf021" compoundref="Application_8cpp" startline="124">pauseDelay</references>
+        <references refid="classirrklang_1_1ISoundEngine_1a25f612fe6479d3b22dc5bab2a2eaa927">irrklang::ISoundEngine::play2D</references>
+        <references refid="classPROJECTScene_1afbcfd4aee5cd2bc2b35d5813cc71a80f" compoundref="PROJECTScene_8h" startline="167">player</references>
+        <references refid="classButton2D_1a6962bb136415617bbde1bf11e77e44f8" compoundref="dialogue_8h" startline="20">Button2D::position</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
+        <references refid="classVending_1a5cff939df942f1fffbfc682aa1ea2bd3" compoundref="collision_8h" startline="115">Vending::price</references>
+        <references refid="classDoorway_1a0f22d21886528c482982187ad74f35ea" compoundref="player_8h" startline="152">Doorway::Range</references>
+        <references refid="classDoorway_1ac0e9cf66af2147991062d5f26a887c3b" compoundref="player_8cpp" startline="483" endline="503">Doorway::RangeUpdate</references>
+        <references refid="classInventory_1ad55678fdf4c3f5a1038ce7e7eaa243f4" compoundref="inventory_8cpp" startline="182" endline="191">Inventory::Remove</references>
+        <references refid="PROJECTScene_8cpp_1a88b7b9afecc42ea3bdad4c38d34e56e9" compoundref="PROJECTScene_8cpp" startline="1183">selectDelay</references>
+        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="79">Selector::selectedSlot</references>
+        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="91">Inventory::selector</references>
+        <references refid="PROJECTScene_8cpp_1a82afce81dc7ebe7bec74e4154b956843" compoundref="PROJECTScene_8cpp" startline="1190">showLevel</references>
+        <references refid="classPROJECTScene_1a9a58de28e3dbff47b5ff73f51168b31c" compoundref="audio_8cpp" startline="27" endline="35">soundUpdate</references>
+        <references refid="PROJECTScene_8cpp_1a33a00c62601a8c50f3d1e559011500ea" compoundref="PROJECTScene_8cpp" startline="1187">stopCamera</references>
+        <references refid="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" compoundref="dialogue_8h" startline="44">TextBox::text</references>
+        <references refid="classPROJECTScene_1a697465f68871bce2261142bbbec1da08" compoundref="PROJECTScene_8h" startline="145">text</references>
+        <references refid="classPROJECTScene_1a86879351b07961b099488e0c43b16945" compoundref="PROJECTScene_8h" startline="146">text2D</references>
+        <references refid="classPROJECTScene_1a23b016feb6cbc575852f50219c8d0db9" compoundref="PROJECTScene_8h" startline="144">textbox</references>
+        <references refid="classTextBox_1ad77ccb4af9eee9eef691323aeb67ff23" compoundref="dialogue_8h" startline="48" endline="48">TextBox::triggerQuest</references>
+        <references refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" compoundref="inventory_8h" startline="16">Wallet::trueValue</references>
+        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="34">Object::type</references>
+        <references refid="classTextBox_1a853e607198ed5ff6d0fdcefea6289de4" compoundref="dialogue_8h" startline="39">TextBox::type</references>
+        <references refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe" compoundref="Camera3_8cpp" startline="61" endline="69">Camera3::Update</references>
+        <references refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" compoundref="dialogue_8cpp" startline="11" endline="26">TextBox::Update</references>
+        <references refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Player::Update</references>
+        <references refid="classDoorway_1acba33af0e95e63acd73d3aa56c516104" compoundref="player_8cpp" startline="421" endline="479">Doorway::Update</references>
+        <references refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" compoundref="inventory_8h" startline="86">Inventory::wallet</references>
+        <references refid="classATM_1a115c0205f98d83bfb8b40c39d1bbf64f" compoundref="inventory_8h" startline="34" endline="44">ATM::withdraw</references>
+        <references refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" compoundref="inventory_8h" startline="58">ATM::Withdraw</references>
+        <references refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" compoundref="PROJECTScene_8cpp" startline="1178">x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+        <references refid="classCamera3_1a1671d2532fbe0a7a0ed037f549e6d8d2" compoundref="Camera3_8cpp" startline="31" endline="40">Camera3::Zoom</references>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::Render</definition>
+        <argsstring>()</argsstring>
+        <name>Render</name>
+        <reimplements refid="classScene_1ae24d21e12b34839994ad265662ea24d7">Render</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="126" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="1885" bodyend="2300"/>
+        <references refid="PROJECTScene_8cpp_1ac3d272e8048af77a48361dc777d00bfc" compoundref="PROJECTScene_8cpp" startline="1180">animateHeart</references>
+        <references refid="classTextBox_1acf27c185eff76543d596e6c9d894dfee" compoundref="dialogue_8h" startline="43">TextBox::apparentext</references>
+        <references refid="classPROJECTScene_1a671487d6bda4a603a330eb13a03e88ac" compoundref="PROJECTScene_8h" startline="154">Bank</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ac570ea46fe0e245abef556ec7f0e3979" compoundref="player_8h" startline="53">Player::bobbingX</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ae6cc325d563d8bc97c40440b9bcce961" compoundref="player_8h" startline="54">Player::bobbingY</references>
+        <references refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" compoundref="player_8h" startline="98">Player::camera</references>
+        <references refid="classPROJECTScene_1aea295a310a8fcee7da676f9a732e97c6" compoundref="PROJECTScene_8h" startline="166">camera</references>
+        <references refid="PROJECTScene_8cpp_1aab4aca1d184256eaf1f29ca85502d228" compoundref="PROJECTScene_8cpp" startline="1186">CCTV</references>
+        <references refid="classSecurity_1a2268ac67b53ffa02cd63e78a7b271727" compoundref="Camera3_8h" startline="55">Security::CCTVs</references>
+        <references refid="classPROJECTScene_1a4998a0a13d5279ac651bd9fbe4327aaa" compoundref="PROJECTScene_8h" startline="156">controlPanel</references>
+        <references refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" compoundref="inventory_8h" startline="55">ATM::Deposit</references>
+        <references refid="classCamera3_1a2de4550bc7ac9c4ac3f36b059e3d8bbd" compoundref="Camera3_8h" startline="21">Camera3::fov</references>
+        <references refid="PROJECTScene_8cpp_1ad502eec197f7d286623cdc883a2ebf29" compoundref="PROJECTScene_8cpp" startline="1179">fps</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca0ccbbd5b23e2c81fdab9a59b2f37220c" compoundref="PROJECTScene_8h" startline="78">GEO_HEART</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabb555dcec9f3f7c4250431f9c7ea9dc9" compoundref="PROJECTScene_8h" startline="80">GEO_JUMP</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa7b0aaf5251eded81601ea088bd8e240" compoundref="PROJECTScene_8h" startline="76">GEO_QUAD</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca6fb3fdf8cbcda6b30b4479c2b6071576" compoundref="PROJECTScene_8h" startline="79">GEO_SPRINT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acadad7eb7e21a96e81688e0eb7f7e48385" compoundref="PROJECTScene_8h" startline="81">GEO_TEXT</references>
+        <references refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca45da439763c6adc241d60ec4ae5e69fd" compoundref="PROJECTScene_8h" startline="88">GEO_TEXTBOX</references>
+        <references refid="classTextBox_1a4cd6062d94cf951188f5dc779876b5bd" compoundref="dialogue_8h" startline="47" endline="47">TextBox::getAccept</references>
+        <references refid="classTextBox_1a6d9c15d2facabf388328d6cab33f5bd0" compoundref="dialogue_8h" startline="49" endline="49">TextBox::getDecline</references>
+        <references refid="classPlayer_1a2d1542816021d46bf0d007d57a2c7291" compoundref="player_8h" startline="113" endline="113">Player::getHealth</references>
+        <references refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" compoundref="inventory_8h" startline="109" endline="115">Inventory::getHolding</references>
+        <references refid="classPlayer_1a3c70ef822192421f8221e75a707417d7" compoundref="player_8h" startline="111" endline="111">Player::getRenderWallet</references>
+        <references refid="classPROJECTScene_1aa07dd9d2f6132b9936be816a7a863fcb" compoundref="PROJECTScene_8cpp" startline="2474" endline="2540">getTextWidth</references>
+        <references refid="classPlayer_1aa1544a1feb4e29c1b57a720751057395" compoundref="player_8h" startline="103">Player::holding</references>
+        <references refid="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" compoundref="player_8h" startline="97">Player::inventory</references>
+        <references refid="classPlayer_1aeeb928e9d8bb5c95dc104fcf8c69770b" compoundref="player_8h" startline="115" endline="115">Player::isEating</references>
+        <references refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" compoundref="inventory_8h" startline="68">Slot::item</references>
+        <references refid="classPlayer_1a624e7bd62035bcb9c3e076bd5bc2e186" compoundref="player_8h" startline="100">Player::jump</references>
+        <references refid="classMS_1a77c5f7e4a21ea48dcf902a7ff6824a11" compoundref="MatrixStack_8cpp" startline="83" endline="87">MS::LoadIdentity</references>
+        <references refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" compoundref="MatrixStack_8cpp" startline="98" endline="100">MS::LoadMatrix</references>
+        <references refid="classCamera3_1ab6a0582c35355b63be1f69dfed21027d" compoundref="Camera3_8h" startline="24">Camera3::lookAt</references>
+        <references refid="classMS_1a2638cd3249260877cc31329978fb6b38" compoundref="MatrixStack_8cpp" startline="242" endline="249">MS::LookAt</references>
+        <references refid="classPROJECTScene_1a4fc9422b13c6d64ce1f3b6c64319e7d0" compoundref="PROJECTScene_8h" startline="155">Machine</references>
+        <references refid="classSlot_1ab524624ead0372ebd8c968657791b345" compoundref="inventory_8h" startline="69">Slot::mesh</references>
+        <references refid="classSelector_1a6232d34f74db3d6aa7a866db76223f5c" compoundref="inventory_8h" startline="76">Selector::mesh</references>
+        <references refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" compoundref="PROJECTScene_8h" startline="140">meshList</references>
+        <references refid="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" compoundref="PROJECTScene_8h" startline="169">modelStack</references>
+        <references refid="classPROJECTScene_1afbcfd4aee5cd2bc2b35d5813cc71a80f" compoundref="PROJECTScene_8h" startline="167">player</references>
+        <references refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" compoundref="MatrixStack_8cpp" startline="52" endline="54">MS::PopMatrix</references>
+        <references refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" compoundref="Camera_8h" startline="9">Camera::position</references>
+        <references refid="classButton2D_1a6962bb136415617bbde1bf11e77e44f8" compoundref="dialogue_8h" startline="20">Button2D::position</references>
+        <references refid="classTextBox_1abfb2baf145b19b1748edbeb9ba7a1266" compoundref="dialogue_8h" startline="42">TextBox::position</references>
+        <references refid="classSlot_1a810ef7b9daede95614e80499518daf81" compoundref="inventory_8h" startline="65">Slot::position</references>
+        <references refid="classVending_1a5cff939df942f1fffbfc682aa1ea2bd3" compoundref="collision_8h" startline="115">Vending::price</references>
+        <references refid="classPROJECTScene_1a441532a87975f7805fd45f7d713b60d2" compoundref="PROJECTScene_8h" startline="169">projectionStack</references>
+        <references refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" compoundref="MatrixStack_8cpp" startline="62" endline="64">MS::PushMatrix</references>
+        <references refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" compoundref="PROJECTScene_8cpp" startline="1817" endline="1883">RenderCCTVUI</references>
+        <references refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" compoundref="PROJECTScene_8cpp" startline="2592" endline="2619">RenderCrosshair</references>
+        <references refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">RenderMesh</references>
+        <references refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">RenderScene</references>
+        <references refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" compoundref="PROJECTScene_8cpp" startline="2345" endline="2430">RenderText</references>
+        <references refid="classMS_1a6ce592114042b920b648bca5519690cd" compoundref="MatrixStack_8cpp" startline="130" endline="134">MS::Rotate</references>
+        <references refid="classMS_1a52109795de960e24663b315e9128533f" compoundref="MatrixStack_8cpp" startline="149" endline="153">MS::Scale</references>
+        <references refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" compoundref="inventory_8h" startline="79">Selector::selectedSlot</references>
+        <references refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" compoundref="inventory_8h" startline="91">Inventory::selector</references>
+        <references refid="classMtx44_1a0a4c7818be7c1aeb0601ad069c1a591d" compoundref="Mtx44_8cpp" startline="492" endline="497">Mtx44::SetToOrtho</references>
+        <references refid="classMtx44_1ac6e6521111d78ff36d539bf111a902c6" compoundref="Mtx44_8cpp" startline="466" endline="472">Mtx44::SetToPerspective</references>
+        <references refid="PROJECTScene_8cpp_1a82afce81dc7ebe7bec74e4154b956843" compoundref="PROJECTScene_8cpp" startline="1190">showLevel</references>
+        <references refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" compoundref="inventory_8h" startline="90">Inventory::slots</references>
+        <references refid="classPlayer_1a0349855298626faed9f05f86965ff689" compoundref="player_8h" startline="101">Player::speed</references>
+        <references refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" compoundref="Camera_8h" startline="10">Camera::target</references>
+        <references refid="classButton2D_1a3792c91961ccd92faecc73e246ba82b6" compoundref="dialogue_8h" startline="23">Button2D::text</references>
+        <references refid="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" compoundref="dialogue_8h" startline="44">TextBox::text</references>
+        <references refid="classPROJECTScene_1a86879351b07961b099488e0c43b16945" compoundref="PROJECTScene_8h" startline="146">text2D</references>
+        <references refid="classPROJECTScene_1a23b016feb6cbc575852f50219c8d0db9" compoundref="PROJECTScene_8h" startline="144">textbox</references>
+        <references refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" compoundref="MatrixStack_8cpp" startline="175" endline="179">MS::Translate</references>
+        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="34">Object::type</references>
+        <references refid="classTextBox_1a853e607198ed5ff6d0fdcefea6289de4" compoundref="dialogue_8h" startline="39">TextBox::type</references>
+        <references refid="classCamera_1ab76ce866ca2acd6ab54447f474077245" compoundref="Camera_8h" startline="11">Camera::up</references>
+        <references refid="classPlayer_1a4f5eb5599d7a8bbf81335c7464c3fa6a" compoundref="player_8h" startline="106">Player::value</references>
+        <references refid="classPROJECTScene_1a2fe9e514caef26154827f06158dadc66" compoundref="PROJECTScene_8h" startline="169">viewStack</references>
+        <references refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" compoundref="inventory_8h" startline="58">ATM::Withdraw</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" compoundref="PROJECTScene_8cpp" startline="1178">x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+        <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1a2cc825520ffd8d4e62db833bbfb1aeb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::Exit</definition>
+        <argsstring>()</argsstring>
+        <name>Exit</name>
+        <reimplements refid="classScene_1aae8e24654ef98c79961c2b804b12852c">Exit</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="127" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="2541" bodyend="2546"/>
+        <references refid="classPROJECTScene_1a33b0f80895bb5c797eda5de165430985" compoundref="PROJECTScene_8h" startline="141">m_programID</references>
+        <references refid="classPROJECTScene_1ad0f7574ccd32f485aad7a052eed0dd5e" compoundref="PROJECTScene_8h" startline="139">m_vertexArrayID</references>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1ab2f2f2e5df135948e5505d9978d46b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::RicssonInit</definition>
+        <argsstring>()</argsstring>
+        <name>RicssonInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="129" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="94" bodyend="221"/>
+        <references refid="structCollision_1a93d586902c737c5045bb518248501e8b" compoundref="collision_8h" startline="22">Collision::boundingBox</references>
+        <references refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" compoundref="collision_8h" startline="38">Object::collision</references>
+        <references refid="classMeshBuilder_1a7e35aba5341b1e012cc27598b38ca856" compoundref="MeshBuilder_8cpp" startline="254" endline="361">MeshBuilder::GenerateCube</references>
+        <references refid="classMeshBuilder_1a2df7fd154b373c18089d1e8b9a6f76cc" compoundref="MeshBuilder_8cpp" startline="363" endline="470">MeshBuilder::GenerateCubeOnPlane</references>
+        <references refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" compoundref="MeshBuilder_8cpp" startline="1184" endline="1209">MeshBuilder::GenerateOBJ</references>
+        <references refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" compoundref="collision_8h" startline="20">Collision::hitbox</references>
+        <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
+        <references refid="classPROJECTScene_1afbcfd4aee5cd2bc2b35d5813cc71a80f" compoundref="PROJECTScene_8h" startline="167">player</references>
+        <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" compoundref="PROJECTScene_8cpp" startline="1178">x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+        <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1aad5e71b6898152054906af5515c3e200" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::JeremiahInit</definition>
+        <argsstring>()</argsstring>
+        <name>JeremiahInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="130" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="222" bodyend="517"/>
+        <references refid="classPROJECTScene_1ac75e8c68d8290d5014ceff53f04d007b" compoundref="PROJECTScene_8h" startline="147">character</references>
+        <references refid="classMeshBuilder_1a7e35aba5341b1e012cc27598b38ca856" compoundref="MeshBuilder_8cpp" startline="254" endline="361">MeshBuilder::GenerateCube</references>
+        <references refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" compoundref="MeshBuilder_8cpp" startline="1184" endline="1209">MeshBuilder::GenerateOBJ</references>
+        <references refid="classMeshBuilder_1a2ddad55094b75f084de4cb51e5ec37c4" compoundref="MeshBuilder_8cpp" startline="130" endline="183">MeshBuilder::GenerateQuad</references>
+        <references refid="classMeshBuilder_1a8e5663b9e284940453900fdf32fa354f" compoundref="MeshBuilder_8cpp" startline="185" endline="238">MeshBuilder::GenerateXYQuad</references>
+        <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
+        <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" compoundref="PROJECTScene_8cpp" startline="1178">x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+        <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::JessicaInit</definition>
+        <argsstring>()</argsstring>
+        <name>JessicaInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="131" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="518" bodyend="966"/>
+        <references refid="classPROJECTScene_1a4998a0a13d5279ac651bd9fbe4327aaa" compoundref="PROJECTScene_8h" startline="156">controlPanel</references>
+        <references refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" compoundref="collision_8h" startline="127">Vending::Drink</references>
+        <references refid="classMeshBuilder_1a7e35aba5341b1e012cc27598b38ca856" compoundref="MeshBuilder_8cpp" startline="254" endline="361">MeshBuilder::GenerateCube</references>
+        <references refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" compoundref="MeshBuilder_8cpp" startline="1184" endline="1209">MeshBuilder::GenerateOBJ</references>
+        <references refid="classMeshBuilder_1a8e5663b9e284940453900fdf32fa354f" compoundref="MeshBuilder_8cpp" startline="185" endline="238">MeshBuilder::GenerateXYQuad</references>
+        <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
+        <references refid="classPROJECTScene_1a4fc9422b13c6d64ce1f3b6c64319e7d0" compoundref="PROJECTScene_8h" startline="155">Machine</references>
+        <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
+        <references refid="classSecurity_1a62a8472bfe0f2d1e682c7c493d1681c6" compoundref="Camera3_8h" startline="52">Security::TV</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" compoundref="PROJECTScene_8cpp" startline="1178">x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+        <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1a7916565f6475608926ab183e11125904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PROJECTScene::DarrenInit</definition>
+        <argsstring>()</argsstring>
+        <name>DarrenInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="132" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.cpp" bodystart="967" bodyend="1087"/>
+        <references refid="classPROJECTScene_1a5f7e5d41d2005fdb9729b2f734e2988c" compoundref="PROJECTScene_8h" startline="153">AutoDoor</references>
+        <references refid="classPROJECTScene_1a671487d6bda4a603a330eb13a03e88ac" compoundref="PROJECTScene_8h" startline="154">Bank</references>
+        <references refid="classDoorway_1a6584e5007e9c818f61f2c2148e5e619d" compoundref="player_8h" startline="151">Doorway::Button</references>
+        <references refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" compoundref="inventory_8h" startline="55">ATM::Deposit</references>
+        <references refid="classDoorway_1aa7c78d701196cdc60c7fd5ff5e8b9cc0" compoundref="player_8h" startline="147">Doorway::Door</references>
+        <references refid="classPROJECTScene_1adbc3a2d9a1bd8bb87be36063b3345095" compoundref="PROJECTScene_8h" startline="151">doorway</references>
+        <references refid="classPROJECTScene_1abd2c67d8b0ae29a412d16dec56ec2fab" compoundref="PROJECTScene_8h" startline="152">doorway2</references>
+        <references refid="classMeshBuilder_1a7e35aba5341b1e012cc27598b38ca856" compoundref="MeshBuilder_8cpp" startline="254" endline="361">MeshBuilder::GenerateCube</references>
+        <references refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" compoundref="MeshBuilder_8cpp" startline="1184" endline="1209">MeshBuilder::GenerateOBJ</references>
+        <references refid="classDoorway_1aed789047130006d3ad9afe8b5be693ef" compoundref="player_8h" startline="123" endline="136">Doorway::Init</references>
+        <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
+        <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
+        <references refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" compoundref="inventory_8h" startline="58">ATM::Withdraw</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" compoundref="PROJECTScene_8cpp" startline="1178">x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+        <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1ab7bb838e969fe7597cee45e0520ef649" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PROJECTScene::soundInit</definition>
+        <argsstring>()</argsstring>
+        <name>soundInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="134" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/audio.cpp" bodystart="6" bodyend="14"/>
+        <references refid="namespaceirrklang_1ad9829f898bc0665fdd2554a6f5c7ca1c">irrklang::createIrrKlangDevice</references>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">Init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classPROJECTScene_1a9a58de28e3dbff47b5ff73f51168b31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PROJECTScene::soundUpdate</definition>
+        <argsstring>(Player player)</argsstring>
+        <name>soundUpdate</name>
+        <param>
+          <type><ref refid="classPlayer" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="135" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/audio.cpp" bodystart="27" bodyend="35"/>
+        <references refid="classPlayer_1afc37f74c79eff1bfe113a29038f9ad77" compoundref="player_8h" startline="92">Player::hOrientation</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
+        <references refid="classirrklang_1_1ISoundEngine_1af3e6223435969159ef3b22d0c83d2b84">irrklang::ISoundEngine::setListenerPosition</references>
+        <references refid="structVector3_1ab3b1af4c82ca09bf8ce997c205e3cb10" compoundref="Vector3_8cpp" startline="422" endline="429">Vector3::SphericalToCartesian</references>
+        <references refid="classPlayer_1ae5ea486be0acd6a16f26843ecbd9d826" compoundref="player_8h" startline="95">Player::vOrientation</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+        <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1406">
+        <label>Scene</label>
+        <link refid="classScene"/>
+      </node>
+      <node id="1405">
+        <label>PROJECTScene</label>
+        <link refid="classPROJECTScene"/>
+        <childnode refid="1406" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1414">
+        <label>Position</label>
+        <link refid="structPosition"/>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+      <node id="1423">
+        <label>stack&lt; Mtx44 &gt;</label>
+      </node>
+      <node id="1430">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="1411">
+        <label>LIGHT_TYPE</label>
+      </node>
+      <node id="1428">
+        <label>Mesh</label>
+        <link refid="classMesh"/>
+        <childnode refid="1429" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+        <childnode refid="1431" relation="usage">
+          <edgelabel>mode</edgelabel>
+        </childnode>
+        <childnode refid="1417" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="1432" relation="usage">
+          <edgelabel>textureID</edgelabel>
+          <edgelabel>indexBuffer</edgelabel>
+          <edgelabel>indexSize</edgelabel>
+          <edgelabel>vertexBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1424">
+        <label>vector&lt; NPC * &gt;</label>
+      </node>
+      <node id="1440">
+        <label>Slot</label>
+        <link refid="classSlot"/>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1433" relation="usage">
+          <edgelabel>item</edgelabel>
+        </childnode>
+        <childnode refid="1428" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="1439">
+        <label>Wallet</label>
+        <link refid="classWallet"/>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>apparentValue</edgelabel>
+          <edgelabel>trueValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="1431">
+        <label>DRAW_MODE</label>
+      </node>
+      <node id="1419">
+        <label>Camera</label>
+        <link refid="classCamera"/>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>target</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>up</edgelabel>
+        </childnode>
+      </node>
+      <node id="1417">
+        <label>string</label>
+      </node>
+      <node id="1429">
+        <label>Material</label>
+        <link refid="structMaterial"/>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>kShininess</edgelabel>
+        </childnode>
+        <childnode refid="1430" relation="usage">
+          <edgelabel>kDiffuse</edgelabel>
+          <edgelabel>kAmbient</edgelabel>
+          <edgelabel>kSpecular</edgelabel>
+        </childnode>
+      </node>
+      <node id="1412">
+        <label>float</label>
+      </node>
+      <node id="1435">
+        <label>vector&lt; OnScreenText * &gt;</label>
+      </node>
+      <node id="1422">
+        <label>MS</label>
+        <link refid="classMS"/>
+        <childnode refid="1423" relation="usage">
+          <edgelabel>ms</edgelabel>
+        </childnode>
+      </node>
+      <node id="1434">
+        <label>Doorway</label>
+        <link refid="classDoorway"/>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>elapsedTime</edgelabel>
+        </childnode>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>doorPosition</edgelabel>
+        </childnode>
+        <childnode refid="1409" relation="usage">
+          <edgelabel>close</edgelabel>
+          <edgelabel>open</edgelabel>
+        </childnode>
+        <childnode refid="1428" relation="usage">
+          <edgelabel>buttonStatus</edgelabel>
+        </childnode>
+        <childnode refid="1426" relation="usage">
+          <edgelabel>Range</edgelabel>
+          <edgelabel>Door</edgelabel>
+          <edgelabel>Button</edgelabel>
+        </childnode>
+      </node>
+      <node id="1408">
+        <label>Scene</label>
+        <link refid="classScene"/>
+        <childnode refid="1409" relation="usage">
+          <edgelabel>pause</edgelabel>
+        </childnode>
+      </node>
+      <node id="1416">
+        <label>TextBox</label>
+        <link refid="classTextBox"/>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1417" relation="usage">
+          <edgelabel>apparentext</edgelabel>
+          <edgelabel>type</edgelabel>
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="1410">
+        <label>Light</label>
+        <link refid="structLight"/>
+        <childnode refid="1411" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>exponent</edgelabel>
+          <edgelabel>kL</edgelabel>
+          <edgelabel>cosCutoff</edgelabel>
+          <edgelabel>cosInner</edgelabel>
+          <edgelabel>kQ</edgelabel>
+          <edgelabel>kC</edgelabel>
+          <edgelabel>power</edgelabel>
+        </childnode>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>spotDirection</edgelabel>
+        </childnode>
+        <childnode refid="1414" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1415" relation="usage">
+          <edgelabel>color</edgelabel>
+        </childnode>
+      </node>
+      <node id="1426">
+        <label>Object</label>
+        <link refid="classObject"/>
+        <childnode refid="1427" relation="usage">
+          <edgelabel>collision</edgelabel>
+        </childnode>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>orientation</edgelabel>
+        </childnode>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1409" relation="usage">
+          <edgelabel>ignoreCollision</edgelabel>
+        </childnode>
+        <childnode refid="1417" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="1428" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="1418">
+        <label>Camera3</label>
+        <link refid="classCamera3"/>
+        <childnode refid="1419" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>fov</edgelabel>
+          <edgelabel>defaultLook</edgelabel>
+          <edgelabel>defaultOrientation</edgelabel>
+          <edgelabel>orientation</edgelabel>
+          <edgelabel>look</edgelabel>
+        </childnode>
+        <childnode refid="1420" relation="usage">
+          <edgelabel>lookAt</edgelabel>
+        </childnode>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>defaultTarget</edgelabel>
+          <edgelabel>defaultPosition</edgelabel>
+          <edgelabel>defaultUp</edgelabel>
+        </childnode>
+      </node>
+      <node id="1420">
+        <label>int</label>
+      </node>
+      <node id="1441">
+        <label>Selector</label>
+        <link refid="classSelector"/>
+        <childnode refid="1440" relation="usage">
+          <edgelabel>selectedSlot</edgelabel>
+        </childnode>
+        <childnode refid="1428" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="1415">
+        <label>Color</label>
+        <link refid="structColor"/>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="1407">
+        <label>PROJECTScene</label>
+        <link refid="classPROJECTScene"/>
+        <childnode refid="1408" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1410" relation="usage">
+          <edgelabel>light</edgelabel>
+        </childnode>
+        <childnode refid="1416" relation="usage">
+          <edgelabel>textbox</edgelabel>
+        </childnode>
+        <childnode refid="1418" relation="usage">
+          <edgelabel>camera</edgelabel>
+        </childnode>
+        <childnode refid="1421" relation="usage">
+          <edgelabel>blood</edgelabel>
+        </childnode>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>inputDelay</edgelabel>
+        </childnode>
+        <childnode refid="1422" relation="usage">
+          <edgelabel>projectionStack</edgelabel>
+          <edgelabel>modelStack</edgelabel>
+          <edgelabel>viewStack</edgelabel>
+        </childnode>
+        <childnode refid="1424" relation="usage">
+          <edgelabel>character</edgelabel>
+        </childnode>
+        <childnode refid="1425" relation="usage">
+          <edgelabel>Bank</edgelabel>
+        </childnode>
+        <childnode refid="1433" relation="usage">
+          <edgelabel>object</edgelabel>
+        </childnode>
+        <childnode refid="1434" relation="usage">
+          <edgelabel>AutoDoor</edgelabel>
+          <edgelabel>doorway2</edgelabel>
+          <edgelabel>doorway</edgelabel>
+        </childnode>
+        <childnode refid="1435" relation="usage">
+          <edgelabel>text</edgelabel>
+          <edgelabel>text2D</edgelabel>
+        </childnode>
+        <childnode refid="1428" relation="usage">
+          <edgelabel>meshList</edgelabel>
+        </childnode>
+        <childnode refid="1436" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+        <childnode refid="1432" relation="usage">
+          <edgelabel>m_parameters</edgelabel>
+          <edgelabel>m_programID</edgelabel>
+          <edgelabel>m_vertexArrayID</edgelabel>
+        </childnode>
+        <childnode refid="1442" relation="usage">
+          <edgelabel>controlPanel</edgelabel>
+        </childnode>
+        <childnode refid="1443" relation="usage">
+          <edgelabel>Machine</edgelabel>
+        </childnode>
+      </node>
+      <node id="1433">
+        <label>vector&lt; Object * &gt;</label>
+      </node>
+      <node id="1427">
+        <label>Collision</label>
+        <link refid="structCollision"/>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>hitbox</edgelabel>
+          <edgelabel>centre</edgelabel>
+        </childnode>
+        <childnode refid="1428" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="1442">
+        <label>Security</label>
+        <link refid="classSecurity"/>
+        <childnode refid="1418" relation="usage">
+          <edgelabel>CCTVs</edgelabel>
+        </childnode>
+        <childnode refid="1426" relation="usage">
+          <edgelabel>TV</edgelabel>
+        </childnode>
+      </node>
+      <node id="1436">
+        <label>Player</label>
+        <link refid="classPlayer"/>
+        <childnode refid="1437" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1418" relation="usage">
+          <edgelabel>camera</edgelabel>
+        </childnode>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>vOrientation</edgelabel>
+          <edgelabel>apparentHealth</edgelabel>
+          <edgelabel>value</edgelabel>
+          <edgelabel>hOrientation</edgelabel>
+        </childnode>
+        <childnode refid="1420" relation="usage">
+          <edgelabel>speed</edgelabel>
+          <edgelabel>holding</edgelabel>
+          <edgelabel>jump</edgelabel>
+        </childnode>
+        <childnode refid="1438" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="1409" relation="usage">
+          <edgelabel>inConversation</edgelabel>
+          <edgelabel>state</edgelabel>
+        </childnode>
+      </node>
+      <node id="1432">
+        <label>unsigned</label>
+      </node>
+      <node id="1421">
+        <label>vector&lt; Particles * &gt;</label>
+      </node>
+      <node id="1437">
+        <label>dynamicObject</label>
+        <link refid="classdynamicObject"/>
+        <childnode refid="1426" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>health</edgelabel>
+          <edgelabel>hitDelay</edgelabel>
+        </childnode>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>velocity</edgelabel>
+        </childnode>
+      </node>
+      <node id="1409">
+        <label>bool</label>
+      </node>
+      <node id="1425">
+        <label>ATM</label>
+        <link refid="classATM"/>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>savings</edgelabel>
+        </childnode>
+        <childnode refid="1426" relation="usage">
+          <edgelabel>Withdraw</edgelabel>
+          <edgelabel>Deposit</edgelabel>
+        </childnode>
+      </node>
+      <node id="1438">
+        <label>Inventory</label>
+        <link refid="classInventory"/>
+        <childnode refid="1439" relation="usage">
+          <edgelabel>wallet</edgelabel>
+        </childnode>
+        <childnode refid="1420" relation="usage">
+          <edgelabel>index</edgelabel>
+        </childnode>
+        <childnode refid="1413" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1428" relation="usage">
+          <edgelabel>slotMeshes</edgelabel>
+        </childnode>
+        <childnode refid="1440" relation="usage">
+          <edgelabel>slots</edgelabel>
+        </childnode>
+        <childnode refid="1441" relation="usage">
+          <edgelabel>selector</edgelabel>
+        </childnode>
+      </node>
+      <node id="1413">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+      <node id="1443">
+        <label>Vending</label>
+        <link refid="classVending"/>
+        <childnode refid="1412" relation="usage">
+          <edgelabel>price</edgelabel>
+        </childnode>
+        <childnode refid="1426" relation="usage">
+          <edgelabel>Drink</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" line="65" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/PROJECTScene.h" bodystart="64" bodyend="170"/>
+    <listofallmembers>
+      <member refid="classPROJECTScene_1a5f7e5d41d2005fdb9729b2f734e2988c" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>AutoDoor</name></member>
+      <member refid="classPROJECTScene_1a671487d6bda4a603a330eb13a03e88ac" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>Bank</name></member>
+      <member refid="classPROJECTScene_1ab8d23e211bd73adde59f273a1423207d" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>blood</name></member>
+      <member refid="classPROJECTScene_1aea295a310a8fcee7da676f9a732e97c6" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>camera</name></member>
+      <member refid="classPROJECTScene_1ac75e8c68d8290d5014ceff53f04d007b" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>character</name></member>
+      <member refid="classPROJECTScene_1a4998a0a13d5279ac651bd9fbe4327aaa" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>controlPanel</name></member>
+      <member refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>DarrenInit</name></member>
+      <member refid="classPROJECTScene_1adbc3a2d9a1bd8bb87be36063b3345095" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>doorway</name></member>
+      <member refid="classPROJECTScene_1abd2c67d8b0ae29a412d16dec56ec2fab" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>doorway2</name></member>
+      <member refid="classPROJECTScene_1a2cc825520ffd8d4e62db833bbfb1aeb4" prot="public" virt="virtual"><scope>PROJECTScene</scope><name>Exit</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca91af7832b6ffd7b107b9fb58839fd4d0" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_AXES</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9e10e954addde6b2aae06110b86ea634" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_BACK</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca950916a95c8ef9b35d40ca0e6c8beef2" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_BIGCUBE</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa014f07655acd1da8950bdecc0566770" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_BOTTOM</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaad2b82ef4862096a7a836ce575339ab5" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_CCTV</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaff6b96d77b72cba2597f07fb0fe8148e" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_CCTV_CORNER</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca21cf44a1ead8b06c6d04ff01e87fbe71" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_CUBE</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa6e0d3136d867757d902fbe40465b42a" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_FRONT</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca0ccbbd5b23e2c81fdab9a59b2f37220c" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_HEART</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabcf75f4cd43f75ef2429209e338a28bd" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_HOLD</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabb555dcec9f3f7c4250431f9c7ea9dc9" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_JUMP</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca02c4b786f0a356568ab7d54f6dbcacda" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_KNIFE</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca40f3489cbfffe73d88a84f2cea0b70fa" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_LEFT</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca3e2b5b70656bf521e8b658b628d04e4d" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_LIGHTBALL</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9f202500e728f158365dbc13c208122d" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_LINE</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa7b0aaf5251eded81601ea088bd8e240" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_QUAD</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9448bdaeaf4661b4c2cd053b70484792" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_RIGHT</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca6fb3fdf8cbcda6b30b4479c2b6071576" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_SPRINT</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acadad7eb7e21a96e81688e0eb7f7e48385" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_TEXT</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca45da439763c6adc241d60ec4ae5e69fd" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_TEXTBOX</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca478812e0927f753be9bb0f9658ca4c0c" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEO_TOP</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80ac" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>GEOMETRY_TYPE</name></member>
+      <member refid="classPROJECTScene_1aa07dd9d2f6132b9936be816a7a863fcb" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>getTextWidth</name></member>
+      <member refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" prot="public" virt="virtual"><scope>PROJECTScene</scope><name>Init</name></member>
+      <member refid="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>InitJunk</name></member>
+      <member refid="classPROJECTScene_1a81babc41abb455739db46854c5cf848b" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>InitSuperMarket</name></member>
+      <member refid="classPROJECTScene_1acd8318d6e53a1ee41fd7e689212c3a31" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>inputDelay</name></member>
+      <member refid="classPROJECTScene_1aad5e71b6898152054906af5515c3e200" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>JeremiahInit</name></member>
+      <member refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>JessicaInit</name></member>
+      <member refid="classPROJECTScene_1adf6149f37a7ba08f88cc89e3e93ef9dc" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>light</name></member>
+      <member refid="classPROJECTScene_1aee8850dd4bc88a38076b993cc479021b" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>m_parameters</name></member>
+      <member refid="classPROJECTScene_1a33b0f80895bb5c797eda5de165430985" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>m_programID</name></member>
+      <member refid="classPROJECTScene_1ad0f7574ccd32f485aad7a052eed0dd5e" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>m_vertexArrayID</name></member>
+      <member refid="classPROJECTScene_1a4fc9422b13c6d64ce1f3b6c64319e7d0" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>Machine</name></member>
+      <member refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>meshList</name></member>
+      <member refid="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>modelStack</name></member>
+      <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca075e65c4b7d90e191d4c5ca1a25eb287" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>NUM_GEOMETRY</name></member>
+      <member refid="classPROJECTScene_1a936c50286d2e83fddedc13edc79328a1" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>object</name></member>
+      <member refid="classScene_1a140d39ea291abd069dad5bf6bff97e37" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>pause</name></member>
+      <member refid="classPROJECTScene_1afbcfd4aee5cd2bc2b35d5813cc71a80f" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>player</name></member>
+      <member refid="classPROJECTScene_1a441532a87975f7805fd45f7d713b60d2" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>projectionStack</name></member>
+      <member refid="classPROJECTScene_1a4e1102302efcb6a0b6f1096ee89ca653" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>PROJECTScene</name></member>
+      <member refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" prot="public" virt="virtual"><scope>PROJECTScene</scope><name>Render</name></member>
+      <member refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>RenderCCTVUI</name></member>
+      <member refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>RenderCrosshair</name></member>
+      <member refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>RenderMesh</name></member>
+      <member refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>RenderScene</name></member>
+      <member refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>RenderSkybox</name></member>
+      <member refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>RenderText</name></member>
+      <member refid="classPROJECTScene_1ad3c28e9ca3b8f32fe419b775331d87ec" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>RenderTextOnScreen</name></member>
+      <member refid="classPROJECTScene_1ab2f2f2e5df135948e5505d9978d46b75" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>RicssonInit</name></member>
+      <member refid="classScene_1ad10176d75a9cc0da56626f682d083507" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>Scene</name></member>
+      <member refid="classPROJECTScene_1ab7bb838e969fe7597cee45e0520ef649" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>soundInit</name></member>
+      <member refid="classPROJECTScene_1a9a58de28e3dbff47b5ff73f51168b31c" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>soundUpdate</name></member>
+      <member refid="classPROJECTScene_1a697465f68871bce2261142bbbec1da08" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>text</name></member>
+      <member refid="classPROJECTScene_1a86879351b07961b099488e0c43b16945" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>text2D</name></member>
+      <member refid="classPROJECTScene_1a23b016feb6cbc575852f50219c8d0db9" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>textbox</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa819a3dbc154d47c777e5012bf75768b3" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_COLOR_TEXTURE</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa76629f2a1a2a9d87fd13f946fe725001" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_COLOR_TEXTURE_ENABLED</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa62b03d9b75b33588761e2b90c975eca5" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_COLOR</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa515e38b4edd123686619be04d98c7d09" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_COSCUTOFF</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa4bee939de2f63706e8bf261178faefea" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_COSINNER</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaae7fd7411043dbffa5544ade186b8cba" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_EXPONENT</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa462a03e7d62fe1cd3c7a57e608554681" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_KC</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa70b3f3cf9a28b13f53239526ee77b7ba" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_KL</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3ee40eec18349ee1b4e34b3601399de6" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_KQ</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa30c02ae49fe81adfbaaf241c58cde568" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_POSITION</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac61359b5f34a447212e1a58819d0edef" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_POWER</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7ee7c3b69bf150069a4d316a1d6b32e0" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_SPOTDIRECTION</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa84e781530f40259eca1f1bba1a2d9566" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT0_TYPE</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa6e6aef185ca3f7399ed33326d1fda945" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_COLOR</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae0d68691cea2f615c2ff5eab45ebfdf5" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_COSCUTOFF</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa80f38c53f4c1977a13e600cbef4464ba" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_COSINNER</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae40fd94c72f835a2005f688dd620bf85" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_EXPONENT</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacc1cec7d9385a1189c6d6e5a3bdc7cc8" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_KC</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaa41c06102ddf294be480bcf80c9fe99c" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_KL</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa64d9a98ef1986240e4797e2ec6309dcf" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_KQ</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa9171037d977e9436f4b27f62acf919ba" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_POSITION</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa8ad1f459814c08ab3e17db8f882961f0" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_POWER</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3b383bb84659c288576dd49a55011308" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_SPOTDIRECTION</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac58b3fa092c640f0c4d25d1450547286" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT1_TYPE</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac10b156aab228b80d9cc24843b5bb0b2" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_COLOR</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baafdf23ec0aea28019f19e0b9a43c9f9c7" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_COSCUTOFF</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa2c24c1078eb30ad74e2bc406bae651d9" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_COSINNER</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae2b69c4399b71d9aafdbbfe8d5363f10" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_EXPONENT</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa30b80f65647bb9a53b3013d27e90124d" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_KC</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baad6c1f46a267f405911efde7048c7b00d" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_KL</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa54199152d7f363bb24ec2181e8f34936" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_KQ</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaee183127e7b2bc7b77192835067b8a4f" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_POSITION</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3aefb105deae1f368ee1f324f35affac" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_POWER</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa28b7a181296454f98f913079689de024" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_SPOTDIRECTION</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaf14dd834efd0122bd6b9b2a82ce00c81" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHT2_TYPE</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae4daefee557cac1c4f73b95346602d01" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_LIGHTENABLED</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baab3a889cc289a9fb91cff8f991ce24367" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_MATERIAL_AMBIENT</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa0c55b1002c6d74237249672e3e0b9404" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_MATERIAL_DIFFUSE</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baad2163115352cdd13b059b859761f2081" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_MATERIAL_SHININESS</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7b77061e10ba0a991305bb52aaf3f7f2" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_MATERIAL_SPECULAR</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa2ee781edbf9f060af691c80e7344154b" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_MODELVIEW</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa40594efa84a4475144d2ba4eeb72fd05" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_MODELVIEW_INVERSE_TRANSPOSE</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baabf3538a17acd6e6f23c5fdb9c8fe3dbf" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_MVP</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacb41ea1afa3d3c941a6718e3f238bad7" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_NUMLIGHTS</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa43acf2b36b61d1f1b76813f28cfbb8a6" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_TEXT_COLOR</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacc3df16e569f3d9d8e6a63947af9e36b" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_TEXT_ENABLED</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa5a27c8aa899cc9094087c27be3931d94" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>U_TOTAL</name></member>
+      <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997ba" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>UNIFORM_TYPE</name></member>
+      <member refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" prot="public" virt="virtual"><scope>PROJECTScene</scope><name>Update</name></member>
+      <member refid="classPROJECTScene_1a2fe9e514caef26154827f06158dadc66" prot="private" virt="non-virtual"><scope>PROJECTScene</scope><name>viewStack</name></member>
+      <member refid="classPROJECTScene_1a94013a21425314222e95a4707ff80b45" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>~PROJECTScene</name></member>
+      <member refid="classScene_1a3b8cec2e32546713915f8c6303c951f1" prot="public" virt="non-virtual"><scope>PROJECTScene</scope><name>~Scene</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

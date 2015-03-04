@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classDonation" kind="class" prot="public">
+    <compoundname>Donation</compoundname>
+    <basecompoundref refid="classQuest" prot="public" virt="non-virtual">Quest</basecompoundref>
+    <includes refid="dialogue_8h" local="no">dialogue.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDonation_1a2941ab2eefb0fe65c7653b8347ea7d06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Donation::Donation</definition>
+        <argsstring>()</argsstring>
+        <name>Donation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="108" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classDonation_1a2382253244fa72d7dd7b8c0444b7be07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Donation::Donation</definition>
+        <argsstring>(string t)</argsstring>
+        <name>Donation</name>
+        <param>
+          <type>string</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="109" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="109" bodyend="116"/>
+        <references refid="classQuest_1a534adb61e2d915d7ddc16acb0ab6eba4" compoundref="dialogue_8h" startline="73">Quest::Accept</references>
+        <references refid="classQuest_1aa21be157f656075b955ff62719cb7e7c" compoundref="dialogue_8h" startline="76">Quest::Decline</references>
+        <references refid="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" compoundref="dialogue_8h" startline="44">TextBox::text</references>
+        <references refid="classTextBox_1a853e607198ed5ff6d0fdcefea6289de4" compoundref="dialogue_8h" startline="39">TextBox::type</references>
+      </memberdef>
+      <memberdef kind="function" id="classDonation_1a5a28b2911dd6466dce0ac35c5d1d5a56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Donation::~Donation</definition>
+        <argsstring>()</argsstring>
+        <name>~Donation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="117" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classDonation_1ab53d6d044ee4d37bad08fa7d65ac82c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>string Donation::GenerateText</definition>
+        <argsstring>(Inventory inventory)</argsstring>
+        <name>GenerateText</name>
+        <reimplements refid="classTextBox_1ac367f8d55c2f1490bda97190d21676b1">GenerateText</reimplements>
+        <param>
+          <type><ref refid="classInventory" kindref="compound">Inventory</ref></type>
+          <declname>inventory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="119" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="119" bodyend="133"/>
+        <references refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" compoundref="inventory_8h" startline="109" endline="115">Inventory::getHolding</references>
+        <references refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" compoundref="collision_8h" startline="39">Object::mesh</references>
+        <references refid="classMesh_1aa956ea809178c5713ca3e9220cee7980" compoundref="Mesh_8h" startline="30">Mesh::name</references>
+        <references refid="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" compoundref="dialogue_8h" startline="44">TextBox::text</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1016">
+        <label>TextBox</label>
+        <link refid="classTextBox"/>
+      </node>
+      <node id="1015">
+        <label>Quest</label>
+        <link refid="classQuest"/>
+        <childnode refid="1016" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1014">
+        <label>Donation</label>
+        <link refid="classDonation"/>
+        <childnode refid="1015" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1022">
+        <label>string</label>
+      </node>
+      <node id="1021">
+        <label>float</label>
+      </node>
+      <node id="1019">
+        <label>TextBox</label>
+        <link refid="classTextBox"/>
+        <childnode refid="1020" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1022" relation="usage">
+          <edgelabel>apparentext</edgelabel>
+          <edgelabel>type</edgelabel>
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="1018">
+        <label>Quest</label>
+        <link refid="classQuest"/>
+        <childnode refid="1019" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1023" relation="usage">
+          <edgelabel>Accept</edgelabel>
+          <edgelabel>Decline</edgelabel>
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>Button2D</label>
+        <link refid="classButton2D"/>
+        <childnode refid="1019" relation="usage">
+          <edgelabel>altNext</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="1020" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1024" relation="usage">
+          <edgelabel>trigger</edgelabel>
+        </childnode>
+        <childnode refid="1022" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="1017">
+        <label>Donation</label>
+        <link refid="classDonation"/>
+        <childnode refid="1018" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1024">
+        <label>bool</label>
+      </node>
+      <node id="1020">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="1021" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="106" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="105" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classQuest_1a534adb61e2d915d7ddc16acb0ab6eba4" prot="public" virt="non-virtual"><scope>Donation</scope><name>Accept</name></member>
+      <member refid="classTextBox_1acf27c185eff76543d596e6c9d894dfee" prot="public" virt="non-virtual"><scope>Donation</scope><name>apparentext</name></member>
+      <member refid="classQuest_1aa21be157f656075b955ff62719cb7e7c" prot="public" virt="non-virtual"><scope>Donation</scope><name>Decline</name></member>
+      <member refid="classDonation_1a2941ab2eefb0fe65c7653b8347ea7d06" prot="public" virt="non-virtual"><scope>Donation</scope><name>Donation</name></member>
+      <member refid="classDonation_1a2382253244fa72d7dd7b8c0444b7be07" prot="public" virt="non-virtual"><scope>Donation</scope><name>Donation</name></member>
+      <member refid="classDonation_1ab53d6d044ee4d37bad08fa7d65ac82c4" prot="public" virt="virtual"><scope>Donation</scope><name>GenerateText</name></member>
+      <member refid="classQuest_1a4b06d5f97b5f67c0d10fecb4f16c51b5" prot="public" virt="virtual"><scope>Donation</scope><name>getAccept</name></member>
+      <member refid="classQuest_1ac952157b8c3f53c026376a199915a5b7" prot="public" virt="virtual"><scope>Donation</scope><name>getDecline</name></member>
+      <member refid="classTextBox_1abfb2baf145b19b1748edbeb9ba7a1266" prot="public" virt="non-virtual"><scope>Donation</scope><name>position</name></member>
+      <member refid="classQuest_1a5cdd6f02fdceaa7b7b53407740a22cf5" prot="public" virt="non-virtual"><scope>Donation</scope><name>Quest</name></member>
+      <member refid="classQuest_1a025ccedb4155d589cc10b99bdf42057a" prot="public" virt="non-virtual"><scope>Donation</scope><name>Quest</name></member>
+      <member refid="classQuest_1a3543707d634b3647b08bab8dabb09136" prot="public" virt="non-virtual"><scope>Donation</scope><name>Quest</name></member>
+      <member refid="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" prot="public" virt="non-virtual"><scope>Donation</scope><name>text</name></member>
+      <member refid="classTextBox_1a25b67e5ff6788c60b8aef3f3540879d0" prot="public" virt="non-virtual"><scope>Donation</scope><name>TextBox</name></member>
+      <member refid="classTextBox_1a0ef9abcf8b9fc8ff935b77777df18978" prot="public" virt="non-virtual"><scope>Donation</scope><name>TextBox</name></member>
+      <member refid="classQuest_1a141a2e06c042823901fa4b157f41354a" prot="public" virt="virtual"><scope>Donation</scope><name>triggerQuest</name></member>
+      <member refid="classTextBox_1a853e607198ed5ff6d0fdcefea6289de4" prot="public" virt="non-virtual"><scope>Donation</scope><name>type</name></member>
+      <member refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" prot="public" virt="non-virtual"><scope>Donation</scope><name>Update</name></member>
+      <member refid="classDonation_1a5a28b2911dd6466dce0ac35c5d1d5a56" prot="public" virt="non-virtual"><scope>Donation</scope><name>~Donation</name></member>
+      <member refid="classQuest_1ad4341309a8558845c6d93bc8ca0940f4" prot="public" virt="non-virtual"><scope>Donation</scope><name>~Quest</name></member>
+      <member refid="classTextBox_1ac3cc88a3ac171658ebaf44b01f4adf80" prot="public" virt="non-virtual"><scope>Donation</scope><name>~TextBox</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

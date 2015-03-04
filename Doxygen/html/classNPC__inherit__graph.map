@@ -1,0 +1,12 @@
+<map id="NPC" name="NPC">
+<area shape="rect" id="node4" href="$classBlindman.html" title="Blindman" alt="" coords="5,229,81,256"/>
+<area shape="rect" id="node5" href="$classCashier.html" title="Cashier" alt="" coords="106,229,173,256"/>
+<area shape="rect" id="node6" href="$classCustomer.html" title="Customer" alt="" coords="197,229,276,256"/>
+<area shape="rect" id="node7" href="$classDetective.html" title="Detective" alt="" coords="301,229,375,256"/>
+<area shape="rect" id="node8" href="$classHobo.html" title="Hobo" alt="" coords="400,229,452,256"/>
+<area shape="rect" id="node9" href="$classManager.html" title="Manager" alt="" coords="477,229,549,256"/>
+<area shape="rect" id="node10" href="$classS__Guard.html" title="S_Guard" alt="" coords="573,229,647,256"/>
+<area shape="rect" id="node11" href="$classThug.html" title="Thug" alt="" coords="671,229,722,256"/>
+<area shape="rect" id="node2" href="$classdynamicObject.html" title="dynamicObject" alt="" coords="327,80,437,107"/>
+<area shape="rect" id="node3" href="$classObject.html" title="Object" alt="" coords="352,5,412,32"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node2" href="$classdynamicObject.html" title="dynamicObject" alt="" coords="624,752,733,779"/>
+<area shape="rect" id="node3" href="$classObject.html" title="Object" alt="" coords="617,633,677,660"/>
+<area shape="rect" id="node4" href="$structCollision.html" title="Collision" alt="" coords="574,535,645,562"/>
+<area shape="rect" id="node5" href="$structVector3.html" title="Defines a 3D vector and its methods. " alt="" coords="396,392,463,419"/>
+<area shape="rect" id="node14" href="$classCamera3.html" title="Camera3" alt="" coords="228,633,303,660"/>
+<area shape="rect" id="node15" href="$classCamera.html" title="Camera" alt="" coords="151,535,217,562"/>
+<area shape="rect" id="node17" href="$classInventory.html" title="Inventory" alt="" coords="1083,752,1157,779"/>
+<area shape="rect" id="node19" href="$classSlot.html" title="Slot" alt="" coords="1233,535,1279,562"/>
+<area shape="rect" id="node8" href="$structMaterial.html" title="Material" alt="" coords="1161,243,1229,269"/>
+<area shape="rect" id="node9" href="$structComponent.html" title="Component" alt="" coords="1045,124,1133,151"/>
+<area shape="rect" id="node18" href="$classWallet.html" title="Wallet" alt="" coords="808,183,867,210"/>
+<area shape="rect" id="node7" href="$classMesh.html" title="To store VBO (vertex &amp; color buffer) and IBO (index buffer) " alt="" coords="1135,392,1190,419"/>
+<area shape="rect" id="node21" href="$classSelector.html" title="Selector" alt="" coords="1314,633,1385,660"/>
+</map>

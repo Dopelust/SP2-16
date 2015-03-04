@@ -1,0 +1,476 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classDoorway" kind="class" prot="public">
+    <compoundname>Doorway</compoundname>
+    <includes refid="player_8h" local="no">player.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classDoorway_1aa7c78d701196cdc60c7fd5ff5e8b9cc0" prot="public" static="no" mutable="no">
+        <type><ref refid="classObject" kindref="compound">Object</ref></type>
+        <definition>Object Doorway::Door[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Door</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="149" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="147" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="967" endline="1087">PROJECTScene::DarrenInit</referencedby>
+        <referencedby refid="classDoorway_1acba33af0e95e63acd73d3aa56c516104" compoundref="player_8cpp" startline="421" endline="479">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDoorway_1a5a3752db5488d1dffc83234966315ac7" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Doorway::doorPosition[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>doorPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="150" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="150" bodyend="-1"/>
+        <referencedby refid="classDoorway_1acba33af0e95e63acd73d3aa56c516104" compoundref="player_8cpp" startline="421" endline="479">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDoorway_1a6584e5007e9c818f61f2c2148e5e619d" prot="public" static="no" mutable="no">
+        <type><ref refid="classObject" kindref="compound">Object</ref></type>
+        <definition>Object Doorway::Button[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>Button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="151" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="151" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="967" endline="1087">PROJECTScene::DarrenInit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDoorway_1a0f22d21886528c482982187ad74f35ea" prot="public" static="no" mutable="no">
+        <type><ref refid="classObject" kindref="compound">Object</ref></type>
+        <definition>Object Doorway::Range</definition>
+        <argsstring></argsstring>
+        <name>Range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="152" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="152" bodyend="-1"/>
+        <referencedby refid="classDoorway_1ac0e9cf66af2147991062d5f26a887c3b" compoundref="player_8cpp" startline="483" endline="503">RangeUpdate</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDoorway_1ac49c6503f9030ab56586e1f2fe16d074" prot="public" static="no" mutable="no">
+        <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+        <definition>Mesh* Doorway::buttonStatus[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>buttonStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="153" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="153" bodyend="-1"/>
+        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="505" endline="514">ButtonUpdate</referencedby>
+        <referencedby refid="classDoorway_1acba33af0e95e63acd73d3aa56c516104" compoundref="player_8cpp" startline="421" endline="479">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDoorway_1a34fd6a1b0d2bc1abdbf4847148927cd3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Doorway::open</definition>
+        <argsstring></argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="154" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="505" endline="514">ButtonUpdate</referencedby>
+        <referencedby refid="classDoorway_1ac0e9cf66af2147991062d5f26a887c3b" compoundref="player_8cpp" startline="483" endline="503">RangeUpdate</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <referencedby refid="classDoorway_1acba33af0e95e63acd73d3aa56c516104" compoundref="player_8cpp" startline="421" endline="479">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDoorway_1a5f959ec67e3410d17cb2e20ed05a1fd8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Doorway::close</definition>
+        <argsstring></argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="154" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="154" bodyend="-1"/>
+        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="505" endline="514">ButtonUpdate</referencedby>
+        <referencedby refid="classDoorway_1ac0e9cf66af2147991062d5f26a887c3b" compoundref="player_8cpp" startline="483" endline="503">RangeUpdate</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <referencedby refid="classDoorway_1acba33af0e95e63acd73d3aa56c516104" compoundref="player_8cpp" startline="421" endline="479">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classDoorway_1a2c0fa99a40d13866bc5295a4fc975547" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Doorway::elapsedTime</definition>
+        <argsstring></argsstring>
+        <name>elapsedTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="155" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="155" bodyend="-1"/>
+        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="505" endline="514">ButtonUpdate</referencedby>
+        <referencedby refid="classDoorway_1acba33af0e95e63acd73d3aa56c516104" compoundref="player_8cpp" startline="421" endline="479">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDoorway_1a7bd9ec58f6e8112e0c89c6919951ebe0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Doorway::Doorway</definition>
+        <argsstring>()</argsstring>
+        <name>Doorway</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="121" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classDoorway_1aed789047130006d3ad9afe8b5be693ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Doorway::Init</definition>
+        <argsstring>(Vector3 p, Object D, Object B1, Object B2, Object R)</argsstring>
+        <name>Init</name>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classObject" kindref="compound">Object</ref></type>
+          <declname>D</declname>
+        </param>
+        <param>
+          <type><ref refid="classObject" kindref="compound">Object</ref></type>
+          <declname>B1</declname>
+        </param>
+        <param>
+          <type><ref refid="classObject" kindref="compound">Object</ref></type>
+          <declname>B2</declname>
+        </param>
+        <param>
+          <type><ref refid="classObject" kindref="compound">Object</ref></type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="123" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="123" bodyend="136"/>
+        <references refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" compoundref="collision_8h" startline="38">Object::collision</references>
+        <references refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" compoundref="MeshBuilder_8cpp" startline="1184" endline="1209">MeshBuilder::GenerateOBJ</references>
+        <references refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" compoundref="collision_8h" startline="20">Collision::hitbox</references>
+        <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
+        <references refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" compoundref="collision_8h" startline="39">Object::mesh</references>
+        <references refid="classButton_1a9fdba00d70de312b444e2aaca608e929" compoundref="MENUScene_8h" startline="32">Button::position</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <referencedby refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="967" endline="1087">PROJECTScene::DarrenInit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDoorway_1aa169323c6a2544d8a12ba5134be8642f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Doorway::Init</definition>
+        <argsstring>(Vector3 p, Object D, Object R)</argsstring>
+        <name>Init</name>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="classObject" kindref="compound">Object</ref></type>
+          <declname>D</declname>
+        </param>
+        <param>
+          <type><ref refid="classObject" kindref="compound">Object</ref></type>
+          <declname>R</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="137" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="137" bodyend="145"/>
+        <references refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" compoundref="collision_8h" startline="38">Object::collision</references>
+        <references refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" compoundref="collision_8h" startline="20">Collision::hitbox</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+      </memberdef>
+      <memberdef kind="function" id="classDoorway_1a071f98a290fb7ab8141afbf5c260c257" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Doorway::~Doorway</definition>
+        <argsstring>()</argsstring>
+        <name>~Doorway</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="147" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Doorway::ButtonUpdate</definition>
+        <argsstring>(double dt, vector&lt; Object * &gt;object, Player *players)</argsstring>
+        <name>ButtonUpdate</name>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classObject" kindref="compound">Object</ref> * &gt;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type><ref refid="classPlayer" kindref="compound">Player</ref> *</type>
+          <declname>players</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="157" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.cpp" bodystart="505" bodyend="514"/>
+        <references refid="classDoorway_1ac49c6503f9030ab56586e1f2fe16d074" compoundref="player_8h" startline="153">buttonStatus</references>
+        <references refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" compoundref="player_8h" startline="98">Player::camera</references>
+        <references refid="classDoorway_1a5f959ec67e3410d17cb2e20ed05a1fd8" compoundref="player_8h" startline="154">close</references>
+        <references refid="classDoorway_1a2c0fa99a40d13866bc5295a4fc975547" compoundref="player_8h" startline="155">elapsedTime</references>
+        <references refid="classPlayer_1aa1544a1feb4e29c1b57a720751057395" compoundref="player_8h" startline="103">Player::holding</references>
+        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">Application::IsKeyPressed</references>
+        <references refid="classCamera3_1ab6a0582c35355b63be1f69dfed21027d" compoundref="Camera3_8h" startline="24">Camera3::lookAt</references>
+        <references refid="classDoorway_1a34fd6a1b0d2bc1abdbf4847148927cd3" compoundref="player_8h" startline="154">open</references>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDoorway_1ac0e9cf66af2147991062d5f26a887c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Doorway::RangeUpdate</definition>
+        <argsstring>(double dt, vector&lt; Object * &gt;object, Player *player)</argsstring>
+        <name>RangeUpdate</name>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classObject" kindref="compound">Object</ref> * &gt;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type><ref refid="classPlayer" kindref="compound">Player</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="158" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.cpp" bodystart="483" bodyend="503"/>
+        <references refid="classObject_1ab0f9523e4bdbfa635a079c1cc01f9b8a" compoundref="collision_8cpp" startline="45" endline="62">Object::checkCollision</references>
+        <references refid="classDoorway_1a5f959ec67e3410d17cb2e20ed05a1fd8" compoundref="player_8h" startline="154">close</references>
+        <references refid="player_8cpp_1aa44bf3fcc686d895aaa3265499f2920c" compoundref="player_8cpp" startline="481">entrance</references>
+        <references refid="classDoorway_1a34fd6a1b0d2bc1abdbf4847148927cd3" compoundref="player_8h" startline="154">open</references>
+        <references refid="classDoorway_1a0f22d21886528c482982187ad74f35ea" compoundref="player_8h" startline="152">Range</references>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classDoorway_1acba33af0e95e63acd73d3aa56c516104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Doorway::Update</definition>
+        <argsstring>(double dt, vector&lt; Object * &gt;object, Player *player)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classObject" kindref="compound">Object</ref> * &gt;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type><ref refid="classPlayer" kindref="compound">Player</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="159" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.cpp" bodystart="421" bodyend="479"/>
+        <references refid="classDoorway_1ac49c6503f9030ab56586e1f2fe16d074" compoundref="player_8h" startline="153">buttonStatus</references>
+        <references refid="classObject_1ab0f9523e4bdbfa635a079c1cc01f9b8a" compoundref="collision_8cpp" startline="45" endline="62">Object::checkCollision</references>
+        <references refid="classDoorway_1a5f959ec67e3410d17cb2e20ed05a1fd8" compoundref="player_8h" startline="154">close</references>
+        <references refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" compoundref="collision_8h" startline="38">Object::collision</references>
+        <references refid="classDoorway_1aa7c78d701196cdc60c7fd5ff5e8b9cc0" compoundref="player_8h" startline="147">Door</references>
+        <references refid="classDoorway_1a5a3752db5488d1dffc83234966315ac7" compoundref="player_8h" startline="150">doorPosition</references>
+        <references refid="classDoorway_1a2c0fa99a40d13866bc5295a4fc975547" compoundref="player_8h" startline="155">elapsedTime</references>
+        <references refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" compoundref="collision_8h" startline="20">Collision::hitbox</references>
+        <references refid="classDoorway_1a34fd6a1b0d2bc1abdbf4847148927cd3" compoundref="player_8h" startline="154">open</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1032">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="1027" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="1030">
+        <label>Mesh</label>
+        <link refid="classMesh"/>
+        <childnode refid="1031" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+        <childnode refid="1033" relation="usage">
+          <edgelabel>mode</edgelabel>
+        </childnode>
+        <childnode refid="1034" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="1035" relation="usage">
+          <edgelabel>textureID</edgelabel>
+          <edgelabel>indexBuffer</edgelabel>
+          <edgelabel>indexSize</edgelabel>
+          <edgelabel>vertexBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1033">
+        <label>DRAW_MODE</label>
+      </node>
+      <node id="1034">
+        <label>string</label>
+      </node>
+      <node id="1031">
+        <label>Material</label>
+        <link refid="structMaterial"/>
+        <childnode refid="1027" relation="usage">
+          <edgelabel>kShininess</edgelabel>
+        </childnode>
+        <childnode refid="1032" relation="usage">
+          <edgelabel>kDiffuse</edgelabel>
+          <edgelabel>kAmbient</edgelabel>
+          <edgelabel>kSpecular</edgelabel>
+        </childnode>
+      </node>
+      <node id="1027">
+        <label>float</label>
+      </node>
+      <node id="1026">
+        <label>Doorway</label>
+        <link refid="classDoorway"/>
+        <childnode refid="1027" relation="usage">
+          <edgelabel>elapsedTime</edgelabel>
+        </childnode>
+        <childnode refid="1028" relation="usage">
+          <edgelabel>doorPosition</edgelabel>
+        </childnode>
+        <childnode refid="1029" relation="usage">
+          <edgelabel>close</edgelabel>
+          <edgelabel>open</edgelabel>
+        </childnode>
+        <childnode refid="1030" relation="usage">
+          <edgelabel>buttonStatus</edgelabel>
+        </childnode>
+        <childnode refid="1036" relation="usage">
+          <edgelabel>Range</edgelabel>
+          <edgelabel>Door</edgelabel>
+          <edgelabel>Button</edgelabel>
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>Object</label>
+        <link refid="classObject"/>
+        <childnode refid="1037" relation="usage">
+          <edgelabel>collision</edgelabel>
+        </childnode>
+        <childnode refid="1027" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>orientation</edgelabel>
+        </childnode>
+        <childnode refid="1028" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1029" relation="usage">
+          <edgelabel>ignoreCollision</edgelabel>
+        </childnode>
+        <childnode refid="1034" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="1030" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="1037">
+        <label>Collision</label>
+        <link refid="structCollision"/>
+        <childnode refid="1028" relation="usage">
+          <edgelabel>hitbox</edgelabel>
+          <edgelabel>centre</edgelabel>
+        </childnode>
+        <childnode refid="1030" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="1035">
+        <label>unsigned</label>
+      </node>
+      <node id="1029">
+        <label>bool</label>
+      </node>
+      <node id="1028">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="1027" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="119" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="118" bodyend="160"/>
+    <listofallmembers>
+      <member refid="classDoorway_1a6584e5007e9c818f61f2c2148e5e619d" prot="public" virt="non-virtual"><scope>Doorway</scope><name>Button</name></member>
+      <member refid="classDoorway_1ac49c6503f9030ab56586e1f2fe16d074" prot="public" virt="non-virtual"><scope>Doorway</scope><name>buttonStatus</name></member>
+      <member refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" prot="public" virt="non-virtual"><scope>Doorway</scope><name>ButtonUpdate</name></member>
+      <member refid="classDoorway_1a5f959ec67e3410d17cb2e20ed05a1fd8" prot="public" virt="non-virtual"><scope>Doorway</scope><name>close</name></member>
+      <member refid="classDoorway_1aa7c78d701196cdc60c7fd5ff5e8b9cc0" prot="public" virt="non-virtual"><scope>Doorway</scope><name>Door</name></member>
+      <member refid="classDoorway_1a5a3752db5488d1dffc83234966315ac7" prot="public" virt="non-virtual"><scope>Doorway</scope><name>doorPosition</name></member>
+      <member refid="classDoorway_1a7bd9ec58f6e8112e0c89c6919951ebe0" prot="public" virt="non-virtual"><scope>Doorway</scope><name>Doorway</name></member>
+      <member refid="classDoorway_1a2c0fa99a40d13866bc5295a4fc975547" prot="public" virt="non-virtual"><scope>Doorway</scope><name>elapsedTime</name></member>
+      <member refid="classDoorway_1aed789047130006d3ad9afe8b5be693ef" prot="public" virt="non-virtual"><scope>Doorway</scope><name>Init</name></member>
+      <member refid="classDoorway_1aa169323c6a2544d8a12ba5134be8642f" prot="public" virt="non-virtual"><scope>Doorway</scope><name>Init</name></member>
+      <member refid="classDoorway_1a34fd6a1b0d2bc1abdbf4847148927cd3" prot="public" virt="non-virtual"><scope>Doorway</scope><name>open</name></member>
+      <member refid="classDoorway_1a0f22d21886528c482982187ad74f35ea" prot="public" virt="non-virtual"><scope>Doorway</scope><name>Range</name></member>
+      <member refid="classDoorway_1ac0e9cf66af2147991062d5f26a887c3b" prot="public" virt="non-virtual"><scope>Doorway</scope><name>RangeUpdate</name></member>
+      <member refid="classDoorway_1acba33af0e95e63acd73d3aa56c516104" prot="public" virt="non-virtual"><scope>Doorway</scope><name>Update</name></member>
+      <member refid="classDoorway_1a071f98a290fb7ab8141afbf5c260c257" prot="public" virt="non-virtual"><scope>Doorway</scope><name>~Doorway</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

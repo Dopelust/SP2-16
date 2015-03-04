@@ -1,0 +1,8 @@
+<map id="Detective::Detective" name="Detective::Detective">
+<area shape="rect" id="node2" href="$classDetective.html#a809658e990799aabf8b50e202b778f64" title="Detective::Init" alt="" coords="239,69,339,96"/>
+<area shape="rect" id="node6" href="$structVector3.html#ab3b1af4c82ca09bf8ce997c205e3cb10" title="Vector3::SphericalToCartesian" alt="" coords="189,132,388,159"/>
+<area shape="rect" id="node3" href="$LoadTGA_8cpp.html#a459a80ca6de67a1e3493bfb66ae317e4" title="LoadTGA" alt="" coords="475,5,551,32"/>
+<area shape="rect" id="node4" href="$classNPC.html#a3ea41c7d9745e0be2d2b25187dbaf3f7" title="NPC::InitDialogue" alt="" coords="451,56,575,83"/>
+<area shape="rect" id="node5" href="$classNPC.html#a7c05d38abb761bb503fdac5a36bc62a4" title="NPC::InitQuest" alt="" coords="459,107,568,133"/>
+<area shape="rect" id="node7" href="$namespaceMath.html#ac04b987cc6c574a059e68cb58f58c09a" title="Converts from degrees to radians. " alt="" coords="436,157,591,184"/>
+</map>

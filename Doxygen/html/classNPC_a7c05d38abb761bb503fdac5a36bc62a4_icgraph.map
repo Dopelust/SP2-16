@@ -1,0 +1,6 @@
+<map id="NPC::InitQuest" name="NPC::InitQuest">
+<area shape="rect" id="node2" href="$classDetective.html#a809658e990799aabf8b50e202b778f64" title="Detective::Init" alt="" coords="163,5,263,32"/>
+<area shape="rect" id="node4" href="$classManager.html#a200a7092507e1769240452e88996127b" title="Manager::Init" alt="" coords="164,56,261,83"/>
+<area shape="rect" id="node3" href="$classDetective.html#ad8787c005a9da6c916c77e59f6f9266c" title="Detective::Detective" alt="" coords="311,5,447,32"/>
+<area shape="rect" id="node5" href="$classManager.html#a1658ff9f18e38ccd9cb8b0b371b9c20b" title="Manager::Manager" alt="" coords="313,56,444,83"/>
+</map>

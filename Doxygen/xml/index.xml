@@ -1,0 +1,1415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.8">
+  <compound refid="classAesthetics" kind="class"><name>Aesthetics</name>
+    <member refid="classAesthetics_1a503d2ecfb95c3336f6d99ccf31c9af21" kind="variable"><name>position</name></member>
+    <member refid="classAesthetics_1a2752f47fc675ccfcc19895c97d02f98a" kind="variable"><name>mesh</name></member>
+    <member refid="classAesthetics_1a0eb640ce6f39564ff6768ff22ad6c03e" kind="variable"><name>orientation</name></member>
+    <member refid="classAesthetics_1a9edeeb818cca3bd83692de825feeabf7" kind="function"><name>Aesthetics</name></member>
+    <member refid="classAesthetics_1af43d476334b9b05621c00d521236e2a5" kind="function"><name>~Aesthetics</name></member>
+  </compound>
+  <compound refid="classApplication" kind="class"><name>Application</name>
+    <member refid="classApplication_1a53bab02ca90bd8f8a989cda091a78eed" kind="variable"><name>mouseScroll</name></member>
+    <member refid="classApplication_1ac81ea1396dc69c6d48b9a701954f53fe" kind="variable"><name>m_timer</name></member>
+    <member refid="classApplication_1afa8cc05ce6b6092be5ecdfdae44e05f8" kind="function"><name>Application</name></member>
+    <member refid="classApplication_1a748bca84fefb9c12661cfaa2f623748d" kind="function"><name>~Application</name></member>
+    <member refid="classApplication_1a276388f7090c0a2b1c8b16cf033b969d" kind="function"><name>Init</name></member>
+    <member refid="classApplication_1aaf09cd6cb412086dc039e28cdb059f0d" kind="function"><name>Run</name></member>
+    <member refid="classApplication_1a9d410604b39b8374a884b1f2a1f2a5ba" kind="function"><name>Exit</name></member>
+    <member refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" kind="function"><name>IsKeyPressed</name></member>
+    <member refid="classApplication_1a1bfd134bb982a2e1a07d359c46d71483" kind="function"><name>mouseButton</name></member>
+    <member refid="classApplication_1a8e0c92cc01f4cf7ab20ce21188f033f0" kind="function"><name>getMousePos</name></member>
+  </compound>
+  <compound refid="classATM" kind="class"><name>ATM</name>
+    <member refid="classATM_1a6739d5222a4be86f6acb0c1da33e1ee2" kind="variable"><name>savings</name></member>
+    <member refid="classATM_1ab259a89e4c1d31c14262979d2bb5d71e" kind="variable"><name>Deposit</name></member>
+    <member refid="classATM_1a4e1a25d3a9b4a39c109a2ef1fe448def" kind="variable"><name>Withdraw</name></member>
+    <member refid="classATM_1a9c46b139699582bdc3c9dc1503ff8923" kind="function"><name>ATM</name></member>
+    <member refid="classATM_1a57ee70516ca85922e4d9b265421d1652" kind="function"><name>ATM</name></member>
+    <member refid="classATM_1a8c00afde46586626ebf558742858322d" kind="function"><name>~ATM</name></member>
+    <member refid="classATM_1a0f22448380cc111be1c3cf52bb26f206" kind="function"><name>getSavings</name></member>
+    <member refid="classATM_1a115c0205f98d83bfb8b40c39d1bbf64f" kind="function"><name>withdraw</name></member>
+    <member refid="classATM_1a092b8157714bbb779562aac06e518287" kind="function"><name>deposit</name></member>
+  </compound>
+  <compound refid="classBlindman" kind="class"><name>Blindman</name>
+    <member refid="classBlindman_1a95e87f7791f5838fe069515f5734f89d" kind="function"><name>Blindman</name></member>
+    <member refid="classBlindman_1a9f3bad8e13aed61de357f18fda3bd191" kind="function"><name>Blindman</name></member>
+    <member refid="classBlindman_1ac3021b03812ca9455df9f2c522a56942" kind="function"><name>~Blindman</name></member>
+    <member refid="classBlindman_1a8ca8c8b76aae45b2b7a2fdc59c8e5a89" kind="function"><name>Init</name></member>
+    <member refid="classBlindman_1a1075050c7a1ad2ccb92e39f107bdc831" kind="function"><name>Control</name></member>
+  </compound>
+  <compound refid="classBodypart" kind="class"><name>Bodypart</name>
+    <member refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" kind="variable"><name>identity</name></member>
+    <member refid="classBodypart_1a3eb671588904ac51120d9db3be131273" kind="function"><name>Bodypart</name></member>
+    <member refid="classBodypart_1ae5b847cddaec74ff46fdbd5fc3b243c1" kind="function"><name>Bodypart</name></member>
+    <member refid="classBodypart_1a51117326b7bdd597eb0e011ff479b02c" kind="function"><name>~Bodypart</name></member>
+    <member refid="classBodypart_1ab2bf58734c5ae68a1d21c59cf28785cb" kind="function"><name>getIdentity</name></member>
+  </compound>
+  <compound refid="classButton" kind="class"><name>Button</name>
+    <member refid="classButton_1a9fdba00d70de312b444e2aaca608e929" kind="variable"><name>position</name></member>
+    <member refid="classButton_1a9a79182881bfd9a9e35aafd9dab955ae" kind="variable"><name>name</name></member>
+    <member refid="classButton_1a3b36df1ae23c58aedb9e15a713159459" kind="function"><name>Button</name></member>
+    <member refid="classButton_1a2a001eb9c3cc8ae54768a850dd345002" kind="function"><name>~Button</name></member>
+  </compound>
+  <compound refid="classButton2D" kind="class"><name>Button2D</name>
+    <member refid="classButton2D_1a6962bb136415617bbde1bf11e77e44f8" kind="variable"><name>position</name></member>
+    <member refid="classButton2D_1a3792c91961ccd92faecc73e246ba82b6" kind="variable"><name>text</name></member>
+    <member refid="classButton2D_1aaddd13eb1c619ee976e3ab94b6c2dc85" kind="variable"><name>next</name></member>
+    <member refid="classButton2D_1a509777ecad03fd8760b010c53540bd82" kind="variable"><name>altNext</name></member>
+    <member refid="classButton2D_1a0d42bddf0d8835aaa07384880fc5dc66" kind="variable"><name>trigger</name></member>
+    <member refid="classButton2D_1a7c49631ac31b8191e36a43cee7ee9633" kind="function"><name>Button2D</name></member>
+    <member refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" kind="function"><name>Button2D</name></member>
+    <member refid="classButton2D_1acee9600f6d3f25c8e5d643502b08a06d" kind="function"><name>~Button2D</name></member>
+  </compound>
+  <compound refid="classCamera" kind="class"><name>Camera</name>
+    <member refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" kind="variable"><name>position</name></member>
+    <member refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" kind="variable"><name>target</name></member>
+    <member refid="classCamera_1ab76ce866ca2acd6ab54447f474077245" kind="variable"><name>up</name></member>
+    <member refid="classCamera_1a01f94c3543f56ede7af49dc778f19331" kind="function"><name>Camera</name></member>
+    <member refid="classCamera_1ad1897942d0ccf91052386388a497349f" kind="function"><name>~Camera</name></member>
+    <member refid="classCamera_1a609775f7ec4cd936ad7add808cd7354c" kind="function"><name>Init</name></member>
+    <member refid="classCamera_1aa46f58b32270a571ab56dde4caca46db" kind="function"><name>Reset</name></member>
+    <member refid="classCamera_1acc1741feb6d9da849ea4b6c12e0711e6" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="classCamera3" kind="class"><name>Camera3</name>
+    <member refid="classCamera3_1a0befffc59212bf28cffddc24f2b31e67" kind="variable"><name>defaultPosition</name></member>
+    <member refid="classCamera3_1a0c65c81ec5c614828b140c8125cf79da" kind="variable"><name>defaultTarget</name></member>
+    <member refid="classCamera3_1a089366725666df811a969aca24168cb6" kind="variable"><name>defaultUp</name></member>
+    <member refid="classCamera3_1a23504d1b5f748a4f6530e8753f9856d1" kind="variable"><name>defaultOrientation</name></member>
+    <member refid="classCamera3_1a2c49503899d14de556889a3f14bf3dd0" kind="variable"><name>defaultLook</name></member>
+    <member refid="classCamera3_1a2de4550bc7ac9c4ac3f36b059e3d8bbd" kind="variable"><name>fov</name></member>
+    <member refid="classCamera3_1a21148dcf9f21fdd2952e6c21bf87c45d" kind="variable"><name>orientation</name></member>
+    <member refid="classCamera3_1a8b792e4458ca2bc4df9f5226ddf7e8ea" kind="variable"><name>look</name></member>
+    <member refid="classCamera3_1ab6a0582c35355b63be1f69dfed21027d" kind="variable"><name>lookAt</name></member>
+    <member refid="classCamera3_1a44474d04a473a6d07d39b8b2dfba671e" kind="function"><name>lookingAt</name></member>
+    <member refid="classCamera3_1aef7409cbc80ffd21a658c7055653b0ab" kind="function"><name>Camera3</name></member>
+    <member refid="classCamera3_1a386fa089e2507622ef79675cd95efd69" kind="function"><name>~Camera3</name></member>
+    <member refid="classCamera3_1a1cb8d466abcd4d1ad4567846dcca1ce5" kind="function"><name>Init</name></member>
+    <member refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe" kind="function"><name>Update</name></member>
+    <member refid="classCamera3_1a4cead3bb5a13f53d2f4043435937553d" kind="function"><name>Move</name></member>
+    <member refid="classCamera3_1a1671d2532fbe0a7a0ed037f549e6d8d2" kind="function"><name>Zoom</name></member>
+    <member refid="classCamera3_1a4b10106bcd89f21e3cf3e39f04d8c1cb" kind="function"><name>Reset</name></member>
+  </compound>
+  <compound refid="classCashier" kind="class"><name>Cashier</name>
+    <member refid="classCashier_1a9dd99a4a5f4c5295aaa4584b21e30aec" kind="function"><name>Cashier</name></member>
+    <member refid="classCashier_1a19f108b42d6993c071861e5c4d730119" kind="function"><name>Cashier</name></member>
+    <member refid="classCashier_1af69977426e869d157423fe6d0d4d08ac" kind="function"><name>~Cashier</name></member>
+    <member refid="classCashier_1a2d84684071ff70d834a144b40b3dbb09" kind="function"><name>InitQuest</name></member>
+    <member refid="classCashier_1a9b6de754df0c601b8122a1b46bf3080c" kind="function"><name>getConversation</name></member>
+    <member refid="classCashier_1a378b4d5a8fc2364208422989deb97150" kind="function"><name>Init</name></member>
+    <member refid="classCashier_1a4932c14600f942a852991044f7d99fcb" kind="function"><name>Control</name></member>
+  </compound>
+  <compound refid="classCheckout" kind="class"><name>Checkout</name>
+    <member refid="classCheckout_1a9698471772ae3a06faa37ef18faaec42" kind="function"><name>Checkout</name></member>
+    <member refid="classCheckout_1ad1d23b153f19be50a9f65e89bc99ad0f" kind="function"><name>Checkout</name></member>
+    <member refid="classCheckout_1a13e71af228a61246744e498d5befd904" kind="function"><name>~Checkout</name></member>
+    <member refid="classCheckout_1a80a605b2f1447e43401abe9f17ea135e" kind="function"><name>GenerateText</name></member>
+  </compound>
+  <compound refid="structCollision" kind="struct"><name>Collision</name>
+    <member refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" kind="variable"><name>centre</name></member>
+    <member refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" kind="variable"><name>hitbox</name></member>
+    <member refid="structCollision_1a93d586902c737c5045bb518248501e8b" kind="variable"><name>boundingBox</name></member>
+  </compound>
+  <compound refid="structColor" kind="struct"><name>Color</name>
+    <member refid="structColor_1a3958a556b47d2de3dd45c75aac833c20" kind="variable"><name>r</name></member>
+    <member refid="structColor_1a5defbb21620e480e556181772d665f34" kind="variable"><name>g</name></member>
+    <member refid="structColor_1a33e482be18d6ea31d2b403bee13683b7" kind="variable"><name>b</name></member>
+    <member refid="structColor_1aa2ccdb977158b64bf8ad9000f443b09c" kind="function"><name>Color</name></member>
+    <member refid="structColor_1acc77e4e3583d3eca7e476952e51bfb80" kind="function"><name>Set</name></member>
+  </compound>
+  <compound refid="structComponent" kind="struct"><name>Component</name>
+    <member refid="structComponent_1a490db57cde183ef5a233b6ff3386ef6f" kind="variable"><name>r</name></member>
+    <member refid="structComponent_1a6cf7bfac62ac8aa4a8aa8c3f847428d8" kind="variable"><name>g</name></member>
+    <member refid="structComponent_1abd55184abe2aaf269b38f5913721821c" kind="variable"><name>b</name></member>
+    <member refid="structComponent_1ae110a300786be861f7ea647ef77d9d18" kind="function"><name>Component</name></member>
+    <member refid="structComponent_1a85f599b839327709953f0115dc5dfd49" kind="function"><name>Set</name></member>
+  </compound>
+  <compound refid="classCustomer" kind="class"><name>Customer</name>
+    <member refid="classCustomer_1ab183deefd47baea670b424e3f5ab380c" kind="variable"><name>index</name></member>
+    <member refid="classCustomer_1ac755f51da5784d25887cb6091cb391b5" kind="variable"><name>decisionTime</name></member>
+    <member refid="classCustomer_1a4dd271421c76d2ed81bd6ae64d89a875" kind="variable"><name>tOrientation</name></member>
+    <member refid="classCustomer_1a5a8666b1e785fee0a0d4d30f175cf65b" kind="variable"><name>targets</name></member>
+    <member refid="classCustomer_1abcc8fae9701e5ba9d7d6fe44498b34e3" kind="function"><name>Customer</name></member>
+    <member refid="classCustomer_1a5e680c504ee1400e2ee5a2d424bff612" kind="function"><name>Customer</name></member>
+    <member refid="classCustomer_1ab93fb14683b0393b9c900109f77c2629" kind="function"><name>~Customer</name></member>
+    <member refid="classCustomer_1a21ad635f8e45a5a82d28ce59c11b37d0" kind="function"><name>Control</name></member>
+  </compound>
+  <compound refid="classDetective" kind="class"><name>Detective</name>
+    <member refid="classDetective_1ad8787c005a9da6c916c77e59f6f9266c" kind="function"><name>Detective</name></member>
+    <member refid="classDetective_1adf30d397574d2d3d7c07e6a027bb5899" kind="function"><name>Detective</name></member>
+    <member refid="classDetective_1a6b55f7e79f140d60983809cf2dc6b1e2" kind="function"><name>~Detective</name></member>
+    <member refid="classDetective_1a809658e990799aabf8b50e202b778f64" kind="function"><name>Init</name></member>
+    <member refid="classDetective_1a6c4bd2e90dc9cd222cab66e86bee7a49" kind="function"><name>Control</name></member>
+  </compound>
+  <compound refid="classDetectiveQuest" kind="class"><name>DetectiveQuest</name>
+    <member refid="classDetectiveQuest_1a7ee63031b8ad0d9537c515d39131eddc" kind="function"><name>DetectiveQuest</name></member>
+    <member refid="classDetectiveQuest_1a4511014263506c960a9c8f512a655e63" kind="function"><name>DetectiveQuest</name></member>
+    <member refid="classDetectiveQuest_1a2af681ac5105ca3b583d327f382a06d3" kind="function"><name>~DetectiveQuest</name></member>
+  </compound>
+  <compound refid="classDivideByZero" kind="class"><name>DivideByZero</name>
+    <member refid="classDivideByZero_1a4756aaefaf5e864c29a68ff24a8a8f10" kind="function"><name>what</name></member>
+  </compound>
+  <compound refid="classDonation" kind="class"><name>Donation</name>
+    <member refid="classDonation_1a2941ab2eefb0fe65c7653b8347ea7d06" kind="function"><name>Donation</name></member>
+    <member refid="classDonation_1a2382253244fa72d7dd7b8c0444b7be07" kind="function"><name>Donation</name></member>
+    <member refid="classDonation_1a5a28b2911dd6466dce0ac35c5d1d5a56" kind="function"><name>~Donation</name></member>
+    <member refid="classDonation_1ab53d6d044ee4d37bad08fa7d65ac82c4" kind="function"><name>GenerateText</name></member>
+  </compound>
+  <compound refid="classDoorway" kind="class"><name>Doorway</name>
+    <member refid="classDoorway_1aa7c78d701196cdc60c7fd5ff5e8b9cc0" kind="variable"><name>Door</name></member>
+    <member refid="classDoorway_1a5a3752db5488d1dffc83234966315ac7" kind="variable"><name>doorPosition</name></member>
+    <member refid="classDoorway_1a6584e5007e9c818f61f2c2148e5e619d" kind="variable"><name>Button</name></member>
+    <member refid="classDoorway_1a0f22d21886528c482982187ad74f35ea" kind="variable"><name>Range</name></member>
+    <member refid="classDoorway_1ac49c6503f9030ab56586e1f2fe16d074" kind="variable"><name>buttonStatus</name></member>
+    <member refid="classDoorway_1a34fd6a1b0d2bc1abdbf4847148927cd3" kind="variable"><name>open</name></member>
+    <member refid="classDoorway_1a5f959ec67e3410d17cb2e20ed05a1fd8" kind="variable"><name>close</name></member>
+    <member refid="classDoorway_1a2c0fa99a40d13866bc5295a4fc975547" kind="variable"><name>elapsedTime</name></member>
+    <member refid="classDoorway_1a7bd9ec58f6e8112e0c89c6919951ebe0" kind="function"><name>Doorway</name></member>
+    <member refid="classDoorway_1aed789047130006d3ad9afe8b5be693ef" kind="function"><name>Init</name></member>
+    <member refid="classDoorway_1aa169323c6a2544d8a12ba5134be8642f" kind="function"><name>Init</name></member>
+    <member refid="classDoorway_1a071f98a290fb7ab8141afbf5c260c257" kind="function"><name>~Doorway</name></member>
+    <member refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" kind="function"><name>ButtonUpdate</name></member>
+    <member refid="classDoorway_1ac0e9cf66af2147991062d5f26a887c3b" kind="function"><name>RangeUpdate</name></member>
+    <member refid="classDoorway_1acba33af0e95e63acd73d3aa56c516104" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="classdynamicObject" kind="class"><name>dynamicObject</name>
+    <member refid="classdynamicObject_1a9f48578b8539944e877d40c728554a4b" kind="variable"><name>velocity</name></member>
+    <member refid="classdynamicObject_1a75ff4aa4f32b515899500d2bce5c2637" kind="variable"><name>hitDelay</name></member>
+    <member refid="classdynamicObject_1a173092fb5ed2ad0a1f21796f323abad7" kind="variable"><name>health</name></member>
+    <member refid="classdynamicObject_1ae7af2a87ece92a7816201624999da3f2" kind="function"><name>dynamicObject</name></member>
+    <member refid="classdynamicObject_1aadded891f78e621ed2c38a1ec9d7d3bd" kind="function"><name>dynamicObject</name></member>
+    <member refid="classdynamicObject_1af54f832fa2066be59e08f2dc702d0fe7" kind="function"><name>dynamicObject</name></member>
+    <member refid="classdynamicObject_1a88d8db9f73895f8389fa0147544537f4" kind="function"><name>~dynamicObject</name></member>
+    <member refid="classdynamicObject_1afa6faddc6880811327f4edef99b09eaa" kind="function"><name>Init</name></member>
+    <member refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" kind="function"><name>Control</name></member>
+    <member refid="classdynamicObject_1a489e068d22bc3ad6217c86fdef158746" kind="function"><name>Update</name></member>
+    <member refid="classdynamicObject_1aceab704935fe9e62ff9ba4360b2a9a79" kind="function"><name>UpdateVelocity</name></member>
+    <member refid="classdynamicObject_1a6baf2001dbd9c86003c2c1f1ddfe3612" kind="function"><name>Knockback</name></member>
+    <member refid="classdynamicObject_1a69090f87d5681cb9c048b3b68ccfe418" kind="function"><name>RespondToCollision</name></member>
+    <member refid="classdynamicObject_1af34cb96b5a22f85d119895e27af79428" kind="function"><name>RespondToCollision</name></member>
+    <member refid="classdynamicObject_1aaefa676592a15b4c88d77aa9f0d56535" kind="function"><name>getHealth</name></member>
+  </compound>
+  <compound refid="classHobo" kind="class"><name>Hobo</name>
+    <member refid="classHobo_1aab2baf5238210a47f68e9e7972c4be71" kind="function"><name>Hobo</name></member>
+    <member refid="classHobo_1a59d6c85ed27a5072c62efcebe2de0fbd" kind="function"><name>~Hobo</name></member>
+    <member refid="classHobo_1a1081ed24676f684229be89ec03c2179e" kind="function"><name>Init</name></member>
+    <member refid="classHobo_1a8954f38328192e36d833e5ee6860f2b5" kind="function"><name>InitQuest</name></member>
+    <member refid="classHobo_1ade0a53cb6febb71853f257200d566d28" kind="function"><name>getConversation</name></member>
+    <member refid="classHobo_1afcf4cdc2748d1a3ace0059ac87631509" kind="function"><name>Control</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1IAudioRecorder" kind="class"><name>irrklang::IAudioRecorder</name>
+    <member refid="classirrklang_1_1IAudioRecorder_1ad02c63bf445c6f916e43271c428a05f4" kind="function"><name>startRecordingBufferedAudio</name></member>
+    <member refid="classirrklang_1_1IAudioRecorder_1ae1d39c90335b96f95c050fc98c1bfac1" kind="function"><name>startRecordingCustomHandledAudio</name></member>
+    <member refid="classirrklang_1_1IAudioRecorder_1aa00ecf279dfad147e313acac7a04024b" kind="function"><name>stopRecordingAudio</name></member>
+    <member refid="classirrklang_1_1IAudioRecorder_1ab70d79f62eadea7bd54e3730105b14d6" kind="function"><name>addSoundSourceFromRecordedAudio</name></member>
+    <member refid="classirrklang_1_1IAudioRecorder_1a3c45b902520c4bf5610da78476183fb2" kind="function"><name>clearRecordedAudioDataBuffer</name></member>
+    <member refid="classirrklang_1_1IAudioRecorder_1a6b98611df2d840191002479455e73f3e" kind="function"><name>isRecording</name></member>
+    <member refid="classirrklang_1_1IAudioRecorder_1ac6f664694d15960dff90d9288850c472" kind="function"><name>getAudioFormat</name></member>
+    <member refid="classirrklang_1_1IAudioRecorder_1a92394171c311a2f066cf4d0cf94bf8a0" kind="function"><name>getRecordedAudioData</name></member>
+    <member refid="classirrklang_1_1IAudioRecorder_1a5a93972625896b0259d77226e8484565" kind="function"><name>getDriverName</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1IAudioStream" kind="class"><name>irrklang::IAudioStream</name>
+    <member refid="classirrklang_1_1IAudioStream_1ab356024dfcdde9f864cfa7dc9d76e346" kind="function"><name>~IAudioStream</name></member>
+    <member refid="classirrklang_1_1IAudioStream_1a179a1fc826d94884f9cb3dd4f5e52943" kind="function"><name>getFormat</name></member>
+    <member refid="classirrklang_1_1IAudioStream_1a1ac6276613e91d0f530bfee3cf5f92ff" kind="function"><name>setPosition</name></member>
+    <member refid="classirrklang_1_1IAudioStream_1a4e10ae9405140ec6b4f09422c8c2eaa4" kind="function"><name>getIsSeekingSupported</name></member>
+    <member refid="classirrklang_1_1IAudioStream_1a09d6d3de70aa95df109f5eb58c799980" kind="function"><name>readFrames</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1IAudioStreamLoader" kind="class"><name>irrklang::IAudioStreamLoader</name>
+    <member refid="classirrklang_1_1IAudioStreamLoader_1a54aeae62ffd27931a8ddd2e23fcc6624" kind="function"><name>~IAudioStreamLoader</name></member>
+    <member refid="classirrklang_1_1IAudioStreamLoader_1a3194c3ba81ebb4929d6cedc6f36ab165" kind="function"><name>isALoadableFileExtension</name></member>
+    <member refid="classirrklang_1_1IAudioStreamLoader_1ab47c905866c381295f4e42663e35cd8e" kind="function"><name>createAudioStream</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1ICapturedAudioDataReceiver" kind="class"><name>irrklang::ICapturedAudioDataReceiver</name>
+    <member refid="classirrklang_1_1ICapturedAudioDataReceiver_1a1271d74901e6ce1a19f234fc0838c2b1" kind="function"><name>OnReceiveAudioDataStreamChunk</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1IFileFactory" kind="class"><name>irrklang::IFileFactory</name>
+    <member refid="classirrklang_1_1IFileFactory_1ae9595d4a1c5142cbf710ee99ccd7148e" kind="function"><name>~IFileFactory</name></member>
+    <member refid="classirrklang_1_1IFileFactory_1abe09d8c9dadf1cfd45a63c733a2f910c" kind="function"><name>createFileReader</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1IFileReader" kind="class"><name>irrklang::IFileReader</name>
+    <member refid="classirrklang_1_1IFileReader_1a438be116191227ff12500968ff27bdfb" kind="function"><name>~IFileReader</name></member>
+    <member refid="classirrklang_1_1IFileReader_1a0ba36fc0023d3ad430bbe34770364559" kind="function"><name>read</name></member>
+    <member refid="classirrklang_1_1IFileReader_1a1c98718116049833e2de77a67a07faaa" kind="function"><name>seek</name></member>
+    <member refid="classirrklang_1_1IFileReader_1af6f0881f2c887cc41016c58144853b5f" kind="function"><name>getSize</name></member>
+    <member refid="classirrklang_1_1IFileReader_1a99c405529f07b2b0190beda048b432e2" kind="function"><name>getPos</name></member>
+    <member refid="classirrklang_1_1IFileReader_1a060e65d32758ced92fa4615193585784" kind="function"><name>getFileName</name></member>
+  </compound>
+  <compound refid="classInventory" kind="class"><name>Inventory</name>
+    <member refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" kind="variable"><name>wallet</name></member>
+    <member refid="classInventory_1afe301a142d60f17405fd1594b048ea1b" kind="variable"><name>position</name></member>
+    <member refid="classInventory_1abbca52e85095a8e8d8c59e9fc189186c" kind="variable"><name>slots</name></member>
+    <member refid="classInventory_1a58bd4f3b1bf785308c8a49e9f4867fe3" kind="variable"><name>selector</name></member>
+    <member refid="classInventory_1a52280b8b0c4552ff3af24d48260f1cc9" kind="variable"><name>index</name></member>
+    <member refid="classInventory_1affd0b2c7f8b63271aee214031feaeb4b" kind="variable"><name>slotMeshes</name></member>
+    <member refid="classInventory_1a10485613fc8bfb32ee564d9b5110f8fb" kind="function"><name>Inventory</name></member>
+    <member refid="classInventory_1a6c6dfcb6d977c74a7abf46809e892e3d" kind="function"><name>~Inventory</name></member>
+    <member refid="classInventory_1ab906623075379c75c63b267d2cccbcae" kind="function"><name>emptySlot</name></member>
+    <member refid="classInventory_1add9b431527557df4a701a54db3d56d75" kind="function"><name>checkPaid</name></member>
+    <member refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" kind="function"><name>canUse</name></member>
+    <member refid="classInventory_1a8d6d927ace25d6913479748b89bf96a0" kind="function"><name>Insert</name></member>
+    <member refid="classInventory_1a5a40d6b6bae4cae4fa5d4f78bed5f21c" kind="function"><name>checkPrice</name></member>
+    <member refid="classInventory_1a0d4eb7cbb90ff12b81025a897ed86816" kind="function"><name>Checkout</name></member>
+    <member refid="classInventory_1ad55678fdf4c3f5a1038ce7e7eaa243f4" kind="function"><name>Remove</name></member>
+    <member refid="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" kind="function"><name>Delete</name></member>
+    <member refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" kind="function"><name>Init</name></member>
+    <member refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" kind="function"><name>Update</name></member>
+    <member refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" kind="function"><name>getHolding</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1IRefCounted" kind="class"><name>irrklang::IRefCounted</name>
+    <member refid="classirrklang_1_1IRefCounted_1ae372c01b8a01de0d21d23b6d05c27a03" kind="variable"><name>ReferenceCounter</name></member>
+    <member refid="classirrklang_1_1IRefCounted_1ad9d20b84a525d7bc07e44b556fbf7da6" kind="function"><name>IRefCounted</name></member>
+    <member refid="classirrklang_1_1IRefCounted_1a7fe8953e57adac9bcd28a94d3b251886" kind="function"><name>~IRefCounted</name></member>
+    <member refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" kind="function"><name>grab</name></member>
+    <member refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kind="function"><name>drop</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1ISound" kind="class"><name>irrklang::ISound</name>
+    <member refid="classirrklang_1_1ISound_1ab48eb941e32834c0d77cfa252bd66e08" kind="function"><name>getSoundSource</name></member>
+    <member refid="classirrklang_1_1ISound_1a399fef60d1c48e2dffdf76d83173a15a" kind="function"><name>setIsPaused</name></member>
+    <member refid="classirrklang_1_1ISound_1ade9a05d059ab8fd73973a1f2adc2af81" kind="function"><name>getIsPaused</name></member>
+    <member refid="classirrklang_1_1ISound_1a108485fe64658441cecd70917782961f" kind="function"><name>stop</name></member>
+    <member refid="classirrklang_1_1ISound_1a3c80c6f11978cccd2cee3883ed4a587a" kind="function"><name>getVolume</name></member>
+    <member refid="classirrklang_1_1ISound_1a4c91357775f1d15e2c276ced09a40599" kind="function"><name>setVolume</name></member>
+    <member refid="classirrklang_1_1ISound_1acce37a680cccecbaa3173b78df5e8531" kind="function"><name>setPan</name></member>
+    <member refid="classirrklang_1_1ISound_1a344972a8120b9c562cba5ebf5039210d" kind="function"><name>getPan</name></member>
+    <member refid="classirrklang_1_1ISound_1ac012ae8299106d3e82d66f63d2378b9d" kind="function"><name>isLooped</name></member>
+    <member refid="classirrklang_1_1ISound_1af564040ebfced7fcbe4e415ee47713c2" kind="function"><name>setIsLooped</name></member>
+    <member refid="classirrklang_1_1ISound_1a9d9e758f8500b194580de339c7f96768" kind="function"><name>isFinished</name></member>
+    <member refid="classirrklang_1_1ISound_1a318bcb0ec6c44078cdee3c9b080b6f41" kind="function"><name>setMinDistance</name></member>
+    <member refid="classirrklang_1_1ISound_1a2da9631d826b0f662a3c635a8b9df6b4" kind="function"><name>getMinDistance</name></member>
+    <member refid="classirrklang_1_1ISound_1a571f0117ef904ddf994a8638bd2b72ce" kind="function"><name>setMaxDistance</name></member>
+    <member refid="classirrklang_1_1ISound_1a1ff40d382fc28c16fa36a88beb11b2fe" kind="function"><name>getMaxDistance</name></member>
+    <member refid="classirrklang_1_1ISound_1a994b98c059e8aee6adb82bb12d866338" kind="function"><name>setPosition</name></member>
+    <member refid="classirrklang_1_1ISound_1af00d25ee00a4f83c5344421fd989762c" kind="function"><name>getPosition</name></member>
+    <member refid="classirrklang_1_1ISound_1aafa952978b4118141cb65304b5bdd1e2" kind="function"><name>setVelocity</name></member>
+    <member refid="classirrklang_1_1ISound_1a685a2dddb5f5b08cd35546b1df6fad4b" kind="function"><name>getVelocity</name></member>
+    <member refid="classirrklang_1_1ISound_1ad8edf019757e44c683b14424abc2275c" kind="function"><name>getPlayPosition</name></member>
+    <member refid="classirrklang_1_1ISound_1a60a6170484331189daadb541f62c5dc5" kind="function"><name>setPlayPosition</name></member>
+    <member refid="classirrklang_1_1ISound_1afdcf560325c0eefb6436d82fbc6cdb40" kind="function"><name>setPlaybackSpeed</name></member>
+    <member refid="classirrklang_1_1ISound_1a7b8e88197b5d9daffb1af9a8b0116608" kind="function"><name>getPlaybackSpeed</name></member>
+    <member refid="classirrklang_1_1ISound_1a722403c1a7acff78a0278e7128a15ef0" kind="function"><name>getPlayLength</name></member>
+    <member refid="classirrklang_1_1ISound_1a988bb2ccda459ad6aa3264e9a58aa99a" kind="function"><name>getSoundEffectControl</name></member>
+    <member refid="classirrklang_1_1ISound_1a50dc71426d0abec7af56fa68a5bb87b5" kind="function"><name>setSoundStopEventReceiver</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1ISoundDeviceList" kind="class"><name>irrklang::ISoundDeviceList</name>
+    <member refid="classirrklang_1_1ISoundDeviceList_1a546d93bf5e70b5b168c430329194f2e4" kind="function"><name>getDeviceCount</name></member>
+    <member refid="classirrklang_1_1ISoundDeviceList_1a77509686d507ea5939a50d31ca8fdf93" kind="function"><name>getDeviceID</name></member>
+    <member refid="classirrklang_1_1ISoundDeviceList_1a79160c5136dbdcd81999f3d95d603498" kind="function"><name>getDeviceDescription</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1ISoundEffectControl" kind="class"><name>irrklang::ISoundEffectControl</name>
+    <member refid="classirrklang_1_1ISoundEffectControl_1ae171bcc96042c9961589749431dc3cb7" kind="function"><name>disableAllEffects</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a82d0417ae9a3745ccd6c2a11d7dfd066" kind="function"><name>enableChorusSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a8c549f59a5d9526446e382d0fb162f2a" kind="function"><name>disableChorusSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a36022cc414a7a36adc37f6323e9de305" kind="function"><name>isChorusSoundEffectEnabled</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a95a88bf69d25ae53043b16a2d4c38c30" kind="function"><name>enableCompressorSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1aa643e57e4c7ff3f2dcd7a5af96bcdaa6" kind="function"><name>disableCompressorSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a04b24a94590d619447ff25f9d7c9a7fc" kind="function"><name>isCompressorSoundEffectEnabled</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a0954c960d9cd03eceeb13c410bd5cecc" kind="function"><name>enableDistortionSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a1f36ef034931cca1aa4b148d531f6f60" kind="function"><name>disableDistortionSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1abe13dc6ff5cea4cc91539669de279cca" kind="function"><name>isDistortionSoundEffectEnabled</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a5f2e867d41eb16b6e5418c1c2c92e501" kind="function"><name>enableEchoSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a59016932b4de4144dce7a5634a95990d" kind="function"><name>disableEchoSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a00e1f5fac2053f892e2c69513045a4fa" kind="function"><name>isEchoSoundEffectEnabled</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a680441843d106cc1c881a657a58e71b6" kind="function"><name>enableFlangerSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a5d7f2594017bf1eba46de9b47caca7a1" kind="function"><name>disableFlangerSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1aaf128c7d06d83d4c531ff37099e8e231" kind="function"><name>isFlangerSoundEffectEnabled</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a33491b08b95c26135dddbad53c112551" kind="function"><name>enableGargleSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a98bdab3ee2208318ae9a9e26aa30a8df" kind="function"><name>disableGargleSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a048d6c4540d0cfc016de12f33ab9954c" kind="function"><name>isGargleSoundEffectEnabled</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a330e139241402dae1bbb03b271b34048" kind="function"><name>enableI3DL2ReverbSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1af74e0b8ec9bef236cea457d30d607f3b" kind="function"><name>disableI3DL2ReverbSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a866f8851e312ac6b5f25ecf83aec0018" kind="function"><name>isI3DL2ReverbSoundEffectEnabled</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a32494b1eb24d50febb687cbc9d64d834" kind="function"><name>enableParamEqSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a943febbaec941ff8dfab3fb299633bc6" kind="function"><name>disableParamEqSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1ac45754347d5792fe52471ee0c8f8759a" kind="function"><name>isParamEqSoundEffectEnabled</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a8c6d89699eb98dcf297968fcc8de2a52" kind="function"><name>enableWavesReverbSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1a673be7b0a8b670895ad22c3a2a9ef67f" kind="function"><name>disableWavesReverbSoundEffect</name></member>
+    <member refid="classirrklang_1_1ISoundEffectControl_1af921742c6cf804a18554d812d87dc198" kind="function"><name>isWavesReverbSoundEffectEnabled</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1ISoundEngine" kind="class"><name>irrklang::ISoundEngine</name>
+    <member refid="classirrklang_1_1ISoundEngine_1ad815d525d837732ae744ec620b55d242" kind="function"><name>getDriverName</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a25f612fe6479d3b22dc5bab2a2eaa927" kind="function"><name>play2D</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1aef959c10e0a0fd2df68abb1cdacd5893" kind="function"><name>play2D</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1adb09ecc8f61120ce14d26545ed43d8ec" kind="function"><name>play3D</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a06a76e7869221c69a351657e962965ff" kind="function"><name>play3D</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a38dbc2f1d49e3127fc4a81a9c1a2f82d" kind="function"><name>stopAllSounds</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a92f1a34edd5bfdde3eaae13212eb4147" kind="function"><name>setAllSoundsPaused</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a7f5a0aff56ce54d9bbc5fcf6603cf516" kind="function"><name>getSoundSource</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a2dd835d9767de26959b520dc491eb3d5" kind="function"><name>getSoundSource</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a788aa75e2872c9b09786303a45de6c58" kind="function"><name>getSoundSourceCount</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a4eed0fa6712872e55003b26462e21005" kind="function"><name>addSoundSourceFromFile</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a686f6a4c8a7e90ec6859436f6ae39707" kind="function"><name>addSoundSourceFromMemory</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a69c6ec4704a9b0225fb835319318ee4b" kind="function"><name>addSoundSourceFromPCMData</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a1a3542b9d4e1c0a77d7cc9591c3c9321" kind="function"><name>addSoundSourceAlias</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a82e712f7816f933145690983dbd8be9e" kind="function"><name>removeSoundSource</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1ae932ded6ce36b06440433714fd5ef7f8" kind="function"><name>removeSoundSource</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a1d37141994f73595fc96d5893844925c" kind="function"><name>removeAllSoundSources</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a90b70abaae576b45ee062ea2e4380ea1" kind="function"><name>setSoundVolume</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a268d7486dfaf4309b29228c501627ba6" kind="function"><name>getSoundVolume</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1af3e6223435969159ef3b22d0c83d2b84" kind="function"><name>setListenerPosition</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a7b4f4913148d42ffe80b69979ad25906" kind="function"><name>update</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a1084577f9f43cb12e86cea43c323b12c" kind="function"><name>isCurrentlyPlaying</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a1e6cb7800d4c5b8e8029d2a0da4aca21" kind="function"><name>isCurrentlyPlaying</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a6cb64f878a5355454c7197276127a7c9" kind="function"><name>registerAudioStreamLoader</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a879cf9e0f8e6387dbd8060bdabb02464" kind="function"><name>isMultiThreaded</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1ad7c48f9d7ccc6f60adb1b3f024f9b189" kind="function"><name>addFileFactory</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a5bd71e2afec5482e94bfeb205748fdf8" kind="function"><name>setDefault3DSoundMinDistance</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a3ba24125e73a696b61511f31d1716521" kind="function"><name>getDefault3DSoundMinDistance</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a89a3ff86f692cff9613fe96e4c3480cc" kind="function"><name>setDefault3DSoundMaxDistance</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1aba82bb9b5a8899e5ff5a87c858bb36bb" kind="function"><name>getDefault3DSoundMaxDistance</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a789c363d79071e868c5ee768f2c3d469" kind="function"><name>setRolloffFactor</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a088de9bd74ae6bd58d865a38ae2411f3" kind="function"><name>setDopplerEffectParameters</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1abcb159bed86265a22fe3435ce2541ea6" kind="function"><name>loadPlugins</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a31cb74d06d3312cafb243498d97cb0ca" kind="function"><name>getInternalAudioInterface</name></member>
+    <member refid="classirrklang_1_1ISoundEngine_1a3cbaae130ddd88adfef6af3861e8d9b0" kind="function"><name>setMixedDataOutputReceiver</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1ISoundMixedOutputReceiver" kind="class"><name>irrklang::ISoundMixedOutputReceiver</name>
+    <member refid="classirrklang_1_1ISoundMixedOutputReceiver_1a2950c073c7f242833bbab6f1eb1f1ce3" kind="function"><name>~ISoundMixedOutputReceiver</name></member>
+    <member refid="classirrklang_1_1ISoundMixedOutputReceiver_1a4951ef6422a5f6aaf384095a5f1d930e" kind="function"><name>OnAudioDataReady</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1ISoundSource" kind="class"><name>irrklang::ISoundSource</name>
+    <member refid="classirrklang_1_1ISoundSource_1afbd2d8ef903b106a8e9a332c0dd06693" kind="function"><name>getName</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1aed0e4abae00be20497ccb905d2db7588" kind="function"><name>setStreamMode</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a5b1158611ec58ab372ef05de541fed56" kind="function"><name>getStreamMode</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a23ff097b74d284529e4e1c75d0611884" kind="function"><name>getPlayLength</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a4c24dd695accd2d2f0f6e00124af1cf4" kind="function"><name>getAudioFormat</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a6a608ded51f5920d0cb5d28ac6ee5455" kind="function"><name>getIsSeekingSupported</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a52accb16b3a554558f12f99d16f57a7d" kind="function"><name>setDefaultVolume</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1aa5b916f192c9625be74f6ca06d9e5f30" kind="function"><name>getDefaultVolume</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1af3a3635f94afc8bc03c9af5b3c408ac0" kind="function"><name>setDefaultMinDistance</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a8f263cc21e42eabbd894d986bdafa90f" kind="function"><name>getDefaultMinDistance</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a7d22ed6bb25eeb14fec844c02f7553ce" kind="function"><name>setDefaultMaxDistance</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1af43bf5affba2a9758bfa3c4f367c32a8" kind="function"><name>getDefaultMaxDistance</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a6dfe93f58c4443b9547e9b60abe18dff" kind="function"><name>forceReloadAtNextUse</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a434174ae21f4e43a480395e79fb2d4a9" kind="function"><name>setForcedStreamingThreshold</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a69bd50de0cb511389d273841936f8d0f" kind="function"><name>getForcedStreamingThreshold</name></member>
+    <member refid="classirrklang_1_1ISoundSource_1a7ea731f5136f0d7abfbe2e2436d4aa43" kind="function"><name>getSampleData</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1ISoundStopEventReceiver" kind="class"><name>irrklang::ISoundStopEventReceiver</name>
+    <member refid="classirrklang_1_1ISoundStopEventReceiver_1a26adc3eec345f11286e576e449e6647d" kind="function"><name>~ISoundStopEventReceiver</name></member>
+    <member refid="classirrklang_1_1ISoundStopEventReceiver_1a8e975104683b71cd45436ae5f8bfaf9f" kind="function"><name>OnSoundStopped</name></member>
+  </compound>
+  <compound refid="classItem" kind="class"><name>Item</name>
+    <member refid="classItem_1a541992483e11953ad3c2026f3a163864" kind="variable"><name>paid</name></member>
+    <member refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" kind="variable"><name>price</name></member>
+    <member refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" kind="variable"><name>restore</name></member>
+    <member refid="classItem_1a297720c02984eab37332ae795d22189d" kind="function"><name>Item</name></member>
+    <member refid="classItem_1afb088e339e1ab8d7cbdf606583b0e53a" kind="function"><name>Item</name></member>
+    <member refid="classItem_1ac8567583f60adbddabdaae556b901aca" kind="function"><name>Item</name></member>
+    <member refid="classItem_1a1e4bc4a18402c13baca9ae369232a1c7" kind="function"><name>Item</name></member>
+    <member refid="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" kind="function"><name>~Item</name></member>
+    <member refid="classItem_1a82ff126c35c7513cdca4cb91f2ba00db" kind="function"><name>setPaid</name></member>
+    <member refid="classItem_1aac27cacc8aaf201040a6030d06b3493d" kind="function"><name>getPaid</name></member>
+    <member refid="classItem_1a893141a75506836c77f4b88da24892f0" kind="function"><name>getValue</name></member>
+    <member refid="classItem_1a887d35ef6bee698d6d5408c6c38834b4" kind="function"><name>getHealth</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1IVirtualRefCounted" kind="class"><name>irrklang::IVirtualRefCounted</name>
+    <member refid="classirrklang_1_1IVirtualRefCounted_1a54ed4b2c2bf1fd7666f7d78a9e768612" kind="function"><name>~IVirtualRefCounted</name></member>
+    <member refid="classirrklang_1_1IVirtualRefCounted_1a1720491c5a3a511985903bfa3c829018" kind="function"><name>grab</name></member>
+    <member refid="classirrklang_1_1IVirtualRefCounted_1a6602c3d110f23410c5bca8a08b709aa4" kind="function"><name>drop</name></member>
+  </compound>
+  <compound refid="structLight" kind="struct"><name>Light</name>
+    <member refid="structLight_1aa7ed22cab99d811d72896efaee6d07cb" kind="enum"><name>LIGHT_TYPE</name></member>
+    <member refid="structLight_1aa7ed22cab99d811d72896efaee6d07cbab02ff4ee1e2a9673edac03cf11b66338" kind="enumvalue"><name>LIGHT_POINT</name></member>
+    <member refid="structLight_1aa7ed22cab99d811d72896efaee6d07cba9bf1f515ab954cb3379615aab42f30b6" kind="enumvalue"><name>LIGHT_DIRECTIONAL</name></member>
+    <member refid="structLight_1aa7ed22cab99d811d72896efaee6d07cba69dd6d65ad12b410709ae74c8d9b1e16" kind="enumvalue"><name>LIGHT_SPOT</name></member>
+    <member refid="structLight_1afeb738db41e987719e359166ef93314f" kind="variable"><name>position</name></member>
+    <member refid="structLight_1ad7a168d26aed1bf7cca1a8d8e6f8ada4" kind="variable"><name>color</name></member>
+    <member refid="structLight_1a6c4c401141c4cdb3b9b9b3bab7dd6fbb" kind="variable"><name>power</name></member>
+    <member refid="structLight_1a888f11000d2baf1228d9e5c8d8c90fcb" kind="variable"><name>kC</name></member>
+    <member refid="structLight_1ab3918c449fb40fa5c6cc5283f2c9687d" kind="variable"><name>kL</name></member>
+    <member refid="structLight_1a79c8e47de58f131ff5403fc2d823cc21" kind="variable"><name>kQ</name></member>
+    <member refid="structLight_1a5dcdb101afc28979b5aaff0a2ec79ba5" kind="variable"><name>type</name></member>
+    <member refid="structLight_1a6bd73eb0b27ef881f8442e20912d9258" kind="variable"><name>spotDirection</name></member>
+    <member refid="structLight_1af4ce5bbfbf33af96db9b8a222d073298" kind="variable"><name>cosCutoff</name></member>
+    <member refid="structLight_1a8c843f5d1af5c6f4f4928e9906f5d0db" kind="variable"><name>cosInner</name></member>
+    <member refid="structLight_1a4eb4fd0f025fb66d1934675ffff0e661" kind="variable"><name>exponent</name></member>
+    <member refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" kind="function"><name>Light</name></member>
+  </compound>
+  <compound refid="classManager" kind="class"><name>Manager</name>
+    <member refid="classManager_1ac73db4768406a5ef121955377a162462" kind="variable"><name>collection</name></member>
+    <member refid="classManager_1a1658ff9f18e38ccd9cb8b0b371b9c20b" kind="function"><name>Manager</name></member>
+    <member refid="classManager_1a0efa17e6a4dc70793c1e0728932721be" kind="function"><name>Manager</name></member>
+    <member refid="classManager_1a322cad25d7007438b3a043ad02253d29" kind="function"><name>~Manager</name></member>
+    <member refid="classManager_1af1cb5c5c1590f4229a3cb40e63ee01b9" kind="function"><name>getCriteria</name></member>
+    <member refid="classManager_1a200a7092507e1769240452e88996127b" kind="function"><name>Init</name></member>
+    <member refid="classManager_1aa23a22bfd454e602d39588a6b6b23224" kind="function"><name>Control</name></member>
+  </compound>
+  <compound refid="classManagerQuest" kind="class"><name>ManagerQuest</name>
+    <member refid="classManagerQuest_1a835f660139a704b86f79fd1337b183b3" kind="variable"><name>box_range</name></member>
+    <member refid="classManagerQuest_1a596ccaee4123ef89fee5ef504327af9f" kind="function"><name>ManagerQuest</name></member>
+    <member refid="classManagerQuest_1ac0dfedfab3ba574c20d155ce59830fde" kind="function"><name>~ManagerQuest</name></member>
+    <member refid="classManagerQuest_1a0a96a780361e8d833f1706540761ba5e" kind="function"><name>Criteria</name></member>
+  </compound>
+  <compound refid="structMaterial" kind="struct"><name>Material</name>
+    <member refid="structMaterial_1ab3819b3151cbf3ac1892195ab091e3b8" kind="variable"><name>kAmbient</name></member>
+    <member refid="structMaterial_1aa88dd619cacf46e2f26ddd23fe032898" kind="variable"><name>kDiffuse</name></member>
+    <member refid="structMaterial_1a97cc0bf34b02c758b198d12dd24e96e2" kind="variable"><name>kSpecular</name></member>
+    <member refid="structMaterial_1a07cec8956c43f81adeb6ba7aea104915" kind="variable"><name>kShininess</name></member>
+    <member refid="structMaterial_1a137e987401b63eb7c6c27c3e38bc74b5" kind="function"><name>Material</name></member>
+  </compound>
+  <compound refid="classMENUScene" kind="class"><name>MENUScene</name>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9" kind="enum"><name>GEOMETRY_TYPE</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aea3fa946bf95d37f29f4c65a2f38f739" kind="enumvalue"><name>GEO_AXES</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad2a6ea3ce5ec9e5ddc37b2529ff738ee" kind="enumvalue"><name>GEO_LEFT</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9af597019975c7e406a689e4a07b190f3e" kind="enumvalue"><name>GEO_RIGHT</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a060dbb38fc0df5757a3933458240fb8f" kind="enumvalue"><name>GEO_TOP</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a4f09859993b9ff635c8d39dc268d7395" kind="enumvalue"><name>GEO_BOTTOM</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a313409490271c031bfe93c715de7dc72" kind="enumvalue"><name>GEO_FRONT</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ab429b4bd0ed0b16c2a0366343136ec0a" kind="enumvalue"><name>GEO_BACK</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a00b4c6b10740b1483548f07fae729f5b" kind="enumvalue"><name>GEO_LIGHTBALL</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8410e8ad9572c2783af741d247c89949" kind="enumvalue"><name>GEO_QUAD</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad1b42b8cbcc6d09e860e50d62a626fcc" kind="enumvalue"><name>GEO_KNIFE</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9abfc0981829faa20039ced5c539e65236" kind="enumvalue"><name>GEO_HEART</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a53337c1ed32673d6bdf110dba2065f19" kind="enumvalue"><name>GEO_SPRINT</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a1164b3e83da15d9ed64c093077a518ea" kind="enumvalue"><name>GEO_JUMP</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aa652bbc0ff1de780b72024e2458f5508" kind="enumvalue"><name>GEO_TEXT</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8d1503e3e5b3b09beb89a201702ee572" kind="enumvalue"><name>GEO_LINE</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a5afad9754570b5153964f1e761d64a20" kind="enumvalue"><name>GEO_CUBE</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a3856e41a9cefc395c3ce13df4f0fc8e4" kind="enumvalue"><name>GEO_BIGCUBE</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9adb1dfb470126f2666dc77e993b812cd9" kind="enumvalue"><name>GEO_HOLD</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a75d7798228d969991b30fa3c5f86ccb0" kind="enumvalue"><name>GEO_CCTV</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9aaf9edd54a9fcbec23ee9902955a9acf8" kind="enumvalue"><name>GEO_CCTV_CORNER</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9a8c3bd4cc81793938afa77d7f147b8a05" kind="enumvalue"><name>GEO_TEXTBOX</name></member>
+    <member refid="classMENUScene_1ae8674a3f11521682f40a9f9069ce8ad9ad1b0f2261404aecf11261df8df8725d4" kind="enumvalue"><name>NUM_GEOMETRY</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8" kind="enum"><name>UNIFORM_TYPE</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ac2b122d4c7eecd0b585e116eb578675d" kind="enumvalue"><name>U_MVP</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8adb0814660fbd91a8520059308b669d30" kind="enumvalue"><name>U_MODELVIEW</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a4b96ab62968163ed59fa92a5838f0446" kind="enumvalue"><name>U_MODELVIEW_INVERSE_TRANSPOSE</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad84540b125875a17176a5fa9991805b1" kind="enumvalue"><name>U_MATERIAL_AMBIENT</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a50a210502033462ffc158c4ed642fdb4" kind="enumvalue"><name>U_MATERIAL_DIFFUSE</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abcfcae546e51bc5c9e374bf84344a912" kind="enumvalue"><name>U_MATERIAL_SPECULAR</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a625a6804482639c08b141a6829dfaa61" kind="enumvalue"><name>U_MATERIAL_SHININESS</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1085ed8ea4d6dacea5bd6926c9aef617" kind="enumvalue"><name>U_LIGHTENABLED</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a9e38d03df35b2b390657435410f7d807" kind="enumvalue"><name>U_LIGHT0_POSITION</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8acb823f451f90c8666c6449b8c44420fc" kind="enumvalue"><name>U_LIGHT0_COLOR</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a675909daa087397b7c7f809b022a9dd9" kind="enumvalue"><name>U_LIGHT0_POWER</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a96f4df087b2833e3f6f8e8fc50d50559" kind="enumvalue"><name>U_LIGHT0_KC</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a169d95378cadfb787c8e07c10f788364" kind="enumvalue"><name>U_LIGHT0_KL</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a86b8e2c8120aedb60f94242a1f9cf07e" kind="enumvalue"><name>U_LIGHT0_KQ</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a44909b3c84c00763fbfb545017408e92" kind="enumvalue"><name>U_LIGHT0_TYPE</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a3086bf43f58f9db6859e235b05407b66" kind="enumvalue"><name>U_LIGHT0_SPOTDIRECTION</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8af7331cca0e427036732d05e869180988" kind="enumvalue"><name>U_LIGHT0_COSCUTOFF</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8afff3a1df7aff47b65cda81ee26f71d80" kind="enumvalue"><name>U_LIGHT0_COSINNER</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a0a5079c54ffc05c11c68452c52a12b74" kind="enumvalue"><name>U_LIGHT0_EXPONENT</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a9ee00161ca80b67ec67ef3d0bba192cf" kind="enumvalue"><name>U_LIGHT1_POSITION</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a99bdf0ccfa61f3df47493a3a705ec00d" kind="enumvalue"><name>U_LIGHT1_COLOR</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a5b28532ad04f9645365ce65a03b97136" kind="enumvalue"><name>U_LIGHT1_POWER</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad5ac0094ac9c7f23b60b48281735dd74" kind="enumvalue"><name>U_LIGHT1_KC</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a75255bd364a8071d206c8530c5b3018e" kind="enumvalue"><name>U_LIGHT1_KL</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ae260422861f260b1019bce259010a553" kind="enumvalue"><name>U_LIGHT1_KQ</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a14fa680b425fb554dde0f47911a7ade1" kind="enumvalue"><name>U_LIGHT1_TYPE</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a207dd37d5030cdf63d1e470a0b727e3e" kind="enumvalue"><name>U_LIGHT1_SPOTDIRECTION</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a19f14535e27531b46484232d1a5a2372" kind="enumvalue"><name>U_LIGHT1_COSCUTOFF</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a1b9658626fb85900e5e3dc552c1871c8" kind="enumvalue"><name>U_LIGHT1_COSINNER</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a26b2f7171d4ac6513ad2a18689b02fdb" kind="enumvalue"><name>U_LIGHT1_EXPONENT</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8adbb4a92e25d10469c7218453d411046a" kind="enumvalue"><name>U_LIGHT2_POSITION</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a35ea2242aca1ded933a49f58d7c25b1c" kind="enumvalue"><name>U_LIGHT2_COLOR</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ad4db6469a9a9ce31119299478519b5c9" kind="enumvalue"><name>U_LIGHT2_POWER</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aceaca1f552f2758872ce49b6aa051f26" kind="enumvalue"><name>U_LIGHT2_KC</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a93406fcbb5becfa9fb939165e62c4095" kind="enumvalue"><name>U_LIGHT2_KL</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a0e72559dcfb476cf8d14ef55e83d3fae" kind="enumvalue"><name>U_LIGHT2_KQ</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abf343aa02b7a682aba5e430194c3325c" kind="enumvalue"><name>U_LIGHT2_TYPE</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a78f03dcb955ed9c3a5e59cc119f00819" kind="enumvalue"><name>U_LIGHT2_SPOTDIRECTION</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ae5da010acc5874d7cbff3cc9ce26d22a" kind="enumvalue"><name>U_LIGHT2_COSCUTOFF</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8ae044c41d4dc44908603688e8f59aab8c" kind="enumvalue"><name>U_LIGHT2_COSINNER</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a175dc467472272410e3b575068cd72da" kind="enumvalue"><name>U_LIGHT2_EXPONENT</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a05ffe210dfd36fe0e1bcb95c1e4966e5" kind="enumvalue"><name>U_NUMLIGHTS</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a697a57e619b7a4b7e9c984a2304ce70c" kind="enumvalue"><name>U_COLOR_TEXTURE_ENABLED</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8abd21c0a288f36d1f9e52940db52db2e5" kind="enumvalue"><name>U_COLOR_TEXTURE</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aaeb8325f99bf5584ab1eddd061c273e1" kind="enumvalue"><name>U_TEXT_ENABLED</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8a43b6627de77fd16e34d2ed0d86071d9a" kind="enumvalue"><name>U_TEXT_COLOR</name></member>
+    <member refid="classMENUScene_1a9ac34f33f64d83dbfa67d2a84af502e8aa18a8b559fd9f996f1339cc8612c39b4" kind="enumvalue"><name>U_TOTAL</name></member>
+    <member refid="classMENUScene_1a9b42da9f5e52160b27d1987769ae29de" kind="variable"><name>inputDelay</name></member>
+    <member refid="classMENUScene_1a8adf29b7c860968aa57b62f16fa77119" kind="variable"><name>buttons</name></member>
+    <member refid="classMENUScene_1a34300ff852ec28f342ae605571ce753f" kind="variable"><name>select</name></member>
+    <member refid="classMENUScene_1ac01d75a557824e65d353bfe0e90def36" kind="variable"><name>m_vertexArrayID</name></member>
+    <member refid="classMENUScene_1abffab70ee3696122d2555e25763a2a34" kind="variable"><name>meshList</name></member>
+    <member refid="classMENUScene_1a495048712197b36f163ee7d6d7903f13" kind="variable"><name>m_programID</name></member>
+    <member refid="classMENUScene_1ab933c5e05a0c6401b17741f222d27380" kind="variable"><name>m_parameters</name></member>
+    <member refid="classMENUScene_1af43fcd74ddf551857f2b7478b4d78f3f" kind="variable"><name>light</name></member>
+    <member refid="classMENUScene_1a03714ef328289367f776496466be18e0" kind="variable"><name>camera</name></member>
+    <member refid="classMENUScene_1a08ef3397ecf373a637c1a00cad6a39cd" kind="variable"><name>player</name></member>
+    <member refid="classMENUScene_1aa477416ef850f5540affb0d6a138ff0c" kind="variable"><name>modelStack</name></member>
+    <member refid="classMENUScene_1aaceaa4eb9105c99b38fc41909918ae5d" kind="variable"><name>viewStack</name></member>
+    <member refid="classMENUScene_1ae6861711232df1fee0f6392611cb35a0" kind="variable"><name>projectionStack</name></member>
+    <member refid="classMENUScene_1ac3d9413ea361c863b6751865c161c566" kind="function"><name>RenderSkybox</name></member>
+    <member refid="classMENUScene_1ac52b70e8fce47718a21cf3ea49df54e0" kind="function"><name>RenderCrosshair</name></member>
+    <member refid="classMENUScene_1a62c1446f7d3c256dc06bfa4c36dbf94f" kind="function"><name>InitSuperMarket</name></member>
+    <member refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" kind="function"><name>RenderScene</name></member>
+    <member refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" kind="function"><name>RenderMesh</name></member>
+    <member refid="classMENUScene_1a7ebe27425103669f713dd483d6eac66f" kind="function"><name>RenderText</name></member>
+    <member refid="classMENUScene_1ae50ba41dad96291cda53625341eb394e" kind="function"><name>RenderTextOnScreen</name></member>
+    <member refid="classMENUScene_1a979e332c145d4bc584c8e0aa9e3e92f7" kind="function"><name>getTextWidth</name></member>
+    <member refid="classMENUScene_1ab36fe3d09b07f0ca17002c7ab5796e4e" kind="function"><name>MENUScene</name></member>
+    <member refid="classMENUScene_1ac50671eefd8d5179accc82f25957adbb" kind="function"><name>~MENUScene</name></member>
+    <member refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" kind="function"><name>Init</name></member>
+    <member refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" kind="function"><name>InitJunk</name></member>
+    <member refid="classMENUScene_1af3d760e446184aaac26ae0af2163ad3a" kind="function"><name>Update</name></member>
+    <member refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" kind="function"><name>Render</name></member>
+    <member refid="classMENUScene_1ab8f9680e38a47e6c124a8b4cb03e2432" kind="function"><name>Exit</name></member>
+    <member refid="classMENUScene_1a8322d7ffc34365f34d07a74212533aa2" kind="function"><name>soundInit</name></member>
+  </compound>
+  <compound refid="classMesh" kind="class"><name>Mesh</name>
+    <member refid="classMesh_1a3d73fcae9980b9a36297a8481cf1a307" kind="enum"><name>DRAW_MODE</name></member>
+    <member refid="classMesh_1a3d73fcae9980b9a36297a8481cf1a307a0f1cef52a562b3047017043dd427e2a9" kind="enumvalue"><name>DRAW_TRIANGLES</name></member>
+    <member refid="classMesh_1a3d73fcae9980b9a36297a8481cf1a307a76fb83917a3507580897f6e86656927d" kind="enumvalue"><name>DRAW_TRIANGLE_STRIP</name></member>
+    <member refid="classMesh_1a3d73fcae9980b9a36297a8481cf1a307a2eacb69a1ffbcde68e12fb36f8c88639" kind="enumvalue"><name>DRAW_LINES</name></member>
+    <member refid="classMesh_1a3d73fcae9980b9a36297a8481cf1a307afd8968f2a4b30487c794fbd15024c34e" kind="enumvalue"><name>DRAW_MODE_LAST</name></member>
+    <member refid="classMesh_1a3368c3bc60dd176e522df1542b764847" kind="variable"><name>material</name></member>
+    <member refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" kind="variable"><name>textureID</name></member>
+    <member refid="classMesh_1aa956ea809178c5713ca3e9220cee7980" kind="variable"><name>name</name></member>
+    <member refid="classMesh_1ae12937ea9bdacb3b7b786f60fe42448e" kind="variable"><name>mode</name></member>
+    <member refid="classMesh_1a1e99394b36ad335804acd2461a736cfb" kind="variable"><name>vertexBuffer</name></member>
+    <member refid="classMesh_1ad5efa4d45e469674dfa3765e479e4a73" kind="variable"><name>indexBuffer</name></member>
+    <member refid="classMesh_1ac6d6f70d161b9dd66c5ca79a187d86df" kind="variable"><name>indexSize</name></member>
+    <member refid="classMesh_1a8618160123ac2c27985d7ae34ad58cae" kind="function"><name>Mesh</name></member>
+    <member refid="classMesh_1a5efe4da1a4c0971cfb037bd70304c303" kind="function"><name>~Mesh</name></member>
+    <member refid="classMesh_1a75e66bcd90c09492676a4cfe5b23c3af" kind="function"><name>Render</name></member>
+    <member refid="classMesh_1a13afbd2fcdaf0ae700599eb643ae3135" kind="function"><name>Render</name></member>
+  </compound>
+  <compound refid="classMeshBuilder" kind="class"><name>MeshBuilder</name>
+    <member refid="classMeshBuilder_1a00798a7dc69cc94df659289c7f79eacf" kind="function"><name>GenerateAxes</name></member>
+    <member refid="classMeshBuilder_1aee21bf31b3be8ec382a35b066185c3c5" kind="function"><name>GenerateLine</name></member>
+    <member refid="classMeshBuilder_1a2ddad55094b75f084de4cb51e5ec37c4" kind="function"><name>GenerateQuad</name></member>
+    <member refid="classMeshBuilder_1a8e5663b9e284940453900fdf32fa354f" kind="function"><name>GenerateXYQuad</name></member>
+    <member refid="classMeshBuilder_1a2df7fd154b373c18089d1e8b9a6f76cc" kind="function"><name>GenerateCubeOnPlane</name></member>
+    <member refid="classMeshBuilder_1a7e35aba5341b1e012cc27598b38ca856" kind="function"><name>GenerateCube</name></member>
+    <member refid="classMeshBuilder_1abab6044835556126c51f5e8c9f00f501" kind="function"><name>GenerateCircle</name></member>
+    <member refid="classMeshBuilder_1abc05d7ab0604a310dfea0a7a56caeb35" kind="function"><name>GenerateRing</name></member>
+    <member refid="classMeshBuilder_1a10f627b0355a031b42d0337e95d2af56" kind="function"><name>GenerateSphere</name></member>
+    <member refid="classMeshBuilder_1af27e0bbaa8cfa853111d443a4ba37d5c" kind="function"><name>GenerateHemi</name></member>
+    <member refid="classMeshBuilder_1a27562f4f20e5e089cc5680c1d20f36ab" kind="function"><name>GenerateCone</name></member>
+    <member refid="classMeshBuilder_1a283edcbedde3c75acf96907182a725b8" kind="function"><name>GenerateCylinder</name></member>
+    <member refid="classMeshBuilder_1a75248ac74ae07dc5725e4a770f0ab15f" kind="function"><name>GenerateCylinder</name></member>
+    <member refid="classMeshBuilder_1ad1e169f5ff628a5f2a59a239def9c6be" kind="function"><name>GenerateCapsule</name></member>
+    <member refid="classMeshBuilder_1aa0fd7de9ef15dbc113a3f84b859ebe95" kind="function"><name>GenerateTorus</name></member>
+    <member refid="classMeshBuilder_1aac7c87881dbc08f8d41f2068e0f40c76" kind="function"><name>GenerateText</name></member>
+    <member refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" kind="function"><name>GenerateOBJ</name></member>
+  </compound>
+  <compound refid="classMoney" kind="class"><name>Money</name>
+    <member refid="classMoney_1a6d726ea77f61bf6aa0b765d0d426aa2a" kind="variable"><name>value</name></member>
+    <member refid="classMoney_1a883c32ea0f71c9d1422141c384d225ba" kind="function"><name>Money</name></member>
+    <member refid="classMoney_1ae17190b131b3974d27f011d4f8213f81" kind="function"><name>Money</name></member>
+    <member refid="classMoney_1a2e18e5d65d9e1304e3bcf19a349dcf32" kind="function"><name>~Money</name></member>
+    <member refid="classMoney_1a0db36291448d43f5658494ab03fc1de8" kind="function"><name>getValue</name></member>
+  </compound>
+  <compound refid="classMS" kind="class"><name>MS</name>
+    <member refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kind="variable"><name>ms</name></member>
+    <member refid="classMS_1adddd1194f4978eab6618be6a22ed8e48" kind="function"><name>MS</name></member>
+    <member refid="classMS_1ac7ec3f1bdabca61e69d3068ee9ba0995" kind="function"><name>~MS</name></member>
+    <member refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" kind="function"><name>Top</name></member>
+    <member refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" kind="function"><name>PopMatrix</name></member>
+    <member refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" kind="function"><name>PushMatrix</name></member>
+    <member refid="classMS_1ab3eb89506a55a00137cba928686b0201" kind="function"><name>Clear</name></member>
+    <member refid="classMS_1a77c5f7e4a21ea48dcf902a7ff6824a11" kind="function"><name>LoadIdentity</name></member>
+    <member refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" kind="function"><name>LoadMatrix</name></member>
+    <member refid="classMS_1af5a89751ef3b273288bee108113d4899" kind="function"><name>MultMatrix</name></member>
+    <member refid="classMS_1a6ce592114042b920b648bca5519690cd" kind="function"><name>Rotate</name></member>
+    <member refid="classMS_1a52109795de960e24663b315e9128533f" kind="function"><name>Scale</name></member>
+    <member refid="classMS_1a7b0ae1b56e92cd627707c18a637d68f2" kind="function"><name>Scale</name></member>
+    <member refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" kind="function"><name>Translate</name></member>
+    <member refid="classMS_1a832bd93b3156899bc1980ae954a79232" kind="function"><name>Translate</name></member>
+    <member refid="classMS_1a155508354e47f5aa755e181e69fc3cd4" kind="function"><name>Frustum</name></member>
+    <member refid="classMS_1a297adfaa8a90e5b1c39e8b4d142d08c4" kind="function"><name>Ortho</name></member>
+    <member refid="classMS_1a2638cd3249260877cc31329978fb6b38" kind="function"><name>LookAt</name></member>
+  </compound>
+  <compound refid="classMtx44" kind="class"><name>Mtx44</name>
+    <member refid="classMtx44_1a97018c3b3ef41a962e27340c144430ea" kind="variable"><name>a</name></member>
+    <member refid="classMtx44_1a1b985913080679da29ff94217935b3c7" kind="function"><name>Mtx44</name></member>
+    <member refid="classMtx44_1a6ce8776a947d21cae29a9dcb8c0bd7d1" kind="function"><name>Mtx44</name></member>
+    <member refid="classMtx44_1a5c3bf05ad0999766665c5d1d7e4b674c" kind="function"><name>Mtx44</name></member>
+    <member refid="classMtx44_1a3ac8a0afd66412e15e4246474b893da2" kind="function"><name>SetToIdentity</name></member>
+    <member refid="classMtx44_1a6c95e149e42cba381918782a93f8a68b" kind="function"><name>Transpose</name></member>
+    <member refid="classMtx44_1a3aea63c08759ac98b8a4f23fdc0d6a28" kind="function"><name>SetToZero</name></member>
+    <member refid="classMtx44_1aebb16a0329c5237e314af0d75d8081fd" kind="function"><name>GetTranspose</name></member>
+    <member refid="classMtx44_1aac1ba21ddfc5f3c24baa4f58d9c5c256" kind="function"><name>GetInverse</name></member>
+    <member refid="classMtx44_1a135dfd76460c4ad2678258807dd0c078" kind="function"><name>operator*</name></member>
+    <member refid="classMtx44_1abcdecb3276c18f29847eb8864b809fa5" kind="function"><name>operator+</name></member>
+    <member refid="classMtx44_1aca2d9f316d39c9baa4e439219c1a6447" kind="function"><name>operator=</name></member>
+    <member refid="classMtx44_1a2dd2ee48dd50b1614346a10bd464c562" kind="function"><name>operator*</name></member>
+    <member refid="classMtx44_1a20fe7d5d35374ea122848a8778de25e6" kind="function"><name>operator*</name></member>
+    <member refid="classMtx44_1ac0587ffb5ff9fd58ad5768d28fc06574" kind="function"><name>SetToRotation</name></member>
+    <member refid="classMtx44_1a04c49a922f8e8ffcb57a90c6ce955600" kind="function"><name>SetToScale</name></member>
+    <member refid="classMtx44_1a0cc88cc5c648da14effba480c4d2ac70" kind="function"><name>SetToTranslation</name></member>
+    <member refid="classMtx44_1a465dcf811eb34049aab4266795d7bd62" kind="function"><name>SetToFrustum</name></member>
+    <member refid="classMtx44_1a7c3d2d30d9ed5bfca2ba97d0e570930f" kind="function"><name>SetToLookAt</name></member>
+    <member refid="classMtx44_1ac6e6521111d78ff36d539bf111a902c6" kind="function"><name>SetToPerspective</name></member>
+    <member refid="classMtx44_1a0a4c7818be7c1aeb0601ad069c1a591d" kind="function"><name>SetToOrtho</name></member>
+  </compound>
+  <compound refid="classNPC" kind="class"><name>NPC</name>
+    <member refid="classNPC_1a93af7d2430caec547503006f21bf2c7d" kind="enum"><name>BodyParts</name></member>
+    <member refid="classNPC_1a93af7d2430caec547503006f21bf2c7da8c44d76fc62e802e94393e84ee531d25" kind="enumvalue"><name>HEAD</name></member>
+    <member refid="classNPC_1a93af7d2430caec547503006f21bf2c7da0a990ae4e3db849460a141a508f5d81e" kind="enumvalue"><name>BODY</name></member>
+    <member refid="classNPC_1a93af7d2430caec547503006f21bf2c7dae0b6b38d151ed19a2864e55deb3786b4" kind="enumvalue"><name>L_ARM</name></member>
+    <member refid="classNPC_1a93af7d2430caec547503006f21bf2c7daa5284415e8559e22496fe01346025c6f" kind="enumvalue"><name>R_ARM</name></member>
+    <member refid="classNPC_1a93af7d2430caec547503006f21bf2c7da597d6d0876844791ec63717d7ae8af6d" kind="enumvalue"><name>L_LEG</name></member>
+    <member refid="classNPC_1a93af7d2430caec547503006f21bf2c7da196e4d39cc350379fa4e136e4ab78969" kind="enumvalue"><name>R_LEG</name></member>
+    <member refid="classNPC_1a93af7d2430caec547503006f21bf2c7dae4d51e4f3422151f6b266a4bbbe8c9cd" kind="enumvalue"><name>NUM_BODYPARTS</name></member>
+    <member refid="classNPC_1a1b8ffa83c0fc5045b1db84c3abc3f915" kind="variable"><name>initialPos</name></member>
+    <member refid="classNPC_1a53d5597af18e9d1d69bca57076c57be8" kind="variable"><name>previousPos</name></member>
+    <member refid="classNPC_1a0c6b7e6c5bf7601503cb5e29180e7721" kind="variable"><name>target</name></member>
+    <member refid="classNPC_1ae8eb02d5fdea056417d25ba82458f244" kind="variable"><name>bodyParts</name></member>
+    <member refid="classNPC_1ae855926da3adab4d690ce4bd5d0d3d72" kind="variable"><name>identity</name></member>
+    <member refid="classNPC_1a8ad8f56c44462a9c72d3f83263413335" kind="variable"><name>rotation</name></member>
+    <member refid="classNPC_1a867ad1b17e50c9b5a904f5a1f383c635" kind="variable"><name>rotationDir</name></member>
+    <member refid="classNPC_1a18b24e85bcb4092511edeb48c3abf6e8" kind="variable"><name>elapsedTime</name></member>
+    <member refid="classNPC_1a300ce9d864b1b27f96e59b8a7c61beff" kind="variable"><name>greetings</name></member>
+    <member refid="classNPC_1aeab5994cd460d80cc9687b213822bea6" kind="variable"><name>clues</name></member>
+    <member refid="classNPC_1a1cd51708a5ef50107842fc224e08ff25" kind="variable"><name>quest</name></member>
+    <member refid="classNPC_1afe0fca487242d2ec209bfc5599451d66" kind="variable"><name>inConversation</name></member>
+    <member refid="classNPC_1af28ce051772f77e3b3c95545067d5ef5" kind="function"><name>NPC</name></member>
+    <member refid="classNPC_1a82bd4ced6842c4ed6638e414c2b75640" kind="function"><name>~NPC</name></member>
+    <member refid="classNPC_1a892f70d177394372ca5d7d47b98bd166" kind="function"><name>getIdentity</name></member>
+    <member refid="classNPC_1a23a8a51ee056c9aa1fbb3018b92c7de4" kind="function"><name>getCriteria</name></member>
+    <member refid="classNPC_1a6674302d1e96b04cdbf98ac01bc41448" kind="function"><name>Init</name></member>
+    <member refid="classNPC_1ac3d14249a747c88c251e0291338bbed4" kind="function"><name>Control</name></member>
+    <member refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" kind="function"><name>getConversation</name></member>
+    <member refid="classNPC_1ab83b95175ae5e71f6918bab2d7c238d5" kind="function"><name>InitClues</name></member>
+    <member refid="classNPC_1a3ea41c7d9745e0be2d2b25187dbaf3f7" kind="function"><name>InitDialogue</name></member>
+    <member refid="classNPC_1a7c05d38abb761bb503fdac5a36bc62a4" kind="function"><name>InitQuest</name></member>
+    <member refid="classNPC_1a24721357146b87e473c740fe9f295841" kind="function"><name>Update</name></member>
+    <member refid="classNPC_1a1dd6753d963d97c35971f223843fa20b" kind="function"><name>Orientate</name></member>
+    <member refid="classNPC_1aa7bf0d862f15684245b4559177cfb92f" kind="function"><name>Orientate</name></member>
+    <member refid="classNPC_1a6f8d69aac667c616c6e42d49358cf968" kind="function"><name>Goto</name></member>
+    <member refid="classNPC_1ad8a941b5f0c793cf801a7b0c8caad548" kind="function"><name>Animate</name></member>
+    <member refid="classNPC_1ac89ed5d63adaf17e690ec06bbd5afb10" kind="function"><name>Animate</name></member>
+  </compound>
+  <compound refid="classNPCTarget" kind="class"><name>NPCTarget</name>
+    <member refid="classNPCTarget_1a1dab826b2b7e3311c8a337cb11578b0b" kind="variable"><name>position</name></member>
+    <member refid="classNPCTarget_1a2f580e69045e8c22f775686c86c3efad" kind="variable"><name>orientation</name></member>
+    <member refid="classNPCTarget_1ae8795b890780bdc2e4bdb01d6c79f6f8" kind="function"><name>NPCTarget</name></member>
+    <member refid="classNPCTarget_1a0906c9c16f22db16c992ab863fe03faa" kind="function"><name>NPCTarget</name></member>
+    <member refid="classNPCTarget_1a990b50ee92d257b9357e2852f7959f8d" kind="function"><name>~NPCTarget</name></member>
+  </compound>
+  <compound refid="classObject" kind="class"><name>Object</name>
+    <member refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kind="variable"><name>type</name></member>
+    <member refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" kind="variable"><name>position</name></member>
+    <member refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" kind="variable"><name>collision</name></member>
+    <member refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" kind="variable"><name>mesh</name></member>
+    <member refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" kind="variable"><name>orientation</name></member>
+    <member refid="classObject_1a943828436a63520b4059b749df5564c3" kind="variable"><name>size</name></member>
+    <member refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kind="variable"><name>ignoreCollision</name></member>
+    <member refid="classObject_1a40860402e64d8008fb42329df7097cdb" kind="function"><name>Object</name></member>
+    <member refid="classObject_1ab7afdfb51bccbc4cb09512454ae6c93a" kind="function"><name>Object</name></member>
+    <member refid="classObject_1a9ad82aaeaab22b9776810538e7c6a8f1" kind="function"><name>Object</name></member>
+    <member refid="classObject_1a1ff0e543bef7628740801ae660d91a7e" kind="function"><name>Object</name></member>
+    <member refid="classObject_1aab1e47237b6bf2df563b497426f1a8cc" kind="function"><name>Object</name></member>
+    <member refid="classObject_1aa8a3c32d7bdaf9d06dd9a65749ee0110" kind="function"><name>Object</name></member>
+    <member refid="classObject_1ae8f5483f459e46687bd01e6f9977afd3" kind="function"><name>~Object</name></member>
+    <member refid="classObject_1a495d3c66ce43e267c5aac0066576dfb2" kind="function"><name>Update</name></member>
+    <member refid="classObject_1ab7aa5400e08a3c023140d614d1448458" kind="function"><name>Update</name></member>
+    <member refid="classObject_1a110cdaa911a12009dd5e37418fe3d35a" kind="function"><name>Knockback</name></member>
+    <member refid="classObject_1a108db6d26b912a01de560fd940f90d71" kind="function"><name>setPaid</name></member>
+    <member refid="classObject_1abd775688f7362fe926da1aea7f88e27c" kind="function"><name>getPaid</name></member>
+    <member refid="classObject_1a651e2aff564de5a4766863b332f14d33" kind="function"><name>getHealth</name></member>
+    <member refid="classObject_1a44a83bdec0ad56d911951cfd780a1d85" kind="function"><name>getValue</name></member>
+    <member refid="classObject_1a084dbdfbf0fedcea9a67cc3eaa5f9bcf" kind="function"><name>getIdentity</name></member>
+    <member refid="classObject_1a03411698caca81d9ee219b3576fa984f" kind="function"><name>getStorePos</name></member>
+    <member refid="classObject_1ab0f9523e4bdbfa635a079c1cc01f9b8a" kind="function"><name>checkCollision</name></member>
+  </compound>
+  <compound refid="classOnScreenText" kind="class"><name>OnScreenText</name>
+    <member refid="classOnScreenText_1a39a3b0a1a2357056cad633999c8400c8" kind="variable"><name>name</name></member>
+    <member refid="classOnScreenText_1a4a09d282e661eeda6a207dd3238e5ba7" kind="variable"><name>textPos</name></member>
+    <member refid="classOnScreenText_1a970b403fb6351beba706e4ab2234be99" kind="variable"><name>elapsedTime</name></member>
+    <member refid="classOnScreenText_1aef8008b1508ed548161efced3cc8b9d1" kind="variable"><name>fall</name></member>
+    <member refid="classOnScreenText_1a04ffd410c9970353b9177ad922238984" kind="function"><name>OnScreenText</name></member>
+    <member refid="classOnScreenText_1a41a16d199ba62367930781e0ae8adc58" kind="function"><name>OnScreenText</name></member>
+    <member refid="classOnScreenText_1a10e10af5140a01e09430f815b12f0d5c" kind="function"><name>~OnScreenText</name></member>
+    <member refid="classOnScreenText_1a7795ca7e624f49ce7853a28d66b8742f" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="structPackedVertex" kind="struct"><name>PackedVertex</name>
+    <member refid="structPackedVertex_1adbd5c98e027ccce79a27381686efdb62" kind="variable"><name>position</name></member>
+    <member refid="structPackedVertex_1a86428554cc4e4c177eb1161bc3be0230" kind="variable"><name>uv</name></member>
+    <member refid="structPackedVertex_1ad7f8bd922bf90fb53ac5a27935179698" kind="variable"><name>normal</name></member>
+    <member refid="structPackedVertex_1a86a90d456e948b1105c7e8905f4fa385" kind="function"><name>operator&lt;</name></member>
+  </compound>
+  <compound refid="classParticles" kind="class"><name>Particles</name>
+    <member refid="classParticles_1a439a38d2df47b36023850bec5d05f50d" kind="variable"><name>mesh</name></member>
+    <member refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" kind="variable"><name>position</name></member>
+    <member refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" kind="variable"><name>direction</name></member>
+    <member refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" kind="variable"><name>elapsedTime</name></member>
+    <member refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" kind="function"><name>Particles</name></member>
+    <member refid="classParticles_1a06dde9ff5c48d92d9ae273ad9501daa3" kind="function"><name>~Particles</name></member>
+    <member refid="classParticles_1a9c6cee78ad5de19616b1a9ba503ae06d" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="classPlayer" kind="class"><name>Player</name>
+    <member refid="classPlayer_1a280de12a864fd87906b536ee9b369914" kind="enum"><name>playerStates</name></member>
+    <member refid="classPlayer_1a280de12a864fd87906b536ee9b369914ac3ab9b2edaa8b8ba86f6396f88d6531f" kind="enumvalue"><name>JUMP</name></member>
+    <member refid="classPlayer_1a280de12a864fd87906b536ee9b369914a3713d0ada2318e1be9b7ec66de70d379" kind="enumvalue"><name>EATING</name></member>
+    <member refid="classPlayer_1a280de12a864fd87906b536ee9b369914ad7ce18c36e91770cbc204edef78ee711" kind="enumvalue"><name>KNIFE</name></member>
+    <member refid="classPlayer_1a280de12a864fd87906b536ee9b369914a3430595054ab8c914209ededaf8387ce" kind="enumvalue"><name>TOTAL_STATES</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2" kind="enum"><name>playerValues</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ac570ea46fe0e245abef556ec7f0e3979" kind="enumvalue"><name>bobbingX</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ae6cc325d563d8bc97c40440b9bcce961" kind="enumvalue"><name>bobbingY</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a70f8e60cb474b60d05e17da2da7f1e90" kind="enumvalue"><name>knifeRotation</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2af9d7837523536558b297c1d52de291cb" kind="enumvalue"><name>knifeStrike</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a1c04c4dcaa0a7bbae77aca6b641d6736" kind="enumvalue"><name>knifeCooldown</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a0698e4846cb1d09638ed1167a1800a5c" kind="enumvalue"><name>eyeLevel</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a3b31bf08bcbcc80da28571778db241bf" kind="enumvalue"><name>jumpCooldown</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2aef4d14e450da282a8e276996d9623715" kind="enumvalue"><name>eatCooldown</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2afcb293138a59b0a0807df7021b9eea6b" kind="enumvalue"><name>eatElapsed</name></member>
+    <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ad3ca27dafef52c2420eb4b4a37e38cc1" kind="enumvalue"><name>TOTAL_VALUES</name></member>
+    <member refid="classPlayer_1afc37f74c79eff1bfe113a29038f9ad77" kind="variable"><name>hOrientation</name></member>
+    <member refid="classPlayer_1ae5ea486be0acd6a16f26843ecbd9d826" kind="variable"><name>vOrientation</name></member>
+    <member refid="classPlayer_1a0d24afca35e6a28f390fdd485b7a4454" kind="variable"><name>apparentHealth</name></member>
+    <member refid="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" kind="variable"><name>inventory</name></member>
+    <member refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" kind="variable"><name>camera</name></member>
+    <member refid="classPlayer_1a624e7bd62035bcb9c3e076bd5bc2e186" kind="variable"><name>jump</name></member>
+    <member refid="classPlayer_1a0349855298626faed9f05f86965ff689" kind="variable"><name>speed</name></member>
+    <member refid="classPlayer_1aa1544a1feb4e29c1b57a720751057395" kind="variable"><name>holding</name></member>
+    <member refid="classPlayer_1a7797da72b3266ce3c47aed28711315ed" kind="variable"><name>state</name></member>
+    <member refid="classPlayer_1aaee62ad90811104f8fa03cdd8f758ce8" kind="variable"><name>inConversation</name></member>
+    <member refid="classPlayer_1a4f5eb5599d7a8bbf81335c7464c3fa6a" kind="variable"><name>value</name></member>
+    <member refid="classPlayer_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" kind="function"><name>Player</name></member>
+    <member refid="classPlayer_1a749d2c00e1fe0f5c2746f7505a58c062" kind="function"><name>~Player</name></member>
+    <member refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" kind="function"><name>Control</name></member>
+    <member refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" kind="function"><name>Update</name></member>
+    <member refid="classPlayer_1a3c70ef822192421f8221e75a707417d7" kind="function"><name>getRenderWallet</name></member>
+    <member refid="classPlayer_1abbb830a52713bb1953581d2be65d4a5d" kind="function"><name>getWallet</name></member>
+    <member refid="classPlayer_1a2d1542816021d46bf0d007d57a2c7291" kind="function"><name>getHealth</name></member>
+    <member refid="classPlayer_1aeeb928e9d8bb5c95dc104fcf8c69770b" kind="function"><name>isEating</name></member>
+  </compound>
+  <compound refid="structPosition" kind="struct"><name>Position</name>
+    <member refid="structPosition_1af684446cbf0f6d53386686283da6dcc6" kind="variable"><name>x</name></member>
+    <member refid="structPosition_1a54a6182b5f7539295b32255808897d3f" kind="variable"><name>y</name></member>
+    <member refid="structPosition_1a5dc8c08d3d7209ba538ad21ba604aa44" kind="variable"><name>z</name></member>
+    <member refid="structPosition_1ab73d81912c4ead48cee5342d7cf5a33b" kind="function"><name>Position</name></member>
+    <member refid="structPosition_1a2919b2441baf7a2f799791d65a1cfc15" kind="function"><name>Set</name></member>
+  </compound>
+  <compound refid="classPROJECTScene" kind="class"><name>PROJECTScene</name>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80ac" kind="enum"><name>GEOMETRY_TYPE</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca91af7832b6ffd7b107b9fb58839fd4d0" kind="enumvalue"><name>GEO_AXES</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca40f3489cbfffe73d88a84f2cea0b70fa" kind="enumvalue"><name>GEO_LEFT</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9448bdaeaf4661b4c2cd053b70484792" kind="enumvalue"><name>GEO_RIGHT</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca478812e0927f753be9bb0f9658ca4c0c" kind="enumvalue"><name>GEO_TOP</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa014f07655acd1da8950bdecc0566770" kind="enumvalue"><name>GEO_BOTTOM</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa6e0d3136d867757d902fbe40465b42a" kind="enumvalue"><name>GEO_FRONT</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9e10e954addde6b2aae06110b86ea634" kind="enumvalue"><name>GEO_BACK</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca3e2b5b70656bf521e8b658b628d04e4d" kind="enumvalue"><name>GEO_LIGHTBALL</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaa7b0aaf5251eded81601ea088bd8e240" kind="enumvalue"><name>GEO_QUAD</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca02c4b786f0a356568ab7d54f6dbcacda" kind="enumvalue"><name>GEO_KNIFE</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca0ccbbd5b23e2c81fdab9a59b2f37220c" kind="enumvalue"><name>GEO_HEART</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca6fb3fdf8cbcda6b30b4479c2b6071576" kind="enumvalue"><name>GEO_SPRINT</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabb555dcec9f3f7c4250431f9c7ea9dc9" kind="enumvalue"><name>GEO_JUMP</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acadad7eb7e21a96e81688e0eb7f7e48385" kind="enumvalue"><name>GEO_TEXT</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca9f202500e728f158365dbc13c208122d" kind="enumvalue"><name>GEO_LINE</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca21cf44a1ead8b06c6d04ff01e87fbe71" kind="enumvalue"><name>GEO_CUBE</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca950916a95c8ef9b35d40ca0e6c8beef2" kind="enumvalue"><name>GEO_BIGCUBE</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acabcf75f4cd43f75ef2429209e338a28bd" kind="enumvalue"><name>GEO_HOLD</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaad2b82ef4862096a7a836ce575339ab5" kind="enumvalue"><name>GEO_CCTV</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80acaff6b96d77b72cba2597f07fb0fe8148e" kind="enumvalue"><name>GEO_CCTV_CORNER</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca45da439763c6adc241d60ec4ae5e69fd" kind="enumvalue"><name>GEO_TEXTBOX</name></member>
+    <member refid="classPROJECTScene_1a4bbe63e88b85f4aa389a2d3c392d80aca075e65c4b7d90e191d4c5ca1a25eb287" kind="enumvalue"><name>NUM_GEOMETRY</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997ba" kind="enum"><name>UNIFORM_TYPE</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baabf3538a17acd6e6f23c5fdb9c8fe3dbf" kind="enumvalue"><name>U_MVP</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa2ee781edbf9f060af691c80e7344154b" kind="enumvalue"><name>U_MODELVIEW</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa40594efa84a4475144d2ba4eeb72fd05" kind="enumvalue"><name>U_MODELVIEW_INVERSE_TRANSPOSE</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baab3a889cc289a9fb91cff8f991ce24367" kind="enumvalue"><name>U_MATERIAL_AMBIENT</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa0c55b1002c6d74237249672e3e0b9404" kind="enumvalue"><name>U_MATERIAL_DIFFUSE</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7b77061e10ba0a991305bb52aaf3f7f2" kind="enumvalue"><name>U_MATERIAL_SPECULAR</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baad2163115352cdd13b059b859761f2081" kind="enumvalue"><name>U_MATERIAL_SHININESS</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae4daefee557cac1c4f73b95346602d01" kind="enumvalue"><name>U_LIGHTENABLED</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa30c02ae49fe81adfbaaf241c58cde568" kind="enumvalue"><name>U_LIGHT0_POSITION</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa62b03d9b75b33588761e2b90c975eca5" kind="enumvalue"><name>U_LIGHT0_COLOR</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac61359b5f34a447212e1a58819d0edef" kind="enumvalue"><name>U_LIGHT0_POWER</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa462a03e7d62fe1cd3c7a57e608554681" kind="enumvalue"><name>U_LIGHT0_KC</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa70b3f3cf9a28b13f53239526ee77b7ba" kind="enumvalue"><name>U_LIGHT0_KL</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3ee40eec18349ee1b4e34b3601399de6" kind="enumvalue"><name>U_LIGHT0_KQ</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa84e781530f40259eca1f1bba1a2d9566" kind="enumvalue"><name>U_LIGHT0_TYPE</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa7ee7c3b69bf150069a4d316a1d6b32e0" kind="enumvalue"><name>U_LIGHT0_SPOTDIRECTION</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa515e38b4edd123686619be04d98c7d09" kind="enumvalue"><name>U_LIGHT0_COSCUTOFF</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa4bee939de2f63706e8bf261178faefea" kind="enumvalue"><name>U_LIGHT0_COSINNER</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaae7fd7411043dbffa5544ade186b8cba" kind="enumvalue"><name>U_LIGHT0_EXPONENT</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa9171037d977e9436f4b27f62acf919ba" kind="enumvalue"><name>U_LIGHT1_POSITION</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa6e6aef185ca3f7399ed33326d1fda945" kind="enumvalue"><name>U_LIGHT1_COLOR</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa8ad1f459814c08ab3e17db8f882961f0" kind="enumvalue"><name>U_LIGHT1_POWER</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacc1cec7d9385a1189c6d6e5a3bdc7cc8" kind="enumvalue"><name>U_LIGHT1_KC</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaa41c06102ddf294be480bcf80c9fe99c" kind="enumvalue"><name>U_LIGHT1_KL</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa64d9a98ef1986240e4797e2ec6309dcf" kind="enumvalue"><name>U_LIGHT1_KQ</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac58b3fa092c640f0c4d25d1450547286" kind="enumvalue"><name>U_LIGHT1_TYPE</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3b383bb84659c288576dd49a55011308" kind="enumvalue"><name>U_LIGHT1_SPOTDIRECTION</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae0d68691cea2f615c2ff5eab45ebfdf5" kind="enumvalue"><name>U_LIGHT1_COSCUTOFF</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa80f38c53f4c1977a13e600cbef4464ba" kind="enumvalue"><name>U_LIGHT1_COSINNER</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae40fd94c72f835a2005f688dd620bf85" kind="enumvalue"><name>U_LIGHT1_EXPONENT</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaee183127e7b2bc7b77192835067b8a4f" kind="enumvalue"><name>U_LIGHT2_POSITION</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baac10b156aab228b80d9cc24843b5bb0b2" kind="enumvalue"><name>U_LIGHT2_COLOR</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa3aefb105deae1f368ee1f324f35affac" kind="enumvalue"><name>U_LIGHT2_POWER</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa30b80f65647bb9a53b3013d27e90124d" kind="enumvalue"><name>U_LIGHT2_KC</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baad6c1f46a267f405911efde7048c7b00d" kind="enumvalue"><name>U_LIGHT2_KL</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa54199152d7f363bb24ec2181e8f34936" kind="enumvalue"><name>U_LIGHT2_KQ</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baaf14dd834efd0122bd6b9b2a82ce00c81" kind="enumvalue"><name>U_LIGHT2_TYPE</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa28b7a181296454f98f913079689de024" kind="enumvalue"><name>U_LIGHT2_SPOTDIRECTION</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baafdf23ec0aea28019f19e0b9a43c9f9c7" kind="enumvalue"><name>U_LIGHT2_COSCUTOFF</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa2c24c1078eb30ad74e2bc406bae651d9" kind="enumvalue"><name>U_LIGHT2_COSINNER</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baae2b69c4399b71d9aafdbbfe8d5363f10" kind="enumvalue"><name>U_LIGHT2_EXPONENT</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacb41ea1afa3d3c941a6718e3f238bad7" kind="enumvalue"><name>U_NUMLIGHTS</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa76629f2a1a2a9d87fd13f946fe725001" kind="enumvalue"><name>U_COLOR_TEXTURE_ENABLED</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa819a3dbc154d47c777e5012bf75768b3" kind="enumvalue"><name>U_COLOR_TEXTURE</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baacc3df16e569f3d9d8e6a63947af9e36b" kind="enumvalue"><name>U_TEXT_ENABLED</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa43acf2b36b61d1f1b76813f28cfbb8a6" kind="enumvalue"><name>U_TEXT_COLOR</name></member>
+    <member refid="classPROJECTScene_1aff704f91c1245453c5656acf587997baa5a27c8aa899cc9094087c27be3931d94" kind="enumvalue"><name>U_TOTAL</name></member>
+    <member refid="classPROJECTScene_1acd8318d6e53a1ee41fd7e689212c3a31" kind="variable"><name>inputDelay</name></member>
+    <member refid="classPROJECTScene_1ad0f7574ccd32f485aad7a052eed0dd5e" kind="variable"><name>m_vertexArrayID</name></member>
+    <member refid="classPROJECTScene_1a992f6b8a37ddf8fbaf4f5d73350727ae" kind="variable"><name>meshList</name></member>
+    <member refid="classPROJECTScene_1a33b0f80895bb5c797eda5de165430985" kind="variable"><name>m_programID</name></member>
+    <member refid="classPROJECTScene_1aee8850dd4bc88a38076b993cc479021b" kind="variable"><name>m_parameters</name></member>
+    <member refid="classPROJECTScene_1a23b016feb6cbc575852f50219c8d0db9" kind="variable"><name>textbox</name></member>
+    <member refid="classPROJECTScene_1a697465f68871bce2261142bbbec1da08" kind="variable"><name>text</name></member>
+    <member refid="classPROJECTScene_1a86879351b07961b099488e0c43b16945" kind="variable"><name>text2D</name></member>
+    <member refid="classPROJECTScene_1ac75e8c68d8290d5014ceff53f04d007b" kind="variable"><name>character</name></member>
+    <member refid="classPROJECTScene_1a936c50286d2e83fddedc13edc79328a1" kind="variable"><name>object</name></member>
+    <member refid="classPROJECTScene_1ab8d23e211bd73adde59f273a1423207d" kind="variable"><name>blood</name></member>
+    <member refid="classPROJECTScene_1adbc3a2d9a1bd8bb87be36063b3345095" kind="variable"><name>doorway</name></member>
+    <member refid="classPROJECTScene_1abd2c67d8b0ae29a412d16dec56ec2fab" kind="variable"><name>doorway2</name></member>
+    <member refid="classPROJECTScene_1a5f7e5d41d2005fdb9729b2f734e2988c" kind="variable"><name>AutoDoor</name></member>
+    <member refid="classPROJECTScene_1a671487d6bda4a603a330eb13a03e88ac" kind="variable"><name>Bank</name></member>
+    <member refid="classPROJECTScene_1a4fc9422b13c6d64ce1f3b6c64319e7d0" kind="variable"><name>Machine</name></member>
+    <member refid="classPROJECTScene_1a4998a0a13d5279ac651bd9fbe4327aaa" kind="variable"><name>controlPanel</name></member>
+    <member refid="classPROJECTScene_1adf6149f37a7ba08f88cc89e3e93ef9dc" kind="variable"><name>light</name></member>
+    <member refid="classPROJECTScene_1aea295a310a8fcee7da676f9a732e97c6" kind="variable"><name>camera</name></member>
+    <member refid="classPROJECTScene_1afbcfd4aee5cd2bc2b35d5813cc71a80f" kind="variable"><name>player</name></member>
+    <member refid="classPROJECTScene_1a6e2d7d02108c668d1128d555f0c32cf9" kind="variable"><name>modelStack</name></member>
+    <member refid="classPROJECTScene_1a2fe9e514caef26154827f06158dadc66" kind="variable"><name>viewStack</name></member>
+    <member refid="classPROJECTScene_1a441532a87975f7805fd45f7d713b60d2" kind="variable"><name>projectionStack</name></member>
+    <member refid="classPROJECTScene_1adecedcaac36983da66e11a8cf737ff54" kind="function"><name>RenderSkybox</name></member>
+    <member refid="classPROJECTScene_1a15fd59cfa9012c99a21f3dc5d269746c" kind="function"><name>RenderCrosshair</name></member>
+    <member refid="classPROJECTScene_1a81babc41abb455739db46854c5cf848b" kind="function"><name>InitSuperMarket</name></member>
+    <member refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" kind="function"><name>RenderScene</name></member>
+    <member refid="classPROJECTScene_1a7c3b56602297ce78f95689c76362bb54" kind="function"><name>RenderCCTVUI</name></member>
+    <member refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" kind="function"><name>RenderMesh</name></member>
+    <member refid="classPROJECTScene_1aa26a453ab6a3c33863a453cef8168d91" kind="function"><name>RenderText</name></member>
+    <member refid="classPROJECTScene_1ad3c28e9ca3b8f32fe419b775331d87ec" kind="function"><name>RenderTextOnScreen</name></member>
+    <member refid="classPROJECTScene_1aa07dd9d2f6132b9936be816a7a863fcb" kind="function"><name>getTextWidth</name></member>
+    <member refid="classPROJECTScene_1a4e1102302efcb6a0b6f1096ee89ca653" kind="function"><name>PROJECTScene</name></member>
+    <member refid="classPROJECTScene_1a94013a21425314222e95a4707ff80b45" kind="function"><name>~PROJECTScene</name></member>
+    <member refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" kind="function"><name>Init</name></member>
+    <member refid="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" kind="function"><name>InitJunk</name></member>
+    <member refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" kind="function"><name>Update</name></member>
+    <member refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" kind="function"><name>Render</name></member>
+    <member refid="classPROJECTScene_1a2cc825520ffd8d4e62db833bbfb1aeb4" kind="function"><name>Exit</name></member>
+    <member refid="classPROJECTScene_1ab2f2f2e5df135948e5505d9978d46b75" kind="function"><name>RicssonInit</name></member>
+    <member refid="classPROJECTScene_1aad5e71b6898152054906af5515c3e200" kind="function"><name>JeremiahInit</name></member>
+    <member refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" kind="function"><name>JessicaInit</name></member>
+    <member refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" kind="function"><name>DarrenInit</name></member>
+    <member refid="classPROJECTScene_1ab7bb838e969fe7597cee45e0520ef649" kind="function"><name>soundInit</name></member>
+    <member refid="classPROJECTScene_1a9a58de28e3dbff47b5ff73f51168b31c" kind="function"><name>soundUpdate</name></member>
+  </compound>
+  <compound refid="classQuest" kind="class"><name>Quest</name>
+    <member refid="classQuest_1a534adb61e2d915d7ddc16acb0ab6eba4" kind="variable"><name>Accept</name></member>
+    <member refid="classQuest_1aa21be157f656075b955ff62719cb7e7c" kind="variable"><name>Decline</name></member>
+    <member refid="classQuest_1a5cdd6f02fdceaa7b7b53407740a22cf5" kind="function"><name>Quest</name></member>
+    <member refid="classQuest_1a025ccedb4155d589cc10b99bdf42057a" kind="function"><name>Quest</name></member>
+    <member refid="classQuest_1a3543707d634b3647b08bab8dabb09136" kind="function"><name>Quest</name></member>
+    <member refid="classQuest_1ad4341309a8558845c6d93bc8ca0940f4" kind="function"><name>~Quest</name></member>
+    <member refid="classQuest_1a4b06d5f97b5f67c0d10fecb4f16c51b5" kind="function"><name>getAccept</name></member>
+    <member refid="classQuest_1ac952157b8c3f53c026376a199915a5b7" kind="function"><name>getDecline</name></member>
+    <member refid="classQuest_1a141a2e06c042823901fa4b157f41354a" kind="function"><name>triggerQuest</name></member>
+  </compound>
+  <compound refid="classS__Guard" kind="class"><name>S_Guard</name>
+    <member refid="classS__Guard_1a857421f746b3f3ca631e9a2828eec09f" kind="variable"><name>original</name></member>
+    <member refid="classS__Guard_1abd085439dbecd0fdedae78b5a61f5a08" kind="function"><name>S_Guard</name></member>
+    <member refid="classS__Guard_1a9799d85fa2ce1a6991b6ecc00cc43c4f" kind="function"><name>S_Guard</name></member>
+    <member refid="classS__Guard_1afc3dc574682d03d957aac8ff1852c925" kind="function"><name>~S_Guard</name></member>
+    <member refid="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" kind="function"><name>Init</name></member>
+    <member refid="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" kind="function"><name>Control</name></member>
+  </compound>
+  <compound refid="structirrklang_1_1SAudioStreamFormat" kind="struct"><name>irrklang::SAudioStreamFormat</name>
+    <member refid="structirrklang_1_1SAudioStreamFormat_1a4ff43d45603ce7e65c27a07a860b96f5" kind="variable"><name>ChannelCount</name></member>
+    <member refid="structirrklang_1_1SAudioStreamFormat_1ab4f3d1b9df4e1adf53b128c0f14af313" kind="variable"><name>FrameCount</name></member>
+    <member refid="structirrklang_1_1SAudioStreamFormat_1adffd0aaf1d5e09b2832f6ad9b2589756" kind="variable"><name>SampleRate</name></member>
+    <member refid="structirrklang_1_1SAudioStreamFormat_1a6a3c4b7a3ac829555b0bcc7312e12c8f" kind="variable"><name>SampleFormat</name></member>
+    <member refid="structirrklang_1_1SAudioStreamFormat_1a0285204b54e3c969ae01d7bbec2f39b8" kind="function"><name>getSampleSize</name></member>
+    <member refid="structirrklang_1_1SAudioStreamFormat_1adbd8ce7f570a0c252d8aa74a3c444adb" kind="function"><name>getFrameSize</name></member>
+    <member refid="structirrklang_1_1SAudioStreamFormat_1aa673b99a0023bf949830b26fe79952cf" kind="function"><name>getSampleDataSize</name></member>
+    <member refid="structirrklang_1_1SAudioStreamFormat_1a9c6e9369bb5e519600915fd13b00e116" kind="function"><name>getBytesPerSecond</name></member>
+  </compound>
+  <compound refid="classScene" kind="class"><name>Scene</name>
+    <member refid="classScene_1a140d39ea291abd069dad5bf6bff97e37" kind="variable"><name>pause</name></member>
+    <member refid="classScene_1ad10176d75a9cc0da56626f682d083507" kind="function"><name>Scene</name></member>
+    <member refid="classScene_1a3b8cec2e32546713915f8c6303c951f1" kind="function"><name>~Scene</name></member>
+    <member refid="classScene_1ac3c4677dfd702a3ffd5ffadd3f1ac478" kind="function"><name>Init</name></member>
+    <member refid="classScene_1af5c6bcf2185087fb32c27fb8f6a18d91" kind="function"><name>Update</name></member>
+    <member refid="classScene_1ae24d21e12b34839994ad265662ea24d7" kind="function"><name>Render</name></member>
+    <member refid="classScene_1aae8e24654ef98c79961c2b804b12852c" kind="function"><name>Exit</name></member>
+  </compound>
+  <compound refid="classSecurity" kind="class"><name>Security</name>
+    <member refid="classSecurity_1a62a8472bfe0f2d1e682c7c493d1681c6" kind="variable"><name>TV</name></member>
+    <member refid="classSecurity_1a2268ac67b53ffa02cd63e78a7b271727" kind="variable"><name>CCTVs</name></member>
+    <member refid="classSecurity_1adf21beb426ecd12c71c75aa8bd02e39f" kind="function"><name>Security</name></member>
+    <member refid="classSecurity_1ae7a09d00c186c6587e9fda320a885c28" kind="function"><name>Security</name></member>
+    <member refid="classSecurity_1a9c54a706f244f9a3d769615225654696" kind="function"><name>~Security</name></member>
+  </compound>
+  <compound refid="classSelector" kind="class"><name>Selector</name>
+    <member refid="classSelector_1a6232d34f74db3d6aa7a866db76223f5c" kind="variable"><name>mesh</name></member>
+    <member refid="classSelector_1a74e25fe3b8aa075cdf721a96e5f73ce3" kind="variable"><name>selectedSlot</name></member>
+    <member refid="classSelector_1a55730d11cba896e63144c0f0e1cdafd2" kind="function"><name>Selector</name></member>
+    <member refid="classSelector_1a4ee34f2ccef257f9f866047cfe9bc8fc" kind="function"><name>~Selector</name></member>
+  </compound>
+  <compound refid="structirrklang_1_1SInternalAudioInterface" kind="struct"><name>irrklang::SInternalAudioInterface</name>
+    <member refid="structirrklang_1_1SInternalAudioInterface_1aea07f28b935b7b4585c8fb716dbad31f" kind="variable"><name>pIDirectSound</name></member>
+    <member refid="structirrklang_1_1SInternalAudioInterface_1a68f312b19c805d4775fe989b9ce27bf1" kind="variable"><name>pIDirectSound8</name></member>
+    <member refid="structirrklang_1_1SInternalAudioInterface_1a34d810f7ef1c0fdc7663e4f3a6fdb22c" kind="variable"><name>pWinMM_HWaveOut</name></member>
+    <member refid="structirrklang_1_1SInternalAudioInterface_1ad3eb4102916f4e37d6a84670ce9e8fcd" kind="variable"><name>pALSA_SND_PCM</name></member>
+    <member refid="structirrklang_1_1SInternalAudioInterface_1a2de1dc5ec1ba0add29c1c82f7fa7f07d" kind="variable"><name>pCoreAudioDeciceID</name></member>
+  </compound>
+  <compound refid="classSlot" kind="class"><name>Slot</name>
+    <member refid="classSlot_1a810ef7b9daede95614e80499518daf81" kind="variable"><name>position</name></member>
+    <member refid="classSlot_1ab7c0f22db7162e199958129cdf48c950" kind="variable"><name>item</name></member>
+    <member refid="classSlot_1ab524624ead0372ebd8c968657791b345" kind="variable"><name>mesh</name></member>
+    <member refid="classSlot_1a92a49d49328f84e7f8eb6c709d80b33c" kind="function"><name>Slot</name></member>
+    <member refid="classSlot_1a99115e7fec239e2cf7fdc2c27c913fcc" kind="function"><name>~Slot</name></member>
+  </compound>
+  <compound refid="classStopWatch" kind="class"><name>StopWatch</name>
+    <member refid="classStopWatch_1a102c4e3275d87798eca31673192c97ed" kind="variable"><name>frequency</name></member>
+    <member refid="classStopWatch_1a1bf2210ebf10821c4b2eb849e5e98502" kind="variable"><name>prevTime</name></member>
+    <member refid="classStopWatch_1a9ff6d4ddf698ba9cb82bdb0d27af72e8" kind="variable"><name>currTime</name></member>
+    <member refid="classStopWatch_1afe4830ee290e9d152d6ce07b9ffc2642" kind="variable"><name>wTimerRes</name></member>
+    <member refid="classStopWatch_1a2e61acbf46638eb3275cc8a7c1ea768d" kind="function"><name>LIToSecs</name></member>
+    <member refid="classStopWatch_1ad715945060eeb23baa3c036ad19b1edb" kind="function"><name>StopWatch</name></member>
+    <member refid="classStopWatch_1a223ec0da71dd0bc4f2b14d1af44bf20a" kind="function"><name>~StopWatch</name></member>
+    <member refid="classStopWatch_1a23301f735a2e3190435e39c9fd70cdf2" kind="function"><name>startTimer</name></member>
+    <member refid="classStopWatch_1ac8be1626396d1a5ca414f74349d59eb2" kind="function"><name>getElapsedTime</name></member>
+    <member refid="classStopWatch_1a2cd0856fc87a40038edfd66d784be8b4" kind="function"><name>waitUntil</name></member>
+  </compound>
+  <compound refid="classStorage" kind="class"><name>Storage</name>
+    <member refid="classStorage_1a80ef6af5e4c9fd4424ae16e808d05291" kind="function"><name>Storage</name></member>
+    <member refid="classStorage_1a1b9f9b9fdea18f675b5c676577bc88a7" kind="function"><name>Storage</name></member>
+    <member refid="classStorage_1a4d8af92e7dd83b220f63f051bf9f2cfd" kind="function"><name>Storage</name></member>
+    <member refid="classStorage_1ae2cec8e63e93c786ed2a21f4f5259e36" kind="function"><name>Storage</name></member>
+    <member refid="classStorage_1a73cf30f0a34250396f9eabee7dc5c93d" kind="function"><name>~Storage</name></member>
+    <member refid="classStorage_1a6e6c426205e1ef6e6d72e24d57fd5f60" kind="function"><name>getStorePos</name></member>
+  </compound>
+  <compound refid="structTexCoord" kind="struct"><name>TexCoord</name>
+    <member refid="structTexCoord_1a3be8371ac57f9ddc6ff5853e4bb58190" kind="variable"><name>u</name></member>
+    <member refid="structTexCoord_1ad525bc2c53d6402267c51022db33f85e" kind="variable"><name>v</name></member>
+    <member refid="structTexCoord_1adec9b45bb816162fe2f22a677ebfc11c" kind="function"><name>TexCoord</name></member>
+    <member refid="structTexCoord_1a64b4ceeb1733c478cb4b5b1216146c32" kind="function"><name>Set</name></member>
+  </compound>
+  <compound refid="classTextBox" kind="class"><name>TextBox</name>
+    <member refid="classTextBox_1a853e607198ed5ff6d0fdcefea6289de4" kind="variable"><name>type</name></member>
+    <member refid="classTextBox_1acf27c185eff76543d596e6c9d894dfee" kind="variable"><name>apparentext</name></member>
+    <member refid="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" kind="variable"><name>text</name></member>
+    <member refid="classTextBox_1abfb2baf145b19b1748edbeb9ba7a1266" kind="variable"><name>position</name></member>
+    <member refid="classTextBox_1a25b67e5ff6788c60b8aef3f3540879d0" kind="function"><name>TextBox</name></member>
+    <member refid="classTextBox_1a0ef9abcf8b9fc8ff935b77777df18978" kind="function"><name>TextBox</name></member>
+    <member refid="classTextBox_1ac3cc88a3ac171658ebaf44b01f4adf80" kind="function"><name>~TextBox</name></member>
+    <member refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" kind="function"><name>Update</name></member>
+    <member refid="classTextBox_1a4cd6062d94cf951188f5dc779876b5bd" kind="function"><name>getAccept</name></member>
+    <member refid="classTextBox_1ad77ccb4af9eee9eef691323aeb67ff23" kind="function"><name>triggerQuest</name></member>
+    <member refid="classTextBox_1a6d9c15d2facabf388328d6cab33f5bd0" kind="function"><name>getDecline</name></member>
+    <member refid="classTextBox_1ac367f8d55c2f1490bda97190d21676b1" kind="function"><name>GenerateText</name></member>
+  </compound>
+  <compound refid="classThug" kind="class"><name>Thug</name>
+    <member refid="classThug_1a7347e5d5b6ccf56d1b7705a220b21d59" kind="function"><name>Thug</name></member>
+    <member refid="classThug_1a3af04d16155ea05754e9b14f7cf259bd" kind="function"><name>Thug</name></member>
+    <member refid="classThug_1a23976ff4a368691985fb15d70ca7e270" kind="function"><name>~Thug</name></member>
+    <member refid="classThug_1af2a1de6b86c5760ca4aada0be45e941e" kind="function"><name>Init</name></member>
+    <member refid="classThug_1acb36644581f6c78939ad2711b96fc7ba" kind="function"><name>Control</name></member>
+  </compound>
+  <compound refid="classirrklang_1_1vec3d" kind="class"><name>irrklang::vec3d</name>
+    <member refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" kind="variable"><name>X</name></member>
+    <member refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" kind="variable"><name>Y</name></member>
+    <member refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" kind="variable"><name>Z</name></member>
+    <member refid="classirrklang_1_1vec3d_1a396e8a6e414d6311921252e31e2d91d9" kind="function"><name>vec3d</name></member>
+    <member refid="classirrklang_1_1vec3d_1acf6454acf91480f6f3ff1f285b72665e" kind="function"><name>vec3d</name></member>
+    <member refid="classirrklang_1_1vec3d_1a3cedbef9c16c38bc5bde34f39cd789eb" kind="function"><name>vec3d</name></member>
+    <member refid="classirrklang_1_1vec3d_1ab0656599ad85698244c84fb8c4242e46" kind="function"><name>operator-</name></member>
+    <member refid="classirrklang_1_1vec3d_1a3a2d930f0331232714905a94e3ec1feb" kind="function"><name>operator=</name></member>
+    <member refid="classirrklang_1_1vec3d_1a2e47a1f820bc33f9f8cb6398341453fb" kind="function"><name>operator+</name></member>
+    <member refid="classirrklang_1_1vec3d_1a6e80559ccd3e0b860d48b5c72ca65eae" kind="function"><name>operator+=</name></member>
+    <member refid="classirrklang_1_1vec3d_1a30780a09359dddbf016e08084d5fcb42" kind="function"><name>operator-</name></member>
+    <member refid="classirrklang_1_1vec3d_1ae7e87fb7134d57b6eab21ecbe026bb7d" kind="function"><name>operator-=</name></member>
+    <member refid="classirrklang_1_1vec3d_1a4e2b18f4a5a9e3e0a511c6552a436d2a" kind="function"><name>operator*</name></member>
+    <member refid="classirrklang_1_1vec3d_1a7407b8b660cb8a2b0c1fa6a164080b27" kind="function"><name>operator*=</name></member>
+    <member refid="classirrklang_1_1vec3d_1ac468f5f0764d9f73947ad58378843c0d" kind="function"><name>operator*</name></member>
+    <member refid="classirrklang_1_1vec3d_1a1f52f8472c07a98a9b5c951672f12691" kind="function"><name>operator*=</name></member>
+    <member refid="classirrklang_1_1vec3d_1a188b49432aa871140c8d59d042340598" kind="function"><name>operator/</name></member>
+    <member refid="classirrklang_1_1vec3d_1a8116904b4a31601f19914efe9acfd8b4" kind="function"><name>operator/=</name></member>
+    <member refid="classirrklang_1_1vec3d_1a8822a814763488fb5ae2ea2ec6fdba28" kind="function"><name>operator/</name></member>
+    <member refid="classirrklang_1_1vec3d_1a5088439758f22a531149b9ea46d982e2" kind="function"><name>operator/=</name></member>
+    <member refid="classirrklang_1_1vec3d_1a6655691b3b97a4ac0acb4cd19d310fa7" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classirrklang_1_1vec3d_1afd2945518f2e45732d68488ec2f7df3b" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classirrklang_1_1vec3d_1a68dca213efe08848b9325607eda4a629" kind="function"><name>operator==</name></member>
+    <member refid="classirrklang_1_1vec3d_1a8e17286f43752a923d96d473a9889290" kind="function"><name>operator!=</name></member>
+    <member refid="classirrklang_1_1vec3d_1a9f5c9411ad637d980a1cf320d0a1cf2e" kind="function"><name>equals</name></member>
+    <member refid="classirrklang_1_1vec3d_1a843126596fd738246d0816030a53ac0f" kind="function"><name>set</name></member>
+    <member refid="classirrklang_1_1vec3d_1afc80ce5e50e9889e6199696802a31976" kind="function"><name>set</name></member>
+    <member refid="classirrklang_1_1vec3d_1a0e37bc53c61352fb1b6390c97ea0c6aa" kind="function"><name>getLength</name></member>
+    <member refid="classirrklang_1_1vec3d_1ab88ccf139d3fb1580ff066a6306beb8e" kind="function"><name>getLengthSQ</name></member>
+    <member refid="classirrklang_1_1vec3d_1a284e1619481e16373ea18b19461344aa" kind="function"><name>dotProduct</name></member>
+    <member refid="classirrklang_1_1vec3d_1a1169871f8c3954bf67ac275f039b9794" kind="function"><name>getDistanceFrom</name></member>
+    <member refid="classirrklang_1_1vec3d_1a770f92315410f52481b1820da7310697" kind="function"><name>getDistanceFromSQ</name></member>
+    <member refid="classirrklang_1_1vec3d_1a1c8ebb209e6272f571f288b2f23a8363" kind="function"><name>crossProduct</name></member>
+    <member refid="classirrklang_1_1vec3d_1a04744e39c6afadbe300062f73e592934" kind="function"><name>isBetweenPoints</name></member>
+    <member refid="classirrklang_1_1vec3d_1a1adb3f2521103ab9dfbbdce8459a69ac" kind="function"><name>normalize</name></member>
+    <member refid="classirrklang_1_1vec3d_1ae117ab59edab77fe6ecfe6dab3c546a9" kind="function"><name>setLength</name></member>
+    <member refid="classirrklang_1_1vec3d_1a6007451ded719744d8e1b45c9ae56cd4" kind="function"><name>invert</name></member>
+    <member refid="classirrklang_1_1vec3d_1a3c0df42f68cbbec6506091756d518c18" kind="function"><name>rotateXZBy</name></member>
+    <member refid="classirrklang_1_1vec3d_1a73e958aac6482aea6d4947d2737b3681" kind="function"><name>rotateXYBy</name></member>
+    <member refid="classirrklang_1_1vec3d_1aa619d2ed5f8e992f5ec60d7b262a0108" kind="function"><name>rotateYZBy</name></member>
+    <member refid="classirrklang_1_1vec3d_1a94e2d14115fa139cf94f70a2badbe133" kind="function"><name>getInterpolated</name></member>
+    <member refid="classirrklang_1_1vec3d_1a13294fd4e67bee8d8ffee2fcaa42e912" kind="function"><name>getHorizontalAngle</name></member>
+    <member refid="classirrklang_1_1vec3d_1aff4faac673e7e09c8d094b48b0a0e20f" kind="function"><name>getAs4Values</name></member>
+  </compound>
+  <compound refid="structVector3" kind="struct"><name>Vector3</name>
+    <member refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kind="variable"><name>x</name></member>
+    <member refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kind="variable"><name>y</name></member>
+    <member refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" kind="variable"><name>z</name></member>
+    <member refid="structVector3_1abdc9a7f223e3628ed1cbccd107d49c44" kind="function"><name>IsEqual</name></member>
+    <member refid="structVector3_1afa5e0c801fc2c8a820a54ea99302fe08" kind="function"><name>Vector3</name></member>
+    <member refid="structVector3_1ae1d084ff898241c341e322fba12ceed7" kind="function"><name>Vector3</name></member>
+    <member refid="structVector3_1a5545e13e2e2861ece8f14b12a6a8101f" kind="function"><name>~Vector3</name></member>
+    <member refid="structVector3_1a9c25d604bd52b162cfcb56302ef032bb" kind="function"><name>Set</name></member>
+    <member refid="structVector3_1ac6c9b941ccefd7744eace77ceab16b56" kind="function"><name>SetZero</name></member>
+    <member refid="structVector3_1affeb6d657b146584b5cb0b42a0d6eaeb" kind="function"><name>IsZero</name></member>
+    <member refid="structVector3_1a90c345c2a67d220a474a6f209102634d" kind="function"><name>operator+</name></member>
+    <member refid="structVector3_1a339c80afd026abb2e35a4ae88301928b" kind="function"><name>operator+=</name></member>
+    <member refid="structVector3_1a224d913ac29766a57a5d7c96eb226b92" kind="function"><name>operator-</name></member>
+    <member refid="structVector3_1af0c657bdd493fcece630dc985a8e7378" kind="function"><name>operator-=</name></member>
+    <member refid="structVector3_1a7b7b7aa32bab9c687c193ffe2b169252" kind="function"><name>operator-</name></member>
+    <member refid="structVector3_1a0f0ed25ae62b6acaf21e7f39cfa4aeec" kind="function"><name>operator*</name></member>
+    <member refid="structVector3_1ab8bb1a236776d951a2e43b3ca9448bb2" kind="function"><name>operator*</name></member>
+    <member refid="structVector3_1ab337fe4b0c5fd44657f42427e265c982" kind="function"><name>operator*=</name></member>
+    <member refid="structVector3_1a2ff6e47cca48cfe640cb73feaf2a4845" kind="function"><name>operator/</name></member>
+    <member refid="structVector3_1af07358dd409fb1d58ae7bcd57b2594af" kind="function"><name>operator/=</name></member>
+    <member refid="structVector3_1ae084cfb19c537457f52bfb3cb3a7054d" kind="function"><name>operator==</name></member>
+    <member refid="structVector3_1a27ba9abc0d1b5cd47a0365a4ebcfeb7c" kind="function"><name>operator!=</name></member>
+    <member refid="structVector3_1ac16618241f117c897fd61883d37d83da" kind="function"><name>operator&lt;=</name></member>
+    <member refid="structVector3_1afbfdb69cef54e84d72d05c3c141e315f" kind="function"><name>operator=</name></member>
+    <member refid="structVector3_1a200024a8442329de9a625ed58ffe7075" kind="function"><name>Length</name></member>
+    <member refid="structVector3_1a87c90f81b4044393fe18f7a1e90f26df" kind="function"><name>LengthSquared</name></member>
+    <member refid="structVector3_1a17b8a054dab5e8eae02f04b0121ee194" kind="function"><name>Dist</name></member>
+    <member refid="structVector3_1a71b1271deb064c65f9dc7dba638c5b57" kind="function"><name>Dot</name></member>
+    <member refid="structVector3_1aa1cdc5357009b47fe585ddd61e263aad" kind="function"><name>Cross</name></member>
+    <member refid="structVector3_1a2da0f00c5529bced69763320dac9c414" kind="function"><name>Normalized</name></member>
+    <member refid="structVector3_1aaef4f25a38878a640ab4a48002a7eff8" kind="function"><name>Normalize</name></member>
+    <member refid="structVector3_1ab3b1af4c82ca09bf8ce997c205e3cb10" kind="function"><name>SphericalToCartesian</name></member>
+    <member refid="structVector3_1a2bb22d81325ba847b6c54c8ad769b5d1" kind="friend"><name>operator&lt;&lt;</name></member>
+    <member refid="structVector3_1ad0633cb4e51ffd5188e6b69e72209ab0" kind="friend"><name>operator*</name></member>
+  </compound>
+  <compound refid="classVending" kind="class"><name>Vending</name>
+    <member refid="classVending_1a5cff939df942f1fffbfc682aa1ea2bd3" kind="variable"><name>price</name></member>
+    <member refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" kind="variable"><name>Drink</name></member>
+    <member refid="classVending_1abf4d9c5e1077207f8beeed16110a9e91" kind="function"><name>Vending</name></member>
+    <member refid="classVending_1ad086784614bb58b3bad0358f74181b38" kind="function"><name>Vending</name></member>
+    <member refid="classVending_1ac12c5de0665adca1be951f77795d5a43" kind="function"><name>~Vending</name></member>
+    <member refid="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" kind="function"><name>generateDrink</name></member>
+  </compound>
+  <compound refid="structVertex" kind="struct"><name>Vertex</name>
+    <member refid="structVertex_1a8791e77df49f6996a19a8dd17cee8d5c" kind="variable"><name>pos</name></member>
+    <member refid="structVertex_1a3a3ff3f6cf46b1848795991e8159b922" kind="variable"><name>color</name></member>
+    <member refid="structVertex_1adce2d4b3d1191c69328519bdf231c344" kind="variable"><name>normal</name></member>
+    <member refid="structVertex_1a717d827da388b9c4847d1f5343959c78" kind="variable"><name>texCoord</name></member>
+  </compound>
+  <compound refid="classWallet" kind="class"><name>Wallet</name>
+    <member refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" kind="variable"><name>trueValue</name></member>
+    <member refid="classWallet_1acf1b2032056f3f7cd5bb4f32812b548c" kind="variable"><name>apparentValue</name></member>
+    <member refid="classWallet_1ad9be9e49244b78db9099fcaeccd1af04" kind="function"><name>Wallet</name></member>
+    <member refid="classWallet_1a443dc95f50e4a9d8e6d5282e13fedcde" kind="function"><name>~Wallet</name></member>
+    <member refid="classWallet_1ac6da526b7aad36671591fe245777a234" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="namespaceirrklang" kind="namespace"><name>irrklang</name>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7f" kind="enum"><name>E_SOUND_ENGINE_OPTIONS</name></member>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7fa83d61c032b77336f4a4a2b506e1c9e24" kind="enumvalue"><name>ESEO_MULTI_THREADED</name></member>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7faf7a3169d7e1fa394035639eaf1bd5b1e" kind="enumvalue"><name>ESEO_MUTE_IF_NOT_FOCUSED</name></member>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7fafda608a17564b562a9a43b7934a387e8" kind="enumvalue"><name>ESEO_LOAD_PLUGINS</name></member>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7fa76f687a07c0fe42e0af47098a6c58286" kind="enumvalue"><name>ESEO_USE_3D_BUFFERS</name></member>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7faa5b12b3061e7ba5898e9a502de47bb8e" kind="enumvalue"><name>ESEO_PRINT_DEBUG_INFO_TO_DEBUGGER</name></member>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7fa6a103ac05a294aea210fd0bb14dd8241" kind="enumvalue"><name>ESEO_PRINT_DEBUG_INFO_TO_STDOUT</name></member>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7fa4600bc37a0bf0b999562d59bec094c05" kind="enumvalue"><name>ESEO_LINEAR_ROLLOFF</name></member>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7facca58ad3ee7e3c2e874bc4015f36f2a9" kind="enumvalue"><name>ESEO_DEFAULT_OPTIONS</name></member>
+    <member refid="namespaceirrklang_1ac9155ff55b347df6e905462100762d7fada32d5c6ec9eb5cfa818184faf87eb6a" kind="enumvalue"><name>ESEO_FORCE_32_BIT</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afe" kind="enum"><name>E_SOUND_OUTPUT_DRIVER</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afea8cc9863f3b410698313b8637721e51ec" kind="enumvalue"><name>ESOD_AUTO_DETECT</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afea6fcd5ec6152066313ef04d97ea5582ee" kind="enumvalue"><name>ESOD_DIRECT_SOUND_8</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afea41cdbf2b330293f9c8be2c5a53197258" kind="enumvalue"><name>ESOD_DIRECT_SOUND</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afea618f53c155e92cca2b3b69865b48335a" kind="enumvalue"><name>ESOD_WIN_MM</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afea776337cd0b6eeb6cbf171889ca4100c1" kind="enumvalue"><name>ESOD_ALSA</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afea0b3dfa7418df1cf47c77ad2370533332" kind="enumvalue"><name>ESOD_CORE_AUDIO</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afea942ffa317debc447cae5bfab10b67c9c" kind="enumvalue"><name>ESOD_NULL</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afeaf4138be4b36d3e0c5a7a09bc1422c9bf" kind="enumvalue"><name>ESOD_COUNT</name></member>
+    <member refid="namespaceirrklang_1a77f31ac02a7d33fe94807be709f72afea6dc399ba0785f1435c2e2c9cd5478c3f" kind="enumvalue"><name>ESOD_FORCE_32_BIT</name></member>
+    <member refid="namespaceirrklang_1a6eab873ba387c6a4e05839e6a434d06e" kind="enum"><name>E_STREAM_MODE</name></member>
+    <member refid="namespaceirrklang_1a6eab873ba387c6a4e05839e6a434d06ea9ccdf79afdb2961edf97edf4575d1717" kind="enumvalue"><name>ESM_AUTO_DETECT</name></member>
+    <member refid="namespaceirrklang_1a6eab873ba387c6a4e05839e6a434d06ea2d72368b13fbbb1ce9708d829198a24b" kind="enumvalue"><name>ESM_STREAMING</name></member>
+    <member refid="namespaceirrklang_1a6eab873ba387c6a4e05839e6a434d06ea415ca3d09a13b086c078de0096430a07" kind="enumvalue"><name>ESM_NO_STREAMING</name></member>
+    <member refid="namespaceirrklang_1a6eab873ba387c6a4e05839e6a434d06eabbfef2fbcff24a58a55051d9a7ff7b19" kind="enumvalue"><name>ESM_FORCE_32_BIT</name></member>
+    <member refid="namespaceirrklang_1a17ebb006afe78ab6502a1e3d18083522" kind="enum"><name>E_STOP_EVENT_CAUSE</name></member>
+    <member refid="namespaceirrklang_1a17ebb006afe78ab6502a1e3d18083522ac77937ae9e225a3a42775bc086e93158" kind="enumvalue"><name>ESEC_SOUND_FINISHED_PLAYING</name></member>
+    <member refid="namespaceirrklang_1a17ebb006afe78ab6502a1e3d18083522a5d688aec69b83583382e370a332cdb45" kind="enumvalue"><name>ESEC_SOUND_STOPPED_BY_USER</name></member>
+    <member refid="namespaceirrklang_1a17ebb006afe78ab6502a1e3d18083522a1d582aee4156ea2b5952a314f03a78ca" kind="enumvalue"><name>ESEC_SOUND_STOPPED_BY_SOURCE_REMOVAL</name></member>
+    <member refid="namespaceirrklang_1a17ebb006afe78ab6502a1e3d18083522a3ebc8c5fc80207284388d61d2644bd31" kind="enumvalue"><name>ESEC_FORCE_32_BIT</name></member>
+    <member refid="namespaceirrklang_1a2b85d1e9288cb552fceef8e8a726a80e" kind="enum"><name>ESampleFormat</name></member>
+    <member refid="namespaceirrklang_1a2b85d1e9288cb552fceef8e8a726a80ea0de880c8a4d615e152bde20ec8444c44" kind="enumvalue"><name>ESF_U8</name></member>
+    <member refid="namespaceirrklang_1a2b85d1e9288cb552fceef8e8a726a80eaa3dc63221ae7c396d6b32431da872104" kind="enumvalue"><name>ESF_S16</name></member>
+    <member refid="namespaceirrklang_1af1928ef855711d24f793f841013f000e" kind="typedef"><name>ik_u8</name></member>
+    <member refid="namespaceirrklang_1a703d5c51092cc0731dd302f9c8d83613" kind="typedef"><name>ik_s8</name></member>
+    <member refid="namespaceirrklang_1af179ad966eb79d01f6d1cf8927087449" kind="typedef"><name>ik_c8</name></member>
+    <member refid="namespaceirrklang_1a16e9eaf54fbe344a86cb9b93290d59d9" kind="typedef"><name>ik_u16</name></member>
+    <member refid="namespaceirrklang_1ab884b7693f13e37d94fcbbff6b93adcf" kind="typedef"><name>ik_s16</name></member>
+    <member refid="namespaceirrklang_1adf9f75b6ca98aff6843fb294125571e0" kind="typedef"><name>ik_u32</name></member>
+    <member refid="namespaceirrklang_1af8028b1c477e50d479270611ecb76e92" kind="typedef"><name>ik_s32</name></member>
+    <member refid="namespaceirrklang_1a6fa5a4dd85b476308461136072ef4e0f" kind="typedef"><name>ik_f32</name></member>
+    <member refid="namespaceirrklang_1a1c98510aa3989b1780723e2fb15f7c3d" kind="typedef"><name>ik_f64</name></member>
+    <member refid="namespaceirrklang_1a592332840fd1799b7c73bcc4c0c4a5af" kind="typedef"><name>vec3df</name></member>
+    <member refid="namespaceirrklang_1a96ca718557ff7197905483b21f781d26" kind="typedef"><name>vec3di</name></member>
+    <member refid="namespaceirrklang_1a37e23177810db5355a4fb31038e71634" kind="variable"><name>IK_ROUNDING_ERROR_32</name></member>
+    <member refid="namespaceirrklang_1a94bfcb20851dee7c360142f3db288538" kind="variable"><name>IK_PI64</name></member>
+    <member refid="namespaceirrklang_1a5e56a9f6a51767cc5a1bf32919a2b801" kind="variable"><name>IK_PI32</name></member>
+    <member refid="namespaceirrklang_1a899ce8a298f44c2a5413c6dc0e87f640" kind="variable"><name>IK_RADTODEG</name></member>
+    <member refid="namespaceirrklang_1ad74595519e5497bb71a0e4b98312866f" kind="variable"><name>IK_DEGTORAD</name></member>
+    <member refid="namespaceirrklang_1a3f83fd863cffaac9ddde5ff73e72f116" kind="variable"><name>IK_RADTODEG64</name></member>
+    <member refid="namespaceirrklang_1a738ade686859c0d98ce9edbd34c4fc1b" kind="variable"><name>IK_DEGTORAD64</name></member>
+    <member refid="namespaceirrklang_1a6ce1a12052cdee7b6d81a053a73a4f86" kind="function"><name>equalsfloat</name></member>
+    <member refid="namespaceirrklang_1ac176fe17bc9317f36075a1b8ecc85a37" kind="function"><name>operator*</name></member>
+    <member refid="namespaceirrklang_1ad9829f898bc0665fdd2554a6f5c7ca1c" kind="function"><name>createIrrKlangDevice</name></member>
+    <member refid="namespaceirrklang_1a38d9a69bf54fd60e76e80e199e44faee" kind="function"><name>createSoundDeviceList</name></member>
+    <member refid="namespaceirrklang_1aaa4535359bd66857aaadb746cf7d8cec" kind="function"><name>createIrrKlangAudioRecorder</name></member>
+    <member refid="namespaceirrklang_1a0e8013b9e8f11231e69ce1da9457a339" kind="function"><name>createAudioRecorderDeviceList</name></member>
+    <member refid="namespaceirrklang_1a2552f41aac247b77e0f1287c28744cd7" kind="function"><name>makeUTF8fromUTF16string</name></member>
+  </compound>
+  <compound refid="namespaceMath" kind="namespace"><name>Math</name>
+    <member refid="namespaceMath_1a5ee876d5cb049f0b3b71f3c54ed8efa0" kind="variable"><name>EPSILON</name></member>
+    <member refid="namespaceMath_1af8c064b6b688407b9999ee677efd715d" kind="variable"><name>PI</name></member>
+    <member refid="namespaceMath_1a52cf11c3d21a83ced7f3e73d73b438bf" kind="variable"><name>TWO_PI</name></member>
+    <member refid="namespaceMath_1a6475d0f7b5d131ca9bacd916606bf295" kind="variable"><name>HALF_PI</name></member>
+    <member refid="namespaceMath_1aceaa8f6fecb9720eb0e13330bf45d710" kind="variable"><name>QUARTER_PI</name></member>
+    <member refid="namespaceMath_1ac91173ab2efdf7313fe7aaeb6cb44cf6" kind="function"><name>FAbs</name></member>
+    <member refid="namespaceMath_1ac04b987cc6c574a059e68cb58f58c09a" kind="function"><name>DegreeToRadian</name></member>
+    <member refid="namespaceMath_1a66ecee51e9dfd1a68d7863d17d60e6ce" kind="function"><name>distBetween</name></member>
+    <member refid="namespaceMath_1a1a1d364c850f9d66fda85cf71598bbe5" kind="function"><name>RadianToDegree</name></member>
+    <member refid="namespaceMath_1a6cc12fd546c2f3dbebade9e4234b5f7c" kind="function"><name>Wrap</name></member>
+    <member refid="namespaceMath_1af8dc69787ee8df1ea409e97f53fce3cb" kind="function"><name>Clamp</name></member>
+    <member refid="namespaceMath_1af308aea473e7e8e6352e1bd452e11df9" kind="function"><name>Min</name></member>
+    <member refid="namespaceMath_1af25f5d487204a1402974cb46444cfc74" kind="function"><name>Max</name></member>
+    <member refid="namespaceMath_1ae3a0c56b76d652066a652f8285494761" kind="function"><name>Square</name></member>
+    <member refid="namespaceMath_1a33d6cf633b5ddf82fff77d1d40140b85" kind="function"><name>InitRNG</name></member>
+    <member refid="namespaceMath_1a7ab621ad66eb2f61e2b9cff366fed0e0" kind="function"><name>RandInt</name></member>
+    <member refid="namespaceMath_1a7609565ca241d0f70dfd677a7fdac281" kind="function"><name>RandIntMinMax</name></member>
+    <member refid="namespaceMath_1a9b2e7be835afb6d9fe78f6c1efa26998" kind="function"><name>RandFloat</name></member>
+    <member refid="namespaceMath_1aa21138cd1585c3dab1e901c4ead9204d" kind="function"><name>RandFloatMinMax</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="MatrixStack_8cpp" kind="file"><name>MatrixStack.cpp</name>
+  </compound>
+  <compound refid="MatrixStack_8h" kind="file"><name>MatrixStack.h</name>
+  </compound>
+  <compound refid="Mtx44_8cpp" kind="file"><name>Mtx44.cpp</name>
+    <member refid="Mtx44_8cpp_1a1ef521a2e5e5ae2ef55d1bc0c3b0c437" kind="function"><name>swap</name></member>
+  </compound>
+  <compound refid="Mtx44_8h" kind="file"><name>Mtx44.h</name>
+  </compound>
+  <compound refid="MyMath_8h" kind="file"><name>MyMath.h</name>
+  </compound>
+  <compound refid="timer_8cpp" kind="file"><name>timer.cpp</name>
+    <member refid="timer_8cpp_1afdbe41ed890660c61ad3504e222d28be" kind="define"><name>TARGET_RESOLUTION</name></member>
+  </compound>
+  <compound refid="timer_8h" kind="file"><name>timer.h</name>
+  </compound>
+  <compound refid="Vector3_8cpp" kind="file"><name>Vector3.cpp</name>
+    <member refid="Vector3_8cpp_1a2bb22d81325ba847b6c54c8ad769b5d1" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="Vector3_8cpp_1ad0633cb4e51ffd5188e6b69e72209ab0" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="Vector3_8h" kind="file"><name>Vector3.h</name>
+  </compound>
+  <compound refid="ik__ESoundEngineOptions_8h" kind="file"><name>ik_ESoundEngineOptions.h</name>
+  </compound>
+  <compound refid="ik__ESoundOutputDrivers_8h" kind="file"><name>ik_ESoundOutputDrivers.h</name>
+  </compound>
+  <compound refid="ik__EStreamModes_8h" kind="file"><name>ik_EStreamModes.h</name>
+  </compound>
+  <compound refid="ik__IAudioRecorder_8h" kind="file"><name>ik_IAudioRecorder.h</name>
+  </compound>
+  <compound refid="ik__IAudioStream_8h" kind="file"><name>ik_IAudioStream.h</name>
+  </compound>
+  <compound refid="ik__IAudioStreamLoader_8h" kind="file"><name>ik_IAudioStreamLoader.h</name>
+  </compound>
+  <compound refid="ik__IFileFactory_8h" kind="file"><name>ik_IFileFactory.h</name>
+  </compound>
+  <compound refid="ik__IFileReader_8h" kind="file"><name>ik_IFileReader.h</name>
+  </compound>
+  <compound refid="ik__IRefCounted_8h" kind="file"><name>ik_IRefCounted.h</name>
+  </compound>
+  <compound refid="ik__irrKlangTypes_8h" kind="file"><name>ik_irrKlangTypes.h</name>
+  </compound>
+  <compound refid="ik__ISound_8h" kind="file"><name>ik_ISound.h</name>
+  </compound>
+  <compound refid="ik__ISoundDeviceList_8h" kind="file"><name>ik_ISoundDeviceList.h</name>
+  </compound>
+  <compound refid="ik__ISoundEffectControl_8h" kind="file"><name>ik_ISoundEffectControl.h</name>
+  </compound>
+  <compound refid="ik__ISoundEngine_8h" kind="file"><name>ik_ISoundEngine.h</name>
+  </compound>
+  <compound refid="ik__ISoundMixedOutputReceiver_8h" kind="file"><name>ik_ISoundMixedOutputReceiver.h</name>
+  </compound>
+  <compound refid="ik__ISoundSource_8h" kind="file"><name>ik_ISoundSource.h</name>
+  </compound>
+  <compound refid="ik__ISoundStopEventReceiver_8h" kind="file"><name>ik_ISoundStopEventReceiver.h</name>
+  </compound>
+  <compound refid="ik__IVirtualRefCounted_8h" kind="file"><name>ik_IVirtualRefCounted.h</name>
+  </compound>
+  <compound refid="ik__SAudioStreamFormat_8h" kind="file"><name>ik_SAudioStreamFormat.h</name>
+  </compound>
+  <compound refid="ik__vec3d_8h" kind="file"><name>ik_vec3d.h</name>
+  </compound>
+  <compound refid="irrKlang_8h" kind="file"><name>irrKlang.h</name>
+    <member refid="irrKlang_8h_1a3c47e8f6a51361741ab48b1cee6c4ba2" kind="define"><name>IRR_KLANG_VERSION</name></member>
+    <member refid="irrKlang_8h_1a46984c40d70515d79d72043bfbd554d5" kind="define"><name>IRRKLANG_API</name></member>
+    <member refid="irrKlang_8h_1abd61a1fa49408e803e5aa3049fdf43f8" kind="define"><name>IRRKLANGCALLCONV</name></member>
+  </compound>
+  <compound refid="Application_8cpp" kind="file"><name>Application.cpp</name>
+    <member refid="Application_8cpp_1ac325468d8b5ea73fd5e5831ba972bb59" kind="variable"><name>m_window</name></member>
+    <member refid="Application_8cpp_1a677c5ab1ba0f5747ef76b40a17b6f803" kind="variable"><name>FPS</name></member>
+    <member refid="Application_8cpp_1ae228418b33873657fa31313fb4189a8f" kind="variable"><name>frameTime</name></member>
+    <member refid="Application_8cpp_1a5f589e5ecc9e76fbe63f43ff76edf021" kind="variable"><name>pauseDelay</name></member>
+    <member refid="Application_8cpp_1a567a1d847c8e78035c765f75280f6180" kind="variable"><name>lastCursor</name></member>
+    <member refid="Application_8cpp_1ab6fcaa789c458a69920029339bcb303e" kind="variable"><name>play</name></member>
+    <member refid="Application_8cpp_1ac746fa6ad48d19984a159f14bec028a3" kind="variable"><name>quit</name></member>
+    <member refid="Application_8cpp_1a6e6d1771a9242858811be0a3569838fa" kind="function"><name>error_callback</name></member>
+    <member refid="Application_8cpp_1a6d1a8981b70f74fc60c1428f080da820" kind="function"><name>key_callback</name></member>
+    <member refid="Application_8cpp_1a6bec52479312a11696798b50140f227d" kind="function"><name>scroll_callback</name></member>
+    <member refid="Application_8cpp_1aadcee9765075e232ca0720f80a76ad37" kind="function"><name>resize_callback</name></member>
+  </compound>
+  <compound refid="Application_8h" kind="file"><name>Application.h</name>
+  </compound>
+  <compound refid="audio_8cpp" kind="file"><name>audio.cpp</name>
+    <member refid="audio_8cpp_1ab56cdd798fa279dceae0e730285d5b5e" kind="variable"><name>engine</name></member>
+  </compound>
+  <compound refid="Camera_8cpp" kind="file"><name>Camera.cpp</name>
+  </compound>
+  <compound refid="Camera_8h" kind="file"><name>Camera.h</name>
+  </compound>
+  <compound refid="Camera3_8cpp" kind="file"><name>Camera3.cpp</name>
+  </compound>
+  <compound refid="Camera3_8h" kind="file"><name>Camera3.h</name>
+  </compound>
+  <compound refid="collision_8cpp" kind="file"><name>collision.cpp</name>
+  </compound>
+  <compound refid="collision_8h" kind="file"><name>collision.h</name>
+  </compound>
+  <compound refid="dialogue_8cpp" kind="file"><name>dialogue.cpp</name>
+    <member refid="dialogue_8cpp_1ad30f972f2e6e3e5ecab0dee38ae6cdb8" kind="variable"><name>frame</name></member>
+    <member refid="dialogue_8cpp_1acd1a0cf435929df7f92dfee7c223bb13" kind="variable"><name>Select</name></member>
+  </compound>
+  <compound refid="dialogue_8h" kind="file"><name>dialogue.h</name>
+  </compound>
+  <compound refid="inventory_8cpp" kind="file"><name>inventory.cpp</name>
+  </compound>
+  <compound refid="inventory_8h" kind="file"><name>inventory.h</name>
+  </compound>
+  <compound refid="Light_8h" kind="file"><name>Light.h</name>
+    <member refid="Light_8h_1a7fbfbb954c027f1f2927473380e63148" kind="define"><name>LIGHT_H</name></member>
+  </compound>
+  <compound refid="LoadOBJ_8cpp" kind="file"><name>LoadOBJ.cpp</name>
+    <member refid="LoadOBJ_8cpp_1aa634e9cac0a72d751731db6b4479cbda" kind="function"><name>LoadOBJ</name></member>
+    <member refid="LoadOBJ_8cpp_1af43afccb67fd9c80513489b75fddb347" kind="function"><name>getSimilarVertexIndex_fast</name></member>
+    <member refid="LoadOBJ_8cpp_1aa99ef9426a57205ed8acb8f7d41f3bae" kind="function"><name>IndexVBO</name></member>
+  </compound>
+  <compound refid="LoadOBJ_8h" kind="file"><name>LoadOBJ.h</name>
+    <member refid="LoadOBJ_8h_1aa634e9cac0a72d751731db6b4479cbda" kind="function"><name>LoadOBJ</name></member>
+    <member refid="LoadOBJ_8h_1aa99ef9426a57205ed8acb8f7d41f3bae" kind="function"><name>IndexVBO</name></member>
+  </compound>
+  <compound refid="LoadTGA_8cpp" kind="file"><name>LoadTGA.cpp</name>
+    <member refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" kind="function"><name>LoadTGA</name></member>
+  </compound>
+  <compound refid="LoadTGA_8h" kind="file"><name>LoadTGA.h</name>
+    <member refid="LoadTGA_8h_1a459a80ca6de67a1e3493bfb66ae317e4" kind="function"><name>LoadTGA</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="Material_8h" kind="file"><name>Material.h</name>
+  </compound>
+  <compound refid="MENUScene_8cpp" kind="file"><name>MENUScene.cpp</name>
+    <member refid="MENUScene_8cpp_1a88b7b9afecc42ea3bdad4c38d34e56e9" kind="variable"><name>selectDelay</name></member>
+    <member refid="MENUScene_8cpp_1a5f589e5ecc9e76fbe63f43ff76edf021" kind="variable"><name>pauseDelay</name></member>
+    <member refid="MENUScene_8cpp_1ab56cdd798fa279dceae0e730285d5b5e" kind="variable"><name>engine</name></member>
+    <member refid="MENUScene_8cpp_1ab6fcaa789c458a69920029339bcb303e" kind="variable"><name>play</name></member>
+    <member refid="MENUScene_8cpp_1ac746fa6ad48d19984a159f14bec028a3" kind="variable"><name>quit</name></member>
+  </compound>
+  <compound refid="MENUScene_8h" kind="file"><name>MENUScene.h</name>
+  </compound>
+  <compound refid="Mesh_8cpp" kind="file"><name>Mesh.cpp</name>
+  </compound>
+  <compound refid="Mesh_8h" kind="file"><name>Mesh.h</name>
+  </compound>
+  <compound refid="MeshBuilder_8cpp" kind="file"><name>MeshBuilder.cpp</name>
+    <member refid="MeshBuilder_8cpp_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
+    <member refid="MeshBuilder_8cpp_1a42b85724173510abff8489cfe7806c3f" kind="function"><name>sphereX</name></member>
+    <member refid="MeshBuilder_8cpp_1a2eecb745cd0d786dbb888a9439ff2794" kind="function"><name>sphereY</name></member>
+    <member refid="MeshBuilder_8cpp_1ad611a1f30697cb26b310c16a493d8c4f" kind="function"><name>sphereZ</name></member>
+    <member refid="MeshBuilder_8cpp_1af69cd953e182610b7858d10e44de8095" kind="function"><name>cylinderX</name></member>
+    <member refid="MeshBuilder_8cpp_1ad4c5cfc88779344e551288f07a734b99" kind="function"><name>cylinderZ</name></member>
+  </compound>
+  <compound refid="MeshBuilder_8h" kind="file"><name>MeshBuilder.h</name>
+  </compound>
+  <compound refid="NPC_8cpp" kind="file"><name>NPC.cpp</name>
+    <member refid="NPC_8cpp_1aa44bf3fcc686d895aaa3265499f2920c" kind="variable"><name>entrance</name></member>
+  </compound>
+  <compound refid="NPC_8h" kind="file"><name>NPC.h</name>
+  </compound>
+  <compound refid="player_8cpp" kind="file"><name>player.cpp</name>
+    <member refid="player_8cpp_1a50df3702b712796905d3c421637c1c56" kind="variable"><name>bobXDir</name></member>
+    <member refid="player_8cpp_1a648dbe991382658ac13ab2dfdbc93293" kind="variable"><name>bobYDir</name></member>
+    <member refid="player_8cpp_1a6ddf4e66acb2a2af41c08a8218b62691" kind="variable"><name>knifeDir</name></member>
+    <member refid="player_8cpp_1a33a00c62601a8c50f3d1e559011500ea" kind="variable"><name>stopCamera</name></member>
+    <member refid="player_8cpp_1ab56cdd798fa279dceae0e730285d5b5e" kind="variable"><name>engine</name></member>
+    <member refid="player_8cpp_1aa87e9afd12a7adc281ded05d27520a94" kind="variable"><name>eDelay</name></member>
+    <member refid="player_8cpp_1aa44bf3fcc686d895aaa3265499f2920c" kind="variable"><name>entrance</name></member>
+    <member refid="player_8cpp_1a65c818132a37d07697eca46bebcdb97f" kind="function"><name>CollisionResponse</name></member>
+  </compound>
+  <compound refid="player_8h" kind="file"><name>player.h</name>
+  </compound>
+  <compound refid="PROJECTScene_8cpp" kind="file"><name>PROJECTScene.cpp</name>
+    <member refid="PROJECTScene_8cpp_1a0bc0b7e4601a935e3dd2021bc7a145fb" kind="variable"><name>x</name></member>
+    <member refid="PROJECTScene_8cpp_1ad502eec197f7d286623cdc883a2ebf29" kind="variable"><name>fps</name></member>
+    <member refid="PROJECTScene_8cpp_1ac3d272e8048af77a48361dc777d00bfc" kind="variable"><name>animateHeart</name></member>
+    <member refid="PROJECTScene_8cpp_1a4d44f2ee29f46aec5628697d410bdb67" kind="variable"><name>animateHeartDir</name></member>
+    <member refid="PROJECTScene_8cpp_1acd1a0cf435929df7f92dfee7c223bb13" kind="variable"><name>Select</name></member>
+    <member refid="PROJECTScene_8cpp_1a88b7b9afecc42ea3bdad4c38d34e56e9" kind="variable"><name>selectDelay</name></member>
+    <member refid="PROJECTScene_8cpp_1a5f589e5ecc9e76fbe63f43ff76edf021" kind="variable"><name>pauseDelay</name></member>
+    <member refid="PROJECTScene_8cpp_1aab4aca1d184256eaf1f29ca85502d228" kind="variable"><name>CCTV</name></member>
+    <member refid="PROJECTScene_8cpp_1a33a00c62601a8c50f3d1e559011500ea" kind="variable"><name>stopCamera</name></member>
+    <member refid="PROJECTScene_8cpp_1ab56cdd798fa279dceae0e730285d5b5e" kind="variable"><name>engine</name></member>
+    <member refid="PROJECTScene_8cpp_1a82afce81dc7ebe7bec74e4154b956843" kind="variable"><name>showLevel</name></member>
+  </compound>
+  <compound refid="PROJECTScene_8h" kind="file"><name>PROJECTScene.h</name>
+  </compound>
+  <compound refid="Scene_8h" kind="file"><name>Scene.h</name>
+  </compound>
+  <compound refid="shader_8cpp" kind="file"><name>shader.cpp</name>
+    <member refid="shader_8cpp_1a833f10cca6a76fe34ae9efa23ac5e73c" kind="function"><name>LoadShaders</name></member>
+  </compound>
+  <compound refid="shader_8hpp" kind="file"><name>shader.hpp</name>
+    <member refid="shader_8hpp_1a833f10cca6a76fe34ae9efa23ac5e73c" kind="function"><name>LoadShaders</name></member>
+  </compound>
+  <compound refid="Utility_8cpp" kind="file"><name>Utility.cpp</name>
+    <member refid="Utility_8cpp_1ab5084c0eec6da543a86a225409a7f565" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="Utility_8h" kind="file"><name>Utility.h</name>
+    <member refid="Utility_8h_1a06369a9c3840cda1cbd33873c3c05d48" kind="define"><name>UTILITY_H</name></member>
+    <member refid="Utility_8h_1ab5084c0eec6da543a86a225409a7f565" kind="function"><name>operator*</name></member>
+  </compound>
+  <compound refid="vertex_8h" kind="file"><name>vertex.h</name>
+    <member refid="vertex_8h_1ae07cbab90525c5082e1bf64da4fe90e6" kind="define"><name>VERTEX_H</name></member>
+  </compound>
+  <compound refid="README_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md_README" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_4ab6b4cc6a7edbff49100e9123df213f" kind="dir"><name>Common</name>
+  </compound>
+  <compound refid="dir_13fee3f3791ecb47304ba819d1146abc" kind="dir"><name>IrrKlang/include</name>
+  </compound>
+  <compound refid="dir_52f679259e14655a1d74cf8101b53737" kind="dir"><name>IrrKlang</name>
+  </compound>
+  <compound refid="dir_21a5d877f3f1ed29af24f8bf5bd73751" kind="dir"><name>MyGraphics</name>
+  </compound>
+  <compound refid="dir_0feb0cbe2712b0aef517a4e0af18cc07" kind="dir"><name>MyGraphics/Source</name>
+  </compound>
+  <compound refid="dir_c8c4f62bd7db86224cb487692f2a3c53" kind="dir"><name>Common/Source</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
