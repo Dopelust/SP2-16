@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="structMaterial" kind="struct" prot="public">
+    <compoundname>Material</compoundname>
+    <includes refid="Material_8h" local="no">Material.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMaterial_1ab3819b3151cbf3ac1892195ab091e3b8" prot="public" static="no" mutable="no">
+        <type><ref refid="structComponent" kindref="compound">Component</ref></type>
+        <definition>Component Material::kAmbient</definition>
+        <argsstring></argsstring>
+        <name>kAmbient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" line="15" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">MENUScene::RenderMesh</referencedby>
+        <referencedby refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">PROJECTScene::RenderMesh</referencedby>
+        <referencedby refid="classNPC_1a24721357146b87e473c740fe9f295841" compoundref="NPC_8cpp" startline="210" endline="266">NPC::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMaterial_1aa88dd619cacf46e2f26ddd23fe032898" prot="public" static="no" mutable="no">
+        <type><ref refid="structComponent" kindref="compound">Component</ref></type>
+        <definition>Component Material::kDiffuse</definition>
+        <argsstring></argsstring>
+        <name>kDiffuse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" line="16" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">MENUScene::RenderMesh</referencedby>
+        <referencedby refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">PROJECTScene::RenderMesh</referencedby>
+        <referencedby refid="classNPC_1a24721357146b87e473c740fe9f295841" compoundref="NPC_8cpp" startline="210" endline="266">NPC::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMaterial_1a97cc0bf34b02c758b198d12dd24e96e2" prot="public" static="no" mutable="no">
+        <type><ref refid="structComponent" kindref="compound">Component</ref></type>
+        <definition>Component Material::kSpecular</definition>
+        <argsstring></argsstring>
+        <name>kSpecular</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" line="17" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">MENUScene::RenderMesh</referencedby>
+        <referencedby refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">PROJECTScene::RenderMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structMaterial_1a07cec8956c43f81adeb6ba7aea104915" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Material::kShininess</definition>
+        <argsstring></argsstring>
+        <name>kShininess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" line="18" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1a55b339ec6b3c56b131ae2abef630e486" compoundref="MENUScene_8cpp" startline="341" endline="383">MENUScene::RenderMesh</referencedby>
+        <referencedby refid="classPROJECTScene_1ad90e22caf99ed67cf46eaae3e2d3985a" compoundref="PROJECTScene_8cpp" startline="2302" endline="2344">PROJECTScene::RenderMesh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structMaterial_1a137e987401b63eb7c6c27c3e38bc74b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Material::Material</definition>
+        <argsstring>()</argsstring>
+        <name>Material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" line="20" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" bodystart="20" bodyend="26"/>
+        <references refid="structComponent_1a85f599b839327709953f0115dc5dfd49" compoundref="Material_8h" startline="9" endline="10">Component::Set</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1232">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="1231" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="1230">
+        <label>Material</label>
+        <link refid="structMaterial"/>
+        <childnode refid="1231" relation="usage">
+          <edgelabel>kShininess</edgelabel>
+        </childnode>
+        <childnode refid="1232" relation="usage">
+          <edgelabel>kDiffuse</edgelabel>
+          <edgelabel>kAmbient</edgelabel>
+          <edgelabel>kSpecular</edgelabel>
+        </childnode>
+      </node>
+      <node id="1231">
+        <label>float</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" line="14" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Material.h" bodystart="13" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structMaterial_1ab3819b3151cbf3ac1892195ab091e3b8" prot="public" virt="non-virtual"><scope>Material</scope><name>kAmbient</name></member>
+      <member refid="structMaterial_1aa88dd619cacf46e2f26ddd23fe032898" prot="public" virt="non-virtual"><scope>Material</scope><name>kDiffuse</name></member>
+      <member refid="structMaterial_1a07cec8956c43f81adeb6ba7aea104915" prot="public" virt="non-virtual"><scope>Material</scope><name>kShininess</name></member>
+      <member refid="structMaterial_1a97cc0bf34b02c758b198d12dd24e96e2" prot="public" virt="non-virtual"><scope>Material</scope><name>kSpecular</name></member>
+      <member refid="structMaterial_1a137e987401b63eb7c6c27c3e38bc74b5" prot="public" virt="non-virtual"><scope>Material</scope><name>Material</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

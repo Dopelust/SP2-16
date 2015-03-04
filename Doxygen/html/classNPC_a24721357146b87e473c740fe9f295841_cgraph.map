@@ -1,0 +1,15 @@
+<map id="NPC::Update" name="NPC::Update">
+<area shape="rect" id="node2" href="$classNPC.html#ad8a941b5f0c793cf801a7b0c8caad548" title="NPC::Animate" alt="" coords="202,5,307,32"/>
+<area shape="rect" id="node3" href="$classNPC.html#ac3d14249a747c88c251e0291338bbed4" title="NPC::Control" alt="" coords="205,56,304,83"/>
+<area shape="rect" id="node4" href="$classdynamicObject.html#a6baf2001dbd9c86003c2c1f1ddfe3612" title="dynamicObject::Knockback" alt="" coords="163,107,346,133"/>
+<area shape="rect" id="node6" href="$classApplication.html#a1bfd134bb982a2e1a07d359c46d71483" title="Application::mouseButton" alt="" coords="169,157,340,184"/>
+<area shape="rect" id="node7" href="$classNPC.html#a1dd6753d963d97c35971f223843fa20b" title="NPC::Orientate" alt="" coords="199,208,310,235"/>
+<area shape="rect" id="node10" href="$structVector3.html#ab3b1af4c82ca09bf8ce997c205e3cb10" title="Vector3::SphericalToCartesian" alt="" coords="405,259,604,285"/>
+<area shape="rect" id="node12" href="$classdynamicObject.html#a69090f87d5681cb9c048b3b68ccfe418" title="dynamicObject::RespondTo\lCollision" alt="" coords="163,310,346,351"/>
+<area shape="rect" id="node13" href="$structComponent.html#a85f599b839327709953f0115dc5dfd49" title="Component::Set" alt="" coords="197,376,313,403"/>
+<area shape="rect" id="node14" href="$classdynamicObject.html#aceab704935fe9e62ff9ba4360b2a9a79" title="dynamicObject::UpdateVelocity" alt="" coords="152,427,357,453"/>
+<area shape="rect" id="node5" href="$structVector3.html#a200024a8442329de9a625ed58ffe7075" title="Return length of vector. " alt="" coords="447,107,562,133"/>
+<area shape="rect" id="node8" href="$structVector3.html#aa1cdc5357009b47fe585ddd61e263aad" title="Cross product of 2 vectors. " alt="" coords="450,208,559,235"/>
+<area shape="rect" id="node9" href="$structVector3.html#afa5e0c801fc2c8a820a54ea99302fe08" title="Vector3 default constructor. " alt="" coords="669,208,789,235"/>
+<area shape="rect" id="node11" href="$namespaceMath.html#ac04b987cc6c574a059e68cb58f58c09a" title="Converts from degrees to radians. " alt="" coords="652,259,807,285"/>
+</map>

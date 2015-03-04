@@ -1,0 +1,12 @@
+<map id="NPC::Orientate" name="NPC::Orientate">
+<area shape="rect" id="node2" href="$classHobo.html#afcf4cdc2748d1a3ace0059ac87631509" title="Hobo::Control" alt="" coords="175,5,277,32"/>
+<area shape="rect" id="node3" href="$classCashier.html#a4932c14600f942a852991044f7d99fcb" title="Cashier::Control" alt="" coords="342,56,457,83"/>
+<area shape="rect" id="node4" href="$classCustomer.html#a21ad635f8e45a5a82d28ce59c11b37d0" title="Customer::Control" alt="" coords="336,107,463,133"/>
+<area shape="rect" id="node5" href="$classDetective.html#a6c4bd2e90dc9cd222cab66e86bee7a49" title="Detective::Control" alt="" coords="164,259,288,285"/>
+<area shape="rect" id="node6" href="$classS__Guard.html#a757e5c4e30aeae82816f6f93c20858b2" title="S_Guard::Control" alt="" coords="338,259,461,285"/>
+<area shape="rect" id="node7" href="$classManager.html#aa23a22bfd454e602d39588a6b6b23224" title="Manager::Control" alt="" coords="165,309,287,336"/>
+<area shape="rect" id="node8" href="$classNPC.html#a6f8d69aac667c616c6e42d49358cf968" title="NPC::Goto" alt="" coords="183,157,269,184"/>
+<area shape="rect" id="node11" href="$classNPC.html#a24721357146b87e473c740fe9f295841" title="NPC::Update" alt="" coords="177,360,275,387"/>
+<area shape="rect" id="node9" href="$classThug.html#acb36644581f6c78939ad2711b96fc7ba" title="Thug::Control" alt="" coords="350,208,449,235"/>
+<area shape="rect" id="node10" href="$classBlindman.html#a1075050c7a1ad2ccb92e39f107bdc831" title="Blindman::Control" alt="" coords="337,157,462,184"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="dynamicObject" name="dynamicObject">
+<area shape="rect" id="node2" href="$classObject.html" title="Object" alt="" coords="393,572,453,599"/>
+<area shape="rect" id="node3" href="$structCollision.html" title="Collision" alt="" coords="315,483,385,509"/>
+<area shape="rect" id="node4" href="$structVector3.html" title="Defines a 3D vector and its methods. " alt="" coords="491,377,558,404"/>
+<area shape="rect" id="node7" href="$structMaterial.html" title="Material" alt="" coords="316,243,384,269"/>
+<area shape="rect" id="node8" href="$structComponent.html" title="Component" alt="" coords="202,124,290,151"/>
+<area shape="rect" id="node6" href="$classMesh.html" title="To store VBO (vertex &amp; color buffer) and IBO (index buffer) " alt="" coords="225,377,280,404"/>
+</map>

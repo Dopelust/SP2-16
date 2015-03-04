@@ -1,0 +1,15 @@
+<map id="Manager" name="Manager">
+<area shape="rect" id="node2" href="$classNPC.html" title="NPC" alt="" coords="723,827,773,853"/>
+<area shape="rect" id="node3" href="$classdynamicObject.html" title="dynamicObject" alt="" coords="368,723,477,749"/>
+<area shape="rect" id="node4" href="$classObject.html" title="Object" alt="" coords="289,610,349,637"/>
+<area shape="rect" id="node15" href="$classBodypart.html" title="Bodypart" alt="" coords="768,723,843,749"/>
+<area shape="rect" id="node21" href="$classManagerQuest.html" title="ManagerQuest" alt="" coords="288,775,395,801"/>
+<area shape="rect" id="node5" href="$structCollision.html" title="Collision" alt="" coords="210,497,281,524"/>
+<area shape="rect" id="node6" href="$structVector3.html" title="Defines a 3D vector and its methods. " alt="" coords="484,385,551,411"/>
+<area shape="rect" id="node19" href="$classTextBox.html" title="TextBox" alt="" coords="910,497,981,524"/>
+<area shape="rect" id="node20" href="$classButton2D.html" title="Button2D" alt="" coords="882,610,958,637"/>
+<area shape="rect" id="node9" href="$structMaterial.html" title="Material" alt="" coords="142,243,210,269"/>
+<area shape="rect" id="node10" href="$structComponent.html" title="Component" alt="" coords="136,124,224,151"/>
+<area shape="rect" id="node8" href="$classMesh.html" title="To store VBO (vertex &amp; color buffer) and IBO (index buffer) " alt="" coords="177,385,231,411"/>
+<area shape="rect" id="node18" href="$classQuest.html" title="Quest" alt="" coords="918,723,975,749"/>
+</map>

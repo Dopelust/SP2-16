@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classTextBox" kind="class" prot="public">
+    <compoundname>TextBox</compoundname>
+    <derivedcompoundref refid="classQuest" prot="public" virt="non-virtual">Quest</derivedcompoundref>
+    <includes refid="dialogue_8h" local="no">dialogue.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classTextBox_1a853e607198ed5ff6d0fdcefea6289de4" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string TextBox::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="41" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classCheckout_1ad1d23b153f19be50a9f65e89bc99ad0f" compoundref="dialogue_8h" startline="87" endline="94">Checkout::Checkout</referencedby>
+        <referencedby refid="classDetectiveQuest_1a4511014263506c960a9c8f512a655e63" compoundref="dialogue_8h" startline="171" endline="178">DetectiveQuest::DetectiveQuest</referencedby>
+        <referencedby refid="classDonation_1a2382253244fa72d7dd7b8c0444b7be07" compoundref="dialogue_8h" startline="109" endline="116">Donation::Donation</referencedby>
+        <referencedby refid="classQuest_1a025ccedb4155d589cc10b99bdf42057a" compoundref="dialogue_8h" startline="57" endline="64">Quest::Quest</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classTextBox_1a0ef9abcf8b9fc8ff935b77777df18978" compoundref="dialogue_8h" startline="33" endline="38">TextBox</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classTextBox_1acf27c185eff76543d596e6c9d894dfee" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string TextBox::apparentext</definition>
+        <argsstring></argsstring>
+        <name>apparentext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="43" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classTextBox_1a0ef9abcf8b9fc8ff935b77777df18978" compoundref="dialogue_8h" startline="33" endline="38">TextBox</referencedby>
+        <referencedby refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" compoundref="dialogue_8cpp" startline="11" endline="26">Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string TextBox::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="44" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classCheckout_1ad1d23b153f19be50a9f65e89bc99ad0f" compoundref="dialogue_8h" startline="87" endline="94">Checkout::Checkout</referencedby>
+        <referencedby refid="classDetectiveQuest_1a4511014263506c960a9c8f512a655e63" compoundref="dialogue_8h" startline="171" endline="178">DetectiveQuest::DetectiveQuest</referencedby>
+        <referencedby refid="classDonation_1a2382253244fa72d7dd7b8c0444b7be07" compoundref="dialogue_8h" startline="109" endline="116">Donation::Donation</referencedby>
+        <referencedby refid="classCheckout_1a80a605b2f1447e43401abe9f17ea135e" compoundref="dialogue_8h" startline="97" endline="102">Checkout::GenerateText</referencedby>
+        <referencedby refid="classDonation_1ab53d6d044ee4d37bad08fa7d65ac82c4" compoundref="dialogue_8h" startline="119" endline="133">Donation::GenerateText</referencedby>
+        <referencedby refid="classQuest_1a025ccedb4155d589cc10b99bdf42057a" compoundref="dialogue_8h" startline="57" endline="64">Quest::Quest</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classTextBox_1a0ef9abcf8b9fc8ff935b77777df18978" compoundref="dialogue_8h" startline="33" endline="38">TextBox</referencedby>
+        <referencedby refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" compoundref="dialogue_8cpp" startline="11" endline="26">Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classTextBox_1abfb2baf145b19b1748edbeb9ba7a1266" prot="public" static="yes" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 TextBox::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <initializer>= <ref refid="structVector3" kindref="compound">Vector3</ref>(0,-7.75f,0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="42" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTextBox_1a25b67e5ff6788c60b8aef3f3540879d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TextBox::TextBox</definition>
+        <argsstring>()</argsstring>
+        <name>TextBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="32" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classTextBox_1a0ef9abcf8b9fc8ff935b77777df18978" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TextBox::TextBox</definition>
+        <argsstring>(string t)</argsstring>
+        <name>TextBox</name>
+        <param>
+          <type>string</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="33" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="33" bodyend="38"/>
+        <references refid="classTextBox_1acf27c185eff76543d596e6c9d894dfee" compoundref="dialogue_8h" startline="43">apparentext</references>
+        <references refid="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" compoundref="dialogue_8h" startline="44">text</references>
+        <references refid="classTextBox_1a853e607198ed5ff6d0fdcefea6289de4" compoundref="dialogue_8h" startline="39">type</references>
+      </memberdef>
+      <memberdef kind="function" id="classTextBox_1ac3cc88a3ac171658ebaf44b01f4adf80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TextBox::~TextBox</definition>
+        <argsstring>()</argsstring>
+        <name>~TextBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="39" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TextBox::Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="46" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.cpp" bodystart="11" bodyend="26"/>
+        <references refid="classTextBox_1acf27c185eff76543d596e6c9d894dfee" compoundref="dialogue_8h" startline="43">apparentext</references>
+        <references refid="dialogue_8cpp_1ad30f972f2e6e3e5ecab0dee38ae6cdb8" compoundref="dialogue_8cpp" startline="8">frame</references>
+        <references refid="classTextBox_1a4cd6062d94cf951188f5dc779876b5bd" compoundref="dialogue_8h" startline="47" endline="47">getAccept</references>
+        <references refid="classButton2D_1a6962bb136415617bbde1bf11e77e44f8" compoundref="dialogue_8h" startline="20">Button2D::position</references>
+        <references refid="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" compoundref="dialogue_8h" startline="44">text</references>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTextBox_1a4cd6062d94cf951188f5dc779876b5bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classButton2D" kindref="compound">Button2D</ref></type>
+        <definition>virtual Button2D TextBox::getAccept</definition>
+        <argsstring>()</argsstring>
+        <name>getAccept</name>
+        <reimplementedby refid="classQuest_1a4b06d5f97b5f67c0d10fecb4f16c51b5">getAccept</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="47" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="47" bodyend="47"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" compoundref="dialogue_8cpp" startline="11" endline="26">Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTextBox_1ad77ccb4af9eee9eef691323aeb67ff23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void TextBox::triggerQuest</definition>
+        <argsstring>()</argsstring>
+        <name>triggerQuest</name>
+        <reimplementedby refid="classQuest_1a141a2e06c042823901fa4b157f41354a">triggerQuest</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="48" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="48" bodyend="48"/>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTextBox_1a6d9c15d2facabf388328d6cab33f5bd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classButton2D" kindref="compound">Button2D</ref></type>
+        <definition>virtual Button2D TextBox::getDecline</definition>
+        <argsstring>()</argsstring>
+        <name>getDecline</name>
+        <reimplementedby refid="classQuest_1ac952157b8c3f53c026376a199915a5b7">getDecline</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="49" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="49" bodyend="49"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classTextBox_1ac367f8d55c2f1490bda97190d21676b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>virtual string TextBox::GenerateText</definition>
+        <argsstring>(Inventory inventory)</argsstring>
+        <name>GenerateText</name>
+        <reimplementedby refid="classCheckout_1a80a605b2f1447e43401abe9f17ea135e">GenerateText</reimplementedby>
+        <reimplementedby refid="classDonation_1ab53d6d044ee4d37bad08fa7d65ac82c4">GenerateText</reimplementedby>
+        <param>
+          <type><ref refid="classInventory" kindref="compound">Inventory</ref></type>
+          <declname>inventory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="50" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="50" bodyend="50"/>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1554">
+        <label>TextBox</label>
+        <link refid="classTextBox"/>
+      </node>
+      <node id="1555">
+        <label>Quest</label>
+        <link refid="classQuest"/>
+        <childnode refid="1554" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1556">
+        <label>Checkout</label>
+        <link refid="classCheckout"/>
+        <childnode refid="1555" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1557">
+        <label>DetectiveQuest</label>
+        <link refid="classDetectiveQuest"/>
+        <childnode refid="1555" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1558">
+        <label>Donation</label>
+        <link refid="classDonation"/>
+        <childnode refid="1555" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1562">
+        <label>string</label>
+      </node>
+      <node id="1561">
+        <label>float</label>
+      </node>
+      <node id="1559">
+        <label>TextBox</label>
+        <link refid="classTextBox"/>
+        <childnode refid="1560" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1562" relation="usage">
+          <edgelabel>apparentext</edgelabel>
+          <edgelabel>type</edgelabel>
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="1560">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="1561" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="30" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="29" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classTextBox_1acf27c185eff76543d596e6c9d894dfee" prot="public" virt="non-virtual"><scope>TextBox</scope><name>apparentext</name></member>
+      <member refid="classTextBox_1ac367f8d55c2f1490bda97190d21676b1" prot="public" virt="virtual"><scope>TextBox</scope><name>GenerateText</name></member>
+      <member refid="classTextBox_1a4cd6062d94cf951188f5dc779876b5bd" prot="public" virt="virtual"><scope>TextBox</scope><name>getAccept</name></member>
+      <member refid="classTextBox_1a6d9c15d2facabf388328d6cab33f5bd0" prot="public" virt="virtual"><scope>TextBox</scope><name>getDecline</name></member>
+      <member refid="classTextBox_1abfb2baf145b19b1748edbeb9ba7a1266" prot="public" virt="non-virtual"><scope>TextBox</scope><name>position</name></member>
+      <member refid="classTextBox_1af5d25180ed5dc676d91dc1a3698327e1" prot="public" virt="non-virtual"><scope>TextBox</scope><name>text</name></member>
+      <member refid="classTextBox_1a25b67e5ff6788c60b8aef3f3540879d0" prot="public" virt="non-virtual"><scope>TextBox</scope><name>TextBox</name></member>
+      <member refid="classTextBox_1a0ef9abcf8b9fc8ff935b77777df18978" prot="public" virt="non-virtual"><scope>TextBox</scope><name>TextBox</name></member>
+      <member refid="classTextBox_1ad77ccb4af9eee9eef691323aeb67ff23" prot="public" virt="virtual"><scope>TextBox</scope><name>triggerQuest</name></member>
+      <member refid="classTextBox_1a853e607198ed5ff6d0fdcefea6289de4" prot="public" virt="non-virtual"><scope>TextBox</scope><name>type</name></member>
+      <member refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" prot="public" virt="non-virtual"><scope>TextBox</scope><name>Update</name></member>
+      <member refid="classTextBox_1ac3cc88a3ac171658ebaf44b01f4adf80" prot="public" virt="non-virtual"><scope>TextBox</scope><name>~TextBox</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

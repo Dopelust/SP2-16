@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="MatrixStack_8cpp" kind="file">
+    <compoundname>MatrixStack.cpp</compoundname>
+    <includes refid="MatrixStack_8h" local="yes">MatrixStack.h</includes>
+    <incdepgraph>
+      <node id="1922">
+        <label>cmath</label>
+      </node>
+      <node id="1926">
+        <label>Vector3.h</label>
+        <link refid="Vector3_8h"/>
+        <childnode refid="1921" relation="include">
+        </childnode>
+        <childnode refid="1927" relation="include">
+        </childnode>
+      </node>
+      <node id="1921">
+        <label>MyMath.h</label>
+        <link refid="MyMath_8h"/>
+        <childnode refid="1922" relation="include">
+        </childnode>
+        <childnode refid="1923" relation="include">
+        </childnode>
+        <childnode refid="1924" relation="include">
+        </childnode>
+        <childnode refid="1925" relation="include">
+        </childnode>
+      </node>
+      <node id="1923">
+        <label>exception</label>
+      </node>
+      <node id="1920">
+        <label>Mtx44.h</label>
+        <link refid="Mtx44_8h"/>
+        <childnode refid="1921" relation="include">
+        </childnode>
+        <childnode refid="1926" relation="include">
+        </childnode>
+      </node>
+      <node id="1924">
+        <label>ctime</label>
+      </node>
+      <node id="1917">
+        <label>Common/Source/MatrixStack.cpp</label>
+        <link refid="MatrixStack.cpp"/>
+        <childnode refid="1918" relation="include">
+        </childnode>
+      </node>
+      <node id="1919">
+        <label>stack</label>
+      </node>
+      <node id="1925">
+        <label>cstdlib</label>
+      </node>
+      <node id="1927">
+        <label>iostream</label>
+      </node>
+      <node id="1918">
+        <label>MatrixStack.h</label>
+        <link refid="MatrixStack_8h"/>
+        <childnode refid="1919" relation="include">
+        </childnode>
+        <childnode refid="1920" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>Matrix Stack to replace openGL math function. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Wen Sheng Tang </para></simplesect>
+<simplesect kind="par"><title>email: tang_wen_sheng@nyp.edu.sg</title><para></para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MatrixStack_8h" kindref="compound">MatrixStack.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classMS_1adddd1194f4978eab6618be6a22ed8e48" refkind="member"><highlight class="normal"><ref refid="classMS_1adddd1194f4978eab6618be6a22ed8e48" kindref="member">MS::MS</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1a3ac8a0afd66412e15e4246474b893da2" kindref="member">SetToIdentity</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.push(mat);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classMS_1ac7ec3f1bdabca61e69d3068ee9ba0995" refkind="member"><highlight class="normal"><ref refid="classMS_1ac7ec3f1bdabca61e69d3068ee9ba0995" kindref="member">MS::~MS</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref>&amp;<sp/><ref refid="classMS_1a21291d7fb488f63c589bdc9bd620ba58" kindref="member">MS::Top</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="51"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1aac22e39d0ac437fcb85403a9f0a7a25f" kindref="member">MS::PopMatrix</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.pop();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="61"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a9fb4fff5036f3f197b893f9a579c97b2" kindref="member">MS::PushMatrix</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.push(<ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top());</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classMS_1ab3eb89506a55a00137cba928686b0201" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1ab3eb89506a55a00137cba928686b0201" kindref="member">MS::Clear</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.size()<sp/>&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.pop();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="82"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classMS_1a77c5f7e4a21ea48dcf902a7ff6824a11" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a77c5f7e4a21ea48dcf902a7ff6824a11" kindref="member">MS::LoadIdentity</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1a3ac8a0afd66412e15e4246474b893da2" kindref="member">SetToIdentity</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/>mat;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="97"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a86606fe9f575ccb747d77195c8aefdaf" kindref="member">MS::LoadMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>&amp;matrix)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/>matrix;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="110"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="classMS_1af5a89751ef3b273288bee108113d4899" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1af5a89751ef3b273288bee108113d4899" kindref="member">MS::MultMatrix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>&amp;matrix)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>*<sp/>matrix;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="129"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classMS_1a6ce592114042b920b648bca5519690cd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a6ce592114042b920b648bca5519690cd" kindref="member">MS::Rotate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>degrees,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>axisX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>axisY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>axisZ)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1ac0587ffb5ff9fd58ad5768d28fc06574" kindref="member">SetToRotation</ref>(degrees,<sp/>axisX,<sp/>axisY,<sp/>axisZ);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>*<sp/>mat;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="148"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="classMS_1a52109795de960e24663b315e9128533f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a52109795de960e24663b315e9128533f" kindref="member">MS::Scale</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scaleZ)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1a04c49a922f8e8ffcb57a90c6ce955600" kindref="member">SetToScale</ref>(scaleX,<sp/>scaleY,<sp/>scaleZ);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>*<sp/>mat;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="classMS_1a7b0ae1b56e92cd627707c18a637d68f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a52109795de960e24663b315e9128533f" kindref="member">MS::Scale</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1a04c49a922f8e8ffcb57a90c6ce955600" kindref="member">SetToScale</ref>(scale,<sp/>scale,<sp/>scale);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>*<sp/>mat;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="174"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" kindref="member">MS::Translate</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>translateX,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>translateY,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>translateZ)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1a0cc88cc5c648da14effba480c4d2ac70" kindref="member">SetToTranslation</ref>(translateX,<sp/>translateY,<sp/>translateZ);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>*<sp/>mat;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classMS_1a832bd93b3156899bc1980ae954a79232" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a7e94a35ce566fe3ec49c92b6c4bb663a" kindref="member">MS::Translate</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>translation)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1a0cc88cc5c648da14effba480c4d2ac70" kindref="member">SetToTranslation</ref>(translation.<ref refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref>,<sp/>translation.<ref refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref>,<sp/>translation.<ref refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>*<sp/>mat;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="205"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="classMS_1a155508354e47f5aa755e181e69fc3cd4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a155508354e47f5aa755e181e69fc3cd4" kindref="member">MS::Frustum</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>left,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>right,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bottom,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>top,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>near,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>far)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1a465dcf811eb34049aab4266795d7bd62" kindref="member">SetToFrustum</ref>(left,<sp/>right,<sp/>bottom,<sp/>top,<sp/>near,<sp/>far);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>*<sp/>mat;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="classMS_1a297adfaa8a90e5b1c39e8b4d142d08c4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a297adfaa8a90e5b1c39e8b4d142d08c4" kindref="member">MS::Ortho</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>left,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>right,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bottom,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>top,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>nearVal,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>farVal)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1a0a4c7818be7c1aeb0601ad069c1a591d" kindref="member">SetToOrtho</ref>(left,<sp/>right,<sp/>bottom,<sp/>top,<sp/>nearVal,<sp/>farVal);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>*<sp/><sp/>mat;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="241"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="classMS_1a2638cd3249260877cc31329978fb6b38" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMS_1a2638cd3249260877cc31329978fb6b38" kindref="member">MS::LookAt</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eyeX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eyeY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eyeZ,</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>centerX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>centerY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>centerZ,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upZ)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMtx44" kindref="compound">Mtx44</ref><sp/>mat;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mat.<ref refid="classMtx44_1a7c3d2d30d9ed5bfca2ba97d0e570930f" kindref="member">SetToLookAt</ref>(eyeX,<sp/>eyeY,<sp/>eyeZ,<sp/>centerX,<sp/>centerY,<sp/>centerZ,<sp/>upX,<sp/>upY,<sp/>upZ);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>=<sp/><ref refid="classMS_1a52ff310fee5be24b7777e472ef2acea6" kindref="member">ms</ref>.top()<sp/>*<sp/>mat;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MatrixStack.cpp"/>
+  </compounddef>
+</doxygen>

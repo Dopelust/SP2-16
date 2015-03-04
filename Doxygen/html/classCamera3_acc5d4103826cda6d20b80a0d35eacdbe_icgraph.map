@@ -1,0 +1,5 @@
+<map id="Camera3::Update" name="Camera3::Update">
+<area shape="rect" id="node2" href="$classMENUScene.html#af3d760e446184aaac26ae0af2163ad3a" title="MENUScene::Update" alt="" coords="176,5,323,32"/>
+<area shape="rect" id="node3" href="$classPlayer.html#a522cbf980cc179616292e2b25399c1dc" title="Player::Update" alt="" coords="195,56,303,83"/>
+<area shape="rect" id="node4" href="$classPROJECTScene.html#ab4521f32fd8e1e5901c9896404e09789" title="PROJECTScene::Update" alt="" coords="371,81,537,108"/>
+</map>

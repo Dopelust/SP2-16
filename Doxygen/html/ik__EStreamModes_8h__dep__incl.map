@@ -1,0 +1,18 @@
+<map id="IrrKlang/include/ik_EStreamModes.h" name="IrrKlang/include/ik_EStreamModes.h">
+<area shape="rect" id="node2" href="$ik__ISoundSource_8h.html" title="IrrKlang/include/ik\l_ISoundSource.h" alt="" coords="746,95,871,136"/>
+<area shape="rect" id="node4" href="$irrKlang_8h.html" title="Main header file of the irrKlang sound library, the only file needed to include. " alt="" coords="673,273,843,300"/>
+<area shape="rect" id="node17" href="$ik__ISoundEngine_8h.html" title="IrrKlang/include/ik\l_ISoundEngine.h" alt="" coords="897,184,1022,225"/>
+<area shape="rect" id="node3" href="$ik__IAudioRecorder_8h.html" title="IrrKlang/include/ik\l_IAudioRecorder.h" alt="" coords="745,184,873,225"/>
+<area shape="rect" id="node5" href="$player_8h.html" title="MyGraphics/Source/player.h" alt="" coords="665,348,851,375"/>
+<area shape="rect" id="node6" href="$PROJECTScene_8h.html" title="MyGraphics/Source/PROJECTScene.h" alt="" coords="278,497,526,524"/>
+<area shape="rect" id="node12" href="$MENUScene_8h.html" title="MyGraphics/Source/MENUScene.h" alt="" coords="1007,497,1234,524"/>
+<area shape="rect" id="node11" href="$NPC_8h.html" title="MyGraphics/Source/NPC.h" alt="" coords="777,423,955,449"/>
+<area shape="rect" id="node16" href="$player_8cpp.html" title="MyGraphics/Source/player.cpp" alt="" coords="551,423,752,449"/>
+<area shape="rect" id="node7" href="$Application_8cpp.html" title="MyGraphics/Source/Application.cpp" alt="" coords="757,572,988,599"/>
+<area shape="rect" id="node8" href="$audio_8cpp.html" title="MyGraphics/Source/audio.cpp" alt="" coords="535,572,733,599"/>
+<area shape="rect" id="node9" href="$Camera3_8cpp.html" title="MyGraphics/Source/Camera3.cpp" alt="" coords="293,572,511,599"/>
+<area shape="rect" id="node10" href="$PROJECTScene_8cpp.html" title="MyGraphics/Source/PROJECTScene.cpp" alt="" coords="5,572,268,599"/>
+<area shape="rect" id="node14" href="$dialogue_8cpp.html" title="MyGraphics/Source/dialogue.cpp" alt="" coords="768,497,983,524"/>
+<area shape="rect" id="node15" href="$NPC_8cpp.html" title="MyGraphics/Source/NPC.cpp" alt="" coords="551,497,744,524"/>
+<area shape="rect" id="node13" href="$MENUScene_8cpp.html" title="MyGraphics/Source/MENUScene.cpp" alt="" coords="1012,572,1253,599"/>
+</map>

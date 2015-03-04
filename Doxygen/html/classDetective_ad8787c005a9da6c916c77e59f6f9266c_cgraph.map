@@ -1,0 +1,6 @@
+<map id="Detective::Detective" name="Detective::Detective">
+<area shape="rect" id="node2" href="$classDetective.html#a809658e990799aabf8b50e202b778f64" title="Detective::Init" alt="" coords="189,56,289,83"/>
+<area shape="rect" id="node3" href="$LoadTGA_8cpp.html#a459a80ca6de67a1e3493bfb66ae317e4" title="LoadTGA" alt="" coords="361,5,437,32"/>
+<area shape="rect" id="node4" href="$classNPC.html#a3ea41c7d9745e0be2d2b25187dbaf3f7" title="NPC::InitDialogue" alt="" coords="337,56,461,83"/>
+<area shape="rect" id="node5" href="$classNPC.html#a7c05d38abb761bb503fdac5a36bc62a4" title="NPC::InitQuest" alt="" coords="345,107,454,133"/>
+</map>

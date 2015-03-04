@@ -1,0 +1,54 @@
+<map id="PROJECTScene::Update" name="PROJECTScene::Update">
+<area shape="rect" id="node2" href="$classDoorway.html#a873b042bca7c6df1cc3e73a8ba427c29" title="Doorway::ButtonUpdate" alt="" coords="242,28,401,55"/>
+<area shape="rect" id="node3" href="$classApplication.html#a72cc9bba26506a7c0f54c346dfbd5cfe" title="Application::IsKeyPressed" alt="" coords="736,231,911,257"/>
+<area shape="rect" id="node4" href="$classObject.html#ab0f9523e4bdbfa635a079c1cc01f9b8a" title="Object::checkCollision" alt="" coords="497,1055,649,1081"/>
+<area shape="rect" id="node5" href="$classInventory.html#a0d4eb7cbb90ff12b81025a897ed86816" title="Inventory::Checkout" alt="" coords="253,1207,389,1233"/>
+<area shape="rect" id="node6" href="$classInventory.html#a5a40d6b6bae4cae4fa5d4f78bed5f21c" title="Inventory::checkPrice" alt="" coords="500,1181,647,1208"/>
+<area shape="rect" id="node7" href="$classInventory.html#ac296bf8fce30c3395caab2ee42c304a6" title="Inventory::Delete" alt="" coords="514,129,633,156"/>
+<area shape="rect" id="node8" href="$classATM.html#a092b8157714bbb779562aac06e518287" title="ATM::deposit" alt="" coords="272,1257,371,1284"/>
+<area shape="rect" id="node9" href="$classVending.html#ab21ff490ce398aab1ff1fa0a4b54f5c9" title="Vending::generateDrink" alt="" coords="243,1308,400,1335"/>
+<area shape="rect" id="node17" href="$classTextBox.html#ac367f8d55c2f1490bda97190d21676b1" title="TextBox::GenerateText" alt="" coords="243,1359,399,1385"/>
+<area shape="rect" id="node18" href="$classTextBox.html#a4cd6062d94cf951188f5dc779876b5bd" title="TextBox::getAccept" alt="" coords="505,1435,642,1461"/>
+<area shape="rect" id="node19" href="$classTextBox.html#a6d9c15d2facabf388328d6cab33f5bd0" title="TextBox::getDecline" alt="" coords="252,1511,391,1537"/>
+<area shape="rect" id="node20" href="$classPlayer.html#a2d1542816021d46bf0d007d57a2c7291" title="Player::getHealth" alt="" coords="260,1561,383,1588"/>
+<area shape="rect" id="node21" href="$classInventory.html#a6d42b8c7ca3a2b67c3682ecd1903a10a" title="Inventory::getHolding" alt="" coords="502,180,645,207"/>
+<area shape="rect" id="node22" href="$classInventory.html#a8d6d927ace25d6913479748b89bf96a0" title="Inventory::Insert" alt="" coords="265,1612,378,1639"/>
+<area shape="rect" id="node25" href="$classCamera3.html#a44474d04a473a6d07d39b8b2dfba671e" title="Camera3::lookingAt" alt="" coords="253,1004,389,1031"/>
+<area shape="rect" id="node26" href="$classApplication.html#a1bfd134bb982a2e1a07d359c46d71483" title="Application::mouseButton" alt="" coords="738,449,909,476"/>
+<area shape="rect" id="node27" href="$classCamera3.html#a4cead3bb5a13f53d2f4043435937553d" title="Camera3::Move" alt="" coords="517,887,629,913"/>
+<area shape="rect" id="node29" href="$classirrklang_1_1ISoundEngine.html#a25f612fe6479d3b22dc5bab2a2eaa927" title="loads a sound source (if not loaded already) from a file and plays it. " alt="" coords="497,770,649,811"/>
+<area shape="rect" id="node30" href="$classDoorway.html#ac0e9cf66af2147991062d5f26a887c3b" title="Doorway::RangeUpdate" alt="" coords="242,1055,401,1081"/>
+<area shape="rect" id="node31" href="$classInventory.html#ad55678fdf4c3f5a1038ce7e7eaa243f4" title="Inventory::Remove" alt="" coords="258,1663,385,1689"/>
+<area shape="rect" id="node32" href="$classPROJECTScene.html#a9a58de28e3dbff47b5ff73f51168b31c" title="PROJECTScene::soundUpdate" alt="" coords="220,903,423,929"/>
+<area shape="rect" id="node36" href="$classTextBox.html#ad77ccb4af9eee9eef691323aeb67ff23" title="TextBox::triggerQuest" alt="" coords="247,1713,396,1740"/>
+<area shape="rect" id="node37" href="$classCamera3.html#acc5d4103826cda6d20b80a0d35eacdbe" title="Camera3::Update" alt="" coords="512,836,635,863"/>
+<area shape="rect" id="node40" href="$classTextBox.html#a4967d66f86a624d465fde2fb20a37e9d" title="TextBox::Update" alt="" coords="262,1460,381,1487"/>
+<area shape="rect" id="node41" href="$classPlayer.html#a522cbf980cc179616292e2b25399c1dc" title="Player::Update" alt="" coords="267,525,375,552"/>
+<area shape="rect" id="node51" href="$classDoorway.html#acba33af0e95e63acd73d3aa56c516104" title="Doorway::Update" alt="" coords="261,1105,382,1132"/>
+<area shape="rect" id="node52" href="$classATM.html#a115c0205f98d83bfb8b40c39d1bbf64f" title="ATM::withdraw" alt="" coords="268,1764,375,1791"/>
+<area shape="rect" id="node53" href="$classCamera3.html#a1671d2532fbe0a7a0ed037f549e6d8d2" title="Camera3::Zoom" alt="" coords="264,1815,379,1841"/>
+<area shape="rect" id="node10" href="$classMeshBuilder.html#aba87550d7726a610c911fbb977fd3575" title="MeshBuilder::GenerateOBJ" alt="" coords="483,1333,663,1360"/>
+<area shape="rect" id="node16" href="$LoadTGA_8cpp.html#a459a80ca6de67a1e3493bfb66ae317e4" title="LoadTGA" alt="" coords="535,1283,611,1309"/>
+<area shape="rect" id="node11" href="$LoadOBJ_8cpp.html#aa99ef9426a57205ed8acb8f7d41f3bae" title="IndexVBO" alt="" coords="783,1359,864,1385"/>
+<area shape="rect" id="node15" href="$LoadOBJ_8cpp.html#aa634e9cac0a72d751731db6b4479cbda" title="LoadOBJ" alt="" coords="786,1308,861,1335"/>
+<area shape="rect" id="node12" href="$LoadOBJ_8cpp.html#af43afccb67fd9c80513489b75fddb347" title="getSimilarVertexIndex_fast" alt="" coords="971,1308,1148,1335"/>
+<area shape="rect" id="node13" href="$structPosition.html#a2919b2441baf7a2f799791d65a1cfc15" title="Position::Set" alt="" coords="1011,1359,1108,1385"/>
+<area shape="rect" id="node14" href="$structTexCoord.html#a64b4ceeb1733c478cb4b5b1216146c32" title="TexCoord::Set" alt="" coords="1007,1409,1112,1436"/>
+<area shape="rect" id="node23" href="$classInventory.html#ab906623075379c75c63b267d2cccbcae" title="Inventory::emptySlot" alt="" coords="503,1637,643,1664"/>
+<area shape="rect" id="node24" href="$classObject.html#abd775688f7362fe926da1aea7f88e27c" title="Object::getPaid" alt="" coords="517,1587,629,1613"/>
+<area shape="rect" id="node28" href="$classApplication.html#a8e0c92cc01f4cf7ab20ce21188f033f0" title="Application::getMousePos" alt="" coords="736,887,911,913"/>
+<area shape="rect" id="node33" href="$classirrklang_1_1ISoundEngine.html#af3e6223435969159ef3b22d0c83d2b84" title="Sets the current listener 3d position. " alt="" coords="497,989,649,1030"/>
+<area shape="rect" id="node34" href="$structVector3.html#ab3b1af4c82ca09bf8ce997c205e3cb10" title="Vector3::SphericalToCartesian" alt="" coords="724,785,923,812"/>
+<area shape="rect" id="node35" href="$namespaceMath.html#ac04b987cc6c574a059e68cb58f58c09a" title="Converts from degrees to radians. " alt="" coords="982,785,1137,812"/>
+<area shape="rect" id="node38" href="$structVector3.html#aa1cdc5357009b47fe585ddd61e263aad" title="Cross product of 2 vectors. " alt="" coords="769,836,878,863"/>
+<area shape="rect" id="node39" href="$structVector3.html#afa5e0c801fc2c8a820a54ea99302fe08" title="Vector3 default constructor. " alt="" coords="999,836,1119,863"/>
+<area shape="rect" id="node42" href="$classInventory.html#a6eef2cbeaeb10c437e2ead8e2b7bb4de" title="Inventory::canUse" alt="" coords="761,660,886,687"/>
+<area shape="rect" id="node43" href="$classPlayer.html#ab5814b0518cf6aa4ee4955630840b481" title="Player::Control" alt="" coords="519,601,627,628"/>
+<area shape="rect" id="node44" href="$classObject.html#a651e2aff564de5a4766863b332f14d33" title="Object::getHealth" alt="" coords="512,500,635,527"/>
+<area shape="rect" id="node45" href="$classirrklang_1_1ISoundEngine.html#a1084577f9f43cb12e86cea43c323b12c" title="Returns if a sound with the specified name is currently playing. " alt="" coords="497,653,649,694"/>
+<area shape="rect" id="node46" href="$structVector3.html#a200024a8442329de9a625ed58ffe7075" title="Return length of vector. " alt="" coords="516,281,631,308"/>
+<area shape="rect" id="node47" href="$classdynamicObject.html#a69090f87d5681cb9c048b3b68ccfe418" title="dynamicObject::RespondTo\lCollision" alt="" coords="482,333,665,374"/>
+<area shape="rect" id="node48" href="$classInventory.html#ad1e0335759db12e806b0cd4b16ce0643" title="Inventory::Update" alt="" coords="512,551,635,577"/>
+<area shape="rect" id="node50" href="$classdynamicObject.html#aceab704935fe9e62ff9ba4360b2a9a79" title="dynamicObject::UpdateVelocity" alt="" coords="471,399,676,425"/>
+<area shape="rect" id="node49" href="$classWallet.html#ac6da526b7aad36671591fe245777a234" title="Wallet::Update" alt="" coords="769,551,877,577"/>
+</map>

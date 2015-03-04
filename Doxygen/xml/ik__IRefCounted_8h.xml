@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="ik__IRefCounted_8h" kind="file">
+    <compoundname>ik_IRefCounted.h</compoundname>
+    <includes refid="ik__irrKlangTypes_8h" local="yes">ik_irrKlangTypes.h</includes>
+    <includedby refid="ik__IAudioRecorder_8h" local="yes">IrrKlang/include/ik_IAudioRecorder.h</includedby>
+    <includedby refid="ik__SAudioStreamFormat_8h" local="yes">IrrKlang/include/ik_SAudioStreamFormat.h</includedby>
+    <includedby refid="ik__IAudioStream_8h" local="yes">IrrKlang/include/ik_IAudioStream.h</includedby>
+    <includedby refid="ik__IAudioStreamLoader_8h" local="yes">IrrKlang/include/ik_IAudioStreamLoader.h</includedby>
+    <includedby refid="ik__IFileReader_8h" local="yes">IrrKlang/include/ik_IFileReader.h</includedby>
+    <includedby refid="ik__IFileFactory_8h" local="yes">IrrKlang/include/ik_IFileFactory.h</includedby>
+    <includedby refid="ik__ISoundDeviceList_8h" local="yes">IrrKlang/include/ik_ISoundDeviceList.h</includedby>
+    <includedby refid="ik__ISoundEngine_8h" local="yes">IrrKlang/include/ik_ISoundEngine.h</includedby>
+    <includedby refid="ik__ISoundMixedOutputReceiver_8h" local="yes">IrrKlang/include/ik_ISoundMixedOutputReceiver.h</includedby>
+    <includedby refid="ik__ISoundStopEventReceiver_8h" local="yes">IrrKlang/include/ik_ISoundStopEventReceiver.h</includedby>
+    <includedby refid="irrKlang_8h" local="yes">IrrKlang/include/irrKlang.h</includedby>
+    <incdepgraph>
+      <node id="2251">
+        <label>ik_irrKlangTypes.h</label>
+        <link refid="ik__irrKlangTypes_8h"/>
+        <childnode refid="2252" relation="include">
+        </childnode>
+      </node>
+      <node id="2250">
+        <label>IrrKlang/include/ik_IRefCounted.h</label>
+        <link refid="ik_IRefCounted.h"/>
+        <childnode refid="2251" relation="include">
+        </childnode>
+      </node>
+      <node id="2252">
+        <label>wchar.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2258">
+        <label>MyGraphics/Source/Application.cpp</label>
+        <link refid="Application_8cpp"/>
+      </node>
+      <node id="2257">
+        <label>MyGraphics/Source/PROJECTScene.h</label>
+        <link refid="PROJECTScene_8h"/>
+        <childnode refid="2258" relation="include">
+        </childnode>
+        <childnode refid="2259" relation="include">
+        </childnode>
+        <childnode refid="2260" relation="include">
+        </childnode>
+        <childnode refid="2261" relation="include">
+        </childnode>
+      </node>
+      <node id="2273">
+        <label>IrrKlang/include/ik_ISoundStopEventReceiver.h</label>
+        <link refid="ik__ISoundStopEventReceiver_8h"/>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2266">
+        <label>MyGraphics/Source/NPC.cpp</label>
+        <link refid="NPC_8cpp"/>
+      </node>
+      <node id="2263">
+        <label>MyGraphics/Source/MENUScene.h</label>
+        <link refid="MENUScene_8h"/>
+        <childnode refid="2258" relation="include">
+        </childnode>
+        <childnode refid="2259" relation="include">
+        </childnode>
+        <childnode refid="2264" relation="include">
+        </childnode>
+      </node>
+      <node id="2253">
+        <label>IrrKlang/include/ik_IRefCounted.h</label>
+        <link refid="ik_IRefCounted.h"/>
+        <childnode refid="2254" relation="include">
+        </childnode>
+        <childnode refid="2268" relation="include">
+        </childnode>
+        <childnode refid="2271" relation="include">
+        </childnode>
+        <childnode refid="2274" relation="include">
+        </childnode>
+        <childnode refid="2275" relation="include">
+        </childnode>
+        <childnode refid="2276" relation="include">
+        </childnode>
+        <childnode refid="2277" relation="include">
+        </childnode>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2272" relation="include">
+        </childnode>
+        <childnode refid="2273" relation="include">
+        </childnode>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2261">
+        <label>MyGraphics/Source/PROJECTScene.cpp</label>
+        <link refid="PROJECTScene_8cpp"/>
+      </node>
+      <node id="2254">
+        <label>IrrKlang/include/ik_IAudioRecorder.h</label>
+        <link refid="ik__IAudioRecorder_8h"/>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2264">
+        <label>MyGraphics/Source/MENUScene.cpp</label>
+        <link refid="MENUScene_8cpp"/>
+      </node>
+      <node id="2271">
+        <label>IrrKlang/include/ik_IAudioStream.h</label>
+        <link refid="ik__IAudioStream_8h"/>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2260">
+        <label>MyGraphics/Source/Camera3.cpp</label>
+        <link refid="Camera3_8cpp"/>
+      </node>
+      <node id="2256">
+        <label>MyGraphics/Source/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="2257" relation="include">
+        </childnode>
+        <childnode refid="2262" relation="include">
+        </childnode>
+        <childnode refid="2263" relation="include">
+        </childnode>
+        <childnode refid="2267" relation="include">
+        </childnode>
+      </node>
+      <node id="2255">
+        <label>IrrKlang/include/irrKlang.h</label>
+        <link refid="irrKlang_8h"/>
+        <childnode refid="2256" relation="include">
+        </childnode>
+        <childnode refid="2257" relation="include">
+        </childnode>
+        <childnode refid="2263" relation="include">
+        </childnode>
+      </node>
+      <node id="2276">
+        <label>IrrKlang/include/ik_IFileFactory.h</label>
+        <link refid="ik__IFileFactory_8h"/>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2259">
+        <label>MyGraphics/Source/audio.cpp</label>
+        <link refid="audio_8cpp"/>
+      </node>
+      <node id="2277">
+        <label>IrrKlang/include/ik_ISoundDeviceList.h</label>
+        <link refid="ik__ISoundDeviceList_8h"/>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2265">
+        <label>MyGraphics/Source/dialogue.cpp</label>
+        <link refid="dialogue_8cpp"/>
+      </node>
+      <node id="2262">
+        <label>MyGraphics/Source/NPC.h</label>
+        <link refid="NPC_8h"/>
+        <childnode refid="2257" relation="include">
+        </childnode>
+        <childnode refid="2263" relation="include">
+        </childnode>
+        <childnode refid="2265" relation="include">
+        </childnode>
+        <childnode refid="2266" relation="include">
+        </childnode>
+      </node>
+      <node id="2269">
+        <label>IrrKlang/include/ik_ISoundSource.h</label>
+        <link refid="ik__ISoundSource_8h"/>
+        <childnode refid="2254" relation="include">
+        </childnode>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2275">
+        <label>IrrKlang/include/ik_IFileReader.h</label>
+        <link refid="ik__IFileReader_8h"/>
+        <childnode refid="2274" relation="include">
+        </childnode>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2274">
+        <label>IrrKlang/include/ik_IAudioStreamLoader.h</label>
+        <link refid="ik__IAudioStreamLoader_8h"/>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2267">
+        <label>MyGraphics/Source/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="2268">
+        <label>IrrKlang/include/ik_SAudioStreamFormat.h</label>
+        <link refid="ik__SAudioStreamFormat_8h"/>
+        <childnode refid="2269" relation="include">
+        </childnode>
+        <childnode refid="2271" relation="include">
+        </childnode>
+        <childnode refid="2272" relation="include">
+        </childnode>
+        <childnode refid="2273" relation="include">
+        </childnode>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2270">
+        <label>IrrKlang/include/ik_ISoundEngine.h</label>
+        <link refid="ik__ISoundEngine_8h"/>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+      <node id="2272">
+        <label>IrrKlang/include/ik_ISoundMixedOutputReceiver.h</label>
+        <link refid="ik__ISoundMixedOutputReceiver_8h"/>
+        <childnode refid="2270" relation="include">
+        </childnode>
+        <childnode refid="2255" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classirrklang_1_1IRefCounted" prot="public">irrklang::IRefCounted</innerclass>
+    <innernamespace refid="namespaceirrklang">irrklang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2002-2014<sp/>Nikolaus<sp/>Gebhardt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>&quot;irrKlang&quot;<sp/>library.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>conditions<sp/>of<sp/>distribution<sp/>and<sp/>use,<sp/>see<sp/>copyright<sp/>notice<sp/>in<sp/>irrKlang.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__I_IRRKLANG_IREFERENCE_COUNTED_H_INCLUDED__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__I_IRRKLANG_IREFERENCE_COUNTED_H_INCLUDED__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ik__irrKlangTypes_8h" kindref="compound">ik_irrKlangTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceirrklang" kindref="compound">irrklang</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"></codeline>
+<codeline lineno="41" refid="classirrklang_1_1IRefCounted" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classirrklang_1_1IRefCounted" kindref="compound">IRefCounted</ref></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classirrklang_1_1IRefCounted_1ad9d20b84a525d7bc07e44b556fbf7da6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classirrklang_1_1IRefCounted_1ad9d20b84a525d7bc07e44b556fbf7da6" kindref="member">IRefCounted</ref>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classirrklang_1_1IRefCounted_1ae372c01b8a01de0d21d23b6d05c27a03" kindref="member">ReferenceCounter</ref>(1)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classirrklang_1_1IRefCounted_1a7fe8953e57adac9bcd28a94d3b251886" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classirrklang_1_1IRefCounted_1a7fe8953e57adac9bcd28a94d3b251886" kindref="member">~IRefCounted</ref>()</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" kindref="member">grab</ref>()<sp/>{<sp/>++<ref refid="classirrklang_1_1IRefCounted_1ae372c01b8a01de0d21d23b6d05c27a03" kindref="member">ReferenceCounter</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop</ref>()</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--<ref refid="classirrklang_1_1IRefCounted_1ae372c01b8a01de0d21d23b6d05c27a03" kindref="member">ReferenceCounter</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="classirrklang_1_1IRefCounted_1ae372c01b8a01de0d21d23b6d05c27a03" kindref="member">ReferenceCounter</ref>)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classirrklang_1_1IRefCounted_1ae372c01b8a01de0d21d23b6d05c27a03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceirrklang_1af8028b1c477e50d479270611ecb76e92" kindref="member">ik_s32</ref><sp/><sp/><ref refid="classirrklang_1_1IRefCounted_1ae372c01b8a01de0d21d23b6d05c27a03" kindref="member">ReferenceCounter</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>irr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h"/>
+  </compounddef>
+</doxygen>

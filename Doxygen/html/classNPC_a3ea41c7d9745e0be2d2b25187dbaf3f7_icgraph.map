@@ -1,0 +1,17 @@
+<map id="NPC::InitDialogue" name="NPC::InitDialogue">
+<area shape="rect" id="node2" href="$classCustomer.html#abcc8fae9701e5ba9d7d6fe44498b34e3" title="Customer::Customer" alt="" coords="177,5,320,32"/>
+<area shape="rect" id="node3" href="$classHobo.html#a1081ed24676f684229be89ec03c2179e" title="Hobo::Init" alt="" coords="210,56,287,83"/>
+<area shape="rect" id="node5" href="$classThug.html#af2a1de6b86c5760ca4aada0be45e941e" title="Thug::Init" alt="" coords="211,107,286,133"/>
+<area shape="rect" id="node7" href="$classCashier.html#a378b4d5a8fc2364208422989deb97150" title="Cashier::Init" alt="" coords="203,157,294,184"/>
+<area shape="rect" id="node9" href="$classBlindman.html#a8ca8c8b76aae45b2b7a2fdc59c8e5a89" title="Blindman::Init" alt="" coords="198,208,299,235"/>
+<area shape="rect" id="node11" href="$classDetective.html#a809658e990799aabf8b50e202b778f64" title="Detective::Init" alt="" coords="199,259,299,285"/>
+<area shape="rect" id="node13" href="$classS__Guard.html#aa9a7504d085783dba34dd2ce54b125ea" title="S_Guard::Init" alt="" coords="199,309,298,336"/>
+<area shape="rect" id="node15" href="$classManager.html#a200a7092507e1769240452e88996127b" title="Manager::Init" alt="" coords="200,360,297,387"/>
+<area shape="rect" id="node4" href="$classHobo.html#aab2baf5238210a47f68e9e7972c4be71" title="Hobo::Hobo" alt="" coords="392,56,483,83"/>
+<area shape="rect" id="node6" href="$classThug.html#a7347e5d5b6ccf56d1b7705a220b21d59" title="Thug::Thug" alt="" coords="394,107,481,133"/>
+<area shape="rect" id="node8" href="$classCashier.html#a9dd99a4a5f4c5295aaa4584b21e30aec" title="Cashier::Cashier" alt="" coords="378,157,497,184"/>
+<area shape="rect" id="node10" href="$classBlindman.html#a95e87f7791f5838fe069515f5734f89d" title="Blindman::Blindman" alt="" coords="368,208,507,235"/>
+<area shape="rect" id="node12" href="$classDetective.html#ad8787c005a9da6c916c77e59f6f9266c" title="Detective::Detective" alt="" coords="369,259,505,285"/>
+<area shape="rect" id="node14" href="$classS__Guard.html#abd085439dbecd0fdedae78b5a61f5a08" title="S_Guard::S_Guard" alt="" coords="371,309,503,336"/>
+<area shape="rect" id="node16" href="$classManager.html#a1658ff9f18e38ccd9cb8b0b371b9c20b" title="Manager::Manager" alt="" coords="372,360,503,387"/>
+</map>

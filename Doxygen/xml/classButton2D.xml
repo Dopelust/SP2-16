@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classButton2D" kind="class" prot="public">
+    <compoundname>Button2D</compoundname>
+    <includes refid="dialogue_8h" local="no">dialogue.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classButton2D_1a6962bb136415617bbde1bf11e77e44f8" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Button2D::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="22" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" compoundref="dialogue_8h" startline="19" endline="19">Button2D</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" compoundref="dialogue_8cpp" startline="11" endline="26">TextBox::Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classButton2D_1a3792c91961ccd92faecc73e246ba82b6" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Button2D::text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="23" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" compoundref="dialogue_8h" startline="19" endline="19">Button2D</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classButton2D_1aaddd13eb1c619ee976e3ab94b6c2dc85" prot="public" static="no" mutable="no">
+        <type><ref refid="classTextBox" kindref="compound">TextBox</ref> *</type>
+        <definition>TextBox* Button2D::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="24" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" compoundref="NPC_8h" startline="61" endline="79">NPC::getConversation</referencedby>
+        <referencedby refid="classNPC_1a7c05d38abb761bb503fdac5a36bc62a4" compoundref="dialogue_8cpp" startline="69" endline="96">NPC::InitQuest</referencedby>
+        <referencedby refid="classHobo_1a8954f38328192e36d833e5ee6860f2b5" compoundref="dialogue_8cpp" startline="98" endline="126">Hobo::InitQuest</referencedby>
+        <referencedby refid="classCashier_1a2d84684071ff70d834a144b40b3dbb09" compoundref="dialogue_8cpp" startline="128" endline="156">Cashier::InitQuest</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classButton2D_1a509777ecad03fd8760b010c53540bd82" prot="public" static="no" mutable="no">
+        <type><ref refid="classTextBox" kindref="compound">TextBox</ref> *</type>
+        <definition>TextBox* Button2D::altNext</definition>
+        <argsstring></argsstring>
+        <name>altNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="25" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classHobo_1a8954f38328192e36d833e5ee6860f2b5" compoundref="dialogue_8cpp" startline="98" endline="126">Hobo::InitQuest</referencedby>
+        <referencedby refid="classCashier_1a2d84684071ff70d834a144b40b3dbb09" compoundref="dialogue_8cpp" startline="128" endline="156">Cashier::InitQuest</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classButton2D_1a0d42bddf0d8835aaa07384880fc5dc66" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Button2D::trigger</definition>
+        <argsstring></argsstring>
+        <name>trigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="26" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" compoundref="dialogue_8h" startline="19" endline="19">Button2D</referencedby>
+        <referencedby refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" compoundref="NPC_8h" startline="61" endline="79">NPC::getConversation</referencedby>
+        <referencedby refid="classManager_1af1cb5c5c1590f4229a3cb40e63ee01b9" compoundref="NPC_8h" startline="339" endline="344">Manager::getCriteria</referencedby>
+        <referencedby refid="classQuest_1a141a2e06c042823901fa4b157f41354a" compoundref="dialogue_8h" startline="80" endline="80">Quest::triggerQuest</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classButton2D_1a7c49631ac31b8191e36a43cee7ee9633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Button2D::Button2D</definition>
+        <argsstring>()</argsstring>
+        <name>Button2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="18" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Button2D::Button2D</definition>
+        <argsstring>(string t, Vector3 pos)</argsstring>
+        <name>Button2D</name>
+        <param>
+          <type>string</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="19" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="19" bodyend="19"/>
+        <references refid="classButton2D_1a6962bb136415617bbde1bf11e77e44f8" compoundref="dialogue_8h" startline="20">position</references>
+        <references refid="classButton2D_1a3792c91961ccd92faecc73e246ba82b6" compoundref="dialogue_8h" startline="23">text</references>
+        <references refid="classButton2D_1a0d42bddf0d8835aaa07384880fc5dc66" compoundref="dialogue_8h" startline="26">trigger</references>
+      </memberdef>
+      <memberdef kind="function" id="classButton2D_1acee9600f6d3f25c8e5d643502b08a06d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Button2D::~Button2D</definition>
+        <argsstring>()</argsstring>
+        <name>~Button2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="20" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="885">
+        <label>string</label>
+      </node>
+      <node id="884">
+        <label>float</label>
+      </node>
+      <node id="882">
+        <label>TextBox</label>
+        <link refid="classTextBox"/>
+        <childnode refid="883" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="885" relation="usage">
+          <edgelabel>apparentext</edgelabel>
+          <edgelabel>type</edgelabel>
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="881">
+        <label>Button2D</label>
+        <link refid="classButton2D"/>
+        <childnode refid="882" relation="usage">
+          <edgelabel>altNext</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="883" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="886" relation="usage">
+          <edgelabel>trigger</edgelabel>
+        </childnode>
+        <childnode refid="885" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="886">
+        <label>bool</label>
+      </node>
+      <node id="883">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="884" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="16" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="15" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classButton2D_1a509777ecad03fd8760b010c53540bd82" prot="public" virt="non-virtual"><scope>Button2D</scope><name>altNext</name></member>
+      <member refid="classButton2D_1a7c49631ac31b8191e36a43cee7ee9633" prot="public" virt="non-virtual"><scope>Button2D</scope><name>Button2D</name></member>
+      <member refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" prot="public" virt="non-virtual"><scope>Button2D</scope><name>Button2D</name></member>
+      <member refid="classButton2D_1aaddd13eb1c619ee976e3ab94b6c2dc85" prot="public" virt="non-virtual"><scope>Button2D</scope><name>next</name></member>
+      <member refid="classButton2D_1a6962bb136415617bbde1bf11e77e44f8" prot="public" virt="non-virtual"><scope>Button2D</scope><name>position</name></member>
+      <member refid="classButton2D_1a3792c91961ccd92faecc73e246ba82b6" prot="public" virt="non-virtual"><scope>Button2D</scope><name>text</name></member>
+      <member refid="classButton2D_1a0d42bddf0d8835aaa07384880fc5dc66" prot="public" virt="non-virtual"><scope>Button2D</scope><name>trigger</name></member>
+      <member refid="classButton2D_1acee9600f6d3f25c8e5d643502b08a06d" prot="public" virt="non-virtual"><scope>Button2D</scope><name>~Button2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

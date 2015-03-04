@@ -1,0 +1,21 @@
+<map id="MyGraphics/Source/LoadTGA.h" name="MyGraphics/Source/LoadTGA.h">
+<area shape="rect" id="node2" href="$collision_8h.html" title="MyGraphics/Source/collision.h" alt="" coords="587,80,785,107"/>
+<area shape="rect" id="node4" href="$PROJECTScene_8h.html" title="MyGraphics/Source/PROJECTScene.h" alt="" coords="807,379,1055,405"/>
+<area shape="rect" id="node11" href="$MENUScene_8h.html" title="MyGraphics/Source/MENUScene.h" alt="" coords="99,379,326,405"/>
+<area shape="rect" id="node17" href="$dialogue_8h.html" title="MyGraphics/Source/dialogue.h" alt="" coords="717,229,917,256"/>
+<area shape="rect" id="node20" href="$LoadTGA_8cpp.html" title="MyGraphics/Source/LoadTGA.cpp" alt="" coords="1163,80,1383,107"/>
+<area shape="rect" id="node3" href="$Camera3_8h.html" title="MyGraphics/Source/Camera3.h" alt="" coords="724,155,928,181"/>
+<area shape="rect" id="node9" href="$player_8h.html" title="MyGraphics/Source/player.h" alt="" coords="454,229,641,256"/>
+<area shape="rect" id="node16" href="$inventory_8h.html" title="MyGraphics/Source/inventory.h" alt="" coords="446,155,649,181"/>
+<area shape="rect" id="node19" href="$collision_8cpp.html" title="MyGraphics/Source/collision.cpp" alt="" coords="209,155,422,181"/>
+<area shape="rect" id="node7" href="$Camera3_8cpp.html" title="MyGraphics/Source/Camera3.cpp" alt="" coords="1035,453,1254,480"/>
+<area shape="rect" id="node5" href="$Application_8cpp.html" title="MyGraphics/Source/Application.cpp" alt="" coords="493,453,724,480"/>
+<area shape="rect" id="node6" href="$audio_8cpp.html" title="MyGraphics/Source/audio.cpp" alt="" coords="271,453,469,480"/>
+<area shape="rect" id="node8" href="$PROJECTScene_8cpp.html" title="MyGraphics/Source/PROJECTScene.cpp" alt="" coords="748,453,1011,480"/>
+<area shape="rect" id="node10" href="$NPC_8h.html" title="MyGraphics/Source/NPC.h" alt="" coords="586,304,765,331"/>
+<area shape="rect" id="node15" href="$player_8cpp.html" title="MyGraphics/Source/player.cpp" alt="" coords="208,304,409,331"/>
+<area shape="rect" id="node13" href="$dialogue_8cpp.html" title="MyGraphics/Source/dialogue.cpp" alt="" coords="568,379,783,405"/>
+<area shape="rect" id="node14" href="$NPC_8cpp.html" title="MyGraphics/Source/NPC.cpp" alt="" coords="351,379,544,405"/>
+<area shape="rect" id="node12" href="$MENUScene_8cpp.html" title="MyGraphics/Source/MENUScene.cpp" alt="" coords="5,453,247,480"/>
+<area shape="rect" id="node18" href="$inventory_8cpp.html" title="MyGraphics/Source/inventory.cpp" alt="" coords="212,229,429,256"/>
+</map>

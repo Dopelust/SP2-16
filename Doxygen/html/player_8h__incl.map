@@ -1,0 +1,37 @@
+<map id="MyGraphics/Source/player.h" name="MyGraphics/Source/player.h">
+<area shape="rect" id="node2" href="$Application_8h.html" title="Application.h" alt="" coords="297,155,395,181"/>
+<area shape="rect" id="node13" href="$collision_8h.html" title="collision.h" alt="" coords="586,155,666,181"/>
+<area shape="rect" id="node22" href="$inventory_8h.html" title="inventory.h" alt="" coords="704,80,788,107"/>
+<area shape="rect" id="node23" href="$Camera3_8h.html" title="Camera3.h" alt="" coords="543,80,629,107"/>
+<area shape="rect" id="node25" href="$irrKlang_8h.html" title="Main header file of the irrKlang sound library, the only file needed to include. " alt="" coords="2026,80,2103,107"/>
+<area shape="rect" id="node3" href="$timer_8h.html" title="timer.h" alt="" coords="175,229,237,256"/>
+<area shape="rect" id="node5" href="$vertex_8h.html" title="vertex.h" alt="" coords="595,379,662,405"/>
+<area shape="rect" id="node6" href="$Vector3_8h.html" title="Struct to define a 3D vector. " alt="" coords="628,453,707,480"/>
+<area shape="rect" id="node7" href="$MyMath_8h.html" title="Header file for math helper functions. " alt="" coords="678,528,758,555"/>
+<area shape="rect" id="node14" href="$Mesh_8h.html" title="Mesh.h" alt="" coords="421,304,487,331"/>
+<area shape="rect" id="node17" href="$MeshBuilder_8h.html" title="Class to generate meshes. " alt="" coords="573,229,679,256"/>
+<area shape="rect" id="node20" href="$LoadTGA_8h.html" title="LoadTGA.h" alt="" coords="325,229,412,256"/>
+<area shape="rect" id="node16" href="$Material_8h.html" title="Material.h" alt="" coords="395,379,473,405"/>
+<area shape="rect" id="node18" href="$LoadOBJ_8h.html" title="LoadOBJ.h" alt="" coords="664,304,751,331"/>
+<area shape="rect" id="node24" href="$Camera_8h.html" title="Camera.h" alt="" coords="5,304,84,331"/>
+<area shape="rect" id="node26" href="$ik__irrKlangTypes_8h.html" title="ik_irrKlangTypes.h" alt="" coords="2819,453,2948,480"/>
+<area shape="rect" id="node28" href="$ik__vec3d_8h.html" title="ik_vec3d.h" alt="" coords="2710,379,2793,405"/>
+<area shape="rect" id="node30" href="$ik__IRefCounted_8h.html" title="ik_IRefCounted.h" alt="" coords="1734,379,1854,405"/>
+<area shape="rect" id="node31" href="$ik__IVirtualRefCounted_8h.html" title="ik_IVirtualRefCounted.h" alt="" coords="2817,379,2974,405"/>
+<area shape="rect" id="node32" href="$ik__ESoundOutputDrivers_8h.html" title="ik_ESoundOutputDrivers.h" alt="" coords="2164,155,2339,181"/>
+<area shape="rect" id="node33" href="$ik__ESoundEngineOptions_8h.html" title="ik_ESoundEngineOptions.h" alt="" coords="2363,155,2545,181"/>
+<area shape="rect" id="node34" href="$ik__EStreamModes_8h.html" title="ik_EStreamModes.h" alt="" coords="2523,304,2663,331"/>
+<area shape="rect" id="node35" href="$ik__SAudioStreamFormat_8h.html" title="ik_SAudioStreamFormat.h" alt="" coords="1415,304,1589,331"/>
+<area shape="rect" id="node36" href="$ik__ISoundEngine_8h.html" title="ik_ISoundEngine.h" alt="" coords="2619,155,2750,181"/>
+<area shape="rect" id="node37" href="$ik__ISoundSource_8h.html" title="ik_ISoundSource.h" alt="" coords="2293,229,2423,256"/>
+<area shape="rect" id="node38" href="$ik__ISound_8h.html" title="ik_ISound.h" alt="" coords="2761,229,2851,256"/>
+<area shape="rect" id="node39" href="$ik__ISoundEffectControl_8h.html" title="ik_ISoundEffectControl.h" alt="" coords="2789,304,2953,331"/>
+<area shape="rect" id="node40" href="$ik__IFileFactory_8h.html" title="ik_IFileFactory.h" alt="" coords="1795,229,1913,256"/>
+<area shape="rect" id="node41" href="$ik__ISoundMixedOutputReceiver_8h.html" title="ik_ISoundMixedOutputReceiver.h" alt="" coords="1506,229,1719,256"/>
+<area shape="rect" id="node42" href="$ik__IAudioStream_8h.html" title="ik_IAudioStream.h" alt="" coords="1029,229,1157,256"/>
+<area shape="rect" id="node43" href="$ik__IAudioStreamLoader_8h.html" title="ik_IAudioStreamLoader.h" alt="" coords="1585,155,1752,181"/>
+<area shape="rect" id="node44" href="$ik__IFileReader_8h.html" title="ik_IFileReader.h" alt="" coords="1989,229,2103,256"/>
+<area shape="rect" id="node45" href="$ik__ISoundStopEventReceiver_8h.html" title="ik_ISoundStopEventReceiver.h" alt="" coords="1232,229,1431,256"/>
+<area shape="rect" id="node46" href="$ik__ISoundDeviceList_8h.html" title="ik_ISoundDeviceList.h" alt="" coords="1990,155,2139,181"/>
+<area shape="rect" id="node47" href="$ik__IAudioRecorder_8h.html" title="ik_IAudioRecorder.h" alt="" coords="1777,155,1915,181"/>
+</map>

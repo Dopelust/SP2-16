@@ -1,0 +1,5 @@
+<map id="dynamicObject::Knockback" name="dynamicObject::Knockback">
+<area shape="rect" id="node2" href="$classBlindman.html#a1075050c7a1ad2ccb92e39f107bdc831" title="Blindman::Control" alt="" coords="236,5,361,32"/>
+<area shape="rect" id="node3" href="$classS__Guard.html#a757e5c4e30aeae82816f6f93c20858b2" title="S_Guard::Control" alt="" coords="237,56,360,83"/>
+<area shape="rect" id="node4" href="$classNPC.html#a24721357146b87e473c740fe9f295841" title="NPC::Update" alt="" coords="249,107,348,133"/>
+</map>

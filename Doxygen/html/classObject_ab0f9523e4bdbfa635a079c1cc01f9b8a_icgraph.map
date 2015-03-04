@@ -1,0 +1,11 @@
+<map id="Object::checkCollision" name="Object::checkCollision">
+<area shape="rect" id="node2" href="$classBlindman.html#a1075050c7a1ad2ccb92e39f107bdc831" title="Blindman::Control" alt="" coords="234,5,359,32"/>
+<area shape="rect" id="node3" href="$classManagerQuest.html#a0a96a780361e8d833f1706540761ba5e" title="ManagerQuest::Criteria" alt="" coords="219,56,375,83"/>
+<area shape="rect" id="node5" href="$classStorage.html#a6e6c426205e1ef6e6d72e24d57fd5f60" title="Storage::getStorePos" alt="" coords="223,107,370,133"/>
+<area shape="rect" id="node6" href="$classCamera3.html#a44474d04a473a6d07d39b8b2dfba671e" title="Camera3::lookingAt" alt="" coords="229,157,365,184"/>
+<area shape="rect" id="node7" href="$classPROJECTScene.html#ab4521f32fd8e1e5901c9896404e09789" title="PROJECTScene::Update" alt="" coords="436,233,603,260"/>
+<area shape="rect" id="node8" href="$classDoorway.html#ac0e9cf66af2147991062d5f26a887c3b" title="Doorway::RangeUpdate" alt="" coords="217,259,376,285"/>
+<area shape="rect" id="node9" href="$classdynamicObject.html#af34cb96b5a22f85d119895e27af79428" title="dynamicObject::RespondTo\lCollision" alt="" coords="205,310,388,351"/>
+<area shape="rect" id="node10" href="$classDoorway.html#acba33af0e95e63acd73d3aa56c516104" title="Doorway::Update" alt="" coords="236,376,357,403"/>
+<area shape="rect" id="node4" href="$classManager.html#af1cb5c5c1590f4229a3cb40e63ee01b9" title="Manager::getCriteria" alt="" coords="450,56,589,83"/>
+</map>

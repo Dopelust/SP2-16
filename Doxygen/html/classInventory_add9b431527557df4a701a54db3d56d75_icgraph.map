@@ -1,0 +1,4 @@
+<map id="Inventory::checkPaid" name="Inventory::checkPaid">
+<area shape="rect" id="node2" href="$classS__Guard.html#a757e5c4e30aeae82816f6f93c20858b2" title="S_Guard::Control" alt="" coords="218,5,341,32"/>
+<area shape="rect" id="node3" href="$classCashier.html#a9b6de754df0c601b8122a1b46bf3080c" title="Cashier::getConversation" alt="" coords="196,56,363,83"/>
+</map>

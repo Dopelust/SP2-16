@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="dir_21a5d877f3f1ed29af24f8bf5bd73751" kind="dir">
+    <compoundname>MyGraphics</compoundname>
+    <innerdir refid="dir_0feb0cbe2712b0aef517a4e0af18cc07">MyGraphics/Source</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/"/>
+  </compounddef>
+</doxygen>

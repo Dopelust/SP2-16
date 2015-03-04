@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="ik__IAudioStreamLoader_8h" kind="file">
+    <compoundname>ik_IAudioStreamLoader.h</compoundname>
+    <includes refid="ik__IRefCounted_8h" local="yes">ik_IRefCounted.h</includes>
+    <includes refid="ik__IFileReader_8h" local="yes">ik_IFileReader.h</includes>
+    <includedby refid="irrKlang_8h" local="yes">IrrKlang/include/irrKlang.h</includedby>
+    <incdepgraph>
+      <node id="2195">
+        <label>ik_irrKlangTypes.h</label>
+        <link refid="ik__irrKlangTypes_8h"/>
+        <childnode refid="2196" relation="include">
+        </childnode>
+      </node>
+      <node id="2194">
+        <label>ik_IRefCounted.h</label>
+        <link refid="ik__IRefCounted_8h"/>
+        <childnode refid="2195" relation="include">
+        </childnode>
+      </node>
+      <node id="2196">
+        <label>wchar.h</label>
+      </node>
+      <node id="2197">
+        <label>ik_IFileReader.h</label>
+        <link refid="ik__IFileReader_8h"/>
+        <childnode refid="2194" relation="include">
+        </childnode>
+      </node>
+      <node id="2193">
+        <label>IrrKlang/include/ik_IAudioStreamLoader.h</label>
+        <link refid="ik_IAudioStreamLoader.h"/>
+        <childnode refid="2194" relation="include">
+        </childnode>
+        <childnode refid="2197" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2202">
+        <label>MyGraphics/Source/Application.cpp</label>
+        <link refid="Application_8cpp"/>
+      </node>
+      <node id="2201">
+        <label>MyGraphics/Source/PROJECTScene.h</label>
+        <link refid="PROJECTScene_8h"/>
+        <childnode refid="2202" relation="include">
+        </childnode>
+        <childnode refid="2203" relation="include">
+        </childnode>
+        <childnode refid="2204" relation="include">
+        </childnode>
+        <childnode refid="2205" relation="include">
+        </childnode>
+      </node>
+      <node id="2210">
+        <label>MyGraphics/Source/NPC.cpp</label>
+        <link refid="NPC_8cpp"/>
+      </node>
+      <node id="2207">
+        <label>MyGraphics/Source/MENUScene.h</label>
+        <link refid="MENUScene_8h"/>
+        <childnode refid="2202" relation="include">
+        </childnode>
+        <childnode refid="2203" relation="include">
+        </childnode>
+        <childnode refid="2208" relation="include">
+        </childnode>
+      </node>
+      <node id="2205">
+        <label>MyGraphics/Source/PROJECTScene.cpp</label>
+        <link refid="PROJECTScene_8cpp"/>
+      </node>
+      <node id="2208">
+        <label>MyGraphics/Source/MENUScene.cpp</label>
+        <link refid="MENUScene_8cpp"/>
+      </node>
+      <node id="2204">
+        <label>MyGraphics/Source/Camera3.cpp</label>
+        <link refid="Camera3_8cpp"/>
+      </node>
+      <node id="2200">
+        <label>MyGraphics/Source/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="2201" relation="include">
+        </childnode>
+        <childnode refid="2206" relation="include">
+        </childnode>
+        <childnode refid="2207" relation="include">
+        </childnode>
+        <childnode refid="2211" relation="include">
+        </childnode>
+      </node>
+      <node id="2199">
+        <label>IrrKlang/include/irrKlang.h</label>
+        <link refid="irrKlang_8h"/>
+        <childnode refid="2200" relation="include">
+        </childnode>
+        <childnode refid="2201" relation="include">
+        </childnode>
+        <childnode refid="2207" relation="include">
+        </childnode>
+      </node>
+      <node id="2203">
+        <label>MyGraphics/Source/audio.cpp</label>
+        <link refid="audio_8cpp"/>
+      </node>
+      <node id="2209">
+        <label>MyGraphics/Source/dialogue.cpp</label>
+        <link refid="dialogue_8cpp"/>
+      </node>
+      <node id="2206">
+        <label>MyGraphics/Source/NPC.h</label>
+        <link refid="NPC_8h"/>
+        <childnode refid="2201" relation="include">
+        </childnode>
+        <childnode refid="2207" relation="include">
+        </childnode>
+        <childnode refid="2209" relation="include">
+        </childnode>
+        <childnode refid="2210" relation="include">
+        </childnode>
+      </node>
+      <node id="2198">
+        <label>IrrKlang/include/ik_IAudioStreamLoader.h</label>
+        <link refid="ik_IAudioStreamLoader.h"/>
+        <childnode refid="2199" relation="include">
+        </childnode>
+      </node>
+      <node id="2211">
+        <label>MyGraphics/Source/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classirrklang_1_1IAudioStreamLoader" prot="public">irrklang::IAudioStreamLoader</innerclass>
+    <innernamespace refid="namespaceirrklang">irrklang</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(C)<sp/>2002-2014<sp/>Nikolaus<sp/>Gebhardt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>&quot;irrKlang&quot;<sp/>library.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>conditions<sp/>of<sp/>distribution<sp/>and<sp/>use,<sp/>see<sp/>copyright<sp/>notice<sp/>in<sp/>irrKlang.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__I_IRRKLANG_AUDIO_STREAM_LOADER_H_INCLUDED__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__I_IRRKLANG_AUDIO_STREAM_LOADER_H_INCLUDED__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ik__IRefCounted_8h" kindref="compound">ik_IRefCounted.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ik__IFileReader_8h" kindref="compound">ik_IFileReader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceirrklang" kindref="compound">irrklang</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IAudioStream;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classirrklang_1_1IAudioStreamLoader" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classirrklang_1_1IAudioStreamLoader" kindref="compound">IAudioStreamLoader</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classirrklang_1_1IRefCounted" kindref="compound">IRefCounted</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classirrklang_1_1IAudioStreamLoader_1a54aeae62ffd27931a8ddd2e23fcc6624" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classirrklang_1_1IAudioStreamLoader_1a54aeae62ffd27931a8ddd2e23fcc6624" kindref="member">~IAudioStreamLoader</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classirrklang_1_1IAudioStreamLoader_1a3194c3ba81ebb4929d6cedc6f36ab165" kindref="member">isALoadableFileExtension</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceirrklang_1af179ad966eb79d01f6d1cf8927087449" kindref="member">ik_c8</ref>*<sp/>fileName)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classirrklang_1_1IAudioStream" kindref="compound">IAudioStream</ref>*<sp/><ref refid="classirrklang_1_1IAudioStreamLoader_1ab47c905866c381295f4e42663e35cd8e" kindref="member">createAudioStream</ref>(<ref refid="classirrklang_1_1IFileReader" kindref="compound">IFileReader</ref>*<sp/>file)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>irrklang</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IAudioStreamLoader.h"/>
+  </compounddef>
+</doxygen>

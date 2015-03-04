@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="timer_8h" kind="file">
+    <compoundname>timer.h</compoundname>
+    <includes local="no">windows.h</includes>
+    <includedby refid="timer_8cpp" local="yes">Common/Source/timer.cpp</includedby>
+    <includedby refid="Application_8h" local="yes">MyGraphics/Source/Application.h</includedby>
+    <incdepgraph>
+      <node id="2028">
+        <label>windows.h</label>
+      </node>
+      <node id="2027">
+        <label>Common/Source/timer.h</label>
+        <link refid="timer.h"/>
+        <childnode refid="2028" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2032">
+        <label>MyGraphics/Source/Application.cpp</label>
+        <link refid="Application_8cpp"/>
+      </node>
+      <node id="2031">
+        <label>MyGraphics/Source/Application.h</label>
+        <link refid="Application_8h"/>
+        <childnode refid="2032" relation="include">
+        </childnode>
+        <childnode refid="2033" relation="include">
+        </childnode>
+        <childnode refid="2044" relation="include">
+        </childnode>
+        <childnode refid="2047" relation="include">
+        </childnode>
+        <childnode refid="2036" relation="include">
+        </childnode>
+        <childnode refid="2048" relation="include">
+        </childnode>
+        <childnode refid="2040" relation="include">
+        </childnode>
+        <childnode refid="2037" relation="include">
+        </childnode>
+      </node>
+      <node id="2034">
+        <label>MyGraphics/Source/PROJECTScene.h</label>
+        <link refid="PROJECTScene_8h"/>
+        <childnode refid="2032" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+        <childnode refid="2036" relation="include">
+        </childnode>
+        <childnode refid="2037" relation="include">
+        </childnode>
+      </node>
+      <node id="2042">
+        <label>MyGraphics/Source/NPC.cpp</label>
+        <link refid="NPC_8cpp"/>
+      </node>
+      <node id="2039">
+        <label>MyGraphics/Source/MENUScene.h</label>
+        <link refid="MENUScene_8h"/>
+        <childnode refid="2032" relation="include">
+        </childnode>
+        <childnode refid="2035" relation="include">
+        </childnode>
+        <childnode refid="2040" relation="include">
+        </childnode>
+      </node>
+      <node id="2037">
+        <label>MyGraphics/Source/PROJECTScene.cpp</label>
+        <link refid="PROJECTScene_8cpp"/>
+      </node>
+      <node id="2040">
+        <label>MyGraphics/Source/MENUScene.cpp</label>
+        <link refid="MENUScene_8cpp"/>
+      </node>
+      <node id="2036">
+        <label>MyGraphics/Source/Camera3.cpp</label>
+        <link refid="Camera3_8cpp"/>
+      </node>
+      <node id="2033">
+        <label>MyGraphics/Source/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="2034" relation="include">
+        </childnode>
+        <childnode refid="2038" relation="include">
+        </childnode>
+        <childnode refid="2039" relation="include">
+        </childnode>
+        <childnode refid="2043" relation="include">
+        </childnode>
+      </node>
+      <node id="2047">
+        <label>MyGraphics/Source/Camera.cpp</label>
+        <link refid="Camera_8cpp"/>
+      </node>
+      <node id="2044">
+        <label>MyGraphics/Source/inventory.h</label>
+        <link refid="inventory_8h"/>
+        <childnode refid="2033" relation="include">
+        </childnode>
+        <childnode refid="2045" relation="include">
+        </childnode>
+        <childnode refid="2046" relation="include">
+        </childnode>
+      </node>
+      <node id="2035">
+        <label>MyGraphics/Source/audio.cpp</label>
+        <link refid="audio_8cpp"/>
+      </node>
+      <node id="2041">
+        <label>MyGraphics/Source/dialogue.cpp</label>
+        <link refid="dialogue_8cpp"/>
+      </node>
+      <node id="2038">
+        <label>MyGraphics/Source/NPC.h</label>
+        <link refid="NPC_8h"/>
+        <childnode refid="2034" relation="include">
+        </childnode>
+        <childnode refid="2039" relation="include">
+        </childnode>
+        <childnode refid="2041" relation="include">
+        </childnode>
+        <childnode refid="2042" relation="include">
+        </childnode>
+      </node>
+      <node id="2030">
+        <label>Common/Source/timer.cpp</label>
+        <link refid="timer_8cpp"/>
+      </node>
+      <node id="2043">
+        <label>MyGraphics/Source/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="2045">
+        <label>MyGraphics/Source/dialogue.h</label>
+        <link refid="dialogue_8h"/>
+        <childnode refid="2038" relation="include">
+        </childnode>
+        <childnode refid="2034" relation="include">
+        </childnode>
+        <childnode refid="2039" relation="include">
+        </childnode>
+        <childnode refid="2041" relation="include">
+        </childnode>
+      </node>
+      <node id="2029">
+        <label>Common/Source/timer.h</label>
+        <link refid="timer.h"/>
+        <childnode refid="2030" relation="include">
+        </childnode>
+        <childnode refid="2031" relation="include">
+        </childnode>
+      </node>
+      <node id="2048">
+        <label>MyGraphics/Source/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2046">
+        <label>MyGraphics/Source/inventory.cpp</label>
+        <link refid="inventory_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classStopWatch" prot="public">StopWatch</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_TIMER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TIMER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classStopWatch" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStopWatch" kindref="compound">StopWatch</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11" refid="classStopWatch_1a102c4e3275d87798eca31673192c97ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LARGE_INTEGER<sp/><ref refid="classStopWatch_1a102c4e3275d87798eca31673192c97ed" kindref="member">frequency</ref>;</highlight></codeline>
+<codeline lineno="12" refid="classStopWatch_1a1bf2210ebf10821c4b2eb849e5e98502" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LARGE_INTEGER<sp/><ref refid="classStopWatch_1a1bf2210ebf10821c4b2eb849e5e98502" kindref="member">prevTime</ref>,<sp/><ref refid="classStopWatch_1a9ff6d4ddf698ba9cb82bdb0d27af72e8" kindref="member">currTime</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classStopWatch_1a2e61acbf46638eb3275cc8a7c1ea768d" kindref="member">LIToSecs</ref>(<sp/>LARGE_INTEGER<sp/>&amp;<sp/>L)<sp/>;</highlight></codeline>
+<codeline lineno="14" refid="classStopWatch_1afe4830ee290e9d152d6ce07b9ffc2642" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT<sp/><sp/><sp/><sp/><sp/><ref refid="classStopWatch_1afe4830ee290e9d152d6ce07b9ffc2642" kindref="member">wTimerRes</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classStopWatch_1ad715945060eeb23baa3c036ad19b1edb" kindref="member">StopWatch</ref>()<sp/>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="classStopWatch_1a223ec0da71dd0bc4f2b14d1af44bf20a" kindref="member">~StopWatch</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStopWatch_1a23301f735a2e3190435e39c9fd70cdf2" kindref="member">startTimer</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classStopWatch_1ac8be1626396d1a5ca414f74349d59eb2" kindref="member">getElapsedTime</ref>();<sp/></highlight><highlight class="comment">//<sp/>get<sp/>time<sp/>in<sp/>seconds<sp/>since<sp/>the<sp/>last<sp/>call<sp/>to<sp/>this<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStopWatch_1a2cd0856fc87a40038edfd66d784be8b4" kindref="member">waitUntil</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>time);<sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>until<sp/>this<sp/>time<sp/>in<sp/>milliseconds<sp/>has<sp/>passed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_TIMER_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/timer.h"/>
+  </compounddef>
+</doxygen>

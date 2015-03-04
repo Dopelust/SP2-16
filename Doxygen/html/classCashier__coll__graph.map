@@ -1,0 +1,14 @@
+<map id="Cashier" name="Cashier">
+<area shape="rect" id="node2" href="$classNPC.html" title="NPC" alt="" coords="470,827,519,853"/>
+<area shape="rect" id="node3" href="$classdynamicObject.html" title="dynamicObject" alt="" coords="787,723,896,749"/>
+<area shape="rect" id="node4" href="$classObject.html" title="Object" alt="" coords="630,610,690,637"/>
+<area shape="rect" id="node15" href="$classBodypart.html" title="Bodypart" alt="" coords="380,723,455,749"/>
+<area shape="rect" id="node5" href="$structCollision.html" title="Collision" alt="" coords="705,497,775,524"/>
+<area shape="rect" id="node6" href="$structVector3.html" title="Defines a 3D vector and its methods. " alt="" coords="583,385,649,411"/>
+<area shape="rect" id="node19" href="$classTextBox.html" title="TextBox" alt="" coords="197,497,267,524"/>
+<area shape="rect" id="node20" href="$classButton2D.html" title="Button2D" alt="" coords="242,610,318,637"/>
+<area shape="rect" id="node9" href="$structMaterial.html" title="Material" alt="" coords="885,243,953,269"/>
+<area shape="rect" id="node10" href="$structComponent.html" title="Component" alt="" coords="875,124,963,151"/>
+<area shape="rect" id="node8" href="$classMesh.html" title="To store VBO (vertex &amp; color buffer) and IBO (index buffer) " alt="" coords="749,385,803,411"/>
+<area shape="rect" id="node18" href="$classQuest.html" title="Quest" alt="" coords="251,723,309,749"/>
+</map>

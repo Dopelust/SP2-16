@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="Camera_8h" kind="file">
+    <compoundname>Camera.h</compoundname>
+    <includes refid="Vector3_8h" local="yes">Vector3.h</includes>
+    <includedby refid="PROJECTScene_8h" local="yes">MyGraphics/Source/PROJECTScene.h</includedby>
+    <includedby refid="Camera3_8h" local="yes">MyGraphics/Source/Camera3.h</includedby>
+    <includedby refid="MENUScene_8h" local="yes">MyGraphics/Source/MENUScene.h</includedby>
+    <includedby refid="Camera_8cpp" local="yes">MyGraphics/Source/Camera.cpp</includedby>
+    <incdepgraph>
+      <node id="2742">
+        <label>cmath</label>
+      </node>
+      <node id="2740">
+        <label>Vector3.h</label>
+        <link refid="Vector3_8h"/>
+        <childnode refid="2741" relation="include">
+        </childnode>
+        <childnode refid="2746" relation="include">
+        </childnode>
+      </node>
+      <node id="2741">
+        <label>MyMath.h</label>
+        <link refid="MyMath_8h"/>
+        <childnode refid="2742" relation="include">
+        </childnode>
+        <childnode refid="2743" relation="include">
+        </childnode>
+        <childnode refid="2744" relation="include">
+        </childnode>
+        <childnode refid="2745" relation="include">
+        </childnode>
+      </node>
+      <node id="2743">
+        <label>exception</label>
+      </node>
+      <node id="2744">
+        <label>ctime</label>
+      </node>
+      <node id="2739">
+        <label>MyGraphics/Source/Camera.h</label>
+        <link refid="Camera.h"/>
+        <childnode refid="2740" relation="include">
+        </childnode>
+      </node>
+      <node id="2745">
+        <label>cstdlib</label>
+      </node>
+      <node id="2746">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2749">
+        <label>MyGraphics/Source/Application.cpp</label>
+        <link refid="Application_8cpp"/>
+      </node>
+      <node id="2748">
+        <label>MyGraphics/Source/PROJECTScene.h</label>
+        <link refid="PROJECTScene_8h"/>
+        <childnode refid="2749" relation="include">
+        </childnode>
+        <childnode refid="2750" relation="include">
+        </childnode>
+        <childnode refid="2751" relation="include">
+        </childnode>
+        <childnode refid="2752" relation="include">
+        </childnode>
+      </node>
+      <node id="2759">
+        <label>MyGraphics/Source/NPC.cpp</label>
+        <link refid="NPC_8cpp"/>
+      </node>
+      <node id="2756">
+        <label>MyGraphics/Source/MENUScene.h</label>
+        <link refid="MENUScene_8h"/>
+        <childnode refid="2749" relation="include">
+        </childnode>
+        <childnode refid="2750" relation="include">
+        </childnode>
+        <childnode refid="2757" relation="include">
+        </childnode>
+      </node>
+      <node id="2752">
+        <label>MyGraphics/Source/PROJECTScene.cpp</label>
+        <link refid="PROJECTScene_8cpp"/>
+      </node>
+      <node id="2757">
+        <label>MyGraphics/Source/MENUScene.cpp</label>
+        <link refid="MENUScene_8cpp"/>
+      </node>
+      <node id="2751">
+        <label>MyGraphics/Source/Camera3.cpp</label>
+        <link refid="Camera3_8cpp"/>
+      </node>
+      <node id="2754">
+        <label>MyGraphics/Source/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="2748" relation="include">
+        </childnode>
+        <childnode refid="2755" relation="include">
+        </childnode>
+        <childnode refid="2756" relation="include">
+        </childnode>
+        <childnode refid="2760" relation="include">
+        </childnode>
+      </node>
+      <node id="2761">
+        <label>MyGraphics/Source/Camera.cpp</label>
+        <link refid="Camera_8cpp"/>
+      </node>
+      <node id="2750">
+        <label>MyGraphics/Source/audio.cpp</label>
+        <link refid="audio_8cpp"/>
+      </node>
+      <node id="2753">
+        <label>MyGraphics/Source/Camera3.h</label>
+        <link refid="Camera3_8h"/>
+        <childnode refid="2748" relation="include">
+        </childnode>
+        <childnode refid="2754" relation="include">
+        </childnode>
+        <childnode refid="2756" relation="include">
+        </childnode>
+        <childnode refid="2751" relation="include">
+        </childnode>
+      </node>
+      <node id="2758">
+        <label>MyGraphics/Source/dialogue.cpp</label>
+        <link refid="dialogue_8cpp"/>
+      </node>
+      <node id="2755">
+        <label>MyGraphics/Source/NPC.h</label>
+        <link refid="NPC_8h"/>
+        <childnode refid="2748" relation="include">
+        </childnode>
+        <childnode refid="2756" relation="include">
+        </childnode>
+        <childnode refid="2758" relation="include">
+        </childnode>
+        <childnode refid="2759" relation="include">
+        </childnode>
+      </node>
+      <node id="2760">
+        <label>MyGraphics/Source/player.cpp</label>
+        <link refid="player_8cpp"/>
+      </node>
+      <node id="2747">
+        <label>MyGraphics/Source/Camera.h</label>
+        <link refid="Camera.h"/>
+        <childnode refid="2748" relation="include">
+        </childnode>
+        <childnode refid="2753" relation="include">
+        </childnode>
+        <childnode refid="2756" relation="include">
+        </childnode>
+        <childnode refid="2761" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classCamera" prot="public">Camera</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CAMERA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAMERA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Vector3_8h" kindref="compound">Vector3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classCamera" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCamera" kindref="compound">Camera</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="10" refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" kindref="member">target</ref>;</highlight></codeline>
+<codeline lineno="11" refid="classCamera_1ab76ce866ca2acd6ab54447f474077245" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classCamera_1ab76ce866ca2acd6ab54447f474077245" kindref="member">up</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCamera_1a01f94c3543f56ede7af49dc778f19331" kindref="member">Camera</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCamera_1ad1897942d0ccf91052386388a497349f" kindref="member">~Camera</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCamera_1a609775f7ec4cd936ad7add808cd7354c" kindref="member">Init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structVector3" kindref="compound">Vector3</ref>&amp;<sp/>pos,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structVector3" kindref="compound">Vector3</ref>&amp;<sp/>target,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structVector3" kindref="compound">Vector3</ref>&amp;<sp/>up);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCamera_1aa46f58b32270a571ab56dde4caca46db" kindref="member">Reset</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCamera_1acc1741feb6d9da849ea4b6c12e0711e6" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h"/>
+  </compounddef>
+</doxygen>

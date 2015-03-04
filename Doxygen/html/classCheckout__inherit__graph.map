@@ -1,0 +1,4 @@
+<map id="Checkout" name="Checkout">
+<area shape="rect" id="node2" href="$classQuest.html" title="Quest" alt="" coords="15,80,73,107"/>
+<area shape="rect" id="node3" href="$classTextBox.html" title="TextBox" alt="" coords="9,5,79,32"/>
+</map>

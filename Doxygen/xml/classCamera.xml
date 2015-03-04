@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classCamera" kind="class" prot="public">
+    <compoundname>Camera</compoundname>
+    <derivedcompoundref refid="classCamera3" prot="public" virt="non-virtual">Camera3</derivedcompoundref>
+    <includes refid="Camera_8h" local="no">Camera.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classCamera_1a3b229874a00253021a1b6c61657fa5ab" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Camera::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" line="9" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="classStorage_1a6e6c426205e1ef6e6d72e24d57fd5f60" compoundref="PROJECTScene_8cpp" startline="2431" endline="2448">Storage::getStorePos</referencedby>
+        <referencedby refid="classCamera_1a609775f7ec4cd936ad7add808cd7354c" compoundref="Camera_8cpp" startline="14" endline="19">Init</referencedby>
+        <referencedby refid="classCamera3_1a1cb8d466abcd4d1ad4567846dcca1ce5" compoundref="Camera3_8cpp" startline="18" endline="29">Camera3::Init</referencedby>
+        <referencedby refid="classCamera3_1a44474d04a473a6d07d39b8b2dfba671e" compoundref="Camera3_8cpp" startline="71" endline="107">Camera3::lookingAt</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classCamera_1aa46f58b32270a571ab56dde4caca46db" compoundref="Camera_8cpp" startline="21" endline="26">Reset</referencedby>
+        <referencedby refid="classCamera3_1a4b10106bcd89f21e3cf3e39f04d8c1cb" compoundref="Camera3_8cpp" startline="109" endline="119">Camera3::Reset</referencedby>
+        <referencedby refid="classCamera_1acc1741feb6d9da849ea4b6c12e0711e6" compoundref="Camera_8cpp" startline="28" endline="47">Update</referencedby>
+        <referencedby refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe" compoundref="Camera3_8cpp" startline="61" endline="69">Camera3::Update</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Player::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Camera::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" line="10" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" compoundref="PROJECTScene_8cpp" startline="2449" endline="2473">dynamicObject::Control</referencedby>
+        <referencedby refid="classStorage_1a6e6c426205e1ef6e6d72e24d57fd5f60" compoundref="PROJECTScene_8cpp" startline="2431" endline="2448">Storage::getStorePos</referencedby>
+        <referencedby refid="classCamera_1a609775f7ec4cd936ad7add808cd7354c" compoundref="Camera_8cpp" startline="14" endline="19">Init</referencedby>
+        <referencedby refid="classCamera3_1a1cb8d466abcd4d1ad4567846dcca1ce5" compoundref="Camera3_8cpp" startline="18" endline="29">Camera3::Init</referencedby>
+        <referencedby refid="classCamera3_1a44474d04a473a6d07d39b8b2dfba671e" compoundref="Camera3_8cpp" startline="71" endline="107">Camera3::lookingAt</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classCamera_1aa46f58b32270a571ab56dde4caca46db" compoundref="Camera_8cpp" startline="21" endline="26">Reset</referencedby>
+        <referencedby refid="classCamera3_1a4b10106bcd89f21e3cf3e39f04d8c1cb" compoundref="Camera3_8cpp" startline="109" endline="119">Camera3::Reset</referencedby>
+        <referencedby refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe" compoundref="Camera3_8cpp" startline="61" endline="69">Camera3::Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classCamera_1ab76ce866ca2acd6ab54447f474077245" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Camera::up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" line="11" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="classCamera_1a609775f7ec4cd936ad7add808cd7354c" compoundref="Camera_8cpp" startline="14" endline="19">Init</referencedby>
+        <referencedby refid="classCamera3_1a1cb8d466abcd4d1ad4567846dcca1ce5" compoundref="Camera3_8cpp" startline="18" endline="29">Camera3::Init</referencedby>
+        <referencedby refid="classMENUScene_1a14c0bfb1f360fd99dbc81b66ea2dcc84" compoundref="MENUScene_8cpp" startline="290" endline="339">MENUScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classCamera_1aa46f58b32270a571ab56dde4caca46db" compoundref="Camera_8cpp" startline="21" endline="26">Reset</referencedby>
+        <referencedby refid="classCamera3_1a4b10106bcd89f21e3cf3e39f04d8c1cb" compoundref="Camera3_8cpp" startline="109" endline="119">Camera3::Reset</referencedby>
+        <referencedby refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe" compoundref="Camera3_8cpp" startline="61" endline="69">Camera3::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCamera_1a01f94c3543f56ede7af49dc778f19331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Camera::Camera</definition>
+        <argsstring>()</argsstring>
+        <name>Camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" line="13" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.cpp" bodystart="5" bodyend="8"/>
+        <references refid="classCamera_1aa46f58b32270a571ab56dde4caca46db" compoundref="Camera_8cpp" startline="21" endline="26">Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="classCamera_1ad1897942d0ccf91052386388a497349f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Camera::~Camera</definition>
+        <argsstring>()</argsstring>
+        <name>~Camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" line="14" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classCamera_1a609775f7ec4cd936ad7add808cd7354c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Camera::Init</definition>
+        <argsstring>(const Vector3 &amp;pos, const Vector3 &amp;target, const Vector3 &amp;up)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>const <ref refid="structVector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structVector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structVector3" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" line="15" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.cpp" bodystart="14" bodyend="19"/>
+        <references refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" compoundref="Camera_8h" startline="9">position</references>
+        <references refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" compoundref="Camera_8h" startline="10">target</references>
+        <references refid="classCamera_1ab76ce866ca2acd6ab54447f474077245" compoundref="Camera_8h" startline="11">up</references>
+      </memberdef>
+      <memberdef kind="function" id="classCamera_1aa46f58b32270a571ab56dde4caca46db" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Camera::Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <reimplementedby refid="classCamera3_1a4b10106bcd89f21e3cf3e39f04d8c1cb">Reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" line="16" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.cpp" bodystart="21" bodyend="26"/>
+        <references refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" compoundref="Camera_8h" startline="9">position</references>
+        <references refid="structVector3_1a9c25d604bd52b162cfcb56302ef032bb" compoundref="Vector3_8cpp" startline="67" endline="72">Vector3::Set</references>
+        <references refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" compoundref="Camera_8h" startline="10">target</references>
+        <references refid="classCamera_1ab76ce866ca2acd6ab54447f474077245" compoundref="Camera_8h" startline="11">up</references>
+        <referencedby refid="classCamera_1a01f94c3543f56ede7af49dc778f19331" compoundref="Camera_8cpp" startline="5" endline="8">Camera</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classCamera_1acc1741feb6d9da849ea4b6c12e0711e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Camera::Update</definition>
+        <argsstring>(double dt)</argsstring>
+        <name>Update</name>
+        <reimplementedby refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe">Update</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" line="17" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.cpp" bodystart="28" bodyend="47"/>
+        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">Application::IsKeyPressed</references>
+        <references refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" compoundref="Camera_8h" startline="9">position</references>
+        <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
+        <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="887">
+        <label>Camera</label>
+        <link refid="classCamera"/>
+      </node>
+      <node id="888">
+        <label>Camera3</label>
+        <link refid="classCamera3"/>
+        <childnode refid="887" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="889">
+        <label>Camera</label>
+        <link refid="classCamera"/>
+        <childnode refid="890" relation="usage">
+          <edgelabel>target</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>up</edgelabel>
+        </childnode>
+      </node>
+      <node id="891">
+        <label>float</label>
+      </node>
+      <node id="890">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="891" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" line="7" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera.h" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classCamera_1a01f94c3543f56ede7af49dc778f19331" prot="public" virt="non-virtual"><scope>Camera</scope><name>Camera</name></member>
+      <member refid="classCamera_1a609775f7ec4cd936ad7add808cd7354c" prot="public" virt="virtual"><scope>Camera</scope><name>Init</name></member>
+      <member refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" prot="public" virt="non-virtual"><scope>Camera</scope><name>position</name></member>
+      <member refid="classCamera_1aa46f58b32270a571ab56dde4caca46db" prot="public" virt="virtual"><scope>Camera</scope><name>Reset</name></member>
+      <member refid="classCamera_1a7b1215b2f9c2a71cd41e4225c7df31e8" prot="public" virt="non-virtual"><scope>Camera</scope><name>target</name></member>
+      <member refid="classCamera_1ab76ce866ca2acd6ab54447f474077245" prot="public" virt="non-virtual"><scope>Camera</scope><name>up</name></member>
+      <member refid="classCamera_1acc1741feb6d9da849ea4b6c12e0711e6" prot="public" virt="virtual"><scope>Camera</scope><name>Update</name></member>
+      <member refid="classCamera_1ad1897942d0ccf91052386388a497349f" prot="public" virt="non-virtual"><scope>Camera</scope><name>~Camera</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

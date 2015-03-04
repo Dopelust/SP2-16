@@ -1,0 +1,5 @@
+<map id="dynamicObject::UpdateVelocity" name="dynamicObject::UpdateVelocity">
+<area shape="rect" id="node2" href="$classNPC.html#a24721357146b87e473c740fe9f295841" title="NPC::Update" alt="" coords="263,5,362,32"/>
+<area shape="rect" id="node3" href="$classPlayer.html#a522cbf980cc179616292e2b25399c1dc" title="Player::Update" alt="" coords="259,56,367,83"/>
+<area shape="rect" id="node4" href="$classPROJECTScene.html#ab4521f32fd8e1e5901c9896404e09789" title="PROJECTScene::Update" alt="" coords="415,56,581,83"/>
+</map>

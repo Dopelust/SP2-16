@@ -1,0 +1,4 @@
+<map id="Player::getHealth" name="Player::getHealth">
+<area shape="rect" id="node2" href="$classPROJECTScene.html#a67fe944ad8dbaf81cedfb07cff9b860c" title="PROJECTScene::Render" alt="" coords="176,5,343,32"/>
+<area shape="rect" id="node3" href="$classPROJECTScene.html#ab4521f32fd8e1e5901c9896404e09789" title="PROJECTScene::Update" alt="" coords="176,56,343,83"/>
+</map>

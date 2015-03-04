@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classButton" kind="class" prot="public">
+    <compoundname>Button</compoundname>
+    <includes refid="MENUScene_8h" local="no">MENUScene.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classButton_1a9fdba00d70de312b444e2aaca608e929" prot="public" static="no" mutable="no">
+        <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+        <definition>Vector3 Button::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="34" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">MENUScene::Init</referencedby>
+        <referencedby refid="classDoorway_1aed789047130006d3ad9afe8b5be693ef" compoundref="player_8h" startline="123" endline="136">Doorway::Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classButton_1a9a79182881bfd9a9e35aafd9dab955ae" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Button::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="35" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">MENUScene::Init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classButton_1a3b36df1ae23c58aedb9e15a713159459" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Button::Button</definition>
+        <argsstring>()</argsstring>
+        <name>Button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="31" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classButton_1a2a001eb9c3cc8ae54768a850dd345002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Button::~Button</definition>
+        <argsstring>()</argsstring>
+        <name>~Button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="32" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="876">
+        <label>Button</label>
+        <link refid="classButton"/>
+        <childnode refid="877" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="879" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="879">
+        <label>string</label>
+      </node>
+      <node id="878">
+        <label>float</label>
+      </node>
+      <node id="877">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="878" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" line="29" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/MENUScene.h" bodystart="28" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classButton_1a3b36df1ae23c58aedb9e15a713159459" prot="public" virt="non-virtual"><scope>Button</scope><name>Button</name></member>
+      <member refid="classButton_1a9a79182881bfd9a9e35aafd9dab955ae" prot="public" virt="non-virtual"><scope>Button</scope><name>name</name></member>
+      <member refid="classButton_1a9fdba00d70de312b444e2aaca608e929" prot="public" virt="non-virtual"><scope>Button</scope><name>position</name></member>
+      <member refid="classButton_1a2a001eb9c3cc8ae54768a850dd345002" prot="public" virt="non-virtual"><scope>Button</scope><name>~Button</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

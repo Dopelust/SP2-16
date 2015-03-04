@@ -1,0 +1,5 @@
+<map id="Inventory::checkPrice" name="Inventory::checkPrice">
+<area shape="rect" id="node2" href="$classInventory.html#a0d4eb7cbb90ff12b81025a897ed86816" title="Inventory::Checkout" alt="" coords="213,5,349,32"/>
+<area shape="rect" id="node3" href="$classPROJECTScene.html#ab4521f32fd8e1e5901c9896404e09789" title="PROJECTScene::Update" alt="" coords="411,31,577,57"/>
+<area shape="rect" id="node4" href="$classCheckout.html#a80a605b2f1447e43401abe9f17ea135e" title="Checkout::GenerateText" alt="" coords="200,107,363,133"/>
+</map>

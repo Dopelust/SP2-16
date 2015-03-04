@@ -1,0 +1,6 @@
+<map id="TextBox" name="TextBox">
+<area shape="rect" id="node2" href="$classQuest.html" title="Quest" alt="" coords="134,80,191,107"/>
+<area shape="rect" id="node3" href="$classCheckout.html" title="Checkout" alt="" coords="5,155,83,181"/>
+<area shape="rect" id="node4" href="$classDetectiveQuest.html" title="DetectiveQuest" alt="" coords="107,155,218,181"/>
+<area shape="rect" id="node5" href="$classDonation.html" title="Donation" alt="" coords="242,155,315,181"/>
+</map>

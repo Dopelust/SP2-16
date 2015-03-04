@@ -1,0 +1,15 @@
+<map id="S_Guard" name="S_Guard">
+<area shape="rect" id="node2" href="$classNPC.html" title="NPC" alt="" coords="907,827,957,853"/>
+<area shape="rect" id="node3" href="$classdynamicObject.html" title="dynamicObject" alt="" coords="316,723,425,749"/>
+<area shape="rect" id="node4" href="$classObject.html" title="Object" alt="" coords="341,610,401,637"/>
+<area shape="rect" id="node15" href="$classBodypart.html" title="Bodypart" alt="" coords="449,723,524,749"/>
+<area shape="rect" id="node5" href="$structCollision.html" title="Collision" alt="" coords="335,497,406,524"/>
+<area shape="rect" id="node6" href="$structVector3.html" title="Defines a 3D vector and its methods. " alt="" coords="729,385,796,411"/>
+<area shape="rect" id="node19" href="$classTextBox.html" title="TextBox" alt="" coords="749,497,819,524"/>
+<area shape="rect" id="node20" href="$classButton2D.html" title="Button2D" alt="" coords="757,610,833,637"/>
+<area shape="rect" id="node21" href="$classNPCTarget.html" title="NPCTarget" alt="" coords="1229,497,1315,524"/>
+<area shape="rect" id="node9" href="$structMaterial.html" title="Material" alt="" coords="246,243,314,269"/>
+<area shape="rect" id="node10" href="$structComponent.html" title="Component" alt="" coords="373,124,461,151"/>
+<area shape="rect" id="node8" href="$classMesh.html" title="To store VBO (vertex &amp; color buffer) and IBO (index buffer) " alt="" coords="285,385,339,411"/>
+<area shape="rect" id="node18" href="$classQuest.html" title="Quest" alt="" coords="737,723,794,749"/>
+</map>

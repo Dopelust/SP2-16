@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classBodypart" kind="class" prot="public">
+    <compoundname>Bodypart</compoundname>
+    <basecompoundref refid="classObject" prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="collision_8h" local="no">collision.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Bodypart::identity</definition>
+        <argsstring></argsstring>
+        <name>identity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="73" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classCustomer_1a5e680c504ee1400e2ee5a2d424bff612" compoundref="NPC_8h" startline="234" endline="258">Customer::Customer</referencedby>
+        <referencedby refid="classHobo_1a1081ed24676f684229be89ec03c2179e" compoundref="NPC_8cpp" startline="268" endline="282">Hobo::Init</referencedby>
+        <referencedby refid="classThug_1af2a1de6b86c5760ca4aada0be45e941e" compoundref="NPC_8cpp" startline="291" endline="304">Thug::Init</referencedby>
+        <referencedby refid="classCashier_1a378b4d5a8fc2364208422989deb97150" compoundref="NPC_8cpp" startline="319" endline="333">Cashier::Init</referencedby>
+        <referencedby refid="classBlindman_1a8ca8c8b76aae45b2b7a2fdc59c8e5a89" compoundref="NPC_8cpp" startline="350" endline="363">Blindman::Init</referencedby>
+        <referencedby refid="classDetective_1a809658e990799aabf8b50e202b778f64" compoundref="NPC_8cpp" startline="442" endline="456">Detective::Init</referencedby>
+        <referencedby refid="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" compoundref="NPC_8cpp" startline="465" endline="478">S_Guard::Init</referencedby>
+        <referencedby refid="classManager_1a200a7092507e1769240452e88996127b" compoundref="NPC_8cpp" startline="520" endline="534">Manager::Init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBodypart_1a3eb671588904ac51120d9db3be131273" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Bodypart::Bodypart</definition>
+        <argsstring>()</argsstring>
+        <name>Bodypart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="61" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="61" bodyend="61"/>
+        <references refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" compoundref="collision_8h" startline="42">Object::ignoreCollision</references>
+      </memberdef>
+      <memberdef kind="function" id="classBodypart_1ae5b847cddaec74ff46fdbd5fc3b243c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Bodypart::Bodypart</definition>
+        <argsstring>(Vector3 p, Vector3 c, Vector3 h, Mesh *m)</argsstring>
+        <name>Bodypart</name>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="classMesh" kindref="compound">Mesh</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="62" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="62" bodyend="69"/>
+        <references refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" compoundref="collision_8h" startline="19">Collision::centre</references>
+        <references refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" compoundref="collision_8h" startline="38">Object::collision</references>
+        <references refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" compoundref="collision_8h" startline="20">Collision::hitbox</references>
+        <references refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" compoundref="collision_8h" startline="39">Object::mesh</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
+        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="34">Object::type</references>
+      </memberdef>
+      <memberdef kind="function" id="classBodypart_1a51117326b7bdd597eb0e011ff479b02c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Bodypart::~Bodypart</definition>
+        <argsstring>()</argsstring>
+        <name>~Bodypart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="70" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classBodypart_1ab2bf58734c5ae68a1d21c59cf28785cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>string</type>
+        <definition>string Bodypart::getIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentity</name>
+        <reimplements refid="classObject_1a084dbdfbf0fedcea9a67cc3eaa5f9bcf">getIdentity</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="72" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="862">
+        <label>Object</label>
+        <link refid="classObject"/>
+      </node>
+      <node id="861">
+        <label>Bodypart</label>
+        <link refid="classBodypart"/>
+        <childnode refid="862" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="870">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="867" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="868">
+        <label>Mesh</label>
+        <link refid="classMesh"/>
+        <childnode refid="869" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+        <childnode refid="871" relation="usage">
+          <edgelabel>mode</edgelabel>
+        </childnode>
+        <childnode refid="872" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="873" relation="usage">
+          <edgelabel>textureID</edgelabel>
+          <edgelabel>indexBuffer</edgelabel>
+          <edgelabel>indexSize</edgelabel>
+          <edgelabel>vertexBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="871">
+        <label>DRAW_MODE</label>
+      </node>
+      <node id="872">
+        <label>string</label>
+      </node>
+      <node id="869">
+        <label>Material</label>
+        <link refid="structMaterial"/>
+        <childnode refid="867" relation="usage">
+          <edgelabel>kShininess</edgelabel>
+        </childnode>
+        <childnode refid="870" relation="usage">
+          <edgelabel>kDiffuse</edgelabel>
+          <edgelabel>kAmbient</edgelabel>
+          <edgelabel>kSpecular</edgelabel>
+        </childnode>
+      </node>
+      <node id="867">
+        <label>float</label>
+      </node>
+      <node id="864">
+        <label>Object</label>
+        <link refid="classObject"/>
+        <childnode refid="865" relation="usage">
+          <edgelabel>collision</edgelabel>
+        </childnode>
+        <childnode refid="867" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>orientation</edgelabel>
+        </childnode>
+        <childnode refid="866" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="874" relation="usage">
+          <edgelabel>ignoreCollision</edgelabel>
+        </childnode>
+        <childnode refid="872" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="868" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="865">
+        <label>Collision</label>
+        <link refid="structCollision"/>
+        <childnode refid="866" relation="usage">
+          <edgelabel>hitbox</edgelabel>
+          <edgelabel>centre</edgelabel>
+        </childnode>
+        <childnode refid="868" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="873">
+        <label>unsigned</label>
+      </node>
+      <node id="874">
+        <label>bool</label>
+      </node>
+      <node id="863">
+        <label>Bodypart</label>
+        <link refid="classBodypart"/>
+        <childnode refid="864" relation="public-inheritance">
+        </childnode>
+        <childnode refid="872" relation="usage">
+          <edgelabel>identity</edgelabel>
+        </childnode>
+      </node>
+      <node id="866">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="867" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" line="59" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h" bodystart="58" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classBodypart_1a3eb671588904ac51120d9db3be131273" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>Bodypart</name></member>
+      <member refid="classBodypart_1ae5b847cddaec74ff46fdbd5fc3b243c1" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>Bodypart</name></member>
+      <member refid="classObject_1ab0f9523e4bdbfa635a079c1cc01f9b8a" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>checkCollision</name></member>
+      <member refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>collision</name></member>
+      <member refid="classObject_1a651e2aff564de5a4766863b332f14d33" prot="public" virt="virtual"><scope>Bodypart</scope><name>getHealth</name></member>
+      <member refid="classBodypart_1ab2bf58734c5ae68a1d21c59cf28785cb" prot="public" virt="virtual"><scope>Bodypart</scope><name>getIdentity</name></member>
+      <member refid="classObject_1abd775688f7362fe926da1aea7f88e27c" prot="public" virt="virtual"><scope>Bodypart</scope><name>getPaid</name></member>
+      <member refid="classObject_1a03411698caca81d9ee219b3576fa984f" prot="public" virt="virtual"><scope>Bodypart</scope><name>getStorePos</name></member>
+      <member refid="classObject_1a44a83bdec0ad56d911951cfd780a1d85" prot="public" virt="virtual"><scope>Bodypart</scope><name>getValue</name></member>
+      <member refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>identity</name></member>
+      <member refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>ignoreCollision</name></member>
+      <member refid="classObject_1a110cdaa911a12009dd5e37418fe3d35a" prot="public" virt="virtual"><scope>Bodypart</scope><name>Knockback</name></member>
+      <member refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>mesh</name></member>
+      <member refid="classObject_1a40860402e64d8008fb42329df7097cdb" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>Object</name></member>
+      <member refid="classObject_1ab7afdfb51bccbc4cb09512454ae6c93a" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>Object</name></member>
+      <member refid="classObject_1a9ad82aaeaab22b9776810538e7c6a8f1" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>Object</name></member>
+      <member refid="classObject_1a1ff0e543bef7628740801ae660d91a7e" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>Object</name></member>
+      <member refid="classObject_1aab1e47237b6bf2df563b497426f1a8cc" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>Object</name></member>
+      <member refid="classObject_1aa8a3c32d7bdaf9d06dd9a65749ee0110" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>Object</name></member>
+      <member refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>orientation</name></member>
+      <member refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>position</name></member>
+      <member refid="classObject_1a108db6d26b912a01de560fd940f90d71" prot="public" virt="virtual"><scope>Bodypart</scope><name>setPaid</name></member>
+      <member refid="classObject_1a943828436a63520b4059b749df5564c3" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>size</name></member>
+      <member refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>type</name></member>
+      <member refid="classObject_1a495d3c66ce43e267c5aac0066576dfb2" prot="public" virt="virtual"><scope>Bodypart</scope><name>Update</name></member>
+      <member refid="classObject_1ab7aa5400e08a3c023140d614d1448458" prot="public" virt="virtual"><scope>Bodypart</scope><name>Update</name></member>
+      <member refid="classBodypart_1a51117326b7bdd597eb0e011ff479b02c" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>~Bodypart</name></member>
+      <member refid="classObject_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" virt="non-virtual"><scope>Bodypart</scope><name>~Object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="classSecurity" kind="class" prot="public">
+    <compoundname>Security</compoundname>
+    <includes refid="Camera3_8h" local="no">Camera3.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSecurity_1a62a8472bfe0f2d1e682c7c493d1681c6" prot="public" static="no" mutable="no">
+        <type><ref refid="classObject" kindref="compound">Object</ref></type>
+        <definition>Object Security::TV[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>TV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" line="54" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" compoundref="PROJECTScene_8cpp" startline="518" endline="966">PROJECTScene::JessicaInit</referencedby>
+        <referencedby refid="classSecurity_1ae7a09d00c186c6587e9fda320a885c28" compoundref="Camera3_8h" startline="41" endline="51">Security</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSecurity_1a2268ac67b53ffa02cd63e78a7b271727" prot="public" static="no" mutable="no">
+        <type><ref refid="classCamera3" kindref="compound">Camera3</ref></type>
+        <definition>Camera3 Security::CCTVs[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>CCTVs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" line="55" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <referencedby refid="classSecurity_1ae7a09d00c186c6587e9fda320a885c28" compoundref="Camera3_8h" startline="41" endline="51">Security</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSecurity_1adf21beb426ecd12c71c75aa8bd02e39f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Security::Security</definition>
+        <argsstring>()</argsstring>
+        <name>Security</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" line="40" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classSecurity_1ae7a09d00c186c6587e9fda320a885c28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Security::Security</definition>
+        <argsstring>(Object o1, Object o2)</argsstring>
+        <name>Security</name>
+        <param>
+          <type><ref refid="classObject" kindref="compound">Object</ref></type>
+          <declname>o1</declname>
+        </param>
+        <param>
+          <type><ref refid="classObject" kindref="compound">Object</ref></type>
+          <declname>o2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" line="41" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" bodystart="41" bodyend="51"/>
+        <references refid="classSecurity_1a2268ac67b53ffa02cd63e78a7b271727" compoundref="Camera3_8h" startline="55">CCTVs</references>
+        <references refid="classCamera3_1a1cb8d466abcd4d1ad4567846dcca1ce5" compoundref="Camera3_8cpp" startline="18" endline="29">Camera3::Init</references>
+        <references refid="classSecurity_1a62a8472bfe0f2d1e682c7c493d1681c6" compoundref="Camera3_8h" startline="52">TV</references>
+        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="34">Object::type</references>
+      </memberdef>
+      <memberdef kind="function" id="classSecurity_1a9c54a706f244f9a3d769615225654696" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Security::~Security</definition>
+        <argsstring>()</argsstring>
+        <name>~Security</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" line="52" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1501">
+        <label>Component</label>
+        <link refid="structComponent"/>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>g</edgelabel>
+          <edgelabel>r</edgelabel>
+          <edgelabel>b</edgelabel>
+        </childnode>
+      </node>
+      <node id="1499">
+        <label>Mesh</label>
+        <link refid="classMesh"/>
+        <childnode refid="1500" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+        <childnode refid="1502" relation="usage">
+          <edgelabel>mode</edgelabel>
+        </childnode>
+        <childnode refid="1503" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="1504" relation="usage">
+          <edgelabel>textureID</edgelabel>
+          <edgelabel>indexBuffer</edgelabel>
+          <edgelabel>indexSize</edgelabel>
+          <edgelabel>vertexBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1502">
+        <label>DRAW_MODE</label>
+      </node>
+      <node id="1493">
+        <label>Camera</label>
+        <link refid="classCamera"/>
+        <childnode refid="1494" relation="usage">
+          <edgelabel>target</edgelabel>
+          <edgelabel>position</edgelabel>
+          <edgelabel>up</edgelabel>
+        </childnode>
+      </node>
+      <node id="1503">
+        <label>string</label>
+      </node>
+      <node id="1500">
+        <label>Material</label>
+        <link refid="structMaterial"/>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>kShininess</edgelabel>
+        </childnode>
+        <childnode refid="1501" relation="usage">
+          <edgelabel>kDiffuse</edgelabel>
+          <edgelabel>kAmbient</edgelabel>
+          <edgelabel>kSpecular</edgelabel>
+        </childnode>
+      </node>
+      <node id="1495">
+        <label>float</label>
+      </node>
+      <node id="1497">
+        <label>Object</label>
+        <link refid="classObject"/>
+        <childnode refid="1498" relation="usage">
+          <edgelabel>collision</edgelabel>
+        </childnode>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>size</edgelabel>
+          <edgelabel>orientation</edgelabel>
+        </childnode>
+        <childnode refid="1494" relation="usage">
+          <edgelabel>position</edgelabel>
+        </childnode>
+        <childnode refid="1505" relation="usage">
+          <edgelabel>ignoreCollision</edgelabel>
+        </childnode>
+        <childnode refid="1503" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="1499" relation="usage">
+          <edgelabel>mesh</edgelabel>
+        </childnode>
+      </node>
+      <node id="1492">
+        <label>Camera3</label>
+        <link refid="classCamera3"/>
+        <childnode refid="1493" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>fov</edgelabel>
+          <edgelabel>defaultLook</edgelabel>
+          <edgelabel>defaultOrientation</edgelabel>
+          <edgelabel>orientation</edgelabel>
+          <edgelabel>look</edgelabel>
+        </childnode>
+        <childnode refid="1496" relation="usage">
+          <edgelabel>lookAt</edgelabel>
+        </childnode>
+        <childnode refid="1494" relation="usage">
+          <edgelabel>defaultTarget</edgelabel>
+          <edgelabel>defaultPosition</edgelabel>
+          <edgelabel>defaultUp</edgelabel>
+        </childnode>
+      </node>
+      <node id="1496">
+        <label>int</label>
+      </node>
+      <node id="1498">
+        <label>Collision</label>
+        <link refid="structCollision"/>
+        <childnode refid="1494" relation="usage">
+          <edgelabel>hitbox</edgelabel>
+          <edgelabel>centre</edgelabel>
+        </childnode>
+        <childnode refid="1499" relation="usage">
+          <edgelabel>boundingBox</edgelabel>
+        </childnode>
+      </node>
+      <node id="1491">
+        <label>Security</label>
+        <link refid="classSecurity"/>
+        <childnode refid="1492" relation="usage">
+          <edgelabel>CCTVs</edgelabel>
+        </childnode>
+        <childnode refid="1497" relation="usage">
+          <edgelabel>TV</edgelabel>
+        </childnode>
+      </node>
+      <node id="1504">
+        <label>unsigned</label>
+      </node>
+      <node id="1505">
+        <label>bool</label>
+      </node>
+      <node id="1494">
+        <label>Vector3</label>
+        <link refid="structVector3"/>
+        <childnode refid="1495" relation="usage">
+          <edgelabel>x</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>z</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" line="38" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Camera3.h" bodystart="37" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classSecurity_1a2268ac67b53ffa02cd63e78a7b271727" prot="public" virt="non-virtual"><scope>Security</scope><name>CCTVs</name></member>
+      <member refid="classSecurity_1adf21beb426ecd12c71c75aa8bd02e39f" prot="public" virt="non-virtual"><scope>Security</scope><name>Security</name></member>
+      <member refid="classSecurity_1ae7a09d00c186c6587e9fda320a885c28" prot="public" virt="non-virtual"><scope>Security</scope><name>Security</name></member>
+      <member refid="classSecurity_1a62a8472bfe0f2d1e682c7c493d1681c6" prot="public" virt="non-virtual"><scope>Security</scope><name>TV</name></member>
+      <member refid="classSecurity_1a9c54a706f244f9a3d769615225654696" prot="public" virt="non-virtual"><scope>Security</scope><name>~Security</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
