@@ -50,6 +50,8 @@ public:
 	virtual string GenerateText(Inventory inventory) {return "";};
 };
 
+
+
 class Quest : public TextBox
 {
 public:

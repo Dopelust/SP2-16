@@ -234,7 +234,7 @@ public:
 		orientation = -90;
 		Init();	
 		InitDialogue("Filestream//customer.txt");
-		//InitClues("Filestream//Quests//Hints//customer.txt");
+		InitClues("Filestream//Quests//Hints//customer.txt");
 	};
 	Customer(vector<NPCTarget> t, string name, unsigned tID, float d)
 	{
@@ -259,7 +259,7 @@ public:
 			bodyParts[i].identity = identity;
 		}
 		InitDialogue("Filestream//customer.txt");
-		//InitClues("Filestream//Quests//Hints//customer.txt");
+		InitClues("Filestream//Quests//Hints//customer.txt");
 	}
 	~Customer() {};
 
