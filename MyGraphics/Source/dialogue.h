@@ -120,7 +120,7 @@ public:
 	{
 		string t;
 
-		for (int i = 0; i < text.size(); i++)
+		for (unsigned int i = 0; i < text.size(); i++)
 		{
 			if (text[i] != 'X')
 				t += text[i];
@@ -146,7 +146,7 @@ public:
 	bool Criteria(vector<Object *>object) 
 	{ 
 		int count = 0;
-		for(int i = 0; i < object.size(); i++)
+		for(unsigned int i = 0; i < object.size(); i++)
 		{
 			if( object[i]->mesh != NULL && object[i]->mesh->name == "Crate")
 			{

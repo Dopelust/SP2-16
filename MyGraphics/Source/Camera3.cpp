@@ -30,7 +30,7 @@ void Camera3::Init(const Vector3& pos, const float& hO, const float& vO)
 
 void Camera3::Zoom(double dt)
 {
-	fov -= dt * 250 * Application::mouseScroll;
+	fov -=float( dt * 250 * Application::mouseScroll );
 
 	if (fov < 10.f)
 		fov = 10.f;
