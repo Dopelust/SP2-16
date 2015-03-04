@@ -1291,6 +1291,7 @@ void PROJECTScene::Update(double dt)
 			{
 				delete object[camera->lookAt];
 				object.erase(object.begin()+camera->lookAt);
+				engine->play2D("Media/vent_break.mp3");
 			}
 		}
 
