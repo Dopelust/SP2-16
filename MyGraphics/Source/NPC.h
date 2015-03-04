@@ -51,7 +51,7 @@ public:
 
 		Init();
 	};
-	~NPC(void) {};
+	virtual ~NPC(void) {};
 
 	Vector3 initialPos;
 	Vector3 previousPos;
