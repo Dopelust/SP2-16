@@ -163,4 +163,22 @@ public:
 
 	}
 };
+
+class DetectiveQuest : public Quest
+{
+public:
+	DetectiveQuest() {};
+	DetectiveQuest(string t) 
+	{
+		text = t;
+		type = "DQ";
+
+		Accept = Button2D("Found", Vector3(7,-8.3f,0));
+		Decline = Button2D("Not Found", Vector3(11,-8.3f,0));
+	}
+
+	~DetectiveQuest() {};
+
+
+};
 #endif
