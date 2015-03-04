@@ -331,42 +331,42 @@ void PROJECTScene::JeremiahInit()
 
 	hitBox = Vector3(280.0, 1000.f, 75.f); 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), hitBox.x, hitBox.z, 10); tempMesh->textureID = LoadTGA("Image//City//grass.tga");
-	object.push_back( new Object(Vector3(0,0,-175), NULL, NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(0,0,-175), tempMesh, 0) );
 
 	hitBox = Vector3(160, 1000.f, 25.f); 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), hitBox.x, hitBox.z, 10); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	object.push_back( new Object(Vector3(0,0,-100), NULL, NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(0,0,-100), tempMesh, 0) );
 
 	hitBox = Vector3(30.f, 1000.f, 160); 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), hitBox.x, hitBox.z, 10); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	object.push_back( new Object(Vector3(-185,0,-100), Vector3(0,-500.f,0), NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(-185,0,-100), tempMesh, 0) );
 	tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	object.push_back( new Object(Vector3(185,0,-100), Vector3(0,-500.f,0), NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(185,0,-100),  tempMesh, 0) );
 	tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	object.push_back( new Object(Vector3(-185,0,-180), Vector3(0,-500.f,0), NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(-185,0,-180), tempMesh, 0) );
 	tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	object.push_back( new Object(Vector3(185,0,-180), Vector3(0,-500.f,0), NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(185,0,-180), tempMesh, 0) );
 
 	hitBox = Vector3(90, 1000.f, 25.f); 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), hitBox.x, hitBox.z, 10); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	object.push_back( new Object(Vector3(-125,0,-100), Vector3(0,-500.f,0), NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(-125,0,-100), tempMesh, 0) );
 	tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	object.push_back( new Object(Vector3(125,0,-100), Vector3(0,-500.f,0), NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(125,0,-100), tempMesh, 0) );
 	
 	hitBox = Vector3(160, 1000.f, 25.f); 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), hitBox.x, hitBox.z, 10);
 	tempMesh->textureID = LoadTGA("Image//BuildingTGA//floor.tga");
-	object.push_back( new Object(Vector3(0,0,-125), NULL, NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(0,0,-125), tempMesh, 0) );
 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 30, 95, 10); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
-	object.push_back( new Object(Vector3(-155,0,-185), NULL, NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(-155,0,-185), tempMesh, 0) );
 	tempMesh->textureID = LoadTGA("Image//BuildingTGA//floor.tga");
-	object.push_back( new Object(Vector3(155,0,-185), NULL, NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(155,0,-185), tempMesh, 0) );
 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 90, 25, 10); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Road&Pave.tga");
 	tempMesh->textureID = LoadTGA("Image//BuildingTGA//floor.tga");
-	object.push_back( new Object(Vector3(-125,0,-125), NULL, NULL, tempMesh, NULL) );
-	object.push_back( new Object(Vector3(125,0,-125), NULL, NULL, tempMesh, NULL) );
+	decoration.push_back( new Aesthetics(Vector3(-125,0,-125), tempMesh, 0) );
+	decoration.push_back( new Aesthetics(Vector3(125,0,-125), tempMesh, 0) );
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Cash Table~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	
 	for( float x = 70; x > 20; x-=15)
@@ -378,7 +378,7 @@ void PROJECTScene::JeremiahInit()
 		object.push_back( new Object(Vector3(x+3,0,-58.5f),Vector3(-1.5f,hitBox.y/2,0), hitBox, cube) );
 
 		tempMesh = MeshBuilder::GenerateOBJ("CashierTable", "OBJ//LowPoly//cashregister.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//cashregister.tga");
-		object.push_back( new Object(Vector3(x+1.5f,3.5f,-58.5f), Vector3(0,0,0), NULL, tempMesh, NULL, 1, -90, true) );
+		decoration.push_back( new Aesthetics(Vector3(x+1.5f,3.5f,-58.5f), tempMesh, -90) );
 	}
 	
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2nd Floor~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
@@ -397,7 +397,7 @@ void PROJECTScene::JeremiahInit()
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Crime Scene~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//ChalkOutline.tga");
-	object.push_back( new Object(Vector3(63,0.09f,27), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 54, true) );
+	decoration.push_back( new Aesthetics(Vector3(63,0.09f,27), tempMesh, 54) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Railing~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
@@ -482,12 +482,11 @@ void PROJECTScene::JeremiahInit()
 
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	object.push_back( new Object(Vector3(-79.95f,31.5f,-81.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(-79.95f,31.5f,-81.f), tempMesh, 90) );
 	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	object.push_back( new Object(Vector3(79.95f,31.5f,-81.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
-
+	decoration.push_back( new Aesthetics(Vector3(79.95f,31.5f,-81.f), tempMesh, 90) );
 	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	object.push_back( new Object(Vector3(79.95f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(79.95f,32.f,25.f), tempMesh, 90) );
 	
 	hitBox = Vector3(2,7.5f,7.5f);
 	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),7.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
@@ -503,7 +502,7 @@ void PROJECTScene::JeremiahInit()
 
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateQuad("Marked Circle", Color(1,1,1),8.5f,8.5f,1); tempMesh->textureID = LoadTGA("Image//collection.tga");
-	object.push_back( new Object(Vector3(-30.f,27.1f,15.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 0, true) );
+	decoration.push_back( new Aesthetics(Vector3(-30.f,27.1f,15.f), tempMesh, 0) );
 
 }
 void PROJECTScene::JessicaInit()
@@ -721,45 +720,6 @@ void PROJECTScene::JessicaInit()
 	decoration.push_back( new Aesthetics(Vector3(-79.5,5.5,-36), tempMesh, 90));
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
-<<<<<<< Updated upstream
-	object.push_back( new Object(Vector3(-79.55f,5.5,-25), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
-	object.push_back( new Object(Vector3(-79.55f,15,-60), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
-	object.push_back( new Object(Vector3(-79.55f,15,15), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice2.tga");
-	object.push_back( new Object(Vector3(-79.54f,6.5,-15), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//Poster//poster_icecream.tga");
-	object.push_back( new Object(Vector3(-79.55f,5,-8), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//Golden.tga");
-	object.push_back( new Object(Vector3(-42,6,41.47f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//Golden.tga");
-	object.push_back( new Object(Vector3(-20,6,41.47f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-	
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//rocher.tga");
-	object.push_back( new Object(Vector3(-30,9,41.47f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-	
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//pizza.tga");
-	object.push_back( new Object(Vector3(35,13,41.47f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-	
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 19, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//pepperoni.tga");
-	object.push_back( new Object(Vector3(49,12,41.46f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//soup.tga");
-	object.push_back( new Object(Vector3(19,15,41.47f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//soup.tga");
-	object.push_back( new Object(Vector3(71,15,41.47f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 8, 1); tempMesh->textureID = LoadTGA("Image//Poster//new_soup.tga");
-	object.push_back( new Object(Vector3(64,5,41.465f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-=======
 	decoration.push_back( new Aesthetics(Vector3(-79.55,5.5,-25), tempMesh,  90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
@@ -769,69 +729,52 @@ void PROJECTScene::JessicaInit()
 	decoration.push_back( new Aesthetics(Vector3(-79.55,15,15), tempMesh, 90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice2.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.54,6.5,-15), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(-79.54,6.5,-15), tempMesh, 90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//Poster//poster_icecream.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.55,5,-8), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(-79.55,5,-8), tempMesh, 90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//Golden.tga");
-	decoration.push_back( new Aesthetics(Vector3(-42,6,41.47), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(-42,6,41.47), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//Golden.tga");
-	decoration.push_back( new Aesthetics(Vector3(-20,6,41.47), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(-20,6,41.47), tempMesh, 180) );
 	
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//rocher.tga");
-	decoration.push_back( new Aesthetics(Vector3(-30,9,41.47), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(-30,9,41.47), tempMesh, 180) );
 	
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//pizza.tga");
-	decoration.push_back( new Aesthetics(Vector3(35,13,41.47), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(35,13,41.47), tempMesh, 180) );
 	
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 19, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//pepperoni.tga");
-	decoration.push_back( new Aesthetics(Vector3(49,12,41.46), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(49,12,41.46), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//soup.tga");
-	decoration.push_back( new Aesthetics(Vector3(19,15,41.47), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(19,15,41.47), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//soup.tga");
-	decoration.push_back( new Aesthetics(Vector3(71,15,41.47), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(71,15,41.47), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 8, 1); tempMesh->textureID = LoadTGA("Image//Poster//new_soup.tga");
-	decoration.push_back( new Aesthetics(Vector3(64,5,41.465), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
->>>>>>> Stashed changes
+	decoration.push_back( new Aesthetics(Vector3(64,5,41.465), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 29, 20, 1); tempMesh->textureID = LoadTGA("Image//Poster//member.tga");
-	decoration.push_back( new Aesthetics(Vector3(48,13,-86), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 ,0, true) );
+	decoration.push_back( new Aesthetics(Vector3(48,13,-86), tempMesh, 0) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//shop-theft3.tga");
-<<<<<<< Updated upstream
-	object.push_back( new Object(Vector3(28,13,-88.6f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(28,13,-88.6), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//shop-theft3.tga");
-	object.push_back( new Object(Vector3(-28,13,-88.6f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(-28,13,-88.6), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 8, 1); tempMesh->textureID = LoadTGA("Image//Poster//Teaser.tga");
-	object.push_back( new Object(Vector3(0,15,41.47f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(0,15,41.47), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 20, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//milo.tga");
-	object.push_back( new Object(Vector3(-25,38,41.47f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
+	decoration.push_back( new Aesthetics(Vector3(-25,38,41.47), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 20, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//veg.tga");
-	object.push_back( new Object(Vector3(25,38,41.47f), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-=======
-	decoration.push_back( new Aesthetics(Vector3(28,13,-88.6), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//shop-theft3.tga");
-	decoration.push_back( new Aesthetics(Vector3(-28,13,-88.6), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 8, 1); tempMesh->textureID = LoadTGA("Image//Poster//Teaser.tga");
-	decoration.push_back( new Aesthetics(Vector3(0,15,41.47), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 20, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//milo.tga");
-	decoration.push_back( new Aesthetics(Vector3(-25,38,41.47), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 20, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//veg.tga");
-	decoration.push_back( new Aesthetics(Vector3(25,38,41.47), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
->>>>>>> Stashed changes
+	decoration.push_back( new Aesthetics(Vector3(25,38,41.47), tempMesh, 180) );
 
 	//~~~~~~MONEY~~~~~~~
 
@@ -929,11 +872,11 @@ void PROJECTScene::JessicaInit()
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Security Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
-	object.push_back( new Object(Vector3(-79.95f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(-79.95f,32.f,25.f), tempMesh, 90) );
 
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
-	object.push_back( new Object(Vector3(-82.01f,32.f,25.f), Vector3(0,0,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(-82.01f,32.f,25.f), tempMesh, 90) );
 
 	//~~~~SECURITY ITEMS~~~~~
 
@@ -956,27 +899,27 @@ void PROJECTScene::JessicaInit()
 	
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city1.tga");
-	object.push_back( new Object(Vector3(141,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-	object.push_back( new Object(Vector3(81,35,-28), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(141,35,-88), tempMesh, 180) );
+	decoration.push_back( new Aesthetics(Vector3(81,35,-28), tempMesh, 90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city2.tga");
-	object.push_back( new Object(Vector3(-141,35,-88), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 180, true) );
-	object.push_back( new Object(Vector3(-81,35,-28), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , -90, true) );
+	decoration.push_back( new Aesthetics(Vector3(-141,35,-88), tempMesh, 180) );
+	decoration.push_back( new Aesthetics(Vector3(-81,35,-28), tempMesh, -90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
-	object.push_back( new Object(Vector3(199,40,-158), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
-	object.push_back( new Object(Vector3(199,40,-298), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(199,40,-158), tempMesh, 90) );
+	decoration.push_back( new Aesthetics(Vector3(199,40,-298), tempMesh, 90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
-	object.push_back( new Object(Vector3(-199,40,-158), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , -90, true) );
-	object.push_back( new Object(Vector3(-199,40,-298), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 90, true) );
+	decoration.push_back( new Aesthetics(Vector3(-199,40,-158), tempMesh, -90) );
+	decoration.push_back( new Aesthetics(Vector3(-199,40,-298), tempMesh, 90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 80, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city3.tga");
-	object.push_back( new Object(Vector3(0,40,-212), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 0, true) );
+	decoration.push_back( new Aesthetics(Vector3(0,40,-212), tempMesh, 0) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 100, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city3.tga");
-	object.push_back( new Object(Vector3(-90,40,-212), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 0, true) );
-	object.push_back( new Object(Vector3(90,40,-212), Vector3(0,-0.0001f,0), hitBox, tempMesh, NULL, 1 , 0, true) );
+	decoration.push_back( new Aesthetics(Vector3(-90,40,-212), tempMesh, 0) );
+	decoration.push_back( new Aesthetics(Vector3(90,40,-212), tempMesh, 0) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("Tree","OBJ//trees.obj"); tempMesh->textureID = LoadTGA("Image//tree.tga");
 	hitBox = Vector3(5,20,5); cube = MeshBuilder::GenerateCube("Plant Hitbox",Color(1,1,1),hitBox.x,hitBox.y,hitBox.z,0);
