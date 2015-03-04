@@ -1,6 +1,8 @@
 #ifndef SCENE_H
 #define SCENE_H
 
+#include <string>
+
 class Scene
 {
 public:
@@ -12,6 +14,6 @@ public:
 	virtual void Render() = 0;
 	virtual void Exit() = 0;
 
-	bool pause;
+	std::string type;
 };
 #endif

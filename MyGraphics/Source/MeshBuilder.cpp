@@ -189,25 +189,25 @@ Mesh* MeshBuilder::GenerateXYQuad(const std::string &meshName, Color color, floa
 
 	v.pos.Set(-0.5f * lengthX, 0.5f * lengthY, 0.0f);
 	v.color = color;
-	v.normal.Set(0,1,0);
+	v.normal.Set(0,0,1);
 	v.texCoord.Set(0, 1*repeat);
 	vertex_buffer_data.push_back(v);
 
 	v.pos.Set(0.5f * lengthX, 0.5f * lengthY, 0.0f);
 	v.color = color;
-	v.normal.Set(0,1,0);
+	v.normal.Set(0,0,1);
 	v.texCoord.Set(1*repeat, 1*repeat);
 	vertex_buffer_data.push_back(v);
 
 	v.pos.Set(-0.5f * lengthX, -0.5f * lengthY, 0.0f);
 	v.color = color;
-	v.normal.Set(0,1,0);
+	v.normal.Set(0,0,1);
 	v.texCoord.Set(0, 0);
 	vertex_buffer_data.push_back(v);
 
 	v.pos.Set(0.5f * lengthX, -0.5f * lengthY, 0.0f);
 	v.color = color;
-	v.normal.Set(0,1,0);
+	v.normal.Set(0,0,1);
 	v.texCoord.Set(1*repeat, 0);
 	vertex_buffer_data.push_back(v);
 

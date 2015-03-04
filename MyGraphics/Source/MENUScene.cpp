@@ -15,14 +15,13 @@ float MENUScene::inputDelay = 0.f;
 
 MENUScene::MENUScene()
 {
+	type = "MENUScene";
 }
 MENUScene::~MENUScene()
 {
 }
 void MENUScene::InitJunk()
 {
-	pause = false;
-
 	m_programID = LoadShaders( "Shader//Texture.vertexshader", "Shader//MultiLight.fragmentshader" );
 	m_parameters[U_MVP] = glGetUniformLocation(m_programID, "MVP");
 	m_parameters[U_MODELVIEW] = glGetUniformLocation(m_programID, "MV");
@@ -92,6 +91,9 @@ void MENUScene::InitJunk()
 	meshList[GEO_TOP]->textureID = LoadTGA("Image//Skybox//topmc.tga");
 }
 
+bool main = true;
+float startupDelay = 0.f;
+
 void MENUScene::Init()
 {
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
@@ -120,11 +122,10 @@ void MENUScene::Init()
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//font.tga");
 
-	meshList[GEO_TEXTBOX] = MeshBuilder::GenerateXYQuad("Text Box", Color(1,1,1), 32, 8.5f, 1);
-	meshList[GEO_TEXTBOX]->textureID = LoadTGA("Image//textbox.tga");
+	meshList[GEO_TEXTBOX] = MeshBuilder::GenerateXYQuad("Text Box", Color(0,0,0), 8, 1, 1);
 
-	meshList[GEO_QUAD] = MeshBuilder::GenerateXYQuad("Overlay", Color(1,1,1), 8, 1.5f, 1);
-	meshList[GEO_QUAD]->textureID = LoadTGA("Image//UI//ui_overlay.tga");
+	meshList[GEO_QUAD] = MeshBuilder::GenerateXYQuad("Controls", Color(1,1,1), 16.5f, 16.5f, 1);
+	meshList[GEO_QUAD]->textureID = LoadTGA("Image//UI//controls.tga");
 
 	meshList[GEO_HEART] = MeshBuilder::GenerateXYQuad("Heart", Color(1,1,1), 1, 1, 1);
 	meshList[GEO_HEART]->textureID = LoadTGA("Image//UI//heart.tga");
@@ -135,11 +136,8 @@ void MENUScene::Init()
 	meshList[GEO_JUMP] = MeshBuilder::GenerateXYQuad("Jump", Color(1,1,1), 1, 1, 1);
 	meshList[GEO_JUMP]->textureID = LoadTGA("Image//UI//jump.tga");
 
-	meshList[GEO_CCTV] = MeshBuilder::GenerateXYQuad("CCTV Overlay", Color(1,1,1), 4, 3, 1);
-	meshList[GEO_CCTV]->textureID = LoadTGA("Image//UI//cctv.tga");
-
-	meshList[GEO_CCTV_CORNER] = MeshBuilder::GenerateXYQuad("CCTV Overlay", Color(1,1,1), 4, 3, 1);
-	meshList[GEO_CCTV_CORNER]->textureID = LoadTGA("Image//UI//cctv_corner.tga");
+	meshList[GEO_OVERLAY] = MeshBuilder::GenerateXYQuad("Overlay", Color(1,1,1), 32, 18, 1);
+	meshList[GEO_OVERLAY]->textureID = LoadTGA("Image//UI//overlay.tga");
 
 	meshList[GEO_LINE] = MeshBuilder::GenerateLine("crosshair", Color(0,1,0), 0.4f);
 
@@ -178,54 +176,132 @@ void MENUScene::Init()
 	buttons[0].name = "PLAY";
 
 	buttons[1].position = Vector3(0,0,0);
-	buttons[1].name = "SECRET";
+	buttons[1].name = "CHEATS";
 
 	buttons[2].position = Vector3(0,-2.5f,0);
-	buttons[2].name = "QUIT";
+	buttons[2].name = "CONTROLS";
+
+	buttons[3].position = Vector3(0,-5.f,0);
+	buttons[3].name = "QUIT";
+
+	main = true;
+	startupDelay = 1.f;
 }
 
 extern float selectDelay;
 extern float pauseDelay;
 extern ISoundEngine * engine;
 
-bool play;
-bool quit;
+bool menu = true;
+bool play = false;
+bool quit = false;
+
+bool cheats = false;
+string cheat;
+bool controls = false;
+
+char lastKey;
 
 void MENUScene::Update(double dt)
 {
 	if (!engine->isCurrentlyPlaying("Media/bgm.mp3"))
 		engine->play2D("Media/bgm.mp3");
 
-	if (selectDelay == 0)
+	if (main && startupDelay == 0)
 	{
-		if (Application::IsKeyPressed(VK_UP))
+		if (selectDelay == 0)
 		{
-			if (select > 0)
+			if (Application::IsKeyPressed(VK_UP))
 			{
-				selectDelay = 0.16f;
-				select--;
+				if (select > 0)
+				{
+					selectDelay = 0.16f;
+					select--;
+					engine->play2D("Media/select.mp3");
+				}
+			}
+			else if (Application::IsKeyPressed(VK_DOWN))
+			{
+				if (select < 3)
+				{
+					selectDelay = 0.16f;
+					select++;
 
-				engine->play2D("Media/select.mp3");
+					engine->play2D("Media/select.mp3");
+				}
 			}
 		}
-		else if (Application::IsKeyPressed(VK_DOWN))
+	
+		if (Application::IsKeyPressed(VK_RETURN) || Application::IsKeyPressed(VK_SPACE) || Application::IsKeyPressed('E'))
 		{
-			if (select < 2)
+			main = false;
+
+			if (select == 0)
+				play = true;
+			else if (select == 1)
+				cheats = true;
+			else if (select == 2)
+				controls = true;
+			else if (select == 3)
+				quit = true;
+		}
+
+	}
+
+	if (cheats)
+	{
+		if (cheat.size() < 10)
+		{
+			for (int i = 65; i < 91; i++)
 			{
-				selectDelay = 0.16f;
-				select++;
-				engine->play2D("Media/select.mp3");
+				if (i == lastKey && inputDelay != 0)
+					continue;
+
+				if (Application::IsKeyPressed(i) && inputDelay < 0.06f)
+				{
+					lastKey = i;
+					cheat += i;
+					inputDelay = 0.12f;
+					break;
+				}
 			}
+		}
+
+		if (Application::IsKeyPressed(VK_BACK) && inputDelay == 0)
+		{
+			if (cheat.size() > 0)
+			{
+				cheat.pop_back();
+				inputDelay = 0.12;
+			}
+			else
+			{
+				cheats = false;
+				cheat = "";
+				main = true;
+			}
+		}
+
+		if (Application::IsKeyPressed(VK_RETURN))
+		{
+			
 		}
 	}
 
-	if (Application::IsKeyPressed(VK_RETURN) || Application::IsKeyPressed(VK_SPACE) || Application::IsKeyPressed('E'))
+	if (controls)
 	{
-		if (select == 0)
-			play = true;
-		else if (select == 2)
-			quit = true;
+		if (Application::IsKeyPressed(VK_BACK))
+		{
+			controls = false;
+			main = true;
+		}
+
+		if (Application::IsKeyPressed(VK_RETURN))
+		{
+			
+		}
 	}
+
 	camera->orientation -=float( 5 * dt);
 	camera->Update(dt);
 
@@ -239,6 +315,17 @@ void MENUScene::Update(double dt)
 	else
 		inputDelay = 0;
 
+	if (startupDelay > 0)
+		startupDelay -= float(dt);
+	else
+		startupDelay = 0;
+
+	for (int i = 65; i < 91; i++)
+	{
+		Application::IsKeyPressed(i);
+	}
+	Application::IsKeyPressed(VK_UP);
+	Application::IsKeyPressed(VK_DOWN);
 	Application::IsKeyPressed(VK_SPACE);
 	Application::IsKeyPressed(VK_BACK);
 	Application::IsKeyPressed('1');
@@ -270,14 +357,6 @@ void MENUScene::RenderScene()
 			Position lightPosition_cameraspace = viewStack.Top() * light[i].position;
 			glUniform3fv(m_parameters[U_LIGHT0_POSITION + i*11], 1, &lightPosition_cameraspace.x);
 		}
-	}
-
-	if(Application::IsKeyPressed('T'))
-	{
-		modelStack.PushMatrix();
-		modelStack.Translate(camera->target);
-		RenderMesh(meshList[GEO_AXES], false);
-		modelStack.PopMatrix();
 	}
 
 	modelStack.PushMatrix();
@@ -312,29 +391,87 @@ void MENUScene::Render()
 	projection.SetToOrtho(-16, 16, -9, 9, -20, 20);
 	projectionStack.LoadMatrix(projection);
 
-	for (int i = 0; i < 3; i++)
+	if (main)
 	{
-		modelStack.PushMatrix();
-		modelStack.Translate(buttons[i].position);
-		float textLength = getTextWidth(buttons[i].name);
-		if (select == i)
+		for (int i = 0; i < 4; i++)
 		{
-			if (i == 1)
-				modelStack.Translate(-textLength * 1.8f, 0, 0);
+			modelStack.PushMatrix();
+			modelStack.Translate(buttons[i].position);
+			float textLength = getTextWidth(buttons[i].name);
+			if (select == i)
+			{
+				if (i == 1 || i == 2 || i == 3)
+					modelStack.Translate(-textLength * 1.8f, 0, 0);
+				else
+					modelStack.Translate(-textLength * 1.65f, 0, 0);
+				modelStack.Scale(4.f);
+				RenderText(meshList[GEO_TEXT], buttons[i].name , Color(1, 1, 1));
+			}
 			else
-				modelStack.Translate(-textLength * 1.65f, 0, 0);
-			modelStack.Scale(4.f);
-			RenderText(meshList[GEO_TEXT], buttons[i].name , Color(1, 1, 1));
+			{
+				modelStack.Translate(-textLength, 0, 0);
+				modelStack.Scale(2.f);
+				RenderText(meshList[GEO_TEXT], buttons[i].name , Color(0.35f, 0.35f, 0.35f));
+			}
+			modelStack.PopMatrix();
+		}
+	}
+	else if (cheats)
+	{
+		RenderMesh(meshList[GEO_TEXTBOX], false);
+
+		modelStack.PushMatrix();
+		modelStack.Translate(0.25f, 1.5f, 0);
+		float textLength = getTextWidth("Enter cheat:");
+		modelStack.Translate(-textLength / 2, 0, 0);
+		RenderText(meshList[GEO_TEXT], "Enter cheat:" , Color(1, 1, 1));
+		modelStack.PopMatrix();
+
+		modelStack.PushMatrix();
+		modelStack.Translate(0.25f, 0, 0);
+		textLength = getTextWidth(cheat);
+		modelStack.Translate(-textLength / 2, 0, 0);
+		RenderText(meshList[GEO_TEXT], cheat , Color(1, 1, 1));
+		modelStack.PopMatrix();
+
+		if (cheat.empty())
+		{
+			modelStack.PushMatrix();
+			modelStack.Translate(0.25f, -2.f, 0);
+			float textLength = getTextWidth("Backspace to return");
+			modelStack.Scale(0.5f);
+			modelStack.Translate(-textLength / 2, 0, 0);
+			RenderText(meshList[GEO_TEXT], "Backspace to return" , Color(1, 1, 1));
+			modelStack.PopMatrix();
 		}
 		else
 		{
-			modelStack.Translate(-textLength, 0, 0);
-			modelStack.Scale(2.f);
-			RenderText(meshList[GEO_TEXT], buttons[i].name , Color(0.35f, 0.35f, 0.35f));
+			modelStack.PushMatrix();
+			modelStack.Translate(0.25f, -2.f, 0);
+			float textLength = getTextWidth("Backspace to clear");
+			modelStack.Scale(0.5f);
+			modelStack.Translate(-textLength / 2, 0, 0);
+			RenderText(meshList[GEO_TEXT], "Backspace to clear" , Color(1, 1, 1));
+			modelStack.PopMatrix();
 		}
+	}
+	else if (controls)
+	{
+		modelStack.PushMatrix();
+		RenderMesh(meshList[GEO_OVERLAY], false);
+		RenderMesh(meshList[GEO_QUAD], false);
 		modelStack.PopMatrix();
 	}
-
+	else
+	{
+		modelStack.PushMatrix();
+		modelStack.Scale(2.f);
+		modelStack.Translate(0.25f, 0, 0);
+		float textLength = getTextWidth("LOADING...");
+		modelStack.Translate(-textLength / 2, 0, 0);
+		RenderText(meshList[GEO_TEXT], "LOADING..." , Color(1, 1, 1));
+		modelStack.PopMatrix();
+	}
 	glEnable(GL_DEPTH_TEST);
 	//2D
 }

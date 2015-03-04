@@ -62,7 +62,7 @@ public:
 		orientation = o;
 	}; 
 	~Aesthetics() {};
-
+	
 	Vector3 position;
 	Mesh * mesh;
 	float orientation;
@@ -93,6 +93,8 @@ class PROJECTScene : public Scene
 		GEO_CCTV,
 		GEO_CCTV_CORNER,
 		GEO_TEXTBOX,
+		GEO_OVERLAY,
+		GEO_BOUND,
 		NUM_GEOMETRY,
 	};
 	enum UNIFORM_TYPE

@@ -30,8 +30,6 @@ static void error_callback(int error, const char* description)
 //Define the key input callback
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, GL_TRUE);
 }
 void scroll_callback(GLFWwindow* window, double x, double y)
 {
@@ -125,7 +123,8 @@ Position Application::getMousePos()
 	return Position((float)xpos, (float)ypos, 0);
 }
 
-float pauseDelay = 0.f;
+extern bool menu;
+extern bool main;
 extern bool play;
 extern bool quit;
 
@@ -134,56 +133,53 @@ void Application::Run()
 	glfwGetWindowSize(m_window, &width, &height);
 
 	Scene * menuScene = new MENUScene(); menuScene->Init();
-	//Scene * playScene = new PROJECTScene(); playScene->Init();
-
 	Scene *scene = menuScene;
 
 	m_timer.startTimer();    // Start timer to calculate how long it takes to render this frame
-	while (!glfwWindowShouldClose(m_window) && !IsKeyPressed(VK_ESCAPE))
+	while (true)
 	{
 		glfwSetScrollCallback(m_window,scroll_callback);
 
 		scene->Update(m_timer.getElapsedTime());
 		scene->Render();
 		
-		if(IsKeyPressed('P') && scene->pause == false && pauseDelay == 0)
-		{
-			scene->pause = true;
-			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-			pauseDelay = 0.2f;
-		}
-		else if (IsKeyPressed('P') && scene->pause == true && pauseDelay == 0)
-		{
-			scene->pause = false;
-			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-			pauseDelay = 0.2f;
-		}
-		
-		if (!scene->pause)
-		{
-			glfwSetCursorPos(m_window, double(width)/2, double(height)/2);
-		}
+		glfwSetCursorPos(m_window, double(width)/2, double(height)/2);
 
 		//Swap buffers
 		glfwSwapBuffers(m_window);
 		//Get and organize events, like keyboard and mouse input, window resizing, etc...
 		glfwPollEvents();
-        m_timer.waitUntil(frameTime);       // Frame rate limiter. Limits each frame to a specified time in ms.   
+        m_timer.waitUntil(frameTime);       // Frame rate limiter. Limits each frame to a specified time in ms.  
 
-		if (play == true)
+		if (scene->type == "MENUScene")
 		{
-			play = false;
+			if (play)
+			{
+				menu = false;
 
-			scene->Exit();
-			delete scene;
+				scene->Exit();
+				delete scene;
 
-			scene = new PROJECTScene();
-			scene->Init();
+				scene = new PROJECTScene();
+				scene->Init();
+			}
+			if (quit)
+				break;
 		}
-		if (quit == true)
-			break;
+		else if (scene->type == "PROJECTScene")
+		{
+			if (menu)
+			{
+				play = false;
 
-	} //Check if the ESC key had been pressed or if the window had been closed
+				scene->Exit();
+				delete scene;
+
+				scene = new MENUScene();
+				scene->Init();
+			}
+		}
+	}
 	scene->Exit();
 	delete scene;
 }

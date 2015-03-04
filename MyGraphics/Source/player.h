@@ -18,8 +18,8 @@ class dynamicObject : public Object
 {
 public:
 	dynamicObject()  {type = "Dynamic";};
-	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) :	Object(p,c,h,m,b) {type = "Dynamic"; health = 0;};
-	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float o) :	Object(p,c,h,m,b) {orientation = o; type = "Dynamic"; health = 0;};
+	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m) :	Object(p,c,h,m) {type = "Dynamic"; health = 0;};
+	dynamicObject(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float o) :	Object(p,c,h,m) {orientation = o; type = "Dynamic"; health = 0;};
 	~dynamicObject() {};
 
 	virtual void Init() {};

@@ -56,9 +56,9 @@ class MENUScene : public Scene
 		GEO_CUBE,
 		GEO_BIGCUBE,
 		GEO_HOLD,
-		GEO_CCTV,
-		GEO_CCTV_CORNER,
+		GEO_OVERLAY,
 		GEO_TEXTBOX,
+		GEO_TEXTBOX2,
 		NUM_GEOMETRY,
 	};
 	enum UNIFORM_TYPE
@@ -103,7 +103,7 @@ public:
 
 	static float inputDelay;
 
-	Button buttons[3];
+	Button buttons[4];
 	int select;
 
 private:

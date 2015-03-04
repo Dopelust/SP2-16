@@ -18,8 +18,6 @@ struct Collision
 {
 	Vector3 centre;
 	Vector3 hitbox;
-
-	Mesh* boundingBox;
 };
 
 class Object
@@ -27,10 +25,10 @@ class Object
 public:
 	Object() { ignoreCollision = false; };
 	Object(Vector3 p, Vector3 c, Vector3 h); 
-	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* b); //Bounding Box Only
-	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b); //Normal Objects
-	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i); //Full Constructor
-	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, bool paid) {}; //Item Constructor
+	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m); //Normal Objects
+	Object(Vector3 p, Vector3 c, Vector3 h, float s, float o, bool i); 
+	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i); //Full Constructor
+	Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i, bool paid) {}; //Item Constructor
 	~Object() {};
 
 	std::string type;
@@ -77,7 +75,7 @@ class Money : public Object
 {
 public:
 	Money() {ignoreCollision = true;};
-	Money(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, float v) : Object(p,c,h,m,b,s,o,true) {type = "Money"; value = v;};
+	Money(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, float v) : Object(p,c,h,m,s,o,true) {type = "Money"; value = v;};
 	~Money();
 
 	float value;
@@ -88,9 +86,9 @@ class Item : public Object
 {
 public:
 	Item() {ignoreCollision = true;};
-	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i) :	Object(p,c,h,m,b,s,o,i) {paid = false; type = "Item";}
-	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i, float P, float R) :	Object(p,c,h,m,b,s,o,i) {restore = R;price = P; paid = false; type = "Item";};
-	Item(Mesh * m, string t, bool p) {mesh = m; type = t; paid = p; collision.boundingBox = NULL;}
+	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i) :	Object(p,c,h,m,s,o,i) {paid = false; type = "Item";}
+	Item(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i, float P, float R) :	Object(p,c,h,m,s,o,i) {restore = R;price = P; paid = false; type = "Item";};
+	Item(Mesh * m, string t, bool p) {mesh = m; type = t; paid = p;}
 	~Item() {};
 
 	void setPaid(bool p) {paid = p;};
@@ -133,9 +131,9 @@ class Storage : public Object
 {
 public:
 	Storage() {};
-	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* b) : Object(p,c,h,b) {type = "Storage";};
-	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b) : Object(p,c,h,m,b) {type = "Storage";};
-	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float o) : Object(p,c,h,m,b) {type = "Storage"; orientation = o;};
+	Storage(Vector3 p, Vector3 c, Vector3 h) : Object(p,c,h) {type = "Storage"; mesh = NULL;};
+	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* m) : Object(p,c,h,m) {type = "Storage";};
+	Storage(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float o) : Object(p,c,h,m) {type = "Storage"; orientation = o;};
 	~Storage() {};
 
 	virtual Vector3 getStorePos(Player* player);

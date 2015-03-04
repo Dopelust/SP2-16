@@ -28,9 +28,7 @@ public:
 		health = 100;
 		elapsedTime = 0;
 		collision.hitbox = Vector3(2.5f, 6.f, 2.5f);
-		collision.boundingBox = MeshBuilder::GenerateCube("Hitbox", Color(1,1,1), collision.hitbox.x, collision.hitbox.y, collision.hitbox.z, 0);
 		collision.centre = Vector3(0,collision.hitbox.y/2,0);
-
 		position = Vector3(0,0,0);
 		orientation = 0;
 
@@ -82,7 +80,6 @@ public:
 
 		return NULL;
 	};
-	void InitClues(const char* filename);
 	void InitDialogue(const char* filename);
 	virtual void InitQuest(const char* filename);
 	void Update(double dt, vector<Object*>object, Player* player);
@@ -234,7 +231,6 @@ public:
 		orientation = -90;
 		Init();	
 		InitDialogue("Filestream//customer.txt");
-		InitClues("Filestream//Quests//Hints//customer.txt");
 	};
 	Customer(vector<NPCTarget> t, string name, unsigned tID, float d)
 	{
@@ -259,7 +255,6 @@ public:
 			bodyParts[i].identity = identity;
 		}
 		InitDialogue("Filestream//customer.txt");
-		InitClues("Filestream//Quests//Hints//customer.txt");
 	}
 	~Customer() {};
 
@@ -291,6 +286,30 @@ public:
 	}
 	~Detective() {};
 
+	TextBox * getConversation(Player * player)
+	{
+		if (!inConversation)
+		{
+			inConversation = true;
+
+			if (quest == NULL || quest->Accept.altNext->apparentext == quest->Accept.altNext->text)
+			{
+				int r = rand() % greetings.size();
+				return &greetings[r];
+			}
+			else if (quest->Accept.trigger)
+			{
+				if (quest->criteria)
+					return quest->Accept.altNext;
+
+				return quest->Accept.next;
+			}
+			else
+				return quest;
+		}
+
+		return NULL;
+	};
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };

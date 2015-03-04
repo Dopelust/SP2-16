@@ -158,7 +158,7 @@ void Player::Update(double dt, vector<Object*>object)
 				{
 					inConversation = true;
 					stopCamera = true;
-					textbox = new TextBox("Sprinting speed increased! SHIFT to sprint and TAB to check current level.", "Message");
+					textbox = new TextBox("Sprinting speed increased!", "Message");
 				}
 
 			}
@@ -170,7 +170,7 @@ void Player::Update(double dt, vector<Object*>object)
 				{
 					inConversation = true;
 					stopCamera = true;
-					textbox = new TextBox("MegaJump height increased! CTRL + SPACE to MegaJump and TAB to check current level.", "Message");
+					textbox = new TextBox("High Jump height increased!", "Message");
 				}
 			}
 		}
@@ -210,8 +210,11 @@ void Player::Update(double dt, vector<Object*>object)
 	if (health > 100)
 		health = 100;
 	if (health < 0)
+	{
+		apparentHealth = 0;
 		health = 0;
-
+	}
+	
 	if (apparentHealth < health)
 	{
 		apparentHealth += dt * 20;

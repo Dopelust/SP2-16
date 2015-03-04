@@ -233,6 +233,7 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 	else
 	{
 		health = 0;
+		Animate(dt, 150.f);
 		ignoreCollision = true;
 	}
 
@@ -280,7 +281,6 @@ void Hobo::Init()
 
 	InitDialogue("Filestream//hobo.txt");
 	InitQuest("Filestream//Quests//hobo.txt");
-	InitClues ("Filestream//Quests//Hints//hobo.txt");
 }
 
 void Hobo::Control(double dt, vector<Object*>object, Player* player)
@@ -302,7 +302,6 @@ void Thug::Init()
 	}
 
 	InitDialogue("Filestream//thug.txt");
-	InitClues ("Filestream//Quests//Hints//thug.txt");
 }
 
 void Thug::Control(double dt, vector<Object*>object, Player* player)
@@ -331,7 +330,6 @@ void Cashier::Init()
 
 	InitDialogue("Filestream//cashier.txt");
 	InitQuest("Filestream//Quests//cashier.txt");
-	InitClues ("Filestream//Quests//Hints//cashier.txt");
 }
 
 void Cashier::Control(double dt, vector<Object*>object, Player* player)
@@ -361,7 +359,6 @@ void Blindman::Init()
 	}
 
 	InitDialogue("Filestream//blindman.txt");
-	InitClues ("Filestream//Quests//Hints//blindman.txt");
 }
 
 void Blindman::Control(double dt, vector<Object*>object, Player* player)
@@ -455,7 +452,8 @@ void Detective::Init()
 
 	InitDialogue("Filestream//detective.txt");
 	InitQuest("Filestream//Quests//detective.txt");
-	InitClues ("Filestream//Quests//Hints//detective.txt");
+	
+	quest->Accept.altNext->type = "Reward";
 }
 
 void Detective::Control(double dt, vector<Object*>object, Player* player)
@@ -464,7 +462,7 @@ void Detective::Control(double dt, vector<Object*>object, Player* player)
 	{
 		for (unsigned int i = 0; i < object.size(); i++)
 		{
-			if(object[i]->getIdentity() == "Thug" && object[i]->getHealth() > 0)
+			if(object[i]->getIdentity() == "Ossan" && object[i]->getHealth() > 0)
 				break;
 			
 			if (i == object.size() - 1)
@@ -489,7 +487,6 @@ void S_Guard::Init()
 	}
 
 	InitDialogue("Filestream//security.txt");
-	InitClues ("Filestream//Quests//Hints//security.txt");
 }
 
 extern bool entrance;
@@ -546,7 +543,6 @@ void Manager::Init()
 
 	InitDialogue("Filestream//manager.txt");
 	InitQuest("Filestream//Quests//manager.txt");
-	InitClues ("Filestream//Quests//Hints//manager.txt");
 }
 
 void Manager::Control(double dt, vector<Object*>object, Player* player)
@@ -555,6 +551,10 @@ void Manager::Control(double dt, vector<Object*>object, Player* player)
 	{
 		if (collection.Criteria(object))
 			quest->criteria = true;
+		else
+			quest->criteria = false;
+
+		cout << quest->criteria << endl;
 	}
 
 	Orientate(-145, dt, 150.f);

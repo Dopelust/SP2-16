@@ -45,27 +45,6 @@ void NPC::InitDialogue(const char* filename)
 	inData.close (); 
 }
 
-void NPC::InitClues(const char* filename)
-{
-	ifstream inData;
-	string data;
-
-	inData.open (filename); 
-
-	while (!inData.eof()) {
-
-		getline (inData, data);
-
-		if (data == "")
-			continue;
-
-		clues.push_back(TextBox(data));
-	}
-
-	inData.close (); 
-}
-
-
 void NPC::InitQuest(const char* filename)
 {
 	int count = 0;

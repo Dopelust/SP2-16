@@ -6,37 +6,34 @@ Object::Object(Vector3 p, Vector3 c, Vector3 h)
 	collision.hitbox = h;
 	collision.centre = c;
 	orientation = 0; size = 1;
-	ignoreCollision = true; 
-	mesh = NULL;
-}
-
-Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* b)
-{
-	position = p;
-	collision.hitbox = h;
-	collision.boundingBox = b;
-	collision.centre = c;
-	orientation = 0; size = 1;
 	ignoreCollision = false;
 	mesh = NULL;
 }
-Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b)
+Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m)
 {
 	position = p;
 	mesh = m;
 	collision.hitbox = h;
-	collision.boundingBox = b;
 	collision.centre = c;
 	orientation = 0; size = 1;
 	ignoreCollision = false;
 }
 
-Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, Mesh* b, float s, float o, bool i)
+Object::Object(Vector3 p, Vector3 c, Vector3 h, float s, float o, bool i)
+{
+	position = p;
+	mesh = NULL;
+	collision.hitbox = h;
+	collision.centre = c;
+	orientation = o; size = s;
+	ignoreCollision = i;
+}
+
+Object::Object(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i)
 {
 	position = p;
 	mesh = m;
 	collision.hitbox = h;
-	collision.boundingBox = b;
 	collision.centre = c;
 	orientation = o; size = s;
 	ignoreCollision = i;
