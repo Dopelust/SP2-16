@@ -38,9 +38,13 @@ void scroll_callback(GLFWwindow* window, double x, double y)
 	Application::mouseScroll = int(y);
 }
 
+int width;
+int height;
+
 void resize_callback(GLFWwindow* window, int w, int h)
 {
 	glViewport(0, 0, w, h);
+	glfwGetWindowSize(m_window, &width, &height);
 }
 
 bool Application::IsKeyPressed(unsigned short key)
@@ -122,13 +126,13 @@ Position Application::getMousePos()
 }
 
 float pauseDelay = 0.f;
-Position lastCursor(440, 331, 0);
-
 extern bool play;
 extern bool quit;
 
 void Application::Run()
 {
+	glfwGetWindowSize(m_window, &width, &height);
+
 	Scene * menuScene = new MENUScene(); menuScene->Init();
 	//Scene * playScene = new PROJECTScene(); playScene->Init();
 
@@ -146,20 +150,18 @@ void Application::Run()
 		{
 			scene->pause = true;
 			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-			glfwSetCursorPos(m_window, lastCursor.x, lastCursor.y);
 			pauseDelay = 0.2f;
 		}
 		else if (IsKeyPressed('P') && scene->pause == true && pauseDelay == 0)
 		{
 			scene->pause = false;
-			lastCursor = getMousePos();
 			glfwSetInputMode(m_window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 			pauseDelay = 0.2f;
 		}
 		
 		if (!scene->pause)
 		{
-			glfwSetCursorPos(m_window, 1184/2, 666/2);
+			glfwSetCursorPos(m_window, double(width)/2, double(height)/2);
 		}
 
 		//Swap buffers

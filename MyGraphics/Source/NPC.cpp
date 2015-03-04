@@ -528,6 +528,12 @@ void Manager::Init()
 
 void Manager::Control(double dt, vector<Object*>object, Player* player)
 {
+	if (quest != NULL)
+	{
+		if (collection.Criteria(object))
+			quest->criteria = true;
+	}
+
 	Orientate(-145, dt, 150.f);
 	target = position;
 	velocity = 0;

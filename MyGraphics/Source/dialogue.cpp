@@ -3,7 +3,7 @@
 
 #include <fstream>
 
-Vector3 TextBox::position = Vector3(0,-7.75f,0);
+Vector3 TextBox::position = Vector3(0,-9.25f,0);
 
 int frame = 0;
 extern Vector3 Select;
@@ -67,7 +67,8 @@ void NPC::InitQuest(const char* filename)
 			quest->Accept.next = new TextBox(data);
 		else if (count == 2)
 			quest->Decline.next = new TextBox(data);
-
+		else if (count == 3)
+			quest->Accept.altNext = new TextBox(data);
 		count++;
 	}
 

@@ -52,7 +52,7 @@ public:
 	vector<TextBox> greetings;
 	Quest * quest;
 	bool inConversation;
-	virtual bool getCriteria(vector<Object*>object) {return 0;};
+	virtual bool getCriteria() {return 0;};
 
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player) {};
@@ -69,7 +69,12 @@ public:
 				return &greetings[r];
 			}
 			else if (quest->Accept.trigger)
+			{
+				if (quest->criteria)
+					return quest->Accept.altNext;
+
 				return quest->Accept.next;
+			}
 			else
 				return quest;
 		}
@@ -332,11 +337,9 @@ public:
 
 	ManagerQuest collection;
 
-	virtual bool getCriteria(vector<Object*>object) 
+	virtual bool getCriteria() 
 	{
-		if(quest->Accept.trigger)
-			return collection.Criteria(object);
-		return 0;
+		return quest->criteria;
 	};
 	virtual void Init();
 	virtual void Control(double dt, vector<Object*>object, Player* player);

@@ -228,16 +228,19 @@ int Inventory::emptySlot()
 
 void Wallet::Update()
 {
+	int v = abs(trueValue - apparentValue);
+	v = int( double(v)/100 + 2.5 );
+	
 	if (apparentValue < trueValue)
 	{
-		apparentValue++;
+		apparentValue += v;
 
 		if (apparentValue > trueValue)
 			apparentValue = trueValue;
 	}
 	else if (apparentValue > trueValue)
 	{
-		apparentValue--;
+		apparentValue -= v;
 
 		if (apparentValue < trueValue)
 			apparentValue = trueValue;
