@@ -284,6 +284,8 @@ void PROJECTScene::InitObjects()
 	object.push_back( new Object(Vector3(50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh) );
 	object.push_back( new Object(Vector3(-50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh) );
 
+
+
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market(Outside of Supermarkte)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3(1000.f, 100000.f, 1000.f);
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 160.f, 160, 25); tempMesh->textureID = LoadTGA("Image//floor.tga");
@@ -732,6 +734,11 @@ void PROJECTScene::InitObjects()
 	object.push_back( &AutoDoor.Door[0] );
 	object.push_back( &AutoDoor.Door[1] );
 
+	//~~~~~~~~~~~~~~CEILING~~~~~~~~~~~~~~~~~
+	hitBox = Vector3(161, 2, 127.3); 
+	tempMesh = MeshBuilder::GenerateCube("ceiling", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//roof.tga");
+	object.push_back( new Object(Vector3(0,hitBox.y/2+48,-22.5), Vector3(0,0,0), hitBox, tempMesh) );
+
 }
 void PROJECTScene::InitItems()
 {
@@ -1014,6 +1021,8 @@ void PROJECTScene::InitItems()
 	{
 		object.push_back( new Money(Vector3(-9.5,y,-21.25), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, 1, 0, 50) );
 	}
+
+
 
 }
 void PROJECTScene::InitCharacters()
