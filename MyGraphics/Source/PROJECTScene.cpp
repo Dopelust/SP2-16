@@ -1360,12 +1360,13 @@ void PROJECTScene::Update(double dt)
 			}
 			else
 			{
-				 if (textbox->type == "Quest")
+				if (textbox->type == "Quest")
 				{
 					textbox->apparentext.clear();
 
 					if (Select == textbox->getAccept().position)
 					{
+						engine->play2D("Media/hiredgun.mp3");
 						textbox->triggerQuest();
 						textbox = textbox->getAccept().next;
 					}
@@ -1653,6 +1654,7 @@ void PROJECTScene::Update(double dt)
 		{
 			if (Application::IsKeyPressed(VK_RETURN) && inputDelay == 0)
 			{
+				engine->stopAllSounds();
 				menu = true;
 				pause = false;
 			}

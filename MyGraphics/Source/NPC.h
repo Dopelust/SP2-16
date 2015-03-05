@@ -322,6 +322,7 @@ public:
 \brief	This is the Detective class.
 */
 /******************************************************************************/
+extern ISoundEngine * engine;
 class Detective : public NPC
 {
 public:
