@@ -9,13 +9,16 @@ This is the camera3 cpp
 /******************************************************************************/
 #include "NPC.h"
 
+extern bool DARREN;
+
 bool dynamicObject::Knockback(Vector3 dir, Vector3 vel)
 {
 	if (hitDelay == 0)
 	{
 		engine->play3D("Media/hurt.ogg", vec3df(position.x, position.y, position.z));
 
-		health -= (vel.Length() / (10 + rand () % 8));
+		if (!(type == "Player" && DARREN))
+			health -= (vel.Length() / (10 + rand () % 8));
 		
 		velocity.x = dir.x * vel.x;
 		velocity.z = dir.z * vel.z;

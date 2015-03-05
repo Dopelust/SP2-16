@@ -243,7 +243,6 @@ void PROJECTScene::InitObjects()
 		}
 	}
 
-			
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3(10, 25, 10); 
 	tempMesh = MeshBuilder::GenerateCube("Pillar", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); 
@@ -624,12 +623,12 @@ void PROJECTScene::InitObjects()
 	}
 
 	tempMesh = MeshBuilder::GenerateCube("Block", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); 
-	hitBox = Vector3(1,60,125);
-	object.push_back( new Object(Vector3(-75,0,-150), Vector3(0,hitBox.y/2,0), hitBox, 1,0, false));
-	object.push_back( new Object(Vector3(75,0,-150), Vector3(0,hitBox.y/2,0), hitBox, 1,0, false));
+	hitBox = Vector3(1,200,125);
+	object.push_back( new Object(Vector3(-80.5f,0,-150), Vector3(0,hitBox.y/2,0), hitBox, 1,0, false));
+	object.push_back( new Object(Vector3(80.5f,0,-150), Vector3(0,hitBox.y/2,0), hitBox, 1,0, false));
 	
 	hitBox = Vector3(240,60,1); 
-	object.push_back( new Object(Vector3(0,0,-210), Vector3(0,hitBox.y/2,0), hitBox, 1, 0, false));
+	object.push_back( new Object(Vector3(0,0,-212), Vector3(0,hitBox.y/2,0), hitBox, 1, 0, false));
 
 	hitBox = Vector3(1.5f, 50, 3.f);
 	tempMesh = MeshBuilder::GenerateCubeOnPlane("Elevator Border", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1);  tempMesh->textureID = LoadTGA("Image//silver.tga");
@@ -709,7 +708,6 @@ void PROJECTScene::InitObjects()
 	{
 		object.push_back( new Object(Vector3(x,27,-22.5), Vector3(0.5,4,0),hitBox,tempMesh,1,45,false));
 	}
-	
 }
 void PROJECTScene::InitItems()
 {
@@ -1119,9 +1117,14 @@ void PROJECTScene::InitTrans()
 	tempMesh = MeshBuilder::GenerateQuad("Marked Circle", Color(1,1,1),8.5f,8.5f,1); tempMesh->textureID = LoadTGA("Image//collection.tga");
 	object.push_back( new Object(Vector3(-30.f,27.1f,15.f), Vector3(), Vector3(), tempMesh, 1, 0, false) );
 
+
 	//~~~~~~~~~~~~~~~~supermarket~~~~~~~~~~~~~~~~~
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 165, 65, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//super.tga");
 	object.push_back( new Object(Vector3(0,27.5,-88.6), Vector3(), Vector3(), tempMesh, 1, 180, false) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("Controls", Color(1,1,1),3,3,1); tempMesh->textureID = LoadTGA("Image//Poster//cctvcontrols.tga");
+	object.push_back( new Object(Vector3(-93.5f, 32.f, 41.4f), Vector3(), Vector3(), tempMesh,1 ,180, false));
+
 }
 
 /******************************************************************************/
@@ -1248,17 +1251,13 @@ bool pauseSelect;
 Upadte
 */
 /******************************************************************************/
+extern bool DARREN;
 void PROJECTScene::Update(double dt)
 {
 	soundUpdate(player);
 
 	if (!pause)
 	{
-
-	if(Application::IsKeyPressed('R'))
-		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-	else
-		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
 	if (camera == &player.camera)
 	{
@@ -1271,6 +1270,7 @@ void PROJECTScene::Update(double dt)
 		{
 			if (player.inventory.Insert(object[camera->lookAt]))
 			{	
+				engine->play2D("Media/pick.mp3");
 				inputDelay = 0.2f;
 				object.erase(object.begin()+camera->lookAt);
 			}
@@ -1409,6 +1409,8 @@ void PROJECTScene::Update(double dt)
 							Vector3 tPos = Vector3(-23.f, 1.5f, 0);
 							string add = "-$"; add += to_string (long double (totalPrice) );
 							text2D.push_back( new OnScreenText(add, tPos, true) );
+
+							engine->play2D("Media/cashier.wav");
 						}
 						else
 						{
@@ -1648,18 +1650,18 @@ void PROJECTScene::Update(double dt)
 
 	if (Application::IsKeyPressed(VK_TAB))
 	{
-		showLevel +=float( 8 * dt);
+		showLevel +=float( 10 * dt);
 
 		if (showLevel > 0)
 			showLevel = 0;
 
 	}
-	else if (showLevel > -2.5f)
+	else if (showLevel > -3.f)
 	{
 		showLevel -=float( 8 * dt );
 
-		if (showLevel < -2.5f)
-			showLevel = -2.5f;
+		if (showLevel < -3.f)
+			showLevel = -3.f;
 	}
 
 	if ( (Application::IsKeyPressed(VK_ESCAPE) && inputDelay == 0) || player.health == 0 )
@@ -1679,6 +1681,8 @@ void PROJECTScene::Update(double dt)
 				engine->stopAllSounds();
 				menu = true;
 				pause = false;
+
+				DARREN = false;
 			}
 		}
 		else // PAUSED
@@ -1697,17 +1701,23 @@ void PROJECTScene::Update(double dt)
 				engine->stopAllSounds();
 				menu = true;
 				pause = false;
+
+				DARREN = false;
 			}
 
 			if (selectDelay == 0)
 			{
 				if(Application::IsKeyPressed(VK_UP))
 				{
+					if (pauseSelect)
+						engine->play2D("Media/select.mp3");
 					selectDelay = 0.1f;
 					pauseSelect = 0;
 				}
 				else if (Application::IsKeyPressed(VK_DOWN))
 				{
+					if (!pauseSelect)
+						engine->play2D("Media/select.mp3");
 					selectDelay = 0.1f;
 					pauseSelect = 1;
 				}
@@ -1769,14 +1779,6 @@ void PROJECTScene::RenderScene()
 		}
 	}
 
-	if(Application::IsKeyPressed('T'))
-	{
-		modelStack.PushMatrix();
-		modelStack.Translate(camera->target);
-		RenderMesh(meshList[GEO_AXES], false);
-		modelStack.PopMatrix();
-	}
-
 	modelStack.PushMatrix();
 	modelStack.Translate(camera->position);
 	modelStack.Scale(700);
@@ -1814,20 +1816,18 @@ void PROJECTScene::RenderScene()
 		}
 	}
 
-	if(!Application::IsKeyPressed('Q'))
+	for (unsigned int i = 0; i < decoration.size(); i++)
 	{
-		for (unsigned int i = 0; i < decoration.size(); i++)
-		{
-			modelStack.PushMatrix();
-			modelStack.Translate(decoration[i]->position);
-			modelStack.Rotate(decoration[i]->orientation, 0, 1, 0); 
-			RenderMesh(decoration[i]->mesh, true);
-			modelStack.PopMatrix();
-		}
+		modelStack.PushMatrix();
+		modelStack.Translate(decoration[i]->position);
+		modelStack.Rotate(decoration[i]->orientation, 0, 1, 0); 
+		RenderMesh(decoration[i]->mesh, true);
+		modelStack.PopMatrix();
+	}
 
-		for (unsigned int i = 1; i < object.size(); i++)
-		{
-			if (object[i]->type == "Dynamic" || object[i]->type == "Item")
+	for (unsigned int i = 1; i < object.size(); i++)
+	{
+		if (object[i]->type == "Dynamic" || object[i]->type == "Item")
 			if (object[i]->mesh != NULL)
 			{
 				modelStack.PushMatrix();
@@ -1840,11 +1840,11 @@ void PROJECTScene::RenderScene()
 				RenderMesh(object[i]->mesh, true);
 				modelStack.PopMatrix();
 			}
-		}
+	}
 
-		for (unsigned int i = 1; i < object.size(); i++)
-		{
-			if (object[i]->type != "Dynamic" && object[i]->type != "Item")
+	for (unsigned int i = 1; i < object.size(); i++)
+	{
+		if (object[i]->type != "Dynamic" && object[i]->type != "Item")
 			if (object[i]->mesh != NULL)
 			{
 				modelStack.PushMatrix();
@@ -1859,20 +1859,9 @@ void PROJECTScene::RenderScene()
 				RenderMesh(object[i]->mesh, true);
 				modelStack.PopMatrix();
 			}
-		}
-	}
-
-	for (unsigned int i = 0; i < blood.size(); i++)
-	{
-		modelStack.PushMatrix();
-		modelStack.Translate(blood[i]->position);
-		modelStack.Rotate(camera->orientation, 0, 1, 0); 
-		modelStack.Rotate(-camera->look, 1, 0, 0); 
-		modelStack.Rotate(90, 1, 0, 0); 
-		RenderMesh(blood[i]->mesh, false);
-		modelStack.PopMatrix();
 	}
 	
+	/*
 	if(Application::IsKeyPressed('Q'))
 	{
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); //wireframe mode
@@ -1895,6 +1884,7 @@ void PROJECTScene::RenderScene()
 	light[0].position.z);
 	//RenderMesh(meshList[GEO_LIGHTBALL], false);
 	modelStack.PopMatrix();
+	*/
 
 	if (player.holding >= 0)
 	{
@@ -2805,6 +2795,11 @@ void PROJECTScene::Exit()
 	glDeleteVertexArrays(1, &m_vertexArrayID);
 	glDeleteProgram(m_programID);
 }
+
+extern bool JEREMIAH;
+extern bool JESSICA;
+extern bool RICSSON;
+
 void PROJECTScene::Reset()
 {
 	for (unsigned int i = 0; i < text.size(); i++)
@@ -2875,6 +2870,28 @@ void PROJECTScene::Reset()
 
 	textbox = NULL;
 	text2D.push_back( new OnScreenText("+$50", Vector3(-23.f, 2.5f, 0)) );
+
+	if (RICSSON)
+	{
+		for (int i = 0; i < 16; i++)
+		{
+			player.inventory.Insert(Machine.generateDrink());
+		}
+
+		RICSSON = false;
+	}
+	if (JEREMIAH)
+	{
+		player.jump = 10;
+
+		JEREMIAH = false;
+	}
+	if (JESSICA)
+	{
+		player.speed = 10;
+
+		JESSICA = false;
+	}
 }
 void PROJECTScene::RenderSkybox()
 {

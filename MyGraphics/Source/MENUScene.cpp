@@ -228,6 +228,11 @@ bool controls = false;
 
 char lastKey;
 
+bool JEREMIAH = false;
+bool JESSICA = false;
+bool DARREN = false;
+bool RICSSON = false;
+
 /******************************************************************************/
 /*!
 		MENUScene:
@@ -319,7 +324,26 @@ void MENUScene::Update(double dt)
 
 		if (Application::IsKeyPressed(VK_RETURN))
 		{
-			
+			if (cheat == "RICSSON")
+			{
+				RICSSON = true;
+				cheat = "";
+			}
+			else if(cheat == "JEREMIAH")
+			{
+				JEREMIAH = true;
+				cheat = "";
+			}
+			else if(cheat == "JESSICA")
+			{
+				JESSICA = true;
+				cheat = "";
+			}
+			else if(cheat == "DARREN")
+			{
+				DARREN = true;
+				cheat = "";
+			}
 		}
 	}
 
@@ -329,11 +353,6 @@ void MENUScene::Update(double dt)
 		{
 			controls = false;
 			main = true;
-		}
-
-		if (Application::IsKeyPressed(VK_RETURN))
-		{
-			
 		}
 	}
 
@@ -500,6 +519,38 @@ void MENUScene::Render()
 			modelStack.Scale(0.5f);
 			modelStack.Translate(-textLength / 2, 0, 0);
 			RenderText(meshList[GEO_TEXT], "Backspace to clear" , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+
+		if (RICSSON)
+		{
+			modelStack.PushMatrix();
+			modelStack.Translate(5.f, 3.f, 0);
+			RenderText(meshList[GEO_TEXT], "+ 16 STATBOOST DRINKS" , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+
+		if (JEREMIAH)
+		{
+			modelStack.PushMatrix();
+			modelStack.Translate(5.f, 1.f, 0);
+			RenderText(meshList[GEO_TEXT], "+ HIGHJUMP LEVEL 10" , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+
+		if (JESSICA)
+		{
+			modelStack.PushMatrix();
+			modelStack.Translate(5.f, -1.f, 0);
+			RenderText(meshList[GEO_TEXT], "+ SPRINT LEVEL 10" , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
+
+		if (DARREN)
+		{
+			modelStack.PushMatrix();
+			modelStack.Translate(5.f, -3.f, 0);
+			RenderText(meshList[GEO_TEXT], "+ GODMODE" , Color(1, 1, 1));
 			modelStack.PopMatrix();
 		}
 	}

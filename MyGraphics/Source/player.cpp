@@ -22,12 +22,26 @@ using namespace::std;
 \brief CollisionResponse function
 */
 /******************************************************************************/
+extern ISoundEngine * engine;
+
 void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Vector3 maxCube, Vector3 minCube, Vector3 maxPlayer, Vector3 minPlayer, float& yVelocity, bool failSafe)
 {
 	if (initialPos.y == maxCube.y || (Math::distBetween(minPlayer.y, maxCube.y) <= 0.4f && yVelocity >= -1.5f))  //If standing on object, check y first
 	{
 		if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && yVelocity <= 0)
 		{
+			if (yVelocity < -20)
+			{
+				int r = rand () % 4;
+				if (r == 0)
+					engine->play3D("Media/land.wav", vec3df(position.x, position.y, position.z));
+				else if (r == 1)
+					engine->play3D("Media/land2.wav", vec3df(position.x, position.y, position.z));
+				else if (r == 2)
+					engine->play3D("Media/land3.wav", vec3df(position.x, position.y, position.z));
+				else if (r == 3)
+					engine->play3D("Media/land4.wav", vec3df(position.x, position.y, position.z));
+			}
 			position.y = maxCube.y; 
 			yVelocity = 0;
 		}
@@ -72,6 +86,18 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 
 		else if (maxPlayer.y >= maxCube.y && minPlayer.y >= maxCube.y && yVelocity <= 0)
 		{
+			if (yVelocity < -20)
+			{
+				int r = rand () % 4;
+				if (r == 0)
+					engine->play3D("Media/land.wav", vec3df(position.x, position.y, position.z));
+				else if (r == 1)
+					engine->play3D("Media/land2.wav", vec3df(position.x, position.y, position.z));
+				else if (r == 2)
+					engine->play3D("Media/land3.wav", vec3df(position.x, position.y, position.z));
+				else if (r == 3)
+					engine->play3D("Media/land4.wav", vec3df(position.x, position.y, position.z));
+			}
 			position.y = maxCube.y; 
 			yVelocity = 0;
 		}
@@ -91,7 +117,6 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 }
 
 extern bool stopCamera;
-extern ISoundEngine * engine;
 extern TextBox * textbox;
 
 /******************************************************************************/
