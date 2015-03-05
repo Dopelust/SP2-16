@@ -132,6 +132,9 @@ int Camera3::lookingAt(vector<Object*>object, int Reach)
 
 	for (unsigned int i = 1; i < object.size(); i++)
 	{
+		if (object[i]->type == "NPC" && object[i]->getHealth() == 0)
+			continue;
+
 		if (Object::checkCollision(object[i], &r))
 		{
 			closeObjects.push_back(object[i]);

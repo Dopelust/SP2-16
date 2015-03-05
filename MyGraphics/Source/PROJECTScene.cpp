@@ -550,14 +550,6 @@ void PROJECTScene::InitObjects()
 	decoration.push_back( new Aesthetics(Vector3(79.9f,30.8f,38.75f), tempMesh, 90) );
 	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 5.5f,7.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
 	decoration.push_back( new Aesthetics(Vector3(71.75f,30.8f,41.45f), tempMesh, 0) );
-	
-	hitBox = Vector3(2,7.5f,7.5f);
-	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),7.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	object.push_back( new Object(Vector3(-109.95f,30.8f,12.8f), Vector3(0,0,0), hitBox, tempMesh, 1 , 90, false) );
-
-	hitBox = Vector3(5.f,7.5f,2);
-	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),5.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	object.push_back( new Object(Vector3(77.25f,30.8f,42.4f), Vector3(0,0,0), hitBox, tempMesh, 1 , 0, false) );
 
 	hitBox = Vector3(5.5f,15.5f,2);
 	tempMesh = MeshBuilder::GenerateCube("wall", Color(1,1,1),5.5f,15.5f,2,10); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
@@ -1076,7 +1068,13 @@ void PROJECTScene::InitDynamic()
 	tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
 	object.push_back( new dynamicObject(Vector3(-95.5,27.5,25.5f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
 
-	
+	hitBox = Vector3(2,7.5f,7.5f);
+	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),7.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
+	object.push_back( new Break(Vector3(-109.95f,30.8f,12.8f), Vector3(0,0,0), hitBox, tempMesh, 1 , 90, false) );
+
+	hitBox = Vector3(5.f,7.5f,2);
+	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),5.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
+	object.push_back( new Break(Vector3(77.25f,30.8f,42.4f), Vector3(0,0,0), hitBox, tempMesh, 1 , 0, false) );	
 }
 void PROJECTScene::InitTrans()
 {
@@ -1124,7 +1122,6 @@ void PROJECTScene::InitTrans()
 
 	tempMesh = MeshBuilder::GenerateXYQuad("Controls", Color(1,1,1),3,3,1); tempMesh->textureID = LoadTGA("Image//Poster//cctvcontrols.tga");
 	object.push_back( new Object(Vector3(-93.5f, 32.f, 41.4f), Vector3(), Vector3(), tempMesh,1 ,180, false));
-
 }
 
 /******************************************************************************/
@@ -1341,8 +1338,7 @@ void PROJECTScene::Update(double dt)
 	}
 	if ((Application::mouseButton(0)) && inputDelay == 0)
 		{
-			if(object[camera->lookAt]->mesh != NULL)
-			if(object[camera->lookAt]->mesh->name == "vent")
+			if(object[camera->lookAt]->type == "Break")
 			{
 				delete object[camera->lookAt];
 				object.erase(object.begin()+camera->lookAt);
@@ -1827,7 +1823,7 @@ void PROJECTScene::RenderScene()
 
 	for (unsigned int i = 1; i < object.size(); i++)
 	{
-		if (object[i]->type == "Dynamic" || object[i]->type == "Item")
+		if (object[i]->type == "Dynamic" || object[i]->type == "Item" || object[i]->type == "Break")
 			if (object[i]->mesh != NULL)
 			{
 				modelStack.PushMatrix();
@@ -1844,7 +1840,7 @@ void PROJECTScene::RenderScene()
 
 	for (unsigned int i = 1; i < object.size(); i++)
 	{
-		if (object[i]->type != "Dynamic" && object[i]->type != "Item")
+		if (object[i]->type != "Dynamic" && object[i]->type != "Item" || object[i]->type != "Break")
 			if (object[i]->mesh != NULL)
 			{
 				modelStack.PushMatrix();
@@ -2829,7 +2825,7 @@ void PROJECTScene::Reset()
 	{
 		for (unsigned int o = 0; o < object.size(); o++)
 		{
-			if (object[o]->type == "Item" || object[o]->type == "Money" || object[o]->type == "Dynamic")
+			if (object[o]->type == "Item" || object[o]->type == "Money" || object[o]->type == "Dynamic" || object[o]->type == "Break")
 			{
 				delete object[o];
 				object.erase(object.begin() + o);

@@ -192,6 +192,14 @@ public:
 	virtual Vector3 getStorePos(Player* player);
 };
 
+class Break : public Object
+{
+public:
+	Break() {};
+	Break(Vector3 p, Vector3 c, Vector3 h, Mesh* m, float s, float o, bool i) : Object(p,c,h,m,s,o,i) {type = "Break";}; 
+	~Break() {};
+};
+
 /******************************************************************************/
 /*!
 		Class Storage: object
