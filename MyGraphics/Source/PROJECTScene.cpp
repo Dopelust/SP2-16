@@ -1058,15 +1058,13 @@ void PROJECTScene::InitDynamic()
 	Vector3 hitBox2;
 	float size = 0;
 	
-	for (float y = 0; y <= 3; y+=3)
-	{
-		hitBox = Vector3(3, 3, 3);
-		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
-		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
-	}
 	hitBox = Vector3(3, 3, 3);
 	tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
-	object.push_back( new dynamicObject(Vector3(-95.5,27.5,25.5f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
+	object.push_back( new dynamicObject(Vector3(15,1,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
+
+	hitBox = Vector3(3, 3, 3);
+	tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
+	object.push_back( new dynamicObject(Vector3(-95.5,28,25.5f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
 
 	hitBox = Vector3(2,7.5f,7.5f);
 	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),7.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
@@ -1078,7 +1076,7 @@ void PROJECTScene::InitDynamic()
 
 	hitBox = Vector3(3, 3, 3);
 	tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
-	object.push_back( new dynamicObject(Vector3(74.25f,30.8f,39.4f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
+	object.push_back( new dynamicObject(Vector3(74.25f,28,39.4f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
 }
 void PROJECTScene::InitTrans()
 {
