@@ -1097,12 +1097,15 @@ void PROJECTScene::InitDynamic()
 	Vector3 hitBox2;
 	float size = 0;
 
-	for (float y = 0; y <= 6; y+=3)
+	for (float y = 0; y <= 3; y+=3)
 	{
 		hitBox = Vector3(3, 3, 3);
 		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
 		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
 	}
+	hitBox = Vector3(3, 3, 3);
+	tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
+	object.push_back( new dynamicObject(Vector3(-95.5,27.5,25.5f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
 }
 
 /******************************************************************************/
