@@ -123,6 +123,7 @@ public:
 \brief	This is for when the player wants to check out an item from the store.
 */
 /******************************************************************************/
+extern bool c_discount;
 class Checkout : public Quest
 {
 public:
@@ -140,15 +141,15 @@ public:
 	string GenerateText(Inventory inventory) 
 	{
 		string price;
-		if( discount == true )
+		if( c_discount == true )
 		{
-		price = to_string(long double( inventory.checkPrice() ));
-		return text + price;
+			price = to_string(long double( inventory.checkPrice()/2 ));
+			return text + price;
 		}
 		else
 		{
-		price = to_string(long double( inventory.checkPrice()/2 ));
-		return text + price;
+			price = to_string(long double( inventory.checkPrice() ));
+			return text + price;
 		}
 	}
 };

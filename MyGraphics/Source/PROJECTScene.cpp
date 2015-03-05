@@ -1251,7 +1251,7 @@ float showLevel = -2.f;
 extern int width;
 extern int height;
 extern bool menu;
-extern bool discount;
+extern bool c_discount;
 
 bool pause = false;
 
