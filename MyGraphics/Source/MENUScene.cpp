@@ -269,7 +269,10 @@ void MENUScene::Update(double dt)
 			main = false;
 
 			if (select == 0)
+			{
 				play = true;
+				engine->stopAllSounds();
+			}
 			else if (select == 1)
 				cheats = true;
 			else if (select == 2)

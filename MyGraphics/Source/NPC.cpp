@@ -686,20 +686,23 @@ void Manager::Init()
 \brief	Manager Control
 */
 /******************************************************************************/
-bool c_discount;
+bool c_discount = false;
 void Manager::Control(double dt, vector<Object*>object, Player* player)
 {
 	if (quest != NULL)
 	{
-		if (collection.Criteria(object))
+		if (quest->Accept.trigger)
 		{
-			quest->criteria = true;
-			c_discount = true;
-		}
-		else
-		{
-			quest->criteria = false;
-			c_discount = false;
+			if (collection.Criteria(object))
+			{
+				quest->criteria = true;
+				c_discount = true;
+			}
+			else
+			{
+				quest->criteria = false;
+				c_discount = false;
+			}
 		}
 	}
 

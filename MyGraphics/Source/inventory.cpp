@@ -111,9 +111,11 @@ void Inventory::Update(double dt)
 \brief	Inventory checkprice function of total items in players inventory
 */
 /******************************************************************************/
+extern bool c_discount;
+
 float Inventory::checkPrice()
 {
-	float price = 0.f;
+	int price = 0;
 
 	for (int i = 0; i < 9; i++)
 	{
@@ -129,6 +131,9 @@ float Inventory::checkPrice()
 		}
 	}
 
+	if (c_discount)
+		return price/2;
+
 	return price;
 }
 
@@ -138,6 +143,7 @@ float Inventory::checkPrice()
 \brief	Inventory the checkout function to pay for all the items in the players inventory.
 */
 /******************************************************************************/
+
 bool Inventory::Checkout()
 {
 	if (checkPrice() > wallet.trueValue)

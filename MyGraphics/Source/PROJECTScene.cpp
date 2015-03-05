@@ -1370,7 +1370,7 @@ void PROJECTScene::Update(double dt)
 
 					if (Select == textbox->getAccept().position)
 					{
-						float totalPrice = player.inventory.checkPrice();
+						int totalPrice = player.inventory.checkPrice();
 
 						if (player.inventory.Checkout())
 						{
@@ -2394,18 +2394,28 @@ void PROJECTScene::Render()
 			modelStack.PushMatrix();
 			modelStack.Translate(0.35f,5,0);
 			float textLength = getTextWidth( "You Died!");
+			modelStack.Scale(5.f);
 			modelStack.Translate(-textLength/2, 0, 0);
 			RenderText(meshList[GEO_TEXT], "You Died!" , Color(1, 1, 1));
 			modelStack.PopMatrix();
 
 			modelStack.PushMatrix();
-			modelStack.Translate(0.35f,-2.5f,0);
+			modelStack.Translate(0.35f,-3.5f,0);
 			textLength = getTextWidth( "Press ENTER to return to Main Menu");
 			modelStack.Translate(-textLength/2, 0, 0);
 			RenderText(meshList[GEO_TEXT], "Press ENTER to return to Main Menu" , Color(1, 1, 1));
 			modelStack.PopMatrix();
 		}
-
+		else
+		{
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,5,0);
+			float textLength = getTextWidth( "You Paused!");
+			modelStack.Scale(5.f);
+			modelStack.Translate(-textLength/2, 0, 0);
+			RenderText(meshList[GEO_TEXT], "You Paused!" , Color(1, 1, 1));
+			modelStack.PopMatrix();
+		}
 		glEnable(GL_DEPTH_TEST);
 	}
 }
