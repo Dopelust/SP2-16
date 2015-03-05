@@ -13,6 +13,7 @@ bool dynamicObject::Knockback(Vector3 dir, Vector3 vel)
 {
 	if (hitDelay == 0)
 	{
+		engine->play3D("Media/hurt.ogg", vec3df(position.x, position.y, position.z));
 
 		health -= (vel.Length() / (10 + rand () % 8));
 		
@@ -622,7 +623,7 @@ extern bool entrance;
 /******************************************************************************/
 void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 {
-	Animate(dt, 200.f + position.Dist(target) * 20, 60.f);
+	Animate(dt, 300.f, 60.f);
 	if (target != original.position)
 	{
 		if (position.Dist(player->position) < 5.f)

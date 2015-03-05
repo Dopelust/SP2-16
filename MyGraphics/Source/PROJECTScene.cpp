@@ -278,13 +278,13 @@ void PROJECTScene::InitObjects()
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	object.push_back( new Object(Vector3(-81,hitBox.y/2+25,36.9f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~after the window~~~~~~~~~~~~~//
 
-	hitBox = Vector3(73, 50, 2); 
+	hitBox = Vector3(74, 50, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	object.push_back( new Object(Vector3(-44,hitBox.y/2,42.5f), Vector3(0,0,0), hitBox, tempMesh) );
+	object.push_back( new Object(Vector3(-43,hitBox.y/2,42.5f), Vector3(0,0,0), hitBox, tempMesh) );
 
-	hitBox = Vector3(73, 25, 2); 
+	hitBox = Vector3(74, 25, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-	object.push_back( new Object(Vector3(44,hitBox.y/2,42.5f), Vector3(0,0,0), hitBox, tempMesh) );
+	object.push_back( new Object(Vector3(43,hitBox.y/2,42.5f), Vector3(0,0,0), hitBox, tempMesh) );
 
 	hitBox = Vector3(69, 25, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
@@ -551,12 +551,12 @@ void PROJECTScene::InitObjects()
 	object.push_back( new Object(Vector3(73.5,hitBox.y/2+25,49.f), Vector3(0,0,0), hitBox, tempMesh) );
 
 	hitBox = Vector3();
-	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.95f,31.5f,-81.f), tempMesh, 90) );
-	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	decoration.push_back( new Aesthetics(Vector3(79.95f,31.5f,-81.f), tempMesh, 90) );
-	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 8.5f,8.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	decoration.push_back( new Aesthetics(Vector3(79.95f,32.f,25.f), tempMesh, 90) );
+	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 5.5f,7.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
+	decoration.push_back( new Aesthetics(Vector3(79.9f,30.8f,33.25f), tempMesh, 90) );
+	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 5.5f,7.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
+	decoration.push_back( new Aesthetics(Vector3(79.9f,30.8f,38.75f), tempMesh, 90) );
+	tempMesh = MeshBuilder::GenerateXYQuad("fake_vent", Color(1, 1, 1), 5.5f,7.5f, 1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
+	decoration.push_back( new Aesthetics(Vector3(71.75f,30.8f,41.45f), tempMesh, 0) );
 	
 	hitBox = Vector3(2,7.5f,7.5f);
 	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),7.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
@@ -574,13 +574,12 @@ void PROJECTScene::InitObjects()
 
 	tempMesh = MeshBuilder::GenerateOBJ("Vending Machine", "OBJ//vending.obj"); tempMesh->textureID = LoadTGA("Image//vending.tga");
 	hitBox = Vector3(5.f, 10.0f, 5.0f); 
-	Machine = Vending(Object(Vector3(26,0,39.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh,1,90,false));
+	Machine = Vending(Object(Vector3(26,0,39.5), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,1,90,false));
 	object.push_back( &Machine.Drink );
 
 	//~~~~~SECURITY ROOM~~~~~~~~
 	hitBox = Vector3(29, 23, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
-
 	object.push_back( new Object(Vector3(-95.5, 38.5,8.f), Vector3(0,0,0), hitBox, tempMesh) );
 
 	hitBox = Vector3(29, 23, 2); 
@@ -637,18 +636,16 @@ void PROJECTScene::InitObjects()
 	
 	hitBox = Vector3(240,60,1); 
 	object.push_back( new Object(Vector3(0,0,-210), Vector3(0,hitBox.y/2,0), hitBox, 1, 0, false));
-	
-	/*
-	hitBox = Vector3(2.f, 50, 2.f);
+
+	hitBox = Vector3(1.5f, 50, 3.f);
 	tempMesh = MeshBuilder::GenerateCubeOnPlane("Elevator Border", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1);  tempMesh->textureID = LoadTGA("Image//silver.tga");
-	object.push_back( new Object(Vector3(6.4f,0,42), Vector3(0,hitBox.y/2,0), hitBox, tempMesh) );
-	object.push_back( new Object(Vector3(-6.4f,0,42), Vector3(0,hitBox.y/2,0), hitBox, tempMesh) );
-	*/
+	object.push_back( new Object(Vector3(5.6f,0,42.5f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh) );
+	object.push_back( new Object(Vector3(-5.6f,0,42.5f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh) );
 
 	tempMesh = MeshBuilder::GenerateOBJ("Button", "OBJ//button.obj"); tempMesh->textureID = LoadTGA("Image//buttonOff.tga");
-	hitBox = Vector3(1, 2.1f, 1.4f);
-	Object ButtonIn(Vector3(-10,4,-1), Vector3(0,1.05f,0), hitBox, tempMesh, 1, 0, true);
-	Object ButtonOut(Vector3(4.25,4,5), Vector3(0,1.05f,0), hitBox, tempMesh, 1, 90, true);
+	hitBox = Vector3(0.6f, 1, 0.25f);
+	Object ButtonIn(Vector3(-8,4,-1), Vector3(0,0.5f,0), hitBox, tempMesh, 0.5f, 0, true);
+	Object ButtonOut(Vector3(3.f,4,5), Vector3(0,0.5f,0), hitBox, tempMesh, 0.5f, 90, true);
 
 	hitBox = Vector3(5.f,8.5f,0.5f); 
 	tempMesh = MeshBuilder::GenerateCubeOnPlane("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1);  tempMesh->textureID = LoadTGA("Image//elevatordoor.tga");
@@ -659,12 +656,11 @@ void PROJECTScene::InitObjects()
 	object.push_back( &doorway.Door[0] );
 	object.push_back( &doorway.Door[1] );
 	object.push_back( &doorway.Button[0] );
-	object.push_back( &doorway.Button[1] );
 	
 	tempMesh = MeshBuilder::GenerateOBJ("Button", "OBJ//button.obj"); tempMesh->textureID = LoadTGA("Image//buttonOff.tga");
-	hitBox = Vector3(1, 2.1f, 1.4f); 
-	Object ButtonIn2(Vector3(-10,5,-1), Vector3(0,1.05f,0), hitBox, tempMesh, 1, 0, true);
-	Object ButtonOut2(Vector3(4.25,5,5), Vector3(0,1.05f,0), hitBox, tempMesh, 1, 90, true);
+	hitBox = Vector3(0.6f, 1, 0.25f); 
+	Object ButtonIn2(Vector3(-8,4,-1), Vector3(0,0.5f,0), hitBox, tempMesh, 0.5f, 0, true);
+	Object ButtonOut2(Vector3(3.f,4,5), Vector3(0,0.5f,0), hitBox, tempMesh, 0.5f, 90, true);
 
 	hitBox = Vector3(5.f,8.5f,0.5f); 
 	tempMesh = MeshBuilder::GenerateCubeOnPlane("Elevator", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1);  tempMesh->textureID = LoadTGA("Image//elevatordoor.tga");
@@ -675,7 +671,6 @@ void PROJECTScene::InitObjects()
 	object.push_back( &doorway2.Door[0] );
 	object.push_back( &doorway2.Door[1] );
 	object.push_back( &doorway2.Button[0] );
-	object.push_back( &doorway2.Button[1] );
 
 	for (int i = 0; i < 2; i++)
 	{
@@ -694,10 +689,12 @@ void PROJECTScene::InitObjects()
 		object.push_back( new Object(Vector3(0,i * 27,51.5f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh) );
 	}
 	
+	
+	hitBox = Vector3(5,9,2.5f);
+	tempMesh = MeshBuilder::GenerateOBJ("ATM", "OBJ//atm.obj"); tempMesh->textureID = LoadTGA("Image//atm2.tga");
+	Object D(Vector3(-50, 0, -90), Vector3(0,hitBox.y/2,0.3f), hitBox, tempMesh,1.5f,90,false);
 	tempMesh = MeshBuilder::GenerateOBJ("ATM", "OBJ//atm.obj"); tempMesh->textureID = LoadTGA("Image//atm.tga");
-	hitBox = Vector3(2,7,3);
-	Object D(Vector3(-50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh,1,90,false);
-	Object W(Vector3(50, 0.5 ,-89.5), Vector3(-0.1f,hitBox.y/2,0.3f), hitBox, tempMesh,1,90,false);
+	Object W(Vector3(50, 0, -90), Vector3(0,hitBox.y/2,0.3f), hitBox, tempMesh,1.5f,90,false);
 	Bank = ATM( D, W);
 	object.push_back( &Bank.Deposit );
 	object.push_back( &Bank.Withdraw );
@@ -1825,6 +1822,8 @@ void PROJECTScene::RenderScene()
 				modelStack.Rotate(object[i]->orientation, 0, 1, 0); 
 				modelStack.Translate(-object[i]->collision.centre);
 
+				modelStack.Scale(object[i]->size);
+
 				RenderMesh(object[i]->mesh, true);
 				modelStack.PopMatrix();
 			}
@@ -2128,12 +2127,10 @@ void PROJECTScene::Render()
 
 	if (player.holding < 0)
 	{
-		if (object[camera->lookAt]->type == "Money" || object[camera->lookAt]->type == "Item" || (object[camera->lookAt]->mesh != NULL && (object[camera->lookAt]->mesh->name == "Button" || object[camera->lookAt]->mesh->name == "vent")))
+		if (object[camera->lookAt]->type == "Money" || object[camera->lookAt]->type == "Item" || (object[camera->lookAt]->mesh != NULL && object[camera->lookAt]->mesh->name == "Button"))
 		{
 			string tooltip;
-			if (object[camera->lookAt]->mesh->name == "Button")
-				tooltip += "E to push ";
-			else if(object[camera->lookAt]->type == "Item")
+			if(object[camera->lookAt]->type == "Item")
 				tooltip += "E to take ";
 			else if(object[camera->lookAt]->type == "Money")
 				tooltip += "E to loot ";
@@ -2154,6 +2151,10 @@ void PROJECTScene::Render()
 				tooltip += to_string(long double (object[camera->lookAt]->getValue()));
 				tooltip += ")";
 			}
+
+			if (object[camera->lookAt]->mesh->name == "Button")
+				tooltip = "E to open Elevator doors";
+
 			modelStack.PushMatrix();
 			modelStack.Translate(0.35f,-5,0);
 			float textLength = getTextWidth(tooltip);
