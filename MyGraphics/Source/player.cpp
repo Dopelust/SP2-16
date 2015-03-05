@@ -46,6 +46,7 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 
 		else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
 		{	
+			position.y = minCube.y - hitbox.y;
 			yVelocity = 0;
 		}
 
@@ -77,6 +78,7 @@ void CollisionResponse(Vector3 initialPos, Vector3& position, Vector3 hitbox, Ve
 
 		else if(maxPlayer.y <= minCube.y && minPlayer.y <= minCube.y) //bump head
 		{	
+			position.y = minCube.y - hitbox.y;
 			yVelocity = 0;
 		}
 
