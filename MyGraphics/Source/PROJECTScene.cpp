@@ -409,7 +409,9 @@ void PROJECTScene::InitObjects()
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city2.tga");
 	decoration.push_back( new Aesthetics(Vector3(-141,35,-88), tempMesh, 180) );
-	decoration.push_back( new Aesthetics(Vector3(-81,35,-28), tempMesh, -90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 70, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city2_new.tga");
+	decoration.push_back( new Aesthetics(Vector3(-81,35,-53), tempMesh, -90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
 	decoration.push_back( new Aesthetics(Vector3(199,40,-158), tempMesh, 90) );
