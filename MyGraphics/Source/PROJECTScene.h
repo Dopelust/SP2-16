@@ -133,6 +133,7 @@ public:
 	void InitJunk();
 	virtual void Update(double dt);
 	virtual void Render();
+	virtual void Reset();
 	virtual void Exit();
 
 	void RicssonInit();

@@ -20,49 +20,7 @@ PROJECTScene::PROJECTScene()
 }
 PROJECTScene::~PROJECTScene()
 {
-	for (unsigned int i = 0; i < text.size(); i++)
-	{
-		delete text[i];
-	}
-	text.clear();
-
-	for (unsigned int i = 0; i < text2D.size(); i++)
-	{
-		delete text2D[i];
-	}
-	text2D.clear();
-
-	for (unsigned int i = 0; i < object.size(); i++)
-	{
-		if (object[i]->type == "Item" || object[i]->type == "Storage" || object[i]->type == "Dynamic" || object[i]->type == "Money") 
-		delete object[i];
-	}
-	object.clear();
-
-	for (unsigned int i = 0; i < character.size(); i++)
-	{
-		delete character[i]->quest;
-
-		for (unsigned int c = 0; c < character[i]->NUM_BODYPARTS; c++)
-		{
-			delete character[i]->bodyParts[c].mesh;
-		}
-
-		delete character[i];
-	}
-	character.clear();
-
-	for (unsigned int i = 0; i < decoration.size(); i++)
-	{
-		delete decoration[i];
-	}
-	decoration.clear();
 	
-	for (unsigned int i = 0; i < blood.size(); i++)
-	{
-		delete blood[i];
-	}
-	blood.clear();
 }
 void PROJECTScene::InitJunk()
 {
@@ -2606,9 +2564,55 @@ void PROJECTScene::Exit()
 {
 	// Cleanup VBO here
 	glDeleteVertexArrays(1, &m_vertexArrayID);
+	for (unsigned int i = 0; i < text.size(); i++)
+	{
+		delete text[i];
+	}
+	text.clear();
+
+	for (unsigned int i = 0; i < text2D.size(); i++)
+	{
+		delete text2D[i];
+	}
+	text2D.clear();
+
+	for (unsigned int i = 0; i < object.size(); i++)
+	{
+		if (object[i]->type != "Player" || object[i]->type != "Character")
+		delete object[i];
+	}
+	object.clear();
+
+	for (unsigned int i = 0; i < character.size(); i++)
+	{
+		delete character[i]->quest;
+
+		for (unsigned int c = 0; c < character[i]->NUM_BODYPARTS; c++)
+		{
+			delete character[i]->bodyParts[c].mesh;
+		}
+
+		delete character[i];
+	}
+	character.clear();
+
+	for (unsigned int i = 0; i < decoration.size(); i++)
+	{
+		delete decoration[i];
+	}
+	decoration.clear();
+	
+	for (unsigned int i = 0; i < blood.size(); i++)
+	{
+		delete blood[i];
+	}
+	blood.clear();
 	glDeleteProgram(m_programID);
 }
-
+void PROJECTScene::Reset()
+{
+	player = Player();
+}
 void PROJECTScene::RenderSkybox()
 {
 	modelStack.PushMatrix();

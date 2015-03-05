@@ -133,6 +133,7 @@ void Application::Run()
 	glfwGetWindowSize(m_window, &width, &height);
 
 	Scene * menuScene = new MENUScene(); menuScene->Init();
+	Scene * playScene = new PROJECTScene(); playScene->Init();
 	Scene *scene = menuScene;
 
 	m_timer.startTimer();    // Start timer to calculate how long it takes to render this frame
@@ -157,11 +158,8 @@ void Application::Run()
 			{
 				menu = false;
 
-				scene->Exit();
-				delete scene;
-
-				scene = new PROJECTScene();
-				scene->Init();
+				scene = playScene;
+				scene->Reset();
 			}
 			if (quit)
 				break;
@@ -172,16 +170,17 @@ void Application::Run()
 			{
 				play = false;
 
-				scene->Exit();
-				delete scene;
-
-				scene = new MENUScene();
-				scene->Init();
+				scene = menuScene;
+				scene->Reset();
 			}
 		}
 	}
-	scene->Exit();
-	delete scene;
+
+	menuScene->Exit();
+	delete menuScene;
+
+	playScene->Exit();
+	delete playScene;
 }
 
 void Application::Exit()

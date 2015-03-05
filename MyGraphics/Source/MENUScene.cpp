@@ -170,8 +170,6 @@ void MENUScene::Init()
 
 	soundInit();
 
-	select = 0;
-
 	buttons[0].position = Vector3(0,2.5f,0);
 	buttons[0].name = "PLAY";
 
@@ -184,6 +182,12 @@ void MENUScene::Init()
 	buttons[3].position = Vector3(0,-5.f,0);
 	buttons[3].name = "QUIT";
 
+	Reset();
+}
+
+void MENUScene::Reset()
+{
+	select = 0;
 	main = true;
 	startupDelay = 1.f;
 }
