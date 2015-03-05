@@ -1253,11 +1253,6 @@ void PROJECTScene::Update(double dt)
 	if (!pause)
 	{
 
-	if(Application::IsKeyPressed('R'))
-		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-	else
-		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-
 	if (camera == &player.camera)
 	{
 		camera->lookAt = camera->lookingAt(object, 100);
@@ -1269,6 +1264,7 @@ void PROJECTScene::Update(double dt)
 		{
 			if (player.inventory.Insert(object[camera->lookAt]))
 			{	
+				engine->play2D("Media/pick.mp3");
 				inputDelay = 0.2f;
 				object.erase(object.begin()+camera->lookAt);
 			}
@@ -1707,11 +1703,15 @@ void PROJECTScene::Update(double dt)
 			{
 				if(Application::IsKeyPressed(VK_UP))
 				{
+					if (pauseSelect)
+						engine->play2D("Media/select.mp3");
 					selectDelay = 0.1f;
 					pauseSelect = 0;
 				}
 				else if (Application::IsKeyPressed(VK_DOWN))
 				{
+					if (!pauseSelect)
+						engine->play2D("Media/select.mp3");
 					selectDelay = 0.1f;
 					pauseSelect = 1;
 				}
