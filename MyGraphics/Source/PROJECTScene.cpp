@@ -308,8 +308,6 @@ void PROJECTScene::InitObjects()
 	object.push_back( new Object(Vector3(50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh) );
 	object.push_back( new Object(Vector3(-50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh) );*/
 
-
-
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market(Outside of Supermarkte)~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3(1000.f, 100000.f, 1000.f);
 	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 160.f, 160, 25); tempMesh->textureID = LoadTGA("Image//floor.tga");
@@ -451,17 +449,6 @@ void PROJECTScene::InitObjects()
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 100, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city3.tga");
 	decoration.push_back( new Aesthetics(Vector3(-90,40,-212), tempMesh, 0) );
 	decoration.push_back( new Aesthetics(Vector3(90,40,-212), tempMesh, 0) );
-
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Crime Scene~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-
-	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//ChalkOutline.tga");
-	decoration.push_back( new Aesthetics(Vector3(63,0.09f,27), tempMesh, 54) );
-
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collection~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-
-	hitBox = Vector3();
-	tempMesh = MeshBuilder::GenerateQuad("Marked Circle", Color(1,1,1),8.5f,8.5f,1); tempMesh->textureID = LoadTGA("Image//collection.tga");
-	decoration.push_back( new Aesthetics(Vector3(-30.f,27.1f,15.f), tempMesh, 0) );
 
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Cash Table~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	
@@ -1121,6 +1108,16 @@ void PROJECTScene::InitTrans()
 	object.push_back( &AutoDoor.Door[0] );
 	object.push_back( &AutoDoor.Door[1] );
 
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Crime Scene~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//ChalkOutline.tga");
+	object.push_back( new Object(Vector3(63,0.09f,27), Vector3(), Vector3(), tempMesh, 1, 54, false) );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collection~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+	hitBox = Vector3();
+	tempMesh = MeshBuilder::GenerateQuad("Marked Circle", Color(1,1,1),8.5f,8.5f,1); tempMesh->textureID = LoadTGA("Image//collection.tga");
+	object.push_back( new Object(Vector3(-30.f,27.1f,15.f), Vector3(), Vector3(), tempMesh, 1, 0, false) );
 }
 
 /******************************************************************************/
