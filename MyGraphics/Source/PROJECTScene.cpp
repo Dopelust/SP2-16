@@ -2422,18 +2422,8 @@ void PROJECTScene::Render()
 		modelStack.PopMatrix();
 	}
 
-	string x = to_string(long double(camera->position.x));
-	string y = to_string(long double(camera->position.y));
-	string z = to_string(long double(camera->position.z));
-
 	modelStack.PushMatrix();
 	modelStack.Translate(-23,12.5f,0);
-	RenderText(meshList[GEO_TEXT], x, Color(1, 1, 1));
-	modelStack.Translate(0,-1,0);
-	RenderText(meshList[GEO_TEXT], y, Color(1, 1, 1));
-	modelStack.Translate(0,-1,0);
-	RenderText(meshList[GEO_TEXT], z, Color(1, 1, 1));
-	modelStack.Translate(-1,-1,0);
 	RenderText(meshList[GEO_TEXT], fps, Color(1, 1, 1));
 	modelStack.PopMatrix();
 
