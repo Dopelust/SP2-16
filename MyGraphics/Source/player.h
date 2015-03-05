@@ -58,6 +58,7 @@ public:
 \brief	This is the player class.
 */
 /******************************************************************************/
+
 class Player : public dynamicObject
 {
 public:
@@ -87,6 +88,7 @@ public:
 		type = "Player";
 		health = 1;
 		apparentHealth = 100;
+		hitDelay = 0;
 		position = Vector3(0, 2, -100);
 		for (int i = 0; i < TOTAL_VALUES; i++)
 		{
@@ -105,6 +107,7 @@ public:
 		camera.Init(position, hOrientation, vOrientation); 
 		inventory.Init(Vector3(0,-12.f,0));
 		inConversation = false;
+	
 		mesh =  NULL;
 
 		jump = 1;

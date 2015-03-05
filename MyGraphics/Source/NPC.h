@@ -46,7 +46,7 @@ public:
 		collision.centre = Vector3(0,collision.hitbox.y/2,0);
 		position = Vector3(0,0,0);
 		orientation = 0;
-
+		inConversation = false;
 		hitDelay = 0;
 
 		Init();

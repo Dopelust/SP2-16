@@ -134,6 +134,7 @@ void PROJECTScene::InitObjects()
 	Vector3 hitBox;
 	Vector3 hitBox2;
 	float size = 0;
+
 	hitBox = player.collision.hitbox; object.push_back( &player );
 
 	//~~~~~~~~~~SHELF~~~~~~~~~~~~
@@ -212,41 +213,24 @@ void PROJECTScene::InitObjects()
 			tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
 			hitBox = Vector3(6, 0.1f, 6);
 			object.push_back( new Storage(p, Vector3(0,3.2f,0), hitBox, tempMesh));
-
-			p.y += 3.25f;
-
-			int r = rand () % 2;
-
-			if (r == 0)
-			{
-				tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
-				hitBox = Vector3(1.5f, 0.25f, 1.5f); 
-			}
-			else 
-			{
-				tempMesh = MeshBuilder::GenerateOBJ("Hersheys", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
-				hitBox = Vector3(0.8f, 0.2f, 0.8f);
-			}
-
-			for (float X = -1; X < 2; X++)
-			{
-				for (float Z = -1; Z < 2; Z++)
-				{
-					float rX =float (rand () % 11 - 5); rX /= 10;
-					float rZ =float (rand () % 11 - 5); rZ /= 10;
-					Vector3 P(rX + X * 2.f, 0, rZ + Z * 2.f);
-					object.push_back( new Item(p + P, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, 1, 0, true, 9, 9) );
-				}
-			}
 		}
 	}
 
-	for (float y = 0; y <= 6; y+=3)
+	tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
+	hitBox = Vector3(6, 4.f, 6); 
+	for (float y = -102; y <= -87; y+= 5)
 	{
-		hitBox = Vector3(3, 3, 3);
-		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
-		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
+		object.push_back( new Object(Vector3(y , 27.25, 38.45f), Vector3(0,0,0), hitBox, tempMesh) );
 	}
+
+	tempMesh = MeshBuilder::GenerateOBJ("Television", "OBJ//tv.obj"); tempMesh->textureID = LoadTGA("Image//tv.tga");
+	hitBox = Vector3(2.f, 2.f, 2.0f); 
+	Object L(Vector3( -90, 30.5, 38.45f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,1,90,false);
+	Object K(Vector3( -97, 30.5, 38.45f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,1,90,false);
+	controlPanel = Security(L, K);
+	object.push_back( &controlPanel.TV[0] );
+	object.push_back( &controlPanel.TV[1] );
+	
 	for ( float x = 0; x < 3; x++)
 	{
 		for (float z = 0; z < 3; z++)
@@ -256,32 +240,6 @@ void PROJECTScene::InitObjects()
 			tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
 			hitBox = Vector3(6, 0.1f, 6);
 			object.push_back( new Storage(p, Vector3(0,3.2f,0), hitBox, tempMesh));
-
-			p.y += 3.25f;
-
-			int r = rand () % 2;
-
-			if (r == 0)
-			{
-				tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
-				hitBox = Vector3(1.5f, 0.25f, 1.5f);
-			}
-			else 
-			{
-				tempMesh = MeshBuilder::GenerateOBJ("Hersheys", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
-				hitBox = Vector3(0.8f, 0.2f, 0.8f);
-			}
-
-			for (float X = -1; X < 1; X++)
-			{
-				for (float Z = -1; Z < 1; Z++)
-				{
-					float rX =float (rand () % 11 - 5); rX /= 10;
-					float rZ =float (rand () % 11 - 5); rZ /= 10;
-					Vector3 P(rX + X * 2.f, 0, rZ + Z * 2.f);
-					object.push_back( new Item(p + P, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, 1, 0, true, 9,9) );
-				}
-			}
 		}
 	}
 
@@ -369,6 +327,114 @@ void PROJECTScene::InitObjects()
 	tempMesh->textureID = LoadTGA("Image//BuildingTGA//floor.tga");
 	decoration.push_back( new Aesthetics(Vector3(-125,0,-125), tempMesh, 0) );
 	decoration.push_back( new Aesthetics(Vector3(125,0,-125), tempMesh, 0) );
+
+	//~~~~~~POSTER~~~~~
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice.tga");
+	decoration.push_back( new Aesthetics(Vector3(-79.5,5.5,-36), tempMesh, 90));
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
+	decoration.push_back( new Aesthetics(Vector3(-79.55,5.5,-25), tempMesh,  90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
+	decoration.push_back( new Aesthetics(Vector3(-79.55,15,-60), tempMesh, 90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
+	decoration.push_back( new Aesthetics(Vector3(-79.55,15,15), tempMesh, 90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice2.tga");
+	decoration.push_back( new Aesthetics(Vector3(-79.54,6.5,-15), tempMesh, 90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//Poster//poster_icecream.tga");
+	decoration.push_back( new Aesthetics(Vector3(-79.55,5,-8), tempMesh, 90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//Golden.tga");
+	decoration.push_back( new Aesthetics(Vector3(-42,6,41.47), tempMesh, 180) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//Golden.tga");
+	decoration.push_back( new Aesthetics(Vector3(-20,6,41.47), tempMesh, 180) );
+	
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//rocher.tga");
+	decoration.push_back( new Aesthetics(Vector3(-30,9,41.47), tempMesh, 180) );
+	
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//pizza.tga");
+	decoration.push_back( new Aesthetics(Vector3(35,13,41.47), tempMesh, 180) );
+	
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 19, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//pepperoni.tga");
+	decoration.push_back( new Aesthetics(Vector3(49,12,41.46), tempMesh, 180) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//soup.tga");
+	decoration.push_back( new Aesthetics(Vector3(19,15,41.47), tempMesh, 180) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//soup.tga");
+	decoration.push_back( new Aesthetics(Vector3(71,15,41.47), tempMesh, 180) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 8, 1); tempMesh->textureID = LoadTGA("Image//Poster//new_soup.tga");
+	decoration.push_back( new Aesthetics(Vector3(64,5,41.465), tempMesh, 180) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 29, 20, 1); tempMesh->textureID = LoadTGA("Image//Poster//member.tga");
+	decoration.push_back( new Aesthetics(Vector3(48,13,-86), tempMesh, 0) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//shop-theft3.tga");
+	decoration.push_back( new Aesthetics(Vector3(28,13,-88.6), tempMesh, 180) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//shop-theft3.tga");
+	decoration.push_back( new Aesthetics(Vector3(-28,13,-88.6), tempMesh, 180) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 8, 1); tempMesh->textureID = LoadTGA("Image//Poster//Teaser.tga");
+	decoration.push_back( new Aesthetics(Vector3(0,15,41.47), tempMesh, 180) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 20, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//milo.tga");
+	decoration.push_back( new Aesthetics(Vector3(-25,38,41.47), tempMesh, 180) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 20, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//veg.tga");
+	decoration.push_back( new Aesthetics(Vector3(25,38,41.47), tempMesh, 180) );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Security Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	hitBox = Vector3();
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
+	decoration.push_back( new Aesthetics(Vector3(-79.95f,32.f,25.f), tempMesh, 90) );
+
+	hitBox = Vector3();
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
+	decoration.push_back( new Aesthetics(Vector3(-82.01f,32.f,25.f), tempMesh, 90) );
+
+	//~~~~CITY~~~~~
+	
+	hitBox = Vector3();
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city1.tga");
+	decoration.push_back( new Aesthetics(Vector3(141,35,-88), tempMesh, 180) );
+	decoration.push_back( new Aesthetics(Vector3(81,35,-28), tempMesh, 90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city2.tga");
+	decoration.push_back( new Aesthetics(Vector3(-141,35,-88), tempMesh, 180) );
+	decoration.push_back( new Aesthetics(Vector3(-81,35,-28), tempMesh, -90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
+	decoration.push_back( new Aesthetics(Vector3(199,40,-158), tempMesh, 90) );
+	decoration.push_back( new Aesthetics(Vector3(199,40,-298), tempMesh, 90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
+	decoration.push_back( new Aesthetics(Vector3(-199,40,-158), tempMesh, -90) );
+	decoration.push_back( new Aesthetics(Vector3(-199,40,-298), tempMesh, 90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 80, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city3.tga");
+	decoration.push_back( new Aesthetics(Vector3(0,40,-212), tempMesh, 0) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 100, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city3.tga");
+	decoration.push_back( new Aesthetics(Vector3(-90,40,-212), tempMesh, 0) );
+	decoration.push_back( new Aesthetics(Vector3(90,40,-212), tempMesh, 0) );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Crime Scene~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//ChalkOutline.tga");
+	decoration.push_back( new Aesthetics(Vector3(63,0.09f,27), tempMesh, 54) );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collection~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+	hitBox = Vector3();
+	tempMesh = MeshBuilder::GenerateQuad("Marked Circle", Color(1,1,1),8.5f,8.5f,1); tempMesh->textureID = LoadTGA("Image//collection.tga");
+	decoration.push_back( new Aesthetics(Vector3(-30.f,27.1f,15.f), tempMesh, 0) );
+
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Cash Table~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	
 	for( float x = 70; x > 20; x-=15)
@@ -552,7 +618,7 @@ void PROJECTScene::InitObjects()
 	hitBox = Vector3(240,60,1); 
 	object.push_back( new Object(Vector3(0,0,-210), Vector3(0,hitBox.y/2,0), hitBox, 1, 0, false));
 
-		tempMesh = MeshBuilder::GenerateOBJ("Elevator Border", "OBJ//elevatorborder.obj"); tempMesh->textureID = LoadTGA("Image//silver.tga");
+	tempMesh = MeshBuilder::GenerateOBJ("Elevator Border", "OBJ//elevatorborder.obj"); tempMesh->textureID = LoadTGA("Image//silver.tga");
 	hitBox = Vector3(2.75f, 40.25f, 3.5f);
 	object.push_back( new Object(Vector3(6.5f,0,42), Vector3(0,20.125f,0), hitBox, tempMesh) );
 	object.push_back( new Object(Vector3(-6.7f,0,42), Vector3(0,20.125f,0), hitBox, tempMesh) );
@@ -673,6 +739,73 @@ void PROJECTScene::InitItems()
 	Vector3 hitBox;
 	Vector3 hitBox2;
 	float size = 0;
+	
+	for (float x = 0; x < 2; x++)
+	{
+		for (float z = -1; z < 5; z++)
+		{
+			Vector3 p(-50 + x * 18,0, z * -15);
+			p.y += 3.25f;
+
+			int r = rand () % 2;
+
+			if (r == 0)
+			{
+				tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
+				hitBox = Vector3(1.5f, 0.25f, 1.5f); 
+			}
+			else 
+			{
+				tempMesh = MeshBuilder::GenerateOBJ("Hersheys", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
+				hitBox = Vector3(0.8f, 0.2f, 0.8f);
+			}
+
+			for (float X = -1; X < 2; X++)
+			{
+				for (float Z = -1; Z < 2; Z++)
+				{
+					float rX =float (rand () % 11 - 5); rX /= 10;
+					float rZ =float (rand () % 11 - 5); rZ /= 10;
+					Vector3 P(rX + X * 2.f, 0, rZ + Z * 2.f);
+					object.push_back( new Item(p + P, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, 1, 0, true, 9, 9) );
+				}
+			}
+		}
+	}
+
+	for ( float x = 0; x < 3; x++)
+	{
+		for (float z = 0; z < 3; z++)
+		{
+			Vector3 p(30 + x * 18,0, z * -15);
+
+			p.y += 3.25f;
+
+			int r = rand () % 2;
+
+			if (r == 0)
+			{
+				tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
+				hitBox = Vector3(1.5f, 0.25f, 1.5f);
+			}
+			else 
+			{
+				tempMesh = MeshBuilder::GenerateOBJ("Hersheys", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
+				hitBox = Vector3(0.8f, 0.2f, 0.8f);
+			}
+
+			for (float X = -1; X < 1; X++)
+			{
+				for (float Z = -1; Z < 1; Z++)
+				{
+					float rX =float (rand () % 11 - 5); rX /= 10;
+					float rZ =float (rand () % 11 - 5); rZ /= 10;
+					Vector3 P(rX + X * 2.f, 0, rZ + Z * 2.f);
+					object.push_back( new Item(p + P, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, 1, 0, true, 9,9) );
+				}
+			}
+		}
+	}
 
 	//~~~~~~~~~~~FOOD~~~~~~~~~~~~~~
 	tempMesh = MeshBuilder::GenerateOBJ("Pizza", "OBJ//Food//pizza.obj"); tempMesh->textureID = LoadTGA("Image//Food//frozen_pizza.tga");
@@ -879,132 +1012,8 @@ void PROJECTScene::InitItems()
 	}
 	for (float y = 0.5; y <= 4.75f; y+= 2.f)
 	{
-			object.push_back( new Money(Vector3(-9.5,y,-21.25), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, 1, 0, 50) );
+		object.push_back( new Money(Vector3(-9.5,y,-21.25), Vector3(0,hitBox.y/2,0), hitBox, tempMesh, 1, 0, 50) );
 	}
-
-	//~~~~~~POSTER~~~~~
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.5,5.5,-36), tempMesh, 90));
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.55,5.5,-25), tempMesh,  90) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.55,15,-60), tempMesh, 90) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 10, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice_cream.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.55,15,15), tempMesh, 90) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//ice2.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.54,6.5,-15), tempMesh, 90) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//Poster//poster_icecream.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.55,5,-8), tempMesh, 90) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//Golden.tga");
-	decoration.push_back( new Aesthetics(Vector3(-42,6,41.47), tempMesh, 180) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 7, 9, 1); tempMesh->textureID = LoadTGA("Image//Poster//Golden.tga");
-	decoration.push_back( new Aesthetics(Vector3(-20,6,41.47), tempMesh, 180) );
-	
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//rocher.tga");
-	decoration.push_back( new Aesthetics(Vector3(-30,9,41.47), tempMesh, 180) );
-	
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//pizza.tga");
-	decoration.push_back( new Aesthetics(Vector3(35,13,41.47), tempMesh, 180) );
-	
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 19, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//pepperoni.tga");
-	decoration.push_back( new Aesthetics(Vector3(49,12,41.46), tempMesh, 180) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//soup.tga");
-	decoration.push_back( new Aesthetics(Vector3(19,15,41.47), tempMesh, 180) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 15, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//soup.tga");
-	decoration.push_back( new Aesthetics(Vector3(71,15,41.47), tempMesh, 180) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 8, 1); tempMesh->textureID = LoadTGA("Image//Poster//new_soup.tga");
-	decoration.push_back( new Aesthetics(Vector3(64,5,41.465), tempMesh, 180) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 29, 20, 1); tempMesh->textureID = LoadTGA("Image//Poster//member.tga");
-	decoration.push_back( new Aesthetics(Vector3(48,13,-86), tempMesh, 0) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//shop-theft3.tga");
-	decoration.push_back( new Aesthetics(Vector3(28,13,-88.6), tempMesh, 180) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//shop-theft3.tga");
-	decoration.push_back( new Aesthetics(Vector3(-28,13,-88.6), tempMesh, 180) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 8, 1); tempMesh->textureID = LoadTGA("Image//Poster//Teaser.tga");
-	decoration.push_back( new Aesthetics(Vector3(0,15,41.47), tempMesh, 180) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 20, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//milo.tga");
-	decoration.push_back( new Aesthetics(Vector3(-25,38,41.47), tempMesh, 180) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 20, 15, 1); tempMesh->textureID = LoadTGA("Image//Poster//veg.tga");
-	decoration.push_back( new Aesthetics(Vector3(25,38,41.47), tempMesh, 180) );
-
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Security Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-	hitBox = Vector3();
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.95f,32.f,25.f), tempMesh, 90) );
-
-	hitBox = Vector3();
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
-	decoration.push_back( new Aesthetics(Vector3(-82.01f,32.f,25.f), tempMesh, 90) );
-
-	//~~~~SECURITY ITEMS~~~~~
-
-	tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
-	hitBox = Vector3(6, 4.f, 6); 
-	for (float y = -102; y <= -87; y+= 5)
-	{
-		object.push_back( new Object(Vector3(y , 27.25, 38.45f), Vector3(0,0,0), hitBox, tempMesh) );
-	}
-
-	tempMesh = MeshBuilder::GenerateOBJ("Television", "OBJ//tv.obj"); tempMesh->textureID = LoadTGA("Image//tv.tga");
-	hitBox = Vector3(2.f, 2.f, 2.0f); 
-	Object L(Vector3( -90, 30.5, 38.45f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,1,90,false);
-	Object K(Vector3( -97, 30.5, 38.45f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,1,90,false);
-	controlPanel = Security(L, K);
-	object.push_back( &controlPanel.TV[0] );
-	object.push_back( &controlPanel.TV[1] );
-
-	//~~~~CITY~~~~~
-	
-	hitBox = Vector3();
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city1.tga");
-	decoration.push_back( new Aesthetics(Vector3(141,35,-88), tempMesh, 180) );
-	decoration.push_back( new Aesthetics(Vector3(81,35,-28), tempMesh, 90) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city2.tga");
-	decoration.push_back( new Aesthetics(Vector3(-141,35,-88), tempMesh, 180) );
-	decoration.push_back( new Aesthetics(Vector3(-81,35,-28), tempMesh, -90) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
-	decoration.push_back( new Aesthetics(Vector3(199,40,-158), tempMesh, 90) );
-	decoration.push_back( new Aesthetics(Vector3(199,40,-298), tempMesh, 90) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
-	decoration.push_back( new Aesthetics(Vector3(-199,40,-158), tempMesh, -90) );
-	decoration.push_back( new Aesthetics(Vector3(-199,40,-298), tempMesh, 90) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 80, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city3.tga");
-	decoration.push_back( new Aesthetics(Vector3(0,40,-212), tempMesh, 0) );
-
-	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 100, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city3.tga");
-	decoration.push_back( new Aesthetics(Vector3(-90,40,-212), tempMesh, 0) );
-	decoration.push_back( new Aesthetics(Vector3(90,40,-212), tempMesh, 0) );
-
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Crime Scene~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-
-	tempMesh = MeshBuilder::GenerateQuad("", Color(1, 1, 1), 7, 7, 1); tempMesh->textureID = LoadTGA("Image//ChalkOutline.tga");
-	decoration.push_back( new Aesthetics(Vector3(63,0.09f,27), tempMesh, 54) );
-
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Collection~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-
-	hitBox = Vector3();
-	tempMesh = MeshBuilder::GenerateQuad("Marked Circle", Color(1,1,1),8.5f,8.5f,1); tempMesh->textureID = LoadTGA("Image//collection.tga");
-	decoration.push_back( new Aesthetics(Vector3(-30.f,27.1f,15.f), tempMesh, 0) );
 
 }
 void PROJECTScene::InitCharacters()
@@ -1014,7 +1023,6 @@ void PROJECTScene::InitCharacters()
 	Vector3 hitBox2;
 	float size = 0;
 
-		
 	character.push_back( new Hobo() );
 	character.push_back( new Thug() );
 
@@ -1079,71 +1087,6 @@ void PROJECTScene::InitDynamic()
 	Vector3 hitBox;
 	Vector3 hitBox2;
 	float size = 0;
-}
-
-void PROJECTScene::RicssonInit()
-{
-	Mesh* tempMesh;
-	Vector3 hitBox;
-	float size = 0;
-
-	hitBox = player.collision.hitbox; object.push_back( &player );
-	
-	tempMesh = MeshBuilder::GenerateOBJ("Shelf", "OBJ//LowPoly//shelf.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//Shelf.tga");
-	hitBox = Vector3(20,6,0.5f);
-	for (float z = 0; z >= -45; z-=22.5f)
-	{
-		hitBox = Vector3(20,6,0.5f);
-		object.push_back( new Object(Vector3(0,0,z), Vector3(0,hitBox.y/2,0), hitBox, tempMesh));
-		hitBox = Vector3(0.5f,6,3.5f); 
-		object.push_back( new Object(Vector3(10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox));
-		object.push_back( new Object(Vector3(-10.25f,0,z), Vector3(0,hitBox.y/2,0), hitBox));
-		hitBox = Vector3(20,0.1f,1.5f);
-		object.push_back( new Storage(Vector3(0,0,z + 1), Vector3(0,0.45f,0), hitBox));
-		object.push_back( new Storage(Vector3(0,2,z + 1), Vector3(0,0.45f,0), hitBox));
-		object.push_back( new Storage(Vector3(0,4,z + 1), Vector3(0,0.45f,0), hitBox));
-		object.push_back( new Storage(Vector3(0,0,z - 1), Vector3(0,0.45f,0), hitBox));
-		object.push_back( new Storage(Vector3(0,2,z - 1), Vector3(0,0.45f,0), hitBox));
-		object.push_back( new Storage(Vector3(0,4,z - 1), Vector3(0,0.45f,0), hitBox));
-	}
-
-	for (float x = 0; x < 2; x++)
-	{
-		for (float z = -1; z < 5; z++)
-		{
-			Vector3 p(-50 + x * 18,0, z * -15);
-
-			tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
-			hitBox = Vector3(6, 0.1f, 6);
-			object.push_back( new Storage(p, Vector3(0,3.2f,0), hitBox, tempMesh));
-
-			p.y += 3.25f;
-
-			int r = rand () % 2;
-
-			if (r == 0)
-			{
-				tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
-				hitBox = Vector3(1.5f, 0.25f, 1.5f); 
-			}
-			else 
-			{
-				tempMesh = MeshBuilder::GenerateOBJ("Hersheys", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
-				hitBox = Vector3(0.8f, 0.2f, 0.8f);
-			}
-
-			for (float X = -1; X < 2; X++)
-			{
-				for (float Z = -1; Z < 2; Z++)
-				{
-					float rX =float (rand () % 11 - 5); rX /= 10;
-					float rZ =float (rand () % 11 - 5); rZ /= 10;
-					Vector3 P(rX + X * 2.f, 0, rZ + Z * 2.f);
-					object.push_back( new Item(p + P, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, 1, 0, true, 9, 9) );
-				}
-			}
-		}
-	}
 
 	for (float y = 0; y <= 6; y+=3)
 	{
@@ -1151,96 +1094,6 @@ void PROJECTScene::RicssonInit()
 		tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
 		object.push_back( new dynamicObject(Vector3(15,y,39), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
 	}
-	for ( float x = 0; x < 3; x++)
-	{
-		for (float z = 0; z < 3; z++)
-		{
-			Vector3 p(30 + x * 18,0, z * -15);
-
-			tempMesh = MeshBuilder::GenerateOBJ("Display Table", "OBJ//LowPoly//display.obj"); tempMesh->textureID = LoadTGA("Image//LowPoly//display.tga");
-			hitBox = Vector3(6, 0.1f, 6);
-			object.push_back( new Storage(p, Vector3(0,3.2f,0), hitBox, tempMesh));
-
-			p.y += 3.25f;
-
-			int r = rand () % 2;
-
-			if (r == 0)
-			{
-				tempMesh = MeshBuilder::GenerateOBJ("Chocolate", "OBJ//Food//chocolate.obj"); tempMesh->textureID = LoadTGA("Image//Food//chocolate.tga");
-				hitBox = Vector3(1.5f, 0.25f, 1.5f);
-			}
-			else 
-			{
-				tempMesh = MeshBuilder::GenerateOBJ("Hersheys", "OBJ//Food//choco_bar.obj"); tempMesh->textureID = LoadTGA("Image//Food//Chocolate Bar texture.tga");
-				hitBox = Vector3(0.8f, 0.2f, 0.8f);
-			}
-
-			for (float X = -1; X < 1; X++)
-			{
-				for (float Z = -1; Z < 1; Z++)
-				{
-					float rX =float (rand () % 11 - 5); rX /= 10;
-					float rZ =float (rand () % 11 - 5); rZ /= 10;
-					Vector3 P(rX + X * 2.f, 0, rZ + Z * 2.f);
-					object.push_back( new Item(p + P, Vector3(0,hitBox.y/2,0), hitBox, tempMesh, 1, 0, true, 9,9) );
-				}
-			}
-		}
-	}
-}
-
-/******************************************************************************/
-/*!
-\brief
-Initializers
-*/
-/******************************************************************************/
-void PROJECTScene::JeremiahInit()
-{
-	Mesh* tempMesh;
-	Vector3 hitBox;
-	Vector3 hitBox2;
-	float size = 0;
-	
-
-
-
-}
-
-/******************************************************************************/
-/*!
-\brief
-Initializers
-*/
-/******************************************************************************/
-void PROJECTScene::JessicaInit()
-{
-	Mesh* tempMesh;
-	Vector3 hitBox;
-	float size = 0;
-
-
-	
-	
-	
-	
-	
-}
-
-/******************************************************************************/
-/*!
-\brief
-Initializers
-*/
-/******************************************************************************/
-void PROJECTScene::DarrenInit()
-{	
-	Mesh* tempMesh;
-	Vector3 hitBox;
-	float size = 0;
-
-
 }
 
 /******************************************************************************/
@@ -1335,10 +1188,6 @@ void PROJECTScene::Init()
 		glUniform1f(m_parameters[U_LIGHT0_COSINNER + 11*i], light[i].cosInner);
 		glUniform1f(m_parameters[U_LIGHT0_EXPONENT + 11*i], light[i].exponent);
 	}
-
-	textbox = NULL;
-
-	text2D.push_back( new OnScreenText("+$50", Vector3(-23.f, 2.5f, 0)) );
 
 	soundInit();
 }
@@ -1629,33 +1478,36 @@ void PROJECTScene::Update(double dt)
 		if (textbox == NULL)
 			character[i]->inConversation = false;
 
-		if (camera == &player.camera)
-		if (object[camera->lookAt] == character[i] && character[i]->health > 0)
-			if (Application::IsKeyPressed('E') && inputDelay == 0)
-			{
-				if (!character[i]->inConversation)
+		if (player.health > 0)
+		{
+			if (camera == &player.camera)
+			if (object[camera->lookAt] == character[i] && character[i]->health > 0)
+				if (Application::IsKeyPressed('E') && inputDelay == 0)
 				{
-					inputDelay = 0.2f;
-					textbox = character[i]->getConversation(&player);
-
-					if (textbox != NULL)
+					if (!character[i]->inConversation)
 					{
-						player.inConversation = true;
-						stopCamera = true;
+						inputDelay = 0.2f;
+						textbox = character[i]->getConversation(&player);
 
-						if (textbox->type == "Checkout")
+						if (textbox != NULL)
 						{
-							character[i]->InitQuest("Filestream//Quests//cashier.txt");
-							textbox->text = textbox->GenerateText(player.inventory);
-						}
-						else if (textbox->type == "Donation")
-						{
-							character[i]->InitQuest("Filestream//Quests//hobo.txt");
-							textbox->text = textbox->GenerateText(player.inventory);
+							player.inConversation = true;
+							stopCamera = true;
+
+							if (textbox->type == "Checkout")
+							{
+								character[i]->InitQuest("Filestream//Quests//cashier.txt");
+								textbox->text = textbox->GenerateText(player.inventory);
+							}
+							else if (textbox->type == "Donation")
+							{
+								character[i]->InitQuest("Filestream//Quests//hobo.txt");
+								textbox->text = textbox->GenerateText(player.inventory);
+							}
 						}
 					}
 				}
-			}
+		}
 	}
 
 	for (unsigned int i = 0; i < text.size(); i++)
@@ -1816,6 +1668,7 @@ void PROJECTScene::Update(double dt)
 	else
 		inputDelay = 0;
 
+	Application::IsKeyPressed(VK_ESCAPE);
 	Application::IsKeyPressed(VK_SPACE);
 	Application::IsKeyPressed(VK_BACK);
 	Application::IsKeyPressed('1');
@@ -2820,6 +2673,10 @@ void PROJECTScene::Exit()
 {
 	// Cleanup VBO here
 	glDeleteVertexArrays(1, &m_vertexArrayID);
+	glDeleteProgram(m_programID);
+}
+void PROJECTScene::Reset()
+{
 	for (unsigned int i = 0; i < text.size(); i++)
 	{
 		delete text[i];
@@ -2832,13 +2689,6 @@ void PROJECTScene::Exit()
 	}
 	text2D.clear();
 
-	for (unsigned int i = 0; i < object.size(); i++)
-	{
-		if (object[i]->type != "Player" || object[i]->type != "Character")
-		delete object[i];
-	}
-	object.clear();
-
 	for (unsigned int i = 0; i < character.size(); i++)
 	{
 		delete character[i]->quest;
@@ -2848,26 +2698,53 @@ void PROJECTScene::Exit()
 			delete character[i]->bodyParts[c].mesh;
 		}
 
-		delete character[i];
+		for (unsigned int o = 0; o < object.size(); o++)
+		{
+			if (object[o] == character[i])
+			{
+				delete character[i];
+				object.erase(object.begin() + o);
+				break;
+			}
+		}
 	}
 	character.clear();
 
-	for (unsigned int i = 0; i < decoration.size(); i++)
+	for (int i = 0; i < 10; i++)
 	{
-		delete decoration[i];
+		for (unsigned int o = 0; o < object.size(); o++)
+		{
+			if (object[o]->type == "Item" || object[o]->type == "Money" || object[o]->type == "Dynamic")
+			{
+				delete object[o];
+				object.erase(object.begin() + o);
+			}
+		}
+
 	}
-	decoration.clear();
-	
+
 	for (unsigned int i = 0; i < blood.size(); i++)
 	{
 		delete blood[i];
 	}
 	blood.clear();
-	glDeleteProgram(m_programID);
-}
-void PROJECTScene::Reset()
-{
+
 	player = Player();
+	stopCamera = false;
+
+	Machine.price = 2;
+	ATM.savings = 0;
+	CCTVs[0].Init(Vector3(79,22,-85), -45, 0);
+	CCTVs[1].Init(Vector3(79,22,40.5f), -135, 0);
+	CCTVs[2].Init(Vector3(-69,22,30.5f), 135, 0);
+	CCTVs[3].Init(Vector3(-69,22,-75.5f), 45, 0);
+
+	InitCharacters();
+	InitItems();
+	InitDynamic();
+
+	textbox = NULL;
+	text2D.push_back( new OnScreenText("+$50", Vector3(-23.f, 2.5f, 0)) );
 }
 void PROJECTScene::RenderSkybox()
 {

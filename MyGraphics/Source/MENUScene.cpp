@@ -359,6 +359,7 @@ void MENUScene::Update(double dt)
 	{
 		Application::IsKeyPressed(i);
 	}
+	Application::IsKeyPressed(VK_ESCAPE);
 	Application::IsKeyPressed(VK_UP);
 	Application::IsKeyPressed(VK_DOWN);
 	Application::IsKeyPressed(VK_SPACE);
