@@ -437,7 +437,9 @@ void PROJECTScene::InitObjects()
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 120, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city2.tga");
 	decoration.push_back( new Aesthetics(Vector3(-141,35,-88), tempMesh, 180) );
-	decoration.push_back( new Aesthetics(Vector3(-81,35,-28), tempMesh, -90) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 70, 70, 1); tempMesh->textureID = LoadTGA("Image//City//city2_new.tga");
+	decoration.push_back( new Aesthetics(Vector3(-81,35,-53), tempMesh, -90) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 140, 80, 1); tempMesh->textureID = LoadTGA("Image//City//city4.tga");
 	decoration.push_back( new Aesthetics(Vector3(199,40,-158), tempMesh, 90) );
@@ -1251,7 +1253,7 @@ extern bool menu;
 extern bool c_discount;
 
 bool pause = false;
-
+bool pauseSelect;
 /******************************************************************************/
 /*!
 \brief
@@ -1676,6 +1678,7 @@ void PROJECTScene::Update(double dt)
 	{
 		inputDelay = 0.2f;
 		pause = true;
+		pauseSelect = 0;
 	}
 
 	}
@@ -1692,10 +1695,34 @@ void PROJECTScene::Update(double dt)
 		}
 		else // PAUSED
 		{
-			if (Application::IsKeyPressed(VK_ESCAPE) && inputDelay == 0)
+			if ( Application::IsKeyPressed(VK_ESCAPE) || (Application::IsKeyPressed(VK_RETURN) && !pauseSelect) )
 			{
-				inputDelay = 0.2f;
+				if (inputDelay == 0)
+				{
+					inputDelay = 0.2f;
+					pause = false;
+				}
+			}
+
+			if (Application::IsKeyPressed(VK_RETURN) && pauseSelect)
+			{
+				engine->stopAllSounds();
+				menu = true;
 				pause = false;
+			}
+
+			if (selectDelay == 0)
+			{
+				if(Application::IsKeyPressed(VK_UP))
+				{
+					selectDelay = 0.1f;
+					pauseSelect = 0;
+				}
+				else if (Application::IsKeyPressed(VK_DOWN))
+				{
+					selectDelay = 0.1f;
+					pauseSelect = 1;
+				}
 			}
 		}
 	}
@@ -1710,6 +1737,10 @@ void PROJECTScene::Update(double dt)
 	else
 		inputDelay = 0;
 
+	Application::IsKeyPressed(VK_UP);
+	Application::IsKeyPressed(VK_DOWN);
+	Application::IsKeyPressed(VK_LEFT);
+	Application::IsKeyPressed(VK_RIGHT);
 	Application::IsKeyPressed(VK_ESCAPE);
 	Application::IsKeyPressed(VK_SPACE);
 	Application::IsKeyPressed(VK_BACK);
@@ -2437,7 +2468,7 @@ void PROJECTScene::Render()
 		if (player.health == 0)
 		{
 			modelStack.PushMatrix();
-			modelStack.Translate(0.35f,5,0);
+			modelStack.Translate(1.5f,5,0);
 			float textLength = getTextWidth( "You Died!");
 			modelStack.Scale(5.f);
 			modelStack.Translate(-textLength/2, 0, 0);
@@ -2445,20 +2476,67 @@ void PROJECTScene::Render()
 			modelStack.PopMatrix();
 
 			modelStack.PushMatrix();
-			modelStack.Translate(0.35f,-3.5f,0);
-			textLength = getTextWidth( "Press ENTER to return to Main Menu");
+			modelStack.Translate(0,-3.5f,0);
+			textLength = getTextWidth( "ENTER to return to Main Menu");
 			modelStack.Translate(-textLength/2, 0, 0);
-			RenderText(meshList[GEO_TEXT], "Press ENTER to return to Main Menu" , Color(1, 1, 1));
+			RenderText(meshList[GEO_TEXT], "ENTER to return to Main Menu" , Color(1, 1, 1));
 			modelStack.PopMatrix();
 		}
 		else
 		{
 			modelStack.PushMatrix();
-			modelStack.Translate(0.35f,5,0);
+			modelStack.Translate(1.5f,5,0);
 			float textLength = getTextWidth( "You Paused!");
 			modelStack.Scale(5.f);
 			modelStack.Translate(-textLength/2, 0, 0);
 			RenderText(meshList[GEO_TEXT], "You Paused!" , Color(1, 1, 1));
+			modelStack.PopMatrix();
+			
+			if (!pauseSelect)
+			{
+				modelStack.PushMatrix();
+				modelStack.Translate(0.5f,0,0);
+				textLength = getTextWidth(">          <");
+				modelStack.Translate(-textLength/2, 0, 0);
+				RenderText(meshList[GEO_TEXT],">          <", Color(1, 1, 1));
+				modelStack.PopMatrix();
+			}
+			else
+			{
+				modelStack.PushMatrix();
+				modelStack.Translate(0.35f,-2.5f,0);
+				textLength = getTextWidth(">                         <");
+				modelStack.Translate(-textLength/2, 0, 0);
+				RenderText(meshList[GEO_TEXT],">                          <", Color(1, 1, 1));
+				modelStack.PopMatrix();
+			}
+			
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,0,0);
+			textLength = getTextWidth( "RESUME");
+			modelStack.Translate(-textLength/2, 0, 0);
+			if (!pauseSelect)
+				RenderText(meshList[GEO_TEXT], "RESUME" , Color(1, 1, 1));
+			else
+				RenderText(meshList[GEO_TEXT], "RESUME" , Color(0.25f, 0.25f, 0.25f));
+			modelStack.PopMatrix();
+
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,-2.5f,0);
+			textLength = getTextWidth( "BACK TO MAIN MENU");
+			modelStack.Translate(-textLength/2, 0, 0);
+			if (pauseSelect)
+				RenderText(meshList[GEO_TEXT], "BACK TO MAIN MENU" , Color(1, 1, 1));
+			else
+				RenderText(meshList[GEO_TEXT], "BACK TO MAIN MENU" , Color(0.25f, 0.25f, 0.25f));
+			modelStack.PopMatrix();
+
+			modelStack.PushMatrix();
+			modelStack.Translate(0.35f,-3.5f,0);
+			textLength = getTextWidth( "(Lose all progress)");
+			modelStack.Scale(0.5f);
+			modelStack.Translate(-textLength/2, 0, 0);
+			RenderText(meshList[GEO_TEXT], "(Lose all progress)" , Color(1, 1, 1));
 			modelStack.PopMatrix();
 		}
 		glEnable(GL_DEPTH_TEST);
@@ -2791,20 +2869,20 @@ void PROJECTScene::Reset()
 void PROJECTScene::RenderSkybox()
 {
 	modelStack.PushMatrix();
-	modelStack.Translate(0,0,-0.498f);
+	modelStack.Translate(0,0,-0.4985f);
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	RenderMesh(meshList[GEO_FRONT], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,0, 0.498f);
+	modelStack.Translate(0,0, 0.4985f);
 	modelStack.Rotate(-90,1,0,0);
 	RenderMesh(meshList[GEO_BACK], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-0.498f,0,0);
+	modelStack.Translate(-0.4985f,0,0);
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	modelStack.Rotate(90,0,0,1);
@@ -2812,7 +2890,7 @@ void PROJECTScene::RenderSkybox()
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0.498f,0,0);
+	modelStack.Translate(0.4985f,0,0);
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	modelStack.Rotate(-90,0,0,1);
@@ -2820,14 +2898,14 @@ void PROJECTScene::RenderSkybox()
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,0.498f,0);
+	modelStack.Translate(0,0.4985f,0);
 	modelStack.Rotate(180,1,0,0);
 	modelStack.Rotate(180,0,1,0);
 	RenderMesh(meshList[GEO_TOP], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,-0.498f,0);
+	modelStack.Translate(0,-0.4985f,0);
 	modelStack.Rotate(90,0,1,0);
 	RenderMesh(meshList[GEO_BOTTOM], false);
 	modelStack.PopMatrix();
