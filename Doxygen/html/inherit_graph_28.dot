@@ -1,0 +1,38 @@
+digraph "Graphical Class Hierarchy"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Object",height=0.2,width=0.4,color="black",URL="$classObject.html",tooltip="This is the object class that takes in a lot of member variables depending on what is needed like if ..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Bodypart",height=0.2,width=0.4,color="black",URL="$classBodypart.html",tooltip="This is the Body class which inherits somethings from the Object class. This class is for the NPCs bo..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dynamicObject",height=0.2,width=0.4,color="black",URL="$classdynamicObject.html",tooltip="This class is for the dynamic objects. Mainly used for the crates. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NPC",height=0.2,width=0.4,color="black",URL="$classNPC.html",tooltip="This the NPC class. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Blindman",height=0.2,width=0.4,color="black",URL="$classBlindman.html",tooltip="This the Blindman. "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Cashier",height=0.2,width=0.4,color="black",URL="$classCashier.html",tooltip="This the cashier NPC. "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Customer",height=0.2,width=0.4,color="black",URL="$classCustomer.html",tooltip="This is the customer class for the not important npc. "];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Detective",height=0.2,width=0.4,color="black",URL="$classDetective.html",tooltip="This is the Detective class. "];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Hobo",height=0.2,width=0.4,color="black",URL="$classHobo.html",tooltip="This the HOBO/homeless man. "];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Manager",height=0.2,width=0.4,color="black",URL="$classManager.html",tooltip="This is the Manager class. "];
+  Node4 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="S_Guard",height=0.2,width=0.4,color="black",URL="$classS__Guard.html",tooltip="This is the Security class. "];
+  Node4 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Thug",height=0.2,width=0.4,color="black",URL="$classThug.html",tooltip="This the Thug. "];
+  Node3 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Player",height=0.2,width=0.4,color="black",URL="$classPlayer.html",tooltip="This is the player class. "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Item",height=0.2,width=0.4,color="black",URL="$classItem.html",tooltip="Item class which is used for initializing item objects for the player to pick up. ..."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Money",height=0.2,width=0.4,color="black",URL="$classMoney.html",tooltip="Money class which has object properties for initializing them. "];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Storage",height=0.2,width=0.4,color="black",URL="$classStorage.html",tooltip="Storage calss which is used for the shelves that can store Items. "];
+}

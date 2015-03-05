@@ -1,0 +1,29 @@
+digraph "dynamicObject"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="dynamicObject",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Object",height=0.2,width=0.4,color="black",URL="$classObject.html",tooltip="This is the object class that takes in a lot of member variables depending on what is needed like if ..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NPC",height=0.2,width=0.4,color="black",URL="$classNPC.html",tooltip="This the NPC class. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Blindman",height=0.2,width=0.4,color="black",URL="$classBlindman.html",tooltip="This the Blindman. "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Cashier",height=0.2,width=0.4,color="black",URL="$classCashier.html",tooltip="This the cashier NPC. "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Customer",height=0.2,width=0.4,color="black",URL="$classCustomer.html",tooltip="This is the customer class for the not important npc. "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Detective",height=0.2,width=0.4,color="black",URL="$classDetective.html",tooltip="This is the Detective class. "];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Hobo",height=0.2,width=0.4,color="black",URL="$classHobo.html",tooltip="This the HOBO/homeless man. "];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Manager",height=0.2,width=0.4,color="black",URL="$classManager.html",tooltip="This is the Manager class. "];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="S_Guard",height=0.2,width=0.4,color="black",URL="$classS__Guard.html",tooltip="This is the Security class. "];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Thug",height=0.2,width=0.4,color="black",URL="$classThug.html",tooltip="This the Thug. "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Player",height=0.2,width=0.4,color="black",URL="$classPlayer.html",tooltip="This is the player class. "];
+}

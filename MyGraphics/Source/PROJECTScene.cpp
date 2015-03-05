@@ -1074,7 +1074,11 @@ void PROJECTScene::InitDynamic()
 
 	hitBox = Vector3(5.f,7.5f,2);
 	tempMesh = MeshBuilder::GenerateCube("vent", Color(1,1,1),5.5f,7.5f,2,1); tempMesh->textureID = LoadTGA("Image//vent_door.tga");
-	object.push_back( new Break(Vector3(77.25f,30.8f,42.4f), Vector3(0,0,0), hitBox, tempMesh, 1 , 0, false) );	
+	object.push_back( new Break(Vector3(77.25f,30.8f,42.4f), Vector3(0,0,0), hitBox, tempMesh, 1 , 0, false) );
+
+	hitBox = Vector3(3, 3, 3);
+	tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
+	object.push_back( new dynamicObject(Vector3(74.25f,30.8f,39.4f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
 }
 void PROJECTScene::InitTrans()
 {
