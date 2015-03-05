@@ -253,7 +253,30 @@ void PROJECTScene::InitObjects()
 	hitBox = Vector3(2, 50, 132); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	object.push_back( new Object(Vector3(81,hitBox.y/2,-22.5f), Vector3(0,0,0), hitBox, tempMesh) );
+
+	hitBox = Vector3(2, 25, 132); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	object.push_back( new Object(Vector3(-81,hitBox.y/2,-22.5f), Vector3(0,0,0), hitBox, tempMesh) );
+
+	hitBox = Vector3(2, 25, 95); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	object.push_back( new Object(Vector3(-81,hitBox.y/2+25,-35.5f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~most right~~~~~~~~~~~~~//
+
+	hitBox = Vector3(2, 7.5, 24); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	object.push_back( new Object(Vector3(-81,hitBox.y/2+25,19.f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AT the window~~~~~~~~//
+
+	hitBox = Vector3(2, 8, 18.5); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 2); tempMesh->textureID = LoadTGA("Image//roof.tga");
+	object.push_back( new Object(Vector3(-81,hitBox.y/2+32.5,21.25f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~the Window~~~~~//
+
+	hitBox = Vector3(2, 9.5, 24); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	object.push_back( new Object(Vector3(-81,hitBox.y/2+40.5,19.f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AT the window~~~~~~//
+
+	hitBox = Vector3(2, 25, 13); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
+	object.push_back( new Object(Vector3(-81,hitBox.y/2+25,36.9f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~after the window~~~~~~~~~~~~~//
 
 	hitBox = Vector3(73, 50, 2); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
@@ -283,6 +306,11 @@ void PROJECTScene::InitObjects()
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	object.push_back( new Object(Vector3(50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh) );
 	object.push_back( new Object(Vector3(-50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh) );
+
+	/*hitBox = Vector3(2, 25, 37); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//roof.tga");
+	object.push_back( new Object(Vector3(50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh) );
+	object.push_back( new Object(Vector3(-50,hitBox.y/2,-87.5f), Vector3(0,0,0), hitBox, tempMesh) );*/
 
 
 
@@ -394,11 +422,11 @@ void PROJECTScene::InitObjects()
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Security Door~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
-	decoration.push_back( new Aesthetics(Vector3(-79.95f,32.f,25.f), tempMesh, 90) );
+	decoration.push_back( new Aesthetics(Vector3(-79.95f,32.f,36.f), tempMesh, 90) );
 
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 5.5f, 10, 1); tempMesh->textureID = LoadTGA("Image//MetalDoor.tga");
-	decoration.push_back( new Aesthetics(Vector3(-82.01f,32.f,25.f), tempMesh, 90) );
+	decoration.push_back( new Aesthetics(Vector3(-82.01f,32.f,36.f), tempMesh, 90) );
 
 	//~~~~CITY~~~~~
 	
