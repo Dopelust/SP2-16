@@ -243,7 +243,6 @@ void PROJECTScene::InitObjects()
 		}
 	}
 
-			
 	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	hitBox = Vector3(10, 25, 10); 
 	tempMesh = MeshBuilder::GenerateCube("Pillar", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); 
@@ -709,7 +708,6 @@ void PROJECTScene::InitObjects()
 	{
 		object.push_back( new Object(Vector3(x,27,-22.5), Vector3(0.5,4,0),hitBox,tempMesh,1,45,false));
 	}
-	
 }
 void PROJECTScene::InitItems()
 {
@@ -1118,6 +1116,9 @@ void PROJECTScene::InitTrans()
 	hitBox = Vector3();
 	tempMesh = MeshBuilder::GenerateQuad("Marked Circle", Color(1,1,1),8.5f,8.5f,1); tempMesh->textureID = LoadTGA("Image//collection.tga");
 	object.push_back( new Object(Vector3(-30.f,27.1f,15.f), Vector3(), Vector3(), tempMesh, 1, 0, false) );
+
+	tempMesh = MeshBuilder::GenerateXYQuad("Controls", Color(1,1,1),3,3,1); tempMesh->textureID = LoadTGA("Image//Poster//cctvcontrols.tga");
+	object.push_back( new Object(Vector3(-93.5f, 32.f, 41.4f), Vector3(), Vector3(), tempMesh,1 ,180, false));
 }
 
 /******************************************************************************/
@@ -1772,14 +1773,6 @@ void PROJECTScene::RenderScene()
 		}
 	}
 
-	if(Application::IsKeyPressed('T'))
-	{
-		modelStack.PushMatrix();
-		modelStack.Translate(camera->target);
-		RenderMesh(meshList[GEO_AXES], false);
-		modelStack.PopMatrix();
-	}
-
 	modelStack.PushMatrix();
 	modelStack.Translate(camera->position);
 	modelStack.Scale(700);
@@ -1817,20 +1810,18 @@ void PROJECTScene::RenderScene()
 		}
 	}
 
-	if(!Application::IsKeyPressed('Q'))
+	for (unsigned int i = 0; i < decoration.size(); i++)
 	{
-		for (unsigned int i = 0; i < decoration.size(); i++)
-		{
-			modelStack.PushMatrix();
-			modelStack.Translate(decoration[i]->position);
-			modelStack.Rotate(decoration[i]->orientation, 0, 1, 0); 
-			RenderMesh(decoration[i]->mesh, true);
-			modelStack.PopMatrix();
-		}
+		modelStack.PushMatrix();
+		modelStack.Translate(decoration[i]->position);
+		modelStack.Rotate(decoration[i]->orientation, 0, 1, 0); 
+		RenderMesh(decoration[i]->mesh, true);
+		modelStack.PopMatrix();
+	}
 
-		for (unsigned int i = 1; i < object.size(); i++)
-		{
-			if (object[i]->type == "Dynamic" || object[i]->type == "Item")
+	for (unsigned int i = 1; i < object.size(); i++)
+	{
+		if (object[i]->type == "Dynamic" || object[i]->type == "Item")
 			if (object[i]->mesh != NULL)
 			{
 				modelStack.PushMatrix();
@@ -1843,11 +1834,11 @@ void PROJECTScene::RenderScene()
 				RenderMesh(object[i]->mesh, true);
 				modelStack.PopMatrix();
 			}
-		}
+	}
 
-		for (unsigned int i = 1; i < object.size(); i++)
-		{
-			if (object[i]->type != "Dynamic" && object[i]->type != "Item")
+	for (unsigned int i = 1; i < object.size(); i++)
+	{
+		if (object[i]->type != "Dynamic" && object[i]->type != "Item")
 			if (object[i]->mesh != NULL)
 			{
 				modelStack.PushMatrix();
@@ -1862,20 +1853,9 @@ void PROJECTScene::RenderScene()
 				RenderMesh(object[i]->mesh, true);
 				modelStack.PopMatrix();
 			}
-		}
-	}
-
-	for (unsigned int i = 0; i < blood.size(); i++)
-	{
-		modelStack.PushMatrix();
-		modelStack.Translate(blood[i]->position);
-		modelStack.Rotate(camera->orientation, 0, 1, 0); 
-		modelStack.Rotate(-camera->look, 1, 0, 0); 
-		modelStack.Rotate(90, 1, 0, 0); 
-		RenderMesh(blood[i]->mesh, false);
-		modelStack.PopMatrix();
 	}
 	
+	/*
 	if(Application::IsKeyPressed('Q'))
 	{
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); //wireframe mode
@@ -1898,6 +1878,7 @@ void PROJECTScene::RenderScene()
 	light[0].position.z);
 	//RenderMesh(meshList[GEO_LIGHTBALL], false);
 	modelStack.PopMatrix();
+	*/
 
 	if (player.holding >= 0)
 	{
