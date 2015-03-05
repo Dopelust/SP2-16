@@ -1,0 +1,24 @@
+digraph "MENUScene::Update"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="MENUScene::Update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="irrklang::ISoundEngine\l::isCurrentlyPlaying",height=0.2,width=0.4,color="black",URL="$classirrklang_1_1ISoundEngine.html#a1084577f9f43cb12e86cea43c323b12c",tooltip="Returns if a sound with the specified name is currently playing. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Application::IsKeyPressed",height=0.2,width=0.4,color="black",URL="$classApplication.html#a72cc9bba26506a7c0f54c346dfbd5cfe"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="irrklang::ISoundEngine\l::play2D",height=0.2,width=0.4,color="black",URL="$classirrklang_1_1ISoundEngine.html#a25f612fe6479d3b22dc5bab2a2eaa927",tooltip="loads a sound source (if not loaded already) from a file and plays it. "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Camera3::Update",height=0.2,width=0.4,color="black",URL="$classCamera3.html#acc5d4103826cda6d20b80a0d35eacdbe",tooltip="This is the update function. "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Vector3::Cross",height=0.2,width=0.4,color="black",URL="$structVector3.html#aa1cdc5357009b47fe585ddd61e263aad",tooltip="Cross product of 2 vectors. "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Vector3::Vector3",height=0.2,width=0.4,color="black",URL="$structVector3.html#afa5e0c801fc2c8a820a54ea99302fe08",tooltip="Vector3 default constructor. "];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Vector3::SphericalToCartesian",height=0.2,width=0.4,color="black",URL="$structVector3.html#ab3b1af4c82ca09bf8ce997c205e3cb10"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Math::DegreeToRadian",height=0.2,width=0.4,color="black",URL="$namespaceMath.html#ac04b987cc6c574a059e68cb58f58c09a",tooltip="Converts from degrees to radians. "];
+}
