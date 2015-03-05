@@ -2742,11 +2742,11 @@ void PROJECTScene::Reset()
 	stopCamera = false;
 
 	Machine.price = 2;
-	ATM.savings = 0;
-	CCTVs[0].Init(Vector3(79,22,-85), -45, 0);
-	CCTVs[1].Init(Vector3(79,22,40.5f), -135, 0);
-	CCTVs[2].Init(Vector3(-69,22,30.5f), 135, 0);
-	CCTVs[3].Init(Vector3(-69,22,-75.5f), 45, 0);
+	Bank.savings = 0;
+	controlPanel.CCTVs[0].Init(Vector3(79,22,-85), -45, 0);
+	controlPanel.CCTVs[1].Init(Vector3(79,22,40.5f), -135, 0);
+	controlPanel.CCTVs[2].Init(Vector3(-69,22,30.5f), 135, 0);
+	controlPanel.CCTVs[3].Init(Vector3(-69,22,-75.5f), 45, 0);
 
 	InitCharacters();
 	InitItems();
