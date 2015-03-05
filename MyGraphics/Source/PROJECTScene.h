@@ -163,6 +163,11 @@ public:
 	virtual void Reset();
 	virtual void Exit();
 
+	void InitObjects();
+	void InitItems();
+	void InitCharacters();
+	void InitDynamic();
+
 	void RicssonInit();
 	void JeremiahInit();
 	void JessicaInit();
