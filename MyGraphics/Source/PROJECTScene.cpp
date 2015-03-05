@@ -266,10 +266,6 @@ void PROJECTScene::InitObjects()
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	object.push_back( new Object(Vector3(-81,hitBox.y/2+25,19.f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AT the window~~~~~~~~//
 
-	hitBox = Vector3(2, 8, 18.5); 
-	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 2); tempMesh->textureID = LoadTGA("Image//roof.tga");
-	object.push_back( new Object(Vector3(-81,hitBox.y/2+32.5,21.25f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~the Window~~~~~//
-
 	hitBox = Vector3(2, 9.5, 24); 
 	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); tempMesh->textureID = LoadTGA("Image//BuildingTGA//Wall1.tga");
 	object.push_back( new Object(Vector3(-81,hitBox.y/2+40.5,19.f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~AT the window~~~~~~//
@@ -752,23 +748,7 @@ void PROJECTScene::InitObjects()
 	{
 		object.push_back( new Object(Vector3(x,27,-22.5), Vector3(0.5,4,0),hitBox,tempMesh,1,45,false));
 	}
-
-	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market Entrance~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 	
-	tempMesh = MeshBuilder::GenerateOBJ("Auto Door", "OBJ//glass_d.obj"); tempMesh->textureID = LoadTGA("Image//GlassDoor.tga");
-	hitBox = Vector3(20,25,1.25);
-	Object autoDoor(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, tempMesh);
-	hitBox = Vector3(33.5f,25,30); 
-	Object autoRange(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox);
-	AutoDoor.Init(Vector3(0,0,-87.5), autoDoor, autoRange);
-	object.push_back( &AutoDoor.Door[0] );
-	object.push_back( &AutoDoor.Door[1] );
-
-	//~~~~~~~~~~~~~~CEILING~~~~~~~~~~~~~~~~~
-	hitBox = Vector3(161, 2, 127.3); 
-	tempMesh = MeshBuilder::GenerateCube("ceiling", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//roof.tga");
-	object.push_back( new Object(Vector3(0,hitBox.y/2+48,-22.5), Vector3(0,0,0), hitBox, tempMesh) );
-
 }
 void PROJECTScene::InitItems()
 {
@@ -1126,7 +1106,7 @@ void PROJECTScene::InitDynamic()
 	Vector3 hitBox;
 	Vector3 hitBox2;
 	float size = 0;
-
+	
 	for (float y = 0; y <= 3; y+=3)
 	{
 		hitBox = Vector3(3, 3, 3);
@@ -1136,6 +1116,37 @@ void PROJECTScene::InitDynamic()
 	hitBox = Vector3(3, 3, 3);
 	tempMesh = MeshBuilder::GenerateCubeOnPlane("Crate", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//crate.tga");
 	object.push_back( new dynamicObject(Vector3(-95.5,27.5,25.5f), Vector3(0,hitBox.y/2,0), hitBox, tempMesh,float (rand() % 21 - 10)) );
+
+	
+}
+void PROJECTScene::InitTrans()
+{
+	Mesh* tempMesh;
+	Vector3 hitBox;
+	Vector3 hitBox2;
+	float size = 0;
+
+	//~~~~~~~window of security~~~~~~~~~~
+	hitBox = Vector3(2, 7.95, 18.4); 
+	tempMesh = MeshBuilder::GenerateCube("Wall", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 2); tempMesh->textureID = LoadTGA("Image//roof.tga");
+	object.push_back( new Object(Vector3(-81,hitBox.y/2+32.5,21.2f), Vector3(0,0,0), hitBox, tempMesh) ); //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~the Window~~~~~//
+
+	//~~~~~~~~~~~~~~CEILING~~~~~~~~~~~~~~~~~
+	hitBox = Vector3(161, 2, 127.3); 
+	tempMesh = MeshBuilder::GenerateCube("ceiling", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1); tempMesh->textureID = LoadTGA("Image//roof.tga");
+	object.push_back( new Object(Vector3(0,hitBox.y/2+48,-22.5), Vector3(0,0,0), hitBox, tempMesh) );
+
+	//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Super Market Entrance~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+	
+	tempMesh = MeshBuilder::GenerateOBJ("Auto Door", "OBJ//glass_d.obj"); tempMesh->textureID = LoadTGA("Image//GlassDoor.tga");
+	hitBox = Vector3(20,25,1.25);
+	Object autoDoor(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox, tempMesh);
+	hitBox = Vector3(33.5f,25,30); 
+	Object autoRange(Vector3(0,0,0), Vector3(0,hitBox.y/2,0), hitBox);
+	AutoDoor.Init(Vector3(0,0,-87.5), autoDoor, autoRange);
+	object.push_back( &AutoDoor.Door[0] );
+	object.push_back( &AutoDoor.Door[1] );
+
 }
 
 /******************************************************************************/
@@ -1161,10 +1172,12 @@ void PROJECTScene::Init()
 
 	camera = &player.camera;
 	
+
 	InitObjects();
 	InitItems();
 	InitCharacters();
 	InitDynamic();
+	InitTrans();
 
 	meshList[GEO_BOUND] = MeshBuilder::GenerateCube("Cube", Color(1,1,1), 1.f, 1.f, 1.f, 1);
 	meshList[GEO_HOLD] = MeshBuilder::GenerateCubeOnPlane("Cube", Color(1,1,1), 1.f, 1.f, 1.f, 1);
@@ -1839,6 +1852,24 @@ void PROJECTScene::RenderScene()
 
 		for (unsigned int i = 1; i < object.size(); i++)
 		{
+			if (object[i]->type == "Dynamic" || object[i]->type == "Item")
+			if (object[i]->mesh != NULL)
+			{
+				modelStack.PushMatrix();
+				modelStack.Translate(object[i]->position);
+
+				modelStack.Translate(object[i]->collision.centre);
+				modelStack.Rotate(object[i]->orientation, 0, 1, 0); 
+				modelStack.Translate(-object[i]->collision.centre);
+
+				RenderMesh(object[i]->mesh, true);
+				modelStack.PopMatrix();
+			}
+		}
+
+		for (unsigned int i = 1; i < object.size(); i++)
+		{
+			if (object[i]->type != "Dynamic" && object[i]->type != "Item")
 			if (object[i]->mesh != NULL)
 			{
 				modelStack.PushMatrix();

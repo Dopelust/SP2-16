@@ -85,7 +85,7 @@ void Application::Init()
 	//Create a window and create its OpenGL context
 	GLFWvidmode * mode = (GLFWvidmode*)glfwGetVideoMode(glfwGetPrimaryMonitor());
 	m_window = glfwCreateWindow(mode->width, mode->height, "Computer Graphics", glfwGetPrimaryMonitor(), NULL);
-	//glfwSetWindowPos(m_window, 50, 50);
+
 	//If the window couldn't be created
 	if (!m_window)
 	{

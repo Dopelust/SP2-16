@@ -167,6 +167,8 @@ public:
 	void InitItems();
 	void InitCharacters();
 	void InitDynamic();
+	void InitTrans();
+
 
 	void RicssonInit();
 	void JeremiahInit();
