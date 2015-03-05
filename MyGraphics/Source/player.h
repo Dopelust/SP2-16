@@ -86,7 +86,7 @@ public:
 	Player() 
 	{
 		type = "Player";
-		health = 1;
+		health = 100;
 		apparentHealth = 100;
 		hitDelay = 0;
 		position = Vector3(0, 2, -100);

@@ -211,7 +211,7 @@ void MENUScene::Reset()
 {
 	select = 0;
 	main = true;
-	startupDelay = 1.f;
+	startupDelay = 0.5f;
 }
 
 extern float selectDelay;
@@ -247,7 +247,7 @@ void MENUScene::Update(double dt)
 			{
 				if (select > 0)
 				{
-					selectDelay = 0.16f;
+					selectDelay = 0.14f;
 					select--;
 					engine->play2D("Media/select.mp3");
 				}
@@ -256,7 +256,7 @@ void MENUScene::Update(double dt)
 			{
 				if (select < 3)
 				{
-					selectDelay = 0.16f;
+					selectDelay = 0.14f;
 					select++;
 
 					engine->play2D("Media/select.mp3");
@@ -775,20 +775,20 @@ void MENUScene::Exit()
 void MENUScene::RenderSkybox()
 {
 	modelStack.PushMatrix();
-	modelStack.Translate(0,0,-0.498f);
+	modelStack.Translate(0,0,-0.4985f);
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	RenderMesh(meshList[GEO_FRONT], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,0, 0.498f);
+	modelStack.Translate(0,0, 0.4985f);
 	modelStack.Rotate(-90,1,0,0);
 	RenderMesh(meshList[GEO_BACK], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-0.498f,0,0);
+	modelStack.Translate(-0.4985f,0,0);
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	modelStack.Rotate(90,0,0,1);
@@ -796,7 +796,7 @@ void MENUScene::RenderSkybox()
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0.498f,0,0);
+	modelStack.Translate(0.4985f,0,0);
 	modelStack.Rotate(180,0,1,0);
 	modelStack.Rotate(-90,1,0,0);
 	modelStack.Rotate(-90,0,0,1);
@@ -804,14 +804,14 @@ void MENUScene::RenderSkybox()
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,0.498f,0);
+	modelStack.Translate(0,0.4985f,0);
 	modelStack.Rotate(180,1,0,0);
 	modelStack.Rotate(180,0,1,0);
 	RenderMesh(meshList[GEO_TOP], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Translate(0,-0.498f,0);
+	modelStack.Translate(0,-0.4985f,0);
 	modelStack.Rotate(90,0,1,0);
 	RenderMesh(meshList[GEO_BOTTOM], false);
 	modelStack.PopMatrix();
