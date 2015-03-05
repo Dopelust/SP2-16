@@ -398,10 +398,10 @@ void PROJECTScene::InitObjects()
 	decoration.push_back( new Aesthetics(Vector3(48,13,-86), tempMesh, 0) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//shop-theft3.tga");
-	decoration.push_back( new Aesthetics(Vector3(28,13,-88.6), tempMesh, 180) );
+	decoration.push_back( new Aesthetics(Vector3(28,13,-88.7), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 12, 1); tempMesh->textureID = LoadTGA("Image//Poster//shop-theft3.tga");
-	decoration.push_back( new Aesthetics(Vector3(-28,13,-88.6), tempMesh, 180) );
+	decoration.push_back( new Aesthetics(Vector3(-28,13,-88.7), tempMesh, 180) );
 
 	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 10, 8, 1); tempMesh->textureID = LoadTGA("Image//Poster//Teaser.tga");
 	decoration.push_back( new Aesthetics(Vector3(0,15,41.47), tempMesh, 180) );
@@ -1117,8 +1117,14 @@ void PROJECTScene::InitTrans()
 	tempMesh = MeshBuilder::GenerateQuad("Marked Circle", Color(1,1,1),8.5f,8.5f,1); tempMesh->textureID = LoadTGA("Image//collection.tga");
 	object.push_back( new Object(Vector3(-30.f,27.1f,15.f), Vector3(), Vector3(), tempMesh, 1, 0, false) );
 
+
+	//~~~~~~~~~~~~~~~~supermarket~~~~~~~~~~~~~~~~~
+	tempMesh = MeshBuilder::GenerateXYQuad("", Color(1, 1, 1), 165, 65, 1); tempMesh->textureID = LoadTGA("Image//BuildingTGA//super.tga");
+	object.push_back( new Object(Vector3(0,27.5,-88.6), Vector3(), Vector3(), tempMesh, 1, 180, false) );
+
 	tempMesh = MeshBuilder::GenerateXYQuad("Controls", Color(1,1,1),3,3,1); tempMesh->textureID = LoadTGA("Image//Poster//cctvcontrols.tga");
 	object.push_back( new Object(Vector3(-93.5f, 32.f, 41.4f), Vector3(), Vector3(), tempMesh,1 ,180, false));
+
 }
 
 /******************************************************************************/
