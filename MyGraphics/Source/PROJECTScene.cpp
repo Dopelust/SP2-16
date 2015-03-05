@@ -624,12 +624,12 @@ void PROJECTScene::InitObjects()
 	}
 
 	tempMesh = MeshBuilder::GenerateCube("Block", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 100); 
-	hitBox = Vector3(1,60,125);
-	object.push_back( new Object(Vector3(-75,0,-150), Vector3(0,hitBox.y/2,0), hitBox, 1,0, false));
-	object.push_back( new Object(Vector3(75,0,-150), Vector3(0,hitBox.y/2,0), hitBox, 1,0, false));
+	hitBox = Vector3(1,200,125);
+	object.push_back( new Object(Vector3(-80.5f,0,-150), Vector3(0,hitBox.y/2,0), hitBox, 1,0, false));
+	object.push_back( new Object(Vector3(80.5f,0,-150), Vector3(0,hitBox.y/2,0), hitBox, 1,0, false));
 	
 	hitBox = Vector3(240,60,1); 
-	object.push_back( new Object(Vector3(0,0,-210), Vector3(0,hitBox.y/2,0), hitBox, 1, 0, false));
+	object.push_back( new Object(Vector3(0,0,-212), Vector3(0,hitBox.y/2,0), hitBox, 1, 0, false));
 
 	hitBox = Vector3(1.5f, 50, 3.f);
 	tempMesh = MeshBuilder::GenerateCubeOnPlane("Elevator Border", Color(1,1,1), hitBox.x, hitBox.y, hitBox.z, 1);  tempMesh->textureID = LoadTGA("Image//silver.tga");
@@ -1244,6 +1244,7 @@ bool pauseSelect;
 Upadte
 */
 /******************************************************************************/
+extern bool DARREN;
 void PROJECTScene::Update(double dt)
 {
 	soundUpdate(player);
@@ -1405,6 +1406,8 @@ void PROJECTScene::Update(double dt)
 							Vector3 tPos = Vector3(-23.f, 1.5f, 0);
 							string add = "-$"; add += to_string (long double (totalPrice) );
 							text2D.push_back( new OnScreenText(add, tPos, true) );
+
+							engine->play2D("Media/cashier.wav");
 						}
 						else
 						{
@@ -1644,18 +1647,18 @@ void PROJECTScene::Update(double dt)
 
 	if (Application::IsKeyPressed(VK_TAB))
 	{
-		showLevel +=float( 8 * dt);
+		showLevel +=float( 10 * dt);
 
 		if (showLevel > 0)
 			showLevel = 0;
 
 	}
-	else if (showLevel > -2.5f)
+	else if (showLevel > -3.f)
 	{
 		showLevel -=float( 8 * dt );
 
-		if (showLevel < -2.5f)
-			showLevel = -2.5f;
+		if (showLevel < -3.f)
+			showLevel = -3.f;
 	}
 
 	if ( (Application::IsKeyPressed(VK_ESCAPE) && inputDelay == 0) || player.health == 0 )
@@ -1675,6 +1678,8 @@ void PROJECTScene::Update(double dt)
 				engine->stopAllSounds();
 				menu = true;
 				pause = false;
+
+				DARREN = false;
 			}
 		}
 		else // PAUSED
@@ -1693,6 +1698,8 @@ void PROJECTScene::Update(double dt)
 				engine->stopAllSounds();
 				menu = true;
 				pause = false;
+
+				DARREN = false;
 			}
 
 			if (selectDelay == 0)
@@ -2801,6 +2808,11 @@ void PROJECTScene::Exit()
 	glDeleteVertexArrays(1, &m_vertexArrayID);
 	glDeleteProgram(m_programID);
 }
+
+extern bool JEREMIAH;
+extern bool JESSICA;
+extern bool RICSSON;
+
 void PROJECTScene::Reset()
 {
 	for (unsigned int i = 0; i < text.size(); i++)
@@ -2871,6 +2883,28 @@ void PROJECTScene::Reset()
 
 	textbox = NULL;
 	text2D.push_back( new OnScreenText("+$50", Vector3(-23.f, 2.5f, 0)) );
+
+	if (RICSSON)
+	{
+		for (int i = 0; i < 16; i++)
+		{
+			player.inventory.Insert(Machine.generateDrink());
+		}
+
+		RICSSON = false;
+	}
+	if (JEREMIAH)
+	{
+		player.jump = 10;
+
+		JEREMIAH = false;
+	}
+	if (JESSICA)
+	{
+		player.speed = 10;
+
+		JESSICA = false;
+	}
 }
 void PROJECTScene::RenderSkybox()
 {
