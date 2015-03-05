@@ -140,8 +140,16 @@ public:
 	string GenerateText(Inventory inventory) 
 	{
 		string price;
+		if( discount == true )
+		{
 		price = to_string(long double( inventory.checkPrice() ));
 		return text + price;
+		}
+		else
+		{
+		price = to_string(long double( inventory.checkPrice()/2 ));
+		return text + price;
+		}
 	}
 };
 

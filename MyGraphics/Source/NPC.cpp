@@ -686,14 +686,21 @@ void Manager::Init()
 \brief	Manager Control
 */
 /******************************************************************************/
+bool discount;
 void Manager::Control(double dt, vector<Object*>object, Player* player)
 {
 	if (quest != NULL)
 	{
 		if (collection.Criteria(object))
+		{
 			quest->criteria = true;
+			discount = true;
+		}
 		else
+		{
 			quest->criteria = false;
+			discount = false;
+		}
 	}
 
 	Orientate(-145, dt, 150.f);
