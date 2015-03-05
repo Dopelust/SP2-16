@@ -55,6 +55,9 @@
 <div class="title">PROJECTScene.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is the camera3 cpp.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="PROJECTScene_8h_source.html">PROJECTScene.h</a>&quot;</code><br />
 <code>#include &quot;GL\glew.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="shader_8hpp_source.html">shader.hpp</a>&quot;</code><br />
@@ -74,20 +77,20 @@ Include dependency graph for PROJECTScene.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a1d4d788755a89306144fb82d4db9d0bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classTextBox.html">TextBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a1d4d788755a89306144fb82d4db9d0bc">textbox</a></td></tr>
+<tr class="separator:a1d4d788755a89306144fb82d4db9d0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bc0b7e4601a935e3dd2021bc7a145fb"><td class="memItemLeft" align="right" valign="top">long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a0bc0b7e4601a935e3dd2021bc7a145fb">x</a></td></tr>
 <tr class="separator:a0bc0b7e4601a935e3dd2021bc7a145fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad502eec197f7d286623cdc883a2ebf29"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#ad502eec197f7d286623cdc883a2ebf29">fps</a></td></tr>
 <tr class="separator:ad502eec197f7d286623cdc883a2ebf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3d272e8048af77a48361dc777d00bfc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#ac3d272e8048af77a48361dc777d00bfc">animateHeart</a> = 0.f</td></tr>
 <tr class="separator:ac3d272e8048af77a48361dc777d00bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d44f2ee29f46aec5628697d410bdb67"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a4d44f2ee29f46aec5628697d410bdb67">animateHeartDir</a> = 1.f</td></tr>
-<tr class="separator:a4d44f2ee29f46aec5628697d410bdb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa812bc70cac95b0ea4e716a891afb5d6"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#aa812bc70cac95b0ea4e716a891afb5d6">animateHeartDir</a> = 1.f</td></tr>
+<tr class="separator:aa812bc70cac95b0ea4e716a891afb5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1a0cf435929df7f92dfee7c223bb13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#acd1a0cf435929df7f92dfee7c223bb13">Select</a></td></tr>
 <tr class="separator:acd1a0cf435929df7f92dfee7c223bb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b7b9afecc42ea3bdad4c38d34e56e9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a88b7b9afecc42ea3bdad4c38d34e56e9">selectDelay</a> = 0.f</td></tr>
 <tr class="separator:a88b7b9afecc42ea3bdad4c38d34e56e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f589e5ecc9e76fbe63f43ff76edf021"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a5f589e5ecc9e76fbe63f43ff76edf021">pauseDelay</a></td></tr>
-<tr class="separator:a5f589e5ecc9e76fbe63f43ff76edf021"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab4aca1d184256eaf1f29ca85502d228"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#aab4aca1d184256eaf1f29ca85502d228">CCTV</a> = false</td></tr>
 <tr class="separator:aab4aca1d184256eaf1f29ca85502d228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a00c62601a8c50f3d1e559011500ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a33a00c62601a8c50f3d1e559011500ea">stopCamera</a> = false</td></tr>
@@ -96,8 +99,22 @@ Variables</h2></td></tr>
 <tr class="separator:ab56cdd798fa279dceae0e730285d5b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82afce81dc7ebe7bec74e4154b956843"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a82afce81dc7ebe7bec74e4154b956843">showLevel</a> = -2.f</td></tr>
 <tr class="separator:a82afce81dc7ebe7bec74e4154b956843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2474a5474cbff19523a51eb1de01cda4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a2474a5474cbff19523a51eb1de01cda4">width</a></td></tr>
+<tr class="separator:a2474a5474cbff19523a51eb1de01cda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12fc34ce789bce6c8a05d8a17138534"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#ad12fc34ce789bce6c8a05d8a17138534">height</a></td></tr>
+<tr class="separator:ad12fc34ce789bce6c8a05d8a17138534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64881c5f5f42c13aa0deb1dc0d7a8b26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a64881c5f5f42c13aa0deb1dc0d7a8b26">menu</a></td></tr>
+<tr class="separator:a64881c5f5f42c13aa0deb1dc0d7a8b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66076fd4c94f1ef66bb0256b653cf37f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PROJECTScene_8cpp.html#a66076fd4c94f1ef66bb0256b653cf37f">pause</a> = false</td></tr>
+<tr class="separator:a66076fd4c94f1ef66bb0256b653cf37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Variable Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is the camera3 cpp. </p>
+<dl class="section author"><dt>Author</dt><dd>Ricsson </dd></dl>
+<dl class="section user"><dt></dt><dd></dd></dl>
+
+<p>Definition in file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+</div><h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="ac3d272e8048af77a48361dc777d00bfc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -108,13 +125,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01180">1180</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01240">1240</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l01885">PROJECTScene::Render()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l02023">PROJECTScene::Render()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4d44f2ee29f46aec5628697d410bdb67"></a>
+<a class="anchor" id="aa812bc70cac95b0ea4e716a891afb5d6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -122,7 +139,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int animateHeartDir = 1.f</td>
+          <td class="memname">float animateHeartDir = 1.f</td>
         </tr>
       </table>
   </td>
@@ -132,9 +149,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01181">1181</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01241">1241</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 </div>
 </div>
@@ -148,9 +165,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01186">1186</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01245">1245</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l01885">PROJECTScene::Render()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l01817">PROJECTScene::RenderCCTVUI()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l02023">PROJECTScene::Render()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l01944">PROJECTScene::RenderCCTVUI()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 </div>
 </div>
@@ -164,7 +181,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="audio_8cpp_source.html#l00004">4</a> of file <a class="el" href="audio_8cpp_source.html">audio.cpp</a>.</p>
+<p>Definition at line <a class="el" href="audio_8cpp_source.html#l00013">13</a> of file <a class="el" href="audio_8cpp_source.html">audio.cpp</a>.</p>
 
 </div>
 </div>
@@ -178,25 +195,57 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01179">1179</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01239">1239</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l01885">PROJECTScene::Render()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l02023">PROJECTScene::Render()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5f589e5ecc9e76fbe63f43ff76edf021"></a>
+<a class="anchor" id="ad12fc34ce789bce6c8a05d8a17138534"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float pauseDelay</td>
+          <td class="memname">int height</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Application_8cpp_source.html#l00124">124</a> of file <a class="el" href="Application_8cpp_source.html">Application.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Application_8cpp_source.html#l00040">40</a> of file <a class="el" href="Application_8cpp_source.html">Application.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cpp_source.html#l00130">Application::Run()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="MeshBuilder_8cpp_source.html#l01123">MeshBuilder::GenerateText()</a>, <a class="el" href="LoadTGA_8cpp_source.html#l00008">LoadTGA()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l02023">PROJECTScene::Render()</a>, <a class="el" href="Application_8cpp_source.html#l00042">resize_callback()</a>, <a class="el" href="Application_8cpp_source.html#l00131">Application::Run()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a64881c5f5f42c13aa0deb1dc0d7a8b26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool menu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="MENUScene_8cpp_source.html#l00217">217</a> of file <a class="el" href="MENUScene_8cpp_source.html">MENUScene.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66076fd4c94f1ef66bb0256b653cf37f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pause = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01255">1255</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l02023">PROJECTScene::Render()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 </div>
 </div>
@@ -210,7 +259,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01182">1182</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01242">1242</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
 
 </div>
 </div>
@@ -224,9 +273,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01183">1183</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01243">1243</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="MENUScene_8cpp_source.html#l00194">MENUScene::Update()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="MENUScene_8cpp_source.html#l00233">MENUScene::Update()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 </div>
 </div>
@@ -240,9 +289,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01190">1190</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01249">1249</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l01885">PROJECTScene::Render()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l02023">PROJECTScene::Render()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 </div>
 </div>
@@ -256,9 +305,41 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01187">1187</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01246">1246</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="player_8cpp_source.html#l00079">Player::Update()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="player_8cpp_source.html#l00100">Player::Update()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d4d788755a89306144fb82d4db9d0bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classTextBox.html">TextBox</a>* textbox</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l00024">24</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2474a5474cbff19523a51eb1de01cda4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Application_8cpp_source.html#l00039">39</a> of file <a class="el" href="Application_8cpp_source.html">Application.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="MeshBuilder_8cpp_source.html#l01123">MeshBuilder::GenerateText()</a>, <a class="el" href="LoadTGA_8cpp_source.html#l00008">LoadTGA()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l02023">PROJECTScene::Render()</a>, <a class="el" href="Application_8cpp_source.html#l00042">resize_callback()</a>, <a class="el" href="Application_8cpp_source.html#l00131">Application::Run()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 </div>
 </div>
@@ -272,16 +353,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01178">1178</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
+<p>Definition at line <a class="el" href="PROJECTScene_8cpp_source.html#l01238">1238</a> of file <a class="el" href="PROJECTScene_8cpp_source.html">PROJECTScene.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l00967">PROJECTScene::DarrenInit()</a>, <a class="el" href="LoadOBJ_8cpp_source.html#l00149">IndexVBO()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l00222">PROJECTScene::JeremiahInit()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l00518">PROJECTScene::JessicaInit()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l01885">PROJECTScene::Render()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l00094">PROJECTScene::RicssonInit()</a>, <a class="el" href="Mtx44_8cpp_source.html#l00319">Mtx44::SetToRotation()</a>, <a class="el" href="MyMath_8h_source.html#l00175">Math::Square()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01192">PROJECTScene::Update()</a>.</p>
+<p>Referenced by <a class="el" href="PROJECTScene_8cpp_source.html#l01017">PROJECTScene::DarrenInit()</a>, <a class="el" href="LoadOBJ_8cpp_source.html#l00149">IndexVBO()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l00288">PROJECTScene::JeremiahInit()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l00566">PROJECTScene::JessicaInit()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l02023">PROJECTScene::Render()</a>, <a class="el" href="PROJECTScene_8cpp_source.html#l00173">PROJECTScene::RicssonInit()</a>, <a class="el" href="Mtx44_8cpp_source.html#l00319">Mtx44::SetToRotation()</a>, <a class="el" href="MyMath_8h_source.html#l00175">Math::Square()</a>, and <a class="el" href="PROJECTScene_8cpp_source.html#l01263">PROJECTScene::Update()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 4 2015 14:18:20 for My Application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 5 2015 02:07:35 for My Application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

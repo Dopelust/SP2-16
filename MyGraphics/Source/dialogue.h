@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	dialogue.h
+\author Ricsson
+\par	
+\brief
+This is where the textbox is contained as well as the various quests.
+*/
+/******************************************************************************/
 #ifndef DIALOGUE_H
 #define DIALOGUE_H
 
@@ -12,6 +21,12 @@ using namespace::std;
 
 class TextBox;
 
+/******************************************************************************/
+/*!
+		Class Button2D:
+\brief	Button2D class for the Accept and Decline button when talking to NPCs
+*/
+/******************************************************************************/
 class Button2D
 {
 public:
@@ -26,6 +41,12 @@ public:
 	bool trigger;
 };
 
+/******************************************************************************/
+/*!
+		Class TextBox:
+\brief	This is for the Textbox whenever you talk to an NPC
+*/
+/******************************************************************************/
 class TextBox
 {
 public:
@@ -57,7 +78,12 @@ public:
 };
 
 
-
+/******************************************************************************/
+/*!
+		Class Quest: TextBox
+\brief	This is for creating quests that the player can take from various NPCs
+*/
+/******************************************************************************/
 class Quest : public TextBox
 {
 public:
@@ -91,6 +117,13 @@ public:
 	bool criteria;
 };
 
+/******************************************************************************/
+/*!
+		Class Checkout: Quest
+\brief	This is for when the player wants to check out an item from the store.
+*/
+/******************************************************************************/
+extern bool c_discount;
 class Checkout : public Quest
 {
 public:
@@ -108,11 +141,25 @@ public:
 	string GenerateText(Inventory inventory) 
 	{
 		string price;
-		price = to_string(long double( inventory.checkPrice() ));
-		return text + price;
+		if( c_discount == true )
+		{
+			price = to_string(long double( inventory.checkPrice()/2 ));
+			return text + price;
+		}
+		else
+		{
+			price = to_string(long double( inventory.checkPrice() ));
+			return text + price;
+		}
 	}
 };
 
+/******************************************************************************/
+/*!
+		Class Donation: Quest
+\brief	This quest is for specifically for the Hobo class.
+*/
+/******************************************************************************/
 class Donation : public Quest
 {
 public:
@@ -144,6 +191,12 @@ public:
 	}
 };
 
+/******************************************************************************/
+/*!
+		Class ManagerQuest
+\brief	This quest is for specifically for the Manager class.
+*/
+/******************************************************************************/
 class ManagerQuest
 {
 public:

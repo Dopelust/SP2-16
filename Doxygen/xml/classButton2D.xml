@@ -15,11 +15,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="22" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="20" bodyend="-1"/>
-        <referencedby refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" compoundref="dialogue_8h" startline="19" endline="19">Button2D</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" compoundref="dialogue_8cpp" startline="11" endline="26">TextBox::Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" line="37" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" compoundref="dialogue_8h" startline="34" endline="34">Button2D</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classTextBox_1a4967d66f86a624d465fde2fb20a37e9d" compoundref="dialogue_8cpp" startline="26" endline="41">TextBox::Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classButton2D_1a3792c91961ccd92faecc73e246ba82b6" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -32,9 +32,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="23" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="23" bodyend="-1"/>
-        <referencedby refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" compoundref="dialogue_8h" startline="19" endline="19">Button2D</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" line="38" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" compoundref="dialogue_8h" startline="34" endline="34">Button2D</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classButton2D_1aaddd13eb1c619ee976e3ab94b6c2dc85" prot="public" static="no" mutable="no">
         <type><ref refid="classTextBox" kindref="compound">TextBox</ref> *</type>
@@ -47,12 +47,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="24" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="24" bodyend="-1"/>
-        <referencedby refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" compoundref="NPC_8h" startline="61" endline="79">NPC::getConversation</referencedby>
-        <referencedby refid="classNPC_1a7c05d38abb761bb503fdac5a36bc62a4" compoundref="dialogue_8cpp" startline="69" endline="96">NPC::InitQuest</referencedby>
-        <referencedby refid="classHobo_1a8954f38328192e36d833e5ee6860f2b5" compoundref="dialogue_8cpp" startline="98" endline="126">Hobo::InitQuest</referencedby>
-        <referencedby refid="classCashier_1a2d84684071ff70d834a144b40b3dbb09" compoundref="dialogue_8cpp" startline="128" endline="156">Cashier::InitQuest</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" line="39" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" compoundref="NPC_8h" startline="74" endline="97">NPC::getConversation</referencedby>
+        <referencedby refid="classDetective_1aa6577b6336d8f1e3293be385907827e6" compoundref="NPC_8h" startline="346" endline="369">Detective::getConversation</referencedby>
+        <referencedby refid="classNPC_1a7c05d38abb761bb503fdac5a36bc62a4" compoundref="dialogue_8cpp" startline="75" endline="103">NPC::InitQuest</referencedby>
+        <referencedby refid="classHobo_1a8954f38328192e36d833e5ee6860f2b5" compoundref="dialogue_8cpp" startline="111" endline="139">Hobo::InitQuest</referencedby>
+        <referencedby refid="classCashier_1a2d84684071ff70d834a144b40b3dbb09" compoundref="dialogue_8cpp" startline="147" endline="175">Cashier::InitQuest</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classButton2D_1a509777ecad03fd8760b010c53540bd82" prot="public" static="no" mutable="no">
         <type><ref refid="classTextBox" kindref="compound">TextBox</ref> *</type>
@@ -65,10 +66,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="25" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="25" bodyend="-1"/>
-        <referencedby refid="classHobo_1a8954f38328192e36d833e5ee6860f2b5" compoundref="dialogue_8cpp" startline="98" endline="126">Hobo::InitQuest</referencedby>
-        <referencedby refid="classCashier_1a2d84684071ff70d834a144b40b3dbb09" compoundref="dialogue_8cpp" startline="128" endline="156">Cashier::InitQuest</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" line="40" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" compoundref="NPC_8h" startline="74" endline="97">NPC::getConversation</referencedby>
+        <referencedby refid="classDetective_1aa6577b6336d8f1e3293be385907827e6" compoundref="NPC_8h" startline="346" endline="369">Detective::getConversation</referencedby>
+        <referencedby refid="classDetective_1a809658e990799aabf8b50e202b778f64" compoundref="NPC_8cpp" startline="552" endline="568">Detective::Init</referencedby>
+        <referencedby refid="classNPC_1a7c05d38abb761bb503fdac5a36bc62a4" compoundref="dialogue_8cpp" startline="75" endline="103">NPC::InitQuest</referencedby>
+        <referencedby refid="classHobo_1a8954f38328192e36d833e5ee6860f2b5" compoundref="dialogue_8cpp" startline="111" endline="139">Hobo::InitQuest</referencedby>
+        <referencedby refid="classCashier_1a2d84684071ff70d834a144b40b3dbb09" compoundref="dialogue_8cpp" startline="147" endline="175">Cashier::InitQuest</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classButton2D_1a0d42bddf0d8835aaa07384880fc5dc66" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -81,11 +86,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="26" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="26" bodyend="-1"/>
-        <referencedby refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" compoundref="dialogue_8h" startline="19" endline="19">Button2D</referencedby>
-        <referencedby refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" compoundref="NPC_8h" startline="61" endline="79">NPC::getConversation</referencedby>
-        <referencedby refid="classManager_1af1cb5c5c1590f4229a3cb40e63ee01b9" compoundref="NPC_8h" startline="339" endline="344">Manager::getCriteria</referencedby>
-        <referencedby refid="classQuest_1a141a2e06c042823901fa4b157f41354a" compoundref="dialogue_8h" startline="80" endline="80">Quest::triggerQuest</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" line="41" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" compoundref="dialogue_8h" startline="34" endline="34">Button2D</referencedby>
+        <referencedby refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" compoundref="NPC_8h" startline="74" endline="97">NPC::getConversation</referencedby>
+        <referencedby refid="classDetective_1aa6577b6336d8f1e3293be385907827e6" compoundref="NPC_8h" startline="346" endline="369">Detective::getConversation</referencedby>
+        <referencedby refid="classQuest_1a141a2e06c042823901fa4b157f41354a" compoundref="dialogue_8h" startline="116" endline="116">Quest::triggerQuest</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -100,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="18" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="18" bodyend="18"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" line="33" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" bodystart="33" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classButton2D_1a3cc0d03736f16a6749294f6d7f870f2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -121,10 +126,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="19" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="19" bodyend="19"/>
-        <references refid="classButton2D_1a6962bb136415617bbde1bf11e77e44f8" compoundref="dialogue_8h" startline="20">position</references>
-        <references refid="classButton2D_1a3792c91961ccd92faecc73e246ba82b6" compoundref="dialogue_8h" startline="23">text</references>
-        <references refid="classButton2D_1a0d42bddf0d8835aaa07384880fc5dc66" compoundref="dialogue_8h" startline="26">trigger</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" line="34" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" bodystart="34" bodyend="34"/>
+        <references refid="classButton2D_1a6962bb136415617bbde1bf11e77e44f8" compoundref="dialogue_8h" startline="35">position</references>
+        <references refid="classButton2D_1a3792c91961ccd92faecc73e246ba82b6" compoundref="dialogue_8h" startline="38">text</references>
+        <references refid="classButton2D_1a0d42bddf0d8835aaa07384880fc5dc66" compoundref="dialogue_8h" startline="41">trigger</references>
       </memberdef>
       <memberdef kind="function" id="classButton2D_1acee9600f6d3f25c8e5d643502b08a06d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -137,63 +142,63 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="20" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="20" bodyend="20"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" line="35" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" bodystart="35" bodyend="35"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para><ref refid="classButton2D" kindref="compound">Button2D</ref> class for the Accept and Decline button when talking to NPCs. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Class <ref refid="classButton2D" kindref="compound">Button2D</ref>: </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="885">
+      <node id="866">
         <label>string</label>
       </node>
-      <node id="884">
+      <node id="865">
         <label>float</label>
       </node>
-      <node id="882">
+      <node id="863">
         <label>TextBox</label>
         <link refid="classTextBox"/>
-        <childnode refid="883" relation="usage">
+        <childnode refid="864" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="885" relation="usage">
+        <childnode refid="866" relation="usage">
           <edgelabel>apparentext</edgelabel>
           <edgelabel>type</edgelabel>
           <edgelabel>text</edgelabel>
         </childnode>
       </node>
-      <node id="881">
+      <node id="862">
         <label>Button2D</label>
         <link refid="classButton2D"/>
-        <childnode refid="882" relation="usage">
+        <childnode refid="863" relation="usage">
           <edgelabel>altNext</edgelabel>
           <edgelabel>next</edgelabel>
         </childnode>
-        <childnode refid="883" relation="usage">
+        <childnode refid="864" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="886" relation="usage">
+        <childnode refid="867" relation="usage">
           <edgelabel>trigger</edgelabel>
         </childnode>
-        <childnode refid="885" relation="usage">
+        <childnode refid="866" relation="usage">
           <edgelabel>text</edgelabel>
         </childnode>
       </node>
-      <node id="886">
+      <node id="867">
         <label>bool</label>
       </node>
-      <node id="883">
+      <node id="864">
         <label>Vector3</label>
         <link refid="structVector3"/>
-        <childnode refid="884" relation="usage">
+        <childnode refid="865" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" line="16" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/dialogue.h" bodystart="15" bodyend="27"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" line="31" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/dialogue.h" bodystart="30" bodyend="42"/>
     <listofallmembers>
       <member refid="classButton2D_1a509777ecad03fd8760b010c53540bd82" prot="public" virt="non-virtual"><scope>Button2D</scope><name>altNext</name></member>
       <member refid="classButton2D_1a7c49631ac31b8191e36a43cee7ee9633" prot="public" virt="non-virtual"><scope>Button2D</scope><name>Button2D</name></member>

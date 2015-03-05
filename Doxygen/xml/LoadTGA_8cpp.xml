@@ -6,29 +6,29 @@
     <includes local="no">fstream</includes>
     <includes refid="LoadTGA_8h" local="yes">LoadTGA.h</includes>
     <incdepgraph>
-      <node id="3119">
-        <label>GL\glew.h</label>
-      </node>
-      <node id="3117">
-        <label>fstream</label>
-      </node>
-      <node id="3115">
-        <label>MyGraphics/Source/LoadTGA.cpp</label>
-        <link refid="LoadTGA.cpp"/>
-        <childnode refid="3116" relation="include">
-        </childnode>
-        <childnode refid="3117" relation="include">
-        </childnode>
-        <childnode refid="3118" relation="include">
-        </childnode>
-      </node>
-      <node id="3118">
+      <node id="3122">
         <label>LoadTGA.h</label>
         <link refid="LoadTGA_8h"/>
-        <childnode refid="3119" relation="include">
+        <childnode refid="3123" relation="include">
         </childnode>
       </node>
-      <node id="3116">
+      <node id="3123">
+        <label>GL\glew.h</label>
+      </node>
+      <node id="3121">
+        <label>fstream</label>
+      </node>
+      <node id="3119">
+        <label>MyGraphics/Source/LoadTGA.cpp</label>
+        <link refid="LoadTGA.cpp"/>
+        <childnode refid="3120" relation="include">
+        </childnode>
+        <childnode refid="3121" relation="include">
+        </childnode>
+        <childnode refid="3122" relation="include">
+        </childnode>
+      </node>
+      <node id="3120">
         <label>iostream</label>
       </node>
     </incdepgraph>
@@ -48,25 +48,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/LoadTGA.cpp" line="8" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/LoadTGA.cpp" bodystart="8" bodyend="67"/>
-        <referencedby refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="967" endline="1087">PROJECTScene::DarrenInit</referencedby>
-        <referencedby refid="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" compoundref="collision_8h" startline="118" endline="127">Vending::generateDrink</referencedby>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">MENUScene::Init</referencedby>
-        <referencedby refid="classHobo_1a1081ed24676f684229be89ec03c2179e" compoundref="NPC_8cpp" startline="268" endline="282">Hobo::Init</referencedby>
-        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="3" endline="27">Inventory::Init</referencedby>
-        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">PROJECTScene::Init</referencedby>
-        <referencedby refid="classDoorway_1aed789047130006d3ad9afe8b5be693ef" compoundref="player_8h" startline="123" endline="136">Doorway::Init</referencedby>
-        <referencedby refid="classThug_1af2a1de6b86c5760ca4aada0be45e941e" compoundref="NPC_8cpp" startline="291" endline="304">Thug::Init</referencedby>
-        <referencedby refid="classCashier_1a378b4d5a8fc2364208422989deb97150" compoundref="NPC_8cpp" startline="319" endline="333">Cashier::Init</referencedby>
-        <referencedby refid="classBlindman_1a8ca8c8b76aae45b2b7a2fdc59c8e5a89" compoundref="NPC_8cpp" startline="350" endline="363">Blindman::Init</referencedby>
-        <referencedby refid="classDetective_1a809658e990799aabf8b50e202b778f64" compoundref="NPC_8cpp" startline="442" endline="456">Detective::Init</referencedby>
-        <referencedby refid="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" compoundref="NPC_8cpp" startline="465" endline="478">S_Guard::Init</referencedby>
-        <referencedby refid="classManager_1a200a7092507e1769240452e88996127b" compoundref="NPC_8cpp" startline="520" endline="534">Manager::Init</referencedby>
-        <referencedby refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="22" endline="93">MENUScene::InitJunk</referencedby>
-        <referencedby refid="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" compoundref="PROJECTScene_8cpp" startline="22" endline="93">PROJECTScene::InitJunk</referencedby>
-        <referencedby refid="classPROJECTScene_1aad5e71b6898152054906af5515c3e200" compoundref="PROJECTScene_8cpp" startline="222" endline="517">PROJECTScene::JeremiahInit</referencedby>
-        <referencedby refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" compoundref="PROJECTScene_8cpp" startline="518" endline="966">PROJECTScene::JessicaInit</referencedby>
-        <referencedby refid="classPROJECTScene_1ab2f2f2e5df135948e5505d9978d46b75" compoundref="PROJECTScene_8cpp" startline="94" endline="221">PROJECTScene::RicssonInit</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/LoadTGA.cpp" line="8" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/LoadTGA.cpp" bodystart="8" bodyend="67"/>
+        <references refid="Application_8cpp_1ad12fc34ce789bce6c8a05d8a17138534" compoundref="Application_8cpp" startline="40">height</references>
+        <references refid="Application_8cpp_1a2474a5474cbff19523a51eb1de01cda4" compoundref="Application_8cpp" startline="39">width</references>
+        <referencedby refid="classPROJECTScene_1a7916565f6475608926ab183e11125904" compoundref="PROJECTScene_8cpp" startline="1017" endline="1136">PROJECTScene::DarrenInit</referencedby>
+        <referencedby refid="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" compoundref="collision_8h" startline="163" endline="172">Vending::generateDrink</referencedby>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">MENUScene::Init</referencedby>
+        <referencedby refid="classHobo_1a1081ed24676f684229be89ec03c2179e" compoundref="NPC_8cpp" startline="327" endline="341">Hobo::Init</referencedby>
+        <referencedby refid="classInventory_1a8bc6919564bb2a341c2cd32956b6979a" compoundref="inventory_8cpp" startline="19" endline="43">Inventory::Init</referencedby>
+        <referencedby refid="classDoorway_1aed789047130006d3ad9afe8b5be693ef" compoundref="player_8h" startline="150" endline="163">Doorway::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1144" endline="1236">PROJECTScene::Init</referencedby>
+        <referencedby refid="classThug_1af2a1de6b86c5760ca4aada0be45e941e" compoundref="NPC_8cpp" startline="362" endline="374">Thug::Init</referencedby>
+        <referencedby refid="classCashier_1a378b4d5a8fc2364208422989deb97150" compoundref="NPC_8cpp" startline="401" endline="414">Cashier::Init</referencedby>
+        <referencedby refid="classBlindman_1a8ca8c8b76aae45b2b7a2fdc59c8e5a89" compoundref="NPC_8cpp" startline="443" endline="455">Blindman::Init</referencedby>
+        <referencedby refid="classDetective_1a809658e990799aabf8b50e202b778f64" compoundref="NPC_8cpp" startline="552" endline="568">Detective::Init</referencedby>
+        <referencedby refid="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" compoundref="NPC_8cpp" startline="601" endline="613">S_Guard::Init</referencedby>
+        <referencedby refid="classManager_1a200a7092507e1769240452e88996127b" compoundref="NPC_8cpp" startline="667" endline="681">Manager::Init</referencedby>
+        <referencedby refid="classMENUScene_1a40c1ee14babf89986badf75ec4d4818a" compoundref="MENUScene_8cpp" startline="45" endline="114">MENUScene::InitJunk</referencedby>
+        <referencedby refid="classPROJECTScene_1a2e2054a1dc7d340a59ac13d2eb5cbed6" compoundref="PROJECTScene_8cpp" startline="96" endline="165">PROJECTScene::InitJunk</referencedby>
+        <referencedby refid="classPROJECTScene_1aad5e71b6898152054906af5515c3e200" compoundref="PROJECTScene_8cpp" startline="288" endline="558">PROJECTScene::JeremiahInit</referencedby>
+        <referencedby refid="classPROJECTScene_1ac6e69ba221c7faf13495dc6d3254baa7" compoundref="PROJECTScene_8cpp" startline="566" endline="1009">PROJECTScene::JessicaInit</referencedby>
+        <referencedby refid="classPROJECTScene_1ab2f2f2e5df135948e5505d9978d46b75" compoundref="PROJECTScene_8cpp" startline="173" endline="280">PROJECTScene::RicssonInit</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -94,7 +96,7 @@
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GLuint<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageSize;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>setting<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GLubyte<sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/>data;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GLuint<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>texture<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>width,<sp/>height;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="Application_8cpp_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>,<sp/><ref refid="Application_8cpp_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fileStream.read((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)header,<sp/>18);</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>width<sp/>=<sp/>header[12]<sp/>+<sp/>header[13]<sp/>*<sp/>256;</highlight></codeline>
@@ -142,6 +144,6 @@
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>texture;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="67"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/LoadTGA.cpp"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/LoadTGA.cpp"/>
   </compounddef>
 </doxygen>

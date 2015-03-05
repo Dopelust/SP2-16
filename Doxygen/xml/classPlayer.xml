@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="44" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="43" bodyend="49"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="65" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="64" bodyend="70"/>
       </memberdef>
       <memberdef kind="enum" id="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2" prot="public" static="no">
         <name>playerValues</name>
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="52" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="51" bodyend="63"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="73" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="72" bodyend="84"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -136,11 +136,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="94" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="92" bodyend="-1"/>
-        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Control</referencedby>
-        <referencedby refid="classPROJECTScene_1a9a58de28e3dbff47b5ff73f51168b31c" compoundref="audio_8cpp" startline="27" endline="35">PROJECTScene::soundUpdate</referencedby>
-        <referencedby refid="classNPC_1a24721357146b87e473c740fe9f295841" compoundref="NPC_8cpp" startline="210" endline="266">NPC::Update</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="115" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="113" bodyend="-1"/>
+        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="330" endline="402">Control</referencedby>
+        <referencedby refid="classPROJECTScene_1a9a58de28e3dbff47b5ff73f51168b31c" compoundref="audio_8cpp" startline="53" endline="61">PROJECTScene::soundUpdate</referencedby>
+        <referencedby refid="classNPC_1a24721357146b87e473c740fe9f295841" compoundref="NPC_8cpp" startline="262" endline="319">NPC::Update</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1ae5ea486be0acd6a16f26843ecbd9d826" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -153,9 +153,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="95" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="95" bodyend="-1"/>
-        <referencedby refid="classPROJECTScene_1a9a58de28e3dbff47b5ff73f51168b31c" compoundref="audio_8cpp" startline="27" endline="35">PROJECTScene::soundUpdate</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="116" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a9a58de28e3dbff47b5ff73f51168b31c" compoundref="audio_8cpp" startline="53" endline="61">PROJECTScene::soundUpdate</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1a0d24afca35e6a28f390fdd485b7a4454" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -168,8 +168,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="96" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="96" bodyend="-1"/>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="117" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" prot="public" static="no" mutable="no">
         <type><ref refid="classInventory" kindref="compound">Inventory</ref></type>
@@ -182,14 +182,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="97" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="97" bodyend="-1"/>
-        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Control</referencedby>
-        <referencedby refid="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" compoundref="NPC_8cpp" startline="482" endline="518">S_Guard::Control</referencedby>
-        <referencedby refid="classHobo_1ade0a53cb6febb71853f257200d566d28" compoundref="NPC_8h" startline="104" endline="120">Hobo::getConversation</referencedby>
-        <referencedby refid="classCashier_1a9b6de754df0c601b8122a1b46bf3080c" compoundref="NPC_8h" startline="162" endline="178">Cashier::getConversation</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="118" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="330" endline="402">Control</referencedby>
+        <referencedby refid="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" compoundref="NPC_8cpp" startline="623" endline="659">S_Guard::Control</referencedby>
+        <referencedby refid="classHobo_1ade0a53cb6febb71853f257200d566d28" compoundref="NPC_8h" startline="127" endline="143">Hobo::getConversation</referencedby>
+        <referencedby refid="classCashier_1a9b6de754df0c601b8122a1b46bf3080c" compoundref="NPC_8h" startline="197" endline="213">Cashier::getConversation</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1acdfa792cbf9ab5c978336634ed788190" prot="public" static="no" mutable="no">
         <type><ref refid="classCamera3" kindref="compound">Camera3</ref></type>
@@ -202,17 +202,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="98" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="98" bodyend="-1"/>
-        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="505" endline="514">Doorway::ButtonUpdate</referencedby>
-        <referencedby refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" compoundref="PROJECTScene_8cpp" startline="2449" endline="2473">dynamicObject::Control</referencedby>
-        <referencedby refid="classStorage_1a6e6c426205e1ef6e6d72e24d57fd5f60" compoundref="PROJECTScene_8cpp" startline="2431" endline="2448">Storage::getStorePos</referencedby>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">MENUScene::Init</referencedby>
-        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">PROJECTScene::Init</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
-        <referencedby refid="classNPC_1a24721357146b87e473c740fe9f295841" compoundref="NPC_8cpp" startline="210" endline="266">NPC::Update</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="119" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="576" endline="585">Doorway::ButtonUpdate</referencedby>
+        <referencedby refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" compoundref="PROJECTScene_8cpp" startline="2608" endline="2632">dynamicObject::Control</referencedby>
+        <referencedby refid="classStorage_1a6e6c426205e1ef6e6d72e24d57fd5f60" compoundref="PROJECTScene_8cpp" startline="2590" endline="2607">Storage::getStorePos</referencedby>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">MENUScene::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1144" endline="1236">PROJECTScene::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1725" endline="1936">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classNPC_1a24721357146b87e473c740fe9f295841" compoundref="NPC_8cpp" startline="262" endline="319">NPC::Update</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1a624e7bd62035bcb9c3e076bd5bc2e186" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -225,10 +225,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="100" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="100" bodyend="-1"/>
-        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Control</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="121" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1a0349855298626faed9f05f86965ff689" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -241,10 +240,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="101" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="101" bodyend="-1"/>
-        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Control</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="122" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="330" endline="402">Control</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1aa1544a1feb4e29c1b57a720751057395" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -257,13 +256,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="103" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="103" bodyend="-1"/>
-        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="505" endline="514">Doorway::ButtonUpdate</referencedby>
-        <referencedby refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" compoundref="PROJECTScene_8cpp" startline="2449" endline="2473">dynamicObject::Control</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
-        <referencedby refid="classdynamicObject_1af34cb96b5a22f85d119895e27af79428" compoundref="player_8cpp" startline="374" endline="419">dynamicObject::RespondToCollision</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="124" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="classDoorway_1a873b042bca7c6df1cc3e73a8ba427c29" compoundref="player_8cpp" startline="576" endline="585">Doorway::ButtonUpdate</referencedby>
+        <referencedby refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" compoundref="PROJECTScene_8cpp" startline="2608" endline="2632">dynamicObject::Control</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1725" endline="1936">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classdynamicObject_1af34cb96b5a22f85d119895e27af79428" compoundref="player_8cpp" startline="431" endline="476">dynamicObject::RespondToCollision</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1a7797da72b3266ce3c47aed28711315ed" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -276,10 +275,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="104" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="104" bodyend="-1"/>
-        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Control</referencedby>
-        <referencedby refid="classdynamicObject_1af34cb96b5a22f85d119895e27af79428" compoundref="player_8cpp" startline="374" endline="419">dynamicObject::RespondToCollision</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="125" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="330" endline="402">Control</referencedby>
+        <referencedby refid="classdynamicObject_1af34cb96b5a22f85d119895e27af79428" compoundref="player_8cpp" startline="431" endline="476">dynamicObject::RespondToCollision</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1aaee62ad90811104f8fa03cdd8f758ce8" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -292,9 +291,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="105" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="105" bodyend="-1"/>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="126" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classPlayer_1a4f5eb5599d7a8bbf81335c7464c3fa6a" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -307,10 +306,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="106" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="106" bodyend="-1"/>
-        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Control</referencedby>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="127" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="330" endline="402">Control</referencedby>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -325,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="64" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="64" bodyend="91"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="85" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="85" bodyend="112"/>
       </memberdef>
       <memberdef kind="function" id="classPlayer_1a749d2c00e1fe0f5c2746f7505a58c062" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -338,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="92" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="92" bodyend="92"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="113" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="113" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -354,30 +353,29 @@
           <declname>object</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>PLayer Control. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="108" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.cpp" bodystart="284" bodyend="355"/>
-        <references refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" compoundref="inventory_8cpp" startline="193" endline="202">Inventory::canUse</references>
-        <references refid="classdynamicObject_1a75ff4aa4f32b515899500d2bce5c2637" compoundref="player_8h" startline="30">dynamicObject::hitDelay</references>
-        <references refid="classPlayer_1afc37f74c79eff1bfe113a29038f9ad77" compoundref="player_8h" startline="92">hOrientation</references>
-        <references refid="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" compoundref="player_8h" startline="97">inventory</references>
-        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">Application::IsKeyPressed</references>
-        <references refid="classPlayer_1a280de12a864fd87906b536ee9b369914ac3ab9b2edaa8b8ba86f6396f88d6531f" compoundref="player_8h" startline="45">JUMP</references>
-        <references refid="classPlayer_1a624e7bd62035bcb9c3e076bd5bc2e186" compoundref="player_8h" startline="100">jump</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a3b31bf08bcbcc80da28571778db241bf" compoundref="player_8h" startline="59">jumpCooldown</references>
-        <references refid="classApplication_1a1bfd134bb982a2e1a07d359c46d71483" compoundref="Application_8cpp" startline="51" endline="54">Application::mouseButton</references>
-        <references refid="classPlayer_1a0349855298626faed9f05f86965ff689" compoundref="player_8h" startline="101">speed</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="129" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.cpp" bodystart="330" bodyend="402"/>
+        <references refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" compoundref="inventory_8cpp" startline="251" endline="260">Inventory::canUse</references>
+        <references refid="classdynamicObject_1a75ff4aa4f32b515899500d2bce5c2637" compoundref="player_8h" startline="45">dynamicObject::hitDelay</references>
+        <references refid="classPlayer_1afc37f74c79eff1bfe113a29038f9ad77" compoundref="player_8h" startline="113">hOrientation</references>
+        <references refid="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" compoundref="player_8h" startline="118">inventory</references>
+        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="48" endline="51">Application::IsKeyPressed</references>
+        <references refid="classPlayer_1a280de12a864fd87906b536ee9b369914ac3ab9b2edaa8b8ba86f6396f88d6531f" compoundref="player_8h" startline="66">JUMP</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a3b31bf08bcbcc80da28571778db241bf" compoundref="player_8h" startline="80">jumpCooldown</references>
+        <references refid="classApplication_1a1bfd134bb982a2e1a07d359c46d71483" compoundref="Application_8cpp" startline="53" endline="56">Application::mouseButton</references>
+        <references refid="classPlayer_1a0349855298626faed9f05f86965ff689" compoundref="player_8h" startline="122">speed</references>
         <references refid="structVector3_1ab3b1af4c82ca09bf8ce997c205e3cb10" compoundref="Vector3_8cpp" startline="422" endline="429">Vector3::SphericalToCartesian</references>
-        <references refid="classPlayer_1a7797da72b3266ce3c47aed28711315ed" compoundref="player_8h" startline="104">state</references>
-        <references refid="classPlayer_1a4f5eb5599d7a8bbf81335c7464c3fa6a" compoundref="player_8h" startline="106">value</references>
-        <references refid="classdynamicObject_1a9f48578b8539944e877d40c728554a4b" compoundref="player_8h" startline="28">dynamicObject::velocity</references>
+        <references refid="classPlayer_1a7797da72b3266ce3c47aed28711315ed" compoundref="player_8h" startline="125">state</references>
+        <references refid="classPlayer_1a4f5eb5599d7a8bbf81335c7464c3fa6a" compoundref="player_8h" startline="127">value</references>
+        <references refid="classdynamicObject_1a9f48578b8539944e877d40c728554a4b" compoundref="player_8h" startline="43">dynamicObject::velocity</references>
         <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
         <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
         <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
-        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="79" endline="283">Update</referencedby>
+        <referencedby refid="classPlayer_1a522cbf980cc179616292e2b25399c1dc" compoundref="player_8cpp" startline="100" endline="323">Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classPlayer_1a522cbf980cc179616292e2b25399c1dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -393,65 +391,65 @@
           <declname>object</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>PLayer Update function. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="109" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.cpp" bodystart="79" bodyend="283"/>
-        <references refid="classPlayer_1a0d24afca35e6a28f390fdd485b7a4454" compoundref="player_8h" startline="96">apparentHealth</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ac570ea46fe0e245abef556ec7f0e3979" compoundref="player_8h" startline="53">bobbingX</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ae6cc325d563d8bc97c40440b9bcce961" compoundref="player_8h" startline="54">bobbingY</references>
-        <references refid="player_8cpp_1a50df3702b712796905d3c421637c1c56" compoundref="player_8cpp" startline="3">bobXDir</references>
-        <references refid="player_8cpp_1a648dbe991382658ac13ab2dfdbc93293" compoundref="player_8cpp" startline="4">bobYDir</references>
-        <references refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" compoundref="player_8h" startline="98">camera</references>
-        <references refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" compoundref="inventory_8cpp" startline="193" endline="202">Inventory::canUse</references>
-        <references refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="284" endline="355">Control</references>
-        <references refid="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" compoundref="inventory_8cpp" startline="170" endline="180">Inventory::Delete</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2aef4d14e450da282a8e276996d9623715" compoundref="player_8h" startline="60">eatCooldown</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2afcb293138a59b0a0807df7021b9eea6b" compoundref="player_8h" startline="61">eatElapsed</references>
-        <references refid="classPlayer_1a280de12a864fd87906b536ee9b369914a3713d0ada2318e1be9b7ec66de70d379" compoundref="player_8h" startline="46">EATING</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a0698e4846cb1d09638ed1167a1800a5c" compoundref="player_8h" startline="58">eyeLevel</references>
-        <references refid="classCamera3_1a2de4550bc7ac9c4ac3f36b059e3d8bbd" compoundref="Camera3_8h" startline="21">Camera3::fov</references>
-        <references refid="classObject_1a651e2aff564de5a4766863b332f14d33" compoundref="collision_8h" startline="52" endline="52">Object::getHealth</references>
-        <references refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" compoundref="inventory_8h" startline="109" endline="115">Inventory::getHolding</references>
-        <references refid="classdynamicObject_1a173092fb5ed2ad0a1f21796f323abad7" compoundref="player_8h" startline="36">dynamicObject::health</references>
-        <references refid="classdynamicObject_1a75ff4aa4f32b515899500d2bce5c2637" compoundref="player_8h" startline="30">dynamicObject::hitDelay</references>
-        <references refid="classPlayer_1afc37f74c79eff1bfe113a29038f9ad77" compoundref="player_8h" startline="92">hOrientation</references>
-        <references refid="classPlayer_1aaee62ad90811104f8fa03cdd8f758ce8" compoundref="player_8h" startline="105">inConversation</references>
-        <references refid="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" compoundref="player_8h" startline="97">inventory</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="130" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.cpp" bodystart="100" bodyend="323"/>
+        <references refid="classPlayer_1a0d24afca35e6a28f390fdd485b7a4454" compoundref="player_8h" startline="117">apparentHealth</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ac570ea46fe0e245abef556ec7f0e3979" compoundref="player_8h" startline="74">bobbingX</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ae6cc325d563d8bc97c40440b9bcce961" compoundref="player_8h" startline="75">bobbingY</references>
+        <references refid="player_8cpp_1a50df3702b712796905d3c421637c1c56" compoundref="player_8cpp" startline="13">bobXDir</references>
+        <references refid="player_8cpp_1a648dbe991382658ac13ab2dfdbc93293" compoundref="player_8cpp" startline="14">bobYDir</references>
+        <references refid="classPlayer_1acdfa792cbf9ab5c978336634ed788190" compoundref="player_8h" startline="119">camera</references>
+        <references refid="classInventory_1a6eef2cbeaeb10c437e2ead8e2b7bb4de" compoundref="inventory_8cpp" startline="251" endline="260">Inventory::canUse</references>
+        <references refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" compoundref="player_8cpp" startline="330" endline="402">Control</references>
+        <references refid="classInventory_1ac296bf8fce30c3395caab2ee42c304a6" compoundref="inventory_8cpp" startline="216" endline="226">Inventory::Delete</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2aef4d14e450da282a8e276996d9623715" compoundref="player_8h" startline="81">eatCooldown</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2afcb293138a59b0a0807df7021b9eea6b" compoundref="player_8h" startline="82">eatElapsed</references>
+        <references refid="classPlayer_1a280de12a864fd87906b536ee9b369914a3713d0ada2318e1be9b7ec66de70d379" compoundref="player_8h" startline="67">EATING</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a0698e4846cb1d09638ed1167a1800a5c" compoundref="player_8h" startline="79">eyeLevel</references>
+        <references refid="classCamera3_1a2de4550bc7ac9c4ac3f36b059e3d8bbd" compoundref="Camera3_8h" startline="37">Camera3::fov</references>
+        <references refid="classObject_1a651e2aff564de5a4766863b332f14d33" compoundref="collision_8h" startline="72" endline="72">Object::getHealth</references>
+        <references refid="classInventory_1a6d42b8c7ca3a2b67c3682ecd1903a10a" compoundref="inventory_8h" startline="148" endline="154">Inventory::getHolding</references>
+        <references refid="classdynamicObject_1a173092fb5ed2ad0a1f21796f323abad7" compoundref="player_8h" startline="51">dynamicObject::health</references>
+        <references refid="classdynamicObject_1a75ff4aa4f32b515899500d2bce5c2637" compoundref="player_8h" startline="45">dynamicObject::hitDelay</references>
+        <references refid="classPlayer_1afc37f74c79eff1bfe113a29038f9ad77" compoundref="player_8h" startline="113">hOrientation</references>
+        <references refid="classPlayer_1aaee62ad90811104f8fa03cdd8f758ce8" compoundref="player_8h" startline="126">inConversation</references>
+        <references refid="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" compoundref="player_8h" startline="118">inventory</references>
         <references refid="classirrklang_1_1ISoundEngine_1a1084577f9f43cb12e86cea43c323b12c">irrklang::ISoundEngine::isCurrentlyPlaying</references>
-        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="46" endline="49">Application::IsKeyPressed</references>
-        <references refid="classPlayer_1a624e7bd62035bcb9c3e076bd5bc2e186" compoundref="player_8h" startline="100">jump</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a3b31bf08bcbcc80da28571778db241bf" compoundref="player_8h" startline="59">jumpCooldown</references>
-        <references refid="classPlayer_1a280de12a864fd87906b536ee9b369914ad7ce18c36e91770cbc204edef78ee711" compoundref="player_8h" startline="47">KNIFE</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a1c04c4dcaa0a7bbae77aca6b641d6736" compoundref="player_8h" startline="57">knifeCooldown</references>
-        <references refid="player_8cpp_1a6ddf4e66acb2a2af41c08a8218b62691" compoundref="player_8cpp" startline="6">knifeDir</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a70f8e60cb474b60d05e17da2da7f1e90" compoundref="player_8h" startline="55">knifeRotation</references>
-        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2af9d7837523536558b297c1d52de291cb" compoundref="player_8h" startline="56">knifeStrike</references>
+        <references refid="classApplication_1a72cc9bba26506a7c0f54c346dfbd5cfe" compoundref="Application_8cpp" startline="48" endline="51">Application::IsKeyPressed</references>
+        <references refid="classPlayer_1a624e7bd62035bcb9c3e076bd5bc2e186" compoundref="player_8h" startline="121">jump</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a3b31bf08bcbcc80da28571778db241bf" compoundref="player_8h" startline="80">jumpCooldown</references>
+        <references refid="classPlayer_1a280de12a864fd87906b536ee9b369914ad7ce18c36e91770cbc204edef78ee711" compoundref="player_8h" startline="68">KNIFE</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a1c04c4dcaa0a7bbae77aca6b641d6736" compoundref="player_8h" startline="78">knifeCooldown</references>
+        <references refid="player_8cpp_1a6ddf4e66acb2a2af41c08a8218b62691" compoundref="player_8cpp" startline="16">knifeDir</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2a70f8e60cb474b60d05e17da2da7f1e90" compoundref="player_8h" startline="76">knifeRotation</references>
+        <references refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2af9d7837523536558b297c1d52de291cb" compoundref="player_8h" startline="77">knifeStrike</references>
         <references refid="structVector3_1a200024a8442329de9a625ed58ffe7075" compoundref="Vector3_8cpp" startline="297" endline="300">Vector3::Length</references>
-        <references refid="classCamera3_1a8b792e4458ca2bc4df9f5226ddf7e8ea" compoundref="Camera3_8h" startline="23">Camera3::look</references>
-        <references refid="classApplication_1a1bfd134bb982a2e1a07d359c46d71483" compoundref="Application_8cpp" startline="51" endline="54">Application::mouseButton</references>
-        <references refid="classCamera3_1a4cead3bb5a13f53d2f4043435937553d" compoundref="Camera3_8cpp" startline="43" endline="59">Camera3::Move</references>
-        <references refid="classCamera3_1a21148dcf9f21fdd2952e6c21bf87c45d" compoundref="Camera3_8h" startline="22">Camera3::orientation</references>
+        <references refid="classCamera3_1a8b792e4458ca2bc4df9f5226ddf7e8ea" compoundref="Camera3_8h" startline="39">Camera3::look</references>
+        <references refid="classApplication_1a1bfd134bb982a2e1a07d359c46d71483" compoundref="Application_8cpp" startline="53" endline="56">Application::mouseButton</references>
+        <references refid="classCamera3_1a4cead3bb5a13f53d2f4043435937553d" compoundref="Camera3_8cpp" startline="84" endline="100">Camera3::Move</references>
+        <references refid="classCamera3_1a21148dcf9f21fdd2952e6c21bf87c45d" compoundref="Camera3_8h" startline="38">Camera3::orientation</references>
         <references refid="classirrklang_1_1ISoundEngine_1a25f612fe6479d3b22dc5bab2a2eaa927">irrklang::ISoundEngine::play2D</references>
         <references refid="classCamera_1a3b229874a00253021a1b6c61657fa5ab" compoundref="Camera_8h" startline="9">Camera::position</references>
-        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="57">Object::position</references>
         <references refid="classdynamicObject_1a69090f87d5681cb9c048b3b68ccfe418">dynamicObject::RespondToCollision</references>
-        <references refid="classPlayer_1a0349855298626faed9f05f86965ff689" compoundref="player_8h" startline="101">speed</references>
-        <references refid="classPlayer_1a7797da72b3266ce3c47aed28711315ed" compoundref="player_8h" startline="104">state</references>
-        <references refid="player_8cpp_1a33a00c62601a8c50f3d1e559011500ea" compoundref="PROJECTScene_8cpp" startline="1187">stopCamera</references>
-        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="34">Object::type</references>
-        <references refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe" compoundref="Camera3_8cpp" startline="61" endline="69">Camera3::Update</references>
-        <references refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="29" endline="84">Inventory::Update</references>
-        <references refid="classdynamicObject_1aceab704935fe9e62ff9ba4360b2a9a79" compoundref="NPC_8cpp" startline="144" endline="174">dynamicObject::UpdateVelocity</references>
-        <references refid="classPlayer_1a4f5eb5599d7a8bbf81335c7464c3fa6a" compoundref="player_8h" startline="106">value</references>
-        <references refid="classdynamicObject_1a9f48578b8539944e877d40c728554a4b" compoundref="player_8h" startline="28">dynamicObject::velocity</references>
-        <references refid="classPlayer_1ae5ea486be0acd6a16f26843ecbd9d826" compoundref="player_8h" startline="95">vOrientation</references>
+        <references refid="classPlayer_1a0349855298626faed9f05f86965ff689" compoundref="player_8h" startline="122">speed</references>
+        <references refid="classPlayer_1a7797da72b3266ce3c47aed28711315ed" compoundref="player_8h" startline="125">state</references>
+        <references refid="player_8cpp_1a33a00c62601a8c50f3d1e559011500ea" compoundref="PROJECTScene_8cpp" startline="1246">stopCamera</references>
+        <references refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" compoundref="collision_8h" startline="54">Object::type</references>
+        <references refid="classCamera3_1acc5d4103826cda6d20b80a0d35eacdbe" compoundref="Camera3_8cpp" startline="108" endline="116">Camera3::Update</references>
+        <references refid="classInventory_1ad1e0335759db12e806b0cd4b16ce0643" compoundref="inventory_8cpp" startline="51" endline="106">Inventory::Update</references>
+        <references refid="classdynamicObject_1aceab704935fe9e62ff9ba4360b2a9a79" compoundref="NPC_8cpp" startline="184" endline="214">dynamicObject::UpdateVelocity</references>
+        <references refid="classPlayer_1a4f5eb5599d7a8bbf81335c7464c3fa6a" compoundref="player_8h" startline="127">value</references>
+        <references refid="classdynamicObject_1a9f48578b8539944e877d40c728554a4b" compoundref="player_8h" startline="43">dynamicObject::velocity</references>
+        <references refid="classPlayer_1ae5ea486be0acd6a16f26843ecbd9d826" compoundref="player_8h" startline="116">vOrientation</references>
         <references refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" compoundref="Vector3_8h" startline="27">Vector3::x</references>
         <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
         <references refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" compoundref="Vector3_8h" startline="27">Vector3::z</references>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classPlayer_1a3c70ef822192421f8221e75a707417d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -464,10 +462,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="111" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="111" bodyend="111"/>
-        <references refid="classWallet_1acf1b2032056f3f7cd5bb4f32812b548c" compoundref="inventory_8h" startline="19">Wallet::apparentValue</references>
-        <references refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" compoundref="inventory_8h" startline="86">Inventory::wallet</references>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="132" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="132" bodyend="132"/>
+        <references refid="classWallet_1acf1b2032056f3f7cd5bb4f32812b548c" compoundref="inventory_8h" startline="34">Wallet::apparentValue</references>
+        <references refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" compoundref="inventory_8h" startline="125">Inventory::wallet</references>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
       </memberdef>
       <memberdef kind="function" id="classPlayer_1abbb830a52713bb1953581d2be65d4a5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -480,9 +478,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="112" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="112" bodyend="112"/>
-        <references refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" compoundref="inventory_8h" startline="16">Wallet::trueValue</references>
-        <references refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" compoundref="inventory_8h" startline="86">Inventory::wallet</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="133" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="133" bodyend="133"/>
+        <references refid="classWallet_1a0640549c32cd306ae5ae08701b8bcc66" compoundref="inventory_8h" startline="31">Wallet::trueValue</references>
+        <references refid="classInventory_1a6eac7933740e3e4a0b298e5695c1d280" compoundref="inventory_8h" startline="125">Inventory::wallet</references>
       </memberdef>
       <memberdef kind="function" id="classPlayer_1a2d1542816021d46bf0d007d57a2c7291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>float</type>
@@ -496,9 +494,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="113" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="113" bodyend="113"/>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
-        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1192" endline="1605">PROJECTScene::Update</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="134" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="134" bodyend="134"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
+        <referencedby refid="classPROJECTScene_1ab4521f32fd8e1e5901c9896404e09789" compoundref="PROJECTScene_8cpp" startline="1263" endline="1717">PROJECTScene::Update</referencedby>
       </memberdef>
       <memberdef kind="function" id="classPlayer_1aeeb928e9d8bb5c95dc104fcf8c69770b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -511,262 +509,259 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="115" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="115" bodyend="115"/>
-        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="1885" endline="2300">PROJECTScene::Render</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="136" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="136" bodyend="136"/>
+        <referencedby refid="classPROJECTScene_1a67fe944ad8dbaf81cedfb07cff9b860c" compoundref="PROJECTScene_8cpp" startline="2023" endline="2452">PROJECTScene::Render</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>This is the player class. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Class PLayer: <ref refid="classdynamicObject" kindref="compound">dynamicObject</ref> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1380">
+      <node id="1344">
         <label>Object</label>
         <link refid="classObject"/>
       </node>
-      <node id="1378">
+      <node id="1342">
         <label>Player</label>
         <link refid="classPlayer"/>
-        <childnode refid="1379" relation="public-inheritance">
+        <childnode refid="1343" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1379">
+      <node id="1343">
         <label>dynamicObject</label>
         <link refid="classdynamicObject"/>
-        <childnode refid="1380" relation="public-inheritance">
+        <childnode refid="1344" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1389">
+      <node id="1355">
         <label>Component</label>
         <link refid="structComponent"/>
-        <childnode refid="1386" relation="usage">
+        <childnode refid="1350" relation="usage">
           <edgelabel>g</edgelabel>
           <edgelabel>r</edgelabel>
           <edgelabel>b</edgelabel>
         </childnode>
       </node>
-      <node id="1387">
+      <node id="1353">
         <label>Mesh</label>
         <link refid="classMesh"/>
-        <childnode refid="1388" relation="usage">
+        <childnode refid="1354" relation="usage">
           <edgelabel>material</edgelabel>
         </childnode>
-        <childnode refid="1390" relation="usage">
+        <childnode refid="1356" relation="usage">
           <edgelabel>mode</edgelabel>
         </childnode>
-        <childnode refid="1391" relation="usage">
+        <childnode refid="1352" relation="usage">
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="1392" relation="usage">
+        <childnode refid="1357" relation="usage">
           <edgelabel>textureID</edgelabel>
           <edgelabel>indexBuffer</edgelabel>
           <edgelabel>indexSize</edgelabel>
           <edgelabel>vertexBuffer</edgelabel>
         </childnode>
       </node>
-      <node id="1399">
+      <node id="1363">
         <label>Slot</label>
         <link refid="classSlot"/>
-        <childnode refid="1385" relation="usage">
+        <childnode refid="1349" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1400" relation="usage">
+        <childnode refid="1364" relation="usage">
           <edgelabel>item</edgelabel>
         </childnode>
-        <childnode refid="1387" relation="usage">
+        <childnode refid="1353" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1398">
+      <node id="1362">
         <label>Wallet</label>
         <link refid="classWallet"/>
-        <childnode refid="1386" relation="usage">
+        <childnode refid="1350" relation="usage">
           <edgelabel>apparentValue</edgelabel>
           <edgelabel>trueValue</edgelabel>
         </childnode>
       </node>
-      <node id="1390">
+      <node id="1356">
         <label>DRAW_MODE</label>
       </node>
-      <node id="1395">
+      <node id="1359">
         <label>Camera</label>
         <link refid="classCamera"/>
-        <childnode refid="1385" relation="usage">
+        <childnode refid="1349" relation="usage">
           <edgelabel>target</edgelabel>
           <edgelabel>position</edgelabel>
           <edgelabel>up</edgelabel>
         </childnode>
       </node>
-      <node id="1391">
+      <node id="1352">
         <label>string</label>
       </node>
-      <node id="1388">
+      <node id="1354">
         <label>Material</label>
         <link refid="structMaterial"/>
-        <childnode refid="1386" relation="usage">
+        <childnode refid="1350" relation="usage">
           <edgelabel>kShininess</edgelabel>
         </childnode>
-        <childnode refid="1389" relation="usage">
+        <childnode refid="1355" relation="usage">
           <edgelabel>kDiffuse</edgelabel>
           <edgelabel>kAmbient</edgelabel>
           <edgelabel>kSpecular</edgelabel>
         </childnode>
       </node>
-      <node id="1386">
+      <node id="1350">
         <label>float</label>
       </node>
-      <node id="1383">
+      <node id="1347">
         <label>Object</label>
         <link refid="classObject"/>
-        <childnode refid="1384" relation="usage">
+        <childnode refid="1348" relation="usage">
           <edgelabel>collision</edgelabel>
         </childnode>
-        <childnode refid="1386" relation="usage">
+        <childnode refid="1350" relation="usage">
           <edgelabel>size</edgelabel>
           <edgelabel>orientation</edgelabel>
         </childnode>
-        <childnode refid="1385" relation="usage">
+        <childnode refid="1349" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1393" relation="usage">
+        <childnode refid="1351" relation="usage">
           <edgelabel>ignoreCollision</edgelabel>
         </childnode>
-        <childnode refid="1391" relation="usage">
+        <childnode refid="1352" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="1387" relation="usage">
+        <childnode refid="1353" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1394">
+      <node id="1358">
         <label>Camera3</label>
         <link refid="classCamera3"/>
-        <childnode refid="1395" relation="public-inheritance">
+        <childnode refid="1359" relation="public-inheritance">
         </childnode>
-        <childnode refid="1386" relation="usage">
+        <childnode refid="1350" relation="usage">
           <edgelabel>fov</edgelabel>
           <edgelabel>defaultLook</edgelabel>
           <edgelabel>defaultOrientation</edgelabel>
           <edgelabel>orientation</edgelabel>
           <edgelabel>look</edgelabel>
         </childnode>
-        <childnode refid="1396" relation="usage">
+        <childnode refid="1360" relation="usage">
           <edgelabel>lookAt</edgelabel>
         </childnode>
-        <childnode refid="1385" relation="usage">
+        <childnode refid="1349" relation="usage">
           <edgelabel>defaultTarget</edgelabel>
           <edgelabel>defaultPosition</edgelabel>
           <edgelabel>defaultUp</edgelabel>
         </childnode>
       </node>
-      <node id="1396">
+      <node id="1360">
         <label>int</label>
       </node>
-      <node id="1401">
+      <node id="1365">
         <label>Selector</label>
         <link refid="classSelector"/>
-        <childnode refid="1399" relation="usage">
+        <childnode refid="1363" relation="usage">
           <edgelabel>selectedSlot</edgelabel>
         </childnode>
-        <childnode refid="1387" relation="usage">
+        <childnode refid="1353" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1400">
+      <node id="1364">
         <label>vector&lt; Object * &gt;</label>
       </node>
-      <node id="1384">
+      <node id="1348">
         <label>Collision</label>
         <link refid="structCollision"/>
-        <childnode refid="1385" relation="usage">
+        <childnode refid="1349" relation="usage">
           <edgelabel>hitbox</edgelabel>
           <edgelabel>centre</edgelabel>
         </childnode>
-        <childnode refid="1387" relation="usage">
-          <edgelabel>boundingBox</edgelabel>
-        </childnode>
       </node>
-      <node id="1381">
+      <node id="1345">
         <label>Player</label>
         <link refid="classPlayer"/>
-        <childnode refid="1382" relation="public-inheritance">
+        <childnode refid="1346" relation="public-inheritance">
         </childnode>
-        <childnode refid="1394" relation="usage">
+        <childnode refid="1358" relation="usage">
           <edgelabel>camera</edgelabel>
         </childnode>
-        <childnode refid="1386" relation="usage">
+        <childnode refid="1350" relation="usage">
           <edgelabel>vOrientation</edgelabel>
           <edgelabel>apparentHealth</edgelabel>
           <edgelabel>value</edgelabel>
           <edgelabel>hOrientation</edgelabel>
         </childnode>
-        <childnode refid="1396" relation="usage">
+        <childnode refid="1360" relation="usage">
           <edgelabel>speed</edgelabel>
           <edgelabel>holding</edgelabel>
           <edgelabel>jump</edgelabel>
         </childnode>
-        <childnode refid="1397" relation="usage">
+        <childnode refid="1361" relation="usage">
           <edgelabel>inventory</edgelabel>
         </childnode>
-        <childnode refid="1393" relation="usage">
+        <childnode refid="1351" relation="usage">
           <edgelabel>inConversation</edgelabel>
           <edgelabel>state</edgelabel>
         </childnode>
       </node>
-      <node id="1392">
+      <node id="1357">
         <label>unsigned</label>
       </node>
-      <node id="1382">
+      <node id="1346">
         <label>dynamicObject</label>
         <link refid="classdynamicObject"/>
-        <childnode refid="1383" relation="public-inheritance">
+        <childnode refid="1347" relation="public-inheritance">
         </childnode>
-        <childnode refid="1386" relation="usage">
+        <childnode refid="1350" relation="usage">
           <edgelabel>health</edgelabel>
           <edgelabel>hitDelay</edgelabel>
         </childnode>
-        <childnode refid="1385" relation="usage">
+        <childnode refid="1349" relation="usage">
           <edgelabel>velocity</edgelabel>
         </childnode>
       </node>
-      <node id="1393">
+      <node id="1351">
         <label>bool</label>
       </node>
-      <node id="1397">
+      <node id="1361">
         <label>Inventory</label>
         <link refid="classInventory"/>
-        <childnode refid="1398" relation="usage">
+        <childnode refid="1362" relation="usage">
           <edgelabel>wallet</edgelabel>
         </childnode>
-        <childnode refid="1396" relation="usage">
+        <childnode refid="1360" relation="usage">
           <edgelabel>index</edgelabel>
         </childnode>
-        <childnode refid="1385" relation="usage">
+        <childnode refid="1349" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1387" relation="usage">
+        <childnode refid="1353" relation="usage">
           <edgelabel>slotMeshes</edgelabel>
         </childnode>
-        <childnode refid="1399" relation="usage">
+        <childnode refid="1363" relation="usage">
           <edgelabel>slots</edgelabel>
         </childnode>
-        <childnode refid="1401" relation="usage">
+        <childnode refid="1365" relation="usage">
           <edgelabel>selector</edgelabel>
         </childnode>
       </node>
-      <node id="1385">
+      <node id="1349">
         <label>Vector3</label>
         <link refid="structVector3"/>
-        <childnode refid="1386" relation="usage">
+        <childnode refid="1350" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" line="41" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/player.h" bodystart="40" bodyend="116"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" line="62" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/player.h" bodystart="61" bodyend="137"/>
     <listofallmembers>
       <member refid="classPlayer_1a0d24afca35e6a28f390fdd485b7a4454" prot="public" virt="non-virtual"><scope>Player</scope><name>apparentHealth</name></member>
       <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2ac570ea46fe0e245abef556ec7f0e3979" prot="public" virt="non-virtual"><scope>Player</scope><name>bobbingX</name></member>
@@ -777,8 +772,8 @@
       <member refid="classPlayer_1ab5814b0518cf6aa4ee4955630840b481" prot="public" virt="virtual"><scope>Player</scope><name>Control</name></member>
       <member refid="classdynamicObject_1a2e96737496f0a711683b34c8681f82a2" prot="public" virt="virtual" ambiguityscope="dynamicObject::"><scope>Player</scope><name>Control</name></member>
       <member refid="classdynamicObject_1ae7af2a87ece92a7816201624999da3f2" prot="public" virt="non-virtual"><scope>Player</scope><name>dynamicObject</name></member>
-      <member refid="classdynamicObject_1aadded891f78e621ed2c38a1ec9d7d3bd" prot="public" virt="non-virtual"><scope>Player</scope><name>dynamicObject</name></member>
-      <member refid="classdynamicObject_1af54f832fa2066be59e08f2dc702d0fe7" prot="public" virt="non-virtual"><scope>Player</scope><name>dynamicObject</name></member>
+      <member refid="classdynamicObject_1aa25fd3d91aaafec7905451cd867d50d5" prot="public" virt="non-virtual"><scope>Player</scope><name>dynamicObject</name></member>
+      <member refid="classdynamicObject_1a352b9b2ba3bb46d4888635afc25ab065" prot="public" virt="non-virtual"><scope>Player</scope><name>dynamicObject</name></member>
       <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2aef4d14e450da282a8e276996d9623715" prot="public" virt="non-virtual"><scope>Player</scope><name>eatCooldown</name></member>
       <member refid="classPlayer_1a6f6e40a09805f19a6a26cdfb260812f2afcb293138a59b0a0807df7021b9eea6b" prot="public" virt="non-virtual"><scope>Player</scope><name>eatElapsed</name></member>
       <member refid="classPlayer_1a280de12a864fd87906b536ee9b369914a3713d0ada2318e1be9b7ec66de70d379" prot="public" virt="non-virtual"><scope>Player</scope><name>EATING</name></member>
@@ -810,10 +805,10 @@
       <member refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" prot="public" virt="non-virtual"><scope>Player</scope><name>mesh</name></member>
       <member refid="classObject_1a40860402e64d8008fb42329df7097cdb" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
       <member refid="classObject_1ab7afdfb51bccbc4cb09512454ae6c93a" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
-      <member refid="classObject_1a9ad82aaeaab22b9776810538e7c6a8f1" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
-      <member refid="classObject_1a1ff0e543bef7628740801ae660d91a7e" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
-      <member refid="classObject_1aab1e47237b6bf2df563b497426f1a8cc" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
-      <member refid="classObject_1aa8a3c32d7bdaf9d06dd9a65749ee0110" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="classObject_1ab1ebb40265dc428d3e7c344adaee309a" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="classObject_1afe9494bb43564cac7ee053c441448984" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="classObject_1a4e1b0177b63d964d0275eb677c117f28" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
+      <member refid="classObject_1a9f11ed46bea1e2b0a850477a528a2534" prot="public" virt="non-virtual"><scope>Player</scope><name>Object</name></member>
       <member refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" prot="public" virt="non-virtual"><scope>Player</scope><name>orientation</name></member>
       <member refid="classPlayer_1affe0cc3cb714f6deb4e62f0c0d3f1fd8" prot="public" virt="non-virtual"><scope>Player</scope><name>Player</name></member>
       <member refid="classPlayer_1a280de12a864fd87906b536ee9b369914" prot="public" virt="non-virtual"><scope>Player</scope><name>playerStates</name></member>
@@ -836,7 +831,7 @@
       <member refid="classdynamicObject_1a9f48578b8539944e877d40c728554a4b" prot="public" virt="non-virtual"><scope>Player</scope><name>velocity</name></member>
       <member refid="classPlayer_1ae5ea486be0acd6a16f26843ecbd9d826" prot="public" virt="non-virtual"><scope>Player</scope><name>vOrientation</name></member>
       <member refid="classdynamicObject_1a88d8db9f73895f8389fa0147544537f4" prot="public" virt="non-virtual"><scope>Player</scope><name>~dynamicObject</name></member>
-      <member refid="classObject_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" virt="non-virtual"><scope>Player</scope><name>~Object</name></member>
+      <member refid="classObject_1aa3e791419d84c4c346ef9499513b8e00" prot="public" virt="virtual"><scope>Player</scope><name>~Object</name></member>
       <member refid="classPlayer_1a749d2c00e1fe0f5c2746f7505a58c062" prot="public" virt="non-virtual"><scope>Player</scope><name>~Player</name></member>
     </listofallmembers>
   </compounddef>

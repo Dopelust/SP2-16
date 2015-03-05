@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="29" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="28" bodyend="33"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="29" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="28" bodyend="33"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -49,12 +49,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="23" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="21" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">MENUScene::Init</referencedby>
-        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">PROJECTScene::Init</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="23" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">MENUScene::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1144" endline="1236">PROJECTScene::Init</referencedby>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
-        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="372" endline="403">MENUScene::RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1725" endline="1936">PROJECTScene::RenderScene</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1ad7a168d26aed1bf7cca1a8d8e6f8ada4" prot="public" static="no" mutable="no">
         <type><ref refid="structColor" kindref="compound">Color</ref></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="24" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="24" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="24" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="24" bodyend="-1"/>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1a6c4c401141c4cdb3b9b9b3bab7dd6fbb" prot="public" static="no" mutable="no">
@@ -81,9 +81,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="25" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="25" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">MENUScene::Init</referencedby>
-        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">PROJECTScene::Init</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="25" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">MENUScene::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1144" endline="1236">PROJECTScene::Init</referencedby>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1a888f11000d2baf1228d9e5c8d8c90fcb" prot="public" static="no" mutable="no">
@@ -97,9 +97,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="26" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="26" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">MENUScene::Init</referencedby>
-        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">PROJECTScene::Init</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="26" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">MENUScene::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1144" endline="1236">PROJECTScene::Init</referencedby>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1ab3918c449fb40fa5c6cc5283f2c9687d" prot="public" static="no" mutable="no">
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="26" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="26" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="26" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="26" bodyend="-1"/>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1a79c8e47de58f131ff5403fc2d823cc21" prot="public" static="no" mutable="no">
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="26" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="26" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="26" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="26" bodyend="-1"/>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1a5dcdb101afc28979b5aaff0a2ec79ba5" prot="public" static="no" mutable="no">
@@ -141,9 +141,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="35" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="35" bodyend="-1"/>
-        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="95" endline="185">MENUScene::Init</referencedby>
-        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1088" endline="1176">PROJECTScene::Init</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="35" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="classMENUScene_1aaff86a398e897cfe7c2911e691377c0b" compoundref="MENUScene_8cpp" startline="119" endline="211">MENUScene::Init</referencedby>
+        <referencedby refid="classPROJECTScene_1abf925c2837510a313b8645b20fbf91d7" compoundref="PROJECTScene_8cpp" startline="1144" endline="1236">PROJECTScene::Init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1a6bd73eb0b27ef881f8442e20912d9258" prot="public" static="no" mutable="no">
         <type><ref refid="structVector3" kindref="compound">Vector3</ref></type>
@@ -156,10 +156,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="36" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="36" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="36" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="36" bodyend="-1"/>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
-        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="250" endline="289">MENUScene::RenderScene</referencedby>
-        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1607" endline="1815">PROJECTScene::RenderScene</referencedby>
+        <referencedby refid="classMENUScene_1aa99998fe147d747f2515df88b37cb193" compoundref="MENUScene_8cpp" startline="372" endline="403">MENUScene::RenderScene</referencedby>
+        <referencedby refid="classPROJECTScene_1ab65b60700be67645ec699984ff933671" compoundref="PROJECTScene_8cpp" startline="1725" endline="1936">PROJECTScene::RenderScene</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1af4ce5bbfbf33af96db9b8a222d073298" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="37" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="37" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="37" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="37" bodyend="-1"/>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1a8c843f5d1af5c6f4f4928e9906f5d0db" prot="public" static="no" mutable="no">
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="38" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="38" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="38" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="38" bodyend="-1"/>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structLight_1a4eb4fd0f025fb66d1934675ffff0e661" prot="public" static="no" mutable="no">
@@ -200,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="39" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="39" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="39" bodyend="-1"/>
         <referencedby refid="structLight_1aeb5df09a25a32f19fdffa761268ba24f" compoundref="Light_8h" startline="9" endline="21">Light</referencedby>
       </memberdef>
       </sectiondef>
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="9" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="9" bodyend="21"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="9" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="9" bodyend="21"/>
         <references refid="structLight_1ad7a168d26aed1bf7cca1a8d8e6f8ada4" compoundref="Light_8h" startline="24">color</references>
         <references refid="structLight_1af4ce5bbfbf33af96db9b8a222d073298" compoundref="Light_8h" startline="37">cosCutoff</references>
         <references refid="structLight_1a8c843f5d1af5c6f4f4928e9906f5d0db" compoundref="Light_8h" startline="38">cosInner</references>
@@ -238,28 +238,28 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="1189">
+      <node id="1153">
         <label>Position</label>
         <link refid="structPosition"/>
-        <childnode refid="1187" relation="usage">
+        <childnode refid="1151" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
-      <node id="1186">
+      <node id="1150">
         <label>LIGHT_TYPE</label>
       </node>
-      <node id="1187">
+      <node id="1151">
         <label>float</label>
       </node>
-      <node id="1185">
+      <node id="1149">
         <label>Light</label>
         <link refid="structLight"/>
-        <childnode refid="1186" relation="usage">
+        <childnode refid="1150" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="1187" relation="usage">
+        <childnode refid="1151" relation="usage">
           <edgelabel>exponent</edgelabel>
           <edgelabel>kL</edgelabel>
           <edgelabel>cosCutoff</edgelabel>
@@ -268,36 +268,36 @@
           <edgelabel>kC</edgelabel>
           <edgelabel>power</edgelabel>
         </childnode>
-        <childnode refid="1188" relation="usage">
+        <childnode refid="1152" relation="usage">
           <edgelabel>spotDirection</edgelabel>
         </childnode>
-        <childnode refid="1189" relation="usage">
+        <childnode refid="1153" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1190" relation="usage">
+        <childnode refid="1154" relation="usage">
           <edgelabel>color</edgelabel>
         </childnode>
       </node>
-      <node id="1190">
+      <node id="1154">
         <label>Color</label>
         <link refid="structColor"/>
-        <childnode refid="1187" relation="usage">
+        <childnode refid="1151" relation="usage">
           <edgelabel>g</edgelabel>
           <edgelabel>r</edgelabel>
           <edgelabel>b</edgelabel>
         </childnode>
       </node>
-      <node id="1188">
+      <node id="1152">
         <label>Vector3</label>
         <link refid="structVector3"/>
-        <childnode refid="1187" relation="usage">
+        <childnode refid="1151" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" line="8" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/Light.h" bodystart="7" bodyend="41"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" line="8" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/Light.h" bodystart="7" bodyend="41"/>
     <listofallmembers>
       <member refid="structLight_1ad7a168d26aed1bf7cca1a8d8e6f8ada4" prot="public" virt="non-virtual"><scope>Light</scope><name>color</name></member>
       <member refid="structLight_1af4ce5bbfbf33af96db9b8a222d073298" prot="public" virt="non-virtual"><scope>Light</scope><name>cosCutoff</name></member>

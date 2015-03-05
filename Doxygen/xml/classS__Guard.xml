@@ -16,9 +16,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="312" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="310" bodyend="-1"/>
-        <referencedby refid="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" compoundref="NPC_8cpp" startline="482" endline="518">Control</referencedby>
-        <referencedby refid="classS__Guard_1a9799d85fa2ce1a6991b6ecc00cc43c4f" compoundref="NPC_8h" startline="300" endline="309">S_Guard</referencedby>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" line="399" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" bodystart="397" bodyend="-1"/>
+        <referencedby refid="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" compoundref="NPC_8cpp" startline="623" endline="659">Control</referencedby>
+        <referencedby refid="classS__Guard_1a9799d85fa2ce1a6991b6ecc00cc43c4f" compoundref="NPC_8h" startline="387" endline="396">S_Guard</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -33,8 +33,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="296" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="296" bodyend="299"/>
-        <references refid="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" compoundref="NPC_8cpp" startline="465" endline="478">Init</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" line="383" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" bodystart="383" bodyend="386"/>
+        <references refid="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" compoundref="NPC_8cpp" startline="601" endline="613">Init</references>
       </memberdef>
       <memberdef kind="function" id="classS__Guard_1a9799d85fa2ce1a6991b6ecc00cc43c4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -51,14 +51,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="300" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="300" bodyend="309"/>
-        <references refid="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" compoundref="NPC_8cpp" startline="465" endline="478">Init</references>
-        <references refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" compoundref="collision_8h" startline="40">Object::orientation</references>
-        <references refid="classNPCTarget_1a2f580e69045e8c22f775686c86c3efad" compoundref="NPC_8h" startline="219">NPCTarget::orientation</references>
-        <references refid="classS__Guard_1a857421f746b3f3ca631e9a2828eec09f" compoundref="NPC_8h" startline="310">original</references>
-        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
-        <references refid="classNPCTarget_1a1dab826b2b7e3311c8a337cb11578b0b" compoundref="NPC_8h" startline="216">NPCTarget::position</references>
-        <references refid="classNPC_1a0c6b7e6c5bf7601503cb5e29180e7721" compoundref="NPC_8h" startline="45">NPC::target</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" line="387" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" bodystart="387" bodyend="396"/>
+        <references refid="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" compoundref="NPC_8cpp" startline="601" endline="613">Init</references>
+        <references refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" compoundref="collision_8h" startline="60">Object::orientation</references>
+        <references refid="classNPCTarget_1a2f580e69045e8c22f775686c86c3efad" compoundref="NPC_8h" startline="266">NPCTarget::orientation</references>
+        <references refid="classS__Guard_1a857421f746b3f3ca631e9a2828eec09f" compoundref="NPC_8h" startline="397">original</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="57">Object::position</references>
+        <references refid="classNPCTarget_1a1dab826b2b7e3311c8a337cb11578b0b" compoundref="NPC_8h" startline="263">NPCTarget::position</references>
+        <references refid="classNPC_1a0c6b7e6c5bf7601503cb5e29180e7721" compoundref="NPC_8h" startline="58">NPC::target</references>
         <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
       </memberdef>
       <memberdef kind="function" id="classS__Guard_1afc3dc574682d03d957aac8ff1852c925" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="310" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="310" bodyend="310"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" line="397" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" bodystart="397" bodyend="397"/>
       </memberdef>
       <memberdef kind="function" id="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -81,22 +81,22 @@
         <name>Init</name>
         <reimplements refid="classNPC_1a6674302d1e96b04cdbf98ac01bc41448">Init</reimplements>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classSecurity" kindref="compound">Security</ref> guard Initializer. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classNPC" kindref="compound">NPC</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="313" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.cpp" bodystart="465" bodyend="478"/>
-        <references refid="classNPC_1ae8eb02d5fdea056417d25ba82458f244" compoundref="NPC_8h" startline="46">NPC::bodyParts</references>
-        <references refid="classNPC_1ae855926da3adab4d690ce4bd5d0d3d72" compoundref="NPC_8h" startline="47">NPC::identity</references>
-        <references refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" compoundref="collision_8h" startline="72">Bodypart::identity</references>
-        <references refid="classNPC_1a3ea41c7d9745e0be2d2b25187dbaf3f7" compoundref="dialogue_8cpp" startline="28" endline="46">NPC::InitDialogue</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" line="400" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.cpp" bodystart="601" bodyend="613"/>
+        <references refid="classNPC_1ae8eb02d5fdea056417d25ba82458f244" compoundref="NPC_8h" startline="59">NPC::bodyParts</references>
+        <references refid="classNPC_1ae855926da3adab4d690ce4bd5d0d3d72" compoundref="NPC_8h" startline="60">NPC::identity</references>
+        <references refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" compoundref="collision_8h" startline="99">Bodypart::identity</references>
+        <references refid="classNPC_1a3ea41c7d9745e0be2d2b25187dbaf3f7" compoundref="dialogue_8cpp" startline="49" endline="67">NPC::InitDialogue</references>
         <references refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" compoundref="LoadTGA_8cpp" startline="8" endline="67">LoadTGA</references>
-        <references refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" compoundref="collision_8h" startline="39">Object::mesh</references>
-        <references refid="classNPC_1a93af7d2430caec547503006f21bf2c7dae4d51e4f3422151f6b266a4bbbe8c9cd" compoundref="NPC_8h" startline="20">NPC::NUM_BODYPARTS</references>
-        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
+        <references refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" compoundref="collision_8h" startline="59">Object::mesh</references>
+        <references refid="classNPC_1a93af7d2430caec547503006f21bf2c7dae4d51e4f3422151f6b266a4bbbe8c9cd" compoundref="NPC_8h" startline="35">NPC::NUM_BODYPARTS</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="57">Object::position</references>
         <references refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" compoundref="Mesh_8h" startline="29">Mesh::textureID</references>
-        <referencedby refid="classS__Guard_1abd085439dbecd0fdedae78b5a61f5a08" compoundref="NPC_8h" startline="296" endline="299">S_Guard</referencedby>
+        <referencedby refid="classS__Guard_1abd085439dbecd0fdedae78b5a61f5a08" compoundref="NPC_8h" startline="383" endline="386">S_Guard</referencedby>
       </memberdef>
       <memberdef kind="function" id="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -117,277 +117,277 @@
           <declname>player</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para><ref refid="classSecurity" kindref="compound">Security</ref> Control. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><ref refid="classNPC" kindref="compound">NPC</ref>: </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="314" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.cpp" bodystart="482" bodyend="518"/>
-        <references refid="classNPC_1ad8a941b5f0c793cf801a7b0c8caad548" compoundref="NPC_8cpp" startline="76" endline="108">NPC::Animate</references>
-        <references refid="classInventory_1add9b431527557df4a701a54db3d56d75" compoundref="inventory_8cpp" startline="204" endline="216">Inventory::checkPaid</references>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" line="401" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.cpp" bodystart="623" bodyend="659"/>
+        <references refid="classNPC_1ad8a941b5f0c793cf801a7b0c8caad548" compoundref="NPC_8cpp" startline="110" endline="142">NPC::Animate</references>
+        <references refid="classInventory_1add9b431527557df4a701a54db3d56d75" compoundref="inventory_8cpp" startline="268" endline="280">Inventory::checkPaid</references>
         <references refid="structVector3_1a17b8a054dab5e8eae02f04b0121ee194" compoundref="Vector3_8cpp" startline="417" endline="420">Vector3::Dist</references>
-        <references refid="NPC_8cpp_1aa44bf3fcc686d895aaa3265499f2920c" compoundref="player_8cpp" startline="481">entrance</references>
-        <references refid="classNPC_1a6f8d69aac667c616c6e42d49358cf968" compoundref="NPC_8cpp" startline="176" endline="208">NPC::Goto</references>
-        <references refid="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" compoundref="player_8h" startline="97">Player::inventory</references>
-        <references refid="classdynamicObject_1a6baf2001dbd9c86003c2c1f1ddfe3612" compoundref="NPC_8cpp" startline="3" endline="19">dynamicObject::Knockback</references>
-        <references refid="classNPC_1a1dd6753d963d97c35971f223843fa20b" compoundref="NPC_8cpp" startline="55" endline="64">NPC::Orientate</references>
-        <references refid="classS__Guard_1a857421f746b3f3ca631e9a2828eec09f" compoundref="NPC_8h" startline="310">original</references>
-        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="37">Object::position</references>
-        <references refid="classNPCTarget_1a1dab826b2b7e3311c8a337cb11578b0b" compoundref="NPC_8h" startline="216">NPCTarget::position</references>
+        <references refid="NPC_8cpp_1aa44bf3fcc686d895aaa3265499f2920c" compoundref="player_8cpp" startline="543">entrance</references>
+        <references refid="classNPC_1a6f8d69aac667c616c6e42d49358cf968" compoundref="NPC_8cpp" startline="222" endline="254">NPC::Goto</references>
+        <references refid="classPlayer_1ab8d436b5727749f7be05ffdf744d1041" compoundref="player_8h" startline="118">Player::inventory</references>
+        <references refid="classdynamicObject_1a6baf2001dbd9c86003c2c1f1ddfe3612" compoundref="NPC_8cpp" startline="12" endline="29">dynamicObject::Knockback</references>
+        <references refid="classNPC_1a1dd6753d963d97c35971f223843fa20b" compoundref="NPC_8cpp" startline="77" endline="86">NPC::Orientate</references>
+        <references refid="classS__Guard_1a857421f746b3f3ca631e9a2828eec09f" compoundref="NPC_8h" startline="397">original</references>
+        <references refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" compoundref="collision_8h" startline="57">Object::position</references>
+        <references refid="classNPCTarget_1a1dab826b2b7e3311c8a337cb11578b0b" compoundref="NPC_8h" startline="263">NPCTarget::position</references>
         <references refid="structVector3_1ab3b1af4c82ca09bf8ce997c205e3cb10" compoundref="Vector3_8cpp" startline="422" endline="429">Vector3::SphericalToCartesian</references>
-        <references refid="classNPC_1a0c6b7e6c5bf7601503cb5e29180e7721" compoundref="NPC_8h" startline="45">NPC::target</references>
+        <references refid="classNPC_1a0c6b7e6c5bf7601503cb5e29180e7721" compoundref="NPC_8h" startline="58">NPC::target</references>
         <references refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" compoundref="Vector3_8h" startline="27">Vector3::y</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>This is the <ref refid="classSecurity" kindref="compound">Security</ref> class. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Class <ref refid="classS__Guard" kindref="compound">S_Guard</ref> : <ref refid="classNPC" kindref="compound">NPC</ref> </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1457">
+      <node id="1420">
         <label>NPC</label>
         <link refid="classNPC"/>
-        <childnode refid="1458" relation="public-inheritance">
+        <childnode refid="1421" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1459">
+      <node id="1422">
         <label>Object</label>
         <link refid="classObject"/>
       </node>
-      <node id="1458">
+      <node id="1421">
         <label>dynamicObject</label>
         <link refid="classdynamicObject"/>
-        <childnode refid="1459" relation="public-inheritance">
+        <childnode refid="1422" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1456">
+      <node id="1419">
         <label>S_Guard</label>
         <link refid="classS__Guard"/>
-        <childnode refid="1457" relation="public-inheritance">
+        <childnode refid="1420" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1469">
+      <node id="1434">
         <label>Component</label>
         <link refid="structComponent"/>
-        <childnode refid="1466" relation="usage">
+        <childnode refid="1429" relation="usage">
           <edgelabel>g</edgelabel>
           <edgelabel>r</edgelabel>
           <edgelabel>b</edgelabel>
         </childnode>
       </node>
-      <node id="1461">
+      <node id="1424">
         <label>NPC</label>
         <link refid="classNPC"/>
-        <childnode refid="1462" relation="public-inheritance">
+        <childnode refid="1425" relation="public-inheritance">
         </childnode>
-        <childnode refid="1474" relation="usage">
+        <childnode refid="1437" relation="usage">
           <edgelabel>bodyParts</edgelabel>
         </childnode>
-        <childnode refid="1475" relation="usage">
+        <childnode refid="1438" relation="usage">
           <edgelabel>clues</edgelabel>
           <edgelabel>greetings</edgelabel>
         </childnode>
-        <childnode refid="1466" relation="usage">
+        <childnode refid="1429" relation="usage">
           <edgelabel>elapsedTime</edgelabel>
           <edgelabel>rotation</edgelabel>
         </childnode>
-        <childnode refid="1476" relation="usage">
+        <childnode refid="1439" relation="usage">
           <edgelabel>rotationDir</edgelabel>
         </childnode>
-        <childnode refid="1465" relation="usage">
+        <childnode refid="1428" relation="usage">
           <edgelabel>target</edgelabel>
           <edgelabel>previousPos</edgelabel>
           <edgelabel>initialPos</edgelabel>
         </childnode>
-        <childnode refid="1473" relation="usage">
+        <childnode refid="1430" relation="usage">
           <edgelabel>inConversation</edgelabel>
         </childnode>
-        <childnode refid="1471" relation="usage">
+        <childnode refid="1431" relation="usage">
           <edgelabel>identity</edgelabel>
         </childnode>
-        <childnode refid="1477" relation="usage">
+        <childnode refid="1440" relation="usage">
           <edgelabel>quest</edgelabel>
         </childnode>
       </node>
-      <node id="1467">
+      <node id="1432">
         <label>Mesh</label>
         <link refid="classMesh"/>
-        <childnode refid="1468" relation="usage">
+        <childnode refid="1433" relation="usage">
           <edgelabel>material</edgelabel>
         </childnode>
-        <childnode refid="1470" relation="usage">
+        <childnode refid="1435" relation="usage">
           <edgelabel>mode</edgelabel>
         </childnode>
-        <childnode refid="1471" relation="usage">
+        <childnode refid="1431" relation="usage">
           <edgelabel>name</edgelabel>
         </childnode>
-        <childnode refid="1472" relation="usage">
+        <childnode refid="1436" relation="usage">
           <edgelabel>textureID</edgelabel>
           <edgelabel>indexBuffer</edgelabel>
           <edgelabel>indexSize</edgelabel>
           <edgelabel>vertexBuffer</edgelabel>
         </childnode>
       </node>
-      <node id="1470">
+      <node id="1435">
         <label>DRAW_MODE</label>
       </node>
-      <node id="1471">
+      <node id="1431">
         <label>string</label>
       </node>
-      <node id="1468">
+      <node id="1433">
         <label>Material</label>
         <link refid="structMaterial"/>
-        <childnode refid="1466" relation="usage">
+        <childnode refid="1429" relation="usage">
           <edgelabel>kShininess</edgelabel>
         </childnode>
-        <childnode refid="1469" relation="usage">
+        <childnode refid="1434" relation="usage">
           <edgelabel>kDiffuse</edgelabel>
           <edgelabel>kAmbient</edgelabel>
           <edgelabel>kSpecular</edgelabel>
         </childnode>
       </node>
-      <node id="1466">
+      <node id="1429">
         <label>float</label>
       </node>
-      <node id="1478">
+      <node id="1441">
         <label>TextBox</label>
         <link refid="classTextBox"/>
-        <childnode refid="1465" relation="usage">
+        <childnode refid="1428" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1471" relation="usage">
+        <childnode refid="1431" relation="usage">
           <edgelabel>apparentext</edgelabel>
           <edgelabel>type</edgelabel>
           <edgelabel>text</edgelabel>
         </childnode>
       </node>
-      <node id="1463">
+      <node id="1426">
         <label>Object</label>
         <link refid="classObject"/>
-        <childnode refid="1464" relation="usage">
+        <childnode refid="1427" relation="usage">
           <edgelabel>collision</edgelabel>
         </childnode>
-        <childnode refid="1466" relation="usage">
+        <childnode refid="1429" relation="usage">
           <edgelabel>size</edgelabel>
           <edgelabel>orientation</edgelabel>
         </childnode>
-        <childnode refid="1465" relation="usage">
+        <childnode refid="1428" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1473" relation="usage">
+        <childnode refid="1430" relation="usage">
           <edgelabel>ignoreCollision</edgelabel>
         </childnode>
-        <childnode refid="1471" relation="usage">
+        <childnode refid="1431" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="1467" relation="usage">
+        <childnode refid="1432" relation="usage">
           <edgelabel>mesh</edgelabel>
         </childnode>
       </node>
-      <node id="1476">
+      <node id="1439">
         <label>int</label>
       </node>
-      <node id="1477">
+      <node id="1440">
         <label>Quest</label>
         <link refid="classQuest"/>
-        <childnode refid="1478" relation="public-inheritance">
+        <childnode refid="1441" relation="public-inheritance">
         </childnode>
-        <childnode refid="1479" relation="usage">
+        <childnode refid="1442" relation="usage">
           <edgelabel>Accept</edgelabel>
           <edgelabel>Decline</edgelabel>
         </childnode>
+        <childnode refid="1430" relation="usage">
+          <edgelabel>criteria</edgelabel>
+        </childnode>
       </node>
-      <node id="1479">
+      <node id="1442">
         <label>Button2D</label>
         <link refid="classButton2D"/>
-        <childnode refid="1478" relation="usage">
+        <childnode refid="1441" relation="usage">
           <edgelabel>altNext</edgelabel>
           <edgelabel>next</edgelabel>
         </childnode>
-        <childnode refid="1465" relation="usage">
+        <childnode refid="1428" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="1473" relation="usage">
+        <childnode refid="1430" relation="usage">
           <edgelabel>trigger</edgelabel>
         </childnode>
-        <childnode refid="1471" relation="usage">
+        <childnode refid="1431" relation="usage">
           <edgelabel>text</edgelabel>
         </childnode>
       </node>
-      <node id="1464">
+      <node id="1427">
         <label>Collision</label>
         <link refid="structCollision"/>
-        <childnode refid="1465" relation="usage">
+        <childnode refid="1428" relation="usage">
           <edgelabel>hitbox</edgelabel>
           <edgelabel>centre</edgelabel>
         </childnode>
-        <childnode refid="1467" relation="usage">
-          <edgelabel>boundingBox</edgelabel>
-        </childnode>
       </node>
-      <node id="1472">
+      <node id="1436">
         <label>unsigned</label>
       </node>
-      <node id="1480">
+      <node id="1443">
         <label>NPCTarget</label>
         <link refid="classNPCTarget"/>
-        <childnode refid="1466" relation="usage">
+        <childnode refid="1429" relation="usage">
           <edgelabel>orientation</edgelabel>
         </childnode>
-        <childnode refid="1465" relation="usage">
+        <childnode refid="1428" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
       </node>
-      <node id="1462">
+      <node id="1425">
         <label>dynamicObject</label>
         <link refid="classdynamicObject"/>
-        <childnode refid="1463" relation="public-inheritance">
+        <childnode refid="1426" relation="public-inheritance">
         </childnode>
-        <childnode refid="1466" relation="usage">
+        <childnode refid="1429" relation="usage">
           <edgelabel>health</edgelabel>
           <edgelabel>hitDelay</edgelabel>
         </childnode>
-        <childnode refid="1465" relation="usage">
+        <childnode refid="1428" relation="usage">
           <edgelabel>velocity</edgelabel>
         </childnode>
       </node>
-      <node id="1473">
+      <node id="1430">
         <label>bool</label>
       </node>
-      <node id="1475">
+      <node id="1438">
         <label>vector&lt; TextBox &gt;</label>
       </node>
-      <node id="1474">
+      <node id="1437">
         <label>Bodypart</label>
         <link refid="classBodypart"/>
-        <childnode refid="1463" relation="public-inheritance">
+        <childnode refid="1426" relation="public-inheritance">
         </childnode>
-        <childnode refid="1471" relation="usage">
+        <childnode refid="1431" relation="usage">
           <edgelabel>identity</edgelabel>
         </childnode>
       </node>
-      <node id="1465">
+      <node id="1428">
         <label>Vector3</label>
         <link refid="structVector3"/>
-        <childnode refid="1466" relation="usage">
+        <childnode refid="1429" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
-      <node id="1460">
+      <node id="1423">
         <label>S_Guard</label>
         <link refid="classS__Guard"/>
-        <childnode refid="1461" relation="public-inheritance">
+        <childnode refid="1424" relation="public-inheritance">
         </childnode>
-        <childnode refid="1480" relation="usage">
+        <childnode refid="1443" relation="usage">
           <edgelabel>original</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" line="294" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/NPC.h" bodystart="293" bodyend="315"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" line="381" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/NPC.h" bodystart="380" bodyend="402"/>
     <listofallmembers>
       <member refid="classNPC_1ad8a941b5f0c793cf801a7b0c8caad548" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Animate</name></member>
       <member refid="classNPC_1ac89ed5d63adaf17e690ec06bbd5afb10" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Animate</name></member>
@@ -399,11 +399,11 @@
       <member refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>collision</name></member>
       <member refid="classS__Guard_1a757e5c4e30aeae82816f6f93c20858b2" prot="public" virt="virtual"><scope>S_Guard</scope><name>Control</name></member>
       <member refid="classdynamicObject_1ae7af2a87ece92a7816201624999da3f2" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>dynamicObject</name></member>
-      <member refid="classdynamicObject_1aadded891f78e621ed2c38a1ec9d7d3bd" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>dynamicObject</name></member>
-      <member refid="classdynamicObject_1af54f832fa2066be59e08f2dc702d0fe7" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>dynamicObject</name></member>
+      <member refid="classdynamicObject_1aa25fd3d91aaafec7905451cd867d50d5" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>dynamicObject</name></member>
+      <member refid="classdynamicObject_1a352b9b2ba3bb46d4888635afc25ab065" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>dynamicObject</name></member>
       <member refid="classNPC_1a18b24e85bcb4092511edeb48c3abf6e8" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>elapsedTime</name></member>
       <member refid="classNPC_1afe31b4148e201b59dcf588abc1c969a2" prot="public" virt="virtual"><scope>S_Guard</scope><name>getConversation</name></member>
-      <member refid="classNPC_1a23a8a51ee056c9aa1fbb3018b92c7de4" prot="public" virt="virtual"><scope>S_Guard</scope><name>getCriteria</name></member>
+      <member refid="classNPC_1ac863c71a461badaed687facf66afa094" prot="public" virt="virtual"><scope>S_Guard</scope><name>getCriteria</name></member>
       <member refid="classdynamicObject_1aaefa676592a15b4c88d77aa9f0d56535" prot="public" virt="virtual"><scope>S_Guard</scope><name>getHealth</name></member>
       <member refid="classNPC_1a892f70d177394372ca5d7d47b98bd166" prot="public" virt="virtual"><scope>S_Guard</scope><name>getIdentity</name></member>
       <member refid="classObject_1abd775688f7362fe926da1aea7f88e27c" prot="public" virt="virtual"><scope>S_Guard</scope><name>getPaid</name></member>
@@ -418,7 +418,6 @@
       <member refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>ignoreCollision</name></member>
       <member refid="classNPC_1afe0fca487242d2ec209bfc5599451d66" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>inConversation</name></member>
       <member refid="classS__Guard_1aa9a7504d085783dba34dd2ce54b125ea" prot="public" virt="virtual"><scope>S_Guard</scope><name>Init</name></member>
-      <member refid="classNPC_1ab83b95175ae5e71f6918bab2d7c238d5" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>InitClues</name></member>
       <member refid="classNPC_1a3ea41c7d9745e0be2d2b25187dbaf3f7" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>InitDialogue</name></member>
       <member refid="classNPC_1a1b8ffa83c0fc5045b1db84c3abc3f915" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>initialPos</name></member>
       <member refid="classNPC_1a7c05d38abb761bb503fdac5a36bc62a4" prot="public" virt="virtual"><scope>S_Guard</scope><name>InitQuest</name></member>
@@ -430,10 +429,10 @@
       <member refid="classNPC_1a93af7d2430caec547503006f21bf2c7dae4d51e4f3422151f6b266a4bbbe8c9cd" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>NUM_BODYPARTS</name></member>
       <member refid="classObject_1a40860402e64d8008fb42329df7097cdb" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
       <member refid="classObject_1ab7afdfb51bccbc4cb09512454ae6c93a" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
-      <member refid="classObject_1a9ad82aaeaab22b9776810538e7c6a8f1" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
-      <member refid="classObject_1a1ff0e543bef7628740801ae660d91a7e" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
-      <member refid="classObject_1aab1e47237b6bf2df563b497426f1a8cc" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
-      <member refid="classObject_1aa8a3c32d7bdaf9d06dd9a65749ee0110" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
+      <member refid="classObject_1ab1ebb40265dc428d3e7c344adaee309a" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
+      <member refid="classObject_1afe9494bb43564cac7ee053c441448984" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
+      <member refid="classObject_1a4e1b0177b63d964d0275eb677c117f28" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
+      <member refid="classObject_1a9f11ed46bea1e2b0a850477a528a2534" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Object</name></member>
       <member refid="classNPC_1a1dd6753d963d97c35971f223843fa20b" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Orientate</name></member>
       <member refid="classNPC_1aa7bf0d862f15684245b4559177cfb92f" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>Orientate</name></member>
       <member refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>orientation</name></member>
@@ -458,8 +457,8 @@
       <member refid="classdynamicObject_1aceab704935fe9e62ff9ba4360b2a9a79" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>UpdateVelocity</name></member>
       <member refid="classdynamicObject_1a9f48578b8539944e877d40c728554a4b" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>velocity</name></member>
       <member refid="classdynamicObject_1a88d8db9f73895f8389fa0147544537f4" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>~dynamicObject</name></member>
-      <member refid="classNPC_1a82bd4ced6842c4ed6638e414c2b75640" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>~NPC</name></member>
-      <member refid="classObject_1ae8f5483f459e46687bd01e6f9977afd3" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>~Object</name></member>
+      <member refid="classNPC_1a70053b4db8281a8ceb5fbaa8e4bf80e3" prot="public" virt="virtual"><scope>S_Guard</scope><name>~NPC</name></member>
+      <member refid="classObject_1aa3e791419d84c4c346ef9499513b8e00" prot="public" virt="virtual"><scope>S_Guard</scope><name>~Object</name></member>
       <member refid="classS__Guard_1afc3dc574682d03d957aac8ff1852c925" prot="public" virt="non-virtual"><scope>S_Guard</scope><name>~S_Guard</name></member>
     </listofallmembers>
   </compounddef>

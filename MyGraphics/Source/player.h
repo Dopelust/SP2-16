@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	player.h
+\author Ricsson
+\par	
+\brief
+This is the player .h file
+*/
+/******************************************************************************/
 #ifndef PLAYER_H
 #define PLAYER_H
 
@@ -14,6 +23,12 @@
 
 using namespace irrklang;
 
+/******************************************************************************/
+/*!
+		Class dynamicObject: Object
+\brief	This class is for the dynamic objects. Mainly used for the crates.
+*/
+/******************************************************************************/
 class dynamicObject : public Object
 {
 public:
@@ -37,6 +52,12 @@ public:
 	float getHealth() {return health;}
 };
 
+/******************************************************************************/
+/*!
+		Class PLayer: dynamicObject
+\brief	This is the player class.
+*/
+/******************************************************************************/
 class Player : public dynamicObject
 {
 public:
@@ -115,6 +136,12 @@ public:
 	bool isEating() {return state[EATING];};
 };
 
+/******************************************************************************/
+/*!
+		Class Doorway
+\brief	This class is for the automatic sliding doors in the game.
+*/
+/******************************************************************************/
 class Doorway
 {
 public:

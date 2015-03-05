@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	NPC.cpp
+\author Ricsson
+\par	
+\brief
+This is the camera3 cpp
+*/
+/******************************************************************************/
 #include "NPC.h"
 
 bool dynamicObject::Knockback(Vector3 dir, Vector3 vel)
@@ -19,6 +28,12 @@ bool dynamicObject::Knockback(Vector3 dir, Vector3 vel)
 	return false;
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Initializer
+*/
+/******************************************************************************/
 void NPC::Init()
 {
 	Mesh* tempMesh;
@@ -53,6 +68,12 @@ void NPC::Init()
 	}
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Orientation
+*/
+/******************************************************************************/
 void NPC::Orientate(float o, double dt, float speed)
 {
 	Vector3 direction;
@@ -64,6 +85,12 @@ void NPC::Orientate(float o, double dt, float speed)
 	orientation += dt * direction.Cross(destination).y * speed;
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Overloaded orientation
+*/
+/******************************************************************************/
 void NPC::Orientate(Vector3 t, double dt, float speed)
 {
 	Vector3 direction;
@@ -74,6 +101,12 @@ void NPC::Orientate(Vector3 t, double dt, float speed)
 	orientation += dt * direction.Cross(destination).y * speed;
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Animation
+*/
+/******************************************************************************/
 void NPC::Animate(double dt, float speed)
 {
 	if (velocity.x == 0 && velocity.z == 0) //resetting to original location
@@ -108,6 +141,12 @@ void NPC::Animate(double dt, float speed)
 	}
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Overloaded animate
+*/
+/******************************************************************************/
 void NPC::Animate(double dt, float speed, float limit)
 {
 	if (velocity.x == 0 && velocity.z == 0) //resetting to original location
@@ -174,6 +213,12 @@ void dynamicObject::UpdateVelocity(double dt)
 
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Go to function
+*/
+/******************************************************************************/
 void NPC::Goto(Vector3 destination, double dt, float turn, float speed)
 {
 	Vector3 p = position; p.y = 0;
@@ -208,6 +253,12 @@ void NPC::Goto(Vector3 destination, double dt, float turn, float speed)
 	}
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Update function
+*/
+/******************************************************************************/
 void NPC::Update(double dt, vector<Object*>object, Player* player)
 {
 	initialPos = position;
@@ -267,6 +318,12 @@ void NPC::Update(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Hobo initializer
+*/
+/******************************************************************************/
 void Hobo::Init()
 {
 	identity = "Homeless Man";
@@ -283,6 +340,12 @@ void Hobo::Init()
 	InitQuest("Filestream//Quests//hobo.txt");
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Hobo control
+*/
+/******************************************************************************/
 void Hobo::Control(double dt, vector<Object*>object, Player* player)
 {
 	Orientate(180, dt, 150.f);
@@ -290,6 +353,12 @@ void Hobo::Control(double dt, vector<Object*>object, Player* player)
 	velocity = 0;
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Thug Initializer
+*/
+/******************************************************************************/
 void Thug::Init()
 {
 	identity = "Thug";
@@ -304,6 +373,12 @@ void Thug::Init()
 	InitDialogue("Filestream//thug.txt");
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Thug control
+*/
+/******************************************************************************/
 void Thug::Control(double dt, vector<Object*>object, Player* player)
 {
 	Animate(dt, 120.f);
@@ -317,6 +392,12 @@ void Thug::Control(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Cashier Initializer
+*/
+/******************************************************************************/
 void Cashier::Init()
 {
 	identity = "Cashier";
@@ -332,6 +413,12 @@ void Cashier::Init()
 	InitQuest("Filestream//Quests//cashier.txt");
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Cashier Control
+*/
+/******************************************************************************/
 void Cashier::Control(double dt, vector<Object*>object, Player* player)
 {
 	Animate(dt, 100.f);
@@ -347,6 +434,12 @@ void Cashier::Control(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Blindman Initializer
+*/
+/******************************************************************************/
 void Blindman::Init()
 {
 	identity = "Ossan";
@@ -361,6 +454,12 @@ void Blindman::Init()
 	InitDialogue("Filestream//blindman.txt");
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Blindman Control
+*/
+/******************************************************************************/
 void Blindman::Control(double dt, vector<Object*>object, Player* player)
 {
 	elapsedTime = 0;
@@ -410,6 +509,12 @@ void Blindman::Control(double dt, vector<Object*>object, Player* player)
 	target += velocity * float(dt);
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Customer Control
+*/
+/******************************************************************************/
 void Customer::Control(double dt, vector<Object*>object, Player* player)
 {	
 	Animate(dt, 100.f);
@@ -438,6 +543,12 @@ void Customer::Control(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Detective Initializer
+*/
+/******************************************************************************/
 void Detective::Init()
 {
 	identity = "Detective-san";
@@ -456,6 +567,12 @@ void Detective::Init()
 	quest->Accept.altNext->type = "Reward";
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Detective Control
+*/
+/******************************************************************************/
 void Detective::Control(double dt, vector<Object*>object, Player* player)
 {
 	if (quest != NULL)
@@ -475,6 +592,12 @@ void Detective::Control(double dt, vector<Object*>object, Player* player)
 	velocity = 0;
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Security guard Initializer
+*/
+/******************************************************************************/
 void S_Guard::Init()
 {
 	identity = "Security Guard";
@@ -491,6 +614,12 @@ void S_Guard::Init()
 
 extern bool entrance;
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Security Control
+*/
+/******************************************************************************/
 void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 {
 	Animate(dt, 200.f + position.Dist(target) * 20, 60.f);
@@ -529,6 +658,12 @@ void S_Guard::Control(double dt, vector<Object*>object, Player* player)
 	}
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Manager Initializer
+*/
+/******************************************************************************/
 void Manager::Init()
 {
 	identity = "Manager-taichou";
@@ -545,14 +680,27 @@ void Manager::Init()
 	InitQuest("Filestream//Quests//manager.txt");
 }
 
+/******************************************************************************/
+/*!
+		NPC:
+\brief	Manager Control
+*/
+/******************************************************************************/
+bool c_discount;
 void Manager::Control(double dt, vector<Object*>object, Player* player)
 {
 	if (quest != NULL)
 	{
 		if (collection.Criteria(object))
+		{
 			quest->criteria = true;
+			c_discount = true;
+		}
 		else
+		{
 			quest->criteria = false;
+			c_discount = false;
+		}
 	}
 
 	Orientate(-145, dt, 150.f);

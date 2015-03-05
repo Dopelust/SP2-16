@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" line="25" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" bodystart="25" bodyend="25"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" line="25" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" bodystart="25" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundMixedOutputReceiver_1a4951ef6422a5f6aaf384095a5f1d930e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -62,14 +62,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" line="37" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" line="37" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Interface to be implemented by the user, which recieves the mixed output when it it played by the sound engine. </para>    </briefdescription>
     <detaileddescription>
 <para>This can be used to store the sound output as .wav file or for creating a Oscillograph or similar. Simply implement your own class derived from <ref refid="classirrklang_1_1ISoundMixedOutputReceiver" kindref="compound">ISoundMixedOutputReceiver</ref> and use <ref refid="classirrklang_1_1ISoundEngine_1a3cbaae130ddd88adfef6af3861e8d9b0" kindref="member">ISoundEngine::setMixedDataOutputReceiver</ref> to let the audio driver know about it. </para>    </detaileddescription>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" line="21" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" bodystart="20" bodyend="39"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" line="21" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundMixedOutputReceiver.h" bodystart="20" bodyend="39"/>
     <listofallmembers>
       <member refid="classirrklang_1_1ISoundMixedOutputReceiver_1a4951ef6422a5f6aaf384095a5f1d930e" prot="public" virt="pure-virtual"><scope>irrklang::ISoundMixedOutputReceiver</scope><name>OnAudioDataReady</name></member>
       <member refid="classirrklang_1_1ISoundMixedOutputReceiver_1a2950c073c7f242833bbab6f1eb1f1ce3" prot="public" virt="virtual"><scope>irrklang::ISoundMixedOutputReceiver</scope><name>~ISoundMixedOutputReceiver</name></member>

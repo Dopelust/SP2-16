@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	MENUScene.h
+\author Ricsson
+\par	
+\brief
+This is for rendering the MAIN MENU.
+*/
+/******************************************************************************/
 #ifndef MENU_SCENE_H
 #define MENU_SCENE_H
 
@@ -25,6 +34,12 @@
 using namespace irrklang;
 using namespace::std;
 
+/******************************************************************************/
+/*!
+		Class Button:
+\brief	This is the option selector in the main menu. when you arrow up and down.
+*/
+/******************************************************************************/
 class Button
 {
 public:
@@ -34,6 +49,13 @@ public:
 	Vector3 position;
 	string name;
 };
+
+/******************************************************************************/
+/*!
+		Class MENUScene: scene
+\brief	The MENUScene class
+*/
+/******************************************************************************/
 class MENUScene : public Scene
 {
 	enum GEOMETRY_TYPE

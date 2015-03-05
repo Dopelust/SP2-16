@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" line="113" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" bodystart="113" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" line="113" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" bodystart="113" bodyend="-1"/>
         <referencedby refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" compoundref="ik__IRefCounted_8h" startline="98" endline="109">drop</referencedby>
         <referencedby refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" compoundref="ik__IRefCounted_8h" startline="80" endline="80">grab</referencedby>
       </memberdef>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" line="46" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" bodystart="46" bodyend="49"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" line="46" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" bodystart="46" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IRefCounted_1a7fe8953e57adac9bcd28a94d3b251886" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" line="52" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" bodystart="52" bodyend="54"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" line="52" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" bodystart="52" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -66,7 +66,7 @@
 <para>Increments the reference counter by one. Someone who calls <ref refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" kindref="member">grab()</ref> to an object, should later also call <ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref> to it. If an object never gets as much <ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref> as <ref refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" kindref="member">grab()</ref> calls, it will never be destroyed. The <ref refid="classirrklang_1_1IRefCounted" kindref="compound">IRefCounted</ref> class provides a basic reference counting mechanism with its methods <ref refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" kindref="member">grab()</ref> and <ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref>. Most objects of irrklang are derived from <ref refid="classirrklang_1_1IRefCounted" kindref="compound">IRefCounted</ref>, and so they are reference counted.</para><para>When you receive an object in irrKlang (for example an <ref refid="classirrklang_1_1ISound" kindref="compound">ISound</ref> using play2D() or play3D()), and you no longer need the object, you have to call <ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref>. This will destroy the object, if <ref refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" kindref="member">grab()</ref> was not called in another part of you program, because this part still needs the object. Note, that you only don&apos;t need to call <ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref> for all objects you receive, it will be explicitely noted in the documentation.</para><para>A simple example:</para><para>If you want to play a sound, you may want to call the method <ref refid="classirrklang_1_1ISoundEngine_1a25f612fe6479d3b22dc5bab2a2eaa927" kindref="member">ISoundEngine::play2D</ref>. You call ISound* mysound = engine-&gt;play2D(&quot;foobar.mp3&quot;, false, false true); If you no longer need the sound interface, call mysound-&gt;<ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref>. The sound may still play on after this because the engine still has a reference to that sound, but you can be sure that it&apos;s memory will be released as soon the sound is no longer used. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" line="80" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" bodystart="80" bodyend="80"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" line="80" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" bodystart="80" bodyend="80"/>
         <references refid="classirrklang_1_1IRefCounted_1ae372c01b8a01de0d21d23b6d05c27a03" compoundref="ik__IRefCounted_8h" startline="113">ReferenceCounter</references>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -80,7 +80,7 @@
 <para>This will destroy the object, if <ref refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" kindref="member">grab()</ref> was not called in another part of you program, because this part still needs the object. Note, that you only don&apos;t need to call <ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref> for all objects you receive, it will be explicitely noted in the documentation.</para><para>A simple example:</para><para>If you want to play a sound, you may want to call the method <ref refid="classirrklang_1_1ISoundEngine_1a25f612fe6479d3b22dc5bab2a2eaa927" kindref="member">ISoundEngine::play2D</ref>. You call ISound* mysound = engine-&gt;play2D(&quot;foobar.mp3&quot;, false, false true); If you no longer need the sound interface, call mysound-&gt;<ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref>. The sound may still play on after this because the engine still has a reference to that sound, but you can be sure that it&apos;s memory will be released as soon the sound is no longer used. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" line="98" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" bodystart="98" bodyend="109"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" line="98" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" bodystart="98" bodyend="109"/>
         <references refid="classirrklang_1_1IRefCounted_1ae372c01b8a01de0d21d23b6d05c27a03" compoundref="ik__IRefCounted_8h" startline="113">ReferenceCounter</references>
       </memberdef>
       </sectiondef>
@@ -89,72 +89,72 @@
     <detaileddescription>
 <para>This class provides reference counting through the methods <ref refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" kindref="member">grab()</ref> and <ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref>. It also is able to store a debug string for every instance of an object. Most objects of irrKlang are derived from <ref refid="classirrklang_1_1IRefCounted" kindref="compound">IRefCounted</ref>, and so they are reference counted.</para><para>When you receive an object in irrKlang (for example an <ref refid="classirrklang_1_1ISound" kindref="compound">ISound</ref> using play2D() or play3D()), and you no longer need the object, you have to call <ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref>. This will destroy the object, if <ref refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" kindref="member">grab()</ref> was not called in another part of you program, because this part still needs the object. Note, that you only don&apos;t need to call <ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref> for all objects you receive, it will be explicitely noted in the documentation.</para><para>A simple example:</para><para>If you want to play a sound, you may want to call the method <ref refid="classirrklang_1_1ISoundEngine_1a25f612fe6479d3b22dc5bab2a2eaa927" kindref="member">ISoundEngine::play2D</ref>. You call ISound* mysound = engine-&gt;play2D(&quot;foobar.mp3&quot;, false, false true); If you no longer need the sound interface, call mysound-&gt;<ref refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" kindref="member">drop()</ref>. The sound may still play on after this because the engine still has a reference to that sound, but you can be sure that it&apos;s memory will be released as soon the sound is no longer used.</para><para>If you want to add a sound source, you may want to call a method <ref refid="classirrklang_1_1ISoundEngine_1a4eed0fa6712872e55003b26462e21005" kindref="member">ISoundEngine::addSoundSourceFromFile</ref>. You do this like ISoundSource* mysource = engine-&gt;addSoundSourceFromFile(&quot;example.jpg&quot;); You will not have to drop the pointer to the source, because sound sources are managed by the engine (it will live as long as the sound engine) and the documentation says so. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1135">
+      <node id="1099">
         <label>irrklang::ICapturedAudioDataReceiver</label>
         <link refid="classirrklang_1_1ICapturedAudioDataReceiver"/>
-        <childnode refid="1131" relation="public-inheritance">
+        <childnode refid="1095" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1134">
+      <node id="1098">
         <label>irrklang::IAudioStreamLoader</label>
         <link refid="classirrklang_1_1IAudioStreamLoader"/>
-        <childnode refid="1131" relation="public-inheritance">
+        <childnode refid="1095" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1139">
+      <node id="1103">
         <label>irrklang::ISoundEngine</label>
         <link refid="classirrklang_1_1ISoundEngine"/>
-        <childnode refid="1131" relation="public-inheritance">
+        <childnode refid="1095" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1138">
+      <node id="1102">
         <label>irrklang::ISoundDeviceList</label>
         <link refid="classirrklang_1_1ISoundDeviceList"/>
-        <childnode refid="1131" relation="public-inheritance">
+        <childnode refid="1095" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1133">
+      <node id="1097">
         <label>irrklang::IAudioStream</label>
         <link refid="classirrklang_1_1IAudioStream"/>
-        <childnode refid="1131" relation="public-inheritance">
+        <childnode refid="1095" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1136">
+      <node id="1100">
         <label>irrklang::IFileFactory</label>
         <link refid="classirrklang_1_1IFileFactory"/>
-        <childnode refid="1131" relation="public-inheritance">
+        <childnode refid="1095" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1131">
+      <node id="1095">
         <label>irrklang::IRefCounted</label>
         <link refid="classirrklang_1_1IRefCounted"/>
       </node>
-      <node id="1132">
+      <node id="1096">
         <label>irrklang::IAudioRecorder</label>
         <link refid="classirrklang_1_1IAudioRecorder"/>
-        <childnode refid="1131" relation="public-inheritance">
+        <childnode refid="1095" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1137">
+      <node id="1101">
         <label>irrklang::IFileReader</label>
         <link refid="classirrklang_1_1IFileReader"/>
-        <childnode refid="1131" relation="public-inheritance">
+        <childnode refid="1095" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1141">
+      <node id="1105">
         <label>int</label>
       </node>
-      <node id="1140">
+      <node id="1104">
         <label>irrklang::IRefCounted</label>
         <link refid="classirrklang_1_1IRefCounted"/>
-        <childnode refid="1141" relation="usage">
+        <childnode refid="1105" relation="usage">
           <edgelabel>ReferenceCounter</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" line="42" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_IRefCounted.h" bodystart="41" bodyend="114"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" line="42" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_IRefCounted.h" bodystart="41" bodyend="114"/>
     <listofallmembers>
       <member refid="classirrklang_1_1IRefCounted_1a869fe3adc6e49e8da105e95837a565b1" prot="public" virt="non-virtual"><scope>irrklang::IRefCounted</scope><name>drop</name></member>
       <member refid="classirrklang_1_1IRefCounted_1a737b09ee717069b964a3bd0451690388" prot="public" virt="non-virtual"><scope>irrklang::IRefCounted</scope><name>grab</name></member>

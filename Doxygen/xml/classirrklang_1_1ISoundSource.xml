@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="26" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="26" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1aed0e4abae00be20497ccb905d2db7588" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -33,7 +33,7 @@
 <para>Note that if this is set to ESM_NO_STREAMING, the engine still might decide to stream the sound if it is too big. The threashold for this can be adjusted using <ref refid="classirrklang_1_1ISoundSource_1a434174ae21f4e43a480395e79fb2d4a9" kindref="member">ISoundSource::setForcedStreamingThreshold()</ref>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="32" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="32" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a5b1158611ec58ab372ef05de541fed56" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1a6eab873ba387c6a4e05839e6a434d06e" kindref="member">E_STREAM_MODE</ref></type>
@@ -46,7 +46,7 @@
 <para>Note: If the returned type is ESM_AUTO_DETECT, this mode will change after the sound has been played the first time. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="37" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="37" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a23ff097b74d284529e4e1c75d0611884" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1adf9f75b6ca98aff6843fb294125571e0" kindref="member">ik_u32</ref></type>
@@ -59,7 +59,7 @@
 <para>Returns -1 if not known for this sound for example because its decoder does not support lenght reporting or it is a file stream of unknown size. Note: If the sound never has been played before, the sound engine will have to open the file and try to get the play lenght from there, so this call could take a bit depending on the type of file. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="45" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="45" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a4c24dd695accd2d2f0f6e00124af1cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="structirrklang_1_1SAudioStreamFormat" kindref="compound">SAudioStreamFormat</ref></type>
@@ -73,7 +73,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="53" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="53" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a6a608ded51f5920d0cb5d28ac6ee5455" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>bool</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="62" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="62" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a52accb16b3a554558f12f99d16f57a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -112,7 +112,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="69" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="69" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1aa5b916f192c9625be74f6ca06d9e5f30" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1a6fa5a4dd85b476308461136072ef4e0f" kindref="member">ik_f32</ref></type>
@@ -126,7 +126,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="76" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="76" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1af3a3635f94afc8bc03c9af5b3c408ac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -151,7 +151,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="87" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="87" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a8f263cc21e42eabbd894d986bdafa90f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1a6fa5a4dd85b476308461136072ef4e0f" kindref="member">ik_f32</ref></type>
@@ -165,7 +165,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="96" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="96" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a7d22ed6bb25eeb14fec844c02f7553ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -190,7 +190,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="112" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="112" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1af43bf5affba2a9758bfa3c4f367c32a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1a6fa5a4dd85b476308461136072ef4e0f" kindref="member">ik_f32</ref></type>
@@ -204,7 +204,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="126" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="126" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a6dfe93f58c4443b9547e9b60abe18dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -217,7 +217,7 @@
 <para>Sounds which are not played as streams are buffered to make it possible to replay them without much overhead. If the sound file is altered after the sound has been played the first time, the engine won&apos;t play the changed file then. Calling this method makes the engine reload the file before the file is played the next time. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="134" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="134" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a434174ae21f4e43a480395e79fb2d4a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -242,7 +242,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="144" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="144" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a69bd50de0cb511389d273841936f8d0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="namespaceirrklang_1af8028b1c477e50d479270611ecb76e92" kindref="member">ik_s32</ref></type>
@@ -255,7 +255,7 @@
 <para>The value is specified in uncompressed bytes and its default value is about one Megabyte. See <ref refid="classirrklang_1_1ISoundSource_1a434174ae21f4e43a480395e79fb2d4a9" kindref="member">setForcedStreamingThreshold()</ref> for details. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="149" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="149" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1ISoundSource_1a7ea731f5136f0d7abfbe2e2436d4aa43" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void *</type>
@@ -269,7 +269,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="161" column="1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="161" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -277,30 +277,30 @@
     <detaileddescription>
 <para>It provides some informations about the sound source like the play lenght and can have default settings for volume, distances for 3d etc. There is some example code on how to use Sound sources at <ref refid="index_1soundSources" kindref="member">Using Sound Sources</ref>. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1161">
+      <node id="1125">
         <label>irrklang::IVirtualRefCounted</label>
         <link refid="classirrklang_1_1IVirtualRefCounted"/>
       </node>
-      <node id="1160">
+      <node id="1124">
         <label>irrklang::ISoundSource</label>
         <link refid="classirrklang_1_1ISoundSource"/>
-        <childnode refid="1161" relation="public-inheritance">
+        <childnode refid="1125" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1163">
+      <node id="1127">
         <label>irrklang::IVirtualRefCounted</label>
         <link refid="classirrklang_1_1IVirtualRefCounted"/>
       </node>
-      <node id="1162">
+      <node id="1126">
         <label>irrklang::ISoundSource</label>
         <link refid="classirrklang_1_1ISoundSource"/>
-        <childnode refid="1163" relation="public-inheritance">
+        <childnode refid="1127" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" line="22" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_ISoundSource.h" bodystart="21" bodyend="162"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" line="22" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_ISoundSource.h" bodystart="21" bodyend="162"/>
     <listofallmembers>
       <member refid="classirrklang_1_1IVirtualRefCounted_1a6602c3d110f23410c5bca8a08b709aa4" prot="public" virt="pure-virtual"><scope>irrklang::ISoundSource</scope><name>drop</name></member>
       <member refid="classirrklang_1_1ISoundSource_1a6dfe93f58c4443b9547e9b60abe18dff" prot="public" virt="pure-virtual"><scope>irrklang::ISoundSource</scope><name>forceReloadAtNextUse</name></member>

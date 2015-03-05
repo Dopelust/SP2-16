@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="245" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="245" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="245" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="245" bodyend="-1"/>
         <referencedby refid="classirrklang_1_1vec3d_1a1c8ebb209e6272f571f288b2f23a8363" compoundref="ik__vec3d_8h" startline="103" endline="106">irrklang::vec3d&lt; T &gt;::crossProduct</referencedby>
         <referencedby refid="classirrklang_1_1vec3d_1a284e1619481e16373ea18b19461344aa" compoundref="ik__vec3d_8h" startline="81" endline="84">irrklang::vec3d&lt; T &gt;::dotProduct</referencedby>
         <referencedby refid="classirrklang_1_1vec3d_1a9f5c9411ad637d980a1cf320d0a1cf2e" compoundref="ik__vec3d_8h" startline="62" endline="67">irrklang::vec3d&lt; T &gt;::equals</referencedby>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="245" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="245" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="245" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="245" bodyend="-1"/>
         <referencedby refid="classirrklang_1_1vec3d_1a1c8ebb209e6272f571f288b2f23a8363" compoundref="ik__vec3d_8h" startline="103" endline="106">irrklang::vec3d&lt; T &gt;::crossProduct</referencedby>
         <referencedby refid="classirrklang_1_1vec3d_1a284e1619481e16373ea18b19461344aa" compoundref="ik__vec3d_8h" startline="81" endline="84">irrklang::vec3d&lt; T &gt;::dotProduct</referencedby>
         <referencedby refid="classirrklang_1_1vec3d_1a9f5c9411ad637d980a1cf320d0a1cf2e" compoundref="ik__vec3d_8h" startline="62" endline="67">irrklang::vec3d&lt; T &gt;::equals</referencedby>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="245" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="245" bodyend="-1"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="245" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="245" bodyend="-1"/>
         <referencedby refid="classirrklang_1_1vec3d_1a1c8ebb209e6272f571f288b2f23a8363" compoundref="ik__vec3d_8h" startline="103" endline="106">irrklang::vec3d&lt; T &gt;::crossProduct</referencedby>
         <referencedby refid="classirrklang_1_1vec3d_1a284e1619481e16373ea18b19461344aa" compoundref="ik__vec3d_8h" startline="81" endline="84">irrklang::vec3d&lt; T &gt;::dotProduct</referencedby>
         <referencedby refid="classirrklang_1_1vec3d_1a9f5c9411ad637d980a1cf320d0a1cf2e" compoundref="ik__vec3d_8h" startline="62" endline="67">irrklang::vec3d&lt; T &gt;::equals</referencedby>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="21" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="21" bodyend="21"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="21" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="21" bodyend="21"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1vec3d_1acf6454acf91480f6f3ff1f285b72665e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -175,7 +175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="22" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="22" bodyend="22"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="22" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="22" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1vec3d_1a3cedbef9c16c38bc5bde34f39cd789eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -192,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="23" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="23" bodyend="23"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="23" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="23" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1vec3d_1ab0656599ad85698244c84fb8c4242e46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classirrklang_1_1vec3d" kindref="compound">vec3d</ref>&lt; T &gt;</type>
@@ -205,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="33" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="33" bodyend="33"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="33" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="33" bodyend="33"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -225,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="35" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="35" bodyend="35"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="35" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="35" bodyend="35"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -245,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="37" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="37" bodyend="37"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="37" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="37" bodyend="37"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -265,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="38" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="38" bodyend="38"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="38" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="38" bodyend="38"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -285,7 +285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="40" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="40" bodyend="40"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="40" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="40" bodyend="40"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -305,7 +305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="41" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="41" bodyend="41"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="41" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="41" bodyend="41"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -325,7 +325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="43" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="43" bodyend="43"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="43" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="43" bodyend="43"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -345,7 +345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="44" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="44" bodyend="44"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="44" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="44" bodyend="44"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -365,7 +365,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="45" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="45" bodyend="45"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="45" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="45" bodyend="45"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -385,7 +385,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="46" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="46" bodyend="46"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="46" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="46" bodyend="46"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -405,7 +405,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="48" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="48" bodyend="48"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="48" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="48" bodyend="48"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -425,7 +425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="49" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="49" bodyend="49"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="49" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="49" bodyend="49"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -445,7 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="50" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="50" bodyend="50"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="50" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="50" bodyend="50"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -465,7 +465,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="51" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="51" bodyend="51"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="51" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="51" bodyend="51"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -485,7 +485,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="53" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="53" bodyend="53"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="53" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="53" bodyend="53"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -505,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="54" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="54" bodyend="54"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="54" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="54" bodyend="54"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -525,7 +525,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="56" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="56" bodyend="56"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="56" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="56" bodyend="56"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -545,7 +545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="57" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="57" bodyend="57"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="57" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="57" bodyend="57"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -565,7 +565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="62" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="62" bodyend="67"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="62" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="62" bodyend="67"/>
         <references refid="namespaceirrklang_1a6ce1a12052cdee7b6d81a053a73a4f86" compoundref="ik__irrKlangTypes_8h" startline="68" endline="71">irrklang::equalsfloat</references>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
@@ -594,7 +594,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="69" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="69" bodyend="69"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="69" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="69" bodyend="69"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -617,7 +617,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="70" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="70" bodyend="70"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="70" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="70" bodyend="70"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -633,7 +633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="73" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="73" bodyend="73"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="73" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="73" bodyend="73"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -650,7 +650,7 @@
 <para>This is useful because it is much faster then <ref refid="classirrklang_1_1vec3d_1a0e37bc53c61352fb1b6390c97ea0c6aa" kindref="member">getLength()</ref>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="78" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="78" bodyend="78"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="78" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="78" bodyend="78"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -670,7 +670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="81" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="81" bodyend="84"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="81" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="81" bodyend="84"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -690,7 +690,7 @@
 <para>Here, the vector is interpreted as point in 3 dimensional space. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="88" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="88" bodyend="92"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="88" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="88" bodyend="92"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -710,7 +710,7 @@
 <para>Here, the vector is interpreted as point in 3 dimensional space. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="96" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="96" bodyend="100"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="96" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="96" bodyend="100"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -731,7 +731,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="103" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="103" bodyend="106"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="103" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="103" bodyend="106"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -755,7 +755,7 @@
 <para>It is assumed that the point is on the line. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="110" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="110" bodyend="115"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="110" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="110" bodyend="115"/>
         <references refid="classirrklang_1_1vec3d_1a770f92315410f52481b1820da7310697" compoundref="ik__vec3d_8h" startline="96" endline="100">irrklang::vec3d&lt; T &gt;::getDistanceFromSQ</references>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1vec3d_1a1adb3f2521103ab9dfbbdce8459a69ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -769,7 +769,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="118" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="118" bodyend="129"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="118" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="118" bodyend="129"/>
         <references refid="classirrklang_1_1vec3d_1a0e37bc53c61352fb1b6390c97ea0c6aa" compoundref="ik__vec3d_8h" startline="73" endline="73">irrklang::vec3d&lt; T &gt;::getLength</references>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
@@ -791,7 +791,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="132" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="132" bodyend="136"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="132" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="132" bodyend="136"/>
         <references refid="classirrklang_1_1vec3d_1a1adb3f2521103ab9dfbbdce8459a69ac" compoundref="ik__vec3d_8h" startline="118" endline="129">irrklang::vec3d&lt; T &gt;::normalize</references>
       </memberdef>
       <memberdef kind="function" id="classirrklang_1_1vec3d_1a6007451ded719744d8e1b45c9ae56cd4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -805,7 +805,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="139" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="139" bodyend="144"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="139" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="139" bodyend="144"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -844,7 +844,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="150" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="150" bodyend="160"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="150" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="150" bodyend="160"/>
         <references refid="namespaceirrklang_1a738ade686859c0d98ce9edbd34c4fc1b" compoundref="ik__irrKlangTypes_8h" startline="64">irrklang::IK_DEGTORAD64</references>
         <references refid="classirrklang_1_1vec3d_1a843126596fd738246d0816030a53ac0f" compoundref="ik__vec3d_8h" startline="69" endline="69">irrklang::vec3d&lt; T &gt;::set</references>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
@@ -885,7 +885,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="166" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="166" bodyend="176"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="166" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="166" bodyend="176"/>
         <references refid="namespaceirrklang_1a738ade686859c0d98ce9edbd34c4fc1b" compoundref="ik__irrKlangTypes_8h" startline="64">irrklang::IK_DEGTORAD64</references>
         <references refid="classirrklang_1_1vec3d_1a843126596fd738246d0816030a53ac0f" compoundref="ik__vec3d_8h" startline="69" endline="69">irrklang::vec3d&lt; T &gt;::set</references>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
@@ -926,7 +926,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="182" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="182" bodyend="192"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="182" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="182" bodyend="192"/>
         <references refid="namespaceirrklang_1a738ade686859c0d98ce9edbd34c4fc1b" compoundref="ik__irrKlangTypes_8h" startline="64">irrklang::IK_DEGTORAD64</references>
         <references refid="classirrklang_1_1vec3d_1a843126596fd738246d0816030a53ac0f" compoundref="ik__vec3d_8h" startline="69" endline="69">irrklang::vec3d&lt; T &gt;::set</references>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
@@ -967,7 +967,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="197" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="197" bodyend="203"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="197" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="197" bodyend="203"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -984,7 +984,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="209" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="209" bodyend="229"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="209" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="209" bodyend="229"/>
         <references refid="namespaceirrklang_1a899ce8a298f44c2a5413c6dc0e87f640" compoundref="ik__irrKlangTypes_8h" startline="61">irrklang::IK_RADTODEG</references>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
@@ -1005,7 +1005,7 @@
 <para>Useful for setting in shader constants for example. The fourth value will always be 0. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="234" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="234" bodyend="240"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="234" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="234" bodyend="240"/>
         <references refid="classirrklang_1_1vec3d_1ac3c930788d6718a78cf93b6022124648" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::X</references>
         <references refid="classirrklang_1_1vec3d_1afa70e7ee18d11b83fe02829cebbc10ae" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Y</references>
         <references refid="classirrklang_1_1vec3d_1a8d41296edcd4c6739847351b9e107fc3" compoundref="ik__vec3d_8h" startline="245">irrklang::vec3d&lt; T &gt;::Z</references>
@@ -1016,20 +1016,20 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="1589">
+      <node id="1551">
         <label>T</label>
       </node>
-      <node id="1588">
+      <node id="1550">
         <label>irrklang::vec3d&lt; T &gt;</label>
         <link refid="classirrklang_1_1vec3d"/>
-        <childnode refid="1589" relation="usage">
+        <childnode refid="1551" relation="usage">
           <edgelabel>X</edgelabel>
           <edgelabel>Y</edgelabel>
           <edgelabel>Z</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" line="18" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/IrrKlang/include/ik_vec3d.h" bodystart="17" bodyend="246"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" line="18" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/IrrKlang/include/ik_vec3d.h" bodystart="17" bodyend="246"/>
     <listofallmembers>
       <member refid="classirrklang_1_1vec3d_1a1c8ebb209e6272f571f288b2f23a8363" prot="public" virt="non-virtual"><scope>irrklang::vec3d</scope><name>crossProduct</name></member>
       <member refid="classirrklang_1_1vec3d_1a284e1619481e16373ea18b19461344aa" prot="public" virt="non-virtual"><scope>irrklang::vec3d</scope><name>dotProduct</name></member>

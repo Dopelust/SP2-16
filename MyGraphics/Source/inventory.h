@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	inventory.h
+\author Ricsson
+\par	
+\brief
+This is for player inventory
+*/
+/******************************************************************************/
 #ifndef INVENTORY_H
 #define INVENTORY_H
 
@@ -9,6 +18,12 @@
 
 using namespace::std;
 
+/******************************************************************************/
+/*!
+		Class Wallet:
+\brief	This is the players wallet when he picks up money obj.
+*/
+/******************************************************************************/
 class Wallet
 {
 public:
@@ -21,7 +36,13 @@ public:
 	void Update();
 };
 
-
+/******************************************************************************/
+/*!
+		Class ATM:
+\brief	This is for the automated teller machines outside the supermarket.
+One iof for withdrawing and the other for depositing.
+*/
+/******************************************************************************/
 class ATM
 {
 public:
@@ -58,6 +79,12 @@ public:
 	Object Withdraw;
 };
 
+/******************************************************************************/
+/*!
+		Class Slot:
+\brief	This is the players inventory UI.
+*/
+/******************************************************************************/
 class Slot
 {
 public:
@@ -69,6 +96,12 @@ public:
 	Mesh * mesh;
 };
 
+/******************************************************************************/
+/*!
+		Class Selector:
+\brief	This is the selector indicator in the players inventory.
+*/
+/******************************************************************************/
 class Selector
 {
 public:
@@ -79,6 +112,12 @@ public:
 	Slot * selectedSlot;
 };
 
+/******************************************************************************/
+/*!
+		Class Inventory:
+\brief	Basic functionality of keepnig track of looted items as well as checking out items.
+*/
+/******************************************************************************/
 class Inventory
 {
 public:

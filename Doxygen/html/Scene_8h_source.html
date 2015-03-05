@@ -56,32 +56,34 @@
 <a href="Scene_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SCENE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SCENE_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classScene.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classScene.html">Scene</a></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classScene.html#ad10176d75a9cc0da56626f682d083507">    7</a></span>&#160;        <a class="code" href="classScene.html#ad10176d75a9cc0da56626f682d083507">Scene</a>() {};</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classScene.html#a3b8cec2e32546713915f8c6303c951f1">    8</a></span>&#160;        <a class="code" href="classScene.html#a3b8cec2e32546713915f8c6303c951f1">~Scene</a>() {};</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classScene.html#ac3c4677dfd702a3ffd5ffadd3f1ac478">Init</a>() = 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classScene.html#af5c6bcf2185087fb32c27fb8f6a18d91">Update</a>(<span class="keywordtype">double</span> dt) = 0;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classScene.html#ae24d21e12b34839994ad265662ea24d7">Render</a>() = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classScene.html#aae8e24654ef98c79961c2b804b12852c">Exit</a>() = 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classScene.html#a140d39ea291abd069dad5bf6bff97e37">   15</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classScene.html#a140d39ea291abd069dad5bf6bff97e37">pause</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classScene.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classScene.html">Scene</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classScene.html#ad10176d75a9cc0da56626f682d083507">    9</a></span>&#160;        <a class="code" href="classScene.html#ad10176d75a9cc0da56626f682d083507">Scene</a>() {};</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classScene.html#aa0a5be58e2ee2d1fdafc5fb46b5e661e">   10</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classScene.html#aa0a5be58e2ee2d1fdafc5fb46b5e661e">~Scene</a>() {};</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classScene.html#ac3c4677dfd702a3ffd5ffadd3f1ac478">Init</a>() = 0;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classScene.html#af5c6bcf2185087fb32c27fb8f6a18d91">Update</a>(<span class="keywordtype">double</span> dt) = 0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classScene.html#ae24d21e12b34839994ad265662ea24d7">Render</a>() = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classScene.html#aae8e24654ef98c79961c2b804b12852c">Exit</a>() = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classScene.html#aadcef6167dbf42098111084d6c3aca14">   17</a></span>&#160;        std::string <a class="code" href="classScene.html#aadcef6167dbf42098111084d6c3aca14">type</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="classScene_html_ac3c4677dfd702a3ffd5ffadd3f1ac478"><div class="ttname"><a href="classScene.html#ac3c4677dfd702a3ffd5ffadd3f1ac478">Scene::Init</a></div><div class="ttdeci">virtual void Init()=0</div></div>
+<div class="ttc" id="classScene_html_aadcef6167dbf42098111084d6c3aca14"><div class="ttname"><a href="classScene.html#aadcef6167dbf42098111084d6c3aca14">Scene::type</a></div><div class="ttdeci">std::string type</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8h_source.html#l00017">Scene.h:17</a></div></div>
 <div class="ttc" id="classScene_html_af5c6bcf2185087fb32c27fb8f6a18d91"><div class="ttname"><a href="classScene.html#af5c6bcf2185087fb32c27fb8f6a18d91">Scene::Update</a></div><div class="ttdeci">virtual void Update(double dt)=0</div></div>
-<div class="ttc" id="classScene_html_a3b8cec2e32546713915f8c6303c951f1"><div class="ttname"><a href="classScene.html#a3b8cec2e32546713915f8c6303c951f1">Scene::~Scene</a></div><div class="ttdeci">~Scene()</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8h_source.html#l00008">Scene.h:8</a></div></div>
-<div class="ttc" id="classScene_html_ad10176d75a9cc0da56626f682d083507"><div class="ttname"><a href="classScene.html#ad10176d75a9cc0da56626f682d083507">Scene::Scene</a></div><div class="ttdeci">Scene()</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8h_source.html#l00007">Scene.h:7</a></div></div>
-<div class="ttc" id="classScene_html_a140d39ea291abd069dad5bf6bff97e37"><div class="ttname"><a href="classScene.html#a140d39ea291abd069dad5bf6bff97e37">Scene::pause</a></div><div class="ttdeci">bool pause</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8h_source.html#l00015">Scene.h:15</a></div></div>
+<div class="ttc" id="classScene_html_aa0a5be58e2ee2d1fdafc5fb46b5e661e"><div class="ttname"><a href="classScene.html#aa0a5be58e2ee2d1fdafc5fb46b5e661e">Scene::~Scene</a></div><div class="ttdeci">virtual ~Scene()</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8h_source.html#l00010">Scene.h:10</a></div></div>
+<div class="ttc" id="classScene_html_ad10176d75a9cc0da56626f682d083507"><div class="ttname"><a href="classScene.html#ad10176d75a9cc0da56626f682d083507">Scene::Scene</a></div><div class="ttdeci">Scene()</div><div class="ttdef"><b>Definition:</b> <a href="Scene_8h_source.html#l00009">Scene.h:9</a></div></div>
 <div class="ttc" id="classScene_html_ae24d21e12b34839994ad265662ea24d7"><div class="ttname"><a href="classScene.html#ae24d21e12b34839994ad265662ea24d7">Scene::Render</a></div><div class="ttdeci">virtual void Render()=0</div></div>
 <div class="ttc" id="classScene_html_aae8e24654ef98c79961c2b804b12852c"><div class="ttname"><a href="classScene.html#aae8e24654ef98c79961c2b804b12852c">Scene::Exit</a></div><div class="ttdeci">virtual void Exit()=0</div></div>
-<div class="ttc" id="classScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdef"><b>Definition:</b> <a href="Scene_8h_source.html#l00004">Scene.h:4</a></div></div>
+<div class="ttc" id="classScene_html"><div class="ttname"><a href="classScene.html">Scene</a></div><div class="ttdef"><b>Definition:</b> <a href="Scene_8h_source.html#l00006">Scene.h:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 4 2015 14:18:20 for My Application by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 5 2015 02:07:34 for My Application by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

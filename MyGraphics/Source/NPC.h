@@ -1,9 +1,24 @@
+/******************************************************************************/
+/*!
+\file	NPC.h
+\author Ricsson
+\par	
+\brief
+This is the NPC header.
+*/
+/******************************************************************************/
 #ifndef NPC_H
 #define NPC_H
 
 #include "player.h"
 #include "dialogue.h"
 
+/******************************************************************************/
+/*!
+		Class NPC: dynamicObject
+\brief	This the NPC class
+*/
+/******************************************************************************/
 class NPC : public dynamicObject
 {
 private:
@@ -90,6 +105,12 @@ public:
 	void Animate(double dt, float speed, float limit);
 };
 
+/******************************************************************************/
+/*!
+		Class Hobo: NPC
+\brief	This the HOBO/homeless man.
+*/
+/******************************************************************************/
 class Hobo : public NPC
 {
 public:
@@ -123,6 +144,12 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+/******************************************************************************/
+/*!
+		Class Thug: NPC
+\brief	This the Thug.
+*/
+/******************************************************************************/
 class Thug : public NPC
 {
 public:
@@ -142,6 +169,12 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+/******************************************************************************/
+/*!
+		Class Cashier: NPC
+\brief	This the cashier NPC.
+*/
+/******************************************************************************/
 class Cashier : public NPC
 {
 public:
@@ -182,6 +215,12 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+/******************************************************************************/
+/*!
+		Class Blindman: NPC
+\brief	This the Blindman.
+*/
+/******************************************************************************/
 class Blindman : public NPC
 {
 public:
@@ -210,6 +249,12 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+/******************************************************************************/
+/*!
+		Class NPCTarget
+\brief	This is the NPC target location.
+*/
+/******************************************************************************/
 class NPCTarget
 {
 public:
@@ -221,6 +266,12 @@ public:
 	float orientation;
 };
 
+/******************************************************************************/
+/*!
+		Class Customer: NPC
+\brief	This is the customer class for the not important npc.
+*/
+/******************************************************************************/
 class Customer : public NPC
 {
 public:
@@ -265,6 +316,12 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+/******************************************************************************/
+/*!
+		Class Detective : NPC
+\brief	This is the Detective class.
+*/
+/******************************************************************************/
 class Detective : public NPC
 {
 public:
@@ -314,6 +371,12 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+/******************************************************************************/
+/*!
+		Class S_Guard : NPC
+\brief	This is the Security class.
+*/
+/******************************************************************************/
 class S_Guard : public NPC
 {
 public:
@@ -338,6 +401,12 @@ public:
 	virtual void Control(double dt, vector<Object*>object, Player* player);
 };
 
+/******************************************************************************/
+/*!
+		Class Manager : NPC
+\brief	This is the Manager class.
+*/
+/******************************************************************************/
 class Manager : public NPC
 {
 public:

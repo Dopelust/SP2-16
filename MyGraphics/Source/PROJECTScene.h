@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	PROJECTScene.h
+\author SP2 Team 16
+\par	
+\brief
+Header file for the Project/SP Scene.
+*/
+/******************************************************************************/
 #ifndef PROJECT_SCENE_H
 #define PROJECT_SCENE_H
 
@@ -24,6 +33,12 @@
 
 using namespace irrklang;
 
+/******************************************************************************/
+/*!
+		Class OnScreenText:
+\brief	This is for the text on screen
+*/
+/******************************************************************************/
 class OnScreenText
 {
 public:
@@ -51,6 +66,12 @@ public:
 	void Update(double dt);
 };
 
+/******************************************************************************/
+/*!
+		Class Aesthetics:
+\brief	This class is for the obejcts that have no collision at all.
+*/
+/******************************************************************************/
 class Aesthetics
 {
 public:
@@ -68,6 +89,12 @@ public:
 	float orientation;
 };
 
+/******************************************************************************/
+/*!
+		Class PROJECTScene: Scene
+\brief	Project scene things.
+*/
+/******************************************************************************/
 class PROJECTScene : public Scene
 {
 	enum GEOMETRY_TYPE

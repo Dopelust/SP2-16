@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="269" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="269" bodyend="269"/>
+        <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="269" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="269" bodyend="269"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -24,28 +24,28 @@
     <detaileddescription>
 <para>Class <ref refid="classDivideByZero" kindref="compound">DivideByZero</ref>: </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="1011">
+      <node id="975">
         <label>std::exception</label>
       </node>
-      <node id="1010">
+      <node id="974">
         <label>DivideByZero</label>
         <link refid="classDivideByZero"/>
-        <childnode refid="1011" relation="public-inheritance">
+        <childnode refid="975" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="1013">
+      <node id="977">
         <label>std::exception</label>
       </node>
-      <node id="1012">
+      <node id="976">
         <label>DivideByZero</label>
         <link refid="classDivideByZero"/>
-        <childnode refid="1013" relation="public-inheritance">
+        <childnode refid="977" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" line="267" column="1" bodyfile="C:/Users/L532/Desktop/SP2-16.git/Common/Source/MyMath.h" bodystart="266" bodyend="270"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" line="267" column="1" bodyfile="C:/Users/User/Desktop/SP2-16 LATEST/Common/Source/MyMath.h" bodystart="266" bodyend="270"/>
     <listofallmembers>
       <member refid="classDivideByZero_1a4756aaefaf5e864c29a68ff24a8a8f10" prot="public" virt="non-virtual"><scope>DivideByZero</scope><name>what</name></member>
     </listofallmembers>

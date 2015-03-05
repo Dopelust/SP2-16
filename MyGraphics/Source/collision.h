@@ -1,3 +1,12 @@
+/******************************************************************************/
+/*!
+\file	collision.h
+\author Ricsson
+\par	
+\brief
+This is the collsion class using AABB.
+*/
+/******************************************************************************/
 #ifndef COLLISION_H
 #define COLLISION_H
 
@@ -14,12 +23,25 @@ using std::string;
 
 class Player;
 
+/******************************************************************************/
+/*!
+		Struct Collision:
+\brief	This is a struct that has the positions of the hitBox size and its centre.
+*/
+/******************************************************************************/
 struct Collision
 {
 	Vector3 centre;
 	Vector3 hitbox;
 };
 
+/******************************************************************************/
+/*!
+		Class Object:
+\brief	This is the object class that takes in a lot of member variables depending on what is needed
+like if there is no mesh or whether or not the object is an item that can be paid for.
+*/
+/******************************************************************************/
 class Object
 {
 public:
@@ -53,6 +75,13 @@ public:
 	virtual Vector3 getStorePos(Player* player) {return Vector3();};
 };
 
+/******************************************************************************/
+/*!
+		Class Body: inherits object
+\brief	This is the Body class which inherits somethings from the Object class. This class is for the
+NPCs bodyparts animation and hitbox as well.
+*/
+/******************************************************************************/
 class Bodypart : public Object
 {
 public:
@@ -71,6 +100,12 @@ public:
 	string identity;
 };
 
+/******************************************************************************/
+/*!
+		Class Money: inherits object
+\brief	Money class which has object properties for initializing them.
+*/
+/******************************************************************************/
 class Money : public Object
 {
 public:
@@ -82,6 +117,12 @@ public:
 	float getValue() {return value;};
 };
 
+/******************************************************************************/
+/*!
+		Class Item: inherits object
+\brief	Item class which is used for initializing item objects for the player to pick up.
+*/
+/******************************************************************************/
 class Item : public Object
 {
 public:
@@ -101,6 +142,12 @@ public:
 	float getHealth() {return restore;};
 };
 
+/******************************************************************************/
+/*!
+		Class Vending:
+\brief	Vending class which is used for initializing the vending machine and its functions.
+*/
+/******************************************************************************/
 class Vending
 {
 public:
@@ -127,6 +174,12 @@ public:
 	Object Drink;
 };
 
+/******************************************************************************/
+/*!
+		Class Storage: object
+\brief	Storage calss which is used for the shelves that can store Items.
+*/
+/******************************************************************************/
 class Storage : public Object
 {
 public:
@@ -139,6 +192,12 @@ public:
 	virtual Vector3 getStorePos(Player* player);
 };
 
+/******************************************************************************/
+/*!
+		Class Storage: object
+\brief	Particles class which is used for particle effects when the player hits the NPC.
+*/
+/******************************************************************************/
 class Particles
 {
 public:

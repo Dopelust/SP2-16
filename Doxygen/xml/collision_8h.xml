@@ -15,247 +15,249 @@
     <includedby refid="MENUScene_8h" local="yes">MyGraphics/Source/MENUScene.h</includedby>
     <includedby refid="collision_8cpp" local="yes">MyGraphics/Source/collision.cpp</includedby>
     <incdepgraph>
-      <node id="2881">
-        <label>Mesh.h</label>
-        <link refid="Mesh_8h"/>
-        <childnode refid="2882" relation="include">
+      <node id="2891">
+        <label>LoadTGA.h</label>
+        <link refid="LoadTGA_8h"/>
+        <childnode refid="2892" relation="include">
+        </childnode>
+      </node>
+      <node id="2887">
+        <label>MeshBuilder.h</label>
+        <link refid="MeshBuilder_8h"/>
+        <childnode refid="2884" relation="include">
+        </childnode>
+        <childnode refid="2888" relation="include">
+        </childnode>
+        <childnode refid="2889" relation="include">
+        </childnode>
+      </node>
+      <node id="2879">
+        <label>cmath</label>
+      </node>
+      <node id="2892">
+        <label>GL\glew.h</label>
+      </node>
+      <node id="2885">
+        <label>string</label>
+      </node>
+      <node id="2880">
+        <label>exception</label>
+      </node>
+      <node id="2877">
+        <label>Vector3.h</label>
+        <link refid="Vector3_8h"/>
+        <childnode refid="2878" relation="include">
         </childnode>
         <childnode refid="2883" relation="include">
         </childnode>
       </node>
-      <node id="2884">
-        <label>MeshBuilder.h</label>
-        <link refid="MeshBuilder_8h"/>
-        <childnode refid="2881" relation="include">
+      <node id="2881">
+        <label>ctime</label>
+      </node>
+      <node id="2888">
+        <label>vertex.h</label>
+        <link refid="vertex_8h"/>
+        <childnode refid="2877" relation="include">
         </childnode>
+      </node>
+      <node id="2890">
+        <label>vector</label>
+      </node>
+      <node id="2889">
+        <label>LoadOBJ.h</label>
+        <link refid="LoadOBJ_8h"/>
+        <childnode refid="2890" relation="include">
+        </childnode>
+        <childnode refid="2888" relation="include">
+        </childnode>
+        <childnode refid="2877" relation="include">
+        </childnode>
+      </node>
+      <node id="2884">
+        <label>Mesh.h</label>
+        <link refid="Mesh_8h"/>
         <childnode refid="2885" relation="include">
         </childnode>
         <childnode refid="2886" relation="include">
         </childnode>
       </node>
-      <node id="2876">
-        <label>cmath</label>
-      </node>
-      <node id="2889">
-        <label>GL\glew.h</label>
-      </node>
       <node id="2882">
-        <label>string</label>
+        <label>cstdlib</label>
       </node>
-      <node id="2874">
-        <label>Vector3.h</label>
-        <link refid="Vector3_8h"/>
-        <childnode refid="2875" relation="include">
-        </childnode>
-        <childnode refid="2880" relation="include">
-        </childnode>
+      <node id="2883">
+        <label>iostream</label>
       </node>
-      <node id="2873">
+      <node id="2876">
         <label>MyGraphics/Source/collision.h</label>
         <link refid="collision.h"/>
-        <childnode refid="2874" relation="include">
-        </childnode>
-        <childnode refid="2881" relation="include">
+        <childnode refid="2877" relation="include">
         </childnode>
         <childnode refid="2884" relation="include">
         </childnode>
-        <childnode refid="2888" relation="include">
-        </childnode>
-        <childnode refid="2882" relation="include">
-        </childnode>
         <childnode refid="2887" relation="include">
         </childnode>
-      </node>
-      <node id="2875">
-        <label>MyMath.h</label>
-        <link refid="MyMath_8h"/>
-        <childnode refid="2876" relation="include">
-        </childnode>
-        <childnode refid="2877" relation="include">
-        </childnode>
-        <childnode refid="2878" relation="include">
-        </childnode>
-        <childnode refid="2879" relation="include">
-        </childnode>
-      </node>
-      <node id="2877">
-        <label>exception</label>
-      </node>
-      <node id="2885">
-        <label>vertex.h</label>
-        <link refid="vertex_8h"/>
-        <childnode refid="2874" relation="include">
-        </childnode>
-      </node>
-      <node id="2886">
-        <label>LoadOBJ.h</label>
-        <link refid="LoadOBJ_8h"/>
-        <childnode refid="2887" relation="include">
+        <childnode refid="2891" relation="include">
         </childnode>
         <childnode refid="2885" relation="include">
         </childnode>
-        <childnode refid="2874" relation="include">
+        <childnode refid="2890" relation="include">
         </childnode>
       </node>
       <node id="2878">
-        <label>ctime</label>
-      </node>
-      <node id="2887">
-        <label>vector</label>
-      </node>
-      <node id="2888">
-        <label>LoadTGA.h</label>
-        <link refid="LoadTGA_8h"/>
-        <childnode refid="2889" relation="include">
+        <label>MyMath.h</label>
+        <link refid="MyMath_8h"/>
+        <childnode refid="2879" relation="include">
+        </childnode>
+        <childnode refid="2880" relation="include">
+        </childnode>
+        <childnode refid="2881" relation="include">
+        </childnode>
+        <childnode refid="2882" relation="include">
         </childnode>
       </node>
-      <node id="2883">
+      <node id="2886">
         <label>Material.h</label>
         <link refid="Material_8h"/>
       </node>
-      <node id="2879">
-        <label>cstdlib</label>
-      </node>
-      <node id="2880">
-        <label>iostream</label>
-      </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2893">
-        <label>MyGraphics/Source/Application.cpp</label>
-        <link refid="Application_8cpp"/>
-      </node>
-      <node id="2892">
-        <label>MyGraphics/Source/PROJECTScene.h</label>
-        <link refid="PROJECTScene_8h"/>
-        <childnode refid="2893" relation="include">
-        </childnode>
-        <childnode refid="2894" relation="include">
+      <node id="2908">
+        <label>MyGraphics/Source/dialogue.h</label>
+        <link refid="dialogue_8h"/>
+        <childnode refid="2901" relation="include">
         </childnode>
         <childnode refid="2895" relation="include">
         </childnode>
-        <childnode refid="2896" relation="include">
+        <childnode refid="2902" relation="include">
+        </childnode>
+        <childnode refid="2904" relation="include">
+        </childnode>
+        <childnode refid="2906" relation="include">
         </childnode>
       </node>
-      <node id="2902">
-        <label>MyGraphics/Source/NPC.cpp</label>
-        <link refid="NPC_8cpp"/>
+      <node id="2904">
+        <label>MyGraphics/Source/dialogue.cpp</label>
+        <link refid="dialogue_8cpp"/>
       </node>
-      <node id="2899">
-        <label>MyGraphics/Source/MENUScene.h</label>
-        <link refid="MENUScene_8h"/>
-        <childnode refid="2893" relation="include">
-        </childnode>
-        <childnode refid="2894" relation="include">
-        </childnode>
-        <childnode refid="2900" relation="include">
-        </childnode>
-      </node>
-      <node id="2896">
-        <label>MyGraphics/Source/PROJECTScene.cpp</label>
-        <link refid="PROJECTScene_8cpp"/>
-      </node>
-      <node id="2900">
-        <label>MyGraphics/Source/MENUScene.cpp</label>
-        <link refid="MENUScene_8cpp"/>
+      <node id="2906">
+        <label>MyGraphics/Source/player.cpp</label>
+        <link refid="player_8cpp"/>
       </node>
       <node id="2895">
-        <label>MyGraphics/Source/Camera3.cpp</label>
-        <link refid="Camera3_8cpp"/>
-      </node>
-      <node id="2897">
-        <label>MyGraphics/Source/player.h</label>
-        <link refid="player_8h"/>
-        <childnode refid="2892" relation="include">
+        <label>MyGraphics/Source/PROJECTScene.h</label>
+        <link refid="PROJECTScene_8h"/>
+        <childnode refid="2896" relation="include">
+        </childnode>
+        <childnode refid="2897" relation="include">
         </childnode>
         <childnode refid="2898" relation="include">
         </childnode>
         <childnode refid="2899" relation="include">
         </childnode>
-        <childnode refid="2903" relation="include">
-        </childnode>
       </node>
-      <node id="2890">
-        <label>MyGraphics/Source/collision.h</label>
-        <link refid="collision.h"/>
-        <childnode refid="2891" relation="include">
+      <node id="2898">
+        <label>MyGraphics/Source/Camera3.cpp</label>
+        <link refid="Camera3_8cpp"/>
+      </node>
+      <node id="2896">
+        <label>MyGraphics/Source/Application.cpp</label>
+        <link refid="Application_8cpp"/>
+      </node>
+      <node id="2909">
+        <label>MyGraphics/Source/inventory.cpp</label>
+        <link refid="inventory_8cpp"/>
+      </node>
+      <node id="2901">
+        <label>MyGraphics/Source/NPC.h</label>
+        <link refid="NPC_8h"/>
+        <childnode refid="2895" relation="include">
         </childnode>
-        <childnode refid="2892" relation="include">
-        </childnode>
-        <childnode refid="2897" relation="include">
+        <childnode refid="2902" relation="include">
         </childnode>
         <childnode refid="2904" relation="include">
         </childnode>
-        <childnode refid="2899" relation="include">
-        </childnode>
-        <childnode refid="2907" relation="include">
-        </childnode>
-      </node>
-      <node id="2904">
-        <label>MyGraphics/Source/inventory.h</label>
-        <link refid="inventory_8h"/>
-        <childnode refid="2897" relation="include">
-        </childnode>
         <childnode refid="2905" relation="include">
         </childnode>
-        <childnode refid="2906" relation="include">
+      </node>
+      <node id="2910">
+        <label>MyGraphics/Source/collision.cpp</label>
+        <link refid="collision_8cpp"/>
+      </node>
+      <node id="2903">
+        <label>MyGraphics/Source/MENUScene.cpp</label>
+        <link refid="MENUScene_8cpp"/>
+      </node>
+      <node id="2907">
+        <label>MyGraphics/Source/inventory.h</label>
+        <link refid="inventory_8h"/>
+        <childnode refid="2900" relation="include">
+        </childnode>
+        <childnode refid="2908" relation="include">
+        </childnode>
+        <childnode refid="2909" relation="include">
         </childnode>
       </node>
-      <node id="2894">
-        <label>MyGraphics/Source/audio.cpp</label>
-        <link refid="audio_8cpp"/>
+      <node id="2905">
+        <label>MyGraphics/Source/NPC.cpp</label>
+        <link refid="NPC_8cpp"/>
       </node>
-      <node id="2891">
-        <label>MyGraphics/Source/Camera3.h</label>
-        <link refid="Camera3_8h"/>
-        <childnode refid="2892" relation="include">
-        </childnode>
-        <childnode refid="2897" relation="include">
-        </childnode>
-        <childnode refid="2899" relation="include">
+      <node id="2899">
+        <label>MyGraphics/Source/PROJECTScene.cpp</label>
+        <link refid="PROJECTScene_8cpp"/>
+      </node>
+      <node id="2893">
+        <label>MyGraphics/Source/collision.h</label>
+        <link refid="collision.h"/>
+        <childnode refid="2894" relation="include">
         </childnode>
         <childnode refid="2895" relation="include">
         </childnode>
-      </node>
-      <node id="2901">
-        <label>MyGraphics/Source/dialogue.cpp</label>
-        <link refid="dialogue_8cpp"/>
-      </node>
-      <node id="2898">
-        <label>MyGraphics/Source/NPC.h</label>
-        <link refid="NPC_8h"/>
-        <childnode refid="2892" relation="include">
+        <childnode refid="2900" relation="include">
         </childnode>
-        <childnode refid="2899" relation="include">
+        <childnode refid="2907" relation="include">
+        </childnode>
+        <childnode refid="2902" relation="include">
+        </childnode>
+        <childnode refid="2910" relation="include">
+        </childnode>
+      </node>
+      <node id="2897">
+        <label>MyGraphics/Source/audio.cpp</label>
+        <link refid="audio_8cpp"/>
+      </node>
+      <node id="2900">
+        <label>MyGraphics/Source/player.h</label>
+        <link refid="player_8h"/>
+        <childnode refid="2895" relation="include">
         </childnode>
         <childnode refid="2901" relation="include">
         </childnode>
         <childnode refid="2902" relation="include">
         </childnode>
+        <childnode refid="2906" relation="include">
+        </childnode>
       </node>
-      <node id="2907">
-        <label>MyGraphics/Source/collision.cpp</label>
-        <link refid="collision_8cpp"/>
-      </node>
-      <node id="2903">
-        <label>MyGraphics/Source/player.cpp</label>
-        <link refid="player_8cpp"/>
-      </node>
-      <node id="2905">
-        <label>MyGraphics/Source/dialogue.h</label>
-        <link refid="dialogue_8h"/>
+      <node id="2894">
+        <label>MyGraphics/Source/Camera3.h</label>
+        <link refid="Camera3_8h"/>
+        <childnode refid="2895" relation="include">
+        </childnode>
+        <childnode refid="2900" relation="include">
+        </childnode>
+        <childnode refid="2902" relation="include">
+        </childnode>
         <childnode refid="2898" relation="include">
         </childnode>
-        <childnode refid="2892" relation="include">
-        </childnode>
-        <childnode refid="2899" relation="include">
-        </childnode>
-        <childnode refid="2901" relation="include">
-        </childnode>
       </node>
-      <node id="2906">
-        <label>MyGraphics/Source/inventory.cpp</label>
-        <link refid="inventory_8cpp"/>
+      <node id="2902">
+        <label>MyGraphics/Source/MENUScene.h</label>
+        <link refid="MENUScene_8h"/>
+        <childnode refid="2896" relation="include">
+        </childnode>
+        <childnode refid="2897" relation="include">
+        </childnode>
+        <childnode refid="2903" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="structCollision" prot="public">Collision</innerclass>
@@ -267,180 +269,198 @@
     <innerclass refid="classStorage" prot="public">Storage</innerclass>
     <innerclass refid="classParticles" prot="public">Particles</innerclass>
     <briefdescription>
-    </briefdescription>
+<para>This is the collsion class using AABB. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para><simplesect kind="author"><para>Ricsson </para></simplesect>
+<simplesect kind="par"><title></title><para></para></simplesect>
+</para>    </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COLLISION_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLLISION_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Vector3_8h" kindref="compound">Vector3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Mesh_8h" kindref="compound">Mesh.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MeshBuilder_8h" kindref="compound">MeshBuilder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="LoadTGA_8h" kindref="compound">LoadTGA.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::vector;</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::string;</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPlayer" kindref="compound">Player</ref>;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="structCollision" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCollision" kindref="compound">Collision</ref></highlight></codeline>
-<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="19" refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" kindref="member">centre</ref>;</highlight></codeline>
-<codeline lineno="20" refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" kindref="member">hitbox</ref>;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22" refid="structCollision_1a93d586902c737c5045bb518248501e8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="structCollision_1a93d586902c737c5045bb518248501e8b" kindref="member">boundingBox</ref>;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25" refid="classObject" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
-<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="28" refid="classObject_1a40860402e64d8008fb42329df7097cdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>()<sp/>{<sp/><ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>};</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h);<sp/></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b);<sp/></highlight><highlight class="comment">//Bounding<sp/>Box<sp/>Only</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b);<sp/></highlight><highlight class="comment">//Normal<sp/>Objects</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>i);<sp/></highlight><highlight class="comment">//Full<sp/>Constructor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33" refid="classObject_1aa8a3c32d7bdaf9d06dd9a65749ee0110" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1aa8a3c32d7bdaf9d06dd9a65749ee0110" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>paid)<sp/>{};<sp/></highlight><highlight class="comment">//Item<sp/>Constructor</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34" refid="classObject_1ae8f5483f459e46687bd01e6f9977afd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1ae8f5483f459e46687bd01e6f9977afd3" kindref="member">~Object</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref>;</highlight></codeline>
-<codeline lineno="37" refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" kindref="member">position</ref>;</highlight></codeline>
-<codeline lineno="38" refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCollision" kindref="compound">Collision</ref><sp/><ref refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" kindref="member">collision</ref>;</highlight></codeline>
-<codeline lineno="39" refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" kindref="member">mesh</ref>;</highlight></codeline>
-<codeline lineno="40" refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" kindref="member">orientation</ref>;</highlight></codeline>
-<codeline lineno="41" refid="classObject_1a943828436a63520b4059b749df5564c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classObject_1a943828436a63520b4059b749df5564c3" kindref="member">size</ref>;</highlight></codeline>
-<codeline lineno="42" refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref>;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classObject_1ab0f9523e4bdbfa635a079c1cc01f9b8a" kindref="member">checkCollision</ref>(<ref refid="classObject" kindref="compound">Object</ref>*<sp/>a,<sp/><ref refid="classObject" kindref="compound">Object</ref>*<sp/>b);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45" refid="classObject_1a495d3c66ce43e267c5aac0066576dfb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classObject_1a495d3c66ce43e267c5aac0066576dfb2" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt)<sp/>{};</highlight></codeline>
-<codeline lineno="46" refid="classObject_1ab7aa5400e08a3c023140d614d1448458" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classObject_1ab7aa5400e08a3c023140d614d1448458" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt,<sp/>vector&lt;Object*&gt;</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/><ref refid="classPlayer" kindref="compound">Player</ref>*<sp/>player)<sp/>{};</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Derived</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="classObject_1a110cdaa911a12009dd5e37418fe3d35a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classObject_1a110cdaa911a12009dd5e37418fe3d35a" kindref="member">Knockback</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>dir,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>vel)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;};</highlight></codeline>
-<codeline lineno="50" refid="classObject_1a108db6d26b912a01de560fd940f90d71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classObject_1a108db6d26b912a01de560fd940f90d71" kindref="member">setPaid</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;};</highlight></codeline>
-<codeline lineno="51" refid="classObject_1abd775688f7362fe926da1aea7f88e27c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classObject_1abd775688f7362fe926da1aea7f88e27c" kindref="member">getPaid</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;};</highlight></codeline>
-<codeline lineno="52" refid="classObject_1a651e2aff564de5a4766863b332f14d33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classObject_1a651e2aff564de5a4766863b332f14d33" kindref="member">getHealth</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;};</highlight></codeline>
-<codeline lineno="53" refid="classObject_1a44a83bdec0ad56d911951cfd780a1d85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classObject_1a44a83bdec0ad56d911951cfd780a1d85" kindref="member">getValue</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;};</highlight></codeline>
-<codeline lineno="54" refid="classObject_1a084dbdfbf0fedcea9a67cc3eaa5f9bcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classObject_1a084dbdfbf0fedcea9a67cc3eaa5f9bcf" kindref="member">getIdentity</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;};</highlight></codeline>
-<codeline lineno="55" refid="classObject_1a03411698caca81d9ee219b3576fa984f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classObject_1a03411698caca81d9ee219b3576fa984f" kindref="member">getStorePos</ref>(<ref refid="classPlayer" kindref="compound">Player</ref>*<sp/>player)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structVector3" kindref="compound">Vector3</ref>();};</highlight></codeline>
-<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58" refid="classBodypart" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBodypart" kindref="compound">Bodypart</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
-<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="61" refid="classBodypart_1a3eb671588904ac51120d9db3be131273" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBodypart_1a3eb671588904ac51120d9db3be131273" kindref="member">Bodypart</ref>()<sp/>{<sp/><ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>};</highlight></codeline>
-<codeline lineno="62" refid="classBodypart_1ae5b847cddaec74ff46fdbd5fc3b243c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBodypart_1ae5b847cddaec74ff46fdbd5fc3b243c1" kindref="member">Bodypart</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h)</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" kindref="member">position</ref><sp/>=<sp/>p;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" kindref="member">collision</ref>.<ref refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" kindref="member">centre</ref><sp/>=<sp/>c;</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" kindref="member">collision</ref>.<ref refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" kindref="member">hitbox</ref><sp/>=<sp/>h;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" kindref="member">mesh</ref><sp/>=<sp/>m;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Bodypart&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="70" refid="classBodypart_1a51117326b7bdd597eb0e011ff479b02c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBodypart_1a51117326b7bdd597eb0e011ff479b02c" kindref="member">~Bodypart</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classBodypart_1ab2bf58734c5ae68a1d21c59cf28785cb" kindref="member">getIdentity</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" kindref="member">identity</ref>;};</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" kindref="member">identity</ref>;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76" refid="classMoney" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMoney" kindref="compound">Money</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
-<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="79" refid="classMoney_1a883c32ea0f71c9d1422141c384d225ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMoney_1a883c32ea0f71c9d1422141c384d225ba" kindref="member">Money</ref>()<sp/>{<ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;};</highlight></codeline>
-<codeline lineno="80" refid="classMoney_1ae17190b131b3974d27f011d4f8213f81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMoney_1ae17190b131b3974d27f011d4f8213f81" kindref="member">Money</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m,b,s,o,true)<sp/>{<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Money&quot;</highlight><highlight class="normal">;<sp/><ref refid="classMoney_1a6d726ea77f61bf6aa0b765d0d426aa2a" kindref="member">value</ref><sp/>=<sp/>v;};</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMoney_1a2e18e5d65d9e1304e3bcf19a349dcf32" kindref="member">~Money</ref>();</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83" refid="classMoney_1a6d726ea77f61bf6aa0b765d0d426aa2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMoney_1a6d726ea77f61bf6aa0b765d0d426aa2a" kindref="member">value</ref>;</highlight></codeline>
-<codeline lineno="84" refid="classMoney_1a0db36291448d43f5658494ab03fc1de8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMoney_1a0db36291448d43f5658494ab03fc1de8" kindref="member">getValue</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMoney_1a6d726ea77f61bf6aa0b765d0d426aa2a" kindref="member">value</ref>;};</highlight></codeline>
-<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87" refid="classItem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classItem" kindref="compound">Item</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
-<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="90" refid="classItem_1a297720c02984eab37332ae795d22189d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1a297720c02984eab37332ae795d22189d" kindref="member">Item</ref>()<sp/>{<ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;};</highlight></codeline>
-<codeline lineno="91" refid="classItem_1afb088e339e1ab8d7cbdf606583b0e53a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1afb088e339e1ab8d7cbdf606583b0e53a" kindref="member">Item</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>i)<sp/>:<sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m,b,s,o,i)<sp/>{<ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Item&quot;</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="92" refid="classItem_1ac8567583f60adbddabdaae556b901aca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1ac8567583f60adbddabdaae556b901aca" kindref="member">Item</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>P,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>R)<sp/>:<sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m,b,s,o,i)<sp/>{<ref refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" kindref="member">restore</ref><sp/>=<sp/>R;<ref refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" kindref="member">price</ref><sp/>=<sp/>P;<sp/><ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Item&quot;</highlight><highlight class="normal">;};</highlight></codeline>
-<codeline lineno="93" refid="classItem_1a1e4bc4a18402c13baca9ae369232a1c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1a1e4bc4a18402c13baca9ae369232a1c7" kindref="member">Item</ref>(<ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/>m,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p)<sp/>{<ref refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" kindref="member">mesh</ref><sp/>=<sp/>m;<sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/>t;<sp/><ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref><sp/>=<sp/>p;<sp/><ref refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" kindref="member">collision</ref>.<ref refid="structCollision_1a93d586902c737c5045bb518248501e8b" kindref="member">boundingBox</ref><sp/>=<sp/>NULL;}</highlight></codeline>
-<codeline lineno="94" refid="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" kindref="member">~Item</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96" refid="classItem_1a82ff126c35c7513cdca4cb91f2ba00db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classItem_1a82ff126c35c7513cdca4cb91f2ba00db" kindref="member">setPaid</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p)<sp/>{<ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref><sp/>=<sp/>p;};</highlight></codeline>
-<codeline lineno="97" refid="classItem_1a541992483e11953ad3c2026f3a163864" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classItem_1aac27cacc8aaf201040a6030d06b3493d" kindref="member">getPaid</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref>;};</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref>;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100" refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" kindref="member">price</ref>;</highlight></codeline>
-<codeline lineno="101" refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" kindref="member">restore</ref>;</highlight></codeline>
-<codeline lineno="102" refid="classItem_1a893141a75506836c77f4b88da24892f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classItem_1a893141a75506836c77f4b88da24892f0" kindref="member">getValue</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" kindref="member">price</ref>;};</highlight></codeline>
-<codeline lineno="103" refid="classItem_1a887d35ef6bee698d6d5408c6c38834b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classItem_1a887d35ef6bee698d6d5408c6c38834b4" kindref="member">getHealth</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" kindref="member">restore</ref>;};</highlight></codeline>
-<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106" refid="classVending" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classVending" kindref="compound">Vending</ref></highlight></codeline>
-<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="109" refid="classVending_1abf4d9c5e1077207f8beeed16110a9e91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1abf4d9c5e1077207f8beeed16110a9e91" kindref="member">Vending</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="110" refid="classVending_1ad086784614bb58b3bad0358f74181b38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1ad086784614bb58b3bad0358f74181b38" kindref="member">Vending</ref>(<ref refid="classObject" kindref="compound">Object</ref><sp/>D)<sp/></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" kindref="member">Drink</ref><sp/>=<sp/>D;<sp/><ref refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" kindref="member">Drink</ref>.<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Vending<sp/>Machine&quot;</highlight><highlight class="normal">;<sp/></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1a5cff939df942f1fffbfc682aa1ea2bd3" kindref="member">price</ref><sp/>=<sp/>2.f;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="115" refid="classVending_1ac12c5de0665adca1be951f77795d5a43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1ac12c5de0665adca1be951f77795d5a43" kindref="member">~Vending</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classVending_1a5cff939df942f1fffbfc682aa1ea2bd3" kindref="member">price</ref>;</highlight></codeline>
-<codeline lineno="118" refid="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem" kindref="compound">Item</ref><sp/>*<sp/><ref refid="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" kindref="member">generateDrink</ref>()<sp/></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price<sp/>*=<sp/>2;</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/>canMesh;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canMesh<sp/>=<sp/><sp/><ref refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" kindref="member">MeshBuilder::GenerateOBJ</ref>(</highlight><highlight class="stringliteral">&quot;Statboost<sp/>Drink&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;OBJ//can.obj&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canMesh-&gt;<ref refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" kindref="member">textureID</ref><sp/>=<sp/><ref refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" kindref="member">LoadTGA</ref>(</highlight><highlight class="stringliteral">&quot;Image//Food//mountaindew.tga&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classItem" kindref="compound">Item</ref>(canMesh,<sp/></highlight><highlight class="stringliteral">&quot;Statboost&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="127" refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref><sp/><ref refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" kindref="member">Drink</ref>;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132" refid="classStorage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStorage" kindref="compound">Storage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
-<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="135" refid="classStorage_1a80ef6af5e4c9fd4424ae16e808d05291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1a80ef6af5e4c9fd4424ae16e808d05291" kindref="member">Storage</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="136" refid="classStorage_1a1b9f9b9fdea18f675b5c676577bc88a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1a1b9f9b9fdea18f675b5c676577bc88a7" kindref="member">Storage</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,b)<sp/>{<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Storage&quot;</highlight><highlight class="normal">;};</highlight></codeline>
-<codeline lineno="137" refid="classStorage_1a4d8af92e7dd83b220f63f051bf9f2cfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1a4d8af92e7dd83b220f63f051bf9f2cfd" kindref="member">Storage</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m,b)<sp/>{<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Storage&quot;</highlight><highlight class="normal">;};</highlight></codeline>
-<codeline lineno="138" refid="classStorage_1ae2cec8e63e93c786ed2a21f4f5259e36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1ae2cec8e63e93c786ed2a21f4f5259e36" kindref="member">Storage</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>b,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m,b)<sp/>{<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Storage&quot;</highlight><highlight class="normal">;<sp/><ref refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" kindref="member">orientation</ref><sp/>=<sp/>o;};</highlight></codeline>
-<codeline lineno="139" refid="classStorage_1a73cf30f0a34250396f9eabee7dc5c93d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1a73cf30f0a34250396f9eabee7dc5c93d" kindref="member">~Storage</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classStorage_1a6e6c426205e1ef6e6d72e24d57fd5f60" kindref="member">getStorePos</ref>(<ref refid="classPlayer" kindref="compound">Player</ref>*<sp/>player);</highlight></codeline>
-<codeline lineno="142"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight></codeline>
-<codeline lineno="144" refid="classParticles" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classParticles" kindref="compound">Particles</ref></highlight></codeline>
-<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="147" refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" kindref="member">Particles</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>pos)<sp/></highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>float(rand()<sp/>%<sp/>5<sp/>+<sp/>1);</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>red<sp/>=<sp/>float(rand()<sp/>%<sp/>10<sp/>+<sp/>1);</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a439a38d2df47b36023850bec5d05f50d" kindref="member">mesh</ref><sp/>=<sp/><ref refid="classMeshBuilder_1abab6044835556126c51f5e8c9f00f501" kindref="member">MeshBuilder::GenerateCircle</ref>(</highlight><highlight class="stringliteral">&quot;Blood&quot;</highlight><highlight class="normal">,<sp/><ref refid="structColor" kindref="compound">Color</ref>(red/10,<sp/>0,<sp/>0),<sp/>size/20);</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" kindref="member">direction</ref>.<ref refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref><sp/>=<sp/>float<sp/>((rand()<sp/>%<sp/>11)<sp/>-<sp/>5);</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" kindref="member">direction</ref>.<ref refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref><sp/>=<sp/>float<sp/>((rand()<sp/>%<sp/>11)<sp/>-<sp/>5);</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" kindref="member">direction</ref>.<ref refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref><sp/>=<sp/>float<sp/>((rand()<sp/>%<sp/>11)<sp/>-<sp/>5);</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" kindref="member">position</ref><sp/>=<sp/>pos;<sp/><ref refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" kindref="member">elapsedTime</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="159" refid="classParticles_1a06dde9ff5c48d92d9ae273ad9501daa3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a06dde9ff5c48d92d9ae273ad9501daa3" kindref="member">~Particles</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/><ref refid="classParticles_1a439a38d2df47b36023850bec5d05f50d" kindref="member">mesh</ref>;</highlight></codeline>
-<codeline lineno="162" refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" kindref="member">position</ref>;</highlight></codeline>
-<codeline lineno="163" refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" kindref="member">direction</ref>;</highlight></codeline>
-<codeline lineno="164" refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" kindref="member">elapsedTime</ref>;</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParticles_1a9c6cee78ad5de19616b1a9ba503ae06d" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt);</highlight></codeline>
-<codeline lineno="167"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>COLLISION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLLISION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Vector3_8h" kindref="compound">Vector3.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Mesh_8h" kindref="compound">Mesh.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MeshBuilder_8h" kindref="compound">MeshBuilder.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="LoadTGA_8h" kindref="compound">LoadTGA.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::vector;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::string;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPlayer" kindref="compound">Player</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structCollision" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCollision" kindref="compound">Collision</ref></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34" refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" kindref="member">centre</ref>;</highlight></codeline>
+<codeline lineno="35" refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" kindref="member">hitbox</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classObject" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="classObject_1a40860402e64d8008fb42329df7097cdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>()<sp/>{<sp/><ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h);<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m);<sp/></highlight><highlight class="comment">//Normal<sp/>Objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>i);<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a40860402e64d8008fb42329df7097cdb" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>i);<sp/></highlight><highlight class="comment">//Full<sp/>Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classObject_1a9f11ed46bea1e2b0a850477a528a2534" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a9f11ed46bea1e2b0a850477a528a2534" kindref="member">Object</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>paid)<sp/>{};<sp/></highlight><highlight class="comment">//Item<sp/>Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classObject_1aa3e791419d84c4c346ef9499513b8e00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classObject_1aa3e791419d84c4c346ef9499513b8e00" kindref="member">~Object</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="58" refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCollision" kindref="compound">Collision</ref><sp/><ref refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" kindref="member">collision</ref>;</highlight></codeline>
+<codeline lineno="59" refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/><ref refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" kindref="member">mesh</ref>;</highlight></codeline>
+<codeline lineno="60" refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" kindref="member">orientation</ref>;</highlight></codeline>
+<codeline lineno="61" refid="classObject_1a943828436a63520b4059b749df5564c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classObject_1a943828436a63520b4059b749df5564c3" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="62" refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classObject_1ab0f9523e4bdbfa635a079c1cc01f9b8a" kindref="member">checkCollision</ref>(<ref refid="classObject" kindref="compound">Object</ref>*<sp/>a,<sp/><ref refid="classObject" kindref="compound">Object</ref>*<sp/>b);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classObject_1a495d3c66ce43e267c5aac0066576dfb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classObject_1a495d3c66ce43e267c5aac0066576dfb2" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt)<sp/>{};</highlight></codeline>
+<codeline lineno="66" refid="classObject_1ab7aa5400e08a3c023140d614d1448458" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classObject_1ab7aa5400e08a3c023140d614d1448458" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt,<sp/>vector&lt;Object*&gt;</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">,<sp/><ref refid="classPlayer" kindref="compound">Player</ref>*<sp/>player)<sp/>{};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Derived</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classObject_1a110cdaa911a12009dd5e37418fe3d35a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classObject_1a110cdaa911a12009dd5e37418fe3d35a" kindref="member">Knockback</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>dir,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>vel)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;};</highlight></codeline>
+<codeline lineno="70" refid="classObject_1a108db6d26b912a01de560fd940f90d71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classObject_1a108db6d26b912a01de560fd940f90d71" kindref="member">setPaid</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;};</highlight></codeline>
+<codeline lineno="71" refid="classObject_1abd775688f7362fe926da1aea7f88e27c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classObject_1abd775688f7362fe926da1aea7f88e27c" kindref="member">getPaid</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;};</highlight></codeline>
+<codeline lineno="72" refid="classObject_1a651e2aff564de5a4766863b332f14d33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classObject_1a651e2aff564de5a4766863b332f14d33" kindref="member">getHealth</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;};</highlight></codeline>
+<codeline lineno="73" refid="classObject_1a44a83bdec0ad56d911951cfd780a1d85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classObject_1a44a83bdec0ad56d911951cfd780a1d85" kindref="member">getValue</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;};</highlight></codeline>
+<codeline lineno="74" refid="classObject_1a084dbdfbf0fedcea9a67cc3eaa5f9bcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classObject_1a084dbdfbf0fedcea9a67cc3eaa5f9bcf" kindref="member">getIdentity</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;};</highlight></codeline>
+<codeline lineno="75" refid="classObject_1a03411698caca81d9ee219b3576fa984f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classObject_1a03411698caca81d9ee219b3576fa984f" kindref="member">getStorePos</ref>(<ref refid="classPlayer" kindref="compound">Player</ref>*<sp/>player)<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structVector3" kindref="compound">Vector3</ref>();};</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="84"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classBodypart" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classBodypart" kindref="compound">Bodypart</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="88" refid="classBodypart_1a3eb671588904ac51120d9db3be131273" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBodypart_1a3eb671588904ac51120d9db3be131273" kindref="member">Bodypart</ref>()<sp/>{<sp/><ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>};</highlight></codeline>
+<codeline lineno="89" refid="classBodypart_1ae5b847cddaec74ff46fdbd5fc3b243c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBodypart_1ae5b847cddaec74ff46fdbd5fc3b243c1" kindref="member">Bodypart</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1ada6b49bf1d36879f1ce84cd29d5f8e8e" kindref="member">position</ref><sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" kindref="member">collision</ref>.<ref refid="structCollision_1a0684db25eb7e64a95d2f4d96f1cd7f1b" kindref="member">centre</ref><sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1aef4079c9b790e09f38c46a1d19a0c07a" kindref="member">collision</ref>.<ref refid="structCollision_1ab24decdc033f45562e6a02873e61ac92" kindref="member">hitbox</ref><sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" kindref="member">mesh</ref><sp/>=<sp/>m;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Bodypart&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="97" refid="classBodypart_1a51117326b7bdd597eb0e011ff479b02c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBodypart_1a51117326b7bdd597eb0e011ff479b02c" kindref="member">~Bodypart</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classBodypart_1ab2bf58734c5ae68a1d21c59cf28785cb" kindref="member">getIdentity</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" kindref="member">identity</ref>;};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classBodypart_1aa5ceaa259614767412d16b6a10f1a4ff" kindref="member">identity</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="108"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classMoney" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMoney" kindref="compound">Money</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112" refid="classMoney_1a883c32ea0f71c9d1422141c384d225ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMoney_1a883c32ea0f71c9d1422141c384d225ba" kindref="member">Money</ref>()<sp/>{<ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;};</highlight></codeline>
+<codeline lineno="113" refid="classMoney_1a1a70dbf5d44197c13fd8705992d11737" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMoney_1a1a70dbf5d44197c13fd8705992d11737" kindref="member">Money</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m,s,o,true)<sp/>{<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Money&quot;</highlight><highlight class="normal">;<sp/><ref refid="classMoney_1a6d726ea77f61bf6aa0b765d0d426aa2a" kindref="member">value</ref><sp/>=<sp/>v;};</highlight></codeline>
+<codeline lineno="114" refid="classMoney_1a2e18e5d65d9e1304e3bcf19a349dcf32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMoney_1a2e18e5d65d9e1304e3bcf19a349dcf32" kindref="member">~Money</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMoney_1a6d726ea77f61bf6aa0b765d0d426aa2a" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="117" refid="classMoney_1a0db36291448d43f5658494ab03fc1de8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMoney_1a0db36291448d43f5658494ab03fc1de8" kindref="member">getValue</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classMoney_1a6d726ea77f61bf6aa0b765d0d426aa2a" kindref="member">value</ref>;};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="125"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="classItem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classItem" kindref="compound">Item</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="129" refid="classItem_1a297720c02984eab37332ae795d22189d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1a297720c02984eab37332ae795d22189d" kindref="member">Item</ref>()<sp/>{<ref refid="classObject_1a10ad858f7d8e24e619915a01b6d5fa5c" kindref="member">ignoreCollision</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;};</highlight></codeline>
+<codeline lineno="130" refid="classItem_1ae7e264b8d187873bcf9c61cc44b4da6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1ae7e264b8d187873bcf9c61cc44b4da6a" kindref="member">Item</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>i)<sp/>:<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m,s,o,i)<sp/>{<ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Item&quot;</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="131" refid="classItem_1a475604bf55b55dff489501e8e39a9d49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1a475604bf55b55dff489501e8e39a9d49" kindref="member">Item</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>s,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>P,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>R)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m,s,o,i)<sp/>{<ref refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" kindref="member">restore</ref><sp/>=<sp/>R;<ref refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" kindref="member">price</ref><sp/>=<sp/>P;<sp/><ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Item&quot;</highlight><highlight class="normal">;};</highlight></codeline>
+<codeline lineno="132" refid="classItem_1a1e4bc4a18402c13baca9ae369232a1c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1a1e4bc4a18402c13baca9ae369232a1c7" kindref="member">Item</ref>(<ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/>m,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p)<sp/>{<ref refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" kindref="member">mesh</ref><sp/>=<sp/>m;<sp/><ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/>t;<sp/><ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref><sp/>=<sp/>p;}</highlight></codeline>
+<codeline lineno="133" refid="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" kindref="member">~Item</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="classItem_1a82ff126c35c7513cdca4cb91f2ba00db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classItem_1a82ff126c35c7513cdca4cb91f2ba00db" kindref="member">setPaid</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>p)<sp/>{<ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref><sp/>=<sp/>p;};</highlight></codeline>
+<codeline lineno="136" refid="classItem_1a541992483e11953ad3c2026f3a163864" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classItem_1aac27cacc8aaf201040a6030d06b3493d" kindref="member">getPaid</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref>;};</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classItem_1a541992483e11953ad3c2026f3a163864" kindref="member">paid</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" kindref="member">price</ref>;</highlight></codeline>
+<codeline lineno="140" refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" kindref="member">restore</ref>;</highlight></codeline>
+<codeline lineno="141" refid="classItem_1a893141a75506836c77f4b88da24892f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classItem_1a893141a75506836c77f4b88da24892f0" kindref="member">getValue</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classItem_1a39ef1912f4a164cce14ae06229ca5ca9" kindref="member">price</ref>;};</highlight></codeline>
+<codeline lineno="142" refid="classItem_1a887d35ef6bee698d6d5408c6c38834b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classItem_1a887d35ef6bee698d6d5408c6c38834b4" kindref="member">getHealth</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classItem_1a173318c7256c0bb9510563e4a42dc3b2" kindref="member">restore</ref>;};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="150"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="classVending" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classVending" kindref="compound">Vending</ref></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="154" refid="classVending_1abf4d9c5e1077207f8beeed16110a9e91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1abf4d9c5e1077207f8beeed16110a9e91" kindref="member">Vending</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="155" refid="classVending_1ad086784614bb58b3bad0358f74181b38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1ad086784614bb58b3bad0358f74181b38" kindref="member">Vending</ref>(<ref refid="classObject" kindref="compound">Object</ref><sp/>D)<sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" kindref="member">Drink</ref><sp/>=<sp/>D;<sp/><ref refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" kindref="member">Drink</ref>.<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Vending<sp/>Machine&quot;</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1a5cff939df942f1fffbfc682aa1ea2bd3" kindref="member">price</ref><sp/>=<sp/>2.f;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="160" refid="classVending_1ac12c5de0665adca1be951f77795d5a43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVending_1ac12c5de0665adca1be951f77795d5a43" kindref="member">~Vending</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classVending_1a5cff939df942f1fffbfc682aa1ea2bd3" kindref="member">price</ref>;</highlight></codeline>
+<codeline lineno="163" refid="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classItem" kindref="compound">Item</ref><sp/>*<sp/><ref refid="classVending_1ab21ff490ce398aab1ff1fa0a4b54f5c9" kindref="member">generateDrink</ref>()<sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>price<sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/>canMesh;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canMesh<sp/>=<sp/><sp/><ref refid="classMeshBuilder_1aba87550d7726a610c911fbb977fd3575" kindref="member">MeshBuilder::GenerateOBJ</ref>(</highlight><highlight class="stringliteral">&quot;Statboost<sp/>Drink&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;OBJ//can.obj&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canMesh-&gt;<ref refid="classMesh_1a7abd957a6487641e00c8fb855397bccd" kindref="member">textureID</ref><sp/>=<sp/><ref refid="LoadTGA_8cpp_1a459a80ca6de67a1e3493bfb66ae317e4" kindref="member">LoadTGA</ref>(</highlight><highlight class="stringliteral">&quot;Image//Food//mountaindew.tga&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classItem" kindref="compound">Item</ref>(canMesh,<sp/></highlight><highlight class="stringliteral">&quot;Statboost&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172" refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classObject" kindref="compound">Object</ref><sp/><ref refid="classVending_1ab97a2fcfa649fa457b38d21bd5ed05b7" kindref="member">Drink</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="182"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="classStorage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStorage" kindref="compound">Storage</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classObject" kindref="compound">Object</ref></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="186" refid="classStorage_1a80ef6af5e4c9fd4424ae16e808d05291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1a80ef6af5e4c9fd4424ae16e808d05291" kindref="member">Storage</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="187" refid="classStorage_1a0c2f388a7f4d259d2005e4545c7790df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1a0c2f388a7f4d259d2005e4545c7790df" kindref="member">Storage</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h)<sp/>{<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Storage&quot;</highlight><highlight class="normal">;<sp/><ref refid="classObject_1ad755772f4633cd0ef94a05738ffb5e84" kindref="member">mesh</ref><sp/>=<sp/>NULL;};</highlight></codeline>
+<codeline lineno="188" refid="classStorage_1aa59c7272ea2f0a44719de5caa0fca3d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1aa59c7272ea2f0a44719de5caa0fca3d8" kindref="member">Storage</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m)<sp/>{<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Storage&quot;</highlight><highlight class="normal">;};</highlight></codeline>
+<codeline lineno="189" refid="classStorage_1ab9e1f22d99dd5bb98647bdc696215ca6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1ab9e1f22d99dd5bb98647bdc696215ca6" kindref="member">Storage</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>p,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>c,<sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/>h,<sp/><ref refid="classMesh" kindref="compound">Mesh</ref>*<sp/>m,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>o)<sp/>:<sp/><ref refid="classObject" kindref="compound">Object</ref>(p,c,h,m)<sp/>{<ref refid="classObject_1a2f0ab0ca2d98028fd10807a03fcd75e5" kindref="member">type</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Storage&quot;</highlight><highlight class="normal">;<sp/><ref refid="classObject_1a76d64dfcb25c9536b435b13b002f482c" kindref="member">orientation</ref><sp/>=<sp/>o;};</highlight></codeline>
+<codeline lineno="190" refid="classStorage_1a73cf30f0a34250396f9eabee7dc5c93d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classStorage_1a73cf30f0a34250396f9eabee7dc5c93d" kindref="member">~Storage</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classStorage_1a6e6c426205e1ef6e6d72e24d57fd5f60" kindref="member">getStorePos</ref>(<ref refid="classPlayer" kindref="compound">Player</ref>*<sp/>player);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight></codeline>
+<codeline lineno="200"><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="classParticles" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classParticles" kindref="compound">Particles</ref></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="204" refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1ad8d14063b3b577e9917fa1f7c94ed56a" kindref="member">Particles</ref>(<ref refid="structVector3" kindref="compound">Vector3</ref><sp/>pos)<sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>float(rand()<sp/>%<sp/>5<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>red<sp/>=<sp/>float(rand()<sp/>%<sp/>10<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a439a38d2df47b36023850bec5d05f50d" kindref="member">mesh</ref><sp/>=<sp/><ref refid="classMeshBuilder_1abab6044835556126c51f5e8c9f00f501" kindref="member">MeshBuilder::GenerateCircle</ref>(</highlight><highlight class="stringliteral">&quot;Blood&quot;</highlight><highlight class="normal">,<sp/><ref refid="structColor" kindref="compound">Color</ref>(red/10,<sp/>0,<sp/>0),<sp/>size/20);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" kindref="member">direction</ref>.<ref refid="structVector3_1a7e2d3237b29a2f29d7b3d8b2934e35f2" kindref="member">x</ref><sp/>=<sp/>float<sp/>((rand()<sp/>%<sp/>11)<sp/>-<sp/>5);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" kindref="member">direction</ref>.<ref refid="structVector3_1a86eb35a9fa2d5a49e7fad66a35fa9c13" kindref="member">y</ref><sp/>=<sp/>float<sp/>((rand()<sp/>%<sp/>11)<sp/>-<sp/>5);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" kindref="member">direction</ref>.<ref refid="structVector3_1aa8c9461eb24bd2c364258078811a3e9d" kindref="member">z</ref><sp/>=<sp/>float<sp/>((rand()<sp/>%<sp/>11)<sp/>-<sp/>5);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" kindref="member">position</ref><sp/>=<sp/>pos;<sp/><ref refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" kindref="member">elapsedTime</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="216" refid="classParticles_1a06dde9ff5c48d92d9ae273ad9501daa3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classParticles_1a06dde9ff5c48d92d9ae273ad9501daa3" kindref="member">~Particles</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMesh" kindref="compound">Mesh</ref><sp/>*<sp/><ref refid="classParticles_1a439a38d2df47b36023850bec5d05f50d" kindref="member">mesh</ref>;</highlight></codeline>
+<codeline lineno="219" refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classParticles_1a66d124615bafd6d6f72f29246d5f10aa" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="220" refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structVector3" kindref="compound">Vector3</ref><sp/><ref refid="classParticles_1a386f32a61814b4213fa07b914c4b858e" kindref="member">direction</ref>;</highlight></codeline>
+<codeline lineno="221" refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classParticles_1abb3d68256f8ba6b93886197d0994f6e1" kindref="member">elapsedTime</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classParticles_1a9c6cee78ad5de19616b1a9ba503ae06d" kindref="member">Update</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/L532/Desktop/SP2-16.git/MyGraphics/Source/collision.h"/>
+    <location file="C:/Users/User/Desktop/SP2-16 LATEST/MyGraphics/Source/collision.h"/>
   </compounddef>
 </doxygen>
