@@ -2429,7 +2429,7 @@ void PROJECTScene::Render()
 	}
 
 	modelStack.PushMatrix();
-	modelStack.Translate(-23,12.5f,0);
+	modelStack.Translate(-24,12.5f,0);
 	RenderText(meshList[GEO_TEXT], fps, Color(1, 1, 1));
 	modelStack.PopMatrix();
 

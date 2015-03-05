@@ -211,7 +211,7 @@ void MENUScene::Reset()
 {
 	select = 0;
 	main = true;
-	startupDelay = 0.5f;
+	startupDelay = 0.4f;
 }
 
 extern float selectDelay;
